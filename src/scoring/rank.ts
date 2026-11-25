@@ -4,7 +4,7 @@
 import { z } from "zod";
 import { config } from "../config.ts";
 import { coversExactly } from "../generation/semantic.ts";
-import type { Ask } from "../llm.ts";
+import { modelsUsed, type Ask } from "../llm.ts";
 import { normalizeName } from "../knowledge/normalize.ts";
 import type { Knowledge } from "../knowledge/queries.ts";
 import type { CandidateQuestion, Entity, Score, ScoredAnswer } from "../knowledge/types.ts";
@@ -336,7 +336,7 @@ export async function scoreQuestion(kb: Knowledge, ask: Ask, q: CandidateQuestio
     question: q,
     knowledgeVersion: kb.version,
     scoringVersion: config.scoringVersion,
-    model: config.model,
+    model: modelsUsed(),
     generatedAt: new Date().toISOString(),
     answers: order.map((id, i) => ({ entityId: id, name: kb.get(id)!.name, rank: i + 1, score: scores[i] })),
     diagnostics: { signals, passAgreement, orderBeforeRefinement: initial, pairwise: [...pairwise, ...reviewJudgments], review },

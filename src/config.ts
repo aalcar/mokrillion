@@ -1,6 +1,12 @@
 // Tunable parameters for generation and scoring. Env vars override the LLM settings.
 export const config = {
+  /**
+   * "anthropic" or "gemini". Unset: Anthropic if ANTHROPIC_API_KEY is set, else Gemini if GEMINI_API_KEY is.
+   * Either way a run falls back to Gemini when Anthropic rejects the key or the credit balance is empty.
+   */
+  provider: process.env.MOKRILLION_PROVIDER as "anthropic" | "gemini" | undefined,
   model: process.env.MOKRILLION_MODEL ?? "claude-opus-5-5",
+  geminiModel: process.env.MOKRILLION_GEMINI_MODEL ?? "gemini-3.8-flash",
   effort: (process.env.MOKRILLION_EFFORT ?? "medium") as "low" | "medium" | "high" | "xhigh" | "max",
   /** Hard stop for one CLI run's estimated API spend. */
   maxCostUSD: Number(process.env.MOKRILLION_MAX_COST_USD ?? 5),

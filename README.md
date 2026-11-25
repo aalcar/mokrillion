@@ -5,10 +5,23 @@ Deadlock-themed daily trivia where obscure correct answers score more. Facts com
 
 ## Setup
 
-Node 22.6+. `npm install`, then put `ANTHROPIC_API_KEY=...` in `.env` (only needed for LLM steps).
+Node 22.6+. `npm install`, then put API keys in `.env` (only needed for LLM steps):
 
-Optional env: `MOKRILLION_MODEL` (default `claude-opus-5-5`), `MOKRILLION_EFFORT` (default `medium`),
-`MOKRILLION_MAX_COST_USD` (per-run budget, default 5).
+```
+ANTHROPIC_API_KEY=...   # optional
+GEMINI_API_KEY=...      # optional, free tier at https://aistudio.google.com/apikey
+```
+
+Provider choice: Anthropic if `ANTHROPIC_API_KEY` is set, otherwise Gemini. If Anthropic rejects the key or
+the account is out of credit mid-run, the run switches to Gemini automatically (when `GEMINI_API_KEY` is set).
+Force one with `MOKRILLION_PROVIDER=anthropic|gemini`.
+
+Optional env: `MOKRILLION_MODEL` (Anthropic, default `claude-opus-5-5`), `MOKRILLION_GEMINI_MODEL`
+(default `gemini-3.8-flash`), `MOKRILLION_EFFORT` (Anthropic, default `medium`), `MOKRILLION_MAX_COST_USD`
+(per-run budget, default 5; Gemini free tier counts as $0).
+
+Different models rank differently, so cached answers are per model and every scored question records which
+model(s) produced it. Compare rankings from different models with care.
 
 ## Commands
 
