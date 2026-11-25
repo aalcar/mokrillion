@@ -1,0 +1,19 @@
+{
+  "name": "mokrillion",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.6"
+  },
+  "scripts": {
+    "ingest": "node --experimental-strip-types --no-warnings src/knowledge/ingest.ts",
+    "normalize": "node --experimental-strip-types --no-warnings src/knowledge/normalize.ts",
+    "kb": "node --experimental-strip-types --no-warnings src/cli/kb.ts",
+    "test": "node --experimental-strip-types --no-warnings --test tests/*.test.ts",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.7",
+    "typescript": "^7.0.2"
+  }
+}

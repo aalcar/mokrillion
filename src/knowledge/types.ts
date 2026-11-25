@@ -1,0 +1,129 @@
+export type Score = 10 | 30 | 60 | 85 | 100;
+
+/** One displayed property of an ability or item, as shown on the in-game card. */
+export interface Prop {
+  key: string;
+  label: string | null;
+  /** Number, or display string with unit such as "12m". */
+  value: number | string;
+  type: string | null;
+  /** Spirit/other scaling attached to the base value, if any. */
+  scale?: { value: number; type: string };
+  statusEffect?: string;
+  /** True when the wiki marks the value as only conditionally applied. */
+  conditional?: boolean;
+  /** Section heading on the card, e.g. "On Hit:". */
+  title?: string;
+}
+
+export interface AbilityUpgrade {
+  tier: 1 | 2 | 3;
+  description: string | null;
+  /** Raw property deltas applied by this upgrade. */
+  changes: Record<string, unknown>;
+}
+
+export interface Ability {
+  key: string;
+  name: string;
+  /** 1-3 regular abilities, 4 = ultimate. */
+  slot: 1 | 2 | 3 | 4;
+  description: string;
+  props: Prop[];
+  upgrades: AbilityUpgrade[];
+}
+
+export interface Weapon {
+  bulletDamagePerPellet: number;
+  pelletsPerShot: number;
+  roundsPerSecond: number;
+  clipSize: number;
+  reloadTime: number;
+  reloadSingle: boolean;
+  bulletSpeed: number;
+  falloffStartRange: number;
+  falloffEndRange: number;
+  canCrit: boolean;
+  dps: number;
+  sustainedDps: number;
+  /** e.g. "Spreadshot", "CloseRange". */
+  weaponTypes: string[];
+}
+
+export interface HeroAttributes {
+  internalKey: string;
+  heroType: string | null;
+  maxHealth: number;
+  baseHealthRegen: number;
+  maxMoveSpeed: number;
+  sprintSpeed: number;
+  stamina: number;
+  staminaCooldown: number;
+  lightMeleeDamage: number;
+  heavyMeleeDamage: number;
+  weapon: Weapon;
+  /** Per-level gains (boons), raw keys from wiki. */
+  levelScaling: Record<string, number>;
+  /** Wiki categories such as "Heroes with spin up weapons". */
+  categories: string[];
+  abilities: Ability[];
+}
+
+export type ItemSlot = "Weapon" | "Vitality" | "Spirit";
+
+export interface ItemSection {
+  /** "Innate", "Passive", "Active", ... */
+  kind: string;
+  description: string | null;
+  cooldown: number | null;
+  props: Prop[];
+}
+
+export interface ItemAttributes {
+  internalKey: string;
+  cost: number;
+  tier: 1 | 2 | 3 | 4;
+  slot: ItemSlot;
+  /** "Passive", "InstantCast", "Press", ... */
+  activation: string;
+  isActive: boolean;
+  isImbue: boolean;
+  /** Entity ids this item upgrades from. */
+  components: string[];
+  /** Entity ids that use this item as a component. */
+  upgradesInto: string[];
+  description: string;
+  sections: ItemSection[];
+  statusEffects: string[];
+  /**
+   * Mean purchase rate (percent) across all heroes and game phases in the wiki's
+   * ItemPopularity data; absent hero/phase entries count as 0. Null if the item is
+   * missing from that data entirely.
+   */
+  popularity: number | null;
+}
+
+interface EntityBase {
+  id: string;
+  name: string;
+  aliases: string[];
+  sourceUrls: string[];
+}
+
+export interface Hero extends EntityBase {
+  type: "hero";
+  attributes: HeroAttributes;
+}
+
+export interface Item extends EntityBase {
+  type: "item";
+  attributes: ItemAttributes;
+}
+
+export type Entity = Hero | Item;
+
+export interface KnowledgeFile {
+  knowledgeVersion: string;
+  generatedFrom: Record<string, number>; // data page -> revision id
+  entities: Entity[];
+}

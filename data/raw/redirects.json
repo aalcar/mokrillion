@@ -1,0 +1,855 @@
+{
+ "Abrams": [
+  "Case Closed",
+  "Bluey",
+  "Atlas",
+  "Siphon Life",
+  "Shoulder Charge",
+  "Infernal Resilience",
+  "Seismic Impact",
+  "Bull",
+  "Abe",
+  "Abram"
+ ],
+ "Bebop": [
+  "Humble Pie",
+  "Bepop",
+  "Exploding Uppercut",
+  "Sticky Bomb",
+  "Grapple Arm",
+  "Hyper Beam",
+  "Beebop"
+ ],
+ "Lash": [
+  "Tale of The Tape",
+  "Jacob Lash",
+  "Asshole",
+  "The lash",
+  "The Lash",
+  "Jacob",
+  "Ground Strike",
+  "Grapple",
+  "Flog",
+  "Death Slam"
+ ],
+ "McGinnis": [
+  "Services Rendered",
+  "Forge",
+  "McG",
+  "Maggie",
+  "Mcg",
+  "Mini Turret",
+  "Medicinal Specter",
+  "Spectral Wall",
+  "Heavy Barrage"
+ ],
+ "Dynamo": [
+  "The Vonnegun",
+  "Professor Dynamo",
+  "Sumo",
+  "Jeong",
+  "Domehead",
+  "Kinetic Pulse",
+  "Quantum Entanglement",
+  "Rejuvenating Aurora",
+  "Singularity",
+  "Black Hole"
+ ],
+ "Grey Talon": [
+  "The Mourning Comes",
+  "Gray Talon",
+  "Talon",
+  "Wesley",
+  "Gary Talon",
+  "GT",
+  "Grandpa",
+  "Gt",
+  "Orion",
+  "Charged Shot",
+  "Rain of Arrows",
+  "Spirit Snare",
+  "Guided Owl"
+ ],
+ "Haze": [
+  "Censure & Penance",
+  "Fixation",
+  "Sleep Dagger",
+  "Smoke Bomb",
+  "Bullet Dance"
+ ],
+ "Infernus": [
+  "Incendiary Remarks",
+  "Afterburn",
+  "Inferno",
+  "Matchstick",
+  "Fern",
+  "Napalm",
+  "Flame Dash",
+  "Concussive Combustion"
+ ],
+ "Ivy": [
+  "Cat Dad's Fancy",
+  "Protector's Hand",
+  "Tengu",
+  "Sweet wings",
+  "Entangling Thorns",
+  "Kudzu Connection",
+  "Stone Form",
+  "Air Drop",
+  "Ivy deadlock",
+  "Malphite"
+ ],
+ "Kelvin": [
+  "Expedition's End",
+  "Kevin",
+  "Frost Grenade",
+  "Ice Path",
+  "Arctic Beam",
+  "Frozen Shelter"
+ ],
+ "Lady Geist": [
+  "Geist",
+  "Johann's Gift",
+  "LG",
+  "Grandma",
+  "Jeanne",
+  "Ghost",
+  "Essence Bomb",
+  "Life Drain",
+  "Malice",
+  "Soul Exchange",
+  "Spectre",
+  "Lady"
+ ],
+ "Mo & Krill": [
+  "Yellow Canary",
+  "Krill",
+  "Mo and Krill",
+  "Mo &",
+  "Mo",
+  "Momo",
+  "Maurice",
+  "Mohammed & Kareem",
+  "Digger",
+  "Grappler",
+  "Pouncer and Driller",
+  "Mnk",
+  "Mo&Krill",
+  "Scorn",
+  "Burrow",
+  "Sand Blast",
+  "Combo",
+  "Mo krill",
+  "Moe",
+  "They"
+ ],
+ "Paradox": [
+  "Trade Secret",
+  "Chrono",
+  "Little miss fishbowl head",
+  "Pulse Grenade",
+  "Time Wall",
+  "Kinetic Carbine",
+  "Paradoxical Swap",
+  "Carbine"
+ ],
+ "Pocket": [
+  "The Black Sheep",
+  "Arin",
+  "Synth",
+  "Puck",
+  "Barrage",
+  "Flying Cloak",
+  "Enchanter's Satchel",
+  "They/them"
+ ],
+ "Seven": [
+  "7",
+  "Cold Calculus",
+  "Gigawatt",
+  "Glowstick",
+  "Lightning Ball",
+  "Static Charge",
+  "Power Surge",
+  "Storm Cloud",
+  "Pompous ass"
+ ],
+ "Shiv": [
+  "Busted Flush",
+  "Bloodletting",
+  "Serrated Knives",
+  "Slice and Dice",
+  "Killing Blow"
+ ],
+ "Viscous": [
+  "Deep Sea Interpreter",
+  "Goobert",
+  "Gooey",
+  "Goo boy",
+  "Splatter",
+  "The Cube",
+  "Puddle Punch",
+  "Goo Ball",
+  "Punch"
+ ],
+ "Warden": [
+  "Freedom's Cost",
+  "Vomitus",
+  "Alchemical Flask",
+  "Willpower",
+  "Binding Word",
+  "Last Stand",
+  "Murphy"
+ ],
+ "Wraith": [
+  "The Rake",
+  "Four arms",
+  "Card Trick",
+  "Project Mind",
+  "Full Auto",
+  "Telekinesis"
+ ],
+ "Yamato": [
+  "Sister's Lament",
+  "Mamacita",
+  "Power Slash",
+  "Flying Slash",
+  "Crimson Slash",
+  "Shadow Transformation"
+ ],
+ "Vindicta": [
+  "Wallflower's Revenge",
+  "Hornet",
+  "Stake",
+  "Flight",
+  "Crow Familiar",
+  "Assassinate",
+  "Vin",
+  "Sniper"
+ ],
+ "Active Reload": [],
+ "Heroes": [
+  "Characters",
+  "Hero",
+  "Roster",
+  "Heros",
+  "Deadlock characters",
+  "Character",
+  "Deadlock heroes",
+  "Deadlock roster"
+ ],
+ "Items": [
+  "Components",
+  "Active Items",
+  "Active",
+  "Component",
+  "Investment",
+  "Item",
+  "Enhanced",
+  "Invest",
+  "Investments",
+  "4.8k",
+  "Deadlock items",
+  "Item slots",
+  "Spikes"
+ ],
+ "Alchemical Fire": [],
+ "Holliday": [
+  "Doc's Orders",
+  "Holiday",
+  "Astro",
+  "Powder Keg",
+  "Crackshot",
+  "Spirit Lasso"
+ ],
+ "Calico": [
+  "Sweetest Lie",
+  "Nano",
+  "Ava",
+  "Gloom Bombs",
+  "Leaping Slash",
+  "Return to Shadows"
+ ],
+ "Mirage": [
+  "Promises Kept",
+  "Fire Scarabs",
+  "Dust Devil",
+  "Djinn's Mark",
+  "Traveler",
+  "Sandeep"
+ ],
+ "Vyper": [
+  "Viper",
+  "The Rattler",
+  "Screwjab Dagger",
+  "Lethal Venom",
+  "Slither",
+  "Petrifying Bola"
+ ],
+ "Arcane Surge": [],
+ "Sinclair": [
+  "THE MAGNIFICENT SINCLAIR",
+  "Henry",
+  "Savannah",
+  "Magician",
+  "The Magnificent Sinclair",
+  "Magic Wand",
+  "Vexing Bolt",
+  "Spectral Assistant",
+  "Rabbit Hex",
+  "Audience Participation",
+  "The Prestige",
+  "The Sinclairs",
+  "Sinclairs",
+  "Sinclar",
+  "Hexed",
+  "Rabbit"
+ ],
+ "Paige": [
+  "Bookworm",
+  "Bookwyrm",
+  "Plot Armor",
+  "Captivating Read",
+  "Rallying Charge"
+ ],
+ "The Doorman": [
+  "Doorman",
+  "Call Bell",
+  "Doorway",
+  "Luggage Cart",
+  "Hotel Guest",
+  "Service With A Smile",
+  "Door"
+ ],
+ "Mina": [
+  "Vampirebat",
+  "VampireBat",
+  "Mina ha",
+  "Rake",
+  "Sanguine Retreat",
+  "Love Bites",
+  "Nox Nostra"
+ ],
+ "Drifter": [
+  "Murderhobo",
+  "Murder hobo",
+  "Mobo",
+  "Isolated",
+  "Rend",
+  "Stalker's Mark",
+  "Bloodscent",
+  "Eternal Night",
+  "The drifter",
+  "Dwifter",
+  "Matt mercer"
+ ],
+ "Victor": [
+  "Frank",
+  "Viktor",
+  "Patchwork",
+  "Corpse boy",
+  "Pain Battery",
+  "Jumpstart",
+  "Aura of Suffering",
+  "Shocking Reanimation"
+ ],
+ "Venator": [
+  "Priest",
+  "Quinn",
+  "Rourke",
+  "Cain",
+  "Consecrating Grenade",
+  "Gutshot",
+  "Hex-Lined Snap Trap",
+  "Ira Domini",
+  "Father",
+  "Padre",
+  "51:20"
+ ],
+ "Billy": [
+  "Punkgoat",
+  "William",
+  "Bashdown",
+  "Rising Ram",
+  "Blasted",
+  "Chain Gang",
+  "Biquette"
+ ],
+ "Heroes by release": [],
+ "Rem": [
+  "Familiar",
+  "Pillow Toss",
+  "Tag Along",
+  "Lil Helpers",
+  "Naptime"
+ ],
+ "Celeste": [
+  "Pepper",
+  "Celesteseses",
+  "Light Eater",
+  "Dazzling Trick",
+  "Radiant Daggers",
+  "Shining Wonder",
+  "Unicorn",
+  "Celest"
+ ],
+ "Silver": [
+  "Silver (Transformed)",
+  "Werewolf",
+  "Go For The Throat",
+  "Slam Fire",
+  "Boot Kick",
+  "Entangling Bola",
+  "Lycan Curse",
+  "Mauling Leap",
+  "Tail Whack",
+  "Sliver",
+  "Lilah"
+ ],
+ "Apollo": [
+  "Fencer",
+  "Riposte",
+  "Disengaging Sigil",
+  "Flawless Advance",
+  "Itani Lo Sahn",
+  "Apolo"
+ ],
+ "Graves": [
+  "Necromancer",
+  "Darcy",
+  "Necro",
+  "Jar of Dead",
+  "Grasping Hands",
+  "Essence Theft",
+  "Borrowed Decree",
+  "Ghoul",
+  "Grave"
+ ],
+ "Baba": [
+  "Yaga",
+  "Baba Yaga"
+ ],
+ "Solomon": [
+  "Chessmaster"
+ ],
+ "Deadman Danny": [
+  "Deadpack",
+  "Deadman",
+  "Danny",
+  "Airheart",
+  "Daniel"
+ ],
+ "Nurse Harrow": [
+  "Nurse",
+  "Harrow"
+ ],
+ "Rat King": [
+  "Rat king",
+  "Louis",
+  "The giant rat that makes all of the rules",
+  "Banner",
+  "Enormous rat in the NY Subway",
+  "Ratking",
+  "The rat king",
+  "The Rat King",
+  "Scrap Grenade",
+  "Rat Swarm",
+  "Royal Pestments",
+  "Rule, Ratannia!",
+  "Rule Ratannia!"
+ ],
+ "Violet": [
+  "Artist"
+ ],
+ "Extended Magazine": [
+  "Basic Magazine"
+ ],
+ "Close Quarters": [],
+ "Berserker": [],
+ "Enchanter's Emblem": [
+  "Enchanter's Barrier",
+  "Enchanters"
+ ],
+ "Enduring Speed": [],
+ "Extra Health": [],
+ "Extra Regen": [],
+ "Extra Charge": [],
+ "Extra Spirit": [],
+ "Fleetfoot": [],
+ "Echo Shard": [],
+ "Bullet Resist Shredder": [
+  "Brs"
+ ],
+ "Duration Extender": [],
+ "Compress Cooldown": [
+  "Improved Cooldown",
+  "Compress cooldown"
+ ],
+ "Burst Fire": [],
+ "Escalating Resilience": [],
+ "Cold Front": [
+  "Shiva",
+  "Shiva's Guard"
+ ],
+ "Decay": [],
+ "Bullet Lifesteal (item)": [],
+ "Extra Stamina": [],
+ "Fortitude": [],
+ "Battle Vest": [
+  "Combat Barrier"
+ ],
+ "Cursed Relic": [
+  "Curse"
+ ],
+ "Debuff Reducer": [],
+ "Escalating Exposure": [
+  "Escalating"
+ ],
+ "Diviner's Kevlar": [
+  "Kevlar",
+  "Diviner's",
+  "Diviners kevlar",
+  "Diviners",
+  "Diviner"
+ ],
+ "Boundless Spirit": [
+  "Boundless"
+ ],
+ "Ethereal Shift": [
+  "Shifting Shroud",
+  "Eul's",
+  "Eul's Scepter of Divinity"
+ ],
+ "Crippling Headshot": [
+  "Crippling"
+ ],
+ "Divine Barrier": [
+  "Divine"
+ ],
+ "Colossus": [
+  "Collosus"
+ ],
+ "Dispel Magic": [
+  "Debuff Remover",
+  "Dispel",
+  "Dispell",
+  "Tech purge"
+ ],
+ "Bullet Resilience": [
+  "Improved Bullet Armor"
+ ],
+ "Cheat Death": [
+  "Cheat"
+ ],
+ "Counterspell": [
+  "Counter spell"
+ ],
+ "Blood Tribute": [
+  "Armlet of Mordiggian"
+ ],
+ "Cultist Sacrifice": [
+  "Cultlist Sacrifice",
+  "Cultist",
+  "Midas",
+  "Hand of Midas"
+ ],
+ "Express Shot": [],
+ "Armor Piercer": [
+  "Armour Piercing Rounds",
+  "APR",
+  "Armor Piercing Rounds"
+ ],
+ "Capacitor": [],
+ "Crushing Fists": [],
+ "Disarming Hex": [],
+ "Arctic Blast": [],
+ "Focus Lens": [
+  "Orchid Malevolence",
+  "Orchid"
+ ],
+ "Diviner's Kevlar/zh-hans": [],
+ "Ballistic Enchantment": [
+  "Ballistic"
+ ],
+ "Celestial Blessing": [],
+ "Cloak of Opportunity": [],
+ "Electric Slippers": [],
+ "Eternal Gift": [],
+ "Headshot Booster": [],
+ "High-Velocity Rounds": [
+  "High-Velocity Mag",
+  "Hvr"
+ ],
+ "Melee Lifesteal": [],
+ "Hollow Point": [
+  "Hollow Point Ward"
+ ],
+ "Kinetic Dash": [],
+ "Monster Rounds": [
+  "Monster"
+ ],
+ "Healing Nova": [
+  "Health Nova",
+  "Mekansm"
+ ],
+ "Long Range": [],
+ "Melee Charge": [],
+ "Mystic Shot": [],
+ "Mystic Burst": [],
+ "Mystic Expansion": [
+  "Mystic Reach",
+  "Expansion"
+ ],
+ "Infuser": [],
+ "Healing Rite": [
+  "Healing Salve",
+  "Salve"
+ ],
+ "Mystic Vulnerability": [],
+ "Hunter's Aura": [
+  "Hunters aura",
+  "Drum of Endurance"
+ ],
+ "Intensifying Magazine": [],
+ "Leech": [
+  "Leach"
+ ],
+ "Magic Carpet": [
+  "Carpet"
+ ],
+ "Heroic Aura": [
+  "Heroic"
+ ],
+ "Mystic Reverb": [
+  "Reverb"
+ ],
+ "Greater Expansion": [
+  "Improved Reach"
+ ],
+ "Improved Spirit": [],
+ "Knockdown": [
+  "Anvil"
+ ],
+ "Mystic Slow": [],
+ "Glass Cannon": [
+  "Glass canon",
+  "Glass"
+ ],
+ "Lucky Shot": [
+  "Daedalus"
+ ],
+ "Frenzy": [],
+ "Healbane": [],
+ "Healing Booster": [],
+ "Inhibitor": [],
+ "Lifestrike": [],
+ "Majestic Leap": [],
+ "Metal Skin": [],
+ "Headhunter": [],
+ "Lightning Scroll": [],
+ "Guardian Ward": [
+  "Solar Crest"
+ ],
+ "Fury Trance": [
+  "Mask of Madness",
+  "Fury"
+ ],
+ "Healing Tempo": [
+  "Tempo"
+ ],
+ "Juggernaut": [],
+ "Mystic Regeneration": [
+  "Mystic Regen"
+ ],
+ "Mercurial Magnum": [
+  "Magnum",
+  "Mercurial"
+ ],
+ "Haunting Shot": [],
+ "Infinite Rounds": [
+  "Infinite"
+ ],
+ "Frostbite Charm": [],
+ "Mystic Conduit": [],
+ "Mystical Piano": [
+  "Piano"
+ ],
+ "Golden Goose Egg": [
+  "Egg",
+  "Golden egg",
+  "Goose egg",
+  "GGE"
+ ],
+ "Indomitable": [
+  "Indom",
+  "Indominable"
+ ],
+ "Grit": [],
+ "Silencer": [],
+ "Rapid Rounds": [],
+ "Restorative Shot": [
+  "Medic Bullets"
+ ],
+ "Sharpshooter": [],
+ "Opening Rounds": [
+  "Pristine Emblem"
+ ],
+ "Slowing Bullets": [],
+ "Spirit Shredder": [
+  "Soul Shredder Bullets",
+  "Spirit Shredder Bullets"
+ ],
+ "Spirit Strike": [],
+ "Sprint Boots": [],
+ "Quicksilver Reload": [
+  "Qsr",
+  "Quicksilver"
+ ],
+ "Point Blank": [],
+ "Slowing Hex": [],
+ "Rusted Barrel": [
+  "Withering Whip"
+ ],
+ "Refresher": [
+  "Refresher Orb"
+ ],
+ "Restorative Locket": [
+  "Locket",
+  "Magic Stick",
+  "Holy Locket"
+ ],
+ "Spirit Lifesteal (item)": [],
+ "Silence Wave": [
+  "Silence Glyph"
+ ],
+ "Rapid Recharge": [
+  "Rapid recharge"
+ ],
+ "Shadow Weave": [
+  "Shadow Blade"
+ ],
+ "Ricochet": [],
+ "Siphon Bullets": [
+  "Siphon"
+ ],
+ "Spiritual Overflow": [
+  "Overflow",
+  "Spiritual",
+  "Spirit overflow"
+ ],
+ "Phantom Strike": [],
+ "Reactive Barrier": [],
+ "Return Fire": [],
+ "Spirit Resilience": [
+  "Improved Spirit Armor"
+ ],
+ "Stamina Mastery": [
+  "Superior Stamina"
+ ],
+ "Rescue Beam": [
+  "Rescue beam"
+ ],
+ "Spirit Rend": [
+  "Spellslinger Headshots"
+ ],
+ "Spirit Snatch": [
+  "Snatch"
+ ],
+ "Spirit Burn": [],
+ "Stalker": [
+  "Backstabber"
+ ],
+ "Split Shot": [
+  "Multishot",
+  "Splitshot",
+  "Split"
+ ],
+ "Spellslinger": [
+  "Enchanted Holsters"
+ ],
+ "Rebuttal": [],
+ "Plated Armor": [
+  "Plated Armour",
+  "Plated"
+ ],
+ "Spellbreaker": [
+  "Spell breaker"
+ ],
+ "Spirit Sap": [],
+ "Scourge": [],
+ "Spirit Shielding": [
+  "Spirit Bubble"
+ ],
+ "Radiant Regeneration": [
+  "Radiant",
+  "Radiant regen"
+ ],
+ "Snowball": [],
+ "Runed Gauntlets": [],
+ "Recharging Rush": [],
+ "Nullification Burst": [],
+ "Shadow Strike": [],
+ "Seraphim Wings": [
+  "Wings"
+ ],
+ "Omnicharge Signet": [
+  "Omnicharge"
+ ],
+ "Prism Blast": [],
+ "Shrink Ray": [],
+ "Tankbuster": [
+  "Improved Burst",
+  "Tank buster"
+ ],
+ "Titanic Magazine": [
+  "Titanic"
+ ],
+ "Toxic Bullets": [
+  "Toxic"
+ ],
+ "Swift Striker": [],
+ "Suppressor": [
+  "Supressor",
+  "Suppress"
+ ],
+ "Tesla Bullets": [
+  "Tesla"
+ ],
+ "Warp Stone": [
+  "Blink Dagger",
+  "Flash",
+  "Warpstone"
+ ],
+ "Torment Pulse": [],
+ "Surge of Power": [],
+ "Superior Duration": [],
+ "Superior Cooldown": [],
+ "Unstoppable": [
+  "BKB",
+  "Bkb",
+  "Black King Bar",
+  "Unstop"
+ ],
+ "Vampiric Burst": [],
+ "Veil Walker": [
+  "Veilwalker"
+ ],
+ "Weakening Headshot": [],
+ "Weighted Shots": [
+  "Address me",
+  "Weighted"
+ ],
+ "Trophy Collector": [
+  "Trophy",
+  "Trophy hunter"
+ ],
+ "Witchmail": [],
+ "Vortex Web": [
+  "Vortex"
+ ],
+ "Weapon Shielding": [
+  "Emergency Shielding"
+ ],
+ "Transcendent Cooldown": [],
+ "Unstable Concoction": []
+}

@@ -1,0 +1,14 @@
+{
+ "fetchedAt": "2026-11-25T01:27:09.050Z",
+ "source": "https://deadlock.wiki",
+ "license": "CC BY-NC-SA 4.0",
+ "revisions": {
+  "Data:Lang en.json": 218916,
+  "Data:AbilityCards.json": 218831,
+  "Data:HeroData.json": 218833,
+  "Data:ItemData.json": 245003,
+  "Data:ItemCards.json": 230367,
+  "Data:LatestUpdate.json": 244949,
+  "Data:ItemPopularity.json": 245004
+ }
+}

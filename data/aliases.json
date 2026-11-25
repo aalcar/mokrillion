@@ -1,0 +1,22 @@
+{
+  "hero_forge": { "add": ["McG"] },
+  "hero_krill": { "add": ["MnK"], "remove": ["Mo &"] },
+  "upgrade_ability_refresher": { "remove": ["Refresher Orb"] },
+  "upgrade_blood_tribute": { "remove": ["Armlet of Mordiggian"] },
+  "upgrade_bullet_armor_reduction_aura": { "remove": ["Drum of Endurance"] },
+  "upgrade_cloaking_device_active": { "remove": ["Shadow Blade"] },
+  "upgrade_cold_front": { "remove": ["Shiva", "Shiva's Guard"] },
+  "upgrade_critshot": { "remove": ["Daedalus"] },
+  "upgrade_focus_lens": { "remove": ["Orchid", "Orchid Malevolence"] },
+  "upgrade_fury_trance": { "remove": ["Mask of Madness"] },
+  "upgrade_guardian_ward": { "remove": ["Solar Crest"] },
+  "upgrade_health_nova": { "remove": ["Mekansm"] },
+  "upgrade_health_stimpak": { "remove": ["Healing Salve", "Salve"] },
+  "upgrade_unstoppable": { "remove": ["BKB", "Black King Bar"] },
+  "upgrade_warp_stone": { "remove": ["Blink Dagger", "Flash"] },
+  "upgrade_weighted_shots": { "remove": ["Address me"] },
+  "upgrade_target_stun": { "remove": ["Anvil"] },
+  "upgrade_non_player_bonus_sacrifice": { "remove": ["Hand of Midas", "Midas"] },
+  "upgrade_restorative_locket": { "remove": ["Holy Locket", "Magic Stick"] },
+  "upgrade_self_bubble": { "remove": ["Eul's", "Eul's Scepter of Divinity"] }
+}
