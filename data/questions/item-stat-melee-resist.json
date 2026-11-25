@@ -1,0 +1,242 @@
+{
+ "question": {
+  "signature": "item-stat:Melee Resist",
+  "category": "item-stat-bonus",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_close_quarter_combat",
+   "upgrade_close_range",
+   "upgrade_juggernaut",
+   "upgrade_melee_rebuttal",
+   "upgrade_tech_damage_pulse"
+  ],
+  "prompt": "Name an item that gives a built-in Melee Resist bonus (not counting conditional, stacking or active effects).",
+  "validation": {
+   "method": "deterministic",
+   "criterion": "innate unconditional prop labelled \"Melee Resist\" with value > 0"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-3a226cba",
+ "scoringVersion": "2",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T02:14:03.441Z",
+ "answers": [
+  {
+   "entityId": "upgrade_juggernaut",
+   "name": "Juggernaut",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_close_range",
+   "name": "Close Quarters",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_melee_rebuttal",
+   "name": "Rebuttal",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_close_quarter_combat",
+   "name": "Point Blank",
+   "rank": 4,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_tech_damage_pulse",
+   "name": "Torment Pulse",
+   "rank": 5,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "upgrade_close_quarter_combat",
+    "name": "Point Blank",
+    "passPositions": [
+     1,
+     3,
+     2,
+     3,
+     3
+    ],
+    "borda": 0.6,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "Close-range weapon damage and slow item",
+    "popularity": 3.12,
+    "popularityObscurity": 0.5,
+    "spellingCost": 10,
+    "spellingObscurity": 0.375,
+    "key": 0.5675
+   },
+   {
+    "id": "upgrade_close_range",
+    "name": "Close Quarters",
+    "passPositions": [
+     0,
+     2,
+     3,
+     2,
+     2
+    ],
+    "borda": 0.45,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Cheap close-range weapon damage item",
+    "popularity": 5.02,
+    "popularityObscurity": 0,
+    "spellingCost": 13,
+    "spellingObscurity": 1,
+    "key": 0.4600000000000001
+   },
+   {
+    "id": "upgrade_juggernaut",
+    "name": "Juggernaut",
+    "passPositions": [
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "borda": 0.15,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Big tier 4 vitality item with health, fire rate slow and bullet resist",
+    "popularity": 2.15,
+    "popularityObscurity": 0.75,
+    "spellingCost": 10,
+    "spellingObscurity": 0.375,
+    "key": 0.2325
+   },
+   {
+    "id": "upgrade_melee_rebuttal",
+    "name": "Rebuttal",
+    "passPositions": [
+     3,
+     0,
+     1,
+     1,
+     1
+    ],
+    "borda": 0.3,
+    "fit": {
+     "expected": 1,
+     "neutral": 3,
+     "surprising": 1
+    },
+    "perception": "Parry item that heals and reflects damage after a parry",
+    "popularity": 0.04,
+    "popularityObscurity": 1,
+    "spellingCost": 8,
+    "spellingObscurity": 0,
+    "key": 0.33999999999999997
+   },
+   {
+    "id": "upgrade_tech_damage_pulse",
+    "name": "Torment Pulse",
+    "passPositions": [
+     4,
+     4,
+     4,
+     4,
+     4
+    ],
+    "borda": 1,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Spirit AoE pulse damage item that hurts you too",
+    "popularity": 4.09,
+    "popularityObscurity": 0.25,
+    "spellingCost": 12,
+    "spellingObscurity": 0.75,
+    "key": 0.9
+   }
+  ],
+  "passAgreement": 0.52,
+  "orderBeforeRefinement": [
+   "upgrade_juggernaut",
+   "upgrade_melee_rebuttal",
+   "upgrade_close_range",
+   "upgrade_close_quarter_combat",
+   "upgrade_tech_damage_pulse"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_melee_rebuttal",
+    "b": "upgrade_close_range",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_melee_rebuttal"
+   },
+   {
+    "a": "upgrade_melee_rebuttal",
+    "b": "upgrade_close_quarter_combat",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_melee_rebuttal",
+    "b": "upgrade_tech_damage_pulse",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_tech_damage_pulse"
+   },
+   {
+    "a": "upgrade_close_range",
+    "b": "upgrade_close_quarter_combat",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_close_quarter_combat"
+   },
+   {
+    "a": "upgrade_close_range",
+    "b": "upgrade_tech_damage_pulse",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_tech_damage_pulse"
+   },
+   {
+    "a": "upgrade_close_quarter_combat",
+    "b": "upgrade_tech_damage_pulse",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_tech_damage_pulse"
+   },
+   {
+    "a": "upgrade_tech_damage_pulse",
+    "b": "upgrade_close_quarter_combat",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Torment Pulse",
+    "compareWith": "Point Blank",
+    "claim": "should_be_more_obvious",
+    "reason": "Torment Pulse is a very common, widely bought spirit item, so players know it well. Point Blank is a much less commonly built item whose resist bonus is not its defining trait. Neither is a famous melee resist item, but Point Blank is likelier to be the more forgotten answer, so the 100-point slot looks mis-ordered.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Rebuttal",
+    "compareWith": "Close Quarters",
+    "claim": "should_be_more_obscure",
+    "reason": "Rebuttal is mostly known as an active item that reflects melee damage, and its built-in resist is a side detail. Players asked about melee resist would think of it less readily than Close Quarters, which is more directly tied to melee defense, so Rebuttal should rank at least as obscure as Close Quarters.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}

@@ -93,20 +93,37 @@ try {
     writeFileSync(questionFile(q.signature), JSON.stringify(scored, null, 1));
     printScored(scored);
   } else if (cmd === "eval") {
-    // Compare stored scores with human "this should be the rarest" judgments.
-    const { rarest } = JSON.parse(readFileSync(join(DATA, "eval/judgments.json"), "utf8")) as
-      { rarest: { signature: string; entityId: string; note: string }[] };
-    let hits = 0, scored = 0;
-    for (const j of rarest) {
-      const file = questionFile(j.signature);
-      if (!existsSync(file)) { console.log(`not scored: ${j.signature}`); continue; }
-      const s: ScoredQuestion = JSON.parse(readFileSync(file, "utf8"));
-      const a = s.answers.find((x) => x.entityId === j.entityId)!;
-      scored++;
-      if (a.score === 100) hits++;
-      console.log(`${a.score === 100 ? "HIT " : "MISS"}  ${j.signature}: ${a.name} is rank ${a.rank}/${s.answers.length} (${a.score} pts, scoring v${s.scoringVersion})`);
+    // Compare stored scores with human judgments (data/eval/judgments.json).
+    type J = { signature: string; note: string };
+    const judg = JSON.parse(readFileSync(join(DATA, "eval/judgments.json"), "utf8")) as {
+      rarest?: (J & { entityId: string })[];
+      mostCommon?: (J & { entityId: string })[];
+      pairs?: (J & { rarer: string; commoner: string })[];
+    };
+    const load = (sig: string): ScoredQuestion | null =>
+      existsSync(questionFile(sig)) ? JSON.parse(readFileSync(questionFile(sig), "utf8")) : null;
+    const tally = { hit: 0, total: 0 };
+    const report = (ok: boolean, text: string) => {
+      tally.total++;
+      if (ok) tally.hit++;
+      console.log(`${ok ? "HIT " : "MISS"}  ${text}`);
+    };
+    for (const [kind, list] of [["rarest", judg.rarest ?? []], ["mostCommon", judg.mostCommon ?? []]] as const) {
+      for (const j of list) {
+        const s = load(j.signature);
+        if (!s) { console.log(`not scored: ${j.signature}`); continue; }
+        const a = s.answers.find((x) => x.entityId === j.entityId)!;
+        const want = kind === "rarest" ? 100 : 10;
+        report(a.score === want, `[${kind}] ${s.question.prompt} ${a.name}: rank ${a.rank}/${s.answers.length}, ${a.score} pts (v${s.scoringVersion})`);
+      }
     }
-    console.log(`\n${hits}/${scored} human-picked rarest answers got 100 points`);
+    for (const j of judg.pairs ?? []) {
+      const s = load(j.signature);
+      if (!s) { console.log(`not scored: ${j.signature}`); continue; }
+      const r = s.answers.find((x) => x.entityId === j.rarer)!, c = s.answers.find((x) => x.entityId === j.commoner)!;
+      report(r.rank > c.rank, `[pair] ${r.name} (rank ${r.rank}, ${r.score}) rarer than ${c.name} (rank ${c.rank}, ${c.score}) (v${s.scoringVersion})`);
+    }
+    console.log(`\n${tally.hit}/${tally.total} human judgments matched`);
   } else if (cmd === "show") {
     const file = questionFile(rest.join(" "));
     if (!existsSync(file)) throw new Error(`not scored yet: ${rest.join(" ")}`);

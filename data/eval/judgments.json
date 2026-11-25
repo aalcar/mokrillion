@@ -10,6 +10,32 @@
       "signature": "hero-category:Heroes with spreadshot weapons",
       "entityId": "hero_ratking",
       "note": "His gun is automatic and most people assume it's an AR."
+    },
+    {
+      "signature": "item-cost:1600",
+      "entityId": "upgrade_restorative_locket",
+      "note": "A green (health-related) item should be rarest; Restorative Locket."
+    }
+  ],
+  "mostCommon": [
+    {
+      "signature": "semantic:hero:at-least-one-upgrade-line-t1-t2-or-t3-of-one-of-the-hero-s-abilities-explicitly-",
+      "entityId": "hero_chrono",
+      "note": "Paradox should be the most obvious answer."
+    }
+  ],
+  "pairs": [
+    {
+      "signature": "semantic:hero:at-least-one-upgrade-line-t1-t2-or-t3-of-one-of-the-hero-s-abilities-explicitly-",
+      "rarer": "hero_wraith",
+      "commoner": "hero_warden",
+      "note": "Swap Warden and Wraith; Wraith down to 60."
+    },
+    {
+      "signature": "item-cost:1600",
+      "rarer": "upgrade_restorative_locket",
+      "commoner": "upgrade_melee_charge",
+      "note": "Melee Charge should be more common."
     }
   ]
 }
