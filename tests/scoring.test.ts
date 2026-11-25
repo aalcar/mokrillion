@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
+import { config } from "../src/config.ts";
 import { deterministicCandidates } from "../src/generation/templates.ts";
 import { validateSemantic } from "../src/generation/semantic.ts";
 import type { Ask, AskOptions } from "../src/llm.ts";
@@ -134,7 +135,7 @@ test("semantic validation needs evidence that appears in the wiki text", async (
 });
 
 test("item summaries include built-in stats even when the description is a side effect", () => {
-  const leech = summary(kb.findByName("Leech")!);
+  const leech = summary(kb, kb.findByName("Leech")!);
   assert.match(leech, /Stats: .*Spirit Lifesteal 30.*Bullet Lifesteal 30/);
   assert.ok(leech.startsWith("Leech - Tier 4"));
 });
@@ -143,11 +144,11 @@ test("review challenges backed by gameplay data are applied without a comparison
   const q = deterministicCandidates(kb).find((x) => x.signature === "item-cost:6400")!;
   let picked: [string, string] | undefined;
   const ask = fakeAsk(undefined, (prompt) => {
-    // Table lines: "1. Name - 10 pts". Pick an earlier (more obvious) item that is bought less than a later one.
+    // Table lines: "1. Name - 10 pts". Pick an earlier (more obvious) item bought clearly less than a later one.
     const names = [...prompt.matchAll(/^\d+\. (.+) - \d+ pts$/gm)].map((m) => m[1]);
     const pop = (n: string) => kb.findByName(n)!.attributes.popularity ?? 0;
     for (let i = 0; i < names.length && !picked; i++) {
-      for (let j = i + 1; j < names.length; j++) if (pop(names[i]) < pop(names[j])) { picked = [names[i], names[j]]; break; }
+      for (let j = i + 1; j < names.length; j++) if (pop(names[i]) * config.reviewDataMargin <= pop(names[j])) { picked = [names[i], names[j]]; break; }
     }
     return [{ name: picked![0], compareWith: picked![1], claim: "should_be_more_obscure", reason: "test" }];
   });
@@ -156,4 +157,8 @@ test("review challenges backed by gameplay data are applied without a comparison
   const rank = (n: string) => s.answers.find((a) => a.name === n)!.rank;
   assert.ok(rank(picked![0]) > rank(picked![1]), "challenged answer moved below the one it was compared with");
   assert.equal(ask.calls.filter((c) => c.startsWith("pairwise:") ).length, 2, "only the regular pairwise round, no review comparison");
+});
+
+test("item summaries name upgrade paths", () => {
+  assert.match(summary(kb, kb.findByName("Tesla Bullets")!), /Upgrades into: Capacitor\./);
 });

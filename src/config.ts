@@ -24,9 +24,14 @@ export const config = {
   /** How many of the rarest candidates get round-robin pairwise comparisons. */
   rareContenders: 4,
   maxReviewChallenges: 5,
+  /**
+   * A reviewer challenge is applied on gameplay data alone only when the answer it calls rarer is played/bought
+   * at most 1/margin as often as the other; closer calls go to a model comparison.
+   */
+  reviewDataMargin: 1.5,
   /** Share of candidates per tier, most obvious first. 85 takes the rest, 100 is exactly one. */
   tierShares: { 10: 0.08, 30: 0.17, 60: 0.3 },
 
   /** Bump when the scoring algorithm or its parameters change. */
-  scoringVersion: "6",
+  scoringVersion: "7",
 };

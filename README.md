@@ -58,7 +58,7 @@ Target: how readily an experienced player thinks of an answer **for this questio
 3. **Targeted pairwise**: all pairs among the 4 rarest candidates plus each tier boundary, asked in both
    orientations; only judgments that agree both ways change the order.
 4. **Adversarial review**: a reviewer may challenge up to 5 placements (swap X and Y). If the gameplay data
-   already agrees (the one it calls rarer is played/bought less), the swap is applied; otherwise it becomes a
+   clearly agrees (the one it calls rarer is played/bought at most 2/3 as often), the swap is applied; otherwise it becomes a
    two-orientation comparison and is applied only if that holds. The reviewer never sets points.
 5. **Tiers** (`src/scoring/tiers.ts`): ~8% → 10, ~17% → 30, ~30% → 60, rest → 85, last → 100.
 
