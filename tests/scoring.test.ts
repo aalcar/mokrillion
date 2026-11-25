@@ -41,15 +41,16 @@ test("spelling cost uses cheapest non-abbreviation spelling", () => {
   assert.ok(spellingCost(kb.findByName("Diviner's Kevlar")!) <= "Kevlar".length);
 });
 
-test("aggregate: llm order dominates, popularity and spelling only nudge", () => {
+test("aggregate: each signal drives the key when it has all the weight", () => {
   const ids = kb.items.slice(0, 6).map((e) => e.id);
   const ents = ids.map((id) => kb.get(id)!);
   const pass = { ranking: ids, perceptions: new Map() };
-  const sig = aggregate(ents, [pass, pass, pass]);
-  sig.forEach((s, i) => assert.ok(Math.abs(s.borda - i / 5) < 1e-9));
-  const order = [...sig].sort((a, b) => a.key - b.key).map((s) => s.id);
-  assert.equal(order[0], ids[0]);
-  assert.equal(order.at(-1), ids.at(-1));
+  const sortBy = (w: { llm: number; popularity: number; spelling: number }) =>
+    [...aggregate(ents, [pass, pass, pass], w)].sort((a, b) => a.key - b.key || a.id.localeCompare(b.id)).map((s) => s.id);
+  aggregate(ents, [pass], { llm: 1, popularity: 0, spelling: 0 }).forEach((s, i) => assert.ok(Math.abs(s.borda - i / 5) < 1e-9));
+  assert.deepEqual(sortBy({ llm: 1, popularity: 0, spelling: 0 }), ids);
+  const byPopularity = [...ents].sort((a, b) => (b.attributes.popularity ?? 0) - (a.attributes.popularity ?? 0)).map((e) => e.id);
+  assert.equal(sortBy({ llm: 0, popularity: 1, spelling: 0 })[0], byPopularity[0]); // most bought = most obvious
 });
 
 test("refineOrder: boundary swaps only when inverted; contenders sorted by consistent wins", () => {
