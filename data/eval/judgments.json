@@ -72,6 +72,18 @@
       "rarer": "upgrade_aprounds",
       "commoner": "upgrade_crushing_fists",
       "note": "Agree with reviewer: Crushing Fists has a distinctive name and melee effect, easy to recall; not rarer than Armor Piercer."
+    },
+    {
+      "signature": "item-active:Weapon",
+      "rarer": "upgrade_blood_tribute",
+      "commoner": "upgrade_dps_aura",
+      "note": "Agree with reviewer: Heroic Aura is well known; Blood Tribute is more niche."
+    },
+    {
+      "signature": "item-active:Weapon",
+      "rarer": "upgrade_blood_tribute",
+      "commoner": "upgrade_capacitor",
+      "note": "Blood Tribute is definitely more niche than Capacitor; the rejected challenge was a good call."
     }
   ]
 }
