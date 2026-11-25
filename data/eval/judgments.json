@@ -180,6 +180,114 @@
       "rarer": "hero_orion",
       "commoner": "hero_doorman",
       "note": "Quiz round 1: Grey Talon more niche than The Doorman."
+    },
+    {
+      "signature": "item-cost:3200",
+      "rarer": "upgrade_superior_stamina",
+      "commoner": "upgrade_metal_skin",
+      "note": "Quiz round 2 (held out for v8): Stamina Mastery more niche than Metal Skin."
+    },
+    {
+      "signature": "item-cost:800",
+      "rarer": "upgrade_grit",
+      "commoner": "upgrade_headshot_booster",
+      "note": "Quiz round 2 (held out for v8): Grit more niche than Headshot Booster."
+    },
+    {
+      "signature": "item-slot-tier:Weapon:4",
+      "rarer": "upgrade_tech_overflow",
+      "commoner": "upgrade_glass_cannon",
+      "note": "Quiz round 2 (held out for v8): Spiritual Overflow more niche than Glass Cannon."
+    },
+    {
+      "signature": "item-slot-tier:Spirit:3",
+      "rarer": "upgrade_targeted_silence",
+      "commoner": "upgrade_spirit_snatch",
+      "note": "Quiz round 2 (held out for v8): Silence Wave more niche than Spirit Snatch."
+    },
+    {
+      "signature": "item-active:Vitality",
+      "rarer": "upgrade_colossus",
+      "commoner": "upgrade_infuser",
+      "note": "Quiz round 2 (held out for v8): Colossus more niche than Infuser."
+    },
+    {
+      "signature": "item-component:Vitality",
+      "rarer": "upgrade_cardio_calibrator",
+      "commoner": "upgrade_vampire",
+      "note": "Quiz round 2 (held out for v8): Enduring Speed more niche than Bullet Lifesteal."
+    },
+    {
+      "signature": "name:hero:contains:t",
+      "rarer": "hero_drifter",
+      "commoner": "hero_orion",
+      "note": "Quiz round 2 (held out for v8): Drifter more niche than Grey Talon."
+    },
+    {
+      "signature": "name:hero:starts:v",
+      "rarer": "hero_priest",
+      "commoner": "hero_viscous",
+      "note": "Quiz round 2 (held out for v8): Venator more niche than Viscous."
+    },
+    {
+      "signature": "name:hero:double-letter",
+      "rarer": "hero_nurse",
+      "commoner": "hero_forge",
+      "note": "Quiz round 2 (held out for v8): Nurse Harrow more niche than McGinnis."
+    },
+    {
+      "signature": "item-stat:Weapon Damage",
+      "rarer": "upgrade_bullet_resist_shredder",
+      "commoner": "upgrade_glass_cannon",
+      "note": "Quiz round 2 (held out for v8): Bullet Resist Shredder more niche than Glass Cannon."
+    },
+    {
+      "signature": "item-stat:Bonus Health",
+      "rarer": "upgrade_boundless_spirit",
+      "commoner": "upgrade_cheat_death",
+      "note": "Quiz round 2 (held out for v8): Boundless Spirit more niche than Cheat Death."
+    },
+    {
+      "signature": "hero-stat:clipSize:high:29",
+      "rarer": "hero_necro",
+      "commoner": "hero_forge",
+      "note": "Quiz round 2 (held out for v8): Graves more niche than McGinnis."
+    },
+    {
+      "signature": "item-stat:Ability Range",
+      "rarer": "upgrade_spirit_burn",
+      "commoner": "upgrade_rescue_beam",
+      "note": "Quiz round 2 (held out for v8): Spirit Burn more niche than Rescue Beam."
+    },
+    {
+      "signature": "hero-category:Heroes with melee scaling abilities",
+      "rarer": "hero_yamato",
+      "commoner": "hero_bebop",
+      "note": "Quiz round 2 (held out for v8): Yamato more niche than Bebop."
+    },
+    {
+      "signature": "item-stat:Spirit Resist",
+      "rarer": "upgrade_tech_range",
+      "commoner": "upgrade_spellbreaker",
+      "note": "Quiz round 2 (held out for v8): Greater Expansion more niche than Spellbreaker."
+    },
+    {
+      "signature": "hero-category:Heroes with boon scaling abilities",
+      "rarer": "hero_forge",
+      "commoner": "hero_nurse",
+      "note": "Quiz round 2 (held out for v8): McGinnis more niche than Nurse Harrow."
+    },
+    {
+      "signature": "item-stat:Sprint Speed",
+      "rarer": "upgrade_bullet_armor_reduction_aura",
+      "commoner": "upgrade_cloaking_device_active",
+      "note": "Quiz round 2 (held out for v8): Hunter's Aura more niche than Shadow Weave."
+    },
+    {
+      "signature": "hero-category:Heroes with 2 stamina",
+      "rarer": "hero_vampirebat",
+      "commoner": "hero_forge",
+      "note": "Quiz round 2 (held out for v8): Mina more niche than McGinnis."
     }
   ]
 }
