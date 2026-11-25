@@ -1,0 +1,963 @@
+{
+ "question": {
+  "signature": "item-stat:Out of Combat Regen",
+  "category": "item-stat-bonus",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_auto_cleanse",
+   "upgrade_blood_tribute",
+   "upgrade_boundless_spirit",
+   "upgrade_cardio_calibrator",
+   "upgrade_cloaking_device_active",
+   "upgrade_cooldown_reduction",
+   "upgrade_divine_barrier",
+   "upgrade_endurance",
+   "upgrade_goose_egg",
+   "upgrade_grit",
+   "upgrade_guardian_ward",
+   "upgrade_healbuff",
+   "upgrade_healing_booster",
+   "upgrade_hollow_point_rounds",
+   "upgrade_improved_bullet_armor",
+   "upgrade_magic_shield",
+   "upgrade_non_player_bonus",
+   "upgrade_non_player_bonus_sacrifice",
+   "upgrade_regenerating_bullet_shield",
+   "upgrade_soaring_spirit",
+   "upgrade_spirit_bubble",
+   "upgrade_sprint_booster",
+   "upgrade_tech_purge",
+   "upgrade_transcendent_cooldown",
+   "upgrade_trophy_collector",
+   "upgrade_vex_barrier",
+   "upgrade_weapon_shielding"
+  ],
+  "prompt": "Name an item that gives a built-in Out of Combat Regen bonus (not counting conditional, stacking or active effects).",
+  "validation": {
+   "method": "deterministic",
+   "criterion": "innate unconditional prop labelled \"Out of Combat Regen\" with value > 0"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T03:48:59.766Z",
+ "answers": [
+  {
+   "entityId": "upgrade_endurance",
+   "name": "Extra Regen",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_sprint_booster",
+   "name": "Sprint Boots",
+   "rank": 2,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_tech_purge",
+   "name": "Spirit Resilience",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_healing_booster",
+   "name": "Healing Booster",
+   "rank": 4,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_grit",
+   "name": "Grit",
+   "rank": 5,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_regenerating_bullet_shield",
+   "name": "Battle Vest",
+   "rank": 6,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_cardio_calibrator",
+   "name": "Enduring Speed",
+   "rank": 7,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_magic_shield",
+   "name": "Enchanter's Emblem",
+   "rank": 8,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_healbuff",
+   "name": "Healing Tempo",
+   "rank": 9,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_improved_bullet_armor",
+   "name": "Bullet Resilience",
+   "rank": 10,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_spirit_bubble",
+   "name": "Spirit Shielding",
+   "rank": 11,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_cooldown_reduction",
+   "name": "Superior Cooldown",
+   "rank": 12,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_boundless_spirit",
+   "name": "Boundless Spirit",
+   "rank": 13,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_soaring_spirit",
+   "name": "Improved Spirit",
+   "rank": 14,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_vex_barrier",
+   "name": "Reactive Barrier",
+   "rank": 15,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_trophy_collector",
+   "name": "Trophy Collector",
+   "rank": 16,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_weapon_shielding",
+   "name": "Weapon Shielding",
+   "rank": 17,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_auto_cleanse",
+   "name": "Indomitable",
+   "rank": 18,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_non_player_bonus",
+   "name": "Monster Rounds",
+   "rank": 19,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_guardian_ward",
+   "name": "Guardian Ward",
+   "rank": 20,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_transcendent_cooldown",
+   "name": "Transcendent Cooldown",
+   "rank": 21,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_cloaking_device_active",
+   "name": "Shadow Weave",
+   "rank": 22,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_divine_barrier",
+   "name": "Divine Barrier",
+   "rank": 23,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_hollow_point_rounds",
+   "name": "Hollow Point",
+   "rank": 24,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_non_player_bonus_sacrifice",
+   "name": "Cultist Sacrifice",
+   "rank": 25,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_goose_egg",
+   "name": "Golden Goose Egg",
+   "rank": 26,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_blood_tribute",
+   "name": "Blood Tribute",
+   "rank": 27,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "upgrade_auto_cleanse",
+    "name": "Indomitable",
+    "passPositions": [
+     19,
+     14,
+     11,
+     10,
+     19
+    ],
+    "borda": 0.5615384615384615,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "CC cleanse",
+    "popularity": 8.14,
+    "popularityObscurity": 0.6538461538461539,
+    "spellingCost": 5,
+    "spellingObscurity": 0.09615384615384616,
+    "key": 0.5751923076923078
+   },
+   {
+    "id": "upgrade_blood_tribute",
+    "name": "Blood Tribute",
+    "passPositions": [
+     24,
+     19,
+     23,
+     17,
+     24
+    ],
+    "borda": 0.823076923076923,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "health sacrifice fire rate toggle",
+    "popularity": 0.98,
+    "popularityObscurity": 1,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6153846153846154,
+    "key": 0.8834615384615385
+   },
+   {
+    "id": "upgrade_boundless_spirit",
+    "name": "Boundless Spirit",
+    "passPositions": [
+     13,
+     24,
+     21,
+     21,
+     22
+    ],
+    "borda": 0.7769230769230769,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "big spirit power and health",
+    "popularity": 29.17,
+    "popularityObscurity": 0.11538461538461539,
+    "spellingCost": 9,
+    "spellingObscurity": 0.3076923076923077,
+    "key": 0.4888461538461539
+   },
+   {
+    "id": "upgrade_cardio_calibrator",
+    "name": "Enduring Speed",
+    "passPositions": [
+     14,
+     8,
+     8,
+     14,
+     7
+    ],
+    "borda": 0.39230769230769225,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "move speed penalty reduction",
+    "popularity": 23.4,
+    "popularityObscurity": 0.19230769230769232,
+    "spellingCost": 13,
+    "spellingObscurity": 0.6923076923076923,
+    "key": 0.3273076923076923
+   },
+   {
+    "id": "upgrade_cloaking_device_active",
+    "name": "Shadow Weave",
+    "passPositions": [
+     9,
+     16,
+     15,
+     18,
+     15
+    ],
+    "borda": 0.5615384615384615,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "stealth active",
+    "popularity": 2.8,
+    "popularityObscurity": 0.9230769230769231,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5,
+    "key": 0.7030769230769232
+   },
+   {
+    "id": "upgrade_cooldown_reduction",
+    "name": "Superior Cooldown",
+    "passPositions": [
+     22,
+     25,
+     20,
+     19,
+     13
+    ],
+    "borda": 0.7615384615384616,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "cooldown reduction",
+    "popularity": 34.12,
+    "popularityObscurity": 0.038461538461538464,
+    "spellingCost": 16,
+    "spellingObscurity": 0.9230769230769231,
+    "key": 0.48038461538461547
+   },
+   {
+    "id": "upgrade_divine_barrier",
+    "name": "Divine Barrier",
+    "passPositions": [
+     20,
+     15,
+     17,
+     15,
+     18
+    ],
+    "borda": 0.6538461538461539,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "ally cleanse barrier",
+    "popularity": 3.26,
+    "popularityObscurity": 0.8461538461538461,
+    "spellingCost": 6,
+    "spellingObscurity": 0.17307692307692307,
+    "key": 0.7067307692307694
+   },
+   {
+    "id": "upgrade_endurance",
+    "name": "Extra Regen",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "basic health regen item",
+    "popularity": 22.98,
+    "popularityObscurity": 0.23076923076923078,
+    "spellingCost": 10,
+    "spellingObscurity": 0.38461538461538464,
+    "key": 0.11153846153846154
+   },
+   {
+    "id": "upgrade_goose_egg",
+    "name": "Golden Goose Egg",
+    "passPositions": [
+     26,
+     21,
+     26,
+     26,
+     26
+    ],
+    "borda": 0.9615384615384615,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "soul income active",
+    "popularity": 1.88,
+    "popularityObscurity": 0.9615384615384616,
+    "spellingCost": 3,
+    "spellingObscurity": 0,
+    "key": 0.9134615384615385
+   },
+   {
+    "id": "upgrade_grit",
+    "name": "Grit",
+    "passPositions": [
+     7,
+     7,
+     6,
+     7,
+     11
+    ],
+    "borda": 0.29230769230769227,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "early barrier active",
+    "popularity": 21.04,
+    "popularityObscurity": 0.2692307692307692,
+    "spellingCost": 4,
+    "spellingObscurity": 0.038461538461538464,
+    "key": 0.27038461538461533
+   },
+   {
+    "id": "upgrade_guardian_ward",
+    "name": "Guardian Ward",
+    "passPositions": [
+     16,
+     13,
+     14,
+     13,
+     12
+    ],
+    "borda": 0.5230769230769231,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "ally barrier active",
+    "popularity": 4.91,
+    "popularityObscurity": 0.6923076923076923,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6153846153846154,
+    "key": 0.5953846153846154
+   },
+   {
+    "id": "upgrade_healbuff",
+    "name": "Healing Tempo",
+    "passPositions": [
+     5,
+     2,
+     7,
+     2,
+     6
+    ],
+    "borda": 0.16923076923076924,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "healing upgrade with fire rate",
+    "popularity": 3.63,
+    "popularityObscurity": 0.8076923076923077,
+    "spellingCost": 5,
+    "spellingObscurity": 0.09615384615384616,
+    "key": 0.4209615384615385
+   },
+   {
+    "id": "upgrade_healing_booster",
+    "name": "Healing Booster",
+    "passPositions": [
+     3,
+     1,
+     4,
+     1,
+     1
+    ],
+    "borda": 0.07692307692307691,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "healing amplification item",
+    "popularity": 15.14,
+    "popularityObscurity": 0.46153846153846156,
+    "spellingCost": 14,
+    "spellingObscurity": 0.75,
+    "key": 0.2644230769230769
+   },
+   {
+    "id": "upgrade_hollow_point_rounds",
+    "name": "Hollow Point",
+    "passPositions": [
+     12,
+     18,
+     16,
+     16,
+     14
+    ],
+    "borda": 0.5846153846153845,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "weapon damage and bullet resist shred",
+    "popularity": 4.51,
+    "popularityObscurity": 0.7307692307692307,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5,
+    "key": 0.6388461538461538
+   },
+   {
+    "id": "upgrade_improved_bullet_armor",
+    "name": "Bullet Resilience",
+    "passPositions": [
+     1,
+     5,
+     1,
+     5,
+     3
+    ],
+    "borda": 0.11538461538461539,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "bullet resist tank item",
+    "popularity": 3.15,
+    "popularityObscurity": 0.8846153846153846,
+    "spellingCost": 16,
+    "spellingObscurity": 0.9230769230769231,
+    "key": 0.4634615384615385
+   },
+   {
+    "id": "upgrade_magic_shield",
+    "name": "Enchanter's Emblem",
+    "passPositions": [
+     8,
+     9,
+     12,
+     8,
+     8
+    ],
+    "borda": 0.34615384615384615,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "spirit resist and cooldown bonus",
+    "popularity": 18.86,
+    "popularityObscurity": 0.38461538461538464,
+    "spellingCost": 10,
+    "spellingObscurity": 0.38461538461538464,
+    "key": 0.3634615384615385
+   },
+   {
+    "id": "upgrade_non_player_bonus",
+    "name": "Monster Rounds",
+    "passPositions": [
+     17,
+     20,
+     24,
+     24,
+     23
+    ],
+    "borda": 0.8307692307692307,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "NPC damage item",
+    "popularity": 20.5,
+    "popularityObscurity": 0.3076923076923077,
+    "spellingCost": 7,
+    "spellingObscurity": 0.25,
+    "key": 0.5925
+   },
+   {
+    "id": "upgrade_non_player_bonus_sacrifice",
+    "name": "Cultist Sacrifice",
+    "passPositions": [
+     25,
+     22,
+     25,
+     25,
+     25
+    ],
+    "borda": 0.9384615384615385,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "NPC consume buff",
+    "popularity": 9.92,
+    "popularityObscurity": 0.6153846153846154,
+    "spellingCost": 7,
+    "spellingObscurity": 0.25,
+    "key": 0.7748076923076923
+   },
+   {
+    "id": "upgrade_regenerating_bullet_shield",
+    "name": "Battle Vest",
+    "passPositions": [
+     6,
+     4,
+     3,
+     4,
+     5
+    ],
+    "borda": 0.16923076923076924,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "bullet resist with health-threshold bonus",
+    "popularity": 16.97,
+    "popularityObscurity": 0.4230769230769231,
+    "spellingCost": 10,
+    "spellingObscurity": 0.38461538461538464,
+    "key": 0.28153846153846157
+   },
+   {
+    "id": "upgrade_soaring_spirit",
+    "name": "Improved Spirit",
+    "passPositions": [
+     21,
+     23,
+     19,
+     22,
+     21
+    ],
+    "borda": 0.8153846153846154,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "mid spirit power",
+    "popularity": 44.97,
+    "popularityObscurity": 0,
+    "spellingCost": 14,
+    "spellingObscurity": 0.75,
+    "key": 0.48596153846153844
+   },
+   {
+    "id": "upgrade_spirit_bubble",
+    "name": "Spirit Shielding",
+    "passPositions": [
+     10,
+     10,
+     10,
+     12,
+     9
+    ],
+    "borda": 0.39230769230769236,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "spirit damage barrier",
+    "popularity": 10.92,
+    "popularityObscurity": 0.5769230769230769,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6153846153846154,
+    "key": 0.4773076923076923
+   },
+   {
+    "id": "upgrade_sprint_booster",
+    "name": "Sprint Boots",
+    "passPositions": [
+     4,
+     3,
+     5,
+     3,
+     2
+    ],
+    "borda": 0.1307692307692308,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "early move speed boots",
+    "popularity": 31.64,
+    "popularityObscurity": 0.07692307692307693,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5,
+    "key": 0.12769230769230772
+   },
+   {
+    "id": "upgrade_tech_purge",
+    "name": "Spirit Resilience",
+    "passPositions": [
+     2,
+     6,
+     2,
+     6,
+     4
+    ],
+    "borda": 0.15384615384615385,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "spirit resist tank item",
+    "popularity": 25.58,
+    "popularityObscurity": 0.15384615384615385,
+    "spellingCost": 16,
+    "spellingObscurity": 0.9230769230769231,
+    "key": 0.19230769230769232
+   },
+   {
+    "id": "upgrade_transcendent_cooldown",
+    "name": "Transcendent Cooldown",
+    "passPositions": [
+     23,
+     26,
+     22,
+     20,
+     20
+    ],
+    "borda": 0.8538461538461538,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "top cooldown reduction",
+    "popularity": 13.8,
+    "popularityObscurity": 0.5,
+    "spellingCost": 20,
+    "spellingObscurity": 1,
+    "key": 0.7196153846153848
+   },
+   {
+    "id": "upgrade_trophy_collector",
+    "name": "Trophy Collector",
+    "passPositions": [
+     18,
+     17,
+     18,
+     23,
+     16
+    ],
+    "borda": 0.7076923076923076,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "assist/kill scaling sprint",
+    "popularity": 19.16,
+    "popularityObscurity": 0.34615384615384615,
+    "spellingCost": 6,
+    "spellingObscurity": 0.17307692307692307,
+    "key": 0.5363461538461538
+   },
+   {
+    "id": "upgrade_vex_barrier",
+    "name": "Reactive Barrier",
+    "passPositions": [
+     15,
+     12,
+     13,
+     9,
+     17
+    ],
+    "borda": 0.5076923076923077,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "barrier on CC",
+    "popularity": 13.09,
+    "popularityObscurity": 0.5384615384615384,
+    "spellingCost": 15,
+    "spellingObscurity": 0.8269230769230769,
+    "key": 0.5359615384615385
+   },
+   {
+    "id": "upgrade_weapon_shielding",
+    "name": "Weapon Shielding",
+    "passPositions": [
+     11,
+     11,
+     9,
+     11,
+     10
+    ],
+    "borda": 0.4,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "weapon damage barrier",
+    "popularity": 3.68,
+    "popularityObscurity": 0.7692307692307693,
+    "spellingCost": 15,
+    "spellingObscurity": 0.8269230769230769,
+    "key": 0.5690384615384616
+   }
+  ],
+  "passAgreement": 0.7413105413105413,
+  "orderBeforeRefinement": [
+   "upgrade_endurance",
+   "upgrade_sprint_booster",
+   "upgrade_tech_purge",
+   "upgrade_healing_booster",
+   "upgrade_grit",
+   "upgrade_regenerating_bullet_shield",
+   "upgrade_cardio_calibrator",
+   "upgrade_magic_shield",
+   "upgrade_healbuff",
+   "upgrade_improved_bullet_armor",
+   "upgrade_spirit_bubble",
+   "upgrade_cooldown_reduction",
+   "upgrade_soaring_spirit",
+   "upgrade_boundless_spirit",
+   "upgrade_vex_barrier",
+   "upgrade_trophy_collector",
+   "upgrade_weapon_shielding",
+   "upgrade_auto_cleanse",
+   "upgrade_non_player_bonus",
+   "upgrade_guardian_ward",
+   "upgrade_hollow_point_rounds",
+   "upgrade_cloaking_device_active",
+   "upgrade_divine_barrier",
+   "upgrade_transcendent_cooldown",
+   "upgrade_non_player_bonus_sacrifice",
+   "upgrade_blood_tribute",
+   "upgrade_goose_egg"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_transcendent_cooldown",
+    "b": "upgrade_non_player_bonus_sacrifice",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_non_player_bonus_sacrifice"
+   },
+   {
+    "a": "upgrade_transcendent_cooldown",
+    "b": "upgrade_blood_tribute",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_blood_tribute"
+   },
+   {
+    "a": "upgrade_transcendent_cooldown",
+    "b": "upgrade_goose_egg",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_goose_egg"
+   },
+   {
+    "a": "upgrade_non_player_bonus_sacrifice",
+    "b": "upgrade_blood_tribute",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_non_player_bonus_sacrifice",
+    "b": "upgrade_goose_egg",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_blood_tribute",
+    "b": "upgrade_goose_egg",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_goose_egg"
+   },
+   {
+    "a": "upgrade_sprint_booster",
+    "b": "upgrade_tech_purge",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_tech_purge"
+   },
+   {
+    "a": "upgrade_cardio_calibrator",
+    "b": "upgrade_magic_shield",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_magic_shield"
+   },
+   {
+    "a": "upgrade_vex_barrier",
+    "b": "upgrade_trophy_collector",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_boundless_spirit",
+    "b": "upgrade_soaring_spirit",
+    "purpose": "review",
+    "rarer": "upgrade_soaring_spirit"
+   }
+  ],
+  "review": [
+   {
+    "name": "Extra Regen",
+    "compareWith": "Sprint Boots",
+    "claim": "should_be_more_obvious",
+    "reason": "Extra Regen is a regeneration item, and its name and purpose point straight at the Out of Combat Regen question. It is the most obvious answer, while Sprint Boots is known mainly for sprint speed. Sprint Boots should not share the 10-point tier.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Healing Booster",
+    "compareWith": "Grit",
+    "claim": "should_be_more_obvious",
+    "reason": "Healing Booster is a core Vitality item with a simple name that players see often and associate with healing and regen. Grit is mostly remembered for its active Barrier, so it is a less natural answer for an OOC regen question. Healing Booster should score lower than Grit.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Blood Tribute",
+    "compareWith": "Golden Goose Egg",
+    "claim": "should_be_more_obscure",
+    "reason": "Blood Tribute is a memorable Weapon toggle that players know for sacrificing health. It has no link to regen, so few would name it here. It should be at least as rare as Golden Goose Egg, which is a visible Tier 1 item that players recall easily.",
+    "outcome": "applied-by-data"
+   },
+   {
+    "name": "Hollow Point",
+    "compareWith": "Transcendent Cooldown",
+    "claim": "should_be_more_obscure",
+    "reason": "Hollow Point is a Weapon item known for damage and shred, and nobody connects it with Out of Combat Regen. Transcendent Cooldown is a Spirit item that players more easily connect with built-in stats. Hollow Point should be rarer, near the top of the scale.",
+    "outcome": "applied-by-data"
+   },
+   {
+    "name": "Boundless Spirit",
+    "compareWith": "Improved Spirit",
+    "claim": "should_be_more_obvious",
+    "reason": "Boundless Spirit is a well-known, popular Tier 4 Spirit item that players see in many late-game builds. Its name and stats are more memorable than those of Improved Spirit, so it should score as more obvious than Improved Spirit.",
+    "outcome": "applied"
+   }
+  ]
+ }
+}

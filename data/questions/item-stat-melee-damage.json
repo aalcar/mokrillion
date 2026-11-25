@@ -1,0 +1,229 @@
+{
+ "question": {
+  "signature": "item-stat:Melee Damage",
+  "category": "item-stat-bonus",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_boxing_glove",
+   "upgrade_crushing_fists",
+   "upgrade_lifestrike_gauntlets",
+   "upgrade_melee_charge",
+   "upgrade_spirit_snatch"
+  ],
+  "prompt": "Name an item that gives a built-in Melee Damage bonus (not counting conditional, stacking or active effects).",
+  "validation": {
+   "method": "deterministic",
+   "criterion": "innate unconditional prop labelled \"Melee Damage\" with value > 0"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T03:50:59.622Z",
+ "answers": [
+  {
+   "entityId": "upgrade_lifestrike_gauntlets",
+   "name": "Melee Lifesteal",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_melee_charge",
+   "name": "Melee Charge",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_crushing_fists",
+   "name": "Crushing Fists",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_boxing_glove",
+   "name": "Lifestrike",
+   "rank": 4,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_spirit_snatch",
+   "name": "Spirit Snatch",
+   "rank": 5,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "upgrade_boxing_glove",
+    "name": "Lifestrike",
+    "passPositions": [
+     3,
+     2,
+     3,
+     3,
+     3
+    ],
+    "borda": 0.7,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "Vitality item that slows and heals on melee hits",
+    "popularity": 9.99,
+    "popularityObscurity": 0.5,
+    "spellingCost": 10,
+    "spellingObscurity": 0.25,
+    "key": 0.5975
+   },
+   {
+    "id": "upgrade_crushing_fists",
+    "name": "Crushing Fists",
+    "passPositions": [
+     2,
+     3,
+     1,
+     1,
+     2
+    ],
+    "borda": 0.45,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Heavy melee weapon item that stuns and restores ammo",
+    "popularity": 5.5,
+    "popularityObscurity": 1,
+    "spellingCost": 13,
+    "spellingObscurity": 0.75,
+    "key": 0.685
+   },
+   {
+    "id": "upgrade_lifestrike_gauntlets",
+    "name": "Melee Lifesteal",
+    "passPositions": [
+     1,
+     0,
+     2,
+     0,
+     1
+    ],
+    "borda": 0.2,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Cheap vitality item that heals on melee attacks",
+    "popularity": 15.51,
+    "popularityObscurity": 0.25,
+    "spellingCost": 14,
+    "spellingObscurity": 1,
+    "key": 0.26
+   },
+   {
+    "id": "upgrade_melee_charge",
+    "name": "Melee Charge",
+    "passPositions": [
+     0,
+     1,
+     0,
+     2,
+     0
+    ],
+    "borda": 0.15,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Heavy melee empowering item that upgrades into Crushing Fists",
+    "popularity": 9.67,
+    "popularityObscurity": 0.75,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5,
+    "key": 0.4075000000000001
+   },
+   {
+    "id": "upgrade_spirit_snatch",
+    "name": "Spirit Snatch",
+    "passPositions": [
+     4,
+     4,
+     4,
+     4,
+     4
+    ],
+    "borda": 1,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "Spirit item that steals spirit power and resist on melee hits",
+    "popularity": 17.14,
+    "popularityObscurity": 0,
+    "spellingCost": 6,
+    "spellingObscurity": 0,
+    "key": 0.55
+   }
+  ],
+  "passAgreement": 0.6399999999999999,
+  "orderBeforeRefinement": [
+   "upgrade_lifestrike_gauntlets",
+   "upgrade_melee_charge",
+   "upgrade_spirit_snatch",
+   "upgrade_boxing_glove",
+   "upgrade_crushing_fists"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_melee_charge",
+    "b": "upgrade_spirit_snatch",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_spirit_snatch"
+   },
+   {
+    "a": "upgrade_melee_charge",
+    "b": "upgrade_boxing_glove",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_boxing_glove"
+   },
+   {
+    "a": "upgrade_melee_charge",
+    "b": "upgrade_crushing_fists",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_melee_charge"
+   },
+   {
+    "a": "upgrade_spirit_snatch",
+    "b": "upgrade_boxing_glove",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_spirit_snatch"
+   },
+   {
+    "a": "upgrade_spirit_snatch",
+    "b": "upgrade_crushing_fists",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_spirit_snatch"
+   },
+   {
+    "a": "upgrade_boxing_glove",
+    "b": "upgrade_crushing_fists",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_boxing_glove"
+   }
+  ],
+  "review": [
+   {
+    "name": "Melee Charge",
+    "compareWith": "Crushing Fists",
+    "claim": "should_be_more_obvious",
+    "reason": "Melee Charge is a Tier 2 item whose whole identity is melee (Heavy Melee Distance, Melee Damage, a heavy melee attack bonus). Players who think of melee items will name it right alongside Crushing Fists, and its cheaper tier means more people buy it. Placing it 30 points behind Crushing Fists overstates the gap.",
+    "outcome": "applied-by-data"
+   }
+  ]
+ }
+}

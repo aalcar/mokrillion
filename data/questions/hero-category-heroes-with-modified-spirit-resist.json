@@ -1,0 +1,266 @@
+{
+ "question": {
+  "signature": "hero-category:Heroes with modified spirit resist",
+  "prompt": "Name a hero whose base Spirit Resist differs from the default.",
+  "category": "hero-weapon",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_baba",
+   "hero_forge",
+   "hero_kelvin",
+   "hero_lash",
+   "hero_priest",
+   "hero_synth"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "in wiki category \"Heroes with modified spirit resist\""
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T03:54:20.431Z",
+ "answers": [
+  {
+   "entityId": "hero_lash",
+   "name": "Lash",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_forge",
+   "name": "McGinnis",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_kelvin",
+   "name": "Kelvin",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "hero_synth",
+   "name": "Pocket",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_priest",
+   "name": "Venator",
+   "rank": 5,
+   "score": 85
+  },
+  {
+   "entityId": "hero_baba",
+   "name": "Baba",
+   "rank": 6,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "hero_baba",
+    "name": "Baba",
+    "passPositions": [
+     5,
+     3,
+     4,
+     4,
+     5
+    ],
+    "borda": 0.8400000000000001,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "Newer mystic hero with a witchy kit",
+    "popularity": 10.87,
+    "popularityObscurity": 1,
+    "spellingCost": 4,
+    "spellingObscurity": 0.3,
+    "key": 0.8770000000000001
+   },
+   {
+    "id": "hero_forge",
+    "name": "McGinnis",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Turret-and-wall zone controller",
+    "popularity": 12.06,
+    "popularityObscurity": 0.8,
+    "spellingCost": 3,
+    "spellingObscurity": 0,
+    "key": 0.32000000000000006
+   },
+   {
+    "id": "hero_kelvin",
+    "name": "Kelvin",
+    "passPositions": [
+     2,
+     1,
+     2,
+     1,
+     1
+    ],
+    "borda": 0.27999999999999997,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Ice healer with a beam and shelter",
+    "popularity": 25.01,
+    "popularityObscurity": 0.4,
+    "spellingCost": 6,
+    "spellingObscurity": 0.7,
+    "key": 0.34900000000000003
+   },
+   {
+    "id": "hero_lash",
+    "name": "Lash",
+    "passPositions": [
+     1,
+     4,
+     1,
+     2,
+     3
+    ],
+    "borda": 0.44000000000000006,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "Dive assassin with grapple and ground slam",
+    "popularity": 46.88,
+    "popularityObscurity": 0,
+    "spellingCost": 4,
+    "spellingObscurity": 0.3,
+    "key": 0.25700000000000006
+   },
+   {
+    "id": "hero_priest",
+    "name": "Venator",
+    "passPositions": [
+     4,
+     5,
+     5,
+     5,
+     4
+    ],
+    "borda": 0.9199999999999999,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "Long-range marksman with a stacking-damage ultimate",
+    "popularity": 39.11,
+    "popularityObscurity": 0.2,
+    "spellingCost": 7,
+    "spellingObscurity": 1,
+    "key": 0.6360000000000001
+   },
+   {
+    "id": "hero_synth",
+    "name": "Pocket",
+    "passPositions": [
+     3,
+     2,
+     3,
+     3,
+     2
+    ],
+    "borda": 0.52,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Teleporting backline assassin with a cloak",
+    "popularity": 24.78,
+    "popularityObscurity": 0.6,
+    "spellingCost": 6,
+    "spellingObscurity": 0.7,
+    "key": 0.5609999999999999
+   }
+  ],
+  "passAgreement": 0.7066666666666668,
+  "orderBeforeRefinement": [
+   "hero_lash",
+   "hero_forge",
+   "hero_kelvin",
+   "hero_synth",
+   "hero_priest",
+   "hero_baba"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_kelvin",
+    "b": "hero_synth",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_kelvin",
+    "b": "hero_priest",
+    "purpose": "rare-contenders",
+    "rarer": "hero_priest"
+   },
+   {
+    "a": "hero_kelvin",
+    "b": "hero_baba",
+    "purpose": "rare-contenders",
+    "rarer": "hero_baba"
+   },
+   {
+    "a": "hero_synth",
+    "b": "hero_priest",
+    "purpose": "rare-contenders",
+    "rarer": "hero_priest"
+   },
+   {
+    "a": "hero_synth",
+    "b": "hero_baba",
+    "purpose": "rare-contenders",
+    "rarer": "hero_baba"
+   },
+   {
+    "a": "hero_priest",
+    "b": "hero_baba",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_lash",
+    "b": "hero_forge",
+    "purpose": "tier-boundary",
+    "rarer": "hero_lash"
+   }
+  ],
+  "review": [
+   {
+    "name": "McGinnis",
+    "compareWith": "Lash",
+    "claim": "should_be_more_obscure",
+    "reason": "Nothing in the wiki facts ties McGinnis to a non-default Spirit Resist. His role is turret control, a trait unrelated to resistances, so a player has no reason to name him first. Its 10 pts assumes players know the stat table, which is not shown.",
+    "outcome": "applied-by-data"
+   }
+  ]
+ }
+}

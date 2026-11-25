@@ -15,7 +15,10 @@ const HERO_CATEGORIES: Record<string, string> = {
   "Heroes with boon scaling abilities": "Name a hero with an ability that scales with boons (hero level).",
   "Heroes with melee scaling abilities": "Name a hero with an ability that scales with melee damage.",
   "Heroes with weapon scaling abilities": "Name a hero with an ability that scales with weapon damage.",
-  "Heroes with modified spirit resist": "Name a hero whose base Spirit Resist differs from the default.",
+  // The wiki category mixes heroes with non-default base Spirit Resist (Lash, Baba, Pocket) and heroes who start
+  // at the default but gain extra Spirit Resist as they level (McGinnis, Kelvin, Venator), so the wording covers both.
+  "Heroes with modified spirit resist":
+    "Name a hero whose Spirit Resist differs from a standard hero's, either at base or in how it grows as they level up.",
 };
 
 /** Numeric value of a card prop such as 12, "0.75m" or "20%"; null if not numeric. */

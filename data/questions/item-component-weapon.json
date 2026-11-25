@@ -24,13 +24,13 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "6",
+ "scoringVersion": "7",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T03:44:24.465Z",
+ "generatedAt": "2026-11-25T03:48:10.068Z",
  "answers": [
   {
-   "entityId": "upgrade_clip_size",
-   "name": "Extended Magazine",
+   "entityId": "upgrade_high_velocity_mag",
+   "name": "High-Velocity Rounds",
    "rank": 1,
    "score": 10
   },
@@ -41,14 +41,14 @@
    "score": 30
   },
   {
-   "entityId": "upgrade_high_velocity_mag",
-   "name": "High-Velocity Rounds",
+   "entityId": "upgrade_clip_size",
+   "name": "Extended Magazine",
    "rank": 3,
    "score": 30
   },
   {
-   "entityId": "upgrade_non_player_bonus",
-   "name": "Monster Rounds",
+   "entityId": "upgrade_close_range",
+   "name": "Close Quarters",
    "rank": 4,
    "score": 60
   },
@@ -59,14 +59,14 @@
    "score": 60
   },
   {
-   "entityId": "upgrade_close_range",
-   "name": "Close Quarters",
+   "entityId": "upgrade_non_player_bonus",
+   "name": "Monster Rounds",
    "rank": 6,
    "score": 60
   },
   {
-   "entityId": "upgrade_slowing_bullets",
-   "name": "Slowing Bullets",
+   "entityId": "upgrade_chain_lightning",
+   "name": "Tesla Bullets",
    "rank": 7,
    "score": 60
   },
@@ -77,26 +77,26 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_tech_defense_shredders",
-   "name": "Spirit Shredder",
+   "entityId": "upgrade_slowing_bullets",
+   "name": "Slowing Bullets",
    "rank": 9,
    "score": 85
   },
   {
-   "entityId": "upgrade_headshot_booster2",
-   "name": "Weakening Headshot",
+   "entityId": "upgrade_tech_defense_shredders",
+   "name": "Spirit Shredder",
    "rank": 10,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_chain_lightning",
-   "name": "Tesla Bullets",
-   "rank": 11,
    "score": 85
   },
   {
    "entityId": "upgrade_melee_charge",
    "name": "Melee Charge",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_headshot_booster2",
+   "name": "Weakening Headshot",
    "rank": 12,
    "score": 100
   }
@@ -108,78 +108,124 @@
     "name": "Tesla Bullets",
     "passPositions": [
      11,
-     11,
-     11,
-     11,
-     11
+     7,
+     9,
+     10,
+     10
     ],
-    "borda": 1,
-    "fit": {
-     "expected": 0,
-     "neutral": 0,
-     "surprising": 5
-    },
-    "perception": "tier 3 shock proc, an endpoint item",
-    "popularity": 11,
-    "popularityObscurity": 0.45454545454545453,
-    "spellingCost": 5,
-    "spellingObscurity": 0.09090909090909091,
-    "key": 0.7363636363636363
-   },
-   {
-    "id": "upgrade_clip_size",
-    "name": "Extended Magazine",
-    "passPositions": [
-     2,
-     0,
-     0,
-     1,
-     0
-    ],
-    "borda": 0.05454545454545454,
-    "fit": {
-     "expected": 5,
-     "neutral": 0,
-     "surprising": 0
-    },
-    "perception": "basic ammo boost, common early buy",
-    "popularity": 15.22,
-    "popularityObscurity": 0.36363636363636365,
-    "spellingCost": 13,
-    "spellingObscurity": 0.5909090909090909,
-    "key": 0.20500000000000002
-   },
-   {
-    "id": "upgrade_close_range",
-    "name": "Close Quarters",
-    "passPositions": [
-     5,
-     5,
-     4,
-     5,
-     5
-    ],
-    "borda": 0.43636363636363634,
+    "borda": 0.8545454545454545,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "close range damage, shotgun pick",
+    "perception": "shock chain proc item",
+    "popularity": 11,
+    "popularityObscurity": 0.45454545454545453,
+    "spellingCost": 5,
+    "spellingObscurity": 0.09090909090909091,
+    "key": 0.6563636363636364
+   },
+   {
+    "id": "upgrade_clip_size",
+    "name": "Extended Magazine",
+    "passPositions": [
+     1,
+     0,
+     1,
+     0,
+     0
+    ],
+    "borda": 0.03636363636363636,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "basic ammo and damage item",
+    "popularity": 15.22,
+    "popularityObscurity": 0.36363636363636365,
+    "spellingCost": 13,
+    "spellingObscurity": 0.5909090909090909,
+    "key": 0.195
+   },
+   {
+    "id": "upgrade_close_range",
+    "name": "Close Quarters",
+    "passPositions": [
+     3,
+     4,
+     4,
+     3,
+     4
+    ],
+    "borda": 0.32727272727272727,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "close-range damage starter",
     "popularity": 16.2,
     "popularityObscurity": 0.2727272727272727,
     "spellingCost": 13,
     "spellingObscurity": 0.5909090909090909,
-    "key": 0.37863636363636366
+    "key": 0.31863636363636366
    },
    {
     "id": "upgrade_headshot_booster",
     "name": "Headshot Booster",
     "passPositions": [
+     4,
+     2,
+     3,
      1,
-     1,
+     1
+    ],
+    "borda": 0.2,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "headshot bonus damage starter",
+    "popularity": 9.39,
+    "popularityObscurity": 0.6363636363636364,
+    "spellingCost": 15,
+    "spellingObscurity": 0.9090909090909091,
+    "key": 0.41000000000000003
+   },
+   {
+    "id": "upgrade_headshot_booster2",
+    "name": "Weakening Headshot",
+    "passPositions": [
+     8,
+     10,
+     10,
+     8,
+     8
+    ],
+    "borda": 0.8,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "headshot bullet resist debuff",
+    "popularity": 5.24,
+    "popularityObscurity": 0.9090909090909091,
+    "spellingCost": 17,
+    "spellingObscurity": 1,
+    "key": 0.8536363636363637
+   },
+   {
+    "id": "upgrade_high_velocity_mag",
+    "name": "High-Velocity Rounds",
+    "passPositions": [
+     0,
      1,
      0,
+     2,
      2
     ],
     "borda": 0.09090909090909091,
@@ -188,243 +234,191 @@
      "neutral": 0,
      "surprising": 0
     },
-    "perception": "early headshot burst item, upgrades into others",
-    "popularity": 9.39,
-    "popularityObscurity": 0.6363636363636364,
-    "spellingCost": 15,
-    "spellingObscurity": 0.9090909090909091,
-    "key": 0.35000000000000003
-   },
-   {
-    "id": "upgrade_headshot_booster2",
-    "name": "Weakening Headshot",
-    "passPositions": [
-     9,
-     8,
-     9,
-     7,
-     9
-    ],
-    "borda": 0.7636363636363637,
-    "fit": {
-     "expected": 0,
-     "neutral": 4,
-     "surprising": 1
-    },
-    "perception": "headshot bullet resist shred, niche",
-    "popularity": 5.24,
-    "popularityObscurity": 0.9090909090909091,
-    "spellingCost": 17,
-    "spellingObscurity": 1,
-    "key": 0.8336363636363637
-   },
-   {
-    "id": "upgrade_high_velocity_mag",
-    "name": "High-Velocity Rounds",
-    "passPositions": [
-     4,
-     4,
-     3,
-     4,
-     3
-    ],
-    "borda": 0.32727272727272727,
-    "fit": {
-     "expected": 3,
-     "neutral": 2,
-     "surprising": 0
-    },
-    "perception": "bullet velocity and damage, early buy",
+    "perception": "bullet velocity starter item",
     "popularity": 22.33,
     "popularityObscurity": 0.09090909090909091,
     "spellingCost": 3,
     "spellingObscurity": 0,
-    "key": 0.2163636363636364
+    "key": 0.08636363636363636
    },
    {
     "id": "upgrade_long_range",
     "name": "Long Range",
     "passPositions": [
      7,
-     10,
-     7,
      9,
-     8
+     8,
+     9,
+     9
     ],
-    "borda": 0.7454545454545455,
+    "borda": 0.7636363636363637,
     "fit": {
      "expected": 0,
-     "neutral": 4,
-     "surprising": 1
+     "neutral": 5,
+     "surprising": 0
     },
-    "perception": "long range damage, sniper pick",
+    "perception": "distance damage item",
     "popularity": 7.54,
     "popularityObscurity": 0.7272727272727273,
     "spellingCost": 9,
     "spellingObscurity": 0.2727272727272727,
-    "key": 0.7145454545454546
+    "key": 0.7245454545454546
    },
    {
     "id": "upgrade_melee_charge",
     "name": "Melee Charge",
     "passPositions": [
-     10,
      9,
-     10,
-     10,
-     10
+     11,
+     11,
+     11,
+     11
     ],
-    "borda": 0.8909090909090909,
+    "borda": 0.9636363636363636,
     "fit": {
      "expected": 0,
      "neutral": 2,
      "surprising": 3
     },
-    "perception": "niche heavy melee damage item",
+    "perception": "heavy melee damage boost for brawlers",
     "popularity": 9.67,
     "popularityObscurity": 0.5454545454545454,
     "spellingCost": 11,
     "spellingObscurity": 0.4090909090909091,
-    "key": 0.7286363636363636
+    "key": 0.7686363636363637
    },
    {
     "id": "upgrade_non_player_bonus",
     "name": "Monster Rounds",
     "passPositions": [
-     0,
+     5,
      6,
      5,
-     2,
-     6
+     5,
+     5
     ],
-    "borda": 0.34545454545454546,
+    "borda": 0.4727272727272728,
     "fit": {
-     "expected": 2,
-     "neutral": 3,
+     "expected": 0,
+     "neutral": 5,
      "surprising": 0
     },
-    "perception": "jungle farming item, upgrades into other items",
+    "perception": "jungle farming item",
     "popularity": 20.5,
     "popularityObscurity": 0.18181818181818182,
     "spellingCost": 7,
     "spellingObscurity": 0.18181818181818182,
-    "key": 0.27181818181818185
+    "key": 0.3418181818181819
    },
    {
     "id": "upgrade_rapid_rounds",
     "name": "Rapid Rounds",
     "passPositions": [
-     3,
-     3,
      2,
      3,
-     1
+     2,
+     4,
+     3
     ],
-    "borda": 0.21818181818181817,
+    "borda": 0.2545454545454545,
     "fit": {
      "expected": 5,
      "neutral": 0,
      "surprising": 0
     },
-    "perception": "early fire rate item",
+    "perception": "cheap fire rate item",
     "popularity": 23.53,
     "popularityObscurity": 0,
     "spellingCost": 11,
     "spellingObscurity": 0.4090909090909091,
-    "key": 0.14045454545454547
+    "key": 0.16045454545454543
    },
    {
     "id": "upgrade_slowing_bullets",
     "name": "Slowing Bullets",
     "passPositions": [
      6,
-     2,
+     5,
      6,
      6,
-     4
+     6
     ],
-    "borda": 0.43636363636363634,
+    "borda": 0.5272727272727272,
     "fit": {
-     "expected": 2,
-     "neutral": 3,
+     "expected": 1,
+     "neutral": 4,
      "surprising": 0
     },
-    "perception": "bullet slow, popular utility item",
+    "perception": "bullet slow, common pick",
     "popularity": 3.34,
     "popularityObscurity": 1,
     "spellingCost": 14,
     "spellingObscurity": 0.7727272727272727,
-    "key": 0.6786363636363637
+    "key": 0.7286363636363636
    },
    {
     "id": "upgrade_tech_defense_shredders",
     "name": "Spirit Shredder",
     "passPositions": [
+     10,
      8,
      7,
-     8,
-     8,
+     7,
      7
     ],
-    "borda": 0.6909090909090909,
+    "borda": 0.709090909090909,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "spirit resist shred bullets, common weapon-spirit pick",
+    "perception": "spirit resist shred on bullets",
     "popularity": 5.29,
     "popularityObscurity": 0.8181818181818182,
     "spellingCost": 14,
     "spellingObscurity": 0.7727272727272727,
-    "key": 0.7459090909090911
+    "key": 0.7559090909090909
    }
   ],
-  "passAgreement": 0.7696969696969698,
+  "passAgreement": 0.8,
   "orderBeforeRefinement": [
+   "upgrade_high_velocity_mag",
    "upgrade_rapid_rounds",
    "upgrade_clip_size",
-   "upgrade_high_velocity_mag",
+   "upgrade_close_range",
    "upgrade_non_player_bonus",
    "upgrade_headshot_booster",
-   "upgrade_close_range",
-   "upgrade_slowing_bullets",
-   "upgrade_long_range",
-   "upgrade_melee_charge",
    "upgrade_chain_lightning",
+   "upgrade_long_range",
+   "upgrade_slowing_bullets",
    "upgrade_tech_defense_shredders",
+   "upgrade_melee_charge",
    "upgrade_headshot_booster2"
   ],
   "pairwise": [
    {
-    "a": "upgrade_melee_charge",
-    "b": "upgrade_chain_lightning",
+    "a": "upgrade_slowing_bullets",
+    "b": "upgrade_tech_defense_shredders",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_chain_lightning"
+    "rarer": "upgrade_tech_defense_shredders"
    },
    {
-    "a": "upgrade_melee_charge",
-    "b": "upgrade_tech_defense_shredders",
+    "a": "upgrade_slowing_bullets",
+    "b": "upgrade_melee_charge",
     "purpose": "rare-contenders",
     "rarer": "upgrade_melee_charge"
    },
    {
-    "a": "upgrade_melee_charge",
+    "a": "upgrade_slowing_bullets",
     "b": "upgrade_headshot_booster2",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "upgrade_headshot_booster2"
    },
    {
-    "a": "upgrade_chain_lightning",
-    "b": "upgrade_tech_defense_shredders",
+    "a": "upgrade_tech_defense_shredders",
+    "b": "upgrade_melee_charge",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_chain_lightning"
-   },
-   {
-    "a": "upgrade_chain_lightning",
-    "b": "upgrade_headshot_booster2",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_chain_lightning"
+    "rarer": "upgrade_melee_charge"
    },
    {
     "a": "upgrade_tech_defense_shredders",
@@ -433,51 +427,70 @@
     "rarer": null
    },
    {
-    "a": "upgrade_rapid_rounds",
-    "b": "upgrade_clip_size",
-    "purpose": "tier-boundary",
-    "rarer": null
+    "a": "upgrade_melee_charge",
+    "b": "upgrade_headshot_booster2",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_melee_charge"
    },
    {
     "a": "upgrade_high_velocity_mag",
-    "b": "upgrade_non_player_bonus",
+    "b": "upgrade_rapid_rounds",
     "purpose": "tier-boundary",
-    "rarer": null
+    "rarer": "upgrade_rapid_rounds"
    },
    {
-    "a": "upgrade_slowing_bullets",
+    "a": "upgrade_clip_size",
+    "b": "upgrade_close_range",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_close_range"
+   },
+   {
+    "a": "upgrade_chain_lightning",
     "b": "upgrade_long_range",
     "purpose": "tier-boundary",
     "rarer": "upgrade_long_range"
    },
    {
-    "a": "upgrade_rapid_rounds",
-    "b": "upgrade_clip_size",
+    "a": "upgrade_chain_lightning",
+    "b": "upgrade_close_range",
     "purpose": "review",
-    "rarer": "upgrade_rapid_rounds"
+    "rarer": "upgrade_chain_lightning"
+   },
+   {
+    "a": "upgrade_headshot_booster",
+    "b": "upgrade_non_player_bonus",
+    "purpose": "review",
+    "rarer": "upgrade_non_player_bonus"
    }
   ],
   "review": [
    {
-    "name": "Tesla Bullets",
-    "compareWith": "Melee Charge",
+    "name": "Melee Charge",
+    "compareWith": "Weakening Headshot",
     "claim": "should_be_more_obvious",
-    "reason": "Tesla Bullets is a well-known tier 3 Weapon item that players often buy, and it is a component for Toxic Bullets. Melee Charge is a much less common pick, so Tesla Bullets should not sit as the most obscure answer. It should be scored below Melee Charge.",
+    "reason": "Melee Charge is a Tier 1-style staple that many players know by name and buy for heavy melee builds. It is no rarer than Weakening Headshot or Slowing Bullets, so 100 points looks inflated. Because it is the only Weapon item that upgrades into Crushing Fists, it should rank above the other Tier 2 items.",
     "outcome": "applied-by-data"
    },
    {
-    "name": "Rapid Rounds",
-    "compareWith": "Extended Magazine",
-    "claim": "should_be_more_obscure",
-    "reason": "Rapid Rounds is a cheap, common tier 1 item. Players do not strongly link it to upgrading, though, because Extended Magazine and High-Velocity Rounds feel more associated with upgrade paths. Rapid Rounds as the single most obvious answer is only moderately justified.",
-    "outcome": "applied"
+    "name": "Tesla Bullets",
+    "compareWith": "Close Quarters",
+    "claim": "should_be_more_obvious",
+    "reason": "Tesla Bullets is a memorable, distinctive Tier 3 item with a strong identity and a clear upgrade (Capacitor). Players would recall it sooner than the Tier 1 stat-stick Close Quarters, so it should not be tied with it at 60.",
+    "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Close Quarters",
-    "compareWith": "Slowing Bullets",
+    "name": "Slowing Bullets",
+    "compareWith": "Spirit Shredder",
     "claim": "should_be_more_obvious",
-    "reason": "Close Quarters is a very commonly purchased tier 1 weapon item with a clear name, and its upgrade role is easy to recall. It is at least as recognizable as Slowing Bullets, which sits at the same score.",
+    "reason": "Slowing Bullets is a very well-known, commonly bought item with a self-explanatory name, so players are likely to think of it before Spirit Shredder. Both sit at 85, but Slowing Bullets should be a bit more obvious.",
     "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Headshot Booster",
+    "compareWith": "Monster Rounds",
+    "claim": "should_be_more_obvious",
+    "reason": "Headshot Booster is a widely bought, recognizable early item, and its name ties directly to the Headhunter upgrade. It should be easier to recall than the niche jungle-oriented Monster Rounds, so they should not share a tier.",
+    "outcome": "applied"
    }
   ]
  }
