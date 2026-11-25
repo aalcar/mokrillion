@@ -1,0 +1,348 @@
+{
+ "question": {
+  "signature": "item-stat:Max Ammo",
+  "category": "item-stat-bonus",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_active_reload",
+   "upgrade_clip_size",
+   "upgrade_critshot",
+   "upgrade_ethereal_bullets",
+   "upgrade_intensifying_clip",
+   "upgrade_rechargingbullets",
+   "upgrade_reinforcing_casings",
+   "upgrade_titan_round"
+  ],
+  "prompt": "Name an item that gives a built-in Max Ammo bonus (not counting conditional, stacking or active effects).",
+  "validation": {
+   "method": "deterministic",
+   "criterion": "innate unconditional prop labelled \"Max Ammo\" with value > 0"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:09:03.406Z",
+ "answers": [
+  {
+   "entityId": "upgrade_clip_size",
+   "name": "Extended Magazine",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_titan_round",
+   "name": "Titanic Magazine",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_active_reload",
+   "name": "Active Reload",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_rechargingbullets",
+   "name": "Recharging Rush",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_intensifying_clip",
+   "name": "Intensifying Magazine",
+   "rank": 5,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_reinforcing_casings",
+   "name": "Escalating Resilience",
+   "rank": 6,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_ethereal_bullets",
+   "name": "Mercurial Magnum",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_critshot",
+   "name": "Lucky Shot",
+   "rank": 8,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "upgrade_active_reload",
+    "name": "Active Reload",
+    "passPositions": [
+     3,
+     3,
+     2,
+     2,
+     2
+    ],
+    "borda": 0.3428571428571428,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Reload timing for fire rate and lifesteal",
+    "popularity": 5.15,
+    "popularityObscurity": 0.5714285714285714,
+    "spellingCost": 12,
+    "spellingObscurity": 0.42857142857142855,
+    "key": 0.43857142857142856
+   },
+   {
+    "id": "upgrade_clip_size",
+    "name": "Extended Magazine",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Tier 1 ammo item, bigger magazine",
+    "popularity": 15.22,
+    "popularityObscurity": 0.14285714285714285,
+    "spellingCost": 13,
+    "spellingObscurity": 0.5714285714285714,
+    "key": 0.08571428571428572
+   },
+   {
+    "id": "upgrade_critshot",
+    "name": "Lucky Shot",
+    "passPositions": [
+     6,
+     6,
+     6,
+     6,
+     5
+    ],
+    "borda": 0.8285714285714285,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Proc bonus bullet damage",
+    "popularity": 4.12,
+    "popularityObscurity": 0.7142857142857143,
+    "spellingCost": 9,
+    "spellingObscurity": 0.2857142857142857,
+    "key": 0.7557142857142858
+   },
+   {
+    "id": "upgrade_ethereal_bullets",
+    "name": "Mercurial Magnum",
+    "passPositions": [
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "borda": 1,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Imbue spirit bullets, reload on ability",
+    "popularity": 7.24,
+    "popularityObscurity": 0.42857142857142855,
+    "spellingCost": 6,
+    "spellingObscurity": 0,
+    "key": 0.7214285714285715
+   },
+   {
+    "id": "upgrade_intensifying_clip",
+    "name": "Intensifying Magazine",
+    "passPositions": [
+     2,
+     4,
+     3,
+     3,
+     3
+    ],
+    "borda": 0.42857142857142855,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Damage ramps as you keep firing; magazine in name",
+    "popularity": 2.24,
+    "popularityObscurity": 0.9285714285714286,
+    "spellingCost": 20,
+    "spellingObscurity": 0.9285714285714286,
+    "key": 0.6535714285714286
+   },
+   {
+    "id": "upgrade_rechargingbullets",
+    "name": "Recharging Rush",
+    "passPositions": [
+     5,
+     5,
+     5,
+     5,
+     6
+    ],
+    "borda": 0.7428571428571429,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "Ability charge refresh on damage",
+    "popularity": 7.66,
+    "popularityObscurity": 0.2857142857142857,
+    "spellingCost": 14,
+    "spellingObscurity": 0.7142857142857143,
+    "key": 0.5585714285714286
+   },
+   {
+    "id": "upgrade_reinforcing_casings",
+    "name": "Escalating Resilience",
+    "passPositions": [
+     4,
+     2,
+     4,
+     4,
+     4
+    ],
+    "borda": 0.5142857142857142,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Bullet resist from hitting heroes",
+    "popularity": 2.24,
+    "popularityObscurity": 0.9285714285714286,
+    "spellingCost": 20,
+    "spellingObscurity": 0.9285714285714286,
+    "key": 0.7007142857142857
+   },
+   {
+    "id": "upgrade_titan_round",
+    "name": "Titanic Magazine",
+    "passPositions": [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "borda": 0.14285714285714285,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Huge ammo upgrade for big mags",
+    "popularity": 15.59,
+    "popularityObscurity": 0,
+    "spellingCost": 7,
+    "spellingObscurity": 0.14285714285714285,
+    "key": 0.08571428571428572
+   }
+  ],
+  "passAgreement": 0.8857142857142858,
+  "orderBeforeRefinement": [
+   "upgrade_clip_size",
+   "upgrade_titan_round",
+   "upgrade_active_reload",
+   "upgrade_rechargingbullets",
+   "upgrade_intensifying_clip",
+   "upgrade_reinforcing_casings",
+   "upgrade_ethereal_bullets",
+   "upgrade_critshot"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_intensifying_clip",
+    "b": "upgrade_reinforcing_casings",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_intensifying_clip",
+    "b": "upgrade_ethereal_bullets",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_ethereal_bullets"
+   },
+   {
+    "a": "upgrade_intensifying_clip",
+    "b": "upgrade_critshot",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_critshot"
+   },
+   {
+    "a": "upgrade_reinforcing_casings",
+    "b": "upgrade_ethereal_bullets",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_ethereal_bullets"
+   },
+   {
+    "a": "upgrade_reinforcing_casings",
+    "b": "upgrade_critshot",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_critshot"
+   },
+   {
+    "a": "upgrade_ethereal_bullets",
+    "b": "upgrade_critshot",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_ethereal_bullets"
+   },
+   {
+    "a": "upgrade_clip_size",
+    "b": "upgrade_titan_round",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_titan_round"
+   },
+   {
+    "a": "upgrade_titan_round",
+    "b": "upgrade_active_reload",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_active_reload"
+   }
+  ],
+  "review": [
+   {
+    "name": "Intensifying Magazine",
+    "compareWith": "Escalating Resilience",
+    "claim": "should_be_more_obvious",
+    "reason": "Intensifying Magazine is a Tier 2 weapon item that is commonly bought and well known for its damage ramp. Escalating Resilience is a Tier 3 upgrade that people mostly associate with its Bullet Resist. Neither is strongly tied to Max Ammo, but the Tier 2 item should come to mind more often, so it should score lower than Escalating Resilience.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Lucky Shot",
+    "compareWith": "Intensifying Magazine",
+    "claim": "should_be_more_obscure",
+    "reason": "Lucky Shot is a Tier 4 item known for its proc damage. Its 30 Max Ammo is easy to forget, and it is bought less often than Tier 2 items. It should be at least as obscure as Intensifying Magazine, which is a common early purchase.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Mercurial Magnum",
+    "compareWith": "Lucky Shot",
+    "claim": "should_be_more_obvious",
+    "reason": "Mercurial Magnum is a Tier 4 Spirit item that is tied to the bullet-spirit hybrid theme and is memorable by name. A player who recalls it will probably remember it for its imbue. The Max Ammo stat is still obscure, so it is plausibly the rarest answer, but 100 points ranks it clearly above Lucky Shot's equal-tier obscurity. A small swap or a score slightly lower than the others seems more reasonable.",
+    "outcome": "applied-by-data"
+   }
+  ]
+ }
+}

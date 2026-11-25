@@ -1,0 +1,379 @@
+{
+ "question": {
+  "signature": "name:hero:contains:y",
+  "prompt": "Name a hero whose name contains the letter Y.",
+  "category": "name-trivia",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_astro",
+   "hero_deadpack",
+   "hero_dynamo",
+   "hero_ghost",
+   "hero_orion",
+   "hero_punkgoat",
+   "hero_tengu",
+   "hero_viper",
+   "hero_yamato"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:hero:contains:y"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:20:06.703Z",
+ "answers": [
+  {
+   "entityId": "hero_yamato",
+   "name": "Yamato",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_ghost",
+   "name": "Lady Geist",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_dynamo",
+   "name": "Dynamo",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "hero_punkgoat",
+   "name": "Billy",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_tengu",
+   "name": "Ivy",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "hero_astro",
+   "name": "Holliday",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "hero_viper",
+   "name": "Vyper",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "hero_orion",
+   "name": "Grey Talon",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "hero_deadpack",
+   "name": "Deadman Danny",
+   "rank": 9,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "hero_astro",
+    "name": "Holliday",
+    "passPositions": [
+     4,
+     3,
+     5,
+     7,
+     3
+    ],
+    "borda": 0.55,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Cowboy marksman; Y at the end of her name",
+    "popularity": 28.35,
+    "popularityObscurity": 0.375,
+    "spellingCost": 8,
+    "spellingObscurity": 1,
+    "key": 0.5025000000000001
+   },
+   {
+    "id": "hero_deadpack",
+    "name": "Deadman Danny",
+    "passPositions": [
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "borda": 1,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "Hero with Y in his first name; not well known",
+    "popularity": 23.38,
+    "popularityObscurity": 0.75,
+    "spellingCost": 5,
+    "spellingObscurity": 0.4375,
+    "key": 0.8718750000000001
+   },
+   {
+    "id": "hero_dynamo",
+    "name": "Dynamo",
+    "passPositions": [
+     3,
+     2,
+     1,
+     3,
+     2
+    ],
+    "borda": 0.275,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Healer known for Singularity; Y is in the middle",
+    "popularity": 25.11,
+    "popularityObscurity": 0.5,
+    "spellingCost": 6,
+    "spellingObscurity": 0.8125,
+    "key": 0.39187500000000003
+   },
+   {
+    "id": "hero_ghost",
+    "name": "Lady Geist",
+    "passPositions": [
+     6,
+     4,
+     6,
+     4,
+     6
+    ],
+    "borda": 0.65,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "Health-sacrificing mystic; Y is in Lady",
+    "popularity": 37.57,
+    "popularityObscurity": 0,
+    "spellingCost": 4,
+    "spellingObscurity": 0.125,
+    "key": 0.36375
+   },
+   {
+    "id": "hero_orion",
+    "name": "Grey Talon",
+    "passPositions": [
+     7,
+     5,
+     7,
+     5,
+     7
+    ],
+    "borda": 0.775,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "Archer who fires long-range arrows; Y is in Grey",
+    "popularity": 22.07,
+    "popularityObscurity": 0.875,
+    "spellingCost": 5,
+    "spellingObscurity": 0.4375,
+    "key": 0.7981250000000001
+   },
+   {
+    "id": "hero_punkgoat",
+    "name": "Billy",
+    "passPositions": [
+     2,
+     7,
+     3,
+     6,
+     4
+    ],
+    "borda": 0.55,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Punchy brawler with Y at the end of his name",
+    "popularity": 30.96,
+    "popularityObscurity": 0.125,
+    "spellingCost": 5,
+    "spellingObscurity": 0.4375,
+    "key": 0.374375
+   },
+   {
+    "id": "hero_tengu",
+    "name": "Ivy",
+    "passPositions": [
+     5,
+     6,
+     4,
+     2,
+     5
+    ],
+    "borda": 0.55,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Healer who pairs with an ally and has a Y in her name",
+    "popularity": 30.19,
+    "popularityObscurity": 0.25,
+    "spellingCost": 3,
+    "spellingObscurity": 0,
+    "key": 0.4025000000000001
+   },
+   {
+    "id": "hero_viper",
+    "name": "Vyper",
+    "passPositions": [
+     1,
+     1,
+     2,
+     1,
+     1
+    ],
+    "borda": 0.15,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Snake assassin with the Y in the second letter",
+    "popularity": 11.96,
+    "popularityObscurity": 1,
+    "spellingCost": 5,
+    "spellingObscurity": 0.4375,
+    "key": 0.504375
+   },
+   {
+    "id": "hero_yamato",
+    "name": "Yamato",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Samurai assassin whose name starts with Y",
+    "popularity": 24.73,
+    "popularityObscurity": 0.625,
+    "spellingCost": 6,
+    "spellingObscurity": 0.8125,
+    "key": 0.290625
+   }
+  ],
+  "passAgreement": 0.6777777777777778,
+  "orderBeforeRefinement": [
+   "hero_yamato",
+   "hero_ghost",
+   "hero_punkgoat",
+   "hero_dynamo",
+   "hero_tengu",
+   "hero_astro",
+   "hero_viper",
+   "hero_orion",
+   "hero_deadpack"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_astro",
+    "b": "hero_viper",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_astro",
+    "b": "hero_orion",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_astro",
+    "b": "hero_deadpack",
+    "purpose": "rare-contenders",
+    "rarer": "hero_deadpack"
+   },
+   {
+    "a": "hero_viper",
+    "b": "hero_orion",
+    "purpose": "rare-contenders",
+    "rarer": "hero_orion"
+   },
+   {
+    "a": "hero_viper",
+    "b": "hero_deadpack",
+    "purpose": "rare-contenders",
+    "rarer": "hero_deadpack"
+   },
+   {
+    "a": "hero_orion",
+    "b": "hero_deadpack",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_yamato",
+    "b": "hero_ghost",
+    "purpose": "tier-boundary",
+    "rarer": "hero_ghost"
+   },
+   {
+    "a": "hero_punkgoat",
+    "b": "hero_dynamo",
+    "purpose": "tier-boundary",
+    "rarer": "hero_punkgoat"
+   }
+  ],
+  "review": [
+   {
+    "name": "Vyper",
+    "compareWith": "Grey Talon",
+    "claim": "should_be_more_obvious",
+    "reason": "Vyper has the letter Y as its second letter, and the name starts with 'Vy', so it jumps out in a letter-Y prompt. Grey Talon's Y is hidden inside 'Grey', which is easy to overlook, so Vyper should score lower than Grey Talon.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Holliday",
+    "compareWith": "Billy",
+    "claim": "should_be_more_obscure",
+    "reason": "Holliday's Y is the second-to-last letter and sits behind a doubled 'l' and 'i', so it is much less salient than Billy's Y, which is also near the end of a short name. Both are plausible, but Holliday is the less likely to be recalled, so it should be rarer than Billy.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Lady Geist",
+    "compareWith": "Dynamo",
+    "claim": "should_be_more_obvious",
+    "reason": "Lady has Y as a stand-out letter right in the first word, and Lady Geist is a well-known hero. Dynamo's Y is mid-name and less salient, so Lady Geist should score at least as low as Dynamo, if not lower.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}

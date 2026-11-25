@@ -1,0 +1,435 @@
+{
+ "question": {
+  "signature": "hero-stat:clipSize:high:29",
+  "prompt": "Name a hero whose base clip size is at least 29 (no items or boons).",
+  "category": "hero-base-stat",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_bebop",
+   "hero_chrono",
+   "hero_forge",
+   "hero_gigawatt",
+   "hero_lash",
+   "hero_necro",
+   "hero_priest",
+   "hero_punkgoat",
+   "hero_tengu",
+   "hero_wraith"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "clipSize >= 29"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:14:57.801Z",
+ "answers": [
+  {
+   "entityId": "hero_chrono",
+   "name": "Paradox",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_forge",
+   "name": "McGinnis",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_wraith",
+   "name": "Wraith",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "hero_bebop",
+   "name": "Bebop",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_gigawatt",
+   "name": "Seven",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "hero_lash",
+   "name": "Lash",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "hero_punkgoat",
+   "name": "Billy",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "hero_tengu",
+   "name": "Ivy",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "hero_necro",
+   "name": "Graves",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "hero_priest",
+   "name": "Venator",
+   "rank": 10,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "hero_bebop",
+    "name": "Bebop",
+    "passPositions": [
+     8,
+     8,
+     4,
+     4,
+     5
+    ],
+    "borda": 0.6444444444444445,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Hook and beam brawler with a continuous beam weapon",
+    "popularity": 50.94,
+    "popularityObscurity": 0,
+    "spellingCost": 5,
+    "spellingObscurity": 0.4444444444444444,
+    "key": 0.3766666666666667
+   },
+   {
+    "id": "hero_chrono",
+    "name": "Paradox",
+    "passPositions": [
+     3,
+     3,
+     3,
+     3,
+     4
+    ],
+    "borda": 0.3555555555555555,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Time and space marksman with swap and wall",
+    "popularity": 39.64,
+    "popularityObscurity": 0.3333333333333333,
+    "spellingCost": 7,
+    "spellingObscurity": 0.9444444444444444,
+    "key": 0.37611111111111106
+   },
+   {
+    "id": "hero_forge",
+    "name": "McGinnis",
+    "passPositions": [
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "borda": 0.04444444444444444,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Turret and wall controller with spin-up gun",
+    "popularity": 12.06,
+    "popularityObscurity": 1,
+    "spellingCost": 3,
+    "spellingObscurity": 0.05555555555555555,
+    "key": 0.4272222222222222
+   },
+   {
+    "id": "hero_gigawatt",
+    "name": "Seven",
+    "passPositions": [
+     2,
+     2,
+     2,
+     2,
+     0
+    ],
+    "borda": 0.17777777777777776,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Lightning mystic with big ult",
+    "popularity": 30.41,
+    "popularityObscurity": 0.7777777777777778,
+    "spellingCost": 5,
+    "spellingObscurity": 0.4444444444444444,
+    "key": 0.4311111111111111
+   },
+   {
+    "id": "hero_lash",
+    "name": "Lash",
+    "passPositions": [
+     5,
+     6,
+     8,
+     6,
+     7
+    ],
+    "borda": 0.711111111111111,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Grapple-diving assassin with slam ult",
+    "popularity": 46.88,
+    "popularityObscurity": 0.1111111111111111,
+    "spellingCost": 4,
+    "spellingObscurity": 0.2222222222222222,
+    "key": 0.44666666666666666
+   },
+   {
+    "id": "hero_necro",
+    "name": "Graves",
+    "passPositions": [
+     7,
+     7,
+     9,
+     9,
+     8
+    ],
+    "borda": 0.888888888888889,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Skeleton necromancer mystic with jar and hands",
+    "popularity": 32.51,
+    "popularityObscurity": 0.5555555555555556,
+    "spellingCost": 6,
+    "spellingObscurity": 0.7222222222222222,
+    "key": 0.7472222222222223
+   },
+   {
+    "id": "hero_priest",
+    "name": "Venator",
+    "passPositions": [
+     9,
+     9,
+     7,
+     5,
+     9
+    ],
+    "borda": 0.8666666666666666,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "Newer marksman with slow heavy-hitting rifle",
+    "popularity": 39.11,
+    "popularityObscurity": 0.4444444444444444,
+    "spellingCost": 7,
+    "spellingObscurity": 0.9444444444444444,
+    "key": 0.7016666666666667
+   },
+   {
+    "id": "hero_punkgoat",
+    "name": "Billy",
+    "passPositions": [
+     4,
+     4,
+     5,
+     8,
+     6
+    ],
+    "borda": 0.5999999999999999,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Fast melee-style brawler with punchy rush",
+    "popularity": 30.96,
+    "popularityObscurity": 0.6666666666666666,
+    "spellingCost": 5,
+    "spellingObscurity": 0.4444444444444444,
+    "key": 0.6188888888888888
+   },
+   {
+    "id": "hero_tengu",
+    "name": "Ivy",
+    "passPositions": [
+     6,
+     5,
+     6,
+     7,
+     3
+    ],
+    "borda": 0.6,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "Support healer with tether and air drop",
+    "popularity": 30.19,
+    "popularityObscurity": 0.8888888888888888,
+    "spellingCost": 3,
+    "spellingObscurity": 0.05555555555555555,
+    "key": 0.6883333333333334
+   },
+   {
+    "id": "hero_wraith",
+    "name": "Wraith",
+    "passPositions": [
+     1,
+     1,
+     1,
+     0,
+     2
+    ],
+    "borda": 0.11111111111111112,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Card-throwing marksman with Full Auto, big mag",
+    "popularity": 45.37,
+    "popularityObscurity": 0.2222222222222222,
+    "spellingCost": 6,
+    "spellingObscurity": 0.7222222222222222,
+    "key": 0.18611111111111112
+   }
+  ],
+  "passAgreement": 0.6622222222222223,
+  "orderBeforeRefinement": [
+   "hero_wraith",
+   "hero_chrono",
+   "hero_bebop",
+   "hero_forge",
+   "hero_gigawatt",
+   "hero_lash",
+   "hero_punkgoat",
+   "hero_tengu",
+   "hero_priest",
+   "hero_necro"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_punkgoat",
+    "b": "hero_tengu",
+    "purpose": "rare-contenders",
+    "rarer": "hero_tengu"
+   },
+   {
+    "a": "hero_punkgoat",
+    "b": "hero_priest",
+    "purpose": "rare-contenders",
+    "rarer": "hero_priest"
+   },
+   {
+    "a": "hero_punkgoat",
+    "b": "hero_necro",
+    "purpose": "rare-contenders",
+    "rarer": "hero_necro"
+   },
+   {
+    "a": "hero_tengu",
+    "b": "hero_priest",
+    "purpose": "rare-contenders",
+    "rarer": "hero_priest"
+   },
+   {
+    "a": "hero_tengu",
+    "b": "hero_necro",
+    "purpose": "rare-contenders",
+    "rarer": "hero_necro"
+   },
+   {
+    "a": "hero_priest",
+    "b": "hero_necro",
+    "purpose": "rare-contenders",
+    "rarer": "hero_priest"
+   },
+   {
+    "a": "hero_wraith",
+    "b": "hero_chrono",
+    "purpose": "tier-boundary",
+    "rarer": "hero_chrono"
+   },
+   {
+    "a": "hero_bebop",
+    "b": "hero_forge",
+    "purpose": "tier-boundary",
+    "rarer": "hero_bebop"
+   },
+   {
+    "a": "hero_wraith",
+    "b": "hero_forge",
+    "purpose": "review",
+    "rarer": "hero_wraith"
+   },
+   {
+    "a": "hero_forge",
+    "b": "hero_chrono",
+    "purpose": "review",
+    "rarer": "hero_chrono"
+   },
+   {
+    "a": "hero_priest",
+    "b": "hero_necro",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Wraith",
+    "compareWith": "McGinnis",
+    "claim": "should_be_more_obscure",
+    "reason": "Wraith is a famous marksman, but the question asks about a high base clip size. Players may not tie The Rake to a large clip, whereas McGinnis's spin-up gun is more strongly associated with a big magazine. Wraith at 10 pts looks too confident.",
+    "outcome": "applied"
+   },
+   {
+    "name": "McGinnis",
+    "compareWith": "Paradox",
+    "claim": "should_be_more_obvious",
+    "reason": "McGinnis's spin-up weapon reads as a sustained-fire gun, which suggests a large clip. Paradox's Trade Secret doesn't have that association, so McGinnis should score as at least as obvious as Paradox.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Bebop",
+    "compareWith": "Seven",
+    "claim": "should_be_more_obvious",
+    "reason": "Bebop's Humble Pie fires a continuous beam, which suggests ammo-heavy sustained fire. That makes him easier to think of than Seven, whose weapon has no obvious clip association. The tie at 60 pts undersells Bebop.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Venator",
+    "compareWith": "Graves",
+    "claim": "should_be_more_obvious",
+    "reason": "Venator is a marksman, so players may guess a high-ammo hero from that role. Graves is a mystic with little link to clip size, so he is the rarer answer and should take the top obscurity slot. Venator at 100 pts is not clearly rarer than Graves, Ivy or Billy.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}

@@ -1,0 +1,653 @@
+{
+ "question": {
+  "signature": "item-component:Spirit",
+  "prompt": "Name a Spirit item that is a component of (upgrades into) another item.",
+  "category": "item-upgrade-path",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_acolytes_glove",
+   "upgrade_arcane_extension",
+   "upgrade_cold_front",
+   "upgrade_containment",
+   "upgrade_cooldown_reduction",
+   "upgrade_extra_charge",
+   "upgrade_improved_spirit",
+   "upgrade_magic_burst",
+   "upgrade_magic_reach",
+   "upgrade_magic_slow",
+   "upgrade_magic_tempo",
+   "upgrade_magic_vulnerability",
+   "upgrade_mystic_regeneration",
+   "upgrade_quick_silver",
+   "upgrade_soaring_spirit",
+   "upgrade_spirit_sap",
+   "upgrade_withering_whip"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "slot == Spirit && upgradesInto non-empty"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:07:53.059Z",
+ "answers": [
+  {
+   "entityId": "upgrade_improved_spirit",
+   "name": "Extra Spirit",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_soaring_spirit",
+   "name": "Improved Spirit",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_magic_reach",
+   "name": "Mystic Expansion",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_extra_charge",
+   "name": "Extra Charge",
+   "rank": 4,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_magic_tempo",
+   "name": "Compress Cooldown",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_magic_burst",
+   "name": "Mystic Burst",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_arcane_extension",
+   "name": "Duration Extender",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_magic_vulnerability",
+   "name": "Mystic Vulnerability",
+   "rank": 8,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_cooldown_reduction",
+   "name": "Superior Cooldown",
+   "rank": 9,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_containment",
+   "name": "Slowing Hex",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_mystic_regeneration",
+   "name": "Mystic Regeneration",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_magic_slow",
+   "name": "Mystic Slow",
+   "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_quick_silver",
+   "name": "Quicksilver Reload",
+   "rank": 13,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_cold_front",
+   "name": "Cold Front",
+   "rank": 14,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_acolytes_glove",
+   "name": "Spirit Strike",
+   "rank": 15,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_spirit_sap",
+   "name": "Spirit Sap",
+   "rank": 16,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_withering_whip",
+   "name": "Rusted Barrel",
+   "rank": 17,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "upgrade_acolytes_glove",
+    "name": "Spirit Strike",
+    "passPositions": [
+     14,
+     14,
+     14,
+     15,
+     11
+    ],
+    "borda": 0.85,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "melee spirit damage and resist shred",
+    "popularity": 17.14,
+    "popularityObscurity": 0.625,
+    "spellingCost": 12,
+    "spellingObscurity": 0.65625,
+    "key": 0.7503125
+   },
+   {
+    "id": "upgrade_arcane_extension",
+    "name": "Duration Extender",
+    "passPositions": [
+     4,
+     9,
+     4,
+     5,
+     10
+    ],
+    "borda": 0.4,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "imbue duration item",
+    "popularity": 17.97,
+    "popularityObscurity": 0.5625,
+    "spellingCost": 16,
+    "spellingObscurity": 0.875,
+    "key": 0.48875
+   },
+   {
+    "id": "upgrade_cold_front",
+    "name": "Cold Front",
+    "passPositions": [
+     12,
+     11,
+     13,
+     12,
+     12
+    ],
+    "borda": 0.75,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "active ice blast",
+    "popularity": 7.82,
+    "popularityObscurity": 0.8125,
+    "spellingCost": 9,
+    "spellingObscurity": 0.125,
+    "key": 0.74375
+   },
+   {
+    "id": "upgrade_containment",
+    "name": "Slowing Hex",
+    "passPositions": [
+     11,
+     7,
+     11,
+     9,
+     7
+    ],
+    "borda": 0.5625,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "active slow",
+    "popularity": 12.78,
+    "popularityObscurity": 0.6875,
+    "spellingCost": 10,
+    "spellingObscurity": 0.28125,
+    "key": 0.5984375
+   },
+   {
+    "id": "upgrade_cooldown_reduction",
+    "name": "Superior Cooldown",
+    "passPositions": [
+     10,
+     16,
+     8,
+     16,
+     16
+    ],
+    "borda": 0.825,
+    "fit": {
+     "expected": 1,
+     "neutral": 1,
+     "surprising": 3
+    },
+    "perception": "popular tier 3 cooldown item, itself upgrades",
+    "popularity": 34.12,
+    "popularityObscurity": 0.1875,
+    "spellingCost": 16,
+    "spellingObscurity": 0.875,
+    "key": 0.5725
+   },
+   {
+    "id": "upgrade_extra_charge",
+    "name": "Extra Charge",
+    "passPositions": [
+     3,
+     3,
+     5,
+     3,
+     2
+    ],
+    "borda": 0.2,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "extra ability charge item",
+    "popularity": 31.98,
+    "popularityObscurity": 0.3125,
+    "spellingCost": 11,
+    "spellingObscurity": 0.46875,
+    "key": 0.2584375
+   },
+   {
+    "id": "upgrade_improved_spirit",
+    "name": "Extra Spirit",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "basic spirit power item, first build step",
+    "popularity": 49.29,
+    "popularityObscurity": 0,
+    "spellingCost": 11,
+    "spellingObscurity": 0.46875,
+    "key": 0.0234375
+   },
+   {
+    "id": "upgrade_magic_burst",
+    "name": "Mystic Burst",
+    "passPositions": [
+     6,
+     8,
+     6,
+     6,
+     5
+    ],
+    "borda": 0.3875,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "burst damage proc item",
+    "popularity": 35.72,
+    "popularityObscurity": 0.125,
+    "spellingCost": 11,
+    "spellingObscurity": 0.46875,
+    "key": 0.28656250000000005
+   },
+   {
+    "id": "upgrade_magic_reach",
+    "name": "Mystic Expansion",
+    "passPositions": [
+     9,
+     2,
+     1,
+     1,
+     3
+    ],
+    "borda": 0.2,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "cheap range/radius imbue item",
+    "popularity": 33.35,
+    "popularityObscurity": 0.25,
+    "spellingCost": 9,
+    "spellingObscurity": 0.125,
+    "key": 0.21625000000000003
+   },
+   {
+    "id": "upgrade_magic_slow",
+    "name": "Mystic Slow",
+    "passPositions": [
+     8,
+     5,
+     9,
+     11,
+     9
+    ],
+    "borda": 0.525,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "slow on spirit damage, builds into Lightning Scroll",
+    "popularity": 3.47,
+    "popularityObscurity": 0.875,
+    "spellingCost": 10,
+    "spellingObscurity": 0.28125,
+    "key": 0.6528125
+   },
+   {
+    "id": "upgrade_magic_tempo",
+    "name": "Compress Cooldown",
+    "passPositions": [
+     1,
+     1,
+     2,
+     2,
+     1
+    ],
+    "borda": 0.0875,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "imbue cooldown reduction, classic component",
+    "popularity": 31.12,
+    "popularityObscurity": 0.375,
+    "spellingCost": 16,
+    "spellingObscurity": 0.875,
+    "key": 0.24187500000000003
+   },
+   {
+    "id": "upgrade_magic_vulnerability",
+    "name": "Mystic Vulnerability",
+    "passPositions": [
+     5,
+     10,
+     10,
+     14,
+     6
+    ],
+    "borda": 0.5625,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "spirit resist shred, builds into Escalating Exposure",
+    "popularity": 23.24,
+    "popularityObscurity": 0.4375,
+    "spellingCost": 19,
+    "spellingObscurity": 1,
+    "key": 0.534375
+   },
+   {
+    "id": "upgrade_mystic_regeneration",
+    "name": "Mystic Regeneration",
+    "passPositions": [
+     7,
+     13,
+     7,
+     7,
+     8
+    ],
+    "borda": 0.525,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "early regen item",
+    "popularity": 8.86,
+    "popularityObscurity": 0.75,
+    "spellingCost": 11,
+    "spellingObscurity": 0.46875,
+    "key": 0.6121875000000001
+   },
+   {
+    "id": "upgrade_quick_silver",
+    "name": "Quicksilver Reload",
+    "passPositions": [
+     13,
+     12,
+     15,
+     13,
+     14
+    ],
+    "borda": 0.8375,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "imbue item with fire rate and reload",
+    "popularity": 18.57,
+    "popularityObscurity": 0.5,
+    "spellingCost": 3,
+    "spellingObscurity": 0,
+    "key": 0.660625
+   },
+   {
+    "id": "upgrade_soaring_spirit",
+    "name": "Improved Spirit",
+    "passPositions": [
+     2,
+     4,
+     3,
+     4,
+     4
+    ],
+    "borda": 0.2125,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "mid spirit power stat item",
+    "popularity": 44.97,
+    "popularityObscurity": 0.0625,
+    "spellingCost": 14,
+    "spellingObscurity": 0.75,
+    "key": 0.179375
+   },
+   {
+    "id": "upgrade_spirit_sap",
+    "name": "Spirit Sap",
+    "passPositions": [
+     16,
+     6,
+     16,
+     10,
+     15
+    ],
+    "borda": 0.7875,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "niche active resist reduction",
+    "popularity": 1.57,
+    "popularityObscurity": 1,
+    "spellingCost": 9,
+    "spellingObscurity": 0.125,
+    "key": 0.839375
+   },
+   {
+    "id": "upgrade_withering_whip",
+    "name": "Rusted Barrel",
+    "passPositions": [
+     15,
+     15,
+     12,
+     8,
+     13
+    ],
+    "borda": 0.7875,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "cheap active, disarm effect",
+    "popularity": 2.71,
+    "popularityObscurity": 0.9375,
+    "spellingCost": 12,
+    "spellingObscurity": 0.65625,
+    "key": 0.8409375000000001
+   }
+  ],
+  "passAgreement": 0.6088235294117649,
+  "orderBeforeRefinement": [
+   "upgrade_improved_spirit",
+   "upgrade_soaring_spirit",
+   "upgrade_magic_reach",
+   "upgrade_magic_tempo",
+   "upgrade_extra_charge",
+   "upgrade_magic_burst",
+   "upgrade_arcane_extension",
+   "upgrade_magic_vulnerability",
+   "upgrade_cooldown_reduction",
+   "upgrade_containment",
+   "upgrade_mystic_regeneration",
+   "upgrade_magic_slow",
+   "upgrade_quick_silver",
+   "upgrade_cold_front",
+   "upgrade_acolytes_glove",
+   "upgrade_spirit_sap",
+   "upgrade_withering_whip"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_cold_front",
+    "b": "upgrade_acolytes_glove",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_acolytes_glove"
+   },
+   {
+    "a": "upgrade_cold_front",
+    "b": "upgrade_spirit_sap",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_spirit_sap"
+   },
+   {
+    "a": "upgrade_cold_front",
+    "b": "upgrade_withering_whip",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_withering_whip"
+   },
+   {
+    "a": "upgrade_acolytes_glove",
+    "b": "upgrade_spirit_sap",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_spirit_sap"
+   },
+   {
+    "a": "upgrade_acolytes_glove",
+    "b": "upgrade_withering_whip",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_withering_whip"
+   },
+   {
+    "a": "upgrade_spirit_sap",
+    "b": "upgrade_withering_whip",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_withering_whip"
+   },
+   {
+    "a": "upgrade_improved_spirit",
+    "b": "upgrade_soaring_spirit",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_soaring_spirit"
+   },
+   {
+    "a": "upgrade_magic_tempo",
+    "b": "upgrade_extra_charge",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_magic_tempo"
+   },
+   {
+    "a": "upgrade_cooldown_reduction",
+    "b": "upgrade_containment",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_cooldown_reduction",
+    "b": "upgrade_magic_vulnerability",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Mystic Burst",
+    "compareWith": "Compress Cooldown",
+    "claim": "should_be_more_obscure",
+    "reason": "Mystic Burst is a Tier 1 item players rarely think of, and it has an unclear identity and a niche upgrade (Tankbuster). Compress Cooldown is a far more recognizable imbue item whose name directly evokes upgrading into Superior Cooldown.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Superior Cooldown",
+    "compareWith": "Mystic Vulnerability",
+    "claim": "should_be_more_obvious",
+    "reason": "Superior Cooldown is a very commonly built Tier 3 item. Its name directly signals that it is an upgrade, and it is the obvious next step after Compress Cooldown, so players would think of it more readily than Mystic Vulnerability.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Cold Front",
+    "compareWith": "Rusted Barrel",
+    "claim": "should_be_more_obvious",
+    "reason": "Cold Front is a well-known active item that players frequently buy, and Arctic Blast is a recognizable upgrade. Rusted Barrel is more obscure but is not exceptionally rare, so Cold Front should sit below it in points.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Spirit Strike",
+    "compareWith": "Mystic Regeneration",
+    "claim": "should_be_more_obscure",
+    "reason": "Spirit Strike is a niche melee-based item that few players recall when asked about components. Mystic Regeneration is a popular early-game item, so players would think of it more readily.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Mystic Slow",
+    "compareWith": "Spirit Sap",
+    "claim": "should_be_more_obvious",
+    "reason": "Mystic Slow is a commonly bought Tier 2 item that leads to Lightning Scroll, so players would think of it more readily. Spirit Sap is a niche item and should be more obscure.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}

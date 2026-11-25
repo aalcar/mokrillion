@@ -1,0 +1,273 @@
+{
+ "question": {
+  "signature": "name:hero:contains:p",
+  "prompt": "Name a hero whose name contains the letter P.",
+  "category": "name-trivia",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_bebop",
+   "hero_bookworm",
+   "hero_chrono",
+   "hero_fencer",
+   "hero_synth",
+   "hero_viper"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:hero:contains:p"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:17:45.792Z",
+ "answers": [
+  {
+   "entityId": "hero_chrono",
+   "name": "Paradox",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_bookworm",
+   "name": "Paige",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_bebop",
+   "name": "Bebop",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "hero_synth",
+   "name": "Pocket",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_viper",
+   "name": "Vyper",
+   "rank": 5,
+   "score": 85
+  },
+  {
+   "entityId": "hero_fencer",
+   "name": "Apollo",
+   "rank": 6,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "hero_bebop",
+    "name": "Bebop",
+    "passPositions": [
+     3,
+     3,
+     3,
+     5,
+     5
+    ],
+    "borda": 0.76,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Hook-and-beam brawler, known for Hyper Beam",
+    "popularity": 50.94,
+    "popularityObscurity": 0,
+    "spellingCost": 5,
+    "spellingObscurity": 0.2,
+    "key": 0.42800000000000005
+   },
+   {
+    "id": "hero_bookworm",
+    "name": "Paige",
+    "passPositions": [
+     1,
+     2,
+     2,
+     2,
+     2
+    ],
+    "borda": 0.36,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Support healer with a book and dragon",
+    "popularity": 32.79,
+    "popularityObscurity": 0.4,
+    "spellingCost": 5,
+    "spellingObscurity": 0.2,
+    "key": 0.36800000000000005
+   },
+   {
+    "id": "hero_chrono",
+    "name": "Paradox",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Time-manipulating marksman with swap",
+    "popularity": 39.64,
+    "popularityObscurity": 0.2,
+    "spellingCost": 7,
+    "spellingObscurity": 1,
+    "key": 0.13
+   },
+   {
+    "id": "hero_fencer",
+    "name": "Apollo",
+    "passPositions": [
+     4,
+     5,
+     5,
+     4,
+     4
+    ],
+    "borda": 0.8799999999999999,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Newer duelist-style assassin with riposte",
+    "popularity": 21.79,
+    "popularityObscurity": 0.8,
+    "spellingCost": 6,
+    "spellingObscurity": 0.7,
+    "key": 0.8390000000000001
+   },
+   {
+    "id": "hero_synth",
+    "name": "Pocket",
+    "passPositions": [
+     2,
+     1,
+     1,
+     1,
+     1
+    ],
+    "borda": 0.24,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Teleporting assassin with a satchel and a sheep gun",
+    "popularity": 24.78,
+    "popularityObscurity": 0.6,
+    "spellingCost": 6,
+    "spellingObscurity": 0.7,
+    "key": 0.40700000000000003
+   },
+   {
+    "id": "hero_viper",
+    "name": "Vyper",
+    "passPositions": [
+     5,
+     4,
+     4,
+     3,
+     3
+    ],
+    "borda": 0.76,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Snake-themed assassin with venom and bola",
+    "popularity": 11.96,
+    "popularityObscurity": 1,
+    "spellingCost": 5,
+    "spellingObscurity": 0.2,
+    "key": 0.8280000000000001
+   }
+  ],
+  "passAgreement": 0.7333333333333333,
+  "orderBeforeRefinement": [
+   "hero_chrono",
+   "hero_bookworm",
+   "hero_synth",
+   "hero_bebop",
+   "hero_viper",
+   "hero_fencer"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_synth",
+    "b": "hero_bebop",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_synth",
+    "b": "hero_viper",
+    "purpose": "rare-contenders",
+    "rarer": "hero_viper"
+   },
+   {
+    "a": "hero_synth",
+    "b": "hero_fencer",
+    "purpose": "rare-contenders",
+    "rarer": "hero_fencer"
+   },
+   {
+    "a": "hero_bebop",
+    "b": "hero_viper",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_bebop",
+    "b": "hero_fencer",
+    "purpose": "rare-contenders",
+    "rarer": "hero_fencer"
+   },
+   {
+    "a": "hero_viper",
+    "b": "hero_fencer",
+    "purpose": "rare-contenders",
+    "rarer": "hero_fencer"
+   },
+   {
+    "a": "hero_chrono",
+    "b": "hero_bookworm",
+    "purpose": "tier-boundary",
+    "rarer": "hero_bookworm"
+   }
+  ],
+  "review": [
+   {
+    "name": "Bebop",
+    "compareWith": "Pocket",
+    "claim": "should_be_more_obvious",
+    "reason": "Bebop is a long-standing, very recognizable hero, and the P in his name is not hidden. It sits in the middle of the word, like the P in Paradox, and in his weapon Humble Pie. Pocket is a newer hero whose name starts with P, so it should come to mind first. But the ranking only needs Bebop to be at least as obvious as Pocket, and a tie or slight swap is plausible. A 60 for both is probably too obscure for Bebop.",
+    "outcome": "applied-by-data"
+   },
+   {
+    "name": "Vyper",
+    "compareWith": "Apollo",
+    "claim": "should_be_more_obvious",
+    "reason": "Vyper has a P in the middle of its name and is spelled with a y, so the spelling cue is distinct and players scanning for P will pick it up. Apollo's P is also mid-word, but Apollo is less closely tied to the letter, so it is plausibly the rarer answer. The 85 vs 100 gap is questionable, but Apollo is correctly the most obscure.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}

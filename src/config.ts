@@ -19,8 +19,17 @@ export const config = {
 
   /** Shuffled listwise ranking passes per question. */
   rankingPasses: 5,
-  /** Weights of the final rank key; see README "Scoring". */
-  weights: { llm: 0.55, popularity: 0.4, spelling: 0.05 },
+  /**
+   * Weights of the final rank key, by question type (see README "Scoring"). Human judgments showed that for
+   * membership questions ("name a 3,200 item") recall follows what players see in games, while for association
+   * questions ("name an item with Melee Resist") it follows whether players link the answer to the property.
+   */
+  weights: {
+    membership: { llm: 0.25, popularity: 0.7, spelling: 0.05 },
+    association: { llm: 0.8, popularity: 0.15, spelling: 0.05 },
+  },
+  /** Signature prefixes of membership questions; everything else is an association question. */
+  membershipPrefixes: ["item-cost:", "item-slot-tier:", "item-active:", "item-component:", "name:"],
   /** How many of the rarest candidates get round-robin pairwise comparisons. */
   rareContenders: 4,
   maxReviewChallenges: 5,
@@ -33,5 +42,5 @@ export const config = {
   tierShares: { 10: 0.08, 30: 0.17, 60: 0.3 },
 
   /** Bump when the scoring algorithm or its parameters change. */
-  scoringVersion: "7",
+  scoringVersion: "8",
 };

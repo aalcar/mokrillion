@@ -1,0 +1,279 @@
+{
+ "question": {
+  "signature": "name:hero:ends:r",
+  "prompt": "Name a hero whose name ends with the letter R. Ignore a leading \"The\" and any symbols.",
+  "category": "name-trivia",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_drifter",
+   "hero_frank",
+   "hero_magician",
+   "hero_priest",
+   "hero_viper",
+   "hero_werewolf"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:hero:ends:r"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:18:04.687Z",
+ "answers": [
+  {
+   "entityId": "hero_drifter",
+   "name": "Drifter",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_frank",
+   "name": "Victor",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_werewolf",
+   "name": "Silver",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "hero_viper",
+   "name": "Vyper",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_magician",
+   "name": "Sinclair",
+   "rank": 5,
+   "score": 85
+  },
+  {
+   "entityId": "hero_priest",
+   "name": "Venator",
+   "rank": 6,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "hero_drifter",
+    "name": "Drifter",
+    "passPositions": [
+     0,
+     2,
+     0,
+     4,
+     0
+    ],
+    "borda": 0.24000000000000005,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Stealthy assassin with Bloodscent and Eternal Night",
+    "popularity": 45.26,
+    "popularityObscurity": 0,
+    "spellingCost": 7,
+    "spellingObscurity": 0.7,
+    "key": 0.16700000000000004
+   },
+   {
+    "id": "hero_frank",
+    "name": "Victor",
+    "passPositions": [
+     1,
+     0,
+     1,
+     1,
+     3
+    ],
+    "borda": 0.24000000000000005,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Frankenstein-style brawler with revive",
+    "popularity": 24.46,
+    "popularityObscurity": 0.4,
+    "spellingCost": 6,
+    "spellingObscurity": 0.3,
+    "key": 0.30700000000000005
+   },
+   {
+    "id": "hero_magician",
+    "name": "Sinclair",
+    "passPositions": [
+     4,
+     4,
+     2,
+     2,
+     2
+    ],
+    "borda": 0.5599999999999999,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Magician mystic with Rabbit Hex",
+    "popularity": 9.63,
+    "popularityObscurity": 1,
+    "spellingCost": 8,
+    "spellingObscurity": 1,
+    "key": 0.758
+   },
+   {
+    "id": "hero_priest",
+    "name": "Venator",
+    "passPositions": [
+     3,
+     5,
+     5,
+     5,
+     4
+    ],
+    "borda": 0.8800000000000001,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Long-range marksman with a fast-firing weapon",
+    "popularity": 39.11,
+    "popularityObscurity": 0.2,
+    "spellingCost": 7,
+    "spellingObscurity": 0.7,
+    "key": 0.5990000000000002
+   },
+   {
+    "id": "hero_viper",
+    "name": "Vyper",
+    "passPositions": [
+     2,
+     3,
+     4,
+     0,
+     1
+    ],
+    "borda": 0.4,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Snake-themed assassin with a poison dagger",
+    "popularity": 11.96,
+    "popularityObscurity": 0.8,
+    "spellingCost": 5,
+    "spellingObscurity": 0,
+    "key": 0.54
+   },
+   {
+    "id": "hero_werewolf",
+    "name": "Silver",
+    "passPositions": [
+     5,
+     1,
+     3,
+     3,
+     5
+    ],
+    "borda": 0.6799999999999999,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Werewolf brawler with Lycan Curse",
+    "popularity": 19.71,
+    "popularityObscurity": 0.6,
+    "spellingCost": 6,
+    "spellingObscurity": 0.3,
+    "key": 0.629
+   }
+  ],
+  "passAgreement": 0.28000000000000014,
+  "orderBeforeRefinement": [
+   "hero_drifter",
+   "hero_frank",
+   "hero_viper",
+   "hero_priest",
+   "hero_werewolf",
+   "hero_magician"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_viper",
+    "b": "hero_priest",
+    "purpose": "rare-contenders",
+    "rarer": "hero_priest"
+   },
+   {
+    "a": "hero_viper",
+    "b": "hero_werewolf",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_viper",
+    "b": "hero_magician",
+    "purpose": "rare-contenders",
+    "rarer": "hero_magician"
+   },
+   {
+    "a": "hero_priest",
+    "b": "hero_werewolf",
+    "purpose": "rare-contenders",
+    "rarer": "hero_priest"
+   },
+   {
+    "a": "hero_priest",
+    "b": "hero_magician",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_werewolf",
+    "b": "hero_magician",
+    "purpose": "rare-contenders",
+    "rarer": "hero_magician"
+   },
+   {
+    "a": "hero_drifter",
+    "b": "hero_frank",
+    "purpose": "tier-boundary",
+    "rarer": "hero_frank"
+   },
+   {
+    "a": "hero_magician",
+    "b": "hero_priest",
+    "purpose": "review",
+    "rarer": "hero_priest"
+   }
+  ],
+  "review": [
+   {
+    "name": "Silver",
+    "compareWith": "Vyper",
+    "claim": "should_be_more_obvious",
+    "reason": "Silver is a short, distinctive name, and the werewolf Brawler is well known. Vyper's spelling ends in R, but players may stumble on it or not parse it as ending in R, so Silver likely comes to mind slightly more readily.",
+    "outcome": "applied-by-data"
+   },
+   {
+    "name": "Sinclair",
+    "compareWith": "Venator",
+    "claim": "should_be_more_obvious",
+    "reason": "Sinclair is a widely known Mystic whose name clearly ends in R. Venator is a less familiar name and is easy to forget, so Venator is likely the rarer answer and should take the 100-point slot.",
+    "outcome": "applied"
+   }
+  ]
+ }
+}

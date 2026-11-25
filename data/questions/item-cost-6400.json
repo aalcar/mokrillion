@@ -56,9 +56,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "4",
+ "scoringVersion": "7",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T03:28:51.959Z",
+ "generatedAt": "2026-11-25T04:02:44.867Z",
  "answers": [
   {
    "entityId": "upgrade_ability_refresher",
@@ -79,32 +79,32 @@
    "score": 10
   },
   {
-   "entityId": "upgrade_transcendent_cooldown",
-   "name": "Transcendent Cooldown",
+   "entityId": "upgrade_boundless_spirit",
+   "name": "Boundless Spirit",
    "rank": 4,
    "score": 10
   },
   {
-   "entityId": "upgrade_spirit_burn",
-   "name": "Spirit Burn",
+   "entityId": "upgrade_transcendent_cooldown",
+   "name": "Transcendent Cooldown",
    "rank": 5,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_damage_recycler",
-   "name": "Leech",
-   "rank": 6,
    "score": 30
   },
   {
    "entityId": "upgrade_escalating_exposure",
    "name": "Escalating Exposure",
+   "rank": 6,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_spirit_burn",
+   "name": "Spirit Burn",
    "rank": 7,
    "score": 30
   },
   {
-   "entityId": "upgrade_glass_cannon",
-   "name": "Glass Cannon",
+   "entityId": "upgrade_glitch",
+   "name": "Cursed Relic",
    "rank": 8,
    "score": 30
   },
@@ -115,32 +115,32 @@
    "score": 30
   },
   {
-   "entityId": "upgrade_ability_power_shard",
-   "name": "Echo Shard",
+   "entityId": "upgrade_damage_recycler",
+   "name": "Leech",
    "rank": 10,
    "score": 30
   },
   {
-   "entityId": "upgrade_glitch",
-   "name": "Cursed Relic",
+   "entityId": "upgrade_ability_power_shard",
+   "name": "Echo Shard",
    "rank": 11,
    "score": 30
   },
   {
-   "entityId": "upgrade_auto_cleanse",
-   "name": "Indomitable",
+   "entityId": "upgrade_absorbing_armor",
+   "name": "Witchmail",
    "rank": 12,
    "score": 60
   },
   {
-   "entityId": "upgrade_boundless_spirit",
-   "name": "Boundless Spirit",
+   "entityId": "upgrade_glass_cannon",
+   "name": "Glass Cannon",
    "rank": 13,
    "score": 60
   },
   {
-   "entityId": "upgrade_phantom_strike",
-   "name": "Phantom Strike",
+   "entityId": "upgrade_proc_silence",
+   "name": "Silencer",
    "rank": 14,
    "score": 60
   },
@@ -151,134 +151,134 @@
    "score": 60
   },
   {
-   "entityId": "upgrade_colossus",
-   "name": "Colossus",
+   "entityId": "upgrade_deflecting_armor",
+   "name": "Plated Armor",
    "rank": 16,
    "score": 60
   },
   {
-   "entityId": "upgrade_juggernaut",
-   "name": "Juggernaut",
+   "entityId": "upgrade_phantom_strike",
+   "name": "Phantom Strike",
    "rank": 17,
    "score": 60
   },
   {
-   "entityId": "upgrade_deflecting_armor",
-   "name": "Plated Armor",
+   "entityId": "upgrade_auto_cleanse",
+   "name": "Indomitable",
    "rank": 18,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_proc_silence",
-   "name": "Silencer",
-   "rank": 19,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_magic_carpet",
-   "name": "Magic Carpet",
-   "rank": 20,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_mystic_reverb",
-   "name": "Mystic Reverb",
-   "rank": 21,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_siphon_bullets",
-   "name": "Siphon Bullets",
-   "rank": 22,
    "score": 60
   },
   {
    "entityId": "upgrade_capacitor",
    "name": "Capacitor",
+   "rank": 19,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_colossus",
+   "name": "Colossus",
+   "rank": 20,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_tech_overflow",
+   "name": "Spiritual Overflow",
+   "rank": 21,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_mystic_reverb",
+   "name": "Mystic Reverb",
+   "rank": 22,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_siphon_bullets",
+   "name": "Siphon Bullets",
    "rank": 23,
    "score": 60
   },
   {
-   "entityId": "upgrade_critshot",
-   "name": "Lucky Shot",
+   "entityId": "upgrade_juggernaut",
+   "name": "Juggernaut",
    "rank": 24,
    "score": 60
   },
   {
-   "entityId": "upgrade_divine_barrier",
-   "name": "Divine Barrier",
+   "entityId": "upgrade_magic_carpet",
+   "name": "Magic Carpet",
    "rank": 25,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_arctic_blast",
-   "name": "Arctic Blast",
-   "rank": 26,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_absorbing_armor",
-   "name": "Witchmail",
-   "rank": 27,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_aoe_root",
-   "name": "Vortex Web",
-   "rank": 28,
    "score": 85
   },
   {
    "entityId": "upgrade_spellbreaker",
    "name": "Spellbreaker",
-   "rank": 29,
+   "rank": 26,
    "score": 85
   },
   {
-   "entityId": "upgrade_tech_overflow",
-   "name": "Spiritual Overflow",
-   "rank": 30,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_banshee_slugs",
-   "name": "Crippling Headshot",
-   "rank": 31,
+   "entityId": "upgrade_divine_barrier",
+   "name": "Divine Barrier",
+   "rank": 27,
    "score": 85
   },
   {
    "entityId": "upgrade_ethereal_bullets",
    "name": "Mercurial Magnum",
-   "rank": 32,
+   "rank": 28,
    "score": 85
   },
   {
-   "entityId": "upgrade_inhibitor",
-   "name": "Inhibitor",
-   "rank": 33,
+   "entityId": "upgrade_arctic_blast",
+   "name": "Arctic Blast",
+   "rank": 29,
    "score": 85
   },
   {
    "entityId": "upgrade_surging_power",
    "name": "Vampiric Burst",
-   "rank": 34,
+   "rank": 30,
    "score": 85
   },
   {
-   "entityId": "upgrade_fervor",
-   "name": "Frenzy",
-   "rank": 35,
+   "entityId": "upgrade_critshot",
+   "name": "Lucky Shot",
+   "rank": 31,
    "score": 85
   },
   {
    "entityId": "upgrade_infuser",
    "name": "Infuser",
+   "rank": 32,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_banshee_slugs",
+   "name": "Crippling Headshot",
+   "rank": 33,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_aoe_root",
+   "name": "Vortex Web",
+   "rank": 34,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_enchanted_holsters",
+   "name": "Spellslinger",
+   "rank": 35,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_fervor",
+   "name": "Frenzy",
    "rank": 36,
    "score": 85
   },
   {
-   "entityId": "upgrade_aprounds",
-   "name": "Armor Piercer",
+   "entityId": "upgrade_inhibitor",
+   "name": "Inhibitor",
    "rank": 37,
    "score": 85
   },
@@ -289,38 +289,38 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_enchanted_holsters",
-   "name": "Spellslinger",
-   "rank": 39,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_ultimate_burst",
-   "name": "Lightning Scroll",
-   "rank": 40,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_focus_lens",
-   "name": "Focus Lens",
-   "rank": 41,
-   "score": 85
-  },
-  {
    "entityId": "upgrade_discord",
    "name": "Scourge",
-   "rank": 42,
+   "rank": 39,
    "score": 85
   },
   {
    "entityId": "upgrade_crushing_fists",
    "name": "Crushing Fists",
-   "rank": 43,
+   "rank": 40,
    "score": 85
   },
   {
    "entityId": "upgrade_diviners_kevlar",
    "name": "Diviner's Kevlar",
+   "rank": 41,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_aprounds",
+   "name": "Armor Piercer",
+   "rank": 42,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_ultimate_burst",
+   "name": "Lightning Scroll",
+   "rank": 43,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_focus_lens",
+   "name": "Focus Lens",
    "rank": 44,
    "score": 100
   }
@@ -331,24 +331,24 @@
     "id": "upgrade_ability_power_shard",
     "name": "Echo Shard",
     "passPositions": [
-     3,
-     7,
      1,
-     5,
-     1
+     8,
+     3,
+     3,
+     3
     ],
-    "borda": 0.07906976744186046,
+    "borda": 0.08372093023255814,
     "fit": {
      "expected": 4,
      "neutral": 1,
      "surprising": 0
     },
-    "perception": "ability recast item",
+    "perception": "ability recast",
     "popularity": 2.62,
     "popularityObscurity": 0.7906976744186046,
     "spellingCost": 9,
     "spellingObscurity": 0.6046511627906976,
-    "key": 0.3451162790697674
+    "key": 0.3925581395348837
    },
    {
     "id": "upgrade_ability_refresher",
@@ -366,47 +366,47 @@
      "neutral": 0,
      "surprising": 0
     },
-    "perception": "resets all cooldowns, iconic",
+    "perception": "reset all cooldowns",
     "popularity": 6.02,
     "popularityObscurity": 0.37209302325581395,
     "spellingCost": 9,
     "spellingObscurity": 0.6046511627906976,
-    "key": 0.17209302325581394
+    "key": 0.17906976744186046
    },
    {
     "id": "upgrade_absorbing_armor",
     "name": "Witchmail",
     "passPositions": [
+     13,
      11,
      30,
-     33,
-     36,
-     30
+     15,
+     10
     ],
-    "borda": 0.6511627906976745,
+    "borda": 0.3674418604651163,
     "fit": {
      "expected": 0,
-     "neutral": 2,
-     "surprising": 3
+     "neutral": 5,
+     "surprising": 0
     },
-    "perception": "spirit resist cooldown reducer",
+    "perception": "spirit tank",
     "popularity": 5.69,
     "popularityObscurity": 0.3953488372093023,
     "spellingCost": 9,
     "spellingObscurity": 0.6046511627906976,
-    "key": 0.5697674418604651
+    "key": 0.39046511627906977
    },
    {
     "id": "upgrade_aoe_root",
     "name": "Vortex Web",
     "passPositions": [
-     13,
-     32,
-     23,
-     14,
-     24
+     17,
+     30,
+     17,
+     18,
+     39
     ],
-    "borda": 0.49302325581395356,
+    "borda": 0.5627906976744186,
     "fit": {
      "expected": 0,
      "neutral": 3,
@@ -417,387 +417,387 @@
     "popularityObscurity": 0.8372093023255814,
     "spellingCost": 6,
     "spellingObscurity": 0.2441860465116279,
-    "key": 0.5713953488372094
+    "key": 0.6566279069767442
    },
    {
     "id": "upgrade_aprounds",
     "name": "Armor Piercer",
     "passPositions": [
-     21,
-     21,
-     40,
-     25,
-     16
+     33,
+     38,
+     38,
+     38,
+     24
     ],
-    "borda": 0.5720930232558139,
+    "borda": 0.7953488372093023,
     "fit": {
      "expected": 0,
      "neutral": 4,
      "surprising": 1
     },
-    "perception": "unavoidable piercing bullets",
+    "perception": "unavoidable bullets",
     "popularity": 1.55,
     "popularityObscurity": 0.9302325581395349,
     "spellingCost": 12,
     "spellingObscurity": 0.8372093023255814,
-    "key": 0.7060465116279069
+    "key": 0.8513953488372092
    },
    {
     "id": "upgrade_arctic_blast",
     "name": "Arctic Blast",
     "passPositions": [
-     22,
-     24,
+     19,
+     15,
      18,
-     22,
-     26
+     29,
+     30
     ],
-    "borda": 0.5209302325581395,
+    "borda": 0.5162790697674419,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "freezing blast active",
+    "perception": "freeze blast",
     "popularity": 3.83,
     "popularityObscurity": 0.5813953488372093,
     "spellingCost": 11,
     "spellingObscurity": 0.7906976744186046,
-    "key": 0.566046511627907
+    "key": 0.556046511627907
    },
    {
     "id": "upgrade_auto_cleanse",
     "name": "Indomitable",
     "passPositions": [
-     23,
-     26,
-     20,
-     15,
-     23
+     37,
+     19,
+     28,
+     31,
+     32
     ],
-    "borda": 0.49767441860465106,
+    "borda": 0.6837209302325582,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "cleanse and barrier",
+    "perception": "cleanse cooldown",
     "popularity": 8.14,
     "popularityObscurity": 0.18604651162790697,
     "spellingCost": 5,
     "spellingObscurity": 0.05813953488372093,
-    "key": 0.3602325581395348
+    "key": 0.4533720930232559
    },
    {
     "id": "upgrade_banshee_slugs",
     "name": "Crippling Headshot",
     "passPositions": [
-     26,
+     34,
      22,
-     19,
-     31,
-     41
+     23,
+     39,
+     43
     ],
-    "borda": 0.6465116279069767,
-    "fit": {
-     "expected": 0,
-     "neutral": 5,
-     "surprising": 0
-    },
-    "perception": "headshot resist shred",
-    "popularity": 4.06,
-    "popularityObscurity": 0.5116279069767442,
-    "spellingCost": 9,
-    "spellingObscurity": 0.6046511627906976,
-    "key": 0.601860465116279
-   },
-   {
-    "id": "upgrade_boundless_spirit",
-    "name": "Boundless Spirit",
-    "passPositions": [
-     12,
-     2,
-     5,
-     28,
-     20
-    ],
-    "borda": 0.3116279069767442,
-    "fit": {
-     "expected": 2,
-     "neutral": 3,
-     "surprising": 0
-    },
-    "perception": "big spirit power stats",
-    "popularity": 29.17,
-    "popularityObscurity": 0,
-    "spellingCost": 9,
-    "spellingObscurity": 0.6046511627906976,
-    "key": 0.2474418604651163
-   },
-   {
-    "id": "upgrade_capacitor",
-    "name": "Capacitor",
-    "passPositions": [
-     40,
-     41,
-     22,
-     12,
-     25
-    ],
-    "borda": 0.6511627906976745,
-    "fit": {
-     "expected": 0,
-     "neutral": 2,
-     "surprising": 3
-    },
-    "perception": "projectile slow",
-    "popularity": 8.07,
-    "popularityObscurity": 0.20930232558139536,
-    "spellingCost": 9,
-    "spellingObscurity": 0.6046511627906976,
-    "key": 0.513953488372093
-   },
-   {
-    "id": "upgrade_cheat_death",
-    "name": "Cheat Death",
-    "passPositions": [
-     1,
-     4,
-     3,
-     1,
-     3
-    ],
-    "borda": 0.05581395348837209,
-    "fit": {
-     "expected": 5,
-     "neutral": 0,
-     "surprising": 0
-    },
-    "perception": "death immunity",
-    "popularity": 3.32,
-    "popularityObscurity": 0.6511627906976745,
-    "spellingCost": 5,
-    "spellingObscurity": 0.05813953488372093,
-    "key": 0.23465116279069767
-   },
-   {
-    "id": "upgrade_colossus",
-    "name": "Colossus",
-    "passPositions": [
-     9,
-     6,
-     10,
-     3,
-     4
-    ],
-    "borda": 0.14883720930232558,
-    "fit": {
-     "expected": 2,
-     "neutral": 3,
-     "surprising": 0
-    },
-    "perception": "grow large active",
-    "popularity": 1.86,
-    "popularityObscurity": 0.9069767441860465,
-    "spellingCost": 8,
-    "spellingObscurity": 0.45348837209302323,
-    "key": 0.4067441860465116
-   },
-   {
-    "id": "upgrade_critshot",
-    "name": "Lucky Shot",
-    "passPositions": [
-     20,
-     25,
-     29,
-     16,
-     28
-    ],
-    "borda": 0.5488372093023257,
+    "borda": 0.7488372093023256,
     "fit": {
      "expected": 0,
      "neutral": 4,
      "surprising": 1
     },
-    "perception": "random bonus damage",
+    "perception": "headshot debuff",
+    "popularity": 4.06,
+    "popularityObscurity": 0.5116279069767442,
+    "spellingCost": 9,
+    "spellingObscurity": 0.6046511627906976,
+    "key": 0.6467441860465117
+   },
+   {
+    "id": "upgrade_boundless_spirit",
+    "name": "Boundless Spirit",
+    "passPositions": [
+     6,
+     1,
+     13,
+     5,
+     11
+    ],
+    "borda": 0.16744186046511628,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "big spirit power",
+    "popularity": 29.17,
+    "popularityObscurity": 0,
+    "spellingCost": 9,
+    "spellingObscurity": 0.6046511627906976,
+    "key": 0.12232558139534885
+   },
+   {
+    "id": "upgrade_capacitor",
+    "name": "Capacitor",
+    "passPositions": [
+     20,
+     42,
+     20,
+     19,
+     38
+    ],
+    "borda": 0.6465116279069767,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "slow projectile",
+    "popularity": 8.07,
+    "popularityObscurity": 0.20930232558139536,
+    "spellingCost": 9,
+    "spellingObscurity": 0.6046511627906976,
+    "key": 0.4695348837209303
+   },
+   {
+    "id": "upgrade_cheat_death",
+    "name": "Cheat Death",
+    "passPositions": [
+     2,
+     3,
+     2,
+     2,
+     1
+    ],
+    "borda": 0.04651162790697675,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "survive lethal",
+    "popularity": 3.32,
+    "popularityObscurity": 0.6511627906976745,
+    "spellingCost": 5,
+    "spellingObscurity": 0.05813953488372093,
+    "key": 0.28895348837209306
+   },
+   {
+    "id": "upgrade_colossus",
+    "name": "Colossus",
+    "passPositions": [
+     10,
+     5,
+     9,
+     9,
+     4
+    ],
+    "borda": 0.17209302325581394,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "grow large",
+    "popularity": 1.86,
+    "popularityObscurity": 0.9069767441860465,
+    "spellingCost": 8,
+    "spellingObscurity": 0.45348837209302323,
+    "key": 0.48011627906976745
+   },
+   {
+    "id": "upgrade_critshot",
+    "name": "Lucky Shot",
+    "passPositions": [
+     24,
+     37,
+     33,
+     27,
+     17
+    ],
+    "borda": 0.6418604651162789,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "bonus damage proc",
     "popularity": 4.12,
     "popularityObscurity": 0.4883720930232558,
     "spellingCost": 9,
     "spellingObscurity": 0.6046511627906976,
-    "key": 0.5362790697674419
+    "key": 0.5786046511627907
    },
    {
     "id": "upgrade_crushing_fists",
     "name": "Crushing Fists",
     "passPositions": [
      43,
-     40,
-     39,
-     39,
-     40
+     41,
+     43,
+     42,
+     36
     ],
-    "borda": 0.9348837209302324,
+    "borda": 0.9534883720930232,
     "fit": {
      "expected": 0,
-     "neutral": 1,
-     "surprising": 4
+     "neutral": 0,
+     "surprising": 5
     },
-    "perception": "melee build item",
+    "perception": "melee build",
     "popularity": 5.5,
     "popularityObscurity": 0.4186046511627907,
     "spellingCost": 13,
     "spellingObscurity": 0.9186046511627907,
-    "key": 0.7783720930232558
+    "key": 0.7377906976744186
    },
    {
     "id": "upgrade_damage_recycler",
     "name": "Leech",
     "passPositions": [
-     7,
+     12,
+     26,
+     6,
      10,
-     9,
-     10,
-     8
+     9
     ],
-    "borda": 0.20465116279069767,
+    "borda": 0.2930232558139535,
     "fit": {
      "expected": 0,
-     "neutral": 5,
-     "surprising": 0
+     "neutral": 4,
+     "surprising": 1
     },
-    "perception": "big lifesteal tier 4 item",
+    "perception": "lifesteal upgrade",
     "popularity": 3.99,
     "popularityObscurity": 0.5348837209302325,
     "spellingCost": 5,
     "spellingObscurity": 0.05813953488372093,
-    "key": 0.2890697674418604
+    "key": 0.3780232558139535
    },
    {
     "id": "upgrade_deflecting_armor",
     "name": "Plated Armor",
     "passPositions": [
-     28,
-     17,
-     37,
-     20,
-     18
+     25,
+     18,
+     29,
+     24,
+     23
     ],
-    "borda": 0.5581395348837209,
+    "borda": 0.5534883720930233,
     "fit": {
      "expected": 0,
-     "neutral": 4,
-     "surprising": 1
+     "neutral": 5,
+     "surprising": 0
     },
     "perception": "deflect bullets",
     "popularity": 7.03,
     "popularityObscurity": 0.2558139534883721,
     "spellingCost": 6,
     "spellingObscurity": 0.2441860465116279,
-    "key": 0.436046511627907
+    "key": 0.41895348837209306
    },
    {
     "id": "upgrade_discord",
     "name": "Scourge",
     "passPositions": [
-     33,
+     35,
      36,
-     35,
-     34,
-     35
-    ],
-    "borda": 0.8046511627906977,
-    "fit": {
-     "expected": 0,
-     "neutral": 2,
-     "surprising": 3
-    },
-    "perception": "spirit debuff aura",
-    "popularity": 2.57,
-    "popularityObscurity": 0.813953488372093,
-    "spellingCost": 7,
-    "spellingObscurity": 0.38372093023255816,
-    "key": 0.7653488372093024
-   },
-   {
-    "id": "upgrade_divine_barrier",
-    "name": "Divine Barrier",
-    "passPositions": [
-     24,
-     15,
-     14,
-     32,
-     33
-    ],
-    "borda": 0.5488372093023256,
-    "fit": {
-     "expected": 0,
-     "neutral": 5,
-     "surprising": 0
-    },
-    "perception": "cleanse and barrier active",
-    "popularity": 3.26,
-    "popularityObscurity": 0.6744186046511628,
-    "spellingCost": 6,
-    "spellingObscurity": 0.2441860465116279,
-    "key": 0.556046511627907
-   },
-   {
-    "id": "upgrade_diviners_kevlar",
-    "name": "Diviner's Kevlar",
-    "passPositions": [
-     42,
-     35,
-     43,
-     43,
-     43
-    ],
-    "borda": 0.9581395348837208,
-    "fit": {
-     "expected": 0,
-     "neutral": 1,
-     "surprising": 4
-    },
-    "perception": "ultimate barrier",
-    "popularity": 2.67,
-    "popularityObscurity": 0.7674418604651163,
-    "spellingCost": 6,
-    "spellingObscurity": 0.2441860465116279,
-    "key": 0.8295348837209301
-   },
-   {
-    "id": "upgrade_enchanted_holsters",
-    "name": "Spellslinger",
-    "passPositions": [
      25,
-     29,
-     38,
-     19,
-     42
+     37,
+     19
     ],
-    "borda": 0.7116279069767442,
+    "borda": 0.7069767441860465,
     "fit": {
      "expected": 0,
      "neutral": 4,
      "surprising": 1
     },
-    "perception": "fire rate from casting",
+    "perception": "aura debuff",
+    "popularity": 2.57,
+    "popularityObscurity": 0.813953488372093,
+    "spellingCost": 7,
+    "spellingObscurity": 0.38372093023255816,
+    "key": 0.7336046511627907
+   },
+   {
+    "id": "upgrade_divine_barrier",
+    "name": "Divine Barrier",
+    "passPositions": [
+     18,
+     21,
+     27,
+     16,
+     20
+    ],
+    "borda": 0.4744186046511628,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "cleanse barrier",
+    "popularity": 3.26,
+    "popularityObscurity": 0.6744186046511628,
+    "spellingCost": 6,
+    "spellingObscurity": 0.2441860465116279,
+    "key": 0.5429069767441861
+   },
+   {
+    "id": "upgrade_diviners_kevlar",
+    "name": "Diviner's Kevlar",
+    "passPositions": [
+     41,
+     34,
+     32,
+     34,
+     31
+    ],
+    "borda": 0.8,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "ult barrier",
+    "popularity": 2.67,
+    "popularityObscurity": 0.7674418604651163,
+    "spellingCost": 6,
+    "spellingObscurity": 0.2441860465116279,
+    "key": 0.759186046511628
+   },
+   {
+    "id": "upgrade_enchanted_holsters",
+    "name": "Spellslinger",
+    "passPositions": [
+     31,
+     35,
+     37,
+     14,
+     15
+    ],
+    "borda": 0.6139534883720931,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "cast fire rate",
     "popularity": 2.96,
     "popularityObscurity": 0.7441860465116279,
     "spellingCost": 12,
     "spellingObscurity": 0.8372093023255814,
-    "key": 0.733953488372093
+    "key": 0.6772093023255814
    },
    {
     "id": "upgrade_escalating_exposure",
     "name": "Escalating Exposure",
     "passPositions": [
-     19,
+     21,
+     13,
      12,
-     7,
-     27,
-     11
+     23,
+     28
     ],
-    "borda": 0.35348837209302325,
+    "borda": 0.45116279069767434,
     "fit": {
      "expected": 0,
      "neutral": 5,
@@ -808,226 +808,226 @@
     "popularityObscurity": 0.046511627906976744,
     "spellingCost": 10,
     "spellingObscurity": 0.7441860465116279,
-    "key": 0.30046511627906974
+    "key": 0.30395348837209296
    },
    {
     "id": "upgrade_ethereal_bullets",
     "name": "Mercurial Magnum",
     "passPositions": [
+     42,
+     33,
+     19,
      41,
-     34,
-     36,
-     38,
-     36
+     40
     ],
-    "borda": 0.8604651162790697,
+    "borda": 0.813953488372093,
     "fit": {
      "expected": 0,
-     "neutral": 1,
-     "surprising": 4
+     "neutral": 2,
+     "surprising": 3
     },
-    "perception": "imbued ability spirit damage",
+    "perception": "imbue reload",
     "popularity": 7.24,
     "popularityObscurity": 0.23255813953488372,
     "spellingCost": 6,
     "spellingObscurity": 0.2441860465116279,
-    "key": 0.6104651162790697
+    "key": 0.5529069767441861
    },
    {
     "id": "upgrade_fervor",
     "name": "Frenzy",
     "passPositions": [
-     27,
-     18,
-     41,
-     29,
-     17
+     23,
+     20,
+     39,
+     22,
+     18
     ],
-    "borda": 0.613953488372093,
+    "borda": 0.5674418604651162,
     "fit": {
      "expected": 0,
-     "neutral": 4,
-     "surprising": 1
+     "neutral": 5,
+     "surprising": 0
     },
-    "perception": "low health bonuses",
+    "perception": "low health bonus",
     "popularity": 1.32,
     "popularityObscurity": 0.9534883720930233,
     "spellingCost": 6,
     "spellingObscurity": 0.2441860465116279,
-    "key": 0.6788372093023255
+    "key": 0.7056976744186046
    },
    {
     "id": "upgrade_focus_lens",
     "name": "Focus Lens",
     "passPositions": [
      32,
-     38,
-     26,
-     21,
-     27
+     40,
+     16,
+     33,
+     29
     ],
-    "borda": 0.6697674418604651,
+    "borda": 0.6976744186046512,
     "fit": {
      "expected": 0,
-     "neutral": 3,
-     "surprising": 2
+     "neutral": 4,
+     "surprising": 1
     },
-    "perception": "silence item",
+    "perception": "silence",
     "popularity": 1.09,
     "popularityObscurity": 0.9767441860465116,
     "spellingCost": 9,
     "spellingObscurity": 0.6046511627906976,
-    "key": 0.7553488372093022
+    "key": 0.8046511627906977
    },
    {
     "id": "upgrade_glass_cannon",
     "name": "Glass Cannon",
     "passPositions": [
+     5,
+     6,
      4,
-     3,
-     4,
-     2,
+     1,
      2
     ],
-    "borda": 0.0697674418604651,
+    "borda": 0.08372093023255814,
     "fit": {
      "expected": 5,
      "neutral": 0,
      "surprising": 0
     },
-    "perception": "high damage low health",
+    "perception": "weapon damage",
     "popularity": 2.22,
     "popularityObscurity": 0.8604651162790697,
     "spellingCost": 5,
     "spellingObscurity": 0.05813953488372093,
-    "key": 0.3058139534883721
+    "key": 0.39313953488372094
    },
    {
     "id": "upgrade_glitch",
     "name": "Cursed Relic",
     "passPositions": [
-     15,
-     23,
-     15,
+     8,
+     14,
      11,
-     10
+     12,
+     14
     ],
-    "borda": 0.3441860465116279,
+    "borda": 0.27441860465116286,
     "fit": {
-     "expected": 0,
-     "neutral": 5,
+     "expected": 1,
+     "neutral": 4,
      "surprising": 0
     },
-    "perception": "hard lockdown curse",
+    "perception": "curse silence",
     "popularity": 4.8,
     "popularityObscurity": 0.46511627906976744,
     "spellingCost": 5,
     "spellingObscurity": 0.05813953488372093,
-    "key": 0.35186046511627905
+    "key": 0.3398837209302326
    },
    {
     "id": "upgrade_healbuff",
     "name": "Healing Tempo",
     "passPositions": [
-     34,
+     36,
      43,
-     42,
-     41,
-     32
+     35,
+     35,
+     42
     ],
-    "borda": 0.8930232558139535,
+    "borda": 0.8883720930232559,
     "fit": {
      "expected": 0,
-     "neutral": 2,
-     "surprising": 3
+     "neutral": 3,
+     "surprising": 2
     },
-    "perception": "healing speed buff",
+    "perception": "healing haste",
     "popularity": 3.63,
     "popularityObscurity": 0.6046511627906976,
     "spellingCost": 5,
     "spellingObscurity": 0.05813953488372093,
-    "key": 0.7230232558139534
+    "key": 0.7333720930232559
    },
    {
     "id": "upgrade_infuser",
     "name": "Infuser",
     "passPositions": [
-     38,
-     42,
+     26,
      27,
-     37,
-     34
+     21,
+     26,
+     35
     ],
-    "borda": 0.8279069767441859,
+    "borda": 0.627906976744186,
     "fit": {
      "expected": 0,
-     "neutral": 1,
-     "surprising": 4
+     "neutral": 3,
+     "surprising": 2
     },
     "perception": "spirit lifesteal active",
     "popularity": 3.91,
     "popularityObscurity": 0.5581395348837209,
     "spellingCost": 7,
     "spellingObscurity": 0.38372093023255816,
-    "key": 0.7025581395348837
+    "key": 0.5877906976744187
    },
    {
     "id": "upgrade_inhibitor",
     "name": "Inhibitor",
     "passPositions": [
-     18,
-     13,
-     32,
      30,
-     39
+     28,
+     41,
+     32,
+     25
     ],
-    "borda": 0.613953488372093,
+    "borda": 0.7255813953488373,
     "fit": {
      "expected": 0,
      "neutral": 4,
      "surprising": 1
     },
-    "perception": "damage and healing reduction",
+    "perception": "damage reduction bullets",
     "popularity": 3.21,
     "popularityObscurity": 0.6976744186046512,
     "spellingCost": 9,
     "spellingObscurity": 0.6046511627906976,
-    "key": 0.6381395348837209
+    "key": 0.7083720930232559
    },
    {
     "id": "upgrade_juggernaut",
     "name": "Juggernaut",
     "passPositions": [
-     16,
-     16,
-     16,
-     13,
-     31
+     28,
+     29,
+     36,
+     21,
+     16
     ],
-    "borda": 0.427906976744186,
+    "borda": 0.6046511627906976,
     "fit": {
      "expected": 0,
-     "neutral": 5,
-     "surprising": 0
+     "neutral": 4,
+     "surprising": 1
     },
     "perception": "slow resist tank item",
     "popularity": 6.16,
     "popularityObscurity": 0.3488372093023256,
     "spellingCost": 10,
     "spellingObscurity": 0.7441860465116279,
-    "key": 0.43581395348837204
+    "key": 0.5093023255813953
    },
    {
     "id": "upgrade_magic_carpet",
     "name": "Magic Carpet",
     "passPositions": [
-     10,
      9,
-     11,
+     9,
+     5,
      8,
-     9
+     7
     ],
-    "borda": 0.21860465116279068,
+    "borda": 0.17674418604651163,
     "fit": {
      "expected": 0,
      "neutral": 5,
@@ -1038,45 +1038,45 @@
     "popularityObscurity": 1,
     "spellingCost": 6,
     "spellingObscurity": 0.2441860465116279,
-    "key": 0.4555813953488372
+    "key": 0.5094186046511628
    },
    {
     "id": "upgrade_mystic_reverb",
     "name": "Mystic Reverb",
     "passPositions": [
-     36,
-     33,
-     25,
-     42,
-     14
+     38,
+     32,
+     26,
+     43,
+     33
     ],
-    "borda": 0.6976744186046513,
+    "borda": 0.8,
     "fit": {
      "expected": 0,
-     "neutral": 2,
-     "surprising": 3
+     "neutral": 3,
+     "surprising": 2
     },
-    "perception": "imbue lifesteal slow",
+    "perception": "lifesteal slow",
     "popularity": 10.09,
     "popularityObscurity": 0.11627906976744186,
     "spellingCost": 6,
     "spellingObscurity": 0.2441860465116279,
-    "key": 0.47790697674418614
+    "key": 0.49872093023255815
    },
    {
     "id": "upgrade_phantom_strike",
     "name": "Phantom Strike",
     "passPositions": [
+     11,
+     10,
      8,
-     8,
-     13,
-     7,
-     5
+     11,
+     8
     ],
-    "borda": 0.19069767441860463,
+    "borda": 0.22325581395348837,
     "fit": {
-     "expected": 1,
-     "neutral": 4,
+     "expected": 0,
+     "neutral": 5,
      "surprising": 0
     },
     "perception": "teleport pull",
@@ -1084,214 +1084,214 @@
     "popularityObscurity": 0.627906976744186,
     "spellingCost": 13,
     "spellingObscurity": 0.9186046511627907,
-    "key": 0.3946511627906977
+    "key": 0.4198837209302326
    },
    {
     "id": "upgrade_proc_silence",
     "name": "Silencer",
     "passPositions": [
-     31,
-     19,
-     31,
-     18,
-     15
+     16,
+     16,
+     40,
+     13,
+     13
     ],
-    "borda": 0.5302325581395348,
-    "fit": {
-     "expected": 0,
-     "neutral": 4,
-     "surprising": 1
-    },
-    "perception": "bullet silence buildup",
-    "popularity": 6.81,
-    "popularityObscurity": 0.3023255813953488,
-    "spellingCost": 8,
-    "spellingObscurity": 0.45348837209302323,
-    "key": 0.45418604651162786
-   },
-   {
-    "id": "upgrade_ricochet",
-    "name": "Ricochet",
-    "passPositions": [
-     17,
-     20,
-     17,
-     17,
-     19
-    ],
-    "borda": 0.4186046511627907,
+    "borda": 0.4558139534883721,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "bullet bounce",
+    "perception": "bullet silence",
+    "popularity": 6.81,
+    "popularityObscurity": 0.3023255813953488,
+    "spellingCost": 8,
+    "spellingObscurity": 0.45348837209302323,
+    "key": 0.39430232558139533
+   },
+   {
+    "id": "upgrade_ricochet",
+    "name": "Ricochet",
+    "passPositions": [
+     15,
+     17,
+     34,
+     28,
+     22
+    ],
+    "borda": 0.5395348837209303,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "bouncing bullets",
     "popularity": 10.76,
     "popularityObscurity": 0.09302325581395349,
     "spellingCost": 8,
     "spellingObscurity": 0.45348837209302323,
-    "key": 0.3244186046511628
+    "key": 0.3566279069767443
    },
    {
     "id": "upgrade_self_bubble",
     "name": "Ethereal Shift",
     "passPositions": [
-     5,
-     11,
-     2,
+     4,
+     7,
+     1,
      6,
-     7
+     6
     ],
-    "borda": 0.1441860465116279,
+    "borda": 0.11162790697674418,
     "fit": {
-     "expected": 4,
-     "neutral": 1,
+     "expected": 5,
+     "neutral": 0,
      "surprising": 0
     },
-    "perception": "invulnerability active",
+    "perception": "invulnerable",
     "popularity": 3.08,
     "popularityObscurity": 0.7209302325581395,
     "spellingCost": 13,
     "spellingObscurity": 0.9186046511627907,
-    "key": 0.3946511627906977
+    "key": 0.3956976744186046
    },
    {
     "id": "upgrade_siphon_bullets",
     "name": "Siphon Bullets",
     "passPositions": [
      29,
-     28,
      24,
-     26,
-     22
+     42,
+     20,
+     26
     ],
-    "borda": 0.6,
+    "borda": 0.655813953488372,
     "fit": {
      "expected": 0,
-     "neutral": 4,
-     "surprising": 1
+     "neutral": 5,
+     "surprising": 0
     },
     "perception": "steal max HP",
     "popularity": 6.2,
     "popularityObscurity": 0.32558139534883723,
     "spellingCost": 6,
     "spellingObscurity": 0.2441860465116279,
-    "key": 0.48209302325581394
+    "key": 0.5031395348837209
    },
    {
     "id": "upgrade_spellbreaker",
     "name": "Spellbreaker",
     "passPositions": [
-     37,
-     14,
-     34,
-     35,
-     29
+     40,
+     12,
+     31,
+     36,
+     27
     ],
-    "borda": 0.6930232558139535,
+    "borda": 0.6790697674418604,
     "fit": {
      "expected": 0,
-     "neutral": 2,
-     "surprising": 3
+     "neutral": 4,
+     "surprising": 1
     },
     "perception": "spirit damage reduction",
     "popularity": 6.87,
     "popularityObscurity": 0.27906976744186046,
     "spellingCost": 12,
     "spellingObscurity": 0.8372093023255814,
-    "key": 0.5832558139534884
+    "key": 0.5269767441860465
    },
    {
     "id": "upgrade_spirit_burn",
     "name": "Spirit Burn",
     "passPositions": [
-     14,
-     39,
-     12,
+     22,
      23,
-     13
+     14,
+     30,
+     21
     ],
-    "borda": 0.46976744186046515,
+    "borda": 0.5116279069767442,
     "fit": {
      "expected": 0,
-     "neutral": 4,
-     "surprising": 1
+     "neutral": 5,
+     "surprising": 0
     },
-    "perception": "burn and healing reduction",
+    "perception": "burn explosion",
     "popularity": 19.01,
     "popularityObscurity": 0.023255813953488372,
     "spellingCost": 10,
     "spellingObscurity": 0.7441860465116279,
-    "key": 0.3632558139534884
+    "key": 0.3279069767441861
    },
    {
     "id": "upgrade_surging_power",
     "name": "Vampiric Burst",
     "passPositions": [
-     30,
      27,
-     30,
-     24,
-     38
+     25,
+     22,
+     25,
+     34
     ],
-    "borda": 0.6930232558139535,
+    "borda": 0.6186046511627907,
     "fit": {
      "expected": 0,
-     "neutral": 4,
-     "surprising": 1
+     "neutral": 5,
+     "surprising": 0
     },
-    "perception": "lifesteal ammo burst",
+    "perception": "lifesteal active",
     "popularity": 5.26,
     "popularityObscurity": 0.4418604651162791,
     "spellingCost": 13,
     "spellingObscurity": 0.9186046511627907,
-    "key": 0.6402325581395348
+    "key": 0.5629069767441861
    },
    {
     "id": "upgrade_tech_overflow",
     "name": "Spiritual Overflow",
     "passPositions": [
-     35,
-     37,
-     28,
+     14,
+     39,
+     24,
      40,
-     37
+     41
     ],
-    "borda": 0.8232558139534882,
+    "borda": 0.7348837209302326,
     "fit": {
      "expected": 0,
-     "neutral": 2,
-     "surprising": 3
+     "neutral": 3,
+     "surprising": 2
     },
-    "perception": "spirit fire rate charge item",
+    "perception": "spirit lifesteal fire rate",
     "popularity": 8.69,
     "popularityObscurity": 0.16279069767441862,
     "spellingCost": 8,
     "spellingObscurity": 0.45348837209302323,
-    "key": 0.5881395348837208
+    "key": 0.49197674418604653
    },
    {
     "id": "upgrade_transcendent_cooldown",
     "name": "Transcendent Cooldown",
     "passPositions": [
-     6,
-     1,
-     6,
-     9,
-     21
+     7,
+     2,
+     10,
+     7,
+     12
     ],
-    "borda": 0.2,
+    "borda": 0.17674418604651163,
     "fit": {
-     "expected": 2,
-     "neutral": 3,
+     "expected": 1,
+     "neutral": 4,
      "surprising": 0
     },
-    "perception": "top cooldown reduction",
+    "perception": "cooldown reduction",
     "popularity": 13.8,
     "popularityObscurity": 0.06976744186046512,
     "spellingCost": 20,
     "spellingObscurity": 1,
-    "key": 0.24093023255813953
+    "key": 0.17511627906976746
    },
    {
     "id": "upgrade_ultimate_burst",
@@ -1299,215 +1299,203 @@
     "passPositions": [
      39,
      31,
-     21,
-     33,
-     12
+     15,
+     17,
+     37
     ],
-    "borda": 0.6325581395348837,
+    "borda": 0.6465116279069767,
     "fit": {
      "expected": 0,
-     "neutral": 1,
-     "surprising": 4
+     "neutral": 2,
+     "surprising": 3
     },
-    "perception": "ultimate stun",
+    "perception": "ult stun",
     "popularity": 2.14,
     "popularityObscurity": 0.8837209302325582,
     "spellingCost": 15,
     "spellingObscurity": 0.9767441860465116,
-    "key": 0.7423255813953488
+    "key": 0.7579069767441862
    },
    {
     "id": "upgrade_unstoppable",
     "name": "Unstoppable",
     "passPositions": [
-     2,
-     5,
-     8,
+     3,
      4,
-     6
+     7,
+     4,
+     5
     ],
-    "borda": 0.11627906976744187,
+    "borda": 0.10697674418604652,
     "fit": {
-     "expected": 4,
-     "neutral": 1,
+     "expected": 5,
+     "neutral": 0,
      "surprising": 0
     },
-    "perception": "classic CC immunity",
+    "perception": "debuff immunity",
     "popularity": 9.05,
     "popularityObscurity": 0.13953488372093023,
     "spellingCost": 6,
     "spellingObscurity": 0.2441860465116279,
-    "key": 0.13604651162790699
+    "key": 0.12686046511627908
    }
   ],
-  "passAgreement": 0.5420718816067653,
+  "passAgreement": 0.5255813953488372,
   "orderBeforeRefinement": [
+   "upgrade_boundless_spirit",
    "upgrade_unstoppable",
+   "upgrade_transcendent_cooldown",
    "upgrade_ability_refresher",
    "upgrade_cheat_death",
-   "upgrade_transcendent_cooldown",
-   "upgrade_boundless_spirit",
-   "upgrade_damage_recycler",
    "upgrade_escalating_exposure",
-   "upgrade_glass_cannon",
-   "upgrade_ricochet",
-   "upgrade_ability_power_shard",
-   "upgrade_glitch",
-   "upgrade_auto_cleanse",
    "upgrade_spirit_burn",
-   "upgrade_phantom_strike",
-   "upgrade_self_bubble",
-   "upgrade_colossus",
-   "upgrade_juggernaut",
-   "upgrade_deflecting_armor",
+   "upgrade_glitch",
+   "upgrade_ricochet",
+   "upgrade_damage_recycler",
+   "upgrade_absorbing_armor",
+   "upgrade_ability_power_shard",
+   "upgrade_glass_cannon",
    "upgrade_proc_silence",
-   "upgrade_magic_carpet",
+   "upgrade_self_bubble",
+   "upgrade_deflecting_armor",
+   "upgrade_phantom_strike",
+   "upgrade_auto_cleanse",
+   "upgrade_capacitor",
+   "upgrade_colossus",
+   "upgrade_tech_overflow",
    "upgrade_mystic_reverb",
    "upgrade_siphon_bullets",
-   "upgrade_capacitor",
-   "upgrade_critshot",
-   "upgrade_divine_barrier",
-   "upgrade_arctic_blast",
-   "upgrade_absorbing_armor",
-   "upgrade_aoe_root",
+   "upgrade_juggernaut",
+   "upgrade_magic_carpet",
    "upgrade_spellbreaker",
-   "upgrade_tech_overflow",
-   "upgrade_banshee_slugs",
+   "upgrade_divine_barrier",
    "upgrade_ethereal_bullets",
-   "upgrade_inhibitor",
+   "upgrade_arctic_blast",
    "upgrade_surging_power",
-   "upgrade_fervor",
+   "upgrade_critshot",
    "upgrade_infuser",
-   "upgrade_aprounds",
-   "upgrade_healbuff",
+   "upgrade_banshee_slugs",
+   "upgrade_aoe_root",
    "upgrade_enchanted_holsters",
-   "upgrade_ultimate_burst",
-   "upgrade_focus_lens",
+   "upgrade_fervor",
+   "upgrade_inhibitor",
+   "upgrade_healbuff",
    "upgrade_discord",
    "upgrade_crushing_fists",
-   "upgrade_diviners_kevlar"
+   "upgrade_ultimate_burst",
+   "upgrade_diviners_kevlar",
+   "upgrade_focus_lens",
+   "upgrade_aprounds"
   ],
   "pairwise": [
    {
-    "a": "upgrade_focus_lens",
-    "b": "upgrade_discord",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_discord"
-   },
-   {
-    "a": "upgrade_focus_lens",
-    "b": "upgrade_crushing_fists",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_crushing_fists"
-   },
-   {
-    "a": "upgrade_focus_lens",
-    "b": "upgrade_diviners_kevlar",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_diviners_kevlar"
-   },
-   {
-    "a": "upgrade_discord",
-    "b": "upgrade_crushing_fists",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_discord",
+    "a": "upgrade_ultimate_burst",
     "b": "upgrade_diviners_kevlar",
     "purpose": "rare-contenders",
     "rarer": null
    },
    {
-    "a": "upgrade_crushing_fists",
-    "b": "upgrade_diviners_kevlar",
+    "a": "upgrade_ultimate_burst",
+    "b": "upgrade_focus_lens",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_diviners_kevlar"
+    "rarer": null
    },
    {
-    "a": "upgrade_transcendent_cooldown",
-    "b": "upgrade_boundless_spirit",
+    "a": "upgrade_ultimate_burst",
+    "b": "upgrade_aprounds",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_ultimate_burst"
+   },
+   {
+    "a": "upgrade_diviners_kevlar",
+    "b": "upgrade_focus_lens",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_focus_lens"
+   },
+   {
+    "a": "upgrade_diviners_kevlar",
+    "b": "upgrade_aprounds",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_focus_lens",
+    "b": "upgrade_aprounds",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_ability_refresher",
+    "b": "upgrade_cheat_death",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_cheat_death"
+   },
+   {
+    "a": "upgrade_absorbing_armor",
+    "b": "upgrade_ability_power_shard",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_absorbing_armor"
+   },
+   {
+    "a": "upgrade_juggernaut",
+    "b": "upgrade_magic_carpet",
     "purpose": "tier-boundary",
     "rarer": null
    },
    {
-    "a": "upgrade_glitch",
-    "b": "upgrade_auto_cleanse",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_auto_cleanse"
-   },
-   {
-    "a": "upgrade_critshot",
-    "b": "upgrade_divine_barrier",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_divine_barrier"
-   },
-   {
-    "a": "upgrade_unstoppable",
+    "a": "upgrade_boundless_spirit",
     "b": "upgrade_ability_refresher",
-    "purpose": "review",
-    "rarer": "upgrade_unstoppable"
-   },
-   {
-    "a": "upgrade_spirit_burn",
-    "b": "upgrade_boundless_spirit",
     "purpose": "review",
     "rarer": "upgrade_boundless_spirit"
    },
    {
-    "a": "upgrade_colossus",
-    "b": "upgrade_damage_recycler",
+    "a": "upgrade_transcendent_cooldown",
+    "b": "upgrade_cheat_death",
+    "purpose": "review",
+    "rarer": "upgrade_transcendent_cooldown"
+   },
+   {
+    "a": "upgrade_focus_lens",
+    "b": "upgrade_ultimate_burst",
     "purpose": "review",
     "rarer": null
-   },
-   {
-    "a": "upgrade_glitch",
-    "b": "upgrade_proc_silence",
-    "purpose": "review",
-    "rarer": "upgrade_proc_silence"
-   },
-   {
-    "a": "upgrade_diviners_kevlar",
-    "b": "upgrade_infuser",
-    "purpose": "review",
-    "rarer": "upgrade_diviners_kevlar"
    }
   ],
   "review": [
    {
-    "name": "Unstoppable",
+    "name": "Boundless Spirit",
     "compareWith": "Refresher",
     "claim": "should_be_more_obscure",
-    "reason": "Many players might not recall that Unstoppable is the 6,400 tier. Refresher and Cheat Death are more iconic top-tier items for this question, so Unstoppable should be slightly less obvious.",
+    "reason": "Boundless Spirit is a bland stat stick, whereas Refresher is the iconic, well-known late-game item and the one players are most likely to type here. Both sit at 10 pts, but Boundless Spirit should rank rarer.",
     "outcome": "applied"
    },
    {
-    "name": "Spirit Burn",
-    "compareWith": "Boundless Spirit",
-    "claim": "should_be_more_obvious",
-    "reason": "Spirit Burn is a well-known late-game spirit item and players commonly associate it with the highest tier. At 60 pts it is placed more obscurely than Boundless Spirit, which seems an overstatement.",
-    "outcome": "applied"
-   },
-   {
-    "name": "Colossus",
-    "compareWith": "Leech",
-    "claim": "should_be_more_obvious",
-    "reason": "Colossus is a popular, memorable tier-4 vitality item with a strong identity. It should be rated closer to 30 pts, similar to Leech.",
-    "outcome": "rejected-by-comparison"
-   },
-   {
-    "name": "Cursed Relic",
-    "compareWith": "Silencer",
+    "name": "Transcendent Cooldown",
+    "compareWith": "Cheat Death",
     "claim": "should_be_more_obscure",
-    "reason": "Cursed Relic is a niche and often forgotten item. It is unlikely to come to mind for this question as readily as 30-pt items such as Glass Cannon or Ricochet.",
+    "reason": "Transcendent Cooldown is a plain stat upgrade with a forgettable name, so fewer players would think of it than Cheat Death, a famous and memorable defensive item. Cheat Death should not score worse than Transcendent Cooldown.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Focus Lens",
+    "compareWith": "Lightning Scroll",
+    "claim": "should_be_more_obvious",
+    "reason": "Focus Lens is an active silence item that players see in builds regularly. Lightning Scroll is a niche ultimate-synergy item and is less likely to come to mind, so it deserves the top 100 pts instead of Focus Lens.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Diviner's Kevlar",
-    "compareWith": "Infuser",
+    "name": "Magic Carpet",
+    "compareWith": "Crushing Fists",
     "claim": "should_be_more_obvious",
-    "reason": "Diviner's Kevlar is a recognizable, commonly bought item and is not more obscure than other 85-pt answers like Infuser or Healing Tempo. It does not clearly merit the single rarest slot.",
-    "outcome": "rejected-by-comparison"
+    "reason": "Magic Carpet is a distinctive, memorable item name that players recall easily. It should score below Crushing Fists, a niche melee item.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Spellslinger",
+    "compareWith": "Armor Piercer",
+    "claim": "should_be_more_obvious",
+    "reason": "Spellslinger is a fairly popular weapon item with a catchy name and should be recalled more readily than Armor Piercer, a niche upgrade that few players think of.",
+    "outcome": "ignored-invalid"
    }
   ]
  }

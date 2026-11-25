@@ -1,0 +1,354 @@
+{
+ "question": {
+  "signature": "item-slot-tier:Vitality:1",
+  "prompt": "Name a Tier 1 Vitality item.",
+  "category": "item-cost",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_endurance",
+   "upgrade_grit",
+   "upgrade_health",
+   "upgrade_health_stimpak",
+   "upgrade_improved_stamina",
+   "upgrade_lifestrike_gauntlets",
+   "upgrade_melee_rebuttal",
+   "upgrade_sprint_booster"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "slot == Vitality && tier == 1"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:04:24.692Z",
+ "answers": [
+  {
+   "entityId": "upgrade_health",
+   "name": "Extra Health",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_sprint_booster",
+   "name": "Sprint Boots",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_endurance",
+   "name": "Extra Regen",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_lifestrike_gauntlets",
+   "name": "Melee Lifesteal",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_health_stimpak",
+   "name": "Healing Rite",
+   "rank": 5,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_grit",
+   "name": "Grit",
+   "rank": 6,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_improved_stamina",
+   "name": "Extra Stamina",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_melee_rebuttal",
+   "name": "Rebuttal",
+   "rank": 8,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "upgrade_endurance",
+    "name": "Extra Regen",
+    "passPositions": [
+     1,
+     2,
+     2,
+     1,
+     3
+    ],
+    "borda": 0.2571428571428571,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "basic health regen item",
+    "popularity": 22.98,
+    "popularityObscurity": 0.2857142857142857,
+    "spellingCost": 10,
+    "spellingObscurity": 0.2857142857142857,
+    "key": 0.27
+   },
+   {
+    "id": "upgrade_grit",
+    "name": "Grit",
+    "passPositions": [
+     6,
+     7,
+     5,
+     6,
+     5
+    ],
+    "borda": 0.8285714285714286,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "early barrier active",
+    "popularity": 21.04,
+    "popularityObscurity": 0.42857142857142855,
+    "spellingCost": 4,
+    "spellingObscurity": 0,
+    "key": 0.6271428571428572
+   },
+   {
+    "id": "upgrade_health",
+    "name": "Extra Health",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "basic flat health buy, early staple",
+    "popularity": 19.53,
+    "popularityObscurity": 0.5714285714285714,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5714285714285714,
+    "key": 0.2571428571428571
+   },
+   {
+    "id": "upgrade_health_stimpak",
+    "name": "Healing Rite",
+    "passPositions": [
+     4,
+     1,
+     1,
+     4,
+     4
+    ],
+    "borda": 0.39999999999999997,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "early heal active on allies",
+    "popularity": 4.61,
+    "popularityObscurity": 0.8571428571428571,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5714285714285714,
+    "key": 0.5914285714285714
+   },
+   {
+    "id": "upgrade_improved_stamina",
+    "name": "Extra Stamina",
+    "passPositions": [
+     5,
+     5,
+     7,
+     5,
+     7
+    ],
+    "borda": 0.8285714285714286,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "extra dash stamina, common early pick",
+    "popularity": 26.32,
+    "popularityObscurity": 0.14285714285714285,
+    "spellingCost": 12,
+    "spellingObscurity": 0.8571428571428571,
+    "key": 0.5557142857142858
+   },
+   {
+    "id": "upgrade_lifestrike_gauntlets",
+    "name": "Melee Lifesteal",
+    "passPositions": [
+     3,
+     3,
+     3,
+     2,
+     2
+    ],
+    "borda": 0.37142857142857133,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "early melee sustain item",
+    "popularity": 15.51,
+    "popularityObscurity": 0.7142857142857143,
+    "spellingCost": 14,
+    "spellingObscurity": 1,
+    "key": 0.54
+   },
+   {
+    "id": "upgrade_melee_rebuttal",
+    "name": "Rebuttal",
+    "passPositions": [
+     7,
+     6,
+     6,
+     7,
+     6
+    ],
+    "borda": 0.9142857142857143,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "parry-based counter item, rarely bought",
+    "popularity": 3.81,
+    "popularityObscurity": 1,
+    "spellingCost": 8,
+    "spellingObscurity": 0.14285714285714285,
+    "key": 0.91
+   },
+   {
+    "id": "upgrade_sprint_booster",
+    "name": "Sprint Boots",
+    "passPositions": [
+     2,
+     4,
+     4,
+     3,
+     1
+    ],
+    "borda": 0.39999999999999997,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "early movement speed boots",
+    "popularity": 31.64,
+    "popularityObscurity": 0,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5714285714285714,
+    "key": 0.24857142857142858
+   }
+  ],
+  "passAgreement": 0.6571428571428573,
+  "orderBeforeRefinement": [
+   "upgrade_sprint_booster",
+   "upgrade_health",
+   "upgrade_endurance",
+   "upgrade_lifestrike_gauntlets",
+   "upgrade_improved_stamina",
+   "upgrade_health_stimpak",
+   "upgrade_grit",
+   "upgrade_melee_rebuttal"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_improved_stamina",
+    "b": "upgrade_health_stimpak",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_improved_stamina"
+   },
+   {
+    "a": "upgrade_improved_stamina",
+    "b": "upgrade_grit",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_improved_stamina"
+   },
+   {
+    "a": "upgrade_improved_stamina",
+    "b": "upgrade_melee_rebuttal",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_health_stimpak",
+    "b": "upgrade_grit",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_grit"
+   },
+   {
+    "a": "upgrade_health_stimpak",
+    "b": "upgrade_melee_rebuttal",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_melee_rebuttal"
+   },
+   {
+    "a": "upgrade_grit",
+    "b": "upgrade_melee_rebuttal",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_melee_rebuttal"
+   },
+   {
+    "a": "upgrade_sprint_booster",
+    "b": "upgrade_health",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_sprint_booster"
+   },
+   {
+    "a": "upgrade_health",
+    "b": "upgrade_endurance",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_endurance"
+   },
+   {
+    "a": "upgrade_lifestrike_gauntlets",
+    "b": "upgrade_endurance",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Melee Lifesteal",
+    "compareWith": "Extra Regen",
+    "claim": "should_be_more_obvious",
+    "reason": "Melee Lifesteal is a commonly bought, well-known early item and a staple of melee-oriented builds. It is more memorable than Extra Regen, a plain stat stick, so it should score as more obvious than Extra Regen.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Healing Rite",
+    "compareWith": "Extra Stamina",
+    "claim": "should_be_more_obvious",
+    "reason": "Healing Rite is a distinctive active with a memorable name, and it upgrades into well-known items like Rescue Beam and Healing Nova. Extra Stamina is a bland stat item that players rarely think of, so Healing Rite should be less obscure than it.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Grit",
+    "compareWith": "Rebuttal",
+    "claim": "should_be_more_obvious",
+    "reason": "Grit is a popular active that upgrades into four items, so players see it often. Rebuttal is the rarer pick and deserves the 100, but Grit at 85 is tied with weaker answers when it should be nearer 60.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}

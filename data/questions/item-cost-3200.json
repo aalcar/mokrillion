@@ -58,9 +58,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "5",
+ "scoringVersion": "7",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T03:35:28.077Z",
+ "generatedAt": "2026-11-25T04:02:20.905Z",
  "answers": [
   {
    "entityId": "upgrade_cooldown_reduction",
@@ -75,8 +75,8 @@
    "score": 10
   },
   {
-   "entityId": "upgrade_chonky",
-   "name": "Fortitude",
+   "entityId": "upgrade_warp_stone",
+   "name": "Warp Stone",
    "rank": 3,
    "score": 10
   },
@@ -87,92 +87,92 @@
    "score": 10
   },
   {
-   "entityId": "upgrade_headhunter",
-   "name": "Headhunter",
+   "entityId": "upgrade_chonky",
+   "name": "Fortitude",
    "rank": 5,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_warp_stone",
-   "name": "Warp Stone",
-   "rank": 6,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_tech_range",
-   "name": "Greater Expansion",
-   "rank": 7,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_reduce_debuff_duration",
-   "name": "Dispel Magic",
-   "rank": 8,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_rapid_recharge",
-   "name": "Rapid Recharge",
-   "rank": 9,
    "score": 30
   },
   {
    "entityId": "upgrade_tech_purge",
    "name": "Spirit Resilience",
-   "rank": 10,
+   "rank": 6,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_reduce_debuff_duration",
+   "name": "Dispel Magic",
+   "rank": 7,
    "score": 30
   },
   {
    "entityId": "upgrade_metal_skin",
    "name": "Metal Skin",
+   "rank": 8,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_tech_range",
+   "name": "Greater Expansion",
+   "rank": 9,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_berserker",
+   "name": "Berserker",
+   "rank": 10,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_target_stun",
+   "name": "Knockdown",
    "rank": 11,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_headhunter",
+   "name": "Headhunter",
+   "rank": 12,
    "score": 30
   },
   {
    "entityId": "upgrade_imbued_duration_extender",
    "name": "Superior Duration",
-   "rank": 12,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_burst_fire",
-   "name": "Burst Fire",
    "rank": 13,
    "score": 60
   },
   {
-   "entityId": "upgrade_berserker",
-   "name": "Berserker",
+   "entityId": "upgrade_rapid_recharge",
+   "name": "Rapid Recharge",
    "rank": 14,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_counterspell",
-   "name": "Counterspell",
-   "rank": 15,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_target_stun",
-   "name": "Knockdown",
-   "rank": 16,
    "score": 60
   },
   {
    "entityId": "upgrade_magic_shock",
    "name": "Tankbuster",
+   "rank": 15,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_counterspell",
+   "name": "Counterspell",
+   "rank": 16,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_burst_fire",
+   "name": "Burst Fire",
    "rank": 17,
    "score": 60
   },
   {
-   "entityId": "upgrade_spellslinger_headshots",
-   "name": "Spirit Rend",
+   "entityId": "upgrade_rocket_booster",
+   "name": "Majestic Leap",
    "rank": 18,
    "score": 60
   },
   {
-   "entityId": "upgrade_boxing_glove",
-   "name": "Lifestrike",
+   "entityId": "upgrade_rupture",
+   "name": "Decay",
    "rank": 19,
    "score": 60
   },
@@ -183,14 +183,14 @@
    "score": 60
   },
   {
-   "entityId": "upgrade_rupture",
-   "name": "Decay",
+   "entityId": "upgrade_boxing_glove",
+   "name": "Lifestrike",
    "rank": 21,
    "score": 60
   },
   {
-   "entityId": "upgrade_magic_storm",
-   "name": "Surge of Power",
+   "entityId": "upgrade_improved_bullet_armor",
+   "name": "Bullet Resilience",
    "rank": 22,
    "score": 60
   },
@@ -201,92 +201,92 @@
    "score": 60
   },
   {
-   "entityId": "upgrade_sharpshooter",
-   "name": "Sharpshooter",
+   "entityId": "upgrade_rescue_beam",
+   "name": "Rescue Beam",
    "rank": 24,
    "score": 60
   },
   {
-   "entityId": "upgrade_rocket_booster",
-   "name": "Majestic Leap",
+   "entityId": "upgrade_cloaking_device_active",
+   "name": "Shadow Weave",
    "rank": 25,
    "score": 60
   },
   {
-   "entityId": "upgrade_hollow_point_rounds",
-   "name": "Hollow Point",
+   "entityId": "upgrade_express_shot",
+   "name": "Express Shot",
    "rank": 26,
    "score": 60
   },
   {
-   "entityId": "upgrade_rescue_beam",
-   "name": "Rescue Beam",
+   "entityId": "upgrade_magic_storm",
+   "name": "Surge of Power",
    "rank": 27,
    "score": 85
   },
   {
-   "entityId": "upgrade_improved_bullet_armor",
-   "name": "Bullet Resilience",
+   "entityId": "upgrade_sharpshooter",
+   "name": "Sharpshooter",
    "rank": 28,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_spirit_snatch",
-   "name": "Spirit Snatch",
-   "rank": 29,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_cloaking_device_active",
-   "name": "Shadow Weave",
-   "rank": 30,
    "score": 85
   },
   {
    "entityId": "upgrade_bullet_armor_reduction_aura",
    "name": "Hunter's Aura",
-   "rank": 31,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_express_shot",
-   "name": "Express Shot",
-   "rank": 32,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_resonant_healing",
-   "name": "Radiant Regeneration",
-   "rank": 33,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_superior_stamina",
-   "name": "Stamina Mastery",
-   "rank": 34,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_health_nova",
-   "name": "Healing Nova",
-   "rank": 35,
+   "rank": 29,
    "score": 85
   },
   {
    "entityId": "upgrade_close_quarter_combat",
    "name": "Point Blank",
-   "rank": 36,
+   "rank": 30,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_spirit_snatch",
+   "name": "Spirit Snatch",
+   "rank": 31,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_hollow_point_rounds",
+   "name": "Hollow Point",
+   "rank": 32,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_health_nova",
+   "name": "Healing Nova",
+   "rank": 33,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_resonant_healing",
+   "name": "Radiant Regeneration",
+   "rank": 34,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_superior_stamina",
+   "name": "Stamina Mastery",
+   "rank": 35,
    "score": 85
   },
   {
    "entityId": "upgrade_non_player_bonus_sacrifice",
    "name": "Cultist Sacrifice",
+   "rank": 36,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_spellslinger_headshots",
+   "name": "Spirit Rend",
    "rank": 37,
    "score": 85
   },
   {
-   "entityId": "upgrade_weighted_shots",
-   "name": "Weighted Shots",
+   "entityId": "upgrade_veil_walker",
+   "name": "Veil Walker",
    "rank": 38,
    "score": 85
   },
@@ -303,32 +303,32 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_veil_walker",
-   "name": "Veil Walker",
+   "entityId": "upgrade_fury_trance",
+   "name": "Fury Trance",
    "rank": 41,
    "score": 85
   },
   {
-   "entityId": "upgrade_fury_trance",
-   "name": "Fury Trance",
+   "entityId": "upgrade_weighted_shots",
+   "name": "Weighted Shots",
    "rank": 42,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_reinforcing_casings",
-   "name": "Escalating Resilience",
-   "rank": 43,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_greater_withering_whip",
-   "name": "Disarming Hex",
-   "rank": 44,
    "score": 85
   },
   {
    "entityId": "upgrade_blood_tribute",
    "name": "Blood Tribute",
+   "rank": 43,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_reinforcing_casings",
+   "name": "Escalating Resilience",
+   "rank": 44,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_greater_withering_whip",
+   "name": "Disarming Hex",
    "rank": 45,
    "score": 85
   },
@@ -346,248 +346,248 @@
     "name": "Berserker",
     "passPositions": [
      14,
-     15,
-     17,
-     23,
-     15
+     7,
+     11,
+     11,
+     12
     ],
-    "borda": 0.3733333333333333,
+    "borda": 0.24444444444444446,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Damage as you get hit",
+    "perception": "damage when hurt",
     "popularity": 7.63,
     "popularityObscurity": 0.4888888888888889,
     "spellingCost": 9,
     "spellingObscurity": 0.28888888888888886,
-    "key": 0.41533333333333333
+    "key": 0.3444444444444445
    },
    {
     "id": "upgrade_blood_tribute",
     "name": "Blood Tribute",
     "passPositions": [
-     37,
-     22,
-     29,
-     40,
-     41
+     38,
+     18,
+     25,
+     34,
+     34
     ],
-    "borda": 0.7511111111111111,
+    "borda": 0.6622222222222222,
     "fit": {
      "expected": 0,
-     "neutral": 4,
-     "surprising": 1
+     "neutral": 5,
+     "surprising": 0
     },
-    "perception": "Health sacrifice for fire rate",
+    "perception": "health for fire rate toggle",
     "popularity": 0.98,
     "popularityObscurity": 0.9555555555555556,
     "spellingCost": 12,
     "spellingObscurity": 0.7111111111111111,
-    "key": 0.8308888888888889
+    "key": 0.782
    },
    {
     "id": "upgrade_boxing_glove",
     "name": "Lifestrike",
     "passPositions": [
-     34,
-     17,
-     18,
-     34,
-     19
+     28,
+     20,
+     32,
+     23,
+     23
     ],
-    "borda": 0.5422222222222222,
+    "borda": 0.5599999999999999,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Melee heal",
+    "perception": "melee lifesteal",
     "popularity": 9.99,
     "popularityObscurity": 0.37777777777777777,
     "spellingCost": 10,
     "spellingObscurity": 0.45555555555555555,
-    "key": 0.47211111111111115
+    "key": 0.4818888888888889
    },
    {
     "id": "upgrade_bullet_armor_reduction_aura",
     "name": "Hunter's Aura",
     "passPositions": [
-     29,
-     38,
-     38,
-     33,
-     39
+     34,
+     39,
+     28,
+     37,
+     30
     ],
-    "borda": 0.7866666666666667,
+    "borda": 0.7466666666666666,
     "fit": {
      "expected": 0,
      "neutral": 4,
      "surprising": 1
     },
-    "perception": "Enemy fire rate reduction aura",
+    "perception": "enemy fire rate reduction",
     "popularity": 11.09,
     "popularityObscurity": 0.26666666666666666,
     "spellingCost": 15,
     "spellingObscurity": 0.8888888888888888,
-    "key": 0.5837777777777778
+    "key": 0.5617777777777778
    },
    {
     "id": "upgrade_bulletshredimbue",
     "name": "Ballistic Enchantment",
     "passPositions": [
-     43,
-     39,
+     41,
+     42,
      36,
      44,
-     43
+     41
     ],
-    "borda": 0.9111111111111112,
+    "borda": 0.9066666666666668,
     "fit": {
      "expected": 0,
-     "neutral": 3,
-     "surprising": 2
+     "neutral": 1,
+     "surprising": 4
     },
-    "perception": "Ability imbue for weapon damage",
+    "perception": "imbue ability for weapon damage",
     "popularity": 3.18,
     "popularityObscurity": 0.6888888888888889,
     "spellingCost": 9,
     "spellingObscurity": 0.28888888888888886,
-    "key": 0.7911111111111112
+    "key": 0.7886666666666668
    },
    {
     "id": "upgrade_burst_fire",
     "name": "Burst Fire",
     "passPositions": [
-     20,
-     14,
+     15,
+     27,
+     18,
      22,
-     16,
-     28
+     26
     ],
-    "borda": 0.4444444444444445,
+    "borda": 0.4800000000000001,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Fire rate on hit",
+    "perception": "fire rate on hit",
     "popularity": 10.34,
     "popularityObscurity": 0.35555555555555557,
     "spellingCost": 9,
     "spellingObscurity": 0.28888888888888886,
-    "key": 0.4011111111111112
+    "key": 0.42066666666666674
    },
    {
     "id": "upgrade_chain_lightning",
     "name": "Tesla Bullets",
     "passPositions": [
-     4,
-     8,
-     8,
+     5,
+     9,
+     10,
      7,
-     6
+     8
     ],
-    "borda": 0.14666666666666667,
+    "borda": 0.17333333333333334,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Chain shock bullets",
+    "perception": "chain shock bullets",
     "popularity": 11,
     "popularityObscurity": 0.28888888888888886,
     "spellingCost": 5,
     "spellingObscurity": 0.044444444444444446,
-    "key": 0.19844444444444445
+    "key": 0.2131111111111111
    },
    {
     "id": "upgrade_chonky",
     "name": "Fortitude",
     "passPositions": [
-     7,
-     9,
-     5,
-     4,
-     4
+     11,
+     6,
+     15,
+     8,
+     10
     ],
-    "borda": 0.1288888888888889,
+    "borda": 0.22222222222222224,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Big health item",
+    "perception": "big health item",
     "popularity": 16.58,
     "popularityObscurity": 0.2,
     "spellingCost": 9,
     "spellingObscurity": 0.28888888888888886,
-    "key": 0.16533333333333333
+    "key": 0.2166666666666667
    },
    {
     "id": "upgrade_cloaking_device_active",
     "name": "Shadow Weave",
     "passPositions": [
-     13,
-     23,
-     16,
-     22,
-     24
+     24,
+     21,
+     19,
+     20,
+     9
     ],
-    "borda": 0.43555555555555553,
+    "borda": 0.4133333333333334,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Stealth active",
+    "perception": "stealth item",
     "popularity": 2.8,
     "popularityObscurity": 0.7333333333333333,
     "spellingCost": 11,
     "spellingObscurity": 0.5888888888888889,
-    "key": 0.5623333333333334
+    "key": 0.5501111111111112
    },
    {
     "id": "upgrade_close_quarter_combat",
     "name": "Point Blank",
     "passPositions": [
-     23,
-     41,
-     33,
-     35,
-     38
+     27,
+     32,
+     30,
+     24,
+     25
     ],
-    "borda": 0.7555555555555555,
+    "borda": 0.6133333333333333,
     "fit": {
      "expected": 0,
-     "neutral": 4,
-     "surprising": 1
+     "neutral": 5,
+     "surprising": 0
     },
-    "perception": "Close range damage and slow",
+    "perception": "close range damage",
     "popularity": 7.55,
     "popularityObscurity": 0.5111111111111111,
     "spellingCost": 10,
     "spellingObscurity": 0.45555555555555555,
-    "key": 0.6427777777777778
+    "key": 0.5645555555555555
    },
    {
     "id": "upgrade_cooldown_reduction",
     "name": "Superior Cooldown",
     "passPositions": [
+     1,
      2,
+     5,
      2,
-     3,
-     2,
-     3
+     2
     ],
     "borda": 0.05333333333333333,
     "fit": {
-     "expected": 1,
-     "neutral": 4,
+     "expected": 3,
+     "neutral": 2,
      "surprising": 0
     },
-    "perception": "Standard spirit cooldown item",
+    "perception": "top cooldown reduction item",
     "popularity": 34.12,
     "popularityObscurity": 0,
     "spellingCost": 16,
@@ -598,354 +598,147 @@
     "id": "upgrade_counterspell",
     "name": "Counterspell",
     "passPositions": [
-     12,
+     22,
+     11,
+     21,
      16,
-     24,
-     20,
-     22
+     21
     ],
-    "borda": 0.4177777777777777,
+    "borda": 0.40444444444444444,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Spell parry protection",
+    "perception": "parry spell protection",
     "popularity": 9.93,
     "popularityObscurity": 0.4,
     "spellingCost": 12,
     "spellingObscurity": 0.7111111111111111,
-    "key": 0.42533333333333334
+    "key": 0.41800000000000004
    },
    {
     "id": "upgrade_dps_aura",
     "name": "Heroic Aura",
     "passPositions": [
-     32,
-     43,
-     39,
-     32,
-     35
+     33,
+     35,
+     44,
+     38,
+     29
     ],
-    "borda": 0.8044444444444444,
+    "borda": 0.7955555555555556,
     "fit": {
      "expected": 0,
-     "neutral": 4,
-     "surprising": 1
+     "neutral": 5,
+     "surprising": 0
     },
-    "perception": "Team bullet resist aura",
+    "perception": "team bullet resist aura",
     "popularity": 2.46,
     "popularityObscurity": 0.8222222222222222,
     "spellingCost": 6,
     "spellingObscurity": 0.1111111111111111,
-    "key": 0.776888888888889
+    "key": 0.772
    },
    {
     "id": "upgrade_express_shot",
     "name": "Express Shot",
     "passPositions": [
-     22,
-     28,
-     34,
-     24,
-     29
+     16,
+     30,
+     31,
+     21,
+     27
     ],
-    "borda": 0.6088888888888888,
+    "borda": 0.5555555555555556,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Double shot",
+    "perception": "double shot",
     "popularity": 6.28,
     "popularityObscurity": 0.5555555555555556,
     "spellingCost": 11,
     "spellingObscurity": 0.5888888888888889,
-    "key": 0.5865555555555555
+    "key": 0.5572222222222223
    },
    {
     "id": "upgrade_fury_trance",
     "name": "Fury Trance",
     "passPositions": [
-     36,
-     21,
+     37,
+     19,
      26,
-     39,
-     34
+     35,
+     38
     ],
-    "borda": 0.6933333333333334,
+    "borda": 0.6888888888888889,
     "fit": {
      "expected": 0,
      "neutral": 4,
      "surprising": 1
     },
-    "perception": "Fire rate with silence",
+    "perception": "lifesteal fire rate active",
     "popularity": 0.59,
     "popularityObscurity": 1,
     "spellingCost": 4,
     "spellingObscurity": 0,
-    "key": 0.7813333333333334
+    "key": 0.778888888888889
    },
    {
     "id": "upgrade_greater_withering_whip",
     "name": "Disarming Hex",
     "passPositions": [
-     33,
-     37,
-     41,
-     36,
-     42
+     35,
+     38,
+     43,
+     40,
+     37
     ],
-    "borda": 0.8400000000000001,
+    "borda": 0.8577777777777778,
     "fit": {
      "expected": 0,
-     "neutral": 4,
-     "surprising": 1
+     "neutral": 5,
+     "surprising": 0
     },
-    "perception": "Hex-like disarm utility",
+    "perception": "hex-like disarm active",
     "popularity": 2.59,
     "popularityObscurity": 0.8,
     "spellingCost": 12,
     "spellingObscurity": 0.7111111111111111,
-    "key": 0.8175555555555557
+    "key": 0.8273333333333334
    },
    {
     "id": "upgrade_headhunter",
     "name": "Headhunter",
     "passPositions": [
-     5,
-     20,
-     1,
-     14,
-     7
+     7,
+     10,
+     12,
+     10,
+     11
     ],
-    "borda": 0.2088888888888889,
+    "borda": 0.22222222222222218,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Headshot bonus",
+    "perception": "headshot bonus",
     "popularity": 7.18,
     "popularityObscurity": 0.5333333333333333,
     "spellingCost": 10,
     "spellingObscurity": 0.45555555555555555,
-    "key": 0.35100000000000003
+    "key": 0.35833333333333334
    },
    {
     "id": "upgrade_health_nova",
     "name": "Healing Nova",
     "passPositions": [
-     30,
-     31,
-     13,
-     9,
-     12
-    ],
-    "borda": 0.4222222222222222,
-    "fit": {
-     "expected": 0,
-     "neutral": 4,
-     "surprising": 1
-    },
-    "perception": "Group heal active",
-    "popularity": 1.18,
-    "popularityObscurity": 0.9333333333333333,
-    "spellingCost": 10,
-    "spellingObscurity": 0.45555555555555555,
-    "key": 0.6283333333333334
-   },
-   {
-    "id": "upgrade_hollow_point_rounds",
-    "name": "Hollow Point",
-    "passPositions": [
-     21,
      19,
-     32,
-     15,
-     26
-    ],
-    "borda": 0.5022222222222222,
-    "fit": {
-     "expected": 0,
-     "neutral": 5,
-     "surprising": 0
-    },
-    "perception": "High health damage bonus",
-    "popularity": 4.51,
-    "popularityObscurity": 0.6,
-    "spellingCost": 11,
-    "spellingObscurity": 0.5888888888888889,
-    "key": 0.5456666666666667
-   },
-   {
-    "id": "upgrade_imbued_duration_extender",
-    "name": "Superior Duration",
-    "passPositions": [
-     15,
-     3,
-     10,
-     11,
-     2
-    ],
-    "borda": 0.18222222222222223,
-    "fit": {
-     "expected": 0,
-     "neutral": 5,
-     "surprising": 0
-    },
-    "perception": "Ability duration boost",
-    "popularity": 21.4,
-    "popularityObscurity": 0.13333333333333333,
-    "spellingCost": 16,
-    "spellingObscurity": 0.9444444444444444,
-    "key": 0.2007777777777778
-   },
-   {
-    "id": "upgrade_improved_bullet_armor",
-    "name": "Bullet Resilience",
-    "passPositions": [
-     25,
-     30,
-     20,
-     6,
-     8
-    ],
-    "borda": 0.39555555555555555,
-    "fit": {
-     "expected": 0,
-     "neutral": 5,
-     "surprising": 0
-    },
-    "perception": "Bullet resist tank item",
-    "popularity": 3.15,
-    "popularityObscurity": 0.7111111111111111,
-    "spellingCost": 16,
-    "spellingObscurity": 0.9444444444444444,
-    "key": 0.5492222222222223
-   },
-   {
-    "id": "upgrade_magic_shock",
-    "name": "Tankbuster",
-    "passPositions": [
-     39,
-     25,
-     44,
-     26,
-     33
-    ],
-    "borda": 0.7422222222222222,
-    "fit": {
-     "expected": 0,
-     "neutral": 5,
-     "surprising": 0
-    },
-    "perception": "Bonus damage to big hits",
-    "popularity": 33.04,
-    "popularityObscurity": 0.022222222222222223,
-    "spellingCost": 10,
-    "spellingObscurity": 0.45555555555555555,
-    "key": 0.43988888888888894
-   },
-   {
-    "id": "upgrade_magic_storm",
-    "name": "Surge of Power",
-    "passPositions": [
-     38,
-     24,
-     27,
-     29,
-     30
-    ],
-    "borda": 0.6577777777777778,
-    "fit": {
-     "expected": 0,
-     "neutral": 5,
-     "surprising": 0
-    },
-    "perception": "Imbue spirit power",
-    "popularity": 10.45,
-    "popularityObscurity": 0.3333333333333333,
-    "spellingCost": 12,
-    "spellingObscurity": 0.7111111111111111,
-    "key": 0.5306666666666667
-   },
-   {
-    "id": "upgrade_metal_skin",
-    "name": "Metal Skin",
-    "passPositions": [
-     1,
-     0,
-     2,
-     1,
-     0
-    ],
-    "borda": 0.017777777777777778,
-    "fit": {
-     "expected": 1,
-     "neutral": 4,
-     "surprising": 0
-    },
-    "perception": "Bullet immunity active",
-    "popularity": 3.6,
-    "popularityObscurity": 0.6666666666666666,
-    "spellingCost": 9,
-    "spellingObscurity": 0.28888888888888886,
-    "key": 0.29088888888888886
-   },
-   {
-    "id": "upgrade_non_player_bonus_sacrifice",
-    "name": "Cultist Sacrifice",
-    "passPositions": [
-     45,
-     35,
-     45,
-     45,
-     45
-    ],
-    "borda": 0.9555555555555555,
-    "fit": {
-     "expected": 0,
-     "neutral": 2,
-     "surprising": 3
-    },
-    "perception": "NPC consume for souls",
-    "popularity": 9.92,
-    "popularityObscurity": 0.4222222222222222,
-    "spellingCost": 7,
-    "spellingObscurity": 0.16666666666666666,
-    "key": 0.7027777777777777
-   },
-   {
-    "id": "upgrade_rapid_recharge",
-    "name": "Rapid Recharge",
-    "passPositions": [
-     11,
-     42,
-     4,
      13,
-     11
-    ],
-    "borda": 0.36,
-    "fit": {
-     "expected": 0,
-     "neutral": 4,
-     "surprising": 1
-    },
-    "perception": "Extra ability charges",
-    "popularity": 24.59,
-    "popularityObscurity": 0.08888888888888889,
-    "spellingCost": 13,
-    "spellingObscurity": 0.8111111111111111,
-    "key": 0.27411111111111114
-   },
-   {
-    "id": "upgrade_reduce_debuff_duration",
-    "name": "Dispel Magic",
-    "passPositions": [
-     17,
-     10,
-     25,
+     20,
      19,
      14
     ],
@@ -955,501 +748,726 @@
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Purge debuffs",
+    "perception": "area heal",
+    "popularity": 1.18,
+    "popularityObscurity": 0.9333333333333333,
+    "spellingCost": 10,
+    "spellingObscurity": 0.45555555555555555,
+    "key": 0.6038888888888889
+   },
+   {
+    "id": "upgrade_hollow_point_rounds",
+    "name": "Hollow Point",
+    "passPositions": [
+     26,
+     29,
+     29,
+     25,
+     24
+    ],
+    "borda": 0.5911111111111111,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "high health damage bonus",
+    "popularity": 4.51,
+    "popularityObscurity": 0.6,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5888888888888889,
+    "key": 0.5945555555555555
+   },
+   {
+    "id": "upgrade_imbued_duration_extender",
+    "name": "Superior Duration",
+    "passPositions": [
+     10,
+     36,
+     16,
+     27,
+     16
+    ],
+    "borda": 0.4666666666666667,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "ability duration extender",
+    "popularity": 21.4,
+    "popularityObscurity": 0.13333333333333333,
+    "spellingCost": 16,
+    "spellingObscurity": 0.9444444444444444,
+    "key": 0.3572222222222223
+   },
+   {
+    "id": "upgrade_improved_bullet_armor",
+    "name": "Bullet Resilience",
+    "passPositions": [
+     13,
+     16,
+     14,
+     3,
+     19
+    ],
+    "borda": 0.28888888888888886,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "bullet resist defensive item",
+    "popularity": 3.15,
+    "popularityObscurity": 0.7111111111111111,
+    "spellingCost": 16,
+    "spellingObscurity": 0.9444444444444444,
+    "key": 0.4905555555555555
+   },
+   {
+    "id": "upgrade_magic_shock",
+    "name": "Tankbuster",
+    "passPositions": [
+     36,
+     23,
+     23,
+     31,
+     35
+    ],
+    "borda": 0.6577777777777778,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "burst bonus damage",
+    "popularity": 33.04,
+    "popularityObscurity": 0.022222222222222223,
+    "spellingCost": 10,
+    "spellingObscurity": 0.45555555555555555,
+    "key": 0.3934444444444445
+   },
+   {
+    "id": "upgrade_magic_storm",
+    "name": "Surge of Power",
+    "passPositions": [
+     31,
+     24,
+     38,
+     30,
+     33
+    ],
+    "borda": 0.6933333333333334,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "permanent spirit imbue",
+    "popularity": 10.45,
+    "popularityObscurity": 0.3333333333333333,
+    "spellingCost": 12,
+    "spellingObscurity": 0.7111111111111111,
+    "key": 0.5502222222222223
+   },
+   {
+    "id": "upgrade_metal_skin",
+    "name": "Metal Skin",
+    "passPositions": [
+     2,
+     1,
+     0,
+     1,
+     1
+    ],
+    "borda": 0.022222222222222223,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "bullet immunity active",
+    "popularity": 3.6,
+    "popularityObscurity": 0.6666666666666666,
+    "spellingCost": 9,
+    "spellingObscurity": 0.28888888888888886,
+    "key": 0.29333333333333333
+   },
+   {
+    "id": "upgrade_non_player_bonus_sacrifice",
+    "name": "Cultist Sacrifice",
+    "passPositions": [
+     45,
+     40,
+     22,
+     45,
+     45
+    ],
+    "borda": 0.8755555555555556,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "consume NPC for buff",
+    "popularity": 9.92,
+    "popularityObscurity": 0.4222222222222222,
+    "spellingCost": 7,
+    "spellingObscurity": 0.16666666666666666,
+    "key": 0.6587777777777779
+   },
+   {
+    "id": "upgrade_rapid_recharge",
+    "name": "Rapid Recharge",
+    "passPositions": [
+     17,
+     26,
+     17,
+     29,
+     40
+    ],
+    "borda": 0.5733333333333334,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "extra ability charges",
+    "popularity": 24.59,
+    "popularityObscurity": 0.08888888888888889,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8111111111111111,
+    "key": 0.3914444444444445
+   },
+   {
+    "id": "upgrade_reduce_debuff_duration",
+    "name": "Dispel Magic",
+    "passPositions": [
+     23,
+     17,
+     7,
+     15,
+     18
+    ],
+    "borda": 0.3555555555555555,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "purge debuffs",
     "popularity": 21.73,
     "popularityObscurity": 0.1111111111111111,
     "spellingCost": 6,
     "spellingObscurity": 0.1111111111111111,
-    "key": 0.2577777777777778
+    "key": 0.24555555555555555
    },
    {
     "id": "upgrade_reinforcing_casings",
     "name": "Escalating Resilience",
     "passPositions": [
-     44,
-     32,
-     37,
-     31,
-     21
+     39,
+     28,
+     35,
+     36,
+     36
     ],
-    "borda": 0.7333333333333334,
+    "borda": 0.7733333333333332,
     "fit": {
      "expected": 0,
-     "neutral": 4,
-     "surprising": 1
+     "neutral": 5,
+     "surprising": 0
     },
-    "perception": "Bullet resist on hit",
+    "perception": "bullet resist on hit",
     "popularity": 2.24,
     "popularityObscurity": 0.8666666666666667,
     "spellingCost": 20,
     "spellingObscurity": 1,
-    "key": 0.8
+    "key": 0.822
    },
    {
     "id": "upgrade_rescue_beam",
     "name": "Rescue Beam",
     "passPositions": [
-     18,
-     11,
+     20,
      12,
-     3,
-     20
+     4,
+     6,
+     15
     ],
-    "borda": 0.28444444444444444,
+    "borda": 0.2533333333333333,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Ally heal and pull",
+    "perception": "ally heal and pull",
     "popularity": 2.21,
     "popularityObscurity": 0.8888888888888888,
     "spellingCost": 10,
     "spellingObscurity": 0.45555555555555555,
-    "key": 0.5347777777777778
+    "key": 0.5176666666666667
    },
    {
     "id": "upgrade_resonant_healing",
     "name": "Radiant Regeneration",
     "passPositions": [
-     27,
-     27,
-     40,
-     37,
-     31
+     30,
+     34,
+     39,
+     39,
+     32
     ],
-    "borda": 0.72,
+    "borda": 0.7733333333333333,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Spirit sustain on ability cast",
+    "perception": "spirit healing on ability cast",
     "popularity": 7.89,
     "popularityObscurity": 0.4666666666666667,
     "spellingCost": 7,
     "spellingObscurity": 0.16666666666666666,
-    "key": 0.5910000000000001
+    "key": 0.6203333333333334
    },
    {
     "id": "upgrade_rocket_booster",
     "name": "Majestic Leap",
     "passPositions": [
-     19,
-     6,
-     9,
-     28,
-     23
+     21,
+     3,
+     2,
+     4,
+     4
     ],
-    "borda": 0.37777777777777777,
+    "borda": 0.1511111111111111,
     "fit": {
-     "expected": 0,
-     "neutral": 5,
+     "expected": 2,
+     "neutral": 3,
      "surprising": 0
     },
-    "perception": "Jump active with barrier",
+    "perception": "leap into air with barrier",
     "popularity": 2.71,
     "popularityObscurity": 0.7555555555555555,
     "spellingCost": 12,
     "spellingObscurity": 0.7111111111111111,
-    "key": 0.5455555555555556
+    "key": 0.42088888888888887
    },
    {
     "id": "upgrade_rupture",
     "name": "Decay",
     "passPositions": [
-     9,
-     13,
-     15,
-     17,
-     17
+     4,
+     8,
+     8,
+     12,
+     6
     ],
-    "borda": 0.31555555555555553,
+    "borda": 0.16888888888888887,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Percent health DoT",
+    "perception": "percent health DoT",
     "popularity": 2.25,
     "popularityObscurity": 0.8444444444444444,
     "spellingCost": 5,
     "spellingObscurity": 0.044444444444444446,
-    "key": 0.5135555555555555
+    "key": 0.4328888888888889
    },
    {
     "id": "upgrade_sharpshooter",
     "name": "Sharpshooter",
     "passPositions": [
+     32,
      31,
-     40,
-     21,
-     25,
-     16
+     24,
+     26,
+     28
     ],
-    "borda": 0.591111111111111,
+    "borda": 0.6266666666666667,
     "fit": {
      "expected": 0,
-     "neutral": 4,
-     "surprising": 1
+     "neutral": 5,
+     "surprising": 0
     },
-    "perception": "Long-range weapon item",
+    "perception": "long-range weapon damage",
     "popularity": 8.21,
     "popularityObscurity": 0.4444444444444444,
     "spellingCost": 12,
     "spellingObscurity": 0.7111111111111111,
-    "key": 0.5384444444444444
+    "key": 0.558
    },
    {
     "id": "upgrade_spellslinger_headshots",
     "name": "Spirit Rend",
     "passPositions": [
-     6,
-     4,
-     7,
-     30,
-     27
-    ],
-    "borda": 0.3288888888888889,
-    "fit": {
-     "expected": 0,
-     "neutral": 5,
-     "surprising": 0
-    },
-    "perception": "Spirit resist shred on bullets",
-    "popularity": 3.65,
-    "popularityObscurity": 0.6444444444444445,
-    "spellingCost": 10,
-    "spellingObscurity": 0.45555555555555555,
-    "key": 0.46144444444444455
-   },
-   {
-    "id": "upgrade_spirit_snatch",
-    "name": "Spirit Snatch",
-    "passPositions": [
-     42,
+     25,
      33,
-     42,
-     41,
-     40
+     34,
+     32,
+     39
     ],
-    "borda": 0.8799999999999999,
-    "fit": {
-     "expected": 0,
-     "neutral": 3,
-     "surprising": 2
-    },
-    "perception": "Melee spirit steal",
-    "popularity": 17.14,
-    "popularityObscurity": 0.17777777777777778,
-    "spellingCost": 6,
-    "spellingObscurity": 0.1111111111111111,
-    "key": 0.5606666666666666
-   },
-   {
-    "id": "upgrade_superior_stamina",
-    "name": "Stamina Mastery",
-    "passPositions": [
-     40,
-     45,
-     43,
-     43,
-     37
-    ],
-    "borda": 0.9244444444444445,
-    "fit": {
-     "expected": 0,
-     "neutral": 3,
-     "surprising": 2
-    },
-    "perception": "Extra air dash",
-    "popularity": 17.67,
-    "popularityObscurity": 0.15555555555555556,
-    "spellingCost": 14,
-    "spellingObscurity": 0.8555555555555555,
-    "key": 0.6134444444444445
-   },
-   {
-    "id": "upgrade_target_stun",
-    "name": "Knockdown",
-    "passPositions": [
-     3,
-     12,
-     23,
-     18,
-     18
-    ],
-    "borda": 0.3288888888888889,
-    "fit": {
-     "expected": 0,
-     "neutral": 5,
-     "surprising": 0
-    },
-    "perception": "Delayed stun",
-    "popularity": 5.26,
-    "popularityObscurity": 0.5777777777777777,
-    "spellingCost": 9,
-    "spellingObscurity": 0.28888888888888886,
-    "key": 0.42644444444444446
-   },
-   {
-    "id": "upgrade_targeted_silence",
-    "name": "Silence Wave",
-    "passPositions": [
-     10,
-     5,
-     14,
-     10,
-     13
-    ],
-    "borda": 0.2311111111111111,
-    "fit": {
-     "expected": 0,
-     "neutral": 5,
-     "surprising": 0
-    },
-    "perception": "Silence projectile",
-    "popularity": 0.94,
-    "popularityObscurity": 0.9777777777777777,
-    "spellingCost": 11,
-    "spellingObscurity": 0.5888888888888889,
-    "key": 0.5476666666666667
-   },
-   {
-    "id": "upgrade_tech_damage_pulse",
-    "name": "Torment Pulse",
-    "passPositions": [
-     26,
-     26,
-     31,
-     38,
-     32
-    ],
-    "borda": 0.6799999999999999,
-    "fit": {
-     "expected": 0,
-     "neutral": 5,
-     "surprising": 0
-    },
-    "perception": "Passive spirit damage pulse",
-    "popularity": 12.88,
-    "popularityObscurity": 0.24444444444444444,
-    "spellingCost": 12,
-    "spellingObscurity": 0.7111111111111111,
-    "key": 0.5073333333333333
-   },
-   {
-    "id": "upgrade_tech_purge",
-    "name": "Spirit Resilience",
-    "passPositions": [
-     24,
-     29,
-     19,
-     5,
-     9
-    ],
-    "borda": 0.38222222222222224,
-    "fit": {
-     "expected": 0,
-     "neutral": 5,
-     "surprising": 0
-    },
-    "perception": "Spirit resist tank item",
-    "popularity": 25.58,
-    "popularityObscurity": 0.06666666666666667,
-    "spellingCost": 16,
-    "spellingObscurity": 0.9444444444444444,
-    "key": 0.28411111111111115
-   },
-   {
-    "id": "upgrade_tech_range",
-    "name": "Greater Expansion",
-    "passPositions": [
-     16,
-     18,
-     11,
-     12,
-     10
-    ],
-    "borda": 0.2977777777777778,
-    "fit": {
-     "expected": 0,
-     "neutral": 5,
-     "surprising": 0
-    },
-    "perception": "Ability range increase",
-    "popularity": 26.6,
-    "popularityObscurity": 0.044444444444444446,
-    "spellingCost": 13,
-    "spellingObscurity": 0.8111111111111111,
-    "key": 0.22211111111111115
-   },
-   {
-    "id": "upgrade_thermal_detonator",
-    "name": "Alchemical Fire",
-    "passPositions": [
-     28,
-     36,
-     28,
-     21,
-     25
-    ],
-    "borda": 0.6133333333333333,
+    "borda": 0.7244444444444444,
     "fit": {
      "expected": 0,
      "neutral": 4,
      "surprising": 1
     },
-    "perception": "Thrown fire flask",
+    "perception": "spirit resist shred weapon item",
+    "popularity": 3.65,
+    "popularityObscurity": 0.6444444444444445,
+    "spellingCost": 10,
+    "spellingObscurity": 0.45555555555555555,
+    "key": 0.679
+   },
+   {
+    "id": "upgrade_spirit_snatch",
+    "name": "Spirit Snatch",
+    "passPositions": [
+     44,
+     45,
+     33,
+     43,
+     42
+    ],
+    "borda": 0.9200000000000002,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "melee spirit steal",
+    "popularity": 17.14,
+    "popularityObscurity": 0.17777777777777778,
+    "spellingCost": 6,
+    "spellingObscurity": 0.1111111111111111,
+    "key": 0.5826666666666668
+   },
+   {
+    "id": "upgrade_superior_stamina",
+    "name": "Stamina Mastery",
+    "passPositions": [
+     42,
+     44,
+     45,
+     41,
+     43
+    ],
+    "borda": 0.9555555555555555,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "extra air jump",
+    "popularity": 17.67,
+    "popularityObscurity": 0.15555555555555556,
+    "spellingCost": 14,
+    "spellingObscurity": 0.8555555555555555,
+    "key": 0.6305555555555555
+   },
+   {
+    "id": "upgrade_target_stun",
+    "name": "Knockdown",
+    "passPositions": [
+     9,
+     5,
+     9,
+     13,
+     7
+    ],
+    "borda": 0.1911111111111111,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "delayed stun",
+    "popularity": 5.26,
+    "popularityObscurity": 0.5777777777777777,
+    "spellingCost": 9,
+    "spellingObscurity": 0.28888888888888886,
+    "key": 0.3506666666666667
+   },
+   {
+    "id": "upgrade_targeted_silence",
+    "name": "Silence Wave",
+    "passPositions": [
+     8,
+     4,
+     6,
+     14,
+     5
+    ],
+    "borda": 0.16444444444444445,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "silence projectile",
+    "popularity": 0.94,
+    "popularityObscurity": 0.9777777777777777,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5888888888888889,
+    "key": 0.511
+   },
+   {
+    "id": "upgrade_tech_damage_pulse",
+    "name": "Torment Pulse",
+    "passPositions": [
+     18,
+     37,
+     40,
+     18,
+     13
+    ],
+    "borda": 0.5599999999999999,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "passive spirit damage pulse",
+    "popularity": 12.88,
+    "popularityObscurity": 0.24444444444444444,
+    "spellingCost": 12,
+    "spellingObscurity": 0.7111111111111111,
+    "key": 0.44133333333333336
+   },
+   {
+    "id": "upgrade_tech_purge",
+    "name": "Spirit Resilience",
+    "passPositions": [
+     12,
+     15,
+     13,
+     9,
+     20
+    ],
+    "borda": 0.30666666666666664,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "spirit resist defensive item",
+    "popularity": 25.58,
+    "popularityObscurity": 0.06666666666666667,
+    "spellingCost": 16,
+    "spellingObscurity": 0.9444444444444444,
+    "key": 0.24255555555555555
+   },
+   {
+    "id": "upgrade_tech_range",
+    "name": "Greater Expansion",
+    "passPositions": [
+     6,
+     25,
+     37,
+     28,
+     17
+    ],
+    "borda": 0.5022222222222222,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "range and radius boost",
+    "popularity": 26.6,
+    "popularityObscurity": 0.044444444444444446,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8111111111111111,
+    "key": 0.3345555555555556
+   },
+   {
+    "id": "upgrade_thermal_detonator",
+    "name": "Alchemical Fire",
+    "passPositions": [
+     29,
+     22,
+     42,
+     33,
+     22
+    ],
+    "borda": 0.6577777777777778,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "thrown fire flask",
     "popularity": 1.5,
     "popularityObscurity": 0.9111111111111111,
     "spellingCost": 14,
     "spellingObscurity": 0.8555555555555555,
-    "key": 0.7445555555555555
+    "key": 0.769
    },
    {
     "id": "upgrade_toxic_bullets",
     "name": "Toxic Bullets",
     "passPositions": [
      0,
+     0,
      1,
      0,
-     0,
-     1
+     0
     ],
-    "borda": 0.008888888888888889,
+    "borda": 0.0044444444444444444,
     "fit": {
-     "expected": 1,
-     "neutral": 4,
+     "expected": 3,
+     "neutral": 2,
      "surprising": 0
     },
-    "perception": "Bleed and anti-heal",
+    "perception": "bleed and anti-heal",
     "popularity": 12.9,
     "popularityObscurity": 0.2222222222222222,
     "spellingCost": 5,
     "spellingObscurity": 0.044444444444444446,
-    "key": 0.096
+    "key": 0.09355555555555556
    },
    {
     "id": "upgrade_veil_walker",
     "name": "Veil Walker",
     "passPositions": [
+     40,
      41,
-     34,
-     30,
-     42,
-     36
+     27,
+     17,
+     31
     ],
-    "borda": 0.8133333333333332,
+    "borda": 0.6933333333333334,
     "fit": {
      "expected": 0,
      "neutral": 3,
      "surprising": 2
     },
-    "perception": "Stealth through veils",
+    "perception": "stealth through veils",
     "popularity": 2.64,
     "popularityObscurity": 0.7777777777777778,
     "spellingCost": 10,
     "spellingObscurity": 0.45555555555555555,
-    "key": 0.7812222222222223
+    "key": 0.7152222222222222
    },
    {
     "id": "upgrade_warp_stone",
     "name": "Warp Stone",
     "passPositions": [
-     8,
-     7,
-     6,
-     8,
-     5
+     3,
+     14,
+     3,
+     5,
+     3
     ],
-    "borda": 0.1511111111111111,
+    "borda": 0.12444444444444444,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Teleport dash",
+    "perception": "teleport dash",
     "popularity": 10.85,
     "popularityObscurity": 0.3111111111111111,
     "spellingCost": 9,
     "spellingObscurity": 0.28888888888888886,
-    "key": 0.22200000000000003
+    "key": 0.20733333333333334
    },
    {
     "id": "upgrade_weighted_shots",
     "name": "Weighted Shots",
     "passPositions": [
-     35,
-     44,
-     35,
-     27,
+     43,
+     43,
+     41,
+     42,
      44
     ],
-    "borda": 0.8222222222222222,
+    "borda": 0.9466666666666667,
     "fit": {
      "expected": 0,
-     "neutral": 4,
-     "surprising": 1
+     "neutral": 1,
+     "surprising": 4
     },
-    "perception": "Slow buildup bullets",
+    "perception": "slow bullets",
     "popularity": 4.1,
     "popularityObscurity": 0.6222222222222222,
     "spellingCost": 8,
     "spellingObscurity": 0.2,
-    "key": 0.7111111111111111
+    "key": 0.7795555555555557
    }
   ],
-  "passAgreement": 0.577584541062802,
+  "passAgreement": 0.626280193236715,
   "orderBeforeRefinement": [
    "upgrade_cooldown_reduction",
    "upgrade_toxic_bullets",
-   "upgrade_chonky",
-   "upgrade_chain_lightning",
-   "upgrade_imbued_duration_extender",
    "upgrade_warp_stone",
-   "upgrade_tech_range",
-   "upgrade_reduce_debuff_duration",
-   "upgrade_rapid_recharge",
+   "upgrade_chain_lightning",
+   "upgrade_chonky",
    "upgrade_tech_purge",
+   "upgrade_reduce_debuff_duration",
    "upgrade_metal_skin",
-   "upgrade_headhunter",
-   "upgrade_burst_fire",
+   "upgrade_tech_range",
    "upgrade_berserker",
-   "upgrade_counterspell",
    "upgrade_target_stun",
+   "upgrade_imbued_duration_extender",
+   "upgrade_headhunter",
+   "upgrade_rapid_recharge",
    "upgrade_magic_shock",
-   "upgrade_spellslinger_headshots",
-   "upgrade_boxing_glove",
-   "upgrade_tech_damage_pulse",
-   "upgrade_rupture",
-   "upgrade_magic_storm",
-   "upgrade_rescue_beam",
-   "upgrade_sharpshooter",
+   "upgrade_counterspell",
+   "upgrade_burst_fire",
    "upgrade_rocket_booster",
-   "upgrade_hollow_point_rounds",
-   "upgrade_targeted_silence",
+   "upgrade_rupture",
+   "upgrade_tech_damage_pulse",
+   "upgrade_boxing_glove",
    "upgrade_improved_bullet_armor",
-   "upgrade_spirit_snatch",
+   "upgrade_targeted_silence",
+   "upgrade_rescue_beam",
    "upgrade_cloaking_device_active",
-   "upgrade_bullet_armor_reduction_aura",
+   "upgrade_magic_storm",
    "upgrade_express_shot",
+   "upgrade_sharpshooter",
+   "upgrade_bullet_armor_reduction_aura",
+   "upgrade_close_quarter_combat",
+   "upgrade_spirit_snatch",
+   "upgrade_hollow_point_rounds",
+   "upgrade_health_nova",
    "upgrade_resonant_healing",
    "upgrade_superior_stamina",
-   "upgrade_health_nova",
-   "upgrade_close_quarter_combat",
    "upgrade_non_player_bonus_sacrifice",
-   "upgrade_weighted_shots",
+   "upgrade_spellslinger_headshots",
+   "upgrade_veil_walker",
    "upgrade_thermal_detonator",
    "upgrade_dps_aura",
-   "upgrade_veil_walker",
    "upgrade_fury_trance",
+   "upgrade_weighted_shots",
+   "upgrade_blood_tribute",
    "upgrade_bulletshredimbue",
    "upgrade_reinforcing_casings",
-   "upgrade_greater_withering_whip",
-   "upgrade_blood_tribute"
+   "upgrade_greater_withering_whip"
   ],
   "pairwise": [
+   {
+    "a": "upgrade_blood_tribute",
+    "b": "upgrade_bulletshredimbue",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_blood_tribute",
+    "b": "upgrade_reinforcing_casings",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_blood_tribute",
+    "b": "upgrade_greater_withering_whip",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
    {
     "a": "upgrade_bulletshredimbue",
     "b": "upgrade_reinforcing_casings",
@@ -1460,97 +1478,80 @@
     "a": "upgrade_bulletshredimbue",
     "b": "upgrade_greater_withering_whip",
     "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_bulletshredimbue",
-    "b": "upgrade_blood_tribute",
-    "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "upgrade_bulletshredimbue"
    },
    {
     "a": "upgrade_reinforcing_casings",
     "b": "upgrade_greater_withering_whip",
     "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_reinforcing_casings",
-    "b": "upgrade_blood_tribute",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_greater_withering_whip",
-    "b": "upgrade_blood_tribute",
-    "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "upgrade_greater_withering_whip"
    },
    {
     "a": "upgrade_chain_lightning",
-    "b": "upgrade_imbued_duration_extender",
+    "b": "upgrade_chonky",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_chonky"
+   },
+   {
+    "a": "upgrade_imbued_duration_extender",
+    "b": "upgrade_headhunter",
     "purpose": "tier-boundary",
     "rarer": "upgrade_imbued_duration_extender"
    },
    {
-    "a": "upgrade_headhunter",
-    "b": "upgrade_burst_fire",
+    "a": "upgrade_magic_storm",
+    "b": "upgrade_express_shot",
     "purpose": "tier-boundary",
-    "rarer": "upgrade_burst_fire"
+    "rarer": "upgrade_magic_storm"
    },
    {
-    "a": "upgrade_hollow_point_rounds",
-    "b": "upgrade_targeted_silence",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_targeted_silence"
-   },
-   {
-    "a": "upgrade_headhunter",
-    "b": "upgrade_imbued_duration_extender",
+    "a": "upgrade_health_nova",
+    "b": "upgrade_rescue_beam",
     "purpose": "review",
-    "rarer": "upgrade_imbued_duration_extender"
+    "rarer": "upgrade_health_nova"
    },
    {
-    "a": "upgrade_burst_fire",
-    "b": "upgrade_reduce_debuff_duration",
+    "a": "upgrade_bulletshredimbue",
+    "b": "upgrade_greater_withering_whip",
     "purpose": "review",
-    "rarer": "upgrade_burst_fire"
-   },
-   {
-    "a": "upgrade_rescue_beam",
-    "b": "upgrade_targeted_silence",
-    "purpose": "review",
-    "rarer": "upgrade_rescue_beam"
+    "rarer": null
    }
   ],
   "review": [
    {
-    "name": "Fortitude",
-    "compareWith": "Toxic Bullets",
+    "name": "Warp Stone",
+    "compareWith": "Superior Cooldown",
     "claim": "should_be_more_obscure",
-    "reason": "Fortitude is a solid 3,200 item but less strongly tied to the cost than Toxic Bullets, which is a very commonly built damage item. Players listing 3,200 items will more readily think of Toxic Bullets, so Fortitude should score higher than Toxic Bullets.",
+    "reason": "Warp Stone is a niche active vitality item, not tied to a price in players' minds. Superior Cooldown is a staple spirit item that players buy constantly, so it should be the more obvious one. Warp Stone does not belong in the top tier alongside it.",
     "outcome": "ignored-invalid"
    },
    {
-    "name": "Headhunter",
-    "compareWith": "Superior Duration",
+    "name": "Metal Skin",
+    "compareWith": "Headhunter",
     "claim": "should_be_more_obvious",
-    "reason": "Headhunter is a highly popular and widely discussed weapon item that experienced players buy often. It seems more recognizable than Superior Duration, which is a niche spirit item, so it should be cheaper in points.",
-    "outcome": "applied"
+    "reason": "Metal Skin is a well-known, memorable active that players frequently buy as a counter to bullet-heavy heroes. It is at least as recognizable as Headhunter, so it deserves the same or a more obvious score.",
+    "outcome": "ignored-invalid"
    },
    {
-    "name": "Burst Fire",
-    "compareWith": "Dispel Magic",
+    "name": "Tankbuster",
+    "compareWith": "Express Shot",
     "claim": "should_be_more_obvious",
-    "reason": "Burst Fire is a well-known and frequently built weapon item, more commonly recalled than niche utility items like Dispel Magic, so it should score lower than at 60.",
+    "reason": "Tankbuster is a distinctive, widely discussed spirit item with a memorable name and role. Express Shot is a more forgettable weapon item, so Tankbuster should score as more obvious.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Healing Nova",
+    "compareWith": "Rescue Beam",
+    "claim": "should_be_more_obvious",
+    "reason": "Healing Nova is a simple, descriptive healing active that many players know and buy. Placing it at 85 pts, alongside obscure items like Disarming Hex, overstates its obscurity. It should be at least as obvious as Rescue Beam.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Rescue Beam",
-    "compareWith": "Silence Wave",
-    "claim": "should_be_more_obscure",
-    "reason": "Rescue Beam is a situational support item that players rarely buy and its cost is not memorable, so it is likely to be recalled less often than 60 points implies; it should sit near Silence Wave or further down.",
-    "outcome": "applied"
+    "name": "Ballistic Enchantment",
+    "compareWith": "Disarming Hex",
+    "claim": "should_be_more_obvious",
+    "reason": "Ballistic Enchantment is a recognizable item for ability-focused weapon builds and a popular imbue pick. Disarming Hex is a rarely remembered niche active. The 100-pt slot is questionable, and Ballistic Enchantment is probably not rarer than Disarming Hex.",
+    "outcome": "rejected-by-comparison"
    }
   ]
  }

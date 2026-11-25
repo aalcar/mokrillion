@@ -1,0 +1,677 @@
+{
+ "question": {
+  "signature": "item-active:Vitality",
+  "prompt": "Name a Vitality item with an active ability.",
+  "category": "item-effect",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_colossus",
+   "upgrade_divine_barrier",
+   "upgrade_fury_trance",
+   "upgrade_grit",
+   "upgrade_guardian_ward",
+   "upgrade_health_nova",
+   "upgrade_health_stimpak",
+   "upgrade_infuser",
+   "upgrade_metal_skin",
+   "upgrade_phantom_strike",
+   "upgrade_reduce_debuff_duration",
+   "upgrade_rescue_beam",
+   "upgrade_restorative_locket",
+   "upgrade_return_fire",
+   "upgrade_rocket_booster",
+   "upgrade_surging_power",
+   "upgrade_unstoppable",
+   "upgrade_warp_stone"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "slot == Vitality && activation != Passive"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:05:44.252Z",
+ "answers": [
+  {
+   "entityId": "upgrade_unstoppable",
+   "name": "Unstoppable",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_reduce_debuff_duration",
+   "name": "Dispel Magic",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_health_stimpak",
+   "name": "Healing Rite",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_metal_skin",
+   "name": "Metal Skin",
+   "rank": 4,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_warp_stone",
+   "name": "Warp Stone",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_colossus",
+   "name": "Colossus",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_grit",
+   "name": "Grit",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_rescue_beam",
+   "name": "Rescue Beam",
+   "rank": 8,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_rocket_booster",
+   "name": "Majestic Leap",
+   "rank": 9,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_guardian_ward",
+   "name": "Guardian Ward",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_divine_barrier",
+   "name": "Divine Barrier",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_surging_power",
+   "name": "Vampiric Burst",
+   "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_phantom_strike",
+   "name": "Phantom Strike",
+   "rank": 13,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_health_nova",
+   "name": "Healing Nova",
+   "rank": 14,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_infuser",
+   "name": "Infuser",
+   "rank": 15,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_fury_trance",
+   "name": "Fury Trance",
+   "rank": 16,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_return_fire",
+   "name": "Return Fire",
+   "rank": 17,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_restorative_locket",
+   "name": "Restorative Locket",
+   "rank": 18,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "upgrade_colossus",
+    "name": "Colossus",
+    "passPositions": [
+     1,
+     4,
+     3,
+     1,
+     4
+    ],
+    "borda": 0.15294117647058822,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "grow big tank item",
+    "popularity": 1.86,
+    "popularityObscurity": 0.7647058823529411,
+    "spellingCost": 8,
+    "spellingObscurity": 0.4117647058823529,
+    "key": 0.4105882352941177
+   },
+   {
+    "id": "upgrade_divine_barrier",
+    "name": "Divine Barrier",
+    "passPositions": [
+     7,
+     9,
+     8,
+     15,
+     10
+    ],
+    "borda": 0.5764705882352941,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "ally cleanse and barrier",
+    "popularity": 3.26,
+    "popularityObscurity": 0.5882352941176471,
+    "spellingCost": 6,
+    "spellingObscurity": 0.20588235294117646,
+    "key": 0.5626470588235295
+   },
+   {
+    "id": "upgrade_fury_trance",
+    "name": "Fury Trance",
+    "passPositions": [
+     12,
+     14,
+     12,
+     10,
+     11
+    ],
+    "borda": 0.6941176470588235,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "fire rate silence trade-off",
+    "popularity": 0.59,
+    "popularityObscurity": 1,
+    "spellingCost": 4,
+    "spellingObscurity": 0.029411764705882353,
+    "key": 0.783235294117647
+   },
+   {
+    "id": "upgrade_grit",
+    "name": "Grit",
+    "passPositions": [
+     11,
+     12,
+     14,
+     16,
+     12
+    ],
+    "borda": 0.7647058823529413,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "cheap barrier starter",
+    "popularity": 21.04,
+    "popularityObscurity": 0.058823529411764705,
+    "spellingCost": 4,
+    "spellingObscurity": 0.029411764705882353,
+    "key": 0.44558823529411773
+   },
+   {
+    "id": "upgrade_guardian_ward",
+    "name": "Guardian Ward",
+    "passPositions": [
+     8,
+     10,
+     10,
+     9,
+     15
+    ],
+    "borda": 0.6117647058823529,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "ally barrier cast",
+    "popularity": 4.91,
+    "popularityObscurity": 0.29411764705882354,
+    "spellingCost": 12,
+    "spellingObscurity": 0.8529411764705882,
+    "key": 0.496764705882353
+   },
+   {
+    "id": "upgrade_health_nova",
+    "name": "Healing Nova",
+    "passPositions": [
+     5,
+     13,
+     11,
+     13,
+     1
+    ],
+    "borda": 0.5058823529411764,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "AoE heal active",
+    "popularity": 1.18,
+    "popularityObscurity": 0.8823529411764706,
+    "spellingCost": 10,
+    "spellingObscurity": 0.6470588235294118,
+    "key": 0.6635294117647059
+   },
+   {
+    "id": "upgrade_health_stimpak",
+    "name": "Healing Rite",
+    "passPositions": [
+     3,
+     2,
+     0,
+     5,
+     0
+    ],
+    "borda": 0.11764705882352941,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "regen heal on ally",
+    "popularity": 4.61,
+    "popularityObscurity": 0.35294117647058826,
+    "spellingCost": 11,
+    "spellingObscurity": 0.7647058823529411,
+    "key": 0.24411764705882355
+   },
+   {
+    "id": "upgrade_infuser",
+    "name": "Infuser",
+    "passPositions": [
+     16,
+     17,
+     16,
+     17,
+     17
+    ],
+    "borda": 0.9764705882352942,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "spirit lifesteal active buff",
+    "popularity": 3.91,
+    "popularityObscurity": 0.4117647058823529,
+    "spellingCost": 7,
+    "spellingObscurity": 0.35294117647058826,
+    "key": 0.7194117647058824
+   },
+   {
+    "id": "upgrade_metal_skin",
+    "name": "Metal Skin",
+    "passPositions": [
+     0,
+     0,
+     2,
+     2,
+     3
+    ],
+    "borda": 0.08235294117647059,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "bullet immunity",
+    "popularity": 3.6,
+    "popularityObscurity": 0.47058823529411764,
+    "spellingCost": 9,
+    "spellingObscurity": 0.5,
+    "key": 0.2585294117647059
+   },
+   {
+    "id": "upgrade_phantom_strike",
+    "name": "Phantom Strike",
+    "passPositions": [
+     17,
+     8,
+     9,
+     8,
+     7
+    ],
+    "borda": 0.5764705882352941,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "teleport pull to enemy",
+    "popularity": 3.37,
+    "popularityObscurity": 0.5294117647058824,
+    "spellingCost": 13,
+    "spellingObscurity": 0.9705882352941176,
+    "key": 0.5773529411764706
+   },
+   {
+    "id": "upgrade_reduce_debuff_duration",
+    "name": "Dispel Magic",
+    "passPositions": [
+     6,
+     5,
+     4,
+     6,
+     6
+    ],
+    "borda": 0.31764705882352945,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "debuff purge",
+    "popularity": 21.73,
+    "popularityObscurity": 0,
+    "spellingCost": 6,
+    "spellingObscurity": 0.20588235294117646,
+    "key": 0.18500000000000003
+   },
+   {
+    "id": "upgrade_rescue_beam",
+    "name": "Rescue Beam",
+    "passPositions": [
+     4,
+     6,
+     5,
+     4,
+     5
+    ],
+    "borda": 0.2823529411764706,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "pull-and-heal ally save",
+    "popularity": 2.21,
+    "popularityObscurity": 0.7058823529411765,
+    "spellingCost": 10,
+    "spellingObscurity": 0.6470588235294118,
+    "key": 0.4700000000000001
+   },
+   {
+    "id": "upgrade_restorative_locket",
+    "name": "Restorative Locket",
+    "passPositions": [
+     14,
+     16,
+     15,
+     14,
+     16
+    ],
+    "borda": 0.8823529411764707,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "stored heal from enemy abilities",
+    "popularity": 1.64,
+    "popularityObscurity": 0.8235294117647058,
+    "spellingCost": 6,
+    "spellingObscurity": 0.20588235294117646,
+    "key": 0.8250000000000002
+   },
+   {
+    "id": "upgrade_return_fire",
+    "name": "Return Fire",
+    "passPositions": [
+     15,
+     11,
+     17,
+     11,
+     14
+    ],
+    "borda": 0.8,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "auto return bullet",
+    "popularity": 1.12,
+    "popularityObscurity": 0.9411764705882353,
+    "spellingCost": 10,
+    "spellingObscurity": 0.6470588235294118,
+    "key": 0.8488235294117648
+   },
+   {
+    "id": "upgrade_rocket_booster",
+    "name": "Majestic Leap",
+    "passPositions": [
+     9,
+     3,
+     7,
+     0,
+     8
+    ],
+    "borda": 0.31764705882352945,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "jump into air",
+    "popularity": 2.71,
+    "popularityObscurity": 0.6470588235294118,
+    "spellingCost": 12,
+    "spellingObscurity": 0.8529411764705882,
+    "key": 0.47617647058823537
+   },
+   {
+    "id": "upgrade_surging_power",
+    "name": "Vampiric Burst",
+    "passPositions": [
+     13,
+     15,
+     13,
+     12,
+     13
+    ],
+    "borda": 0.7764705882352941,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "lifesteal fire rate burst",
+    "popularity": 5.26,
+    "popularityObscurity": 0.23529411764705882,
+    "spellingCost": 13,
+    "spellingObscurity": 0.9705882352941176,
+    "key": 0.5697058823529413
+   },
+   {
+    "id": "upgrade_unstoppable",
+    "name": "Unstoppable",
+    "passPositions": [
+     2,
+     1,
+     1,
+     3,
+     2
+    ],
+    "borda": 0.10588235294117647,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "CC immunity",
+    "popularity": 9.05,
+    "popularityObscurity": 0.17647058823529413,
+    "spellingCost": 6,
+    "spellingObscurity": 0.20588235294117646,
+    "key": 0.13911764705882357
+   },
+   {
+    "id": "upgrade_warp_stone",
+    "name": "Warp Stone",
+    "passPositions": [
+     10,
+     7,
+     6,
+     7,
+     9
+    ],
+    "borda": 0.4588235294117647,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "short teleport",
+    "popularity": 10.85,
+    "popularityObscurity": 0.11764705882352941,
+    "spellingCost": 9,
+    "spellingObscurity": 0.5,
+    "key": 0.3244117647058824
+   }
+  ],
+  "passAgreement": 0.6287581699346405,
+  "orderBeforeRefinement": [
+   "upgrade_unstoppable",
+   "upgrade_reduce_debuff_duration",
+   "upgrade_health_stimpak",
+   "upgrade_metal_skin",
+   "upgrade_warp_stone",
+   "upgrade_colossus",
+   "upgrade_grit",
+   "upgrade_rescue_beam",
+   "upgrade_rocket_booster",
+   "upgrade_guardian_ward",
+   "upgrade_divine_barrier",
+   "upgrade_surging_power",
+   "upgrade_phantom_strike",
+   "upgrade_health_nova",
+   "upgrade_infuser",
+   "upgrade_fury_trance",
+   "upgrade_restorative_locket",
+   "upgrade_return_fire"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_infuser",
+    "b": "upgrade_fury_trance",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_fury_trance"
+   },
+   {
+    "a": "upgrade_infuser",
+    "b": "upgrade_restorative_locket",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_restorative_locket"
+   },
+   {
+    "a": "upgrade_infuser",
+    "b": "upgrade_return_fire",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_return_fire"
+   },
+   {
+    "a": "upgrade_fury_trance",
+    "b": "upgrade_restorative_locket",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_restorative_locket"
+   },
+   {
+    "a": "upgrade_fury_trance",
+    "b": "upgrade_return_fire",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_return_fire"
+   },
+   {
+    "a": "upgrade_restorative_locket",
+    "b": "upgrade_return_fire",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_restorative_locket"
+   },
+   {
+    "a": "upgrade_unstoppable",
+    "b": "upgrade_reduce_debuff_duration",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_reduce_debuff_duration"
+   },
+   {
+    "a": "upgrade_metal_skin",
+    "b": "upgrade_warp_stone",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_warp_stone"
+   },
+   {
+    "a": "upgrade_rocket_booster",
+    "b": "upgrade_guardian_ward",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_guardian_ward"
+   },
+   {
+    "a": "upgrade_rocket_booster",
+    "b": "upgrade_warp_stone",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Metal Skin",
+    "compareWith": "Unstoppable",
+    "claim": "should_be_more_obscure",
+    "reason": "Metal Skin is a niche situational pick, whereas Unstoppable is the iconic active Vitality item, so Metal Skin should sit rather further from the obvious end than 30 pts suggests.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Majestic Leap",
+    "compareWith": "Warp Stone",
+    "claim": "should_be_more_obvious",
+    "reason": "Majestic Leap is a distinctive, memorable movement active that is commonly bought and is strongly associated with an active Vitality item, so it should rank at least as obvious as Warp Stone.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Return Fire",
+    "compareWith": "Restorative Locket",
+    "claim": "should_be_more_obvious",
+    "reason": "Return Fire is a memorable named item that players recall, but Restorative Locket is the more forgettable active and its stack mechanic is less known, so Locket should stay at 100 and Return Fire should be rated more obvious than the other 85-pt answers.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Colossus",
+    "compareWith": "Grit",
+    "claim": "should_be_more_obvious",
+    "reason": "Colossus is a very well-known tier 4 Vitality item with a striking active (growing larger), so it comes to mind far more readily than Grit and deserves a more obvious score.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}

@@ -1,0 +1,360 @@
+{
+ "question": {
+  "signature": "item-slot-tier:Spirit:1",
+  "prompt": "Name a Tier 1 Spirit item.",
+  "category": "item-cost",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_acolytes_glove",
+   "upgrade_extra_charge",
+   "upgrade_goose_egg",
+   "upgrade_improved_spirit",
+   "upgrade_magic_burst",
+   "upgrade_magic_reach",
+   "upgrade_mystic_regeneration",
+   "upgrade_withering_whip"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "slot == Spirit && tier == 1"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:06:14.215Z",
+ "answers": [
+  {
+   "entityId": "upgrade_improved_spirit",
+   "name": "Extra Spirit",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_extra_charge",
+   "name": "Extra Charge",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_magic_burst",
+   "name": "Mystic Burst",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_magic_reach",
+   "name": "Mystic Expansion",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_mystic_regeneration",
+   "name": "Mystic Regeneration",
+   "rank": 5,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_acolytes_glove",
+   "name": "Spirit Strike",
+   "rank": 6,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_withering_whip",
+   "name": "Rusted Barrel",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_goose_egg",
+   "name": "Golden Goose Egg",
+   "rank": 8,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "upgrade_acolytes_glove",
+    "name": "Spirit Strike",
+    "passPositions": [
+     4,
+     5,
+     5,
+     6,
+     5
+    ],
+    "borda": 0.7142857142857143,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "melee spirit damage and resist shred",
+    "popularity": 17.14,
+    "popularityObscurity": 0.5714285714285714,
+    "spellingCost": 12,
+    "spellingObscurity": 0.9285714285714286,
+    "key": 0.6678571428571429
+   },
+   {
+    "id": "upgrade_extra_charge",
+    "name": "Extra Charge",
+    "passPositions": [
+     2,
+     2,
+     1,
+     2,
+     2
+    ],
+    "borda": 0.2571428571428571,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "extra ability charge for charge-based abilities",
+    "popularity": 31.98,
+    "popularityObscurity": 0.42857142857142855,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5,
+    "key": 0.33785714285714286
+   },
+   {
+    "id": "upgrade_goose_egg",
+    "name": "Golden Goose Egg",
+    "passPositions": [
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "borda": 1,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "passive soul income gimmick item",
+    "popularity": 1.88,
+    "popularityObscurity": 1,
+    "spellingCost": 3,
+    "spellingObscurity": 0,
+    "key": 0.9500000000000001
+   },
+   {
+    "id": "upgrade_improved_spirit",
+    "name": "Extra Spirit",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "basic flat Spirit Power stat item",
+    "popularity": 49.29,
+    "popularityObscurity": 0,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5,
+    "key": 0.025
+   },
+   {
+    "id": "upgrade_magic_burst",
+    "name": "Mystic Burst",
+    "passPositions": [
+     1,
+     1,
+     2,
+     1,
+     1
+    ],
+    "borda": 0.1714285714285714,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "cheap burst damage proc item",
+    "popularity": 35.72,
+    "popularityObscurity": 0.14285714285714285,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5,
+    "key": 0.1764285714285714
+   },
+   {
+    "id": "upgrade_magic_reach",
+    "name": "Mystic Expansion",
+    "passPositions": [
+     3,
+     4,
+     3,
+     3,
+     3
+    ],
+    "borda": 0.45714285714285713,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "range and radius boost to an ability",
+    "popularity": 33.35,
+    "popularityObscurity": 0.2857142857142857,
+    "spellingCost": 9,
+    "spellingObscurity": 0.14285714285714285,
+    "key": 0.37285714285714283
+   },
+   {
+    "id": "upgrade_mystic_regeneration",
+    "name": "Mystic Regeneration",
+    "passPositions": [
+     5,
+     3,
+     4,
+     4,
+     4
+    ],
+    "borda": 0.5714285714285714,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "spirit damage-based regen item",
+    "popularity": 8.86,
+    "popularityObscurity": 0.7142857142857143,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5,
+    "key": 0.625
+   },
+   {
+    "id": "upgrade_withering_whip",
+    "name": "Rusted Barrel",
+    "passPositions": [
+     6,
+     6,
+     6,
+     5,
+     6
+    ],
+    "borda": 0.8285714285714285,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "active that shoots down enemy fire rate",
+    "popularity": 2.71,
+    "popularityObscurity": 0.8571428571428571,
+    "spellingCost": 12,
+    "spellingObscurity": 0.9285714285714286,
+    "key": 0.8450000000000001
+   }
+  ],
+  "passAgreement": 0.8857142857142856,
+  "orderBeforeRefinement": [
+   "upgrade_improved_spirit",
+   "upgrade_magic_burst",
+   "upgrade_extra_charge",
+   "upgrade_magic_reach",
+   "upgrade_mystic_regeneration",
+   "upgrade_acolytes_glove",
+   "upgrade_withering_whip",
+   "upgrade_goose_egg"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_mystic_regeneration",
+    "b": "upgrade_acolytes_glove",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_acolytes_glove"
+   },
+   {
+    "a": "upgrade_mystic_regeneration",
+    "b": "upgrade_withering_whip",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_withering_whip"
+   },
+   {
+    "a": "upgrade_mystic_regeneration",
+    "b": "upgrade_goose_egg",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_goose_egg"
+   },
+   {
+    "a": "upgrade_acolytes_glove",
+    "b": "upgrade_withering_whip",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_acolytes_glove",
+    "b": "upgrade_goose_egg",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_withering_whip",
+    "b": "upgrade_goose_egg",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_goose_egg"
+   },
+   {
+    "a": "upgrade_improved_spirit",
+    "b": "upgrade_magic_burst",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_magic_burst"
+   },
+   {
+    "a": "upgrade_magic_burst",
+    "b": "upgrade_extra_charge",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_magic_burst"
+   },
+   {
+    "a": "upgrade_goose_egg",
+    "b": "upgrade_withering_whip",
+    "purpose": "review",
+    "rarer": "upgrade_goose_egg"
+   },
+   {
+    "a": "upgrade_magic_burst",
+    "b": "upgrade_mystic_regeneration",
+    "purpose": "review",
+    "rarer": "upgrade_mystic_regeneration"
+   }
+  ],
+  "review": [
+   {
+    "name": "Golden Goose Egg",
+    "compareWith": "Rusted Barrel",
+    "claim": "should_be_more_obvious",
+    "reason": "Golden Goose Egg has a very distinctive, memorable name and a unique souls-over-time effect, so players tend to recall it. Rusted Barrel is a less memorable, more situational item, so it should sit at the 100-point end rather than Golden Goose Egg.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Mystic Burst",
+    "compareWith": "Mystic Regeneration",
+    "claim": "should_be_more_obscure",
+    "reason": "Mystic Burst is a fairly forgettable item with no flat stats listed, and it is bought less often than Mystic Regeneration, which gives health and is a common early pick. Mystic Regeneration should not be rated more obscure than Mystic Burst.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Mystic Expansion",
+    "compareWith": "Spirit Strike",
+    "claim": "should_be_more_obvious",
+    "reason": "Mystic Expansion is a staple Tier 1 spirit item that experienced players know well, with a clear mechanic and two upgrade paths, so it should be rated closer to Extra Charge than to Mystic Burst.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}

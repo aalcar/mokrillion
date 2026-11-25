@@ -20,9 +20,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "5",
+ "scoringVersion": "7",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T03:41:10.357Z",
+ "generatedAt": "2026-11-25T04:04:10.868Z",
  "answers": [
   {
    "entityId": "upgrade_capacitor",
@@ -37,38 +37,38 @@
    "score": 30
   },
   {
-   "entityId": "upgrade_fleetfoot_boots",
-   "name": "Fleetfoot",
+   "entityId": "upgrade_split_shot",
+   "name": "Split Shot",
    "rank": 3,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_non_player_bonus_sacrifice",
-   "name": "Cultist Sacrifice",
-   "rank": 4,
    "score": 60
   },
   {
    "entityId": "upgrade_thermal_detonator",
    "name": "Alchemical Fire",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_non_player_bonus_sacrifice",
+   "name": "Cultist Sacrifice",
    "rank": 5,
    "score": 85
   },
   {
-   "entityId": "upgrade_split_shot",
-   "name": "Split Shot",
+   "entityId": "upgrade_fleetfoot_boots",
+   "name": "Fleetfoot",
    "rank": 6,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_blood_tribute",
-   "name": "Blood Tribute",
-   "rank": 7,
    "score": 85
   },
   {
    "entityId": "upgrade_dps_aura",
    "name": "Heroic Aura",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_blood_tribute",
+   "name": "Blood Tribute",
    "rank": 8,
    "score": 100
   }
@@ -79,57 +79,34 @@
     "id": "upgrade_blood_tribute",
     "name": "Blood Tribute",
     "passPositions": [
+     5,
+     6,
      4,
      3,
-     3,
-     2,
-     2
+     3
     ],
-    "borda": 0.4,
+    "borda": 0.5999999999999999,
     "fit": {
-     "expected": 4,
-     "neutral": 1,
+     "expected": 2,
+     "neutral": 3,
      "surprising": 0
     },
-    "perception": "health-for-fire-rate toggle",
+    "perception": "toggle health-for-fire-rate item",
     "popularity": 0.98,
     "popularityObscurity": 1,
     "spellingCost": 12,
     "spellingObscurity": 0.8571428571428571,
-    "key": 0.6628571428571429
+    "key": 0.7728571428571429
    },
    {
     "id": "upgrade_capacitor",
     "name": "Capacitor",
     "passPositions": [
+     1,
      0,
-     0,
-     2,
-     4,
+     3,
+     1,
      4
-    ],
-    "borda": 0.2857142857142857,
-    "fit": {
-     "expected": 4,
-     "neutral": 1,
-     "surprising": 0
-    },
-    "perception": "slowing projectile that silences movement",
-    "popularity": 8.07,
-    "popularityObscurity": 0.2857142857142857,
-    "spellingCost": 9,
-    "spellingObscurity": 0.5,
-    "key": 0.29642857142857143
-   },
-   {
-    "id": "upgrade_cloaking_device_active",
-    "name": "Shadow Weave",
-    "passPositions": [
-     2,
-     2,
-     0,
-     5,
-     0
     ],
     "borda": 0.2571428571428571,
     "fit": {
@@ -137,12 +114,35 @@
      "neutral": 1,
      "surprising": 0
     },
-    "perception": "stealth active for ambushes",
+    "perception": "slowing silencing projectile",
+    "popularity": 8.07,
+    "popularityObscurity": 0.2857142857142857,
+    "spellingCost": 9,
+    "spellingObscurity": 0.5,
+    "key": 0.2807142857142857
+   },
+   {
+    "id": "upgrade_cloaking_device_active",
+    "name": "Shadow Weave",
+    "passPositions": [
+     3,
+     2,
+     1,
+     0,
+     0
+    ],
+    "borda": 0.1714285714285714,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "stealth invisibility active",
     "popularity": 2.8,
     "popularityObscurity": 0.42857142857142855,
     "spellingCost": 11,
     "spellingObscurity": 0.7142857142857143,
-    "key": 0.3485714285714286
+    "key": 0.30142857142857143
    },
    {
     "id": "upgrade_dps_aura",
@@ -150,40 +150,40 @@
     "passPositions": [
      7,
      7,
-     5,
-     6,
-     6
+     7,
+     7,
+     7
     ],
-    "borda": 0.8857142857142858,
+    "borda": 1,
     "fit": {
      "expected": 0,
-     "neutral": 3,
-     "surprising": 2
+     "neutral": 1,
+     "surprising": 4
     },
-    "perception": "team bullet resist aura, mostly passive feel",
+    "perception": "team bullet resist aura",
     "popularity": 2.46,
     "popularityObscurity": 0.5714285714285714,
     "spellingCost": 6,
     "spellingObscurity": 0.14285714285714285,
-    "key": 0.7228571428571429
+    "key": 0.7857142857142857
    },
    {
     "id": "upgrade_fleetfoot_boots",
     "name": "Fleetfoot",
     "passPositions": [
+     4,
+     4,
      5,
-     6,
-     7,
-     1,
-     5
+     5,
+     6
     ],
     "borda": 0.6857142857142857,
     "fit": {
      "expected": 1,
-     "neutral": 3,
-     "surprising": 1
+     "neutral": 4,
+     "surprising": 0
     },
-    "perception": "move while shooting speed item",
+    "perception": "move while shooting speed boost",
     "popularity": 9.1,
     "popularityObscurity": 0.14285714285714285,
     "spellingCost": 9,
@@ -197,56 +197,56 @@
      6,
      5,
      6,
-     7,
-     7
+     6,
+     5
     ],
-    "borda": 0.8857142857142858,
+    "borda": 0.8,
     "fit": {
-     "expected": 1,
-     "neutral": 4,
+     "expected": 0,
+     "neutral": 5,
      "surprising": 0
     },
-    "perception": "NPC-consuming soul-gaining buff item",
+    "perception": "NPC-consuming jungle farming buff",
     "popularity": 9.92,
     "popularityObscurity": 0,
     "spellingCost": 7,
     "spellingObscurity": 0.2857142857142857,
-    "key": 0.5014285714285714
+    "key": 0.45428571428571435
    },
    {
     "id": "upgrade_split_shot",
     "name": "Split Shot",
     "passPositions": [
+     2,
      3,
+     2,
      4,
-     4,
-     0,
-     3
+     2
     ],
-    "borda": 0.4,
+    "borda": 0.37142857142857133,
     "fit": {
-     "expected": 2,
-     "neutral": 3,
+     "expected": 3,
+     "neutral": 2,
      "surprising": 0
     },
-    "perception": "multishot weapon damage item",
+    "perception": "multishot weapon active",
     "popularity": 1.81,
     "popularityObscurity": 0.7142857142857143,
     "spellingCost": 5,
     "spellingObscurity": 0,
-    "key": 0.5057142857142858
+    "key": 0.49
    },
    {
     "id": "upgrade_thermal_detonator",
     "name": "Alchemical Fire",
     "passPositions": [
+     0,
      1,
-     1,
-     1,
-     3,
+     0,
+     2,
      1
     ],
-    "borda": 0.2,
+    "borda": 0.11428571428571428,
     "fit": {
      "expected": 4,
      "neutral": 1,
@@ -257,35 +257,35 @@
     "popularityObscurity": 0.8571428571428571,
     "spellingCost": 14,
     "spellingObscurity": 1,
-    "key": 0.5028571428571429
+    "key": 0.45571428571428574
    }
   ],
-  "passAgreement": 0.4,
+  "passAgreement": 0.6428571428571429,
   "orderBeforeRefinement": [
    "upgrade_capacitor",
    "upgrade_cloaking_device_active",
-   "upgrade_fleetfoot_boots",
    "upgrade_non_player_bonus_sacrifice",
    "upgrade_thermal_detonator",
+   "upgrade_fleetfoot_boots",
    "upgrade_split_shot",
    "upgrade_blood_tribute",
    "upgrade_dps_aura"
   ],
   "pairwise": [
    {
-    "a": "upgrade_thermal_detonator",
+    "a": "upgrade_fleetfoot_boots",
     "b": "upgrade_split_shot",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_thermal_detonator"
+    "rarer": "upgrade_fleetfoot_boots"
    },
    {
-    "a": "upgrade_thermal_detonator",
+    "a": "upgrade_fleetfoot_boots",
     "b": "upgrade_blood_tribute",
     "purpose": "rare-contenders",
     "rarer": "upgrade_blood_tribute"
    },
    {
-    "a": "upgrade_thermal_detonator",
+    "a": "upgrade_fleetfoot_boots",
     "b": "upgrade_dps_aura",
     "purpose": "rare-contenders",
     "rarer": "upgrade_dps_aura"
@@ -316,50 +316,44 @@
    },
    {
     "a": "upgrade_cloaking_device_active",
-    "b": "upgrade_fleetfoot_boots",
+    "b": "upgrade_non_player_bonus_sacrifice",
     "purpose": "tier-boundary",
-    "rarer": null
+    "rarer": "upgrade_non_player_bonus_sacrifice"
    },
    {
-    "a": "upgrade_thermal_detonator",
-    "b": "upgrade_split_shot",
+    "a": "upgrade_split_shot",
+    "b": "upgrade_non_player_bonus_sacrifice",
     "purpose": "review",
-    "rarer": "upgrade_split_shot"
+    "rarer": "upgrade_non_player_bonus_sacrifice"
    },
    {
-    "a": "upgrade_capacitor",
-    "b": "upgrade_cloaking_device_active",
+    "a": "upgrade_blood_tribute",
+    "b": "upgrade_thermal_detonator",
     "purpose": "review",
-    "rarer": "upgrade_cloaking_device_active"
-   },
-   {
-    "a": "upgrade_dps_aura",
-    "b": "upgrade_blood_tribute",
-    "purpose": "review",
-    "rarer": null
+    "rarer": "upgrade_blood_tribute"
    }
   ],
   "review": [
    {
-    "name": "Alchemical Fire",
-    "compareWith": "Split Shot",
+    "name": "Split Shot",
+    "compareWith": "Cultist Sacrifice",
     "claim": "should_be_more_obvious",
-    "reason": "Alchemical Fire is a Weapon item with a clearly flagged active (a fire flask that damages and reduces enemy healing), and players tend to remember it as a throwable. Split Shot is a passive-style Weapon item, so it is the less natural answer and should rank more obscure than Alchemical Fire.",
+    "reason": "Split Shot is a common, cheap Tier 2 weapon item that players buy often. Its name is memorable and its active multishot is well known. Cultist Sacrifice is a niche pick, so Split Shot should score lower than it.",
     "outcome": "applied"
    },
    {
-    "name": "Capacitor",
-    "compareWith": "Shadow Weave",
-    "claim": "should_be_more_obscure",
-    "reason": "Capacitor is a Spirit item in the current item pool, not a Weapon item. It is an odd pick for the top spot, though if it is counted as valid, players associate it with stun actives and may still list it. Shadow Weave is more strongly tied to the question as a clear Weapon active, so the two should plausibly be closer in rarity.",
+    "name": "Blood Tribute",
+    "compareWith": "Alchemical Fire",
+    "claim": "should_be_more_obvious",
+    "reason": "Blood Tribute is a toggle with a distinctive health-for-fire-rate trade-off. Experienced players recall it readily as an item with an activatable effect. Placing it at 85 alongside forgettable items seems too obscure.",
     "outcome": "rejected-by-comparison"
    },
    {
     "name": "Heroic Aura",
     "compareWith": "Blood Tribute",
     "claim": "should_be_more_obvious",
-    "reason": "Heroic Aura is a well-known aura item with an obvious name that players tend to recall, so it should not be rarer than Blood Tribute. Blood Tribute is a more niche, forgettable item whose active is rarely remembered, and it should sit at the 100-point slot.",
-    "outcome": "rejected-by-comparison"
+    "reason": "Heroic Aura is not clearly rarer than Blood Tribute or Fleetfoot. It is a recognizable team-support item whose name is easy to recall. Putting it alone at 100 points looks too harsh.",
+    "outcome": "applied-by-data"
    }
   ]
  }

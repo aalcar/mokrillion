@@ -1,0 +1,552 @@
+{
+ "question": {
+  "signature": "item-slot-tier:Vitality:3",
+  "prompt": "Name a Tier 3 Vitality item.",
+  "category": "item-cost",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_boxing_glove",
+   "upgrade_chonky",
+   "upgrade_counterspell",
+   "upgrade_fury_trance",
+   "upgrade_health_nova",
+   "upgrade_improved_bullet_armor",
+   "upgrade_metal_skin",
+   "upgrade_reduce_debuff_duration",
+   "upgrade_rescue_beam",
+   "upgrade_rocket_booster",
+   "upgrade_superior_stamina",
+   "upgrade_tech_purge",
+   "upgrade_veil_walker",
+   "upgrade_warp_stone"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "slot == Vitality && tier == 3"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:05:06.366Z",
+ "answers": [
+  {
+   "entityId": "upgrade_chonky",
+   "name": "Fortitude",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_tech_purge",
+   "name": "Spirit Resilience",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_metal_skin",
+   "name": "Metal Skin",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_reduce_debuff_duration",
+   "name": "Dispel Magic",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_improved_bullet_armor",
+   "name": "Bullet Resilience",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_warp_stone",
+   "name": "Warp Stone",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_rocket_booster",
+   "name": "Majestic Leap",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_boxing_glove",
+   "name": "Lifestrike",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_counterspell",
+   "name": "Counterspell",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_rescue_beam",
+   "name": "Rescue Beam",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_health_nova",
+   "name": "Healing Nova",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_veil_walker",
+   "name": "Veil Walker",
+   "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_fury_trance",
+   "name": "Fury Trance",
+   "rank": 13,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_superior_stamina",
+   "name": "Stamina Mastery",
+   "rank": 14,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "upgrade_boxing_glove",
+    "name": "Lifestrike",
+    "passPositions": [
+     8,
+     10,
+     7,
+     8,
+     9
+    ],
+    "borda": 0.6461538461538462,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "melee lifesteal",
+    "popularity": 9.99,
+    "popularityObscurity": 0.38461538461538464,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5,
+    "key": 0.5342307692307693
+   },
+   {
+    "id": "upgrade_chonky",
+    "name": "Fortitude",
+    "passPositions": [
+     1,
+     4,
+     3,
+     3,
+     1
+    ],
+    "borda": 0.18461538461538463,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "big health and regen, core tank item",
+    "popularity": 16.58,
+    "popularityObscurity": 0.23076923076923078,
+    "spellingCost": 9,
+    "spellingObscurity": 0.23076923076923078,
+    "key": 0.2053846153846154
+   },
+   {
+    "id": "upgrade_counterspell",
+    "name": "Counterspell",
+    "passPositions": [
+     6,
+     9,
+     12,
+     10,
+     8
+    ],
+    "borda": 0.6923076923076923,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "spell parry shield",
+    "popularity": 9.93,
+    "popularityObscurity": 0.46153846153846156,
+    "spellingCost": 12,
+    "spellingObscurity": 0.7307692307692307,
+    "key": 0.601923076923077
+   },
+   {
+    "id": "upgrade_fury_trance",
+    "name": "Fury Trance",
+    "passPositions": [
+     11,
+     11,
+     8,
+     11,
+     10
+    ],
+    "borda": 0.7846153846153846,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "lifesteal fire rate trance with silence",
+    "popularity": 0.59,
+    "popularityObscurity": 1,
+    "spellingCost": 4,
+    "spellingObscurity": 0,
+    "key": 0.8315384615384616
+   },
+   {
+    "id": "upgrade_health_nova",
+    "name": "Healing Nova",
+    "passPositions": [
+     10,
+     6,
+     5,
+     6,
+     11
+    ],
+    "borda": 0.5846153846153846,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "AoE heal active",
+    "popularity": 1.18,
+    "popularityObscurity": 0.9230769230769231,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5,
+    "key": 0.7157692307692309
+   },
+   {
+    "id": "upgrade_improved_bullet_armor",
+    "name": "Bullet Resilience",
+    "passPositions": [
+     2,
+     1,
+     1,
+     2,
+     3
+    ],
+    "borda": 0.13846153846153847,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "bullet resist tank counter",
+    "popularity": 3.15,
+    "popularityObscurity": 0.6153846153846154,
+    "spellingCost": 16,
+    "spellingObscurity": 0.9615384615384616,
+    "key": 0.3703846153846154
+   },
+   {
+    "id": "upgrade_metal_skin",
+    "name": "Metal Skin",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "bullet immunity active, iconic defensive item",
+    "popularity": 3.6,
+    "popularityObscurity": 0.5384615384615384,
+    "spellingCost": 9,
+    "spellingObscurity": 0.23076923076923078,
+    "key": 0.22692307692307695
+   },
+   {
+    "id": "upgrade_reduce_debuff_duration",
+    "name": "Dispel Magic",
+    "passPositions": [
+     7,
+     5,
+     9,
+     7,
+     7
+    ],
+    "borda": 0.5384615384615384,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "cleanse active",
+    "popularity": 21.73,
+    "popularityObscurity": 0.07692307692307693,
+    "spellingCost": 6,
+    "spellingObscurity": 0.07692307692307693,
+    "key": 0.33076923076923076
+   },
+   {
+    "id": "upgrade_rescue_beam",
+    "name": "Rescue Beam",
+    "passPositions": [
+     9,
+     7,
+     4,
+     5,
+     4
+    ],
+    "borda": 0.4461538461538462,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "ally heal and pull",
+    "popularity": 2.21,
+    "popularityObscurity": 0.8461538461538461,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5,
+    "key": 0.6088461538461539
+   },
+   {
+    "id": "upgrade_rocket_booster",
+    "name": "Majestic Leap",
+    "passPositions": [
+     4,
+     3,
+     6,
+     4,
+     5
+    ],
+    "borda": 0.3384615384615385,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "high leap with barrier, mobility",
+    "popularity": 2.71,
+    "popularityObscurity": 0.6923076923076923,
+    "spellingCost": 12,
+    "spellingObscurity": 0.7307692307692307,
+    "key": 0.4996153846153847
+   },
+   {
+    "id": "upgrade_superior_stamina",
+    "name": "Stamina Mastery",
+    "passPositions": [
+     13,
+     13,
+     13,
+     13,
+     13
+    ],
+    "borda": 1,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "extra air jump stamina",
+    "popularity": 17.67,
+    "popularityObscurity": 0.15384615384615385,
+    "spellingCost": 14,
+    "spellingObscurity": 0.8461538461538461,
+    "key": 0.6538461538461539
+   },
+   {
+    "id": "upgrade_tech_purge",
+    "name": "Spirit Resilience",
+    "passPositions": [
+     3,
+     2,
+     2,
+     1,
+     2
+    ],
+    "borda": 0.15384615384615385,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "spirit resist tank counter",
+    "popularity": 25.58,
+    "popularityObscurity": 0,
+    "spellingCost": 16,
+    "spellingObscurity": 0.9615384615384616,
+    "key": 0.1326923076923077
+   },
+   {
+    "id": "upgrade_veil_walker",
+    "name": "Veil Walker",
+    "passPositions": [
+     12,
+     12,
+     10,
+     12,
+     12
+    ],
+    "borda": 0.8923076923076924,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "stealth and heal, niche",
+    "popularity": 2.64,
+    "popularityObscurity": 0.7692307692307693,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5,
+    "key": 0.8234615384615386
+   },
+   {
+    "id": "upgrade_warp_stone",
+    "name": "Warp Stone",
+    "passPositions": [
+     5,
+     8,
+     11,
+     9,
+     6
+    ],
+    "borda": 0.6,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "teleport dash with bullet resist",
+    "popularity": 10.85,
+    "popularityObscurity": 0.3076923076923077,
+    "spellingCost": 9,
+    "spellingObscurity": 0.23076923076923078,
+    "key": 0.46461538461538465
+   }
+  ],
+  "passAgreement": 0.7186813186813186,
+  "orderBeforeRefinement": [
+   "upgrade_tech_purge",
+   "upgrade_chonky",
+   "upgrade_metal_skin",
+   "upgrade_reduce_debuff_duration",
+   "upgrade_improved_bullet_armor",
+   "upgrade_warp_stone",
+   "upgrade_rocket_booster",
+   "upgrade_boxing_glove",
+   "upgrade_counterspell",
+   "upgrade_rescue_beam",
+   "upgrade_superior_stamina",
+   "upgrade_health_nova",
+   "upgrade_veil_walker",
+   "upgrade_fury_trance"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_superior_stamina",
+    "b": "upgrade_health_nova",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_superior_stamina"
+   },
+   {
+    "a": "upgrade_superior_stamina",
+    "b": "upgrade_veil_walker",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_superior_stamina"
+   },
+   {
+    "a": "upgrade_superior_stamina",
+    "b": "upgrade_fury_trance",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_superior_stamina"
+   },
+   {
+    "a": "upgrade_health_nova",
+    "b": "upgrade_veil_walker",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_health_nova",
+    "b": "upgrade_fury_trance",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_veil_walker",
+    "b": "upgrade_fury_trance",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_tech_purge",
+    "b": "upgrade_chonky",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_tech_purge"
+   },
+   {
+    "a": "upgrade_metal_skin",
+    "b": "upgrade_reduce_debuff_duration",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_reduce_debuff_duration"
+   },
+   {
+    "a": "upgrade_rocket_booster",
+    "b": "upgrade_boxing_glove",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_improved_bullet_armor",
+    "b": "upgrade_reduce_debuff_duration",
+    "purpose": "review",
+    "rarer": "upgrade_improved_bullet_armor"
+   },
+   {
+    "a": "upgrade_health_nova",
+    "b": "upgrade_boxing_glove",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Bullet Resilience",
+    "compareWith": "Dispel Magic",
+    "claim": "should_be_more_obvious",
+    "reason": "Bullet Resilience is the direct counterpart of Spirit Resilience (30 pts) and is among the best-known defensive Vitality items. Players who think of Spirit Resilience will almost always think of it too, so it should sit near 30 pts, ahead of Dispel Magic.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Healing Nova",
+    "compareWith": "Lifestrike",
+    "claim": "should_be_more_obvious",
+    "reason": "Healing Nova is a recognizable healing active with a plain name that players link to Vitality, and the wiki gives it a strong healing identity. It should be easier to recall than Lifestrike, a niche melee build item.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Stamina Mastery",
+    "compareWith": "Veil Walker",
+    "claim": "should_be_more_obscure",
+    "reason": "Stamina Mastery is the weakest fit for a Vitality question. It is about stamina and air movement, not health or durability, so few players would recall it, and it is likely to be rarer than Veil Walker, which at least has Health and Heal on it. The proposed order is plausibly right, but Veil Walker is probably a bit too obscure at the same 85 pts as the others.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}

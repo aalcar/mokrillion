@@ -1,0 +1,845 @@
+{
+ "question": {
+  "signature": "item-stat:Weapon Damage",
+  "category": "item-stat-bonus",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_aprounds",
+   "upgrade_bullet_resist_shredder",
+   "upgrade_clip_size",
+   "upgrade_colossus",
+   "upgrade_damage_recycler",
+   "upgrade_express_shot",
+   "upgrade_fleetfoot_boots",
+   "upgrade_fury_trance",
+   "upgrade_glass_cannon",
+   "upgrade_headhunter",
+   "upgrade_high_velocity_mag",
+   "upgrade_inhibitor",
+   "upgrade_medic_bullets",
+   "upgrade_phantom_strike",
+   "upgrade_pristine_emblem",
+   "upgrade_rechargingbullets",
+   "upgrade_reinforcing_casings",
+   "upgrade_sharpshooter",
+   "upgrade_siphon_bullets",
+   "upgrade_surging_power",
+   "upgrade_titan_round",
+   "upgrade_vampire",
+   "upgrade_weighted_shots"
+  ],
+  "prompt": "Name an item that gives a built-in Weapon Damage bonus (not counting conditional, stacking or active effects).",
+  "validation": {
+   "method": "deterministic",
+   "criterion": "innate unconditional prop labelled \"Weapon Damage\" with value > 0"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:10:06.686Z",
+ "answers": [
+  {
+   "entityId": "upgrade_high_velocity_mag",
+   "name": "High-Velocity Rounds",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_clip_size",
+   "name": "Extended Magazine",
+   "rank": 2,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_titan_round",
+   "name": "Titanic Magazine",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_pristine_emblem",
+   "name": "Opening Rounds",
+   "rank": 4,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_glass_cannon",
+   "name": "Glass Cannon",
+   "rank": 5,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_medic_bullets",
+   "name": "Restorative Shot",
+   "rank": 6,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_sharpshooter",
+   "name": "Sharpshooter",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_weighted_shots",
+   "name": "Weighted Shots",
+   "rank": 8,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_headhunter",
+   "name": "Headhunter",
+   "rank": 9,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_vampire",
+   "name": "Bullet Lifesteal",
+   "rank": 10,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_express_shot",
+   "name": "Express Shot",
+   "rank": 11,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_rechargingbullets",
+   "name": "Recharging Rush",
+   "rank": 12,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_fleetfoot_boots",
+   "name": "Fleetfoot",
+   "rank": 13,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_reinforcing_casings",
+   "name": "Escalating Resilience",
+   "rank": 14,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_bullet_resist_shredder",
+   "name": "Bullet Resist Shredder",
+   "rank": 15,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_siphon_bullets",
+   "name": "Siphon Bullets",
+   "rank": 16,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_aprounds",
+   "name": "Armor Piercer",
+   "rank": 17,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_surging_power",
+   "name": "Vampiric Burst",
+   "rank": 18,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_damage_recycler",
+   "name": "Leech",
+   "rank": 19,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_colossus",
+   "name": "Colossus",
+   "rank": 20,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_inhibitor",
+   "name": "Inhibitor",
+   "rank": 21,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_fury_trance",
+   "name": "Fury Trance",
+   "rank": 22,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_phantom_strike",
+   "name": "Phantom Strike",
+   "rank": 23,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "upgrade_aprounds",
+    "name": "Armor Piercer",
+    "passPositions": [
+     12,
+     11,
+     10,
+     11,
+     8
+    ],
+    "borda": 0.4727272727272728,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Unavoidable armor-ignoring bullets",
+    "popularity": 1.55,
+    "popularityObscurity": 0.9545454545454546,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6363636363636364,
+    "key": 0.6736363636363637
+   },
+   {
+    "id": "upgrade_bullet_resist_shredder",
+    "name": "Bullet Resist Shredder",
+    "passPositions": [
+     22,
+     21,
+     21,
+     22,
+     22
+    ],
+    "borda": 0.9818181818181818,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Spirit item shredding bullet resist",
+    "popularity": 14.27,
+    "popularityObscurity": 0.22727272727272727,
+    "spellingCost": 3,
+    "spellingObscurity": 0.022727272727272728,
+    "key": 0.6320454545454546
+   },
+   {
+    "id": "upgrade_clip_size",
+    "name": "Extended Magazine",
+    "passPositions": [
+     1,
+     2,
+     1,
+     1,
+     3
+    ],
+    "borda": 0.07272727272727272,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "Cheap ammo and damage",
+    "popularity": 15.22,
+    "popularityObscurity": 0.18181818181818182,
+    "spellingCost": 13,
+    "spellingObscurity": 0.7954545454545454,
+    "key": 0.15250000000000002
+   },
+   {
+    "id": "upgrade_colossus",
+    "name": "Colossus",
+    "passPositions": [
+     13,
+     16,
+     17,
+     17,
+     20
+    ],
+    "borda": 0.7545454545454545,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Grow large active tank item",
+    "popularity": 1.86,
+    "popularityObscurity": 0.9090909090909091,
+    "spellingCost": 8,
+    "spellingObscurity": 0.3409090909090909,
+    "key": 0.7956818181818182
+   },
+   {
+    "id": "upgrade_damage_recycler",
+    "name": "Leech",
+    "passPositions": [
+     17,
+     14,
+     20,
+     15,
+     16
+    ],
+    "borda": 0.7454545454545455,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Lifesteal and heal-reduction resist",
+    "popularity": 3.99,
+    "popularityObscurity": 0.6818181818181818,
+    "spellingCost": 5,
+    "spellingObscurity": 0.1590909090909091,
+    "key": 0.6906818181818182
+   },
+   {
+    "id": "upgrade_express_shot",
+    "name": "Express Shot",
+    "passPositions": [
+     8,
+     12,
+     9,
+     12,
+     9
+    ],
+    "borda": 0.4545454545454545,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Double-shot active attack",
+    "popularity": 6.28,
+    "popularityObscurity": 0.5,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5454545454545454,
+    "key": 0.47727272727272724
+   },
+   {
+    "id": "upgrade_fleetfoot_boots",
+    "name": "Fleetfoot",
+    "passPositions": [
+     20,
+     19,
+     14,
+     13,
+     15
+    ],
+    "borda": 0.7363636363636363,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Move while shooting",
+    "popularity": 9.1,
+    "popularityObscurity": 0.3181818181818182,
+    "spellingCost": 9,
+    "spellingObscurity": 0.4318181818181818,
+    "key": 0.5538636363636364
+   },
+   {
+    "id": "upgrade_fury_trance",
+    "name": "Fury Trance",
+    "passPositions": [
+     18,
+     18,
+     15,
+     19,
+     17
+    ],
+    "borda": 0.790909090909091,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Fire rate active, silences you",
+    "popularity": 0.59,
+    "popularityObscurity": 1,
+    "spellingCost": 4,
+    "spellingObscurity": 0.09090909090909091,
+    "key": 0.8395454545454546
+   },
+   {
+    "id": "upgrade_glass_cannon",
+    "name": "Glass Cannon",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Huge damage, low health",
+    "popularity": 2.22,
+    "popularityObscurity": 0.8636363636363636,
+    "spellingCost": 5,
+    "spellingObscurity": 0.1590909090909091,
+    "key": 0.3534090909090909
+   },
+   {
+    "id": "upgrade_headhunter",
+    "name": "Headhunter",
+    "passPositions": [
+     5,
+     10,
+     6,
+     4,
+     12
+    ],
+    "borda": 0.3363636363636363,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Headshot burst damage and heal",
+    "popularity": 7.18,
+    "popularityObscurity": 0.45454545454545453,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5,
+    "key": 0.39181818181818184
+   },
+   {
+    "id": "upgrade_high_velocity_mag",
+    "name": "High-Velocity Rounds",
+    "passPositions": [
+     3,
+     1,
+     2,
+     3,
+     2
+    ],
+    "borda": 0.1,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Cheap bullet velocity weapon starter",
+    "popularity": 22.33,
+    "popularityObscurity": 0,
+    "spellingCost": 3,
+    "spellingObscurity": 0.022727272727272728,
+    "key": 0.056136363636363644
+   },
+   {
+    "id": "upgrade_inhibitor",
+    "name": "Inhibitor",
+    "passPositions": [
+     19,
+     20,
+     18,
+     18,
+     18
+    ],
+    "borda": 0.8454545454545455,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Damage reduction and healing reduction",
+    "popularity": 3.21,
+    "popularityObscurity": 0.7727272727272727,
+    "spellingCost": 9,
+    "spellingObscurity": 0.4318181818181818,
+    "key": 0.7956818181818182
+   },
+   {
+    "id": "upgrade_medic_bullets",
+    "name": "Restorative Shot",
+    "passPositions": [
+     10,
+     13,
+     8,
+     10,
+     7
+    ],
+    "borda": 0.4363636363636364,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Heal on next bullet",
+    "popularity": 18.31,
+    "popularityObscurity": 0.045454545454545456,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6363636363636364,
+    "key": 0.29000000000000004
+   },
+   {
+    "id": "upgrade_phantom_strike",
+    "name": "Phantom Strike",
+    "passPositions": [
+     21,
+     22,
+     22,
+     21,
+     21
+    ],
+    "borda": 0.9727272727272727,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Teleport-pull active",
+    "popularity": 3.37,
+    "popularityObscurity": 0.7272727272727273,
+    "spellingCost": 13,
+    "spellingObscurity": 0.7954545454545454,
+    "key": 0.8656818181818182
+   },
+   {
+    "id": "upgrade_pristine_emblem",
+    "name": "Opening Rounds",
+    "passPositions": [
+     9,
+     7,
+     4,
+     9,
+     10
+    ],
+    "borda": 0.3545454545454546,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Bonus damage vs high-health enemies",
+    "popularity": 16.64,
+    "popularityObscurity": 0.09090909090909091,
+    "spellingCost": 13,
+    "spellingObscurity": 0.7954545454545454,
+    "key": 0.2711363636363637
+   },
+   {
+    "id": "upgrade_rechargingbullets",
+    "name": "Recharging Rush",
+    "passPositions": [
+     11,
+     8,
+     13,
+     8,
+     14
+    ],
+    "borda": 0.4909090909090909,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Ability charge refund",
+    "popularity": 7.66,
+    "popularityObscurity": 0.4090909090909091,
+    "spellingCost": 14,
+    "spellingObscurity": 0.9090909090909091,
+    "key": 0.4790909090909091
+   },
+   {
+    "id": "upgrade_reinforcing_casings",
+    "name": "Escalating Resilience",
+    "passPositions": [
+     6,
+     9,
+     11,
+     7,
+     5
+    ],
+    "borda": 0.34545454545454546,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Bullet resist from hits, ammo",
+    "popularity": 2.24,
+    "popularityObscurity": 0.8181818181818182,
+    "spellingCost": 20,
+    "spellingObscurity": 1,
+    "key": 0.5672727272727274
+   },
+   {
+    "id": "upgrade_sharpshooter",
+    "name": "Sharpshooter",
+    "passPositions": [
+     7,
+     5,
+     5,
+     5,
+     6
+    ],
+    "borda": 0.2545454545454545,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Long-range damage sniper item",
+    "popularity": 8.21,
+    "popularityObscurity": 0.36363636363636365,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6363636363636364,
+    "key": 0.31727272727272726
+   },
+   {
+    "id": "upgrade_siphon_bullets",
+    "name": "Siphon Bullets",
+    "passPositions": [
+     14,
+     15,
+     19,
+     16,
+     19
+    ],
+    "borda": 0.7545454545454546,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Steals max HP",
+    "popularity": 6.2,
+    "popularityObscurity": 0.5454545454545454,
+    "spellingCost": 6,
+    "spellingObscurity": 0.22727272727272727,
+    "key": 0.6445454545454546
+   },
+   {
+    "id": "upgrade_surging_power",
+    "name": "Vampiric Burst",
+    "passPositions": [
+     16,
+     17,
+     16,
+     20,
+     13
+    ],
+    "borda": 0.7454545454545455,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "Lifesteal and fire rate active",
+    "popularity": 5.26,
+    "popularityObscurity": 0.5909090909090909,
+    "spellingCost": 13,
+    "spellingObscurity": 0.7954545454545454,
+    "key": 0.6861363636363638
+   },
+   {
+    "id": "upgrade_titan_round",
+    "name": "Titanic Magazine",
+    "passPositions": [
+     2,
+     4,
+     3,
+     2,
+     1
+    ],
+    "borda": 0.10909090909090909,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Big ammo and damage",
+    "popularity": 15.59,
+    "popularityObscurity": 0.13636363636363635,
+    "spellingCost": 7,
+    "spellingObscurity": 0.2727272727272727,
+    "key": 0.12818181818181817
+   },
+   {
+    "id": "upgrade_vampire",
+    "name": "Bullet Lifesteal",
+    "passPositions": [
+     15,
+     6,
+     12,
+     14,
+     11
+    ],
+    "borda": 0.5272727272727272,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Lifesteal vitality item",
+    "popularity": 10.25,
+    "popularityObscurity": 0.2727272727272727,
+    "spellingCost": 15,
+    "spellingObscurity": 0.9545454545454546,
+    "key": 0.4468181818181818
+   },
+   {
+    "id": "upgrade_weighted_shots",
+    "name": "Weighted Shots",
+    "passPositions": [
+     4,
+     3,
+     7,
+     6,
+     4
+    ],
+    "borda": 0.21818181818181817,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Slowing bullets with big damage",
+    "popularity": 4.1,
+    "popularityObscurity": 0.6363636363636364,
+    "spellingCost": 8,
+    "spellingObscurity": 0.3409090909090909,
+    "key": 0.3915909090909091
+   }
+  ],
+  "passAgreement": 0.7454545454545454,
+  "orderBeforeRefinement": [
+   "upgrade_high_velocity_mag",
+   "upgrade_titan_round",
+   "upgrade_clip_size",
+   "upgrade_pristine_emblem",
+   "upgrade_medic_bullets",
+   "upgrade_sharpshooter",
+   "upgrade_glass_cannon",
+   "upgrade_weighted_shots",
+   "upgrade_headhunter",
+   "upgrade_vampire",
+   "upgrade_express_shot",
+   "upgrade_rechargingbullets",
+   "upgrade_fleetfoot_boots",
+   "upgrade_reinforcing_casings",
+   "upgrade_bullet_resist_shredder",
+   "upgrade_siphon_bullets",
+   "upgrade_aprounds",
+   "upgrade_surging_power",
+   "upgrade_damage_recycler",
+   "upgrade_colossus",
+   "upgrade_inhibitor",
+   "upgrade_fury_trance",
+   "upgrade_phantom_strike"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_colossus",
+    "b": "upgrade_inhibitor",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_colossus",
+    "b": "upgrade_fury_trance",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_fury_trance"
+   },
+   {
+    "a": "upgrade_colossus",
+    "b": "upgrade_phantom_strike",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_phantom_strike"
+   },
+   {
+    "a": "upgrade_inhibitor",
+    "b": "upgrade_fury_trance",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_inhibitor",
+    "b": "upgrade_phantom_strike",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_phantom_strike"
+   },
+   {
+    "a": "upgrade_fury_trance",
+    "b": "upgrade_phantom_strike",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_titan_round",
+    "b": "upgrade_clip_size",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_titan_round"
+   },
+   {
+    "a": "upgrade_sharpshooter",
+    "b": "upgrade_glass_cannon",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_sharpshooter"
+   },
+   {
+    "a": "upgrade_fleetfoot_boots",
+    "b": "upgrade_reinforcing_casings",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_glass_cannon",
+    "b": "upgrade_medic_bullets",
+    "purpose": "review",
+    "rarer": "upgrade_medic_bullets"
+   },
+   {
+    "a": "upgrade_phantom_strike",
+    "b": "upgrade_damage_recycler",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Glass Cannon",
+    "compareWith": "Restorative Shot",
+    "claim": "should_be_more_obvious",
+    "reason": "Glass Cannon is a well-known Weapon item whose main identity is a huge Weapon Damage bonus (85). Players asked for a built-in Weapon Damage item will think of it quickly, so it should be at least as obvious as Restorative Shot and probably more.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Phantom Strike",
+    "compareWith": "Leech",
+    "claim": "should_be_more_obvious",
+    "reason": "The 100-point rating is too extreme. Phantom Strike is a popular, well-known item, though it is mainly remembered as a teleport. Its Weapon Damage is hidden, so it is rarer than most answers, but it is no rarer than Leech, Colossus, or Inhibitor, which are equally unrelated to the question.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Bullet Lifesteal",
+    "compareWith": "Fleetfoot",
+    "claim": "should_be_more_obvious",
+    "reason": "Bullet Lifesteal is a core, widely bought item with a plain +10 Weapon Damage stat. Players think of it often, so it should be rated more obvious than Fleetfoot, which is niche and mostly known for its active.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Colossus",
+    "compareWith": "Armor Piercer",
+    "claim": "should_be_more_obscure",
+    "reason": "Colossus is known for its size growth and active effect, the opposite of a Weapon Damage association. Armor Piercer is a Weapon-category item with a listed Weapon Damage stat and is far more likely to come to mind here, so Colossus is the more surprising answer.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Titanic Magazine",
+    "compareWith": "Opening Rounds",
+    "claim": "should_be_more_obvious",
+    "reason": "Titanic Magazine is a core Weapon item whose main stats are ammo and Weapon Damage (14), and it is commonly bought. Opening Rounds is more situational, so Titanic Magazine should be rated at least as obvious.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}

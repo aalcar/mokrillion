@@ -1,0 +1,248 @@
+{
+ "question": {
+  "signature": "hero-category:Heroes with weapon scaling abilities",
+  "prompt": "Name a hero with an ability that scales with weapon damage.",
+  "category": "hero-weapon",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_chrono",
+   "hero_deadpack",
+   "hero_haze",
+   "hero_priest",
+   "hero_ratking"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "in wiki category \"Heroes with weapon scaling abilities\""
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:13:57.581Z",
+ "answers": [
+  {
+   "entityId": "hero_haze",
+   "name": "Haze",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_chrono",
+   "name": "Paradox",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_priest",
+   "name": "Venator",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "hero_ratking",
+   "name": "Rat King",
+   "rank": 4,
+   "score": 85
+  },
+  {
+   "entityId": "hero_deadpack",
+   "name": "Deadman Danny",
+   "rank": 5,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "hero_chrono",
+    "name": "Paradox",
+    "passPositions": [
+     2,
+     2,
+     2,
+     1,
+     1
+    ],
+    "borda": 0.4,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Time Wall, Paradoxical Swap and Kinetic Carbine, a utility hero",
+    "popularity": 39.64,
+    "popularityObscurity": 0.25,
+    "spellingCost": 7,
+    "spellingObscurity": 0.75,
+    "key": 0.35750000000000004
+   },
+   {
+    "id": "hero_deadpack",
+    "name": "Deadman Danny",
+    "passPositions": [
+     3,
+     3,
+     3,
+     4,
+     3
+    ],
+    "borda": 0.8,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Strix Salvo and Chimera Mk1, a lesser-known Marksman",
+    "popularity": 23.38,
+    "popularityObscurity": 1,
+    "spellingCost": 5,
+    "spellingObscurity": 0.25,
+    "key": 0.8525
+   },
+   {
+    "id": "hero_haze",
+    "name": "Haze",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Bullet Dance and Fixation, a bullet-heavy assassin",
+    "popularity": 57.37,
+    "popularityObscurity": 0,
+    "spellingCost": 4,
+    "spellingObscurity": 0,
+    "key": 0
+   },
+   {
+    "id": "hero_priest",
+    "name": "Venator",
+    "passPositions": [
+     1,
+     1,
+     1,
+     2,
+     2
+    ],
+    "borda": 0.35,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Marksman with the Ira Domini ultimate and a strong gun",
+    "popularity": 39.11,
+    "popularityObscurity": 0.5,
+    "spellingCost": 7,
+    "spellingObscurity": 0.75,
+    "key": 0.43000000000000005
+   },
+   {
+    "id": "hero_ratking",
+    "name": "Rat King",
+    "passPositions": [
+     4,
+     4,
+     4,
+     3,
+     4
+    ],
+    "borda": 0.95,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "Rat Swarm, a summoner and brawler with rats",
+    "popularity": 24.46,
+    "popularityObscurity": 0.75,
+    "spellingCost": 7,
+    "spellingObscurity": 0.75,
+    "key": 0.86
+   }
+  ],
+  "passAgreement": 0.7999999999999999,
+  "orderBeforeRefinement": [
+   "hero_haze",
+   "hero_chrono",
+   "hero_priest",
+   "hero_deadpack",
+   "hero_ratking"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_chrono",
+    "b": "hero_priest",
+    "purpose": "rare-contenders",
+    "rarer": "hero_priest"
+   },
+   {
+    "a": "hero_chrono",
+    "b": "hero_deadpack",
+    "purpose": "rare-contenders",
+    "rarer": "hero_deadpack"
+   },
+   {
+    "a": "hero_chrono",
+    "b": "hero_ratking",
+    "purpose": "rare-contenders",
+    "rarer": "hero_ratking"
+   },
+   {
+    "a": "hero_priest",
+    "b": "hero_deadpack",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_priest",
+    "b": "hero_ratking",
+    "purpose": "rare-contenders",
+    "rarer": "hero_ratking"
+   },
+   {
+    "a": "hero_deadpack",
+    "b": "hero_ratking",
+    "purpose": "rare-contenders",
+    "rarer": "hero_ratking"
+   },
+   {
+    "a": "hero_haze",
+    "b": "hero_chrono",
+    "purpose": "review",
+    "rarer": "hero_chrono"
+   },
+   {
+    "a": "hero_ratking",
+    "b": "hero_deadpack",
+    "purpose": "review",
+    "rarer": "hero_deadpack"
+   }
+  ],
+  "review": [
+   {
+    "name": "Haze",
+    "compareWith": "Paradox",
+    "claim": "should_be_more_obscure",
+    "reason": "Haze is a popular hero, but her best-known kit is Sleep Dagger, Smoke Bomb and Bullet Dance, which are not tied to weapon damage scaling in most players' minds. Bullet Dance is the only plausible link, and it is a stretch. Paradox's Kinetic Carbine is a weapon-flavored ability that is more directly linked to bullet damage, so Paradox should come first and Haze should be rarer.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Rat King",
+    "compareWith": "Deadman Danny",
+    "claim": "should_be_more_obvious",
+    "reason": "Rat King is a recognizable, recently released hero, and Rat Swarm and Rule are discussed as weapon-based abilities. Deadman Danny has a less familiar kit, with Chimera Mk1 and Close The Deal less likely to come to mind. Danny should be the 100-point answer and Rat King should score slightly lower.",
+    "outcome": "applied"
+   }
+  ]
+ }
+}

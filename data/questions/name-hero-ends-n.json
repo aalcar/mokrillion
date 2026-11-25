@@ -1,0 +1,279 @@
+{
+ "question": {
+  "signature": "name:hero:ends:n",
+  "prompt": "Name a hero whose name ends with the letter N. Ignore a leading \"The\" and any symbols.",
+  "category": "name-trivia",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_chessmaster",
+   "hero_doorman",
+   "hero_gigawatt",
+   "hero_kelvin",
+   "hero_orion",
+   "hero_warden"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:hero:ends:n"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:17:31.093Z",
+ "answers": [
+  {
+   "entityId": "hero_warden",
+   "name": "Warden",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_kelvin",
+   "name": "Kelvin",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_gigawatt",
+   "name": "Seven",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "hero_orion",
+   "name": "Grey Talon",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_chessmaster",
+   "name": "Solomon",
+   "rank": 5,
+   "score": 85
+  },
+  {
+   "entityId": "hero_doorman",
+   "name": "The Doorman",
+   "rank": 6,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "hero_chessmaster",
+    "name": "Solomon",
+    "passPositions": [
+     3,
+     3,
+     3,
+     2,
+     4
+    ],
+    "borda": 0.6,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Chess-themed hero with a gun and pawns",
+    "popularity": 9.61,
+    "popularityObscurity": 1,
+    "spellingCost": 7,
+    "spellingObscurity": 0.9,
+    "key": 0.775
+   },
+   {
+    "id": "hero_doorman",
+    "name": "The Doorman",
+    "passPositions": [
+     5,
+     5,
+     5,
+     5,
+     5
+    ],
+    "borda": 1,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Hotel-themed hero with portals and luggage cart",
+    "popularity": 13.82,
+    "popularityObscurity": 0.8,
+    "spellingCost": 7,
+    "spellingObscurity": 0.9,
+    "key": 0.9150000000000001
+   },
+   {
+    "id": "hero_gigawatt",
+    "name": "Seven",
+    "passPositions": [
+     4,
+     1,
+     1,
+     4,
+     2
+    ],
+    "borda": 0.48,
+    "fit": {
+     "expected": 1,
+     "neutral": 3,
+     "surprising": 1
+    },
+    "perception": "Lightning mage hero",
+    "popularity": 30.41,
+    "popularityObscurity": 0,
+    "spellingCost": 5,
+    "spellingObscurity": 0.1,
+    "key": 0.269
+   },
+   {
+    "id": "hero_kelvin",
+    "name": "Kelvin",
+    "passPositions": [
+     1,
+     2,
+     2,
+     1,
+     1
+    ],
+    "borda": 0.27999999999999997,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "Ice healer hero with frost abilities",
+    "popularity": 25.01,
+    "popularityObscurity": 0.2,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5,
+    "key": 0.259
+   },
+   {
+    "id": "hero_orion",
+    "name": "Grey Talon",
+    "passPositions": [
+     2,
+     4,
+     4,
+     3,
+     3
+    ],
+    "borda": 0.64,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Archer hero with charged shots and owl",
+    "popularity": 22.07,
+    "popularityObscurity": 0.4,
+    "spellingCost": 5,
+    "spellingObscurity": 0.1,
+    "key": 0.5170000000000001
+   },
+   {
+    "id": "hero_warden",
+    "name": "Warden",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Brawler with flask and Last Stand",
+    "popularity": 17.25,
+    "popularityObscurity": 0.6,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5,
+    "key": 0.265
+   }
+  ],
+  "passAgreement": 0.6799999999999999,
+  "orderBeforeRefinement": [
+   "hero_kelvin",
+   "hero_warden",
+   "hero_gigawatt",
+   "hero_orion",
+   "hero_chessmaster",
+   "hero_doorman"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_gigawatt",
+    "b": "hero_orion",
+    "purpose": "rare-contenders",
+    "rarer": "hero_orion"
+   },
+   {
+    "a": "hero_gigawatt",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": "hero_chessmaster"
+   },
+   {
+    "a": "hero_gigawatt",
+    "b": "hero_doorman",
+    "purpose": "rare-contenders",
+    "rarer": "hero_doorman"
+   },
+   {
+    "a": "hero_orion",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_orion",
+    "b": "hero_doorman",
+    "purpose": "rare-contenders",
+    "rarer": "hero_doorman"
+   },
+   {
+    "a": "hero_chessmaster",
+    "b": "hero_doorman",
+    "purpose": "rare-contenders",
+    "rarer": "hero_doorman"
+   },
+   {
+    "a": "hero_kelvin",
+    "b": "hero_warden",
+    "purpose": "tier-boundary",
+    "rarer": "hero_kelvin"
+   },
+   {
+    "a": "hero_doorman",
+    "b": "hero_chessmaster",
+    "purpose": "review",
+    "rarer": "hero_doorman"
+   }
+  ],
+  "review": [
+   {
+    "name": "Seven",
+    "compareWith": "Grey Talon",
+    "claim": "should_be_more_obvious",
+    "reason": "Seven is a short, simple name that ends in N and is easy to spot when scanning the roster. Grey Talon ends in N only once you ignore the multiword structure, and it is less likely to come to mind. Seven should score lower (more obvious) than Grey Talon, not tie with it.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "The Doorman",
+    "compareWith": "Solomon",
+    "claim": "should_be_more_obvious",
+    "reason": "Solomon is a plain name ending in N and is no harder to recall than The Doorman. The Doorman's rule hint (ignore a leading 'The') points to it directly, which makes it more obvious than the 100-point score implies. Solomon should be rarer, or at least the two should be near-equal.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}

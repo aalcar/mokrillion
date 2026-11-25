@@ -1,0 +1,490 @@
+{
+ "question": {
+  "signature": "item-slot-tier:Spirit:2",
+  "prompt": "Name a Tier 2 Spirit item.",
+  "category": "item-cost",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_arcane_extension",
+   "upgrade_arcane_surge",
+   "upgrade_bullet_resist_shredder",
+   "upgrade_cold_front",
+   "upgrade_containment",
+   "upgrade_magic_slow",
+   "upgrade_magic_tempo",
+   "upgrade_magic_vulnerability",
+   "upgrade_quick_silver",
+   "upgrade_soaring_spirit",
+   "upgrade_spirit_sap",
+   "upgrade_suppressor"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "slot == Spirit && tier == 2"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:06:30.939Z",
+ "answers": [
+  {
+   "entityId": "upgrade_soaring_spirit",
+   "name": "Improved Spirit",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_magic_tempo",
+   "name": "Compress Cooldown",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_magic_vulnerability",
+   "name": "Mystic Vulnerability",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_containment",
+   "name": "Slowing Hex",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_arcane_extension",
+   "name": "Duration Extender",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_quick_silver",
+   "name": "Quicksilver Reload",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_cold_front",
+   "name": "Cold Front",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_magic_slow",
+   "name": "Mystic Slow",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_suppressor",
+   "name": "Suppressor",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_spirit_sap",
+   "name": "Spirit Sap",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_bullet_resist_shredder",
+   "name": "Bullet Resist Shredder",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_arcane_surge",
+   "name": "Arcane Surge",
+   "rank": 12,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "upgrade_arcane_extension",
+    "name": "Duration Extender",
+    "passPositions": [
+     4,
+     7,
+     4,
+     3,
+     6
+    ],
+    "borda": 0.43636363636363634,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "imbue duration increase",
+    "popularity": 17.97,
+    "popularityObscurity": 0.36363636363636365,
+    "spellingCost": 16,
+    "spellingObscurity": 0.8636363636363636,
+    "key": 0.4286363636363637
+   },
+   {
+    "id": "upgrade_arcane_surge",
+    "name": "Arcane Surge",
+    "passPositions": [
+     9,
+     10,
+     9,
+     10,
+     10
+    ],
+    "borda": 0.8727272727272727,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "dash-jump ability empowerment",
+    "popularity": 9.25,
+    "popularityObscurity": 0.6363636363636364,
+    "spellingCost": 11,
+    "spellingObscurity": 0.6363636363636364,
+    "key": 0.7663636363636364
+   },
+   {
+    "id": "upgrade_bullet_resist_shredder",
+    "name": "Bullet Resist Shredder",
+    "passPositions": [
+     11,
+     11,
+     10,
+     11,
+     11
+    ],
+    "borda": 0.9818181818181818,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "bullet resist shred on spirit damage, hybrid stats",
+    "popularity": 14.27,
+    "popularityObscurity": 0.45454545454545453,
+    "spellingCost": 3,
+    "spellingObscurity": 0.045454545454545456,
+    "key": 0.7240909090909091
+   },
+   {
+    "id": "upgrade_cold_front",
+    "name": "Cold Front",
+    "passPositions": [
+     3,
+     3,
+     2,
+     2,
+     4
+    ],
+    "borda": 0.2545454545454546,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "active ice blast slow",
+    "popularity": 7.82,
+    "popularityObscurity": 0.7272727272727273,
+    "spellingCost": 9,
+    "spellingObscurity": 0.3181818181818182,
+    "key": 0.4468181818181819
+   },
+   {
+    "id": "upgrade_containment",
+    "name": "Slowing Hex",
+    "passPositions": [
+     2,
+     6,
+     1,
+     6,
+     3
+    ],
+    "borda": 0.32727272727272727,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "active slow and movement silence",
+    "popularity": 12.78,
+    "popularityObscurity": 0.5454545454545454,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5,
+    "key": 0.4231818181818182
+   },
+   {
+    "id": "upgrade_magic_slow",
+    "name": "Mystic Slow",
+    "passPositions": [
+     7,
+     4,
+     6,
+     5,
+     5
+    ],
+    "borda": 0.4909090909090909,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "cheap slow-on-spirit-damage utility",
+    "popularity": 3.47,
+    "popularityObscurity": 0.9090909090909091,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5,
+    "key": 0.6586363636363637
+   },
+   {
+    "id": "upgrade_magic_tempo",
+    "name": "Compress Cooldown",
+    "passPositions": [
+     0,
+     2,
+     3,
+     4,
+     2
+    ],
+    "borda": 0.2,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "imbue cooldown reduction, very common buy",
+    "popularity": 31.12,
+    "popularityObscurity": 0.09090909090909091,
+    "spellingCost": 16,
+    "spellingObscurity": 0.8636363636363636,
+    "key": 0.18954545454545457
+   },
+   {
+    "id": "upgrade_magic_vulnerability",
+    "name": "Mystic Vulnerability",
+    "passPositions": [
+     5,
+     0,
+     5,
+     1,
+     0
+    ],
+    "borda": 0.2,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "spirit resist shred, upgrades to Escalating Exposure",
+    "popularity": 23.24,
+    "popularityObscurity": 0.18181818181818182,
+    "spellingCost": 19,
+    "spellingObscurity": 1,
+    "key": 0.23272727272727278
+   },
+   {
+    "id": "upgrade_quick_silver",
+    "name": "Quicksilver Reload",
+    "passPositions": [
+     6,
+     5,
+     7,
+     7,
+     7
+    ],
+    "borda": 0.5818181818181818,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "imbue for reload and fire rate burst",
+    "popularity": 18.57,
+    "popularityObscurity": 0.2727272727272727,
+    "spellingCost": 3,
+    "spellingObscurity": 0.045454545454545456,
+    "key": 0.43136363636363634
+   },
+   {
+    "id": "upgrade_soaring_spirit",
+    "name": "Improved Spirit",
+    "passPositions": [
+     1,
+     1,
+     0,
+     0,
+     1
+    ],
+    "borda": 0.05454545454545454,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "plain spirit power stat stick",
+    "popularity": 44.97,
+    "popularityObscurity": 0,
+    "spellingCost": 14,
+    "spellingObscurity": 0.7272727272727273,
+    "key": 0.06636363636363637
+   },
+   {
+    "id": "upgrade_spirit_sap",
+    "name": "Spirit Sap",
+    "passPositions": [
+     8,
+     9,
+     8,
+     9,
+     8
+    ],
+    "borda": 0.7636363636363637,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "active resist and power debuff",
+    "popularity": 1.57,
+    "popularityObscurity": 1,
+    "spellingCost": 9,
+    "spellingObscurity": 0.3181818181818182,
+    "key": 0.8359090909090909
+   },
+   {
+    "id": "upgrade_suppressor",
+    "name": "Suppressor",
+    "passPositions": [
+     10,
+     8,
+     11,
+     8,
+     9
+    ],
+    "borda": 0.8363636363636363,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "fire rate reduction utility",
+    "popularity": 5.27,
+    "popularityObscurity": 0.8181818181818182,
+    "spellingCost": 8,
+    "spellingObscurity": 0.18181818181818182,
+    "key": 0.7963636363636364
+   }
+  ],
+  "passAgreement": 0.7030303030303031,
+  "orderBeforeRefinement": [
+   "upgrade_soaring_spirit",
+   "upgrade_magic_tempo",
+   "upgrade_magic_vulnerability",
+   "upgrade_containment",
+   "upgrade_arcane_extension",
+   "upgrade_quick_silver",
+   "upgrade_cold_front",
+   "upgrade_magic_slow",
+   "upgrade_bullet_resist_shredder",
+   "upgrade_arcane_surge",
+   "upgrade_suppressor",
+   "upgrade_spirit_sap"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_bullet_resist_shredder",
+    "b": "upgrade_arcane_surge",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_bullet_resist_shredder",
+    "b": "upgrade_suppressor",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_bullet_resist_shredder"
+   },
+   {
+    "a": "upgrade_bullet_resist_shredder",
+    "b": "upgrade_spirit_sap",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_arcane_surge",
+    "b": "upgrade_suppressor",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_arcane_surge"
+   },
+   {
+    "a": "upgrade_arcane_surge",
+    "b": "upgrade_spirit_sap",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_arcane_surge"
+   },
+   {
+    "a": "upgrade_suppressor",
+    "b": "upgrade_spirit_sap",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_soaring_spirit",
+    "b": "upgrade_magic_tempo",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_magic_vulnerability",
+    "b": "upgrade_containment",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_cold_front",
+    "b": "upgrade_magic_slow",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_arcane_surge",
+    "b": "upgrade_bullet_resist_shredder",
+    "purpose": "review",
+    "rarer": "upgrade_arcane_surge"
+   },
+   {
+    "a": "upgrade_spirit_sap",
+    "b": "upgrade_magic_slow",
+    "purpose": "review",
+    "rarer": "upgrade_spirit_sap"
+   }
+  ],
+  "review": [
+   {
+    "name": "Arcane Surge",
+    "compareWith": "Bullet Resist Shredder",
+    "claim": "should_be_more_obvious",
+    "reason": "Arcane Surge is a well-known, frequently built Tier 2 Spirit item with a memorable name and a distinct dash-jump mechanic. Bullet Resist Shredder is a niche situational item with a clunky name, so it should be the rarest answer at 100 pts.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Spirit Sap",
+    "compareWith": "Mystic Slow",
+    "claim": "should_be_more_obvious",
+    "reason": "Spirit Sap is an active with a clear, memorable effect and a distinct name. Mystic Slow is a more forgettable passive, so Spirit Sap should score lower and Mystic Slow higher.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Slowing Hex",
+    "compareWith": "Duration Extender",
+    "claim": "should_be_more_obvious",
+    "reason": "Slowing Hex is a commonly recognized active and is more memorable than the plain Duration Extender, so it should score less.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}

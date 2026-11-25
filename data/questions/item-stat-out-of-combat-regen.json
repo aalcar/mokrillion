@@ -40,8 +40,8 @@
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
  "scoringVersion": "7",
- "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T03:48:59.766Z",
+ "model": "cache only",
+ "generatedAt": "2026-11-25T04:10:07.718Z",
  "answers": [
   {
    "entityId": "upgrade_endurance",

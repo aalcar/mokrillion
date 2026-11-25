@@ -1,0 +1,398 @@
+{
+ "question": {
+  "signature": "name:hero:contains:d",
+  "prompt": "Name a hero whose name contains the letter D.",
+  "category": "name-trivia",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_astro",
+   "hero_chrono",
+   "hero_deadpack",
+   "hero_doorman",
+   "hero_drifter",
+   "hero_dynamo",
+   "hero_ghost",
+   "hero_hornet",
+   "hero_warden"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:hero:contains:d"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:15:51.559Z",
+ "answers": [
+  {
+   "entityId": "hero_dynamo",
+   "name": "Dynamo",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_drifter",
+   "name": "Drifter",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_chrono",
+   "name": "Paradox",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "hero_hornet",
+   "name": "Vindicta",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_astro",
+   "name": "Holliday",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "hero_deadpack",
+   "name": "Deadman Danny",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "hero_ghost",
+   "name": "Lady Geist",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "hero_warden",
+   "name": "Warden",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "hero_doorman",
+   "name": "The Doorman",
+   "rank": 9,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "hero_astro",
+    "name": "Holliday",
+    "passPositions": [
+     5,
+     4,
+     4,
+     5,
+     4
+    ],
+    "borda": 0.55,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Cowboy sharpshooter with Spirit Lasso",
+    "popularity": 28.35,
+    "popularityObscurity": 0.5,
+    "spellingCost": 8,
+    "spellingObscurity": 0.9375,
+    "key": 0.5493750000000001
+   },
+   {
+    "id": "hero_chrono",
+    "name": "Paradox",
+    "passPositions": [
+     3,
+     5,
+     2,
+     3,
+     2
+    ],
+    "borda": 0.375,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Time-manipulating hero with Time Wall and swap",
+    "popularity": 39.64,
+    "popularityObscurity": 0.125,
+    "spellingCost": 7,
+    "spellingObscurity": 0.625,
+    "key": 0.28750000000000003
+   },
+   {
+    "id": "hero_deadpack",
+    "name": "Deadman Danny",
+    "passPositions": [
+     7,
+     8,
+     7,
+     7,
+     8
+    ],
+    "borda": 0.925,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Newer marksman with a Chimera mech weapon",
+    "popularity": 23.38,
+    "popularityObscurity": 0.75,
+    "spellingCost": 5,
+    "spellingObscurity": 0.125,
+    "key": 0.8150000000000001
+   },
+   {
+    "id": "hero_doorman",
+    "name": "The Doorman",
+    "passPositions": [
+     6,
+     7,
+     6,
+     6,
+     7
+    ],
+    "borda": 0.8,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Hotel-themed hero who creates doorways",
+    "popularity": 13.82,
+    "popularityObscurity": 1,
+    "spellingCost": 7,
+    "spellingObscurity": 0.625,
+    "key": 0.8712500000000001
+   },
+   {
+    "id": "hero_drifter",
+    "name": "Drifter",
+    "passPositions": [
+     0,
+     1,
+     1,
+     1,
+     1
+    ],
+    "borda": 0.1,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Stalking assassin with Eternal Night",
+    "popularity": 45.26,
+    "popularityObscurity": 0,
+    "spellingCost": 7,
+    "spellingObscurity": 0.625,
+    "key": 0.08625000000000001
+   },
+   {
+    "id": "hero_dynamo",
+    "name": "Dynamo",
+    "passPositions": [
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0.025,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Healer who sleeps enemies and stuns with Singularity",
+    "popularity": 25.11,
+    "popularityObscurity": 0.625,
+    "spellingCost": 6,
+    "spellingObscurity": 0.3125,
+    "key": 0.279375
+   },
+   {
+    "id": "hero_ghost",
+    "name": "Lady Geist",
+    "passPositions": [
+     8,
+     6,
+     8,
+     8,
+     5
+    ],
+    "borda": 0.875,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "Health-sacrificing mystic with Life Drain",
+    "popularity": 37.57,
+    "popularityObscurity": 0.25,
+    "spellingCost": 4,
+    "spellingObscurity": 0,
+    "key": 0.58125
+   },
+   {
+    "id": "hero_hornet",
+    "name": "Vindicta",
+    "passPositions": [
+     2,
+     3,
+     5,
+     4,
+     3
+    ],
+    "borda": 0.425,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Sniper hero who flies and assassinates",
+    "popularity": 30.86,
+    "popularityObscurity": 0.375,
+    "spellingCost": 8,
+    "spellingObscurity": 0.9375,
+    "key": 0.43062500000000004
+   },
+   {
+    "id": "hero_warden",
+    "name": "Warden",
+    "passPositions": [
+     4,
+     2,
+     3,
+     2,
+     6
+    ],
+    "borda": 0.425,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Brawler with Last Stand and binding word",
+    "popularity": 17.25,
+    "popularityObscurity": 0.875,
+    "spellingCost": 6,
+    "spellingObscurity": 0.3125,
+    "key": 0.599375
+   }
+  ],
+  "passAgreement": 0.7222222222222223,
+  "orderBeforeRefinement": [
+   "hero_drifter",
+   "hero_dynamo",
+   "hero_chrono",
+   "hero_hornet",
+   "hero_astro",
+   "hero_ghost",
+   "hero_warden",
+   "hero_deadpack",
+   "hero_doorman"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_ghost",
+    "b": "hero_warden",
+    "purpose": "rare-contenders",
+    "rarer": "hero_ghost"
+   },
+   {
+    "a": "hero_ghost",
+    "b": "hero_deadpack",
+    "purpose": "rare-contenders",
+    "rarer": "hero_ghost"
+   },
+   {
+    "a": "hero_ghost",
+    "b": "hero_doorman",
+    "purpose": "rare-contenders",
+    "rarer": "hero_ghost"
+   },
+   {
+    "a": "hero_warden",
+    "b": "hero_deadpack",
+    "purpose": "rare-contenders",
+    "rarer": "hero_warden"
+   },
+   {
+    "a": "hero_warden",
+    "b": "hero_doorman",
+    "purpose": "rare-contenders",
+    "rarer": "hero_warden"
+   },
+   {
+    "a": "hero_deadpack",
+    "b": "hero_doorman",
+    "purpose": "rare-contenders",
+    "rarer": "hero_doorman"
+   },
+   {
+    "a": "hero_drifter",
+    "b": "hero_dynamo",
+    "purpose": "tier-boundary",
+    "rarer": "hero_drifter"
+   },
+   {
+    "a": "hero_chrono",
+    "b": "hero_hornet",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "hero_warden",
+    "b": "hero_hornet",
+    "purpose": "review",
+    "rarer": "hero_warden"
+   },
+   {
+    "a": "hero_deadpack",
+    "b": "hero_hornet",
+    "purpose": "review",
+    "rarer": "hero_deadpack"
+   }
+  ],
+  "review": [
+   {
+    "name": "Lady Geist",
+    "compareWith": "The Doorman",
+    "claim": "should_be_more_obvious",
+    "reason": "Lady Geist is a long-standing, well-known hero whose name literally contains a D ('Lady'), which is easy to spot. She should not be rarer than The Doorman, whose D is in 'Doorman' but who is a newer, less familiar hero and sits only 15 points lower.",
+    "outcome": "applied-by-data"
+   },
+   {
+    "name": "Warden",
+    "compareWith": "Vindicta",
+    "claim": "should_be_more_obvious",
+    "reason": "Warden is a long-established hero with a D in the middle of his name. At 85 pts he is priced as rarer than the Doorman and far rarer than Vindicta, yet experienced players know him just as well as Vindicta.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Deadman Danny",
+    "compareWith": "Vindicta",
+    "claim": "should_be_more_obvious",
+    "reason": "Deadman Danny has two Ds starting the name, so the letter is immediately salient, and it is the first D-initial name that comes to mind. He should be scored easier than Vindicta, whose D is buried mid-name.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Paradox",
+    "compareWith": "Drifter",
+    "claim": "should_be_more_obscure",
+    "reason": "Drifter begins with D, so it comes to mind immediately, while Paradox only has a D in the middle. The two being tied at 30 ignores that Paradox's D is less salient.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}

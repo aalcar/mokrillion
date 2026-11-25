@@ -18,8 +18,8 @@
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
  "scoringVersion": "7",
- "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T03:50:59.622Z",
+ "model": "cache only",
+ "generatedAt": "2026-11-25T04:11:02.722Z",
  "answers": [
   {
    "entityId": "upgrade_lifestrike_gauntlets",

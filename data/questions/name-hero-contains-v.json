@@ -1,0 +1,503 @@
+{
+ "question": {
+  "signature": "name:hero:contains:v",
+  "prompt": "Name a hero whose name contains the letter V.",
+  "category": "name-trivia",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_artist",
+   "hero_frank",
+   "hero_gigawatt",
+   "hero_hornet",
+   "hero_kelvin",
+   "hero_necro",
+   "hero_priest",
+   "hero_shiv",
+   "hero_tengu",
+   "hero_viper",
+   "hero_viscous",
+   "hero_werewolf"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:hero:contains:v"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:19:52.008Z",
+ "answers": [
+  {
+   "entityId": "hero_hornet",
+   "name": "Vindicta",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_priest",
+   "name": "Venator",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_shiv",
+   "name": "Shiv",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "hero_frank",
+   "name": "Victor",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_gigawatt",
+   "name": "Seven",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "hero_viscous",
+   "name": "Viscous",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "hero_viper",
+   "name": "Vyper",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "hero_tengu",
+   "name": "Ivy",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "hero_artist",
+   "name": "Violet",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "hero_kelvin",
+   "name": "Kelvin",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "hero_necro",
+   "name": "Graves",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "hero_werewolf",
+   "name": "Silver",
+   "rank": 12,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "hero_artist",
+    "name": "Violet",
+    "passPositions": [
+     3,
+     4,
+     4,
+     4,
+     4
+    ],
+    "borda": 0.3454545454545455,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "artist mystic with living ink",
+    "popularity": 19.01,
+    "popularityObscurity": 0.8181818181818182,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5454545454545454,
+    "key": 0.5445454545454547
+   },
+   {
+    "id": "hero_frank",
+    "name": "Victor",
+    "passPositions": [
+     4,
+     3,
+     3,
+     3,
+     3
+    ],
+    "borda": 0.2909090909090909,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Frankenstein-like brawler with shocking reanimation",
+    "popularity": 24.46,
+    "popularityObscurity": 0.6363636363636364,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5454545454545454,
+    "key": 0.4418181818181819
+   },
+   {
+    "id": "hero_gigawatt",
+    "name": "Seven",
+    "passPositions": [
+     6,
+     7,
+     8,
+     6,
+     2
+    ],
+    "borda": 0.5272727272727271,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "lightning mystic with storm cloud",
+    "popularity": 30.41,
+    "popularityObscurity": 0.36363636363636365,
+    "spellingCost": 5,
+    "spellingObscurity": 0.22727272727272727,
+    "key": 0.4468181818181818
+   },
+   {
+    "id": "hero_hornet",
+    "name": "Vindicta",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "sniping witch who flies and assassinates",
+    "popularity": 30.86,
+    "popularityObscurity": 0.2727272727272727,
+    "spellingCost": 8,
+    "spellingObscurity": 1,
+    "key": 0.1590909090909091
+   },
+   {
+    "id": "hero_kelvin",
+    "name": "Kelvin",
+    "passPositions": [
+     9,
+     8,
+     9,
+     9,
+     9
+    ],
+    "borda": 0.8,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "ice healer with frost grenade",
+    "popularity": 25.01,
+    "popularityObscurity": 0.5454545454545454,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5454545454545454,
+    "key": 0.6854545454545455
+   },
+   {
+    "id": "hero_necro",
+    "name": "Graves",
+    "passPositions": [
+     8,
+     10,
+     11,
+     10,
+     10
+    ],
+    "borda": 0.8909090909090909,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "necromancer mystic with jar of dead",
+    "popularity": 32.51,
+    "popularityObscurity": 0.18181818181818182,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5454545454545454,
+    "key": 0.5900000000000001
+   },
+   {
+    "id": "hero_priest",
+    "name": "Venator",
+    "passPositions": [
+     5,
+     5,
+     6,
+     5,
+     6
+    ],
+    "borda": 0.4909090909090909,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "holy hunter marksman with Ira Domini",
+    "popularity": 39.11,
+    "popularityObscurity": 0,
+    "spellingCost": 7,
+    "spellingObscurity": 0.8636363636363636,
+    "key": 0.31318181818181823
+   },
+   {
+    "id": "hero_shiv",
+    "name": "Shiv",
+    "passPositions": [
+     7,
+     9,
+     7,
+     8,
+     7
+    ],
+    "borda": 0.6909090909090909,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "bleed brawler with knives",
+    "popularity": 38.71,
+    "popularityObscurity": 0.09090909090909091,
+    "spellingCost": 4,
+    "spellingObscurity": 0.09090909090909091,
+    "key": 0.42090909090909095
+   },
+   {
+    "id": "hero_tengu",
+    "name": "Ivy",
+    "passPositions": [
+     10,
+     6,
+     5,
+     7,
+     8
+    ],
+    "borda": 0.6545454545454545,
+    "fit": {
+     "expected": 1,
+     "neutral": 1,
+     "surprising": 3
+    },
+    "perception": "plant healer with air drop",
+    "popularity": 30.19,
+    "popularityObscurity": 0.45454545454545453,
+    "spellingCost": 3,
+    "spellingObscurity": 0,
+    "key": 0.5418181818181819
+   },
+   {
+    "id": "hero_viper",
+    "name": "Vyper",
+    "passPositions": [
+     2,
+     2,
+     2,
+     2,
+     5
+    ],
+    "borda": 0.2363636363636364,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "slithering assassin with venom",
+    "popularity": 11.96,
+    "popularityObscurity": 1,
+    "spellingCost": 5,
+    "spellingObscurity": 0.22727272727272727,
+    "key": 0.5413636363636364
+   },
+   {
+    "id": "hero_viscous",
+    "name": "Viscous",
+    "passPositions": [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "borda": 0.09090909090909091,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "goo blob brawler who rolls as a ball",
+    "popularity": 14.57,
+    "popularityObscurity": 0.9090909090909091,
+    "spellingCost": 7,
+    "spellingObscurity": 0.8636363636363636,
+    "key": 0.45681818181818185
+   },
+   {
+    "id": "hero_werewolf",
+    "name": "Silver",
+    "passPositions": [
+     11,
+     11,
+     10,
+     11,
+     11
+    ],
+    "borda": 0.9818181818181818,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "werewolf brawler with Lycan Curse",
+    "popularity": 19.71,
+    "popularityObscurity": 0.7272727272727273,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5454545454545454,
+    "key": 0.8581818181818182
+   }
+  ],
+  "passAgreement": 0.7939393939393941,
+  "orderBeforeRefinement": [
+   "hero_hornet",
+   "hero_priest",
+   "hero_shiv",
+   "hero_frank",
+   "hero_gigawatt",
+   "hero_viscous",
+   "hero_viper",
+   "hero_tengu",
+   "hero_artist",
+   "hero_necro",
+   "hero_kelvin",
+   "hero_werewolf"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_artist",
+    "b": "hero_necro",
+    "purpose": "rare-contenders",
+    "rarer": "hero_necro"
+   },
+   {
+    "a": "hero_artist",
+    "b": "hero_kelvin",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_artist",
+    "b": "hero_werewolf",
+    "purpose": "rare-contenders",
+    "rarer": "hero_werewolf"
+   },
+   {
+    "a": "hero_necro",
+    "b": "hero_kelvin",
+    "purpose": "rare-contenders",
+    "rarer": "hero_necro"
+   },
+   {
+    "a": "hero_necro",
+    "b": "hero_werewolf",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_kelvin",
+    "b": "hero_werewolf",
+    "purpose": "rare-contenders",
+    "rarer": "hero_werewolf"
+   },
+   {
+    "a": "hero_hornet",
+    "b": "hero_priest",
+    "purpose": "tier-boundary",
+    "rarer": "hero_priest"
+   },
+   {
+    "a": "hero_shiv",
+    "b": "hero_frank",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "hero_viper",
+    "b": "hero_tengu",
+    "purpose": "tier-boundary",
+    "rarer": "hero_tengu"
+   },
+   {
+    "a": "hero_shiv",
+    "b": "hero_priest",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "hero_gigawatt",
+    "b": "hero_frank",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "hero_werewolf",
+    "b": "hero_necro",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Shiv",
+    "compareWith": "Venator",
+    "claim": "should_be_more_obvious",
+    "reason": "Shiv is a long-standing, very recognizable hero whose name starts with a different letter pattern, and its V is in the middle of the name. Still, a one-syllable well-known name like Shiv is more likely to be typed than Venator, a newer and less familiar hero. Shiv should be at or above Venator in obviousness.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Seven",
+    "compareWith": "Victor",
+    "claim": "should_be_more_obvious",
+    "reason": "Seven is a very recognizable hero with an iconic electric kit and a simple, memorable name. Victor is mainly known as a revive-themed brawler. Both are about equally likely, but Seven's V-in-the-middle is easy to spot because the name is a common word, so it should score no worse than Victor.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Ivy",
+    "compareWith": "Violet",
+    "claim": "should_be_more_obvious",
+    "reason": "Ivy is a short, memorable name where the V is prominent in a three-letter word, which is easy to scan. Violet starts with V, which makes it more obvious for this question, so Violet should be placed below Ivy in points. Violet is more directly tied to V.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Silver",
+    "compareWith": "Graves",
+    "claim": "should_be_more_obvious",
+    "reason": "Silver is a well-known hero and its V is in the middle of a common English word, so players scanning heroes for a V will find it easily. Graves is also V-in-the-middle but is less commonly picked, so Graves should be the 100-point answer rather than Silver.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}

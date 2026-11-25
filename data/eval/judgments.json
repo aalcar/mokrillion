@@ -84,6 +84,102 @@
       "rarer": "upgrade_blood_tribute",
       "commoner": "upgrade_capacitor",
       "note": "Blood Tribute is definitely more niche than Capacitor; the rejected challenge was a good call."
+    },
+    {
+      "signature": "item-cost:3200",
+      "rarer": "upgrade_fury_trance",
+      "commoner": "upgrade_bulletshredimbue",
+      "note": "Quiz round 1: Fury Trance more niche than Ballistic Enchantment."
+    },
+    {
+      "signature": "item-cost:6400",
+      "rarer": "upgrade_focus_lens",
+      "commoner": "upgrade_magic_carpet",
+      "note": "Quiz round 1: Focus Lens more niche than Magic Carpet."
+    },
+    {
+      "signature": "item-cost:6400",
+      "rarer": "upgrade_ability_power_shard",
+      "commoner": "upgrade_crushing_fists",
+      "note": "Quiz round 1: Echo Shard more niche than Crushing Fists."
+    },
+    {
+      "signature": "item-slot-tier:Vitality:3",
+      "rarer": "upgrade_fury_trance",
+      "commoner": "upgrade_superior_stamina",
+      "note": "Quiz round 1: Fury Trance more niche than Stamina Mastery."
+    },
+    {
+      "signature": "item-slot-tier:Weapon:2",
+      "rarer": "upgrade_split_shot",
+      "commoner": "upgrade_melee_charge",
+      "note": "Quiz round 1: Split Shot more niche than Melee Charge."
+    },
+    {
+      "signature": "item-slot-tier:Spirit:2",
+      "rarer": "upgrade_spirit_sap",
+      "commoner": "upgrade_arcane_surge",
+      "note": "Quiz round 1: Spirit Sap more niche than Arcane Surge."
+    },
+    {
+      "signature": "item-slot-tier:Spirit:3",
+      "rarer": "upgrade_targeted_silence",
+      "commoner": "upgrade_greater_withering_whip",
+      "note": "Quiz round 1: Silence Wave more niche than Disarming Hex."
+    },
+    {
+      "signature": "item-slot-tier:Spirit:4",
+      "rarer": "upgrade_ultimate_burst",
+      "commoner": "upgrade_magic_carpet",
+      "note": "Quiz round 1: Lightning Scroll more niche than Magic Carpet."
+    },
+    {
+      "signature": "item-slot-tier:Vitality:4",
+      "rarer": "upgrade_cheat_death",
+      "commoner": "upgrade_spellbreaker",
+      "note": "Quiz round 1: Cheat Death more niche than Spellbreaker."
+    },
+    {
+      "signature": "item-slot-tier:Weapon:3",
+      "rarer": "upgrade_blood_tribute",
+      "commoner": "upgrade_dps_aura",
+      "note": "Quiz round 1: Blood Tribute more niche than Heroic Aura."
+    },
+    {
+      "signature": "item-stat:Melee Damage",
+      "rarer": "upgrade_spirit_snatch",
+      "commoner": "upgrade_crushing_fists",
+      "note": "Quiz round 1: Spirit Snatch more niche than Crushing Fists."
+    },
+    {
+      "signature": "item-stat:Melee Resist",
+      "rarer": "upgrade_tech_damage_pulse",
+      "commoner": "upgrade_melee_rebuttal",
+      "note": "Quiz round 1: Torment Pulse more niche than Rebuttal."
+    },
+    {
+      "signature": "item-stat:Spirit Lifesteal",
+      "rarer": "upgrade_mystic_reverb",
+      "commoner": "upgrade_infuser",
+      "note": "Quiz round 1: Mystic Reverb more niche than Infuser."
+    },
+    {
+      "signature": "item-stat:Bullet Resist",
+      "rarer": "upgrade_ability_power_shard",
+      "commoner": "upgrade_return_fire",
+      "note": "Quiz round 1: Echo Shard more niche than Return Fire."
+    },
+    {
+      "signature": "hero-category:Heroes with automatic weapons",
+      "rarer": "hero_chessmaster",
+      "commoner": "hero_mirage",
+      "note": "Quiz round 1: Solomon more niche than Mirage."
+    },
+    {
+      "signature": "hero-category:Heroes with fast dash speed",
+      "rarer": "hero_orion",
+      "commoner": "hero_doorman",
+      "note": "Quiz round 1: Grey Talon more niche than The Doorman."
     }
   ]
 }

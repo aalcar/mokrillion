@@ -1,0 +1,409 @@
+{
+ "question": {
+  "signature": "hero-stat:clipSize:low:11",
+  "prompt": "Name a hero whose base clip size is 11 or fewer (no items or boons).",
+  "category": "hero-base-stat",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_astro",
+   "hero_atlas",
+   "hero_chessmaster",
+   "hero_doorman",
+   "hero_ghost",
+   "hero_nurse",
+   "hero_shiv",
+   "hero_synth",
+   "hero_unicorn",
+   "hero_werewolf"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "clipSize <= 11"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:15:19.404Z",
+ "answers": [
+  {
+   "entityId": "hero_atlas",
+   "name": "Abrams",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_shiv",
+   "name": "Shiv",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_astro",
+   "name": "Holliday",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "hero_ghost",
+   "name": "Lady Geist",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_werewolf",
+   "name": "Silver",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "hero_synth",
+   "name": "Pocket",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "hero_chessmaster",
+   "name": "Solomon",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "hero_unicorn",
+   "name": "Celeste",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "hero_doorman",
+   "name": "The Doorman",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "hero_nurse",
+   "name": "Nurse Harrow",
+   "rank": 10,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "hero_astro",
+    "name": "Holliday",
+    "passPositions": [
+     1,
+     2,
+     1,
+     1,
+     1
+    ],
+    "borda": 0.13333333333333336,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Cowboy with slow heavy revolver-style shots",
+    "popularity": 28.35,
+    "popularityObscurity": 0.3333333333333333,
+    "spellingCost": 8,
+    "spellingObscurity": 1,
+    "key": 0.2566666666666667
+   },
+   {
+    "id": "hero_atlas",
+    "name": "Abrams",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Shotgun tank, reloads shells one at a time",
+    "popularity": 39.95,
+    "popularityObscurity": 0,
+    "spellingCost": 6,
+    "spellingObscurity": 0.4444444444444444,
+    "key": 0.022222222222222223
+   },
+   {
+    "id": "hero_chessmaster",
+    "name": "Solomon",
+    "passPositions": [
+     6,
+     8,
+     6,
+     6,
+     8
+    ],
+    "borda": 0.7555555555555554,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "Chess-themed support mystic with a pistol",
+    "popularity": 9.61,
+    "popularityObscurity": 1,
+    "spellingCost": 7,
+    "spellingObscurity": 0.7777777777777778,
+    "key": 0.8544444444444445
+   },
+   {
+    "id": "hero_doorman",
+    "name": "The Doorman",
+    "passPositions": [
+     7,
+     6,
+     9,
+     8,
+     9
+    ],
+    "borda": 0.8666666666666668,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "Newer hotel-themed mystic, door portals",
+    "popularity": 13.82,
+    "popularityObscurity": 0.8888888888888888,
+    "spellingCost": 7,
+    "spellingObscurity": 0.7777777777777778,
+    "key": 0.8711111111111112
+   },
+   {
+    "id": "hero_ghost",
+    "name": "Lady Geist",
+    "passPositions": [
+     5,
+     4,
+     5,
+     5,
+     4
+    ],
+    "borda": 0.5111111111111111,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Health-sacrificing mystic with a pistol",
+    "popularity": 37.57,
+    "popularityObscurity": 0.2222222222222222,
+    "spellingCost": 4,
+    "spellingObscurity": 0.05555555555555555,
+    "key": 0.37277777777777776
+   },
+   {
+    "id": "hero_nurse",
+    "name": "Nurse Harrow",
+    "passPositions": [
+     9,
+     9,
+     8,
+     7,
+     6
+    ],
+    "borda": 0.8666666666666666,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "Healer with a healing needle weapon, newer",
+    "popularity": 25.78,
+    "popularityObscurity": 0.4444444444444444,
+    "spellingCost": 5,
+    "spellingObscurity": 0.2222222222222222,
+    "key": 0.6655555555555556
+   },
+   {
+    "id": "hero_shiv",
+    "name": "Shiv",
+    "passPositions": [
+     3,
+     3,
+     3,
+     2,
+     3
+    ],
+    "borda": 0.3111111111111111,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Bleed brawler with a slow-firing shotgun-like pistol",
+    "popularity": 38.71,
+    "popularityObscurity": 0.1111111111111111,
+    "spellingCost": 4,
+    "spellingObscurity": 0.05555555555555555,
+    "key": 0.21833333333333335
+   },
+   {
+    "id": "hero_synth",
+    "name": "Pocket",
+    "passPositions": [
+     4,
+     5,
+     4,
+     4,
+     5
+    ],
+    "borda": 0.48888888888888893,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Mobile assassin with a shotgun-like weapon",
+    "popularity": 24.78,
+    "popularityObscurity": 0.5555555555555556,
+    "spellingCost": 6,
+    "spellingObscurity": 0.4444444444444444,
+    "key": 0.5133333333333334
+   },
+   {
+    "id": "hero_unicorn",
+    "name": "Celeste",
+    "passPositions": [
+     8,
+     7,
+     7,
+     9,
+     7
+    ],
+    "borda": 0.8444444444444444,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Light-themed mystic, new hero, daggers",
+    "popularity": 18.71,
+    "popularityObscurity": 0.7777777777777778,
+    "spellingCost": 7,
+    "spellingObscurity": 0.7777777777777778,
+    "key": 0.8144444444444445
+   },
+   {
+    "id": "hero_werewolf",
+    "name": "Silver",
+    "passPositions": [
+     2,
+     1,
+     2,
+     3,
+     2
+    ],
+    "borda": 0.22222222222222224,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Werewolf brawler with a shotgun, big close damage",
+    "popularity": 19.71,
+    "popularityObscurity": 0.6666666666666666,
+    "spellingCost": 6,
+    "spellingObscurity": 0.4444444444444444,
+    "key": 0.4111111111111111
+   }
+  ],
+  "passAgreement": 0.7955555555555556,
+  "orderBeforeRefinement": [
+   "hero_atlas",
+   "hero_shiv",
+   "hero_astro",
+   "hero_ghost",
+   "hero_werewolf",
+   "hero_synth",
+   "hero_nurse",
+   "hero_unicorn",
+   "hero_chessmaster",
+   "hero_doorman"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_nurse",
+    "b": "hero_unicorn",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_nurse",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": "hero_nurse"
+   },
+   {
+    "a": "hero_nurse",
+    "b": "hero_doorman",
+    "purpose": "rare-contenders",
+    "rarer": "hero_nurse"
+   },
+   {
+    "a": "hero_unicorn",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": "hero_unicorn"
+   },
+   {
+    "a": "hero_unicorn",
+    "b": "hero_doorman",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_chessmaster",
+    "b": "hero_doorman",
+    "purpose": "rare-contenders",
+    "rarer": "hero_doorman"
+   },
+   {
+    "a": "hero_atlas",
+    "b": "hero_shiv",
+    "purpose": "tier-boundary",
+    "rarer": "hero_shiv"
+   },
+   {
+    "a": "hero_astro",
+    "b": "hero_ghost",
+    "purpose": "tier-boundary",
+    "rarer": "hero_ghost"
+   },
+   {
+    "a": "hero_atlas",
+    "b": "hero_shiv",
+    "purpose": "review",
+    "rarer": "hero_shiv"
+   }
+  ],
+  "review": [
+   {
+    "name": "Abrams",
+    "compareWith": "Shiv",
+    "claim": "should_be_more_obscure",
+    "reason": "Abrams is a very popular hero, but his shotgun is known for reloading single shells, a trait that makes players think of ammo count in a different way. Clip size is not his headline trait, so he is unlikely to be the first hero recalled for a tiny clip. Shiv and Holliday are likely to be thought of at least as readily, so Abrams at 10 pts looks too low.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Lady Geist",
+    "compareWith": "Silver",
+    "claim": "should_be_more_obvious",
+    "reason": "Lady Geist is a long-established, popular hero with a distinctive health-cost kit. Players who think about low-ammo, high-damage weapons are likely to bring her up before Silver, who is newer and less strongly associated with clip size.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}

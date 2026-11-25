@@ -24,8 +24,8 @@
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
  "scoringVersion": "7",
- "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T03:52:44.354Z",
+ "model": "cache only",
+ "generatedAt": "2026-11-25T04:12:46.868Z",
  "answers": [
   {
    "entityId": "hero_haze",

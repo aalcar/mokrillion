@@ -53,8 +53,14 @@ Target: how readily an experienced player thinks of an answer **for this questio
 
 1. **Listwise ranking**: 5 passes, each with a differently shuffled candidate order; output must be an
    exact permutation (validated, bounded retries).
-2. **Aggregation**: Borda (mean normalized position) blended with two minor signals:
-   `0.55 × LLM + 0.4 × gameplay rarity + 0.05 × spelling cost`. Gameplay rarity = hero pick rate or item purchase rate from the [Deadlock API](https://deadlock-api.com) in Ritualist–Oracle matches, the group's own rank range (`npm run ingest:stats`; set `MOKRILLION_MIN_BADGE`/`MOKRILLION_MAX_BADGE` to change it).
+2. **Aggregation**: Borda (mean normalized position) blended with gameplay rarity (hero pick rate or item
+   purchase rate from the [Deadlock API](https://deadlock-api.com) in Ritualist–Oracle matches, the group's own
+   rank range; `npm run ingest:stats`, `MOKRILLION_MIN_BADGE`/`MOKRILLION_MAX_BADGE`) and spelling cost.
+   Weights depend on the question type, from human judgments:
+   - membership questions (cost, tier, active, component, name spelling): `0.25 × LLM + 0.7 × gameplay + 0.05 × spelling`
+     (recall follows what players see in games);
+   - association questions (stat bonuses, hero traits and stats, semantic): `0.8 × LLM + 0.15 × gameplay + 0.05 × spelling`
+     (recall follows whether players link the answer to the property).
 3. **Targeted pairwise**: all pairs among the 4 rarest candidates plus each tier boundary, asked in both
    orientations; only judgments that agree both ways change the order.
 4. **Adversarial review**: a reviewer may challenge up to 5 placements (swap X and Y). If the gameplay data

@@ -67,6 +67,8 @@ export interface ScoredQuestion {
   generatedAt: string;
   answers: (ScoredAnswer & { name: string })[];
   diagnostics: {
+    /** Question type and the signal weights used for it. */
+    weights: { type: string } & Weights;
     signals: CandidateSignals[];
     /** Mean Kendall tau between every pair of listwise passes (1 = identical rankings). */
     passAgreement: number;
@@ -130,7 +132,12 @@ export function kendallTau(a: string[], b: string[]): number {
 }
 
 /** Combine pass rankings and side signals into one obscurity key per candidate. */
-export function aggregate(entities: Entity[], passResults: PassResult[], weights = config.weights): CandidateSignals[] {
+export type Weights = { llm: number; popularity: number; spelling: number };
+
+export const questionType = (signature: string): keyof typeof config.weights =>
+  config.membershipPrefixes.some((p) => signature.startsWith(p)) ? "membership" : "association";
+
+export function aggregate(entities: Entity[], passResults: PassResult[], weights: Weights): CandidateSignals[] {
   const passes = passResults.map((p) => p.ranking);
   const n = entities.length;
   const pops = entities.map((e) => e.attributes.popularity ?? 0);
@@ -286,7 +293,8 @@ export async function scoreQuestion(kb: Knowledge, ask: Ask, q: CandidateQuestio
   );
 
   // 2. Aggregate.
-  const signals = aggregate(entities, passes);
+  const weights = config.weights[questionType(q.signature)];
+  const signals = aggregate(entities, passes, weights);
   const keyOf = new Map(signals.map((s) => [s.id, s.key]));
   const initial = [...q.answerIds].sort((a, b) => keyOf.get(a)! - keyOf.get(b)! || a.localeCompare(b));
 
@@ -371,6 +379,6 @@ export async function scoreQuestion(kb: Knowledge, ask: Ask, q: CandidateQuestio
     model: modelsUsed(),
     generatedAt: new Date().toISOString(),
     answers: order.map((id, i) => ({ entityId: id, name: kb.get(id)!.name, rank: i + 1, score: scores[i] })),
-    diagnostics: { signals, passAgreement, orderBeforeRefinement: initial, pairwise: [...pairwise, ...reviewJudgments], review },
+    diagnostics: { weights: { type: questionType(q.signature), ...weights }, signals, passAgreement, orderBeforeRefinement: initial, pairwise: [...pairwise, ...reviewJudgments], review },
   };
 }

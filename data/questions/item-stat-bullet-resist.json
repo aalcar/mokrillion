@@ -1,0 +1,640 @@
+{
+ "question": {
+  "signature": "item-stat:Bullet Resist",
+  "category": "item-stat-bonus",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_ability_power_shard",
+   "upgrade_auto_cleanse",
+   "upgrade_berserker",
+   "upgrade_bullet_resist_shredder",
+   "upgrade_cheat_death",
+   "upgrade_crushing_fists",
+   "upgrade_fleetfoot_boots",
+   "upgrade_imbued_duration_extender",
+   "upgrade_improved_bullet_armor",
+   "upgrade_melee_charge",
+   "upgrade_metal_skin",
+   "upgrade_regenerating_bullet_shield",
+   "upgrade_return_fire",
+   "upgrade_siphon_bullets",
+   "upgrade_suppressor",
+   "upgrade_surging_power"
+  ],
+  "prompt": "Name an item that gives a built-in Bullet Resist bonus (not counting conditional, stacking or active effects).",
+  "validation": {
+   "method": "deterministic",
+   "criterion": "innate unconditional prop labelled \"Bullet Resist\" with value > 0"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:08:34.018Z",
+ "answers": [
+  {
+   "entityId": "upgrade_regenerating_bullet_shield",
+   "name": "Battle Vest",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_bullet_resist_shredder",
+   "name": "Bullet Resist Shredder",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_metal_skin",
+   "name": "Metal Skin",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_improved_bullet_armor",
+   "name": "Bullet Resilience",
+   "rank": 4,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_auto_cleanse",
+   "name": "Indomitable",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_siphon_bullets",
+   "name": "Siphon Bullets",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_berserker",
+   "name": "Berserker",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_cheat_death",
+   "name": "Cheat Death",
+   "rank": 8,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_return_fire",
+   "name": "Return Fire",
+   "rank": 9,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_melee_charge",
+   "name": "Melee Charge",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_fleetfoot_boots",
+   "name": "Fleetfoot",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_imbued_duration_extender",
+   "name": "Superior Duration",
+   "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_surging_power",
+   "name": "Vampiric Burst",
+   "rank": 13,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_crushing_fists",
+   "name": "Crushing Fists",
+   "rank": 14,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_suppressor",
+   "name": "Suppressor",
+   "rank": 15,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_ability_power_shard",
+   "name": "Echo Shard",
+   "rank": 16,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "upgrade_ability_power_shard",
+    "name": "Echo Shard",
+    "passPositions": [
+     12,
+     14,
+     15,
+     13,
+     15
+    ],
+    "borda": 0.9199999999999999,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Ability cooldown reset",
+    "popularity": 2.62,
+    "popularityObscurity": 0.9333333333333333,
+    "spellingCost": 9,
+    "spellingObscurity": 0.43333333333333335,
+    "key": 0.901
+   },
+   {
+    "id": "upgrade_auto_cleanse",
+    "name": "Indomitable",
+    "passPositions": [
+     5,
+     8,
+     5,
+     4,
+     7
+    ],
+    "borda": 0.3866666666666666,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Cleanses CC, barrier",
+    "popularity": 8.14,
+    "popularityObscurity": 0.3333333333333333,
+    "spellingCost": 5,
+    "spellingObscurity": 0.1,
+    "key": 0.351
+   },
+   {
+    "id": "upgrade_berserker",
+    "name": "Berserker",
+    "passPositions": [
+     10,
+     6,
+     9,
+     6,
+     10
+    ],
+    "borda": 0.5466666666666666,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Damage scaling when hurt",
+    "popularity": 7.63,
+    "popularityObscurity": 0.4,
+    "spellingCost": 9,
+    "spellingObscurity": 0.43333333333333335,
+    "key": 0.4823333333333334
+   },
+   {
+    "id": "upgrade_bullet_resist_shredder",
+    "name": "Bullet Resist Shredder",
+    "passPositions": [
+     6,
+     5,
+     8,
+     11,
+     4
+    ],
+    "borda": 0.4533333333333333,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Shreds enemy bullet resist",
+    "popularity": 14.27,
+    "popularityObscurity": 0.13333333333333333,
+    "spellingCost": 3,
+    "spellingObscurity": 0,
+    "key": 0.3026666666666667
+   },
+   {
+    "id": "upgrade_cheat_death",
+    "name": "Cheat Death",
+    "passPositions": [
+     4,
+     4,
+     4,
+     5,
+     6
+    ],
+    "borda": 0.30666666666666664,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Survive lethal damage",
+    "popularity": 3.32,
+    "popularityObscurity": 0.8,
+    "spellingCost": 5,
+    "spellingObscurity": 0.1,
+    "key": 0.4936666666666667
+   },
+   {
+    "id": "upgrade_crushing_fists",
+    "name": "Crushing Fists",
+    "passPositions": [
+     14,
+     9,
+     11,
+     9,
+     5
+    ],
+    "borda": 0.64,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "Melee ammo restore, stun",
+    "popularity": 5.5,
+    "popularityObscurity": 0.5333333333333333,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8333333333333334,
+    "key": 0.6070000000000001
+   },
+   {
+    "id": "upgrade_fleetfoot_boots",
+    "name": "Fleetfoot",
+    "passPositions": [
+     9,
+     12,
+     12,
+     14,
+     12
+    ],
+    "borda": 0.7866666666666667,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Move while shooting, speed",
+    "popularity": 9.1,
+    "popularityObscurity": 0.26666666666666666,
+    "spellingCost": 9,
+    "spellingObscurity": 0.43333333333333335,
+    "key": 0.561
+   },
+   {
+    "id": "upgrade_imbued_duration_extender",
+    "name": "Superior Duration",
+    "passPositions": [
+     15,
+     15,
+     14,
+     15,
+     14
+    ],
+    "borda": 0.9733333333333334,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Ability duration extender",
+    "popularity": 21.4,
+    "popularityObscurity": 0,
+    "spellingCost": 16,
+    "spellingObscurity": 0.9666666666666667,
+    "key": 0.5836666666666668
+   },
+   {
+    "id": "upgrade_improved_bullet_armor",
+    "name": "Bullet Resilience",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Bullet resist item by name",
+    "popularity": 3.15,
+    "popularityObscurity": 0.8666666666666667,
+    "spellingCost": 16,
+    "spellingObscurity": 0.9666666666666667,
+    "key": 0.395
+   },
+   {
+    "id": "upgrade_melee_charge",
+    "name": "Melee Charge",
+    "passPositions": [
+     13,
+     11,
+     13,
+     10,
+     13
+    ],
+    "borda": 0.8,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Heavy melee damage boost",
+    "popularity": 9.67,
+    "popularityObscurity": 0.2,
+    "spellingCost": 11,
+    "spellingObscurity": 0.7333333333333333,
+    "key": 0.5566666666666668
+   },
+   {
+    "id": "upgrade_metal_skin",
+    "name": "Metal Skin",
+    "passPositions": [
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "borda": 0.13333333333333333,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "Bullet immunity active",
+    "popularity": 3.6,
+    "popularityObscurity": 0.7333333333333333,
+    "spellingCost": 9,
+    "spellingObscurity": 0.43333333333333335,
+    "key": 0.3883333333333333
+   },
+   {
+    "id": "upgrade_regenerating_bullet_shield",
+    "name": "Battle Vest",
+    "passPositions": [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "borda": 0.06666666666666667,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Bullet resist with damage bonus",
+    "popularity": 16.97,
+    "popularityObscurity": 0.06666666666666667,
+    "spellingCost": 10,
+    "spellingObscurity": 0.6333333333333333,
+    "key": 0.095
+   },
+   {
+    "id": "upgrade_return_fire",
+    "name": "Return Fire",
+    "passPositions": [
+     3,
+     3,
+     3,
+     3,
+     3
+    ],
+    "borda": 0.2,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Reflect bullets at attackers, defensive",
+    "popularity": 1.12,
+    "popularityObscurity": 1,
+    "spellingCost": 10,
+    "spellingObscurity": 0.6333333333333333,
+    "key": 0.5416666666666667
+   },
+   {
+    "id": "upgrade_siphon_bullets",
+    "name": "Siphon Bullets",
+    "passPositions": [
+     8,
+     7,
+     7,
+     8,
+     8
+    ],
+    "borda": 0.5066666666666666,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "Steals max HP",
+    "popularity": 6.2,
+    "popularityObscurity": 0.4666666666666667,
+    "spellingCost": 6,
+    "spellingObscurity": 0.2,
+    "key": 0.4753333333333334
+   },
+   {
+    "id": "upgrade_suppressor",
+    "name": "Suppressor",
+    "passPositions": [
+     11,
+     13,
+     10,
+     12,
+     11
+    ],
+    "borda": 0.76,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Spirit item reducing enemy fire rate",
+    "popularity": 5.27,
+    "popularityObscurity": 0.6,
+    "spellingCost": 8,
+    "spellingObscurity": 0.26666666666666666,
+    "key": 0.6713333333333333
+   },
+   {
+    "id": "upgrade_surging_power",
+    "name": "Vampiric Burst",
+    "passPositions": [
+     7,
+     10,
+     6,
+     7,
+     9
+    ],
+    "borda": 0.52,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "Lifesteal and fire rate burst",
+    "popularity": 5.26,
+    "popularityObscurity": 0.6666666666666666,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8333333333333334,
+    "key": 0.5943333333333334
+   }
+  ],
+  "passAgreement": 0.7666666666666666,
+  "orderBeforeRefinement": [
+   "upgrade_regenerating_bullet_shield",
+   "upgrade_bullet_resist_shredder",
+   "upgrade_auto_cleanse",
+   "upgrade_metal_skin",
+   "upgrade_improved_bullet_armor",
+   "upgrade_siphon_bullets",
+   "upgrade_berserker",
+   "upgrade_cheat_death",
+   "upgrade_return_fire",
+   "upgrade_melee_charge",
+   "upgrade_fleetfoot_boots",
+   "upgrade_imbued_duration_extender",
+   "upgrade_surging_power",
+   "upgrade_crushing_fists",
+   "upgrade_suppressor",
+   "upgrade_ability_power_shard"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_surging_power",
+    "b": "upgrade_crushing_fists",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_crushing_fists"
+   },
+   {
+    "a": "upgrade_surging_power",
+    "b": "upgrade_suppressor",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_suppressor"
+   },
+   {
+    "a": "upgrade_surging_power",
+    "b": "upgrade_ability_power_shard",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_ability_power_shard"
+   },
+   {
+    "a": "upgrade_crushing_fists",
+    "b": "upgrade_suppressor",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_suppressor"
+   },
+   {
+    "a": "upgrade_crushing_fists",
+    "b": "upgrade_ability_power_shard",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_ability_power_shard"
+   },
+   {
+    "a": "upgrade_suppressor",
+    "b": "upgrade_ability_power_shard",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_ability_power_shard"
+   },
+   {
+    "a": "upgrade_regenerating_bullet_shield",
+    "b": "upgrade_bullet_resist_shredder",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_bullet_resist_shredder"
+   },
+   {
+    "a": "upgrade_metal_skin",
+    "b": "upgrade_improved_bullet_armor",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_metal_skin"
+   },
+   {
+    "a": "upgrade_return_fire",
+    "b": "upgrade_melee_charge",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_melee_charge"
+   },
+   {
+    "a": "upgrade_bullet_resist_shredder",
+    "b": "upgrade_improved_bullet_armor",
+    "purpose": "review",
+    "rarer": "upgrade_bullet_resist_shredder"
+   },
+   {
+    "a": "upgrade_improved_bullet_armor",
+    "b": "upgrade_bullet_resist_shredder",
+    "purpose": "review",
+    "rarer": "upgrade_bullet_resist_shredder"
+   },
+   {
+    "a": "upgrade_metal_skin",
+    "b": "upgrade_auto_cleanse",
+    "purpose": "review",
+    "rarer": "upgrade_auto_cleanse"
+   },
+   {
+    "a": "upgrade_return_fire",
+    "b": "upgrade_berserker",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Bullet Resist Shredder",
+    "compareWith": "Bullet Resilience",
+    "claim": "should_be_more_obscure",
+    "reason": "Bullet Resist Shredder is known for reducing enemy bullet resist, so players think of it as the opposite of a bullet resist item. Its own 9 Bullet Resist is a minor stat. Bullet Resilience is named for the stat and has the highest value (35), so it should be the more obvious of the two.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Bullet Resilience",
+    "compareWith": "Bullet Resist Shredder",
+    "claim": "should_be_more_obvious",
+    "reason": "Bullet Resilience is the direct, name-matched answer for this question and gives the largest flat bullet resist (35). It should score at or near Battle Vest, not tied with the Shredder and Indomitable.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Metal Skin",
+    "compareWith": "Indomitable",
+    "claim": "should_be_more_obvious",
+    "reason": "Metal Skin is a well-known defensive item tied to bullets (bullet immunity), so players link it to bullet resistance. Indomitable is known for cleansing crowd control and has a spirit-resist association, so it should be rarer than Metal Skin.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Crushing Fists",
+    "compareWith": "Echo Shard",
+    "claim": "should_be_more_obvious",
+    "reason": "Crushing Fists is a distinctive item whose description mentions a bullet resist debuff, which prompts bullet-resist thinking. Echo Shard is known only for resetting cooldowns and gives just 5 Bullet Resist, so it is the obscure answer here. Crushing Fists should score below Melee Charge, Fleetfoot, and Suppressor.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Return Fire",
+    "compareWith": "Berserker",
+    "claim": "should_be_more_obvious",
+    "reason": "Return Fire is a Tier 2 Vitality item that players buy for survivability, and it is more strongly associated with defense than Berserker, a damage-scaling weapon item. It should be rarer than Berserker only if players think of Berserker as defensive, which is unlikely. Return Fire should score lower than Berserker.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}

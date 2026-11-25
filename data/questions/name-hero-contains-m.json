@@ -1,0 +1,466 @@
+{
+ "question": {
+  "signature": "name:hero:contains:m",
+  "prompt": "Name a hero whose name contains the letter M.",
+  "category": "name-trivia",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_atlas",
+   "hero_chessmaster",
+   "hero_deadpack",
+   "hero_doorman",
+   "hero_dynamo",
+   "hero_familiar",
+   "hero_forge",
+   "hero_krill",
+   "hero_mirage",
+   "hero_vampirebat",
+   "hero_yamato"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:hero:contains:m"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:17:07.744Z",
+ "answers": [
+  {
+   "entityId": "hero_vampirebat",
+   "name": "Mina",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_atlas",
+   "name": "Abrams",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_yamato",
+   "name": "Yamato",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "hero_krill",
+   "name": "Mo & Krill",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_dynamo",
+   "name": "Dynamo",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "hero_forge",
+   "name": "McGinnis",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "hero_mirage",
+   "name": "Mirage",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "hero_familiar",
+   "name": "Rem",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "hero_chessmaster",
+   "name": "Solomon",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "hero_doorman",
+   "name": "The Doorman",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "hero_deadpack",
+   "name": "Deadman Danny",
+   "rank": 11,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "hero_atlas",
+    "name": "Abrams",
+    "passPositions": [
+     4,
+     5,
+     3,
+     3,
+     3
+    ],
+    "borda": 0.36,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Popular tanky brawler with shoulder charge",
+    "popularity": 39.95,
+    "popularityObscurity": 0,
+    "spellingCost": 6,
+    "spellingObscurity": 0.65,
+    "key": 0.2305
+   },
+   {
+    "id": "hero_chessmaster",
+    "name": "Solomon",
+    "passPositions": [
+     7,
+     8,
+     9,
+     7,
+     8
+    ],
+    "borda": 0.7799999999999999,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Chess-themed mystic",
+    "popularity": 9.61,
+    "popularityObscurity": 0.9,
+    "spellingCost": 7,
+    "spellingObscurity": 0.95,
+    "key": 0.8365
+   },
+   {
+    "id": "hero_deadpack",
+    "name": "Deadman Danny",
+    "passPositions": [
+     10,
+     10,
+     10,
+     9,
+     10
+    ],
+    "borda": 0.9800000000000001,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "Newer marksman hero with a long, unusual name",
+    "popularity": 23.38,
+    "popularityObscurity": 0.4,
+    "spellingCost": 5,
+    "spellingObscurity": 0.4,
+    "key": 0.7190000000000002
+   },
+   {
+    "id": "hero_doorman",
+    "name": "The Doorman",
+    "passPositions": [
+     9,
+     9,
+     8,
+     10,
+     9
+    ],
+    "borda": 0.9,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "Odd hotel-themed mystic with doorways",
+    "popularity": 13.82,
+    "popularityObscurity": 0.7,
+    "spellingCost": 7,
+    "spellingObscurity": 0.95,
+    "key": 0.8225
+   },
+   {
+    "id": "hero_dynamo",
+    "name": "Dynamo",
+    "passPositions": [
+     5,
+     6,
+     4,
+     5,
+     5
+    ],
+    "borda": 0.5,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Healer known for Singularity",
+    "popularity": 25.11,
+    "popularityObscurity": 0.2,
+    "spellingCost": 6,
+    "spellingObscurity": 0.65,
+    "key": 0.3875
+   },
+   {
+    "id": "hero_familiar",
+    "name": "Rem",
+    "passPositions": [
+     8,
+     7,
+     7,
+     8,
+     7
+    ],
+    "borda": 0.74,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Cute healer with pillow toss",
+    "popularity": 18.16,
+    "popularityObscurity": 0.6,
+    "spellingCost": 3,
+    "spellingObscurity": 0.15,
+    "key": 0.6545000000000001
+   },
+   {
+    "id": "hero_forge",
+    "name": "McGinnis",
+    "passPositions": [
+     1,
+     1,
+     5,
+     1,
+     1
+    ],
+    "borda": 0.18,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Turret engineer, name starts with M",
+    "popularity": 12.06,
+    "popularityObscurity": 0.8,
+    "spellingCost": 3,
+    "spellingObscurity": 0.15,
+    "key": 0.4265000000000001
+   },
+   {
+    "id": "hero_krill",
+    "name": "Mo & Krill",
+    "passPositions": [
+     6,
+     0,
+     6,
+     0,
+     2
+    ],
+    "borda": 0.27999999999999997,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Burrowing brawler duo, name spelled with the M of Mo",
+    "popularity": 21.96,
+    "popularityObscurity": 0.5,
+    "spellingCost": 2,
+    "spellingObscurity": 0,
+    "key": 0.354
+   },
+   {
+    "id": "hero_mirage",
+    "name": "Mirage",
+    "passPositions": [
+     0,
+     2,
+     0,
+     6,
+     0
+    ],
+    "borda": 0.16,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "Mobile assassin with scarabs and tornado",
+    "popularity": 9.38,
+    "popularityObscurity": 1,
+    "spellingCost": 6,
+    "spellingObscurity": 0.65,
+    "key": 0.5205000000000001
+   },
+   {
+    "id": "hero_vampirebat",
+    "name": "Mina",
+    "passPositions": [
+     2,
+     3,
+     1,
+     2,
+     6
+    ],
+    "borda": 0.27999999999999997,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Vampire mystic with bat form",
+    "popularity": 34.02,
+    "popularityObscurity": 0.1,
+    "spellingCost": 4,
+    "spellingObscurity": 0.3,
+    "key": 0.209
+   },
+   {
+    "id": "hero_yamato",
+    "name": "Yamato",
+    "passPositions": [
+     3,
+     4,
+     2,
+     4,
+     4
+    ],
+    "borda": 0.33999999999999997,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Samurai assassin with slash combos",
+    "popularity": 24.73,
+    "popularityObscurity": 0.3,
+    "spellingCost": 6,
+    "spellingObscurity": 0.65,
+    "key": 0.3395
+   }
+  ],
+  "passAgreement": 0.6145454545454545,
+  "orderBeforeRefinement": [
+   "hero_vampirebat",
+   "hero_atlas",
+   "hero_yamato",
+   "hero_krill",
+   "hero_dynamo",
+   "hero_forge",
+   "hero_mirage",
+   "hero_familiar",
+   "hero_deadpack",
+   "hero_doorman",
+   "hero_chessmaster"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_familiar",
+    "b": "hero_deadpack",
+    "purpose": "rare-contenders",
+    "rarer": "hero_deadpack"
+   },
+   {
+    "a": "hero_familiar",
+    "b": "hero_doorman",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_familiar",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_deadpack",
+    "b": "hero_doorman",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_deadpack",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": "hero_deadpack"
+   },
+   {
+    "a": "hero_doorman",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": "hero_doorman"
+   },
+   {
+    "a": "hero_vampirebat",
+    "b": "hero_atlas",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "hero_yamato",
+    "b": "hero_krill",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "hero_forge",
+    "b": "hero_mirage",
+    "purpose": "tier-boundary",
+    "rarer": "hero_mirage"
+   },
+   {
+    "a": "hero_atlas",
+    "b": "hero_krill",
+    "purpose": "review",
+    "rarer": "hero_krill"
+   },
+   {
+    "a": "hero_yamato",
+    "b": "hero_forge",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Mo & Krill",
+    "compareWith": "Dynamo",
+    "claim": "should_be_more_obvious",
+    "reason": "Mo & Krill is the one hero whose name literally begins with M, so it is the most direct trigger for this question. It should sit near Mina and well above Dynamo, whose M is buried mid-word.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Mirage",
+    "compareWith": "Rem",
+    "claim": "should_be_more_obvious",
+    "reason": "Mirage has a clear M in its name and is a popular, well-known hero. Rem is a lower-profile hero whose M is the final letter and is easy to overlook, so Mirage should score lower than Rem.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Abrams",
+    "compareWith": "Mo & Krill",
+    "claim": "should_be_more_obscure",
+    "reason": "The M in Abrams is in the middle of the word and is not salient. Players scanning for M will think of names starting with M first, so Abrams should be rarer than Mo & Krill.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Yamato",
+    "compareWith": "McGinnis",
+    "claim": "should_be_more_obscure",
+    "reason": "The M in Yamato is hidden mid-name, while McGinnis starts with M. Yamato should not be scored as obvious as 30 points compared with McGinnis at 60.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}

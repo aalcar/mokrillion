@@ -1,0 +1,347 @@
+{
+ "question": {
+  "signature": "name:hero:contains:c",
+  "prompt": "Name a hero whose name contains the letter C.",
+  "category": "name-trivia",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_forge",
+   "hero_frank",
+   "hero_hornet",
+   "hero_magician",
+   "hero_nano",
+   "hero_synth",
+   "hero_unicorn",
+   "hero_viscous"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:hero:contains:c"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:15:35.091Z",
+ "answers": [
+  {
+   "entityId": "hero_nano",
+   "name": "Calico",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_hornet",
+   "name": "Vindicta",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_unicorn",
+   "name": "Celeste",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "hero_viscous",
+   "name": "Viscous",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_forge",
+   "name": "McGinnis",
+   "rank": 5,
+   "score": 85
+  },
+  {
+   "entityId": "hero_magician",
+   "name": "Sinclair",
+   "rank": 6,
+   "score": 85
+  },
+  {
+   "entityId": "hero_frank",
+   "name": "Victor",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "hero_synth",
+   "name": "Pocket",
+   "rank": 8,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "hero_forge",
+    "name": "McGinnis",
+    "passPositions": [
+     0,
+     3,
+     3,
+     6,
+     0
+    ],
+    "borda": 0.34285714285714286,
+    "fit": {
+     "expected": 2,
+     "neutral": 2,
+     "surprising": 1
+    },
+    "perception": "Turret engineer, name starts with Mc",
+    "popularity": 12.06,
+    "popularityObscurity": 0.8571428571428571,
+    "spellingCost": 3,
+    "spellingObscurity": 0,
+    "key": 0.5314285714285715
+   },
+   {
+    "id": "hero_frank",
+    "name": "Victor",
+    "passPositions": [
+     5,
+     5,
+     6,
+     4,
+     5
+    ],
+    "borda": 0.7142857142857142,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Frankenstein brawler with reanimation",
+    "popularity": 24.46,
+    "popularityObscurity": 0.2857142857142857,
+    "spellingCost": 6,
+    "spellingObscurity": 0.2857142857142857,
+    "key": 0.5214285714285715
+   },
+   {
+    "id": "hero_hornet",
+    "name": "Vindicta",
+    "passPositions": [
+     3,
+     4,
+     4,
+     2,
+     4
+    ],
+    "borda": 0.48571428571428577,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Sniper witch with flight and assassinate",
+    "popularity": 30.86,
+    "popularityObscurity": 0,
+    "spellingCost": 8,
+    "spellingObscurity": 0.9285714285714286,
+    "key": 0.3135714285714286
+   },
+   {
+    "id": "hero_magician",
+    "name": "Sinclair",
+    "passPositions": [
+     4,
+     6,
+     5,
+     5,
+     6
+    ],
+    "borda": 0.7428571428571429,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Magician mystic with rabbit hex",
+    "popularity": 9.63,
+    "popularityObscurity": 1,
+    "spellingCost": 8,
+    "spellingObscurity": 0.9285714285714286,
+    "key": 0.8550000000000001
+   },
+   {
+    "id": "hero_nano",
+    "name": "Calico",
+    "passPositions": [
+     1,
+     1,
+     0,
+     0,
+     2
+    ],
+    "borda": 0.11428571428571428,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Cat assassin with leaping slash",
+    "popularity": 21.39,
+    "popularityObscurity": 0.42857142857142855,
+    "spellingCost": 6,
+    "spellingObscurity": 0.2857142857142857,
+    "key": 0.24857142857142858
+   },
+   {
+    "id": "hero_synth",
+    "name": "Pocket",
+    "passPositions": [
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "borda": 1,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "Portal-bag assassin with barrage",
+    "popularity": 24.78,
+    "popularityObscurity": 0.14285714285714285,
+    "spellingCost": 6,
+    "spellingObscurity": 0.2857142857142857,
+    "key": 0.6214285714285714
+   },
+   {
+    "id": "hero_unicorn",
+    "name": "Celeste",
+    "passPositions": [
+     6,
+     0,
+     2,
+     3,
+     1
+    ],
+    "borda": 0.34285714285714286,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Light mystic, newer hero",
+    "popularity": 18.71,
+    "popularityObscurity": 0.5714285714285714,
+    "spellingCost": 7,
+    "spellingObscurity": 0.6428571428571429,
+    "key": 0.4492857142857143
+   },
+   {
+    "id": "hero_viscous",
+    "name": "Viscous",
+    "passPositions": [
+     2,
+     2,
+     1,
+     1,
+     3
+    ],
+    "borda": 0.2571428571428571,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Goo blob brawler with the cube",
+    "popularity": 14.57,
+    "popularityObscurity": 0.7142857142857143,
+    "spellingCost": 7,
+    "spellingObscurity": 0.6428571428571429,
+    "key": 0.4592857142857143
+   }
+  ],
+  "passAgreement": 0.5571428571428572,
+  "orderBeforeRefinement": [
+   "hero_nano",
+   "hero_hornet",
+   "hero_unicorn",
+   "hero_viscous",
+   "hero_frank",
+   "hero_forge",
+   "hero_synth",
+   "hero_magician"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_frank",
+    "b": "hero_forge",
+    "purpose": "rare-contenders",
+    "rarer": "hero_frank"
+   },
+   {
+    "a": "hero_frank",
+    "b": "hero_synth",
+    "purpose": "rare-contenders",
+    "rarer": "hero_synth"
+   },
+   {
+    "a": "hero_frank",
+    "b": "hero_magician",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_forge",
+    "b": "hero_synth",
+    "purpose": "rare-contenders",
+    "rarer": "hero_synth"
+   },
+   {
+    "a": "hero_forge",
+    "b": "hero_magician",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_synth",
+    "b": "hero_magician",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_nano",
+    "b": "hero_hornet",
+    "purpose": "tier-boundary",
+    "rarer": "hero_hornet"
+   },
+   {
+    "a": "hero_hornet",
+    "b": "hero_unicorn",
+    "purpose": "tier-boundary",
+    "rarer": "hero_hornet"
+   },
+   {
+    "a": "hero_synth",
+    "b": "hero_frank",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Pocket",
+    "compareWith": "Victor",
+    "claim": "should_be_more_obvious",
+    "reason": "Pocket's name has a C right in the middle and is a distinctive, memorable word, whereas Victor is a plainer name. Both are likely to be rare, but Pocket's 'ck' is easy to spot, so it should not be rarer than Victor or Sinclair. Victor's C is hidden in the middle, so Victor should be at least as obscure as Pocket.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Vindicta",
+    "compareWith": "Celeste",
+    "claim": "should_be_more_obvious",
+    "reason": "Vindicta is a very popular marksman and a well-known hero. Her C sits in the middle of the name, but players who scan the roster will think of her quickly, so she is likely about as obvious as Celeste and should not sit 30 points above her.",
+    "outcome": "applied-by-data"
+   }
+  ]
+ }
+}

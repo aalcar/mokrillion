@@ -22,9 +22,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "3",
+ "scoringVersion": "7",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T02:58:08.338Z",
+ "generatedAt": "2026-11-25T04:14:31.892Z",
  "answers": [
   {
    "entityId": "hero_bebop",
@@ -57,8 +57,8 @@
    "score": 60
   },
   {
-   "entityId": "hero_werewolf",
-   "name": "Silver",
+   "entityId": "hero_inferno",
+   "name": "Infernus",
    "rank": 6,
    "score": 60
   },
@@ -69,20 +69,20 @@
    "score": 85
   },
   {
-   "entityId": "hero_inferno",
-   "name": "Infernus",
+   "entityId": "hero_werewolf",
+   "name": "Silver",
    "rank": 8,
-   "score": 85
-  },
-  {
-   "entityId": "hero_kelvin",
-   "name": "Kelvin",
-   "rank": 9,
    "score": 85
   },
   {
    "entityId": "hero_priest",
    "name": "Venator",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "hero_kelvin",
+   "name": "Kelvin",
    "rank": 10,
    "score": 100
   }
@@ -110,7 +110,7 @@
     "popularityObscurity": 0,
     "spellingCost": 5,
     "spellingObscurity": 0.3888888888888889,
-    "key": 0.15888888888888886
+    "key": 0.12944444444444445
    },
    {
     "id": "hero_dynamo",
@@ -133,7 +133,7 @@
     "popularityObscurity": 0.6666666666666666,
     "spellingCost": 6,
     "spellingObscurity": 0.6666666666666666,
-    "key": 0.5333333333333333
+    "key": 0.5444444444444445
    },
    {
     "id": "hero_ghost",
@@ -156,7 +156,7 @@
     "popularityObscurity": 0.4444444444444444,
     "spellingCost": 4,
     "spellingObscurity": 0.16666666666666666,
-    "key": 0.5633333333333334
+    "key": 0.5650000000000001
    },
    {
     "id": "hero_inferno",
@@ -179,7 +179,7 @@
     "popularityObscurity": 0.1111111111111111,
     "spellingCost": 8,
     "spellingObscurity": 1,
-    "key": 0.6266666666666666
+    "key": 0.5466666666666666
    },
    {
     "id": "hero_kelvin",
@@ -202,7 +202,7 @@
     "popularityObscurity": 0.7777777777777778,
     "spellingCost": 6,
     "spellingObscurity": 0.6666666666666666,
-    "key": 0.78
+    "key": 0.7844444444444445
    },
    {
     "id": "hero_krill",
@@ -225,7 +225,7 @@
     "popularityObscurity": 0.8888888888888888,
     "spellingCost": 2,
     "spellingObscurity": 0,
-    "key": 0.29333333333333333
+    "key": 0.38
    },
    {
     "id": "hero_priest",
@@ -248,7 +248,7 @@
     "popularityObscurity": 0.2222222222222222,
     "spellingCost": 7,
     "spellingObscurity": 0.8888888888888888,
-    "key": 0.7555555555555555
+    "key": 0.6833333333333333
    },
    {
     "id": "hero_punkgoat",
@@ -271,7 +271,7 @@
     "popularityObscurity": 0.5555555555555556,
     "spellingCost": 5,
     "spellingObscurity": 0.3888888888888889,
-    "key": 0.3655555555555556
+    "key": 0.3883333333333334
    },
    {
     "id": "hero_shiv",
@@ -294,7 +294,7 @@
     "popularityObscurity": 0.3333333333333333,
     "spellingCost": 4,
     "spellingObscurity": 0.16666666666666666,
-    "key": 0.3833333333333333
+    "key": 0.3861111111111112
    },
    {
     "id": "hero_werewolf",
@@ -317,26 +317,26 @@
     "popularityObscurity": 1,
     "spellingCost": 6,
     "spellingObscurity": 0.6666666666666666,
-    "key": 0.54
+    "key": 0.5922222222222222
    }
   ],
   "passAgreement": 0.68,
   "orderBeforeRefinement": [
    "hero_bebop",
    "hero_krill",
-   "hero_punkgoat",
    "hero_shiv",
+   "hero_punkgoat",
    "hero_dynamo",
-   "hero_werewolf",
-   "hero_ghost",
    "hero_inferno",
+   "hero_ghost",
+   "hero_werewolf",
    "hero_priest",
    "hero_kelvin"
   ],
   "pairwise": [
    {
     "a": "hero_ghost",
-    "b": "hero_inferno",
+    "b": "hero_werewolf",
     "purpose": "rare-contenders",
     "rarer": null
    },
@@ -350,16 +350,16 @@
     "a": "hero_ghost",
     "b": "hero_kelvin",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "hero_kelvin"
    },
    {
-    "a": "hero_inferno",
+    "a": "hero_werewolf",
     "b": "hero_priest",
     "purpose": "rare-contenders",
     "rarer": "hero_priest"
    },
    {
-    "a": "hero_inferno",
+    "a": "hero_werewolf",
     "b": "hero_kelvin",
     "purpose": "rare-contenders",
     "rarer": "hero_kelvin"
@@ -374,13 +374,13 @@
     "a": "hero_bebop",
     "b": "hero_krill",
     "purpose": "tier-boundary",
-    "rarer": null
+    "rarer": "hero_krill"
    },
    {
-    "a": "hero_punkgoat",
-    "b": "hero_shiv",
+    "a": "hero_shiv",
+    "b": "hero_punkgoat",
     "purpose": "tier-boundary",
-    "rarer": "hero_punkgoat"
+    "rarer": null
    },
    {
     "a": "hero_bebop",
@@ -389,10 +389,10 @@
     "rarer": null
    },
    {
-    "a": "hero_priest",
-    "b": "hero_ghost",
+    "a": "hero_inferno",
+    "b": "hero_punkgoat",
     "purpose": "review",
-    "rarer": "hero_priest"
+    "rarer": null
    }
   ],
   "review": [
@@ -400,22 +400,29 @@
     "name": "Bebop",
     "compareWith": "Mo & Krill",
     "claim": "should_be_more_obscure",
-    "reason": "Bebop is a tanky brawler, but nothing about his identity is health-related. Mo & Krill and Dynamo are more strongly tied to being sturdy bruisers, so they would come to mind at least as readily as Bebop. Bebop's 10 pts looks too confident as the clear top answer.",
+    "reason": "Bebop is a famous brawler, but nothing about the question ties him to high base health. Mo & Krill is a well-known tanky burrower and brawler and is at least as likely to come to mind, so Bebop's 10 points looks too low.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Shiv",
+    "name": "Infernus",
     "compareWith": "Billy",
     "claim": "should_be_more_obvious",
-    "reason": "Shiv is a popular melee bruiser with a well-known high-health, sustain-based identity, so players would think of him quickly. Placing him at 30 pts, tied with Mo & Krill, seems fine, but Billy at 60 is less often associated with health than Shiv. They should be closer.",
+    "reason": "Infernus is one of the most recognised and most played heroes. Players asked for a hero with a stat threshold will name him quickly, so he is easier to think of than Billy, a less prominent brawler.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Lady Geist",
+    "compareWith": "Kelvin",
+    "claim": "should_be_more_obvious",
+    "reason": "Her kit revolves around spending and draining health, so health is strongly associated with her and players will link her to this question. Kelvin is a healer with no health-related hook, so he should be rarer than her.",
     "outcome": "ignored-invalid"
    },
    {
     "name": "Venator",
-    "compareWith": "Lady Geist",
+    "compareWith": "Kelvin",
     "claim": "should_be_more_obvious",
-    "reason": "Venator is not especially forgettable, but Lady Geist is a distinctive health-cost hero whose health pool is a recognizable part of her kit. Players would more readily think of her than Venator for a health question, and in practice Venator is the rarer answer. Lady Geist at 85 may be too obscure relative to her association with health.",
-    "outcome": "rejected-by-comparison"
+    "reason": "Venator is no more obscure than Kelvin, who is also a recent, little-associated healer. Giving both 100 and 85 respectively is too steep a gap, so Venator should not score above Kelvin by much.",
+    "outcome": "applied-by-data"
    }
   ]
  }

@@ -1,0 +1,491 @@
+{
+ "question": {
+  "signature": "name:hero:contains:t",
+  "prompt": "Name a hero whose name contains the letter T.",
+  "category": "name-trivia",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_artist",
+   "hero_drifter",
+   "hero_frank",
+   "hero_ghost",
+   "hero_hornet",
+   "hero_orion",
+   "hero_priest",
+   "hero_ratking",
+   "hero_synth",
+   "hero_unicorn",
+   "hero_wraith",
+   "hero_yamato"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:hero:contains:t"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:19:23.998Z",
+ "answers": [
+  {
+   "entityId": "hero_orion",
+   "name": "Grey Talon",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_wraith",
+   "name": "Wraith",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_ghost",
+   "name": "Lady Geist",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "hero_priest",
+   "name": "Venator",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_hornet",
+   "name": "Vindicta",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "hero_frank",
+   "name": "Victor",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "hero_yamato",
+   "name": "Yamato",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "hero_ratking",
+   "name": "Rat King",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "hero_drifter",
+   "name": "Drifter",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "hero_synth",
+   "name": "Pocket",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "hero_artist",
+   "name": "Violet",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "hero_unicorn",
+   "name": "Celeste",
+   "rank": 12,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "hero_artist",
+    "name": "Violet",
+    "passPositions": [
+     9,
+     8,
+     11,
+     11,
+     10
+    ],
+    "borda": 0.8909090909090909,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Newer painter mystic hero",
+    "popularity": 19.01,
+    "popularityObscurity": 0.9090909090909091,
+    "spellingCost": 6,
+    "spellingObscurity": 0.36363636363636365,
+    "key": 0.8718181818181818
+   },
+   {
+    "id": "hero_drifter",
+    "name": "Drifter",
+    "passPositions": [
+     11,
+     11,
+     9,
+     10,
+     11
+    ],
+    "borda": 0.9454545454545455,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Stalker assassin with bloodscent",
+    "popularity": 45.26,
+    "popularityObscurity": 0.09090909090909091,
+    "spellingCost": 7,
+    "spellingObscurity": 0.7727272727272727,
+    "key": 0.5950000000000002
+   },
+   {
+    "id": "hero_frank",
+    "name": "Victor",
+    "passPositions": [
+     1,
+     3,
+     5,
+     5,
+     4
+    ],
+    "borda": 0.32727272727272727,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Frankenstein-like brawler with revive",
+    "popularity": 24.46,
+    "popularityObscurity": 0.6818181818181818,
+    "spellingCost": 6,
+    "spellingObscurity": 0.36363636363636365,
+    "key": 0.47090909090909094
+   },
+   {
+    "id": "hero_ghost",
+    "name": "Lady Geist",
+    "passPositions": [
+     5,
+     10,
+     1,
+     2,
+     7
+    ],
+    "borda": 0.4545454545454545,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Health-sacrificing life drain mystic",
+    "popularity": 37.57,
+    "popularityObscurity": 0.2727272727272727,
+    "spellingCost": 4,
+    "spellingObscurity": 0,
+    "key": 0.35909090909090907
+   },
+   {
+    "id": "hero_hornet",
+    "name": "Vindicta",
+    "passPositions": [
+     4,
+     6,
+     4,
+     4,
+     3
+    ],
+    "borda": 0.3818181818181818,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Sniper witch with flight",
+    "popularity": 30.86,
+    "popularityObscurity": 0.36363636363636365,
+    "spellingCost": 8,
+    "spellingObscurity": 1,
+    "key": 0.4054545454545455
+   },
+   {
+    "id": "hero_orion",
+    "name": "Grey Talon",
+    "passPositions": [
+     0,
+     1,
+     0,
+     0,
+     0
+    ],
+    "borda": 0.01818181818181818,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Archer with arrows and owl",
+    "popularity": 22.07,
+    "popularityObscurity": 0.8181818181818182,
+    "spellingCost": 5,
+    "spellingObscurity": 0.09090909090909091,
+    "key": 0.34181818181818185
+   },
+   {
+    "id": "hero_priest",
+    "name": "Venator",
+    "passPositions": [
+     2,
+     5,
+     6,
+     8,
+     6
+    ],
+    "borda": 0.49090909090909085,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Marksman with grenade and snare",
+    "popularity": 39.11,
+    "popularityObscurity": 0.18181818181818182,
+    "spellingCost": 7,
+    "spellingObscurity": 0.7727272727272727,
+    "key": 0.38136363636363635
+   },
+   {
+    "id": "hero_ratking",
+    "name": "Rat King",
+    "passPositions": [
+     3,
+     2,
+     7,
+     3,
+     9
+    ],
+    "borda": 0.43636363636363634,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Rat-themed brawler",
+    "popularity": 24.46,
+    "popularityObscurity": 0.6818181818181818,
+    "spellingCost": 7,
+    "spellingObscurity": 0.7727272727272727,
+    "key": 0.5513636363636364
+   },
+   {
+    "id": "hero_synth",
+    "name": "Pocket",
+    "passPositions": [
+     10,
+     4,
+     10,
+     9,
+     5
+    ],
+    "borda": 0.6909090909090909,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Portal-hopping teleporting assassin",
+    "popularity": 24.78,
+    "popularityObscurity": 0.45454545454545453,
+    "spellingCost": 6,
+    "spellingObscurity": 0.36363636363636365,
+    "key": 0.5800000000000001
+   },
+   {
+    "id": "hero_unicorn",
+    "name": "Celeste",
+    "passPositions": [
+     8,
+     7,
+     8,
+     7,
+     8
+    ],
+    "borda": 0.6909090909090908,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Light-themed circus mystic",
+    "popularity": 18.71,
+    "popularityObscurity": 1,
+    "spellingCost": 7,
+    "spellingObscurity": 0.7727272727272727,
+    "key": 0.8186363636363636
+   },
+   {
+    "id": "hero_wraith",
+    "name": "Wraith",
+    "passPositions": [
+     7,
+     0,
+     2,
+     1,
+     1
+    ],
+    "borda": 0.2,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Card-throwing telekinetic marksman",
+    "popularity": 45.37,
+    "popularityObscurity": 0,
+    "spellingCost": 6,
+    "spellingObscurity": 0.36363636363636365,
+    "key": 0.1281818181818182
+   },
+   {
+    "id": "hero_yamato",
+    "name": "Yamato",
+    "passPositions": [
+     6,
+     9,
+     3,
+     6,
+     2
+    ],
+    "borda": 0.47272727272727266,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Samurai slash assassin",
+    "popularity": 24.73,
+    "popularityObscurity": 0.5454545454545454,
+    "spellingCost": 6,
+    "spellingObscurity": 0.36363636363636365,
+    "key": 0.49636363636363634
+   }
+  ],
+  "passAgreement": 0.44848484848484843,
+  "orderBeforeRefinement": [
+   "hero_wraith",
+   "hero_orion",
+   "hero_ghost",
+   "hero_priest",
+   "hero_hornet",
+   "hero_frank",
+   "hero_yamato",
+   "hero_ratking",
+   "hero_synth",
+   "hero_drifter",
+   "hero_unicorn",
+   "hero_artist"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_synth",
+    "b": "hero_drifter",
+    "purpose": "rare-contenders",
+    "rarer": "hero_synth"
+   },
+   {
+    "a": "hero_synth",
+    "b": "hero_unicorn",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_synth",
+    "b": "hero_artist",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_drifter",
+    "b": "hero_unicorn",
+    "purpose": "rare-contenders",
+    "rarer": "hero_unicorn"
+   },
+   {
+    "a": "hero_drifter",
+    "b": "hero_artist",
+    "purpose": "rare-contenders",
+    "rarer": "hero_artist"
+   },
+   {
+    "a": "hero_unicorn",
+    "b": "hero_artist",
+    "purpose": "rare-contenders",
+    "rarer": "hero_artist"
+   },
+   {
+    "a": "hero_wraith",
+    "b": "hero_orion",
+    "purpose": "tier-boundary",
+    "rarer": "hero_wraith"
+   },
+   {
+    "a": "hero_ghost",
+    "b": "hero_priest",
+    "purpose": "tier-boundary",
+    "rarer": "hero_priest"
+   },
+   {
+    "a": "hero_yamato",
+    "b": "hero_ratking",
+    "purpose": "tier-boundary",
+    "rarer": "hero_ratking"
+   },
+   {
+    "a": "hero_artist",
+    "b": "hero_unicorn",
+    "purpose": "review",
+    "rarer": "hero_unicorn"
+   }
+  ],
+  "review": [
+   {
+    "name": "Violet",
+    "compareWith": "Celeste",
+    "claim": "should_be_more_obvious",
+    "reason": "Violet is a 100-pt answer, but her name contains a conspicuous T at the end, and she is a standard hero in the roster. Celeste's T is mid-word and equally easy to find. Both are low-association names, so Violet should not sit a full tier above Celeste.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Yamato",
+    "compareWith": "Vindicta",
+    "claim": "should_be_more_obscure",
+    "reason": "Yamato's name has no T at all in its letters (Y-a-m-a-t-o contains a T). It is a well-known hero, but nothing about the name draws attention to the T, so it is less obvious than Vindicta. Vindicta is a famous sniper with a T in the middle, so there is no reason for them to be tied at 60.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Rat King",
+    "compareWith": "Pocket",
+    "claim": "should_be_more_obvious",
+    "reason": "Rat King starts with the word Rat, which has a T right at the beginning of the name and is prominent. Players scanning for T will see it immediately, so it should be easier to recall than Pocket, where the T sits in the final letters of 'Pocket'.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Wraith",
+    "compareWith": "Lady Geist",
+    "claim": "should_be_more_obvious",
+    "reason": "Wraith is a very popular, iconic hero, and the T is in the middle of a short name. Lady Geist is also well known, but her T is less visible, so Wraith should be at least as obvious and probably more so.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}

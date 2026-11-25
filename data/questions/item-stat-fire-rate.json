@@ -1,0 +1,336 @@
+{
+ "question": {
+  "signature": "item-stat:Fire Rate",
+  "category": "item-stat-bonus",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_blitz_bullets",
+   "upgrade_burst_fire",
+   "upgrade_capacitor",
+   "upgrade_fervor",
+   "upgrade_focus_lens",
+   "upgrade_rapid_rounds",
+   "upgrade_ricochet"
+  ],
+  "prompt": "Name an item that gives a built-in Fire Rate bonus (not counting conditional, stacking or active effects).",
+  "validation": {
+   "method": "deterministic",
+   "criterion": "innate unconditional prop labelled \"Fire Rate\" with value > 0"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:11:01.569Z",
+ "answers": [
+  {
+   "entityId": "upgrade_rapid_rounds",
+   "name": "Rapid Rounds",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_blitz_bullets",
+   "name": "Swift Striker",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_burst_fire",
+   "name": "Burst Fire",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_ricochet",
+   "name": "Ricochet",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_fervor",
+   "name": "Frenzy",
+   "rank": 5,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_capacitor",
+   "name": "Capacitor",
+   "rank": 6,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_focus_lens",
+   "name": "Focus Lens",
+   "rank": 7,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "upgrade_blitz_bullets",
+    "name": "Swift Striker",
+    "passPositions": [
+     0,
+     1,
+     1,
+     0,
+     1
+    ],
+    "borda": 0.1,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Fire rate tier 2 weapon item",
+    "popularity": 25.07,
+    "popularityObscurity": 0,
+    "spellingCost": 12,
+    "spellingObscurity": 1,
+    "key": 0.10500000000000001
+   },
+   {
+    "id": "upgrade_burst_fire",
+    "name": "Burst Fire",
+    "passPositions": [
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "borda": 0.3333333333333333,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Fire rate and move speed on hit",
+    "popularity": 10.34,
+    "popularityObscurity": 0.5,
+    "spellingCost": 9,
+    "spellingObscurity": 0.5,
+    "key": 0.4083333333333333
+   },
+   {
+    "id": "upgrade_capacitor",
+    "name": "Capacitor",
+    "passPositions": [
+     6,
+     6,
+     5,
+     6,
+     5
+    ],
+    "borda": 0.9333333333333333,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Tesla projectile slow and stamina block",
+    "popularity": 8.07,
+    "popularityObscurity": 0.6666666666666666,
+    "spellingCost": 9,
+    "spellingObscurity": 0.5,
+    "key": 0.8050000000000002
+   },
+   {
+    "id": "upgrade_fervor",
+    "name": "Frenzy",
+    "passPositions": [
+     3,
+     4,
+     3,
+     4,
+     3
+    ],
+    "borda": 0.5666666666666667,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Low health combat buff with lifesteal",
+    "popularity": 1.32,
+    "popularityObscurity": 0.8333333333333334,
+    "spellingCost": 6,
+    "spellingObscurity": 0,
+    "key": 0.645
+   },
+   {
+    "id": "upgrade_focus_lens",
+    "name": "Focus Lens",
+    "passPositions": [
+     5,
+     5,
+     6,
+     5,
+     6
+    ],
+    "borda": 0.9,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Active silence with delayed damage",
+    "popularity": 1.09,
+    "popularityObscurity": 1,
+    "spellingCost": 9,
+    "spellingObscurity": 0.5,
+    "key": 0.92
+   },
+   {
+    "id": "upgrade_rapid_rounds",
+    "name": "Rapid Rounds",
+    "passPositions": [
+     1,
+     0,
+     0,
+     1,
+     0
+    ],
+    "borda": 0.06666666666666667,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Cheap early fire rate and bullet velocity item",
+    "popularity": 23.53,
+    "popularityObscurity": 0.16666666666666666,
+    "spellingCost": 11,
+    "spellingObscurity": 0.8333333333333334,
+    "key": 0.14500000000000002
+   },
+   {
+    "id": "upgrade_ricochet",
+    "name": "Ricochet",
+    "passPositions": [
+     4,
+     3,
+     4,
+     3,
+     4
+    ],
+    "borda": 0.5999999999999999,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Bullets bounce to nearby enemies",
+    "popularity": 10.76,
+    "popularityObscurity": 0.3333333333333333,
+    "spellingCost": 8,
+    "spellingObscurity": 0.16666666666666666,
+    "key": 0.4716666666666667
+   }
+  ],
+  "passAgreement": 0.8285714285714285,
+  "orderBeforeRefinement": [
+   "upgrade_blitz_bullets",
+   "upgrade_rapid_rounds",
+   "upgrade_burst_fire",
+   "upgrade_ricochet",
+   "upgrade_fervor",
+   "upgrade_capacitor",
+   "upgrade_focus_lens"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_ricochet",
+    "b": "upgrade_fervor",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_fervor"
+   },
+   {
+    "a": "upgrade_ricochet",
+    "b": "upgrade_capacitor",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_capacitor"
+   },
+   {
+    "a": "upgrade_ricochet",
+    "b": "upgrade_focus_lens",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_focus_lens"
+   },
+   {
+    "a": "upgrade_fervor",
+    "b": "upgrade_capacitor",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_capacitor"
+   },
+   {
+    "a": "upgrade_fervor",
+    "b": "upgrade_focus_lens",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_focus_lens"
+   },
+   {
+    "a": "upgrade_capacitor",
+    "b": "upgrade_focus_lens",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_focus_lens"
+   },
+   {
+    "a": "upgrade_blitz_bullets",
+    "b": "upgrade_rapid_rounds",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_rapid_rounds",
+    "b": "upgrade_burst_fire",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_burst_fire"
+   },
+   {
+    "a": "upgrade_rapid_rounds",
+    "b": "upgrade_blitz_bullets",
+    "purpose": "review",
+    "rarer": "upgrade_blitz_bullets"
+   },
+   {
+    "a": "upgrade_focus_lens",
+    "b": "upgrade_capacitor",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Rapid Rounds",
+    "compareWith": "Swift Striker",
+    "claim": "should_be_more_obvious",
+    "reason": "Rapid Rounds is the tier 1 item whose only stat is Fire Rate, so it is the purest fit for the question. Experienced players would name it as readily as Swift Striker, so it should be at or very near 10 pts.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Burst Fire",
+    "compareWith": "Ricochet",
+    "claim": "should_be_more_obvious",
+    "reason": "Burst Fire is a very common Fire Rate upgrade built directly from Rapid Rounds, and players see it constantly. Its Fire Rate is partly tied to a conditional effect, but it still has a base Fire Rate stat. It should rank a bit easier than Ricochet, which is mainly known for its ricochet proc.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Capacitor",
+    "compareWith": "Frenzy",
+    "claim": "should_be_more_obscure",
+    "reason": "Capacitor is known as a slow and silence active, and its Fire Rate 5 is a minor stat that players rarely associate with it. Frenzy has a larger, more visible Fire Rate stat, so Frenzy should be easier than Capacitor.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Focus Lens",
+    "compareWith": "Capacitor",
+    "claim": "should_be_more_obvious",
+    "reason": "Focus Lens is a Spirit item, so players are unlikely to link it to Fire Rate. The 100-point slot is plausible, but Capacitor is also a weapon active whose Fire Rate is a minor stat, and both are comparably obscure. Capacitor should probably be scored at 100 alongside it.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}

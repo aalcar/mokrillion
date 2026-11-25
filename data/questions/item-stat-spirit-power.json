@@ -1,0 +1,744 @@
+{
+ "question": {
+  "signature": "item-stat:Spirit Power",
+  "category": "item-stat-bonus",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_absorbing_armor",
+   "upgrade_boundless_spirit",
+   "upgrade_counterspell",
+   "upgrade_crackshot",
+   "upgrade_damage_recycler",
+   "upgrade_ethereal_bullets",
+   "upgrade_healbane",
+   "upgrade_health_nova",
+   "upgrade_health_stealing_magic",
+   "upgrade_improved_spirit",
+   "upgrade_infuser",
+   "upgrade_magic_carpet",
+   "upgrade_phantom_strike",
+   "upgrade_pristine_emblem",
+   "upgrade_rupture",
+   "upgrade_soaring_spirit",
+   "upgrade_suppressor",
+   "upgrade_tech_overflow",
+   "upgrade_thermal_detonator",
+   "upgrade_veil_walker"
+  ],
+  "prompt": "Name an item that gives a built-in Spirit Power bonus (not counting conditional, stacking or active effects).",
+  "validation": {
+   "method": "deterministic",
+   "criterion": "innate unconditional prop labelled \"Spirit Power\" with value > 0"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:08:51.402Z",
+ "answers": [
+  {
+   "entityId": "upgrade_improved_spirit",
+   "name": "Extra Spirit",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_soaring_spirit",
+   "name": "Improved Spirit",
+   "rank": 2,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_boundless_spirit",
+   "name": "Boundless Spirit",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_health_stealing_magic",
+   "name": "Spirit Lifesteal",
+   "rank": 4,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_suppressor",
+   "name": "Suppressor",
+   "rank": 5,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_healbane",
+   "name": "Healbane",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_tech_overflow",
+   "name": "Spiritual Overflow",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_infuser",
+   "name": "Infuser",
+   "rank": 8,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_crackshot",
+   "name": "Mystic Shot",
+   "rank": 9,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_ethereal_bullets",
+   "name": "Mercurial Magnum",
+   "rank": 10,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_absorbing_armor",
+   "name": "Witchmail",
+   "rank": 11,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_rupture",
+   "name": "Decay",
+   "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_damage_recycler",
+   "name": "Leech",
+   "rank": 13,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_counterspell",
+   "name": "Counterspell",
+   "rank": 14,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_pristine_emblem",
+   "name": "Opening Rounds",
+   "rank": 15,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_thermal_detonator",
+   "name": "Alchemical Fire",
+   "rank": 16,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_magic_carpet",
+   "name": "Magic Carpet",
+   "rank": 17,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_health_nova",
+   "name": "Healing Nova",
+   "rank": 18,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_veil_walker",
+   "name": "Veil Walker",
+   "rank": 19,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_phantom_strike",
+   "name": "Phantom Strike",
+   "rank": 20,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "upgrade_absorbing_armor",
+    "name": "Witchmail",
+    "passPositions": [
+     9,
+     12,
+     10,
+     9,
+     12
+    ],
+    "borda": 0.5473684210526315,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "spirit resist and cooldown reduction",
+    "popularity": 5.69,
+    "popularityObscurity": 0.5263157894736842,
+    "spellingCost": 9,
+    "spellingObscurity": 0.4473684210526316,
+    "key": 0.5339473684210526
+   },
+   {
+    "id": "upgrade_boundless_spirit",
+    "name": "Boundless Spirit",
+    "passPositions": [
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "borda": 0.10526315789473684,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "big Spirit Power capstone item",
+    "popularity": 29.17,
+    "popularityObscurity": 0.15789473684210525,
+    "spellingCost": 9,
+    "spellingObscurity": 0.4473684210526316,
+    "key": 0.14342105263157895
+   },
+   {
+    "id": "upgrade_counterspell",
+    "name": "Counterspell",
+    "passPositions": [
+     16,
+     17,
+     16,
+     17,
+     15
+    ],
+    "borda": 0.8526315789473685,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "spell parry defensive item",
+    "popularity": 9.93,
+    "popularityObscurity": 0.3157894736842105,
+    "spellingCost": 12,
+    "spellingObscurity": 0.7368421052631579,
+    "key": 0.6321052631578947
+   },
+   {
+    "id": "upgrade_crackshot",
+    "name": "Mystic Shot",
+    "passPositions": [
+     3,
+     3,
+     3,
+     3,
+     3
+    ],
+    "borda": 0.15789473684210525,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "cheap weapon item with spirit bullet proc",
+    "popularity": 9.79,
+    "popularityObscurity": 0.3684210526315789,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5789473684210527,
+    "key": 0.2631578947368421
+   },
+   {
+    "id": "upgrade_damage_recycler",
+    "name": "Leech",
+    "passPositions": [
+     13,
+     7,
+     12,
+     6,
+     13
+    ],
+    "borda": 0.5368421052631579,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "lifesteal capstone",
+    "popularity": 3.99,
+    "popularityObscurity": 0.631578947368421,
+    "spellingCost": 5,
+    "spellingObscurity": 0.02631578947368421,
+    "key": 0.5492105263157896
+   },
+   {
+    "id": "upgrade_ethereal_bullets",
+    "name": "Mercurial Magnum",
+    "passPositions": [
+     12,
+     13,
+     9,
+     13,
+     11
+    ],
+    "borda": 0.6105263157894737,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "imbued ability reload item",
+    "popularity": 7.24,
+    "popularityObscurity": 0.47368421052631576,
+    "spellingCost": 6,
+    "spellingObscurity": 0.13157894736842105,
+    "key": 0.531842105263158
+   },
+   {
+    "id": "upgrade_healbane",
+    "name": "Healbane",
+    "passPositions": [
+     10,
+     10,
+     6,
+     10,
+     10
+    ],
+    "borda": 0.48421052631578937,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "healing reduction on spirit damage",
+    "popularity": 31,
+    "popularityObscurity": 0.10526315789473684,
+    "spellingCost": 8,
+    "spellingObscurity": 0.3157894736842105,
+    "key": 0.32421052631578945
+   },
+   {
+    "id": "upgrade_health_nova",
+    "name": "Healing Nova",
+    "passPositions": [
+     15,
+     15,
+     14,
+     14,
+     16
+    ],
+    "borda": 0.7789473684210526,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "group heal active",
+    "popularity": 1.18,
+    "popularityObscurity": 0.9473684210526315,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5789473684210527,
+    "key": 0.8363157894736842
+   },
+   {
+    "id": "upgrade_health_stealing_magic",
+    "name": "Spirit Lifesteal",
+    "passPositions": [
+     4,
+     4,
+     4,
+     4,
+     4
+    ],
+    "borda": 0.21052631578947367,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "spirit lifesteal component",
+    "popularity": 20.88,
+    "popularityObscurity": 0.21052631578947367,
+    "spellingCost": 15,
+    "spellingObscurity": 1,
+    "key": 0.25
+   },
+   {
+    "id": "upgrade_improved_spirit",
+    "name": "Extra Spirit",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "basic Spirit Power starter item",
+    "popularity": 49.29,
+    "popularityObscurity": 0,
+    "spellingCost": 11,
+    "spellingObscurity": 0.6842105263157895,
+    "key": 0.034210526315789476
+   },
+   {
+    "id": "upgrade_infuser",
+    "name": "Infuser",
+    "passPositions": [
+     5,
+     5,
+     7,
+     7,
+     5
+    ],
+    "borda": 0.3052631578947368,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "spirit lifesteal and power active",
+    "popularity": 3.91,
+    "popularityObscurity": 0.6842105263157895,
+    "spellingCost": 7,
+    "spellingObscurity": 0.21052631578947367,
+    "key": 0.45210526315789473
+   },
+   {
+    "id": "upgrade_magic_carpet",
+    "name": "Magic Carpet",
+    "passPositions": [
+     14,
+     11,
+     13,
+     8,
+     14
+    ],
+    "borda": 0.631578947368421,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "flying escape active",
+    "popularity": 0.8,
+    "popularityObscurity": 1,
+    "spellingCost": 6,
+    "spellingObscurity": 0.13157894736842105,
+    "key": 0.7539473684210527
+   },
+   {
+    "id": "upgrade_phantom_strike",
+    "name": "Phantom Strike",
+    "passPositions": [
+     18,
+     16,
+     19,
+     19,
+     18
+    ],
+    "borda": 0.9473684210526315,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "teleport pull-down active",
+    "popularity": 3.37,
+    "popularityObscurity": 0.7368421052631579,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8157894736842105,
+    "key": 0.8565789473684211
+   },
+   {
+    "id": "upgrade_pristine_emblem",
+    "name": "Opening Rounds",
+    "passPositions": [
+     19,
+     19,
+     17,
+     18,
+     19
+    ],
+    "borda": 0.968421052631579,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "weapon damage versus high health",
+    "popularity": 16.64,
+    "popularityObscurity": 0.2631578947368421,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8157894736842105,
+    "key": 0.6786842105263158
+   },
+   {
+    "id": "upgrade_rupture",
+    "name": "Decay",
+    "passPositions": [
+     6,
+     8,
+     11,
+     5,
+     6
+    ],
+    "borda": 0.37894736842105264,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "active health-based DoT",
+    "popularity": 2.25,
+    "popularityObscurity": 0.8421052631578947,
+    "spellingCost": 5,
+    "spellingObscurity": 0.02631578947368421,
+    "key": 0.546578947368421
+   },
+   {
+    "id": "upgrade_soaring_spirit",
+    "name": "Improved Spirit",
+    "passPositions": [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "borda": 0.05263157894736842,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "tier 2 flat Spirit Power upgrade",
+    "popularity": 44.97,
+    "popularityObscurity": 0.05263157894736842,
+    "spellingCost": 14,
+    "spellingObscurity": 0.9210526315789473,
+    "key": 0.09605263157894738
+   },
+   {
+    "id": "upgrade_suppressor",
+    "name": "Suppressor",
+    "passPositions": [
+     8,
+     9,
+     5,
+     11,
+     7
+    ],
+    "borda": 0.42105263157894735,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "fire rate reduction on spirit damage",
+    "popularity": 5.27,
+    "popularityObscurity": 0.5789473684210527,
+    "spellingCost": 8,
+    "spellingObscurity": 0.3157894736842105,
+    "key": 0.4789473684210527
+   },
+   {
+    "id": "upgrade_tech_overflow",
+    "name": "Spiritual Overflow",
+    "passPositions": [
+     11,
+     6,
+     8,
+     12,
+     9
+    ],
+    "borda": 0.4842105263157895,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "charge-up lifesteal weapon item",
+    "popularity": 8.69,
+    "popularityObscurity": 0.42105263157894735,
+    "spellingCost": 8,
+    "spellingObscurity": 0.3157894736842105,
+    "key": 0.45052631578947366
+   },
+   {
+    "id": "upgrade_thermal_detonator",
+    "name": "Alchemical Fire",
+    "passPositions": [
+     7,
+     14,
+     15,
+     15,
+     8
+    ],
+    "borda": 0.6210526315789473,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "thrown flask damage active",
+    "popularity": 1.5,
+    "popularityObscurity": 0.8947368421052632,
+    "spellingCost": 14,
+    "spellingObscurity": 0.9210526315789473,
+    "key": 0.7455263157894737
+   },
+   {
+    "id": "upgrade_veil_walker",
+    "name": "Veil Walker",
+    "passPositions": [
+     17,
+     18,
+     18,
+     16,
+     17
+    ],
+    "borda": 0.9052631578947368,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "stealth and speed from veils",
+    "popularity": 2.64,
+    "popularityObscurity": 0.7894736842105263,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5789473684210527,
+    "key": 0.8426315789473684
+   }
+  ],
+  "passAgreement": 0.7873684210526315,
+  "orderBeforeRefinement": [
+   "upgrade_improved_spirit",
+   "upgrade_soaring_spirit",
+   "upgrade_boundless_spirit",
+   "upgrade_health_stealing_magic",
+   "upgrade_crackshot",
+   "upgrade_healbane",
+   "upgrade_tech_overflow",
+   "upgrade_infuser",
+   "upgrade_suppressor",
+   "upgrade_ethereal_bullets",
+   "upgrade_absorbing_armor",
+   "upgrade_rupture",
+   "upgrade_damage_recycler",
+   "upgrade_counterspell",
+   "upgrade_pristine_emblem",
+   "upgrade_thermal_detonator",
+   "upgrade_magic_carpet",
+   "upgrade_health_nova",
+   "upgrade_veil_walker",
+   "upgrade_phantom_strike"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_magic_carpet",
+    "b": "upgrade_health_nova",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_health_nova"
+   },
+   {
+    "a": "upgrade_magic_carpet",
+    "b": "upgrade_veil_walker",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_veil_walker"
+   },
+   {
+    "a": "upgrade_magic_carpet",
+    "b": "upgrade_phantom_strike",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_phantom_strike"
+   },
+   {
+    "a": "upgrade_health_nova",
+    "b": "upgrade_veil_walker",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_veil_walker"
+   },
+   {
+    "a": "upgrade_health_nova",
+    "b": "upgrade_phantom_strike",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_phantom_strike"
+   },
+   {
+    "a": "upgrade_veil_walker",
+    "b": "upgrade_phantom_strike",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_phantom_strike"
+   },
+   {
+    "a": "upgrade_soaring_spirit",
+    "b": "upgrade_boundless_spirit",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_boundless_spirit"
+   },
+   {
+    "a": "upgrade_crackshot",
+    "b": "upgrade_healbane",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_absorbing_armor",
+    "b": "upgrade_rupture",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_phantom_strike",
+    "b": "upgrade_veil_walker",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_absorbing_armor",
+    "b": "upgrade_crackshot",
+    "purpose": "review",
+    "rarer": "upgrade_absorbing_armor"
+   },
+   {
+    "a": "upgrade_crackshot",
+    "b": "upgrade_suppressor",
+    "purpose": "review",
+    "rarer": "upgrade_crackshot"
+   }
+  ],
+  "review": [
+   {
+    "name": "Phantom Strike",
+    "compareWith": "Veil Walker",
+    "claim": "should_be_more_obvious",
+    "reason": "Phantom Strike is a well-known, memorable item. The wiki lists only Spirit Power 8 as a minor secondary stat, but players know the item by name. Veil Walker is a lesser-known Tier 3 item with a small Spirit Power stat, so it is more likely to be forgotten here and should score at least as high as Phantom Strike.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Witchmail",
+    "compareWith": "Mystic Shot",
+    "claim": "should_be_more_obvious",
+    "reason": "Witchmail's Spirit Power 14 is among the larger flat values on any item, and it is a well-known Spirit-defence item. It is likely recalled about as readily as Mystic Shot, so it should not sit two tiers above it.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Mystic Shot",
+    "compareWith": "Suppressor",
+    "claim": "should_be_more_obscure",
+    "reason": "Mystic Shot is a Weapon item whose main identity is its bonus Spirit Damage bullet, and its Spirit Power is only 7. It is not as strongly tied to this question as the dedicated Spirit items. It should be closer to Suppressor's tier than to the 30-point tier.",
+    "outcome": "applied"
+   }
+  ]
+ }
+}

@@ -16,26 +16,26 @@
    "criterion": "innate unconditional prop labelled \"Melee Resist\" with value > 0"
   }
  },
- "knowledgeVersion": "2026-11-24-3a226cba",
- "scoringVersion": "2",
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T02:14:03.441Z",
+ "generatedAt": "2026-11-25T04:11:17.037Z",
  "answers": [
   {
-   "entityId": "upgrade_juggernaut",
-   "name": "Juggernaut",
+   "entityId": "upgrade_close_range",
+   "name": "Close Quarters",
    "rank": 1,
    "score": 10
   },
   {
-   "entityId": "upgrade_close_range",
-   "name": "Close Quarters",
+   "entityId": "upgrade_melee_rebuttal",
+   "name": "Rebuttal",
    "rank": 2,
    "score": 30
   },
   {
-   "entityId": "upgrade_melee_rebuttal",
-   "name": "Rebuttal",
+   "entityId": "upgrade_juggernaut",
+   "name": "Juggernaut",
    "rank": 3,
    "score": 60
   },
@@ -59,92 +59,92 @@
     "name": "Point Blank",
     "passPositions": [
      1,
-     3,
+     1,
+     1,
      2,
-     3,
-     3
+     1
     ],
-    "borda": 0.6,
+    "borda": 0.3,
     "fit": {
-     "expected": 0,
-     "neutral": 1,
-     "surprising": 4
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
     },
-    "perception": "Close-range weapon damage and slow item",
-    "popularity": 3.12,
+    "perception": "Close-range damage and slow upgrade with melee resist",
+    "popularity": 7.55,
     "popularityObscurity": 0.5,
     "spellingCost": 10,
     "spellingObscurity": 0.375,
-    "key": 0.5675
+    "key": 0.38375000000000004
    },
    {
     "id": "upgrade_close_range",
     "name": "Close Quarters",
     "passPositions": [
      0,
-     2,
-     3,
-     2,
-     2
+     0,
+     0,
+     0,
+     0
     ],
-    "borda": 0.45,
+    "borda": 0,
     "fit": {
-     "expected": 0,
-     "neutral": 3,
-     "surprising": 2
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
     },
-    "perception": "Cheap close-range weapon damage item",
-    "popularity": 5.02,
+    "perception": "Cheap close-range weapon damage item with melee resist",
+    "popularity": 16.2,
     "popularityObscurity": 0,
     "spellingCost": 13,
     "spellingObscurity": 1,
-    "key": 0.4600000000000001
+    "key": 0.05
    },
    {
     "id": "upgrade_juggernaut",
     "name": "Juggernaut",
     "passPositions": [
+     3,
      2,
-     1,
-     0,
-     0,
-     0
+     3,
+     3,
+     2
     ],
-    "borda": 0.15,
+    "borda": 0.65,
     "fit": {
-     "expected": 1,
-     "neutral": 4,
+     "expected": 0,
+     "neutral": 5,
      "surprising": 0
     },
-    "perception": "Big tier 4 vitality item with health, fire rate slow and bullet resist",
-    "popularity": 2.15,
+    "perception": "Late-game tanky vitality item with fire rate slow",
+    "popularity": 6.16,
     "popularityObscurity": 0.75,
     "spellingCost": 10,
     "spellingObscurity": 0.375,
-    "key": 0.2325
+    "key": 0.67625
    },
    {
     "id": "upgrade_melee_rebuttal",
     "name": "Rebuttal",
     "passPositions": [
+     2,
      3,
-     0,
+     2,
      1,
-     1,
-     1
+     3
     ],
-    "borda": 0.3,
+    "borda": 0.55,
     "fit": {
-     "expected": 1,
-     "neutral": 3,
-     "surprising": 1
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
     },
-    "perception": "Parry item that heals and reflects damage after a parry",
-    "popularity": 0.04,
+    "perception": "Parry item that reflects damage",
+    "popularity": 3.81,
     "popularityObscurity": 1,
     "spellingCost": 8,
     "spellingObscurity": 0,
-    "key": 0.33999999999999997
+    "key": 0.7025000000000001
    },
    {
     "id": "upgrade_tech_damage_pulse",
@@ -162,52 +162,28 @@
      "neutral": 0,
      "surprising": 5
     },
-    "perception": "Spirit AoE pulse damage item that hurts you too",
-    "popularity": 4.09,
+    "perception": "Spirit damage aura item with health",
+    "popularity": 12.88,
     "popularityObscurity": 0.25,
     "spellingCost": 12,
     "spellingObscurity": 0.75,
-    "key": 0.9
+    "key": 0.6875
    }
   ],
-  "passAgreement": 0.52,
+  "passAgreement": 0.7999999999999999,
   "orderBeforeRefinement": [
-   "upgrade_juggernaut",
-   "upgrade_melee_rebuttal",
    "upgrade_close_range",
    "upgrade_close_quarter_combat",
-   "upgrade_tech_damage_pulse"
+   "upgrade_juggernaut",
+   "upgrade_tech_damage_pulse",
+   "upgrade_melee_rebuttal"
   ],
   "pairwise": [
    {
-    "a": "upgrade_melee_rebuttal",
-    "b": "upgrade_close_range",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_melee_rebuttal"
-   },
-   {
-    "a": "upgrade_melee_rebuttal",
-    "b": "upgrade_close_quarter_combat",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_melee_rebuttal",
-    "b": "upgrade_tech_damage_pulse",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_tech_damage_pulse"
-   },
-   {
-    "a": "upgrade_close_range",
-    "b": "upgrade_close_quarter_combat",
+    "a": "upgrade_close_quarter_combat",
+    "b": "upgrade_juggernaut",
     "purpose": "rare-contenders",
     "rarer": "upgrade_close_quarter_combat"
-   },
-   {
-    "a": "upgrade_close_range",
-    "b": "upgrade_tech_damage_pulse",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_tech_damage_pulse"
    },
    {
     "a": "upgrade_close_quarter_combat",
@@ -216,26 +192,56 @@
     "rarer": "upgrade_tech_damage_pulse"
    },
    {
+    "a": "upgrade_close_quarter_combat",
+    "b": "upgrade_melee_rebuttal",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_close_quarter_combat"
+   },
+   {
+    "a": "upgrade_juggernaut",
+    "b": "upgrade_tech_damage_pulse",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_tech_damage_pulse"
+   },
+   {
+    "a": "upgrade_juggernaut",
+    "b": "upgrade_melee_rebuttal",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_juggernaut"
+   },
+   {
     "a": "upgrade_tech_damage_pulse",
+    "b": "upgrade_melee_rebuttal",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_tech_damage_pulse"
+   },
+   {
+    "a": "upgrade_close_quarter_combat",
+    "b": "upgrade_juggernaut",
+    "purpose": "review",
+    "rarer": "upgrade_close_quarter_combat"
+   },
+   {
+    "a": "upgrade_juggernaut",
     "b": "upgrade_close_quarter_combat",
     "purpose": "review",
-    "rarer": null
+    "rarer": "upgrade_close_quarter_combat"
    }
   ],
   "review": [
    {
-    "name": "Torment Pulse",
-    "compareWith": "Point Blank",
+    "name": "Point Blank",
+    "compareWith": "Juggernaut",
     "claim": "should_be_more_obvious",
-    "reason": "Torment Pulse is a very common, widely bought spirit item, so players know it well. Point Blank is a much less commonly built item whose resist bonus is not its defining trait. Neither is a famous melee resist item, but Point Blank is likelier to be the more forgotten answer, so the 100-point slot looks mis-ordered.",
+    "reason": "Point Blank is a Tier 3 weapon item whose name and effect are tied to Close Quarters, which is the most obvious answer here. Players who think of Close Quarters will often think of its upgrade, and it has a flat 30 Melee Resist, the highest on the list. Juggernaut is a 6400-soul Tier 4 item that players mostly know for the slow resist and the fire-rate slow, so its melee resist is less obvious.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Rebuttal",
-    "compareWith": "Close Quarters",
+    "name": "Juggernaut",
+    "compareWith": "Point Blank",
     "claim": "should_be_more_obscure",
-    "reason": "Rebuttal is mostly known as an active item that reflects melee damage, and its built-in resist is a side detail. Players asked about melee resist would think of it less readily than Close Quarters, which is more directly tied to melee defense, so Rebuttal should rank at least as obscure as Close Quarters.",
-    "outcome": "ignored-invalid"
+    "reason": "Juggernaut is known for its Slow Resist, move speed and fire-rate slow aura, not for melee resist. It is a late-game item that few players buy, and its melee resist is a minor stat. It should be rarer than Point Blank, which is linked to Close Quarters and has a stronger melee resist.",
+    "outcome": "rejected-by-comparison"
    }
   ]
  }

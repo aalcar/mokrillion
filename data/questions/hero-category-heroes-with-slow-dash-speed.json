@@ -1,0 +1,521 @@
+{
+ "question": {
+  "signature": "hero-category:Heroes with slow dash speed",
+  "prompt": "Name a hero with slow dash speed.",
+  "category": "hero-weapon",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_atlas",
+   "hero_bebop",
+   "hero_bookworm",
+   "hero_chessmaster",
+   "hero_dynamo",
+   "hero_familiar",
+   "hero_frank",
+   "hero_ghost",
+   "hero_kelvin",
+   "hero_krill",
+   "hero_priest",
+   "hero_ratking",
+   "hero_shiv"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "in wiki category \"Heroes with slow dash speed\""
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:13:07.117Z",
+ "answers": [
+  {
+   "entityId": "hero_atlas",
+   "name": "Abrams",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_bebop",
+   "name": "Bebop",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_dynamo",
+   "name": "Dynamo",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "hero_ghost",
+   "name": "Lady Geist",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_kelvin",
+   "name": "Kelvin",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "hero_krill",
+   "name": "Mo & Krill",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "hero_frank",
+   "name": "Victor",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "hero_priest",
+   "name": "Venator",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "hero_shiv",
+   "name": "Shiv",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "hero_ratking",
+   "name": "Rat King",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "hero_chessmaster",
+   "name": "Solomon",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "hero_bookworm",
+   "name": "Paige",
+   "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "hero_familiar",
+   "name": "Rem",
+   "rank": 13,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "hero_atlas",
+    "name": "Abrams",
+    "passPositions": [
+     11,
+     2,
+     2,
+     0,
+     0
+    ],
+    "borda": 0.25,
+    "fit": {
+     "expected": 2,
+     "neutral": 1,
+     "surprising": 2
+    },
+    "perception": "shoulder charge tank",
+    "popularity": 39.95,
+    "popularityObscurity": 0.08333333333333333,
+    "spellingCost": 6,
+    "spellingObscurity": 0.625,
+    "key": 0.20208333333333334
+   },
+   {
+    "id": "hero_bebop",
+    "name": "Bebop",
+    "passPositions": [
+     1,
+     4,
+     3,
+     3,
+     2
+    ],
+    "borda": 0.21666666666666665,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "hook and hyper beam",
+    "popularity": 50.94,
+    "popularityObscurity": 0,
+    "spellingCost": 5,
+    "spellingObscurity": 0.375,
+    "key": 0.1379166666666667
+   },
+   {
+    "id": "hero_bookworm",
+    "name": "Paige",
+    "passPositions": [
+     7,
+     8,
+     7,
+     9,
+     10
+    ],
+    "borda": 0.6833333333333333,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "book dragon healer",
+    "popularity": 32.79,
+    "popularityObscurity": 0.4166666666666667,
+    "spellingCost": 5,
+    "spellingObscurity": 0.375,
+    "key": 0.56125
+   },
+   {
+    "id": "hero_chessmaster",
+    "name": "Solomon",
+    "passPositions": [
+     8,
+     10,
+     10,
+     8,
+     9
+    ],
+    "borda": 0.75,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "chess-themed support with Develop Queen",
+    "popularity": 9.61,
+    "popularityObscurity": 1,
+    "spellingCost": 7,
+    "spellingObscurity": 0.9166666666666666,
+    "key": 0.8583333333333334
+   },
+   {
+    "id": "hero_dynamo",
+    "name": "Dynamo",
+    "passPositions": [
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "borda": 0.03333333333333333,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "singularity and heavy healer",
+    "popularity": 25.11,
+    "popularityObscurity": 0.5,
+    "spellingCost": 6,
+    "spellingObscurity": 0.625,
+    "key": 0.24958333333333335
+   },
+   {
+    "id": "hero_familiar",
+    "name": "Rem",
+    "passPositions": [
+     9,
+     9,
+     8,
+     11,
+     11
+    ],
+    "borda": 0.7999999999999999,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "sleepy healer with helpers",
+    "popularity": 18.16,
+    "popularityObscurity": 0.9166666666666666,
+    "spellingCost": 3,
+    "spellingObscurity": 0.08333333333333333,
+    "key": 0.8108333333333333
+   },
+   {
+    "id": "hero_frank",
+    "name": "Victor",
+    "passPositions": [
+     4,
+     6,
+     6,
+     4,
+     4
+    ],
+    "borda": 0.39999999999999997,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "revive and shock brawler",
+    "popularity": 24.46,
+    "popularityObscurity": 0.7083333333333334,
+    "spellingCost": 6,
+    "spellingObscurity": 0.625,
+    "key": 0.5345833333333334
+   },
+   {
+    "id": "hero_ghost",
+    "name": "Lady Geist",
+    "passPositions": [
+     2,
+     5,
+     5,
+     5,
+     8
+    ],
+    "borda": 0.4166666666666667,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "life drain and health sacrifice",
+    "popularity": 37.57,
+    "popularityObscurity": 0.3333333333333333,
+    "spellingCost": 4,
+    "spellingObscurity": 0.20833333333333334,
+    "key": 0.3729166666666667
+   },
+   {
+    "id": "hero_kelvin",
+    "name": "Kelvin",
+    "passPositions": [
+     3,
+     1,
+     1,
+     6,
+     5
+    ],
+    "borda": 0.26666666666666666,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "ice healer with Ice Path",
+    "popularity": 25.01,
+    "popularityObscurity": 0.5833333333333334,
+    "spellingCost": 6,
+    "spellingObscurity": 0.625,
+    "key": 0.41125
+   },
+   {
+    "id": "hero_krill",
+    "name": "Mo & Krill",
+    "passPositions": [
+     5,
+     3,
+     4,
+     2,
+     3
+    ],
+    "borda": 0.2833333333333333,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "burrowing brawler",
+    "popularity": 21.96,
+    "popularityObscurity": 0.8333333333333334,
+    "spellingCost": 2,
+    "spellingObscurity": 0,
+    "key": 0.48916666666666675
+   },
+   {
+    "id": "hero_priest",
+    "name": "Venator",
+    "passPositions": [
+     6,
+     11,
+     9,
+     10,
+     12
+    ],
+    "borda": 0.8,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "sniper-style marksman with traps",
+    "popularity": 39.11,
+    "popularityObscurity": 0.16666666666666666,
+    "spellingCost": 7,
+    "spellingObscurity": 0.9166666666666666,
+    "key": 0.5525000000000001
+   },
+   {
+    "id": "hero_ratking",
+    "name": "Rat King",
+    "passPositions": [
+     10,
+     12,
+     11,
+     7,
+     7
+    ],
+    "borda": 0.7833333333333334,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "rats and scrap, mobile trickster",
+    "popularity": 24.46,
+    "popularityObscurity": 0.7083333333333334,
+    "spellingCost": 7,
+    "spellingObscurity": 0.9166666666666666,
+    "key": 0.7600000000000001
+   },
+   {
+    "id": "hero_shiv",
+    "name": "Shiv",
+    "passPositions": [
+     12,
+     7,
+     12,
+     12,
+     6
+    ],
+    "borda": 0.8166666666666668,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "fast aggressive bleed brawler",
+    "popularity": 38.71,
+    "popularityObscurity": 0.25,
+    "spellingCost": 4,
+    "spellingObscurity": 0.20833333333333334,
+    "key": 0.5595833333333334
+   }
+  ],
+  "passAgreement": 0.5333333333333333,
+  "orderBeforeRefinement": [
+   "hero_bebop",
+   "hero_atlas",
+   "hero_dynamo",
+   "hero_ghost",
+   "hero_kelvin",
+   "hero_krill",
+   "hero_frank",
+   "hero_priest",
+   "hero_shiv",
+   "hero_bookworm",
+   "hero_ratking",
+   "hero_familiar",
+   "hero_chessmaster"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_bookworm",
+    "b": "hero_ratking",
+    "purpose": "rare-contenders",
+    "rarer": "hero_bookworm"
+   },
+   {
+    "a": "hero_bookworm",
+    "b": "hero_familiar",
+    "purpose": "rare-contenders",
+    "rarer": "hero_familiar"
+   },
+   {
+    "a": "hero_bookworm",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_ratking",
+    "b": "hero_familiar",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_ratking",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_familiar",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_bebop",
+    "b": "hero_atlas",
+    "purpose": "tier-boundary",
+    "rarer": "hero_bebop"
+   },
+   {
+    "a": "hero_dynamo",
+    "b": "hero_ghost",
+    "purpose": "tier-boundary",
+    "rarer": "hero_ghost"
+   },
+   {
+    "a": "hero_frank",
+    "b": "hero_priest",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "hero_atlas",
+    "b": "hero_bebop",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "hero_familiar",
+    "b": "hero_bookworm",
+    "purpose": "review",
+    "rarer": "hero_familiar"
+   }
+  ],
+  "review": [
+   {
+    "name": "Abrams",
+    "compareWith": "Bebop",
+    "claim": "should_be_more_obscure",
+    "reason": "Abrams is known for Shoulder Charge, a fast, aggressive charge, not for a slow dash. Players asked about slow dash speed would more likely think of heavy, slow-moving brawlers like Bebop or Dynamo, so 10 pts overstates how obvious Abrams is.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Dynamo",
+    "compareWith": "Lady Geist",
+    "claim": "should_be_more_obvious",
+    "reason": "Dynamo is a well-known bulky healer with slow movement and mobility. Many experienced players would reach for him quickly, which supports a more obvious ranking than Lady Geist at 60 pts.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Rem",
+    "compareWith": "Paige",
+    "claim": "should_be_more_obvious",
+    "reason": "Rem is a distinctive, memorable hero with a recognizable kit, and as a healer she is no more forgettable than Paige. Putting her alone at 100 pts, above Paige, Solomon and the others at 85, is not well supported.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}

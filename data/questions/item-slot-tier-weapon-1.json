@@ -1,0 +1,329 @@
+{
+ "question": {
+  "signature": "item-slot-tier:Weapon:1",
+  "prompt": "Name a Tier 1 Weapon item.",
+  "category": "item-cost",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_clip_size",
+   "upgrade_close_range",
+   "upgrade_headshot_booster",
+   "upgrade_high_velocity_mag",
+   "upgrade_medic_bullets",
+   "upgrade_non_player_bonus",
+   "upgrade_rapid_rounds"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "slot == Weapon && tier == 1"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:03:00.005Z",
+ "answers": [
+  {
+   "entityId": "upgrade_rapid_rounds",
+   "name": "Rapid Rounds",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_clip_size",
+   "name": "Extended Magazine",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_high_velocity_mag",
+   "name": "High-Velocity Rounds",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_medic_bullets",
+   "name": "Restorative Shot",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_close_range",
+   "name": "Close Quarters",
+   "rank": 5,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_non_player_bonus",
+   "name": "Monster Rounds",
+   "rank": 6,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_headshot_booster",
+   "name": "Headshot Booster",
+   "rank": 7,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "upgrade_clip_size",
+    "name": "Extended Magazine",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     2
+    ],
+    "borda": 0.06666666666666667,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Classic ammo and damage starter item",
+    "popularity": 15.22,
+    "popularityObscurity": 0.8333333333333334,
+    "spellingCost": 13,
+    "spellingObscurity": 0.75,
+    "key": 0.40750000000000003
+   },
+   {
+    "id": "upgrade_close_range",
+    "name": "Close Quarters",
+    "passPositions": [
+     5,
+     4,
+     5,
+     5,
+     5
+    ],
+    "borda": 0.8,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Cheap melee resist and close-range damage item",
+    "popularity": 16.2,
+    "popularityObscurity": 0.6666666666666666,
+    "spellingCost": 13,
+    "spellingObscurity": 0.75,
+    "key": 0.7441666666666666
+   },
+   {
+    "id": "upgrade_headshot_booster",
+    "name": "Headshot Booster",
+    "passPositions": [
+     2,
+     1,
+     4,
+     2,
+     0
+    ],
+    "borda": 0.29999999999999993,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Headshot burst damage item, common early buy",
+    "popularity": 9.39,
+    "popularityObscurity": 1,
+    "spellingCost": 15,
+    "spellingObscurity": 1,
+    "key": 0.615
+   },
+   {
+    "id": "upgrade_high_velocity_mag",
+    "name": "High-Velocity Rounds",
+    "passPositions": [
+     1,
+     3,
+     1,
+     4,
+     4
+    ],
+    "borda": 0.4333333333333333,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "Bullet velocity and damage starter item",
+    "popularity": 22.33,
+    "popularityObscurity": 0.16666666666666666,
+    "spellingCost": 3,
+    "spellingObscurity": 0,
+    "key": 0.305
+   },
+   {
+    "id": "upgrade_medic_bullets",
+    "name": "Restorative Shot",
+    "passPositions": [
+     6,
+     6,
+     6,
+     6,
+     6
+    ],
+    "borda": 1,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Sustain item with a healing bullet",
+    "popularity": 18.31,
+    "popularityObscurity": 0.5,
+    "spellingCost": 12,
+    "spellingObscurity": 0.5,
+    "key": 0.7750000000000001
+   },
+   {
+    "id": "upgrade_non_player_bonus",
+    "name": "Monster Rounds",
+    "passPositions": [
+     4,
+     5,
+     2,
+     3,
+     3
+    ],
+    "borda": 0.5666666666666667,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Jungle camp farming item",
+    "popularity": 20.5,
+    "popularityObscurity": 0.3333333333333333,
+    "spellingCost": 7,
+    "spellingObscurity": 0.16666666666666666,
+    "key": 0.45333333333333337
+   },
+   {
+    "id": "upgrade_rapid_rounds",
+    "name": "Rapid Rounds",
+    "passPositions": [
+     3,
+     2,
+     3,
+     1,
+     1
+    ],
+    "borda": 0.33333333333333337,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Basic fire rate item",
+    "popularity": 23.53,
+    "popularityObscurity": 0,
+    "spellingCost": 11,
+    "spellingObscurity": 0.3333333333333333,
+    "key": 0.20000000000000004
+   }
+  ],
+  "passAgreement": 0.5809523809523809,
+  "orderBeforeRefinement": [
+   "upgrade_rapid_rounds",
+   "upgrade_high_velocity_mag",
+   "upgrade_clip_size",
+   "upgrade_non_player_bonus",
+   "upgrade_headshot_booster",
+   "upgrade_close_range",
+   "upgrade_medic_bullets"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_non_player_bonus",
+    "b": "upgrade_headshot_booster",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_non_player_bonus"
+   },
+   {
+    "a": "upgrade_non_player_bonus",
+    "b": "upgrade_close_range",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_non_player_bonus"
+   },
+   {
+    "a": "upgrade_non_player_bonus",
+    "b": "upgrade_medic_bullets",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_medic_bullets"
+   },
+   {
+    "a": "upgrade_headshot_booster",
+    "b": "upgrade_close_range",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_close_range"
+   },
+   {
+    "a": "upgrade_headshot_booster",
+    "b": "upgrade_medic_bullets",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_medic_bullets"
+   },
+   {
+    "a": "upgrade_close_range",
+    "b": "upgrade_medic_bullets",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_medic_bullets"
+   },
+   {
+    "a": "upgrade_rapid_rounds",
+    "b": "upgrade_high_velocity_mag",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_high_velocity_mag"
+   },
+   {
+    "a": "upgrade_high_velocity_mag",
+    "b": "upgrade_clip_size",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_non_player_bonus",
+    "b": "upgrade_close_range",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_clip_size",
+    "b": "upgrade_high_velocity_mag",
+    "purpose": "review",
+    "rarer": "upgrade_high_velocity_mag"
+   }
+  ],
+  "review": [
+   {
+    "name": "Monster Rounds",
+    "compareWith": "Close Quarters",
+    "claim": "should_be_more_obvious",
+    "reason": "Monster Rounds is a very commonly bought jungle/camp-clearing item and its name is distinctive and tied to a clear role. Close Quarters is a more situational buy, so Monster Rounds should score lower than Close Quarters.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Extended Magazine",
+    "compareWith": "High-Velocity Rounds",
+    "claim": "should_be_more_obvious",
+    "reason": "Extended Magazine has a plain, self-explanatory name and is a staple early purchase on ammo-hungry heroes. Players are likely to name it about as readily as High-Velocity Rounds, so the 30-point gap is too wide.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Restorative Shot",
+    "compareWith": "Headshot Booster",
+    "claim": "should_be_more_obvious",
+    "reason": "Restorative Shot is a well-known sustain item and a common lane pick, so it should not sit at the very bottom. It is likely recalled about as often as Headshot Booster, and the 100-point tier is not justified.",
+    "outcome": "applied-by-data"
+   }
+  ]
+ }
+}

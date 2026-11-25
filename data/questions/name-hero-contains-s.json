@@ -1,0 +1,559 @@
+{
+ "question": {
+  "signature": "name:hero:contains:s",
+  "prompt": "Name a hero whose name contains the letter S.",
+  "category": "name-trivia",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_atlas",
+   "hero_chessmaster",
+   "hero_forge",
+   "hero_ghost",
+   "hero_gigawatt",
+   "hero_inferno",
+   "hero_lash",
+   "hero_magician",
+   "hero_necro",
+   "hero_nurse",
+   "hero_shiv",
+   "hero_unicorn",
+   "hero_viscous",
+   "hero_werewolf"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:hero:contains:s"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:18:59.162Z",
+ "answers": [
+  {
+   "entityId": "hero_shiv",
+   "name": "Shiv",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_gigawatt",
+   "name": "Seven",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_atlas",
+   "name": "Abrams",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "hero_lash",
+   "name": "Lash",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_inferno",
+   "name": "Infernus",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "hero_ghost",
+   "name": "Lady Geist",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "hero_werewolf",
+   "name": "Silver",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "hero_necro",
+   "name": "Graves",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "hero_viscous",
+   "name": "Viscous",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "hero_forge",
+   "name": "McGinnis",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "hero_magician",
+   "name": "Sinclair",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "hero_unicorn",
+   "name": "Celeste",
+   "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "hero_nurse",
+   "name": "Nurse Harrow",
+   "rank": 13,
+   "score": 85
+  },
+  {
+   "entityId": "hero_chessmaster",
+   "name": "Solomon",
+   "rank": 14,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "hero_atlas",
+    "name": "Abrams",
+    "passPositions": [
+     2,
+     3,
+     0,
+     2,
+     2
+    ],
+    "borda": 0.13846153846153847,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "tanky shotgun brawler, shoulder charge",
+    "popularity": 39.95,
+    "popularityObscurity": 0.07692307692307693,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5384615384615384,
+    "key": 0.13384615384615386
+   },
+   {
+    "id": "hero_chessmaster",
+    "name": "Solomon",
+    "passPositions": [
+     12,
+     11,
+     9,
+     10,
+     6
+    ],
+    "borda": 0.7384615384615385,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "chess-themed newer hero",
+    "popularity": 9.61,
+    "popularityObscurity": 1,
+    "spellingCost": 7,
+    "spellingObscurity": 0.7692307692307693,
+    "key": 0.8446153846153847
+   },
+   {
+    "id": "hero_forge",
+    "name": "McGinnis",
+    "passPositions": [
+     7,
+     9,
+     11,
+     6,
+     10
+    ],
+    "borda": 0.6615384615384616,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "turret engineer",
+    "popularity": 12.06,
+    "popularityObscurity": 0.8461538461538461,
+    "spellingCost": 3,
+    "spellingObscurity": 0,
+    "key": 0.7023076923076924
+   },
+   {
+    "id": "hero_ghost",
+    "name": "Lady Geist",
+    "passPositions": [
+     8,
+     10,
+     2,
+     5,
+     3
+    ],
+    "borda": 0.43076923076923074,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "health-sacrificing life drain",
+    "popularity": 37.57,
+    "popularityObscurity": 0.3076923076923077,
+    "spellingCost": 4,
+    "spellingObscurity": 0.15384615384615385,
+    "key": 0.3676923076923077
+   },
+   {
+    "id": "hero_gigawatt",
+    "name": "Seven",
+    "passPositions": [
+     0,
+     0,
+     3,
+     0,
+     0
+    ],
+    "borda": 0.046153846153846156,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "lightning mystic",
+    "popularity": 30.41,
+    "popularityObscurity": 0.46153846153846156,
+    "spellingCost": 5,
+    "spellingObscurity": 0.34615384615384615,
+    "key": 0.22730769230769232
+   },
+   {
+    "id": "hero_inferno",
+    "name": "Infernus",
+    "passPositions": [
+     3,
+     2,
+     1,
+     4,
+     7
+    ],
+    "borda": 0.26153846153846155,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "fire damage-over-time mystic",
+    "popularity": 39.43,
+    "popularityObscurity": 0.15384615384615385,
+    "spellingCost": 8,
+    "spellingObscurity": 0.9615384615384616,
+    "key": 0.2534615384615385
+   },
+   {
+    "id": "hero_lash",
+    "name": "Lash",
+    "passPositions": [
+     4,
+     4,
+     6,
+     3,
+     8
+    ],
+    "borda": 0.3846153846153847,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "mobility dive assassin with grapple",
+    "popularity": 46.88,
+    "popularityObscurity": 0,
+    "spellingCost": 4,
+    "spellingObscurity": 0.15384615384615385,
+    "key": 0.21923076923076928
+   },
+   {
+    "id": "hero_magician",
+    "name": "Sinclair",
+    "passPositions": [
+     9,
+     6,
+     7,
+     12,
+     5
+    ],
+    "borda": 0.5999999999999999,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "magician hexer",
+    "popularity": 9.63,
+    "popularityObscurity": 0.9230769230769231,
+    "spellingCost": 8,
+    "spellingObscurity": 0.9615384615384616,
+    "key": 0.7473076923076922
+   },
+   {
+    "id": "hero_necro",
+    "name": "Graves",
+    "passPositions": [
+     10,
+     8,
+     10,
+     9,
+     11
+    ],
+    "borda": 0.7384615384615384,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "skeleton necromancer with jar",
+    "popularity": 32.51,
+    "popularityObscurity": 0.38461538461538464,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5384615384615384,
+    "key": 0.5869230769230769
+   },
+   {
+    "id": "hero_nurse",
+    "name": "Nurse Harrow",
+    "passPositions": [
+     13,
+     13,
+     13,
+     13,
+     13
+    ],
+    "borda": 1,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "healer with needles, newer hero",
+    "popularity": 25.78,
+    "popularityObscurity": 0.5384615384615384,
+    "spellingCost": 5,
+    "spellingObscurity": 0.34615384615384615,
+    "key": 0.7826923076923078
+   },
+   {
+    "id": "hero_shiv",
+    "name": "Shiv",
+    "passPositions": [
+     1,
+     1,
+     4,
+     1,
+     1
+    ],
+    "borda": 0.12307692307692308,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "bleed knife brawler",
+    "popularity": 38.71,
+    "popularityObscurity": 0.23076923076923078,
+    "spellingCost": 4,
+    "spellingObscurity": 0.15384615384615385,
+    "key": 0.1676923076923077
+   },
+   {
+    "id": "hero_unicorn",
+    "name": "Celeste",
+    "passPositions": [
+     11,
+     12,
+     12,
+     11,
+     12
+    ],
+    "borda": 0.8923076923076924,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "light-based carny mystic, newer",
+    "popularity": 18.71,
+    "popularityObscurity": 0.6923076923076923,
+    "spellingCost": 7,
+    "spellingObscurity": 0.7692307692307693,
+    "key": 0.8061538461538462
+   },
+   {
+    "id": "hero_viscous",
+    "name": "Viscous",
+    "passPositions": [
+     5,
+     5,
+     5,
+     7,
+     9
+    ],
+    "borda": 0.476923076923077,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "goo cube brawler",
+    "popularity": 14.57,
+    "popularityObscurity": 0.7692307692307693,
+    "spellingCost": 7,
+    "spellingObscurity": 0.7692307692307693,
+    "key": 0.6084615384615385
+   },
+   {
+    "id": "hero_werewolf",
+    "name": "Silver",
+    "passPositions": [
+     6,
+     7,
+     8,
+     8,
+     4
+    ],
+    "borda": 0.5076923076923077,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "werewolf brawler",
+    "popularity": 19.71,
+    "popularityObscurity": 0.6153846153846154,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5384615384615384,
+    "key": 0.5523076923076924
+   }
+  ],
+  "passAgreement": 0.6439560439560439,
+  "orderBeforeRefinement": [
+   "hero_atlas",
+   "hero_shiv",
+   "hero_lash",
+   "hero_gigawatt",
+   "hero_inferno",
+   "hero_ghost",
+   "hero_werewolf",
+   "hero_necro",
+   "hero_viscous",
+   "hero_forge",
+   "hero_magician",
+   "hero_nurse",
+   "hero_unicorn",
+   "hero_chessmaster"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_magician",
+    "b": "hero_nurse",
+    "purpose": "rare-contenders",
+    "rarer": "hero_nurse"
+   },
+   {
+    "a": "hero_magician",
+    "b": "hero_unicorn",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_magician",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_nurse",
+    "b": "hero_unicorn",
+    "purpose": "rare-contenders",
+    "rarer": "hero_nurse"
+   },
+   {
+    "a": "hero_nurse",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_unicorn",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_atlas",
+    "b": "hero_shiv",
+    "purpose": "tier-boundary",
+    "rarer": "hero_atlas"
+   },
+   {
+    "a": "hero_lash",
+    "b": "hero_gigawatt",
+    "purpose": "tier-boundary",
+    "rarer": "hero_lash"
+   },
+   {
+    "a": "hero_werewolf",
+    "b": "hero_necro",
+    "purpose": "tier-boundary",
+    "rarer": "hero_necro"
+   },
+   {
+    "a": "hero_shiv",
+    "b": "hero_atlas",
+    "purpose": "review",
+    "rarer": "hero_atlas"
+   },
+   {
+    "a": "hero_gigawatt",
+    "b": "hero_atlas",
+    "purpose": "review",
+    "rarer": "hero_atlas"
+   }
+  ],
+  "review": [
+   {
+    "name": "Shiv",
+    "compareWith": "Abrams",
+    "claim": "should_be_more_obscure",
+    "reason": "Shiv is a short name whose S is the first letter, so it is easy to think of. Abrams, by contrast, has an S only at the end, which is easy to overlook, so Abrams should be at least as obscure as Shiv. Giving Shiv a 10 and Abrams a 30 is a plausible gap, but Shiv should not be as obvious as the best answer by a wide margin.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Infernus",
+    "compareWith": "Lash",
+    "claim": "should_be_more_obscure",
+    "reason": "Infernus has its S at the very end of a long name, and nothing about it makes players look for an S. Lash has the S in a prominent position in a short name, so Lash should be easier to think of. Placing them at the same score ignores this difference.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Nurse Harrow",
+    "compareWith": "Solomon",
+    "claim": "should_be_more_obvious",
+    "reason": "Nurse contains an S in a very visible position, so players scanning for S will notice it. Harrow is a healer and gets little attention, but the S is no harder to spot than the one in Solomon, and Solomon's S is the first letter of a very well-known name. The gap between 85 and 100 is therefore wider than warranted for Nurse Harrow, though it still belongs near the obscure end.",
+    "outcome": "applied-by-data"
+   },
+   {
+    "name": "Seven",
+    "compareWith": "Abrams",
+    "claim": "should_be_more_obvious",
+    "reason": "Seven starts with S and is a short, memorable, widely played hero name, so it should come to mind at least as readily as Abrams, whose S is hidden at the end.",
+    "outcome": "applied"
+   }
+  ]
+ }
+}

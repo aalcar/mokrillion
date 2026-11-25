@@ -1,0 +1,273 @@
+{
+ "question": {
+  "signature": "name:hero:starts:v",
+  "prompt": "Name a hero whose name starts with the letter V. Ignore a leading \"The\" and any symbols.",
+  "category": "name-trivia",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_artist",
+   "hero_frank",
+   "hero_hornet",
+   "hero_priest",
+   "hero_viper",
+   "hero_viscous"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:hero:starts:v"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "7",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:19:33.059Z",
+ "answers": [
+  {
+   "entityId": "hero_hornet",
+   "name": "Vindicta",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_viscous",
+   "name": "Viscous",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_viper",
+   "name": "Vyper",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "hero_frank",
+   "name": "Victor",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_priest",
+   "name": "Venator",
+   "rank": 5,
+   "score": 85
+  },
+  {
+   "entityId": "hero_artist",
+   "name": "Violet",
+   "rank": 6,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "hero_artist",
+    "name": "Violet",
+    "passPositions": [
+     4,
+     4,
+     4,
+     4,
+     5
+    ],
+    "borda": 0.8400000000000001,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Mystic artist hero with ink abilities, newer hero",
+    "popularity": 19.01,
+    "popularityObscurity": 0.6,
+    "spellingCost": 6,
+    "spellingObscurity": 0.3,
+    "key": 0.7170000000000001
+   },
+   {
+    "id": "hero_frank",
+    "name": "Victor",
+    "passPositions": [
+     3,
+     2,
+     3,
+     3,
+     3
+    ],
+    "borda": 0.56,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Frankenstein-like brawler who reanimates",
+    "popularity": 24.46,
+    "popularityObscurity": 0.4,
+    "spellingCost": 6,
+    "spellingObscurity": 0.3,
+    "key": 0.4830000000000001
+   },
+   {
+    "id": "hero_hornet",
+    "name": "Vindicta",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Iconic sniper witch with Assassinate, flies",
+    "popularity": 30.86,
+    "popularityObscurity": 0.2,
+    "spellingCost": 8,
+    "spellingObscurity": 1,
+    "key": 0.13
+   },
+   {
+    "id": "hero_priest",
+    "name": "Venator",
+    "passPositions": [
+     5,
+     5,
+     5,
+     5,
+     4
+    ],
+    "borda": 0.96,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Newer marksman with grenade and snap trap, gunslinger-hunter",
+    "popularity": 39.11,
+    "popularityObscurity": 0,
+    "spellingCost": 7,
+    "spellingObscurity": 0.7,
+    "key": 0.5630000000000001
+   },
+   {
+    "id": "hero_viper",
+    "name": "Vyper",
+    "passPositions": [
+     2,
+     3,
+     2,
+     2,
+     2
+    ],
+    "borda": 0.43999999999999995,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Snake-themed assassin with venom, well-known",
+    "popularity": 11.96,
+    "popularityObscurity": 1,
+    "spellingCost": 5,
+    "spellingObscurity": 0,
+    "key": 0.642
+   },
+   {
+    "id": "hero_viscous",
+    "name": "Viscous",
+    "passPositions": [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "borda": 0.2,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Goo blob brawler with Goo Ball, original roster",
+    "popularity": 14.57,
+    "popularityObscurity": 0.8,
+    "spellingCost": 7,
+    "spellingObscurity": 0.7,
+    "key": 0.4650000000000001
+   }
+  ],
+  "passAgreement": 0.8933333333333333,
+  "orderBeforeRefinement": [
+   "hero_hornet",
+   "hero_viscous",
+   "hero_frank",
+   "hero_priest",
+   "hero_viper",
+   "hero_artist"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_frank",
+    "b": "hero_priest",
+    "purpose": "rare-contenders",
+    "rarer": "hero_priest"
+   },
+   {
+    "a": "hero_frank",
+    "b": "hero_viper",
+    "purpose": "rare-contenders",
+    "rarer": "hero_frank"
+   },
+   {
+    "a": "hero_frank",
+    "b": "hero_artist",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_priest",
+    "b": "hero_viper",
+    "purpose": "rare-contenders",
+    "rarer": "hero_priest"
+   },
+   {
+    "a": "hero_priest",
+    "b": "hero_artist",
+    "purpose": "rare-contenders",
+    "rarer": "hero_priest"
+   },
+   {
+    "a": "hero_viper",
+    "b": "hero_artist",
+    "purpose": "rare-contenders",
+    "rarer": "hero_artist"
+   },
+   {
+    "a": "hero_hornet",
+    "b": "hero_viscous",
+    "purpose": "tier-boundary",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Venator",
+    "compareWith": "Violet",
+    "claim": "should_be_more_obvious",
+    "reason": "Venator is a newer hero, but his name is distinctive and a Marksman with a V name would likely be recalled by experienced players. Violet is a generic name that is easy to overlook, so she should be rarer than Venator or at least tied with him for the 100-point slot.",
+    "outcome": "applied-by-data"
+   },
+   {
+    "name": "Vyper",
+    "compareWith": "Victor",
+    "claim": "should_be_more_obvious",
+    "reason": "Vyper has a memorable snake-themed name and a clear Assassin identity, so players usually recall her sooner than Victor. Victor is a less prominent Brawler, so he should be rarer, not tied with her at 60.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}

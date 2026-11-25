@@ -1,7 +1,7 @@
 {
  "question": {
   "signature": "hero-category:Heroes with modified spirit resist",
-  "prompt": "Name a hero whose base Spirit Resist differs from the default.",
+  "prompt": "Name a hero whose Spirit Resist differs from a standard hero's, either at base or in how it grows as they level up.",
   "category": "hero-weapon",
   "entityType": "hero",
   "answerIds": [
@@ -20,7 +20,7 @@
  "knowledgeVersion": "2026-11-24-ba1caa19",
  "scoringVersion": "7",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T03:54:20.431Z",
+ "generatedAt": "2026-11-25T04:14:16.243Z",
  "answers": [
   {
    "entityId": "hero_lash",
@@ -29,14 +29,14 @@
    "score": 10
   },
   {
-   "entityId": "hero_forge",
-   "name": "McGinnis",
+   "entityId": "hero_kelvin",
+   "name": "Kelvin",
    "rank": 2,
    "score": 30
   },
   {
-   "entityId": "hero_kelvin",
-   "name": "Kelvin",
+   "entityId": "hero_forge",
+   "name": "McGinnis",
    "rank": 3,
    "score": 60
   },
@@ -66,8 +66,8 @@
     "name": "Baba",
     "passPositions": [
      5,
-     3,
-     4,
+     2,
+     5,
      4,
      5
     ],
@@ -77,7 +77,7 @@
      "neutral": 2,
      "surprising": 3
     },
-    "perception": "Newer mystic hero with a witchy kit",
+    "perception": "Newer mystic with a hex-style kit and traps",
     "popularity": 10.87,
     "popularityObscurity": 1,
     "spellingCost": 4,
@@ -89,33 +89,33 @@
     "name": "McGinnis",
     "passPositions": [
      0,
-     0,
+     4,
      0,
      0,
      0
     ],
-    "borda": 0,
+    "borda": 0.16,
     "fit": {
      "expected": 0,
-     "neutral": 5,
-     "surprising": 0
+     "neutral": 4,
+     "surprising": 1
     },
-    "perception": "Turret-and-wall zone controller",
+    "perception": "Turret and wall zoning support-caster",
     "popularity": 12.06,
     "popularityObscurity": 0.8,
     "spellingCost": 3,
     "spellingObscurity": 0,
-    "key": 0.32000000000000006
+    "key": 0.4080000000000001
    },
    {
     "id": "hero_kelvin",
     "name": "Kelvin",
     "passPositions": [
-     2,
      1,
-     2,
+     0,
+     3,
      1,
-     1
+     2
     ],
     "borda": 0.27999999999999997,
     "fit": {
@@ -123,7 +123,7 @@
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Ice healer with a beam and shelter",
+    "perception": "Ice healer with Ice Path and Arctic Beam",
     "popularity": 25.01,
     "popularityObscurity": 0.4,
     "spellingCost": 6,
@@ -134,96 +134,96 @@
     "id": "hero_lash",
     "name": "Lash",
     "passPositions": [
-     1,
      4,
+     3,
      1,
-     2,
+     5,
      3
     ],
-    "borda": 0.44000000000000006,
-    "fit": {
-     "expected": 0,
-     "neutral": 2,
-     "surprising": 3
-    },
-    "perception": "Dive assassin with grapple and ground slam",
-    "popularity": 46.88,
-    "popularityObscurity": 0,
-    "spellingCost": 4,
-    "spellingObscurity": 0.3,
-    "key": 0.25700000000000006
-   },
-   {
-    "id": "hero_priest",
-    "name": "Venator",
-    "passPositions": [
-     4,
-     5,
-     5,
-     5,
-     4
-    ],
-    "borda": 0.9199999999999999,
+    "borda": 0.6399999999999999,
     "fit": {
      "expected": 0,
      "neutral": 1,
      "surprising": 4
     },
-    "perception": "Long-range marksman with a stacking-damage ultimate",
+    "perception": "Aggressive grapple diver with Death Slam",
+    "popularity": 46.88,
+    "popularityObscurity": 0,
+    "spellingCost": 4,
+    "spellingObscurity": 0.3,
+    "key": 0.367
+   },
+   {
+    "id": "hero_priest",
+    "name": "Venator",
+    "passPositions": [
+     3,
+     5,
+     4,
+     3,
+     4
+    ],
+    "borda": 0.7600000000000001,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "Long-range marksman with a hard-hitting pistol and Ira Domini ultimate",
     "popularity": 39.11,
     "popularityObscurity": 0.2,
     "spellingCost": 7,
     "spellingObscurity": 1,
-    "key": 0.6360000000000001
+    "key": 0.548
    },
    {
     "id": "hero_synth",
     "name": "Pocket",
     "passPositions": [
-     3,
      2,
-     3,
-     3,
-     2
+     1,
+     2,
+     2,
+     1
     ],
-    "borda": 0.52,
+    "borda": 0.31999999999999995,
     "fit": {
      "expected": 0,
-     "neutral": 4,
-     "surprising": 1
+     "neutral": 5,
+     "surprising": 0
     },
-    "perception": "Teleporting backline assassin with a cloak",
+    "perception": "Mobile backline assassin with portal and hex-like disruption",
     "popularity": 24.78,
     "popularityObscurity": 0.6,
     "spellingCost": 6,
     "spellingObscurity": 0.7,
-    "key": 0.5609999999999999
+    "key": 0.45099999999999996
    }
   ],
-  "passAgreement": 0.7066666666666668,
+  "passAgreement": 0.3866666666666667,
   "orderBeforeRefinement": [
+   "hero_kelvin",
    "hero_lash",
    "hero_forge",
-   "hero_kelvin",
    "hero_synth",
    "hero_priest",
    "hero_baba"
   ],
   "pairwise": [
    {
-    "a": "hero_kelvin",
+    "a": "hero_forge",
     "b": "hero_synth",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "hero_synth"
    },
    {
-    "a": "hero_kelvin",
+    "a": "hero_forge",
     "b": "hero_priest",
     "purpose": "rare-contenders",
     "rarer": "hero_priest"
    },
    {
-    "a": "hero_kelvin",
+    "a": "hero_forge",
     "b": "hero_baba",
     "purpose": "rare-contenders",
     "rarer": "hero_baba"
@@ -247,19 +247,26 @@
     "rarer": null
    },
    {
-    "a": "hero_lash",
-    "b": "hero_forge",
+    "a": "hero_kelvin",
+    "b": "hero_lash",
     "purpose": "tier-boundary",
-    "rarer": "hero_lash"
+    "rarer": null
    }
   ],
   "review": [
    {
-    "name": "McGinnis",
+    "name": "Kelvin",
     "compareWith": "Lash",
     "claim": "should_be_more_obscure",
-    "reason": "Nothing in the wiki facts ties McGinnis to a non-default Spirit Resist. His role is turret control, a trait unrelated to resistances, so a player has no reason to name him first. Its 10 pts assumes players know the stat table, which is not shown.",
+    "reason": "Nothing in the wiki facts ties Kelvin to unusual Spirit Resist, and his Healer/freeze identity is unrelated to the question. Placing him as the single most obvious answer at 10 pts rests on general popularity rather than association with this question. He should not sit below Lash, who is a more commonly cited outlier.",
     "outcome": "applied-by-data"
+   },
+   {
+    "name": "Venator",
+    "compareWith": "Baba",
+    "claim": "should_be_more_obvious",
+    "reason": "Venator is a Marksman with a distinct weapon and kit. He is no more obscure than the others, and Baba being at 100 while Venator is at 85 is fine. But 85 for Venator is too close to the bottom compared with Pocket and McGinnis, so he should rank nearer them.",
+    "outcome": "ignored-invalid"
    }
   ]
  }
