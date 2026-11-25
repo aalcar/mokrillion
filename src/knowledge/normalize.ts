@@ -153,6 +153,8 @@ export function normalize(raw: Raw): KnowledgeFile {
       attributes: {
         internalKey: key,
         heroType: h.Type ?? null,
+        role: langText(lang, h.Role),
+        playstyle: langText(lang, h.Playstyle),
         maxHealth: h.MaxHealth,
         baseHealthRegen: h.BaseHealthRegen,
         maxMoveSpeed: h.MaxMoveSpeed,
@@ -162,6 +164,8 @@ export function normalize(raw: Raw): KnowledgeFile {
         lightMeleeDamage: h.LightMeleeDamage,
         heavyMeleeDamage: h.HeavyMeleeDamage,
         weapon: {
+          name: langText(lang, w.NameKey),
+          description: langText(lang, w.DescKey),
           bulletDamagePerPellet: w.BulletDamage,
           pelletsPerShot: w.BulletsPerShot,
           roundsPerSecond: w.RoundsPerSecond,

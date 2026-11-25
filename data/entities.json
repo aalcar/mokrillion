@@ -23,6 +23,8 @@
    "attributes": {
     "internalKey": "hero_artist",
     "heroType": "Mystic",
+    "role": null,
+    "playstyle": null,
     "maxHealth": 710,
     "baseHealthRegen": 2,
     "maxMoveSpeed": 6.9,
@@ -32,6 +34,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Creative Solutions",
+     "description": null,
      "bulletDamagePerPellet": 30,
      "pelletsPerShot": 1,
      "roundsPerSecond": 1.5385,
@@ -543,6 +547,8 @@
    "attributes": {
     "internalKey": "hero_astro",
     "heroType": "Marksman",
+    "role": "Bounces about dispensing trick shots",
+    "playstyle": "Holliday depends on her skills as a crack shot, shooting things she's bounced into the air. With good aim she can lay out heavy damage. Her movement skills let her isolate her enemies or beat a hasty retreat.",
     "maxHealth": 780,
     "baseHealthRegen": 2,
     "maxMoveSpeed": 8.2,
@@ -552,6 +558,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Doc's Orders",
+     "description": null,
      "bulletDamagePerPellet": 19.7,
      "pelletsPerShot": 1,
      "roundsPerSecond": 2.1164,
@@ -1000,6 +1008,8 @@
    "attributes": {
     "internalKey": "hero_atlas",
     "heroType": "Brawler",
+    "role": "Charges into close combat",
+    "playstyle": "Abrams has the bulk and sustain to lead from the front, often running into the middle of his foes and watching them scatter. If his enemies waste their fire on him, his backline teammates can lay out damage with impunity.",
     "maxHealth": 800,
     "baseHealthRegen": 1.5,
     "maxMoveSpeed": 6.4,
@@ -1009,6 +1019,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Case Closed",
+     "description": "Reloads single shells at a time. Can be interrupted",
      "bulletDamagePerPellet": 3.78,
      "pelletsPerShot": 9,
      "roundsPerSecond": 1.5873,
@@ -1365,6 +1377,8 @@
    "attributes": {
     "internalKey": "hero_baba",
     "heroType": "Mystic",
+    "role": null,
+    "playstyle": null,
     "maxHealth": 780,
     "baseHealthRegen": 2.5,
     "maxMoveSpeed": 6.5,
@@ -1374,6 +1388,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Bunko-Night Special",
+     "description": null,
      "bulletDamagePerPellet": 8.8,
      "pelletsPerShot": 3,
      "roundsPerSecond": 3.2258,
@@ -1948,6 +1964,8 @@
    "attributes": {
     "internalKey": "hero_bebop",
     "heroType": "Brawler",
+    "role": "Hooks an enemy for a knockout combo",
+    "playstyle": "Bebop can string together his abilities in many different ways. Disrupting enemy positions, saving an ally or dealing bursts of damage. When the situation doesn't require subtlety his giant laser still solves many problems.",
     "maxHealth": 880,
     "baseHealthRegen": 2.5,
     "maxMoveSpeed": 6.45,
@@ -1957,6 +1975,8 @@
     "lightMeleeDamage": 63,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Humble Pie",
+     "description": "Fires a continuous beam with no bullet travel",
      "bulletDamagePerPellet": 4.98,
      "pelletsPerShot": 1,
      "roundsPerSecond": 11.905,
@@ -2364,6 +2384,8 @@
    "attributes": {
     "internalKey": "hero_bookworm",
     "heroType": "Healer",
+    "role": null,
+    "playstyle": null,
     "maxHealth": 680,
     "baseHealthRegen": 2,
     "maxMoveSpeed": 6.9,
@@ -2373,6 +2395,8 @@
     "lightMeleeDamage": 42,
     "heavyMeleeDamage": 120,
     "weapon": {
+     "name": "Chapter's End",
+     "description": null,
      "bulletDamagePerPellet": 32,
      "pelletsPerShot": 1,
      "roundsPerSecond": 2,
@@ -2885,6 +2909,8 @@
    "attributes": {
     "internalKey": "hero_chessmaster",
     "heroType": "Mystic",
+    "role": null,
+    "playstyle": null,
     "maxHealth": 780,
     "baseHealthRegen": 2,
     "maxMoveSpeed": 6.7,
@@ -2894,6 +2920,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Alekhine's Gun",
+     "description": null,
      "bulletDamagePerPellet": 25,
      "pelletsPerShot": 1,
      "roundsPerSecond": 2,
@@ -3378,6 +3406,8 @@
    "attributes": {
     "internalKey": "hero_chrono",
     "heroType": "Marksman",
+    "role": "Manipulates Space and Time",
+    "playstyle": "Manipulating time lets Paradox outpace an enemy in one on one combat. She thrives by subjecting her enemies to timely swaps into a waiting pulse grenade, her wall, or into the middle of her teammates.",
     "maxHealth": 730,
     "baseHealthRegen": 1,
     "maxMoveSpeed": 6.7,
@@ -3387,6 +3417,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Trade Secret",
+     "description": null,
      "bulletDamagePerPellet": 6.8,
      "pelletsPerShot": 1,
      "roundsPerSecond": 7.5586,
@@ -3875,6 +3907,8 @@
    "attributes": {
     "internalKey": "hero_deadpack",
     "heroType": "Marksman",
+    "role": null,
+    "playstyle": null,
     "maxHealth": 730,
     "baseHealthRegen": 3.25,
     "maxMoveSpeed": 6.4,
@@ -3884,6 +3918,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Chimera Peace Bringer",
+     "description": null,
      "bulletDamagePerPellet": 15,
      "pelletsPerShot": 1,
      "roundsPerSecond": 4,
@@ -4363,6 +4399,8 @@
    "attributes": {
     "internalKey": "hero_doorman",
     "heroType": "Mystic",
+    "role": null,
+    "playstyle": null,
     "maxHealth": 755,
     "baseHealthRegen": 1,
     "maxMoveSpeed": 7.9,
@@ -4372,6 +4410,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Service With A Smile",
+     "description": null,
      "bulletDamagePerPellet": 24,
      "pelletsPerShot": 1,
      "roundsPerSecond": 1.5873,
@@ -4832,6 +4872,8 @@
    "attributes": {
     "internalKey": "hero_drifter",
     "heroType": "Assassin",
+    "role": null,
+    "playstyle": null,
     "maxHealth": 755,
     "baseHealthRegen": 3.5,
     "maxMoveSpeed": 6.9,
@@ -4841,6 +4883,8 @@
     "lightMeleeDamage": 51.5,
     "heavyMeleeDamage": 120,
     "weapon": {
+     "name": "Crimson Grasp",
+     "description": null,
      "bulletDamagePerPellet": 20.1,
      "pelletsPerShot": 3,
      "roundsPerSecond": 2.2676,
@@ -5210,6 +5254,8 @@
    "attributes": {
     "internalKey": "hero_dynamo",
     "heroType": "Healer",
+    "role": "Locks down the enemy team",
+    "playstyle": "Dynamo keeps himself and his allies healthy while waiting for his moment. Few things can warp a team fight more than a well-coordinated use of Singularity.",
     "maxHealth": 880,
     "baseHealthRegen": 1.75,
     "maxMoveSpeed": 6.7,
@@ -5219,6 +5265,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "The Vonnegun",
+     "description": null,
      "bulletDamagePerPellet": 12.6,
      "pelletsPerShot": 1,
      "roundsPerSecond": 3.8095,
@@ -5600,6 +5648,8 @@
    "attributes": {
     "internalKey": "hero_familiar",
     "heroType": "Healer",
+    "role": null,
+    "playstyle": null,
     "maxHealth": 680,
     "baseHealthRegen": 2,
     "maxMoveSpeed": 7.2,
@@ -5609,6 +5659,8 @@
     "lightMeleeDamage": 58,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Long Night",
+     "description": null,
      "bulletDamagePerPellet": 16,
      "pelletsPerShot": 1,
      "roundsPerSecond": 3.8462,
@@ -6135,6 +6187,8 @@
    "attributes": {
     "internalKey": "hero_fencer",
     "heroType": "Assassin",
+    "role": null,
+    "playstyle": null,
     "maxHealth": 770,
     "baseHealthRegen": 1,
     "maxMoveSpeed": 7.2,
@@ -6144,6 +6198,8 @@
     "lightMeleeDamage": 63,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Pride of Ixia",
+     "description": null,
      "bulletDamagePerPellet": 18.5,
      "pelletsPerShot": 1,
      "roundsPerSecond": 2.6316,
@@ -6608,6 +6664,8 @@
    "attributes": {
     "internalKey": "hero_forge",
     "heroType": "Mystic",
+    "role": "Controls the battle with combat turrets",
+    "playstyle": "Precise placement is everything for McGinnis, whether she's creating a killzone or splitting the enemy team. She can help keep her team running making them hard to dislodge when entrenched.",
     "maxHealth": 780,
     "baseHealthRegen": 2,
     "maxMoveSpeed": 6.7,
@@ -6617,6 +6675,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Services Rendered",
+     "description": "Increases fire rate as the gun spins up",
      "bulletDamagePerPellet": 6.08,
      "pelletsPerShot": 1,
      "roundsPerSecond": 4.7619,
@@ -7092,6 +7152,8 @@
    "attributes": {
     "internalKey": "hero_frank",
     "heroType": "Brawler",
+    "role": null,
+    "playstyle": null,
     "maxHealth": 800,
     "baseHealthRegen": 1.5,
     "maxMoveSpeed": 6.3,
@@ -7101,6 +7163,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Memento Mori",
+     "description": null,
      "bulletDamagePerPellet": 12,
      "pelletsPerShot": 1,
      "roundsPerSecond": 5.0505,
@@ -7547,6 +7611,8 @@
    "attributes": {
     "internalKey": "hero_ghost",
     "heroType": "Mystic",
+    "role": "Sacrifices health then drains it back",
+    "playstyle": "Expending health to achieve devastating effects is the source of Lady Geist's power. When running low, she can drain the life out of her rivals.",
     "maxHealth": 880,
     "baseHealthRegen": 1,
     "maxMoveSpeed": 6.3,
@@ -7556,6 +7622,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Johann's Gift",
+     "description": null,
      "bulletDamagePerPellet": 20.7,
      "pelletsPerShot": 1,
      "roundsPerSecond": 2.1164,
@@ -7976,6 +8044,8 @@
    "attributes": {
     "internalKey": "hero_gigawatt",
     "heroType": "Mystic",
+    "role": "Electrocutes crowds of enemies",
+    "playstyle": "Seven thrives in a skirmish waiting for the time to strike. Then he rolls into the fight like a storm and batters his enemies with a cascade of lightning.",
     "maxHealth": 730,
     "baseHealthRegen": 1,
     "maxMoveSpeed": 6.7,
@@ -7985,6 +8055,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Cold Calculus",
+     "description": null,
      "bulletDamagePerPellet": 10.8,
      "pelletsPerShot": 1,
      "roundsPerSecond": 5.8309,
@@ -8439,6 +8511,8 @@
    "attributes": {
     "internalKey": "hero_haze",
     "heroType": "Assassin",
+    "role": "Sneaks in and sprays bullets",
+    "playstyle": "When Haze fixates on a target she can hold her own in a firefight. She prefers to create one sided exchanges, avoiding damage then picking off unsuspecting targets up close.",
     "maxHealth": 730,
     "baseHealthRegen": 2,
     "maxMoveSpeed": 8.2,
@@ -8448,6 +8522,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Censure & Penance",
+     "description": null,
      "bulletDamagePerPellet": 5.26,
      "pelletsPerShot": 1,
      "roundsPerSecond": 9.5238,
@@ -8818,6 +8894,8 @@
    "attributes": {
     "internalKey": "hero_hornet",
     "heroType": "Marksman",
+    "role": "Snipes the unsuspecting",
+    "playstyle": "Vindicta has the mobility to engage at her leisure, picking at her prey and bleeding them out slowly. Injured enemies at any distance should fear being picked off when she is on the map.",
     "maxHealth": 755,
     "baseHealthRegen": 2,
     "maxMoveSpeed": 7.9,
@@ -8827,6 +8905,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Wallflower's Revenge",
+     "description": null,
      "bulletDamagePerPellet": 12.33,
      "pelletsPerShot": 1,
      "roundsPerSecond": 4.329,
@@ -9234,6 +9314,8 @@
    "attributes": {
     "internalKey": "hero_inferno",
     "heroType": "Mystic",
+    "role": "Lights up enemies and watches them burn",
+    "playstyle": "Infernus has many ways to deal damage over time, burning foes before swooping in for the kill. Due to Infernus' blazing speed, his enemies won't be able to escape the flames.",
     "maxHealth": 830,
     "baseHealthRegen": 2,
     "maxMoveSpeed": 6.7,
@@ -9243,6 +9325,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Incendiary Remarks",
+     "description": null,
      "bulletDamagePerPellet": 5.5,
      "pelletsPerShot": 1,
      "roundsPerSecond": 9.5238,
@@ -9690,6 +9774,8 @@
    "attributes": {
     "internalKey": "hero_kelvin",
     "heroType": "Healer",
+    "role": "Freezes enemies in their tracks",
+    "playstyle": "Timely heals and splitting a teamfight properly is the difference between an easy victory or a ruinous defeat. Gliding around slowing enemies gives Kelvin's team the maneuvering advantage to make this happen.",
     "maxHealth": 880,
     "baseHealthRegen": 1,
     "maxMoveSpeed": 6.7,
@@ -9699,6 +9785,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Expedition's End",
+     "description": null,
      "bulletDamagePerPellet": 18.6,
      "pelletsPerShot": 1,
      "roundsPerSecond": 3.8095,
@@ -10185,6 +10273,8 @@
    "attributes": {
     "internalKey": "hero_krill",
     "heroType": "Brawler",
+    "role": "Burrows underneath his enemies",
+    "playstyle": "By burrowing through the ground, Mo and Krill can get the drop on almost anyone; and once they get in close the results can be devastating.",
     "maxHealth": 930,
     "baseHealthRegen": 1,
     "maxMoveSpeed": 8,
@@ -10194,6 +10284,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Yellow Canary",
+     "description": null,
      "bulletDamagePerPellet": 2.82,
      "pelletsPerShot": 4,
      "roundsPerSecond": 5.291,
@@ -10615,6 +10707,8 @@
    "attributes": {
     "internalKey": "hero_lash",
     "heroType": "Assassin",
+    "role": "Dives down to stomp his foes",
+    "playstyle": "Lash gives his enemies little room to breathe, either by flying in from long distances to initiate combat with unsuspecting enemies, or pursuing said enemies when they try to run.",
     "maxHealth": 780,
     "baseHealthRegen": 2,
     "maxMoveSpeed": 7.2,
@@ -10624,6 +10718,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Tale of The Tape",
+     "description": null,
      "bulletDamagePerPellet": 8.46,
      "pelletsPerShot": 1,
      "roundsPerSecond": 5.8309,
@@ -11050,6 +11146,8 @@
    "attributes": {
     "internalKey": "hero_magician",
     "heroType": "Mystic",
+    "role": "Misdirect and hex enemies",
+    "playstyle": "With the help of their unwilling assistant, The Magnificent Sinclair can confuse enemies with curving hexes and rapid bolts.",
     "maxHealth": 730,
     "baseHealthRegen": 1,
     "maxMoveSpeed": 7.2,
@@ -11059,6 +11157,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "The Prestige",
+     "description": null,
      "bulletDamagePerPellet": 16.5,
      "pelletsPerShot": 1,
      "roundsPerSecond": 2.7211,
@@ -11478,6 +11578,8 @@
    "attributes": {
     "internalKey": "hero_mirage",
     "heroType": "Assassin",
+    "role": "Times his shots and catches fleeing targets",
+    "playstyle": "Mirage can envelop himself in a violent tornado to catch up to enemies and lift them up. His scarabs help him sustain against multiple enemies, and he's always ready to help an ally or punish an enemy anywhere.",
     "maxHealth": 730,
     "baseHealthRegen": 1.5,
     "maxMoveSpeed": 7,
@@ -11487,6 +11589,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Promises Kept",
+     "description": null,
      "bulletDamagePerPellet": 14.8,
      "pelletsPerShot": 1,
      "roundsPerSecond": 2.7211,
@@ -11950,6 +12054,8 @@
    "attributes": {
     "internalKey": "hero_nano",
     "heroType": "Assassin",
+    "role": "Wreaks havoc from the sidelines",
+    "playstyle": "Calico uses the shadows to her advantage, weaving in and out of combat to hunt down her enemies one by one.",
     "maxHealth": 730,
     "baseHealthRegen": 2,
     "maxMoveSpeed": 6.8,
@@ -11959,6 +12065,8 @@
     "lightMeleeDamage": 63,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Sweetest Lie",
+     "description": null,
      "bulletDamagePerPellet": 1.84,
      "pelletsPerShot": 9,
      "roundsPerSecond": 4.7619,
@@ -12331,6 +12439,8 @@
    "attributes": {
     "internalKey": "hero_necro",
     "heroType": "Mystic",
+    "role": null,
+    "playstyle": null,
     "maxHealth": 730,
     "baseHealthRegen": 1,
     "maxMoveSpeed": 6.7,
@@ -12340,6 +12450,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "The Teacher",
+     "description": null,
      "bulletDamagePerPellet": 3.6,
      "pelletsPerShot": 1,
      "roundsPerSecond": 9.8039,
@@ -12816,6 +12928,8 @@
    "attributes": {
     "internalKey": "hero_nurse",
     "heroType": "Healer",
+    "role": null,
+    "playstyle": null,
     "maxHealth": 730,
     "baseHealthRegen": 0,
     "maxMoveSpeed": 6.8,
@@ -12825,6 +12939,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Code Blue",
+     "description": null,
      "bulletDamagePerPellet": 14.442,
      "pelletsPerShot": 1,
      "roundsPerSecond": 2.6316,
@@ -13302,6 +13418,8 @@
    "attributes": {
     "internalKey": "hero_orion",
     "heroType": "Mystic",
+    "role": "Delivers long range skill-shots",
+    "playstyle": "A cunning predator, Grey Talon uses a combination of deadly accuracy, traps, and clever positioning to bring down the toughest of opponents.",
     "maxHealth": 780,
     "baseHealthRegen": 1.5,
     "maxMoveSpeed": 6.3,
@@ -13311,6 +13429,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "The Mourning Comes",
+     "description": null,
      "bulletDamagePerPellet": 23.51,
      "pelletsPerShot": 1,
      "roundsPerSecond": 1.6667,
@@ -13715,6 +13835,8 @@
    "attributes": {
     "internalKey": "hero_priest",
     "heroType": "Marksman",
+    "role": null,
+    "playstyle": null,
     "maxHealth": 820,
     "baseHealthRegen": 2,
     "maxMoveSpeed": 6.4,
@@ -13724,6 +13846,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 125,
     "weapon": {
+     "name": "51:20",
+     "description": null,
      "bulletDamagePerPellet": 8,
      "pelletsPerShot": 1,
      "roundsPerSecond": 7.9365,
@@ -14184,6 +14308,8 @@
    "attributes": {
     "internalKey": "hero_punkgoat",
     "heroType": "Brawler",
+    "role": null,
+    "playstyle": null,
     "maxHealth": 820,
     "baseHealthRegen": 2,
     "maxMoveSpeed": 7,
@@ -14193,6 +14319,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Biquette",
+     "description": null,
      "bulletDamagePerPellet": 6.3,
      "pelletsPerShot": 1,
      "roundsPerSecond": 11.765,
@@ -14605,6 +14733,8 @@
    "attributes": {
     "internalKey": "hero_ratking",
     "heroType": "Brawler",
+    "role": null,
+    "playstyle": null,
     "maxHealth": 800,
     "baseHealthRegen": 2,
     "maxMoveSpeed": 6.8,
@@ -14614,6 +14744,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Sovereign's Decree",
+     "description": null,
      "bulletDamagePerPellet": 5.8,
      "pelletsPerShot": 2,
      "roundsPerSecond": 5,
@@ -15115,6 +15247,8 @@
    "attributes": {
     "internalKey": "hero_shiv",
     "heroType": "Brawler",
+    "role": "Bleeds out foes, then goes in for a kill",
+    "playstyle": "Shiv has zero interest in playing fair, which is why he relies on hit and run tactics to weaken enemies before he dives in for the kill.",
     "maxHealth": 830,
     "baseHealthRegen": 2,
     "maxMoveSpeed": 6.5,
@@ -15124,6 +15258,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Busted Flush",
+     "description": null,
      "bulletDamagePerPellet": 4.8,
      "pelletsPerShot": 6,
      "roundsPerSecond": 1.8141,
@@ -15535,6 +15671,8 @@
    "attributes": {
     "internalKey": "hero_synth",
     "heroType": "Assassin",
+    "role": "Infiltrates and disrupts the backline",
+    "playstyle": "With a powerful shotgun and a thin frame, Pocket relies on their ability to briefly escape into a mystic suitcase and teleport via a flying cloak in order to survive close encounters.",
     "maxHealth": 780,
     "baseHealthRegen": 1,
     "maxMoveSpeed": 7.2,
@@ -15544,6 +15682,8 @@
     "lightMeleeDamage": 60,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "The Black Sheep",
+     "description": null,
      "bulletDamagePerPellet": 4.28,
      "pelletsPerShot": 7,
      "roundsPerSecond": 1.9048,
@@ -15951,6 +16091,8 @@
    "attributes": {
     "internalKey": "hero_tengu",
     "heroType": "Healer",
+    "role": "Sets up a power duo with a lucky ally",
+    "playstyle": "Ivy has disruptive combat tricks that slow and stun enemies. She's most effective when linking up with an ally, empowering her and her ally's guns as well as sharing heals.",
     "maxHealth": 755,
     "baseHealthRegen": 2,
     "maxMoveSpeed": 7.2,
@@ -15960,6 +16102,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Protector's Hand",
+     "description": null,
      "bulletDamagePerPellet": 4.45,
      "pelletsPerShot": 1,
      "roundsPerSecond": 13.605,
@@ -16452,6 +16596,8 @@
    "attributes": {
     "internalKey": "hero_unicorn",
     "heroType": "Mystic",
+    "role": null,
+    "playstyle": null,
     "maxHealth": 690,
     "baseHealthRegen": 1,
     "maxMoveSpeed": 6.2,
@@ -16461,6 +16607,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Carny Life",
+     "description": null,
      "bulletDamagePerPellet": 18,
      "pelletsPerShot": 1,
      "roundsPerSecond": 1.7241,
@@ -16959,6 +17107,8 @@
    "attributes": {
     "internalKey": "hero_vampirebat",
     "heroType": "Mystic",
+    "role": null,
+    "playstyle": null,
     "maxHealth": 660,
     "baseHealthRegen": 2,
     "maxMoveSpeed": 6.5,
@@ -16968,6 +17118,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "New Money",
+     "description": null,
      "bulletDamagePerPellet": 7.31,
      "pelletsPerShot": 1,
      "roundsPerSecond": 3.9683,
@@ -17340,6 +17492,8 @@
    "attributes": {
     "internalKey": "hero_viper",
     "heroType": "Assassin",
+    "role": "Slither in and assassinate enemies",
+    "playstyle": "With a powerful weapon (and deadly venom to match), Vyper can slither into the back of teams and assassinate high-priority targets in a storm of bullets.",
     "maxHealth": 780,
     "baseHealthRegen": 2,
     "maxMoveSpeed": 6.9,
@@ -17349,6 +17503,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "The Rattler",
+     "description": null,
      "bulletDamagePerPellet": 6.58,
      "pelletsPerShot": 1,
      "roundsPerSecond": 14.286,
@@ -17751,6 +17907,8 @@
    "attributes": {
     "internalKey": "hero_viscous",
     "heroType": "Brawler",
+    "role": "Rolls around deflecting bullets",
+    "playstyle": "Viscous vexes his opponents through clever evasion and strategic uses of healing, enabling him to withstand the most brutal of enemy attacks.",
     "maxHealth": 780,
     "baseHealthRegen": 2,
     "maxMoveSpeed": 7.2,
@@ -17760,6 +17918,8 @@
     "lightMeleeDamage": 63,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Deep Sea Interpreter",
+     "description": null,
      "bulletDamagePerPellet": 10.34,
      "pelletsPerShot": 1,
      "roundsPerSecond": 4.7619,
@@ -18241,6 +18401,8 @@
    "attributes": {
     "internalKey": "hero_warden",
     "heroType": "Brawler",
+    "role": "Weakens his enemies and chases them down",
+    "playstyle": "Warden leads from the front, jumping into the fray and hindering his opponents' ability to fight effectively. But what Warden considers brave, others consider reckless, and if he's not careful he can easily find himself in over his head.",
     "maxHealth": 805,
     "baseHealthRegen": 2,
     "maxMoveSpeed": 6.3,
@@ -18250,6 +18412,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Freedom's Cost",
+     "description": null,
      "bulletDamagePerPellet": 17.34,
      "pelletsPerShot": 1,
      "roundsPerSecond": 3.8095,
@@ -18691,6 +18855,8 @@
    "attributes": {
     "internalKey": "hero_werewolf",
     "heroType": "Brawler",
+    "role": null,
+    "playstyle": null,
     "maxHealth": 830,
     "baseHealthRegen": 3,
     "maxMoveSpeed": 6.7,
@@ -18700,6 +18866,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "Hair of the Dog",
+     "description": null,
      "bulletDamagePerPellet": 5.1,
      "pelletsPerShot": 7,
      "roundsPerSecond": 1.1765,
@@ -19123,6 +19291,8 @@
    "attributes": {
     "internalKey": "hero_wraith",
     "heroType": "Marksman",
+    "role": "Melts isolated targets",
+    "playstyle": "Excelling at one-on-one combat, Wraith isolates targets, eliminating them with ruthless efficiency. Then teleporting away before anyone can retaliate.",
     "maxHealth": 730,
     "baseHealthRegen": 2,
     "maxMoveSpeed": 7.2,
@@ -19132,6 +19302,8 @@
     "lightMeleeDamage": 50,
     "heavyMeleeDamage": 116,
     "weapon": {
+     "name": "The Rake",
+     "description": null,
      "bulletDamagePerPellet": 5.64,
      "pelletsPerShot": 1,
      "roundsPerSecond": 10.582,
@@ -19556,6 +19728,8 @@
    "attributes": {
     "internalKey": "hero_yamato",
     "heroType": "Assassin",
+    "role": "Delivers charged attacks with finesse",
+    "playstyle": "Yamato uses precise strikes to decimate her rivals. However, such damaging attacks often will leave her exposed, so she needs to make every shot count.",
     "maxHealth": 730,
     "baseHealthRegen": 1,
     "maxMoveSpeed": 8.2,
@@ -19565,6 +19739,8 @@
     "lightMeleeDamage": 55,
     "heavyMeleeDamage": 128,
     "weapon": {
+     "name": "Sister's Lament",
+     "description": null,
      "bulletDamagePerPellet": 5.31,
      "pelletsPerShot": 5,
      "roundsPerSecond": 2.381,

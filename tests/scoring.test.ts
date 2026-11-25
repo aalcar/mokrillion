@@ -44,7 +44,8 @@ test("spelling cost uses cheapest non-abbreviation spelling", () => {
 test("aggregate: llm order dominates, popularity and spelling only nudge", () => {
   const ids = kb.items.slice(0, 6).map((e) => e.id);
   const ents = ids.map((id) => kb.get(id)!);
-  const sig = aggregate(ents, [ids, ids, ids]);
+  const pass = { ranking: ids, perceptions: new Map() };
+  const sig = aggregate(ents, [pass, pass, pass]);
   sig.forEach((s, i) => assert.ok(Math.abs(s.borda - i / 5) < 1e-9));
   const order = [...sig].sort((a, b) => a.key - b.key).map((s) => s.id);
   assert.equal(order[0], ids[0]);
@@ -81,7 +82,10 @@ function fakeAsk(semanticYes: (name: string) => boolean = () => false): Ask & { 
     calls.push(o.label);
     const names = (s: string) => [...s.matchAll(/^- (.+?) - /gm)].map((m) => m[1]);
     let out: unknown;
-    if (o.label.startsWith("rank:")) out = { ranking: names(o.prompt).sort() };
+    if (o.label.startsWith("rank:")) {
+      const ns = names(o.prompt).sort();
+      out = { perceptions: ns.map((name) => ({ name, perception: "x", fit: "neutral" })), ranking: ns };
+    }
     else if (o.label.startsWith("pairwise:")) {
       out = { judgments: [...o.prompt.matchAll(/^Pair (\d+): (.+?) - .*\| (.+?) - /gm)].map((m) => ({ pair: +m[1], rarer: [m[2], m[3]].sort()[1] })) };
     } else if (o.label.startsWith("review:")) out = { challenges: [] };

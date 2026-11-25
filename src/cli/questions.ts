@@ -41,13 +41,13 @@ function printScored(s: ScoredQuestion) {
   console.log(`\n${s.question.prompt}  [${s.question.signature}]`);
   console.log(`validation: ${s.question.validation.method} - ${s.question.validation.criterion}`);
   console.log(`pass agreement (Kendall tau): ${s.diagnostics.passAgreement.toFixed(2)}   knowledge ${s.knowledgeVersion}   scoring v${s.scoringVersion}   ${s.model}\n`);
-  console.log("rank  pts  name                          borda  passes            pop    spell  key");
+  console.log("rank  pts  name                          borda  passes            pop    spell  key    fit(e/n/s)  perception");
   for (const a of s.answers) {
     const x = sig.get(a.entityId)!;
     console.log(
       `${String(a.rank).padStart(4)}  ${String(a.score).padStart(3)}  ${a.name.padEnd(28)}  ${x.borda.toFixed(2)}   ` +
       `${x.passPositions.map((p) => String(p + 1).padStart(2)).join(" ").padEnd(16)}  ${x.popularity === null ? "   - " : x.popularity.toFixed(1).padStart(5)}  ` +
-      `${String(x.spellingCost).padStart(4)}   ${x.key.toFixed(3)}`,
+      `${String(x.spellingCost).padStart(4)}   ${x.key.toFixed(3)}  ${x.fit ? `${x.fit.expected}/${x.fit.neutral}/${x.fit.surprising}`.padEnd(10) : "-".padEnd(10)}  ${x.perception ?? ""}`,
     );
   }
   const name = (id: string) => kb.get(id)!.name;
@@ -92,12 +92,27 @@ try {
     mkdirSync(QUESTIONS_DIR, { recursive: true });
     writeFileSync(questionFile(q.signature), JSON.stringify(scored, null, 1));
     printScored(scored);
+  } else if (cmd === "eval") {
+    // Compare stored scores with human "this should be the rarest" judgments.
+    const { rarest } = JSON.parse(readFileSync(join(DATA, "eval/judgments.json"), "utf8")) as
+      { rarest: { signature: string; entityId: string; note: string }[] };
+    let hits = 0, scored = 0;
+    for (const j of rarest) {
+      const file = questionFile(j.signature);
+      if (!existsSync(file)) { console.log(`not scored: ${j.signature}`); continue; }
+      const s: ScoredQuestion = JSON.parse(readFileSync(file, "utf8"));
+      const a = s.answers.find((x) => x.entityId === j.entityId)!;
+      scored++;
+      if (a.score === 100) hits++;
+      console.log(`${a.score === 100 ? "HIT " : "MISS"}  ${j.signature}: ${a.name} is rank ${a.rank}/${s.answers.length} (${a.score} pts, scoring v${s.scoringVersion})`);
+    }
+    console.log(`\n${hits}/${scored} human-picked rarest answers got 100 points`);
   } else if (cmd === "show") {
     const file = questionFile(rest.join(" "));
     if (!existsSync(file)) throw new Error(`not scored yet: ${rest.join(" ")}`);
     printScored(JSON.parse(readFileSync(file, "utf8")));
   } else {
-    console.log("usage: questions list | propose <hero|item> [count] | score <signature|index> | show <signature>  [--no-cache]");
+    console.log("usage: questions list | propose <hero|item> [count] | score <signature|index> | show <signature> | eval  [--no-cache]");
   }
 } finally {
   if (cmd === "propose" || cmd === "score") console.log(`\n${usageSummary()}`);

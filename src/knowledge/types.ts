@@ -34,6 +34,8 @@ export interface Ability {
 }
 
 export interface Weapon {
+  name: string | null;
+  description: string | null;
   bulletDamagePerPellet: number;
   pelletsPerShot: number;
   roundsPerSecond: number;
@@ -53,6 +55,9 @@ export interface Weapon {
 export interface HeroAttributes {
   internalKey: string;
   heroType: string | null;
+  /** Wiki one-liner and playstyle blurb; context for ranking only, never a question source. */
+  role: string | null;
+  playstyle: string | null;
   maxHealth: number;
   baseHealthRegen: number;
   maxMoveSpeed: number;

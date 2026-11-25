@@ -1,0 +1,189 @@
+{
+ "accepted": [
+  {
+   "signature": "semantic:hero:the-hero-s-ability-description-or-any-upgrade-t1-t3-text-explicitly-says-it-appl",
+   "prompt": "Name a hero with an ability or ability upgrade that applies Silence to enemies.",
+   "category": "hero-ability-effect",
+   "entityType": "hero",
+   "answerIds": [
+    "hero_artist",
+    "hero_baba",
+    "hero_chrono",
+    "hero_drifter",
+    "hero_ghost",
+    "hero_orion",
+    "hero_tengu",
+    "hero_unicorn",
+    "hero_vampirebat",
+    "hero_warden"
+   ],
+   "validation": {
+    "method": "llm",
+    "criterion": "The hero's ability description or any upgrade (T1-T3) text explicitly says it applies Silence (or Silences) enemies. Examples from the data: Violet, Baba, Drifter, Celeste, Mina, Grey Talon, Lady Geist, Paradox, Warden, Ivy.",
+    "notes": [
+     "Violet: \"leaving causes them to take Spirit Damage and suffer from Silence and Slow, destroying the ink in the process.\"",
+     "Baba: \"cycling over time in a random order between a soothing Combat Barrier, Silence, or scalding burn that deals Spirit DPS and reduces Spirit Resist.\"",
+     "Paradox: \"Silences enemies for 2.3s +35% Weapon Damage\"",
+     "Drifter: \"Deals 55% Heavy Melee Damage Silences enemies for 2s if close range\"",
+     "Lady Geist: \"Silence enemies within 25m for 3s\"",
+     "Grey Talon: \"applying Curse and Movement Slow that interrupts, Silences, Disarms, and prevents item usage\"",
+     "Ivy: \"Silence for 3s on enemies hit. Increases damage and barrier scaling.\"",
+     "Celeste: \"If the barrier is destroyed, it silences nearby enemies and deals a portion of the barrier as damage.\"",
+     "Mina: \"Unleash a cloud of bats that seek out targets, each dealing Spirit Damage and applying Silence.\"",
+     "Warden: \"Silences enemies until they escape or are immobilized\""
+    ]
+   }
+  },
+  {
+   "signature": "semantic:hero:the-base-ability-description-not-upgrade-text-not-base-value-lists-alone-says-th",
+   "prompt": "Name a hero with an ability whose base description says it applies Stun to enemies.",
+   "category": "hero-ability-effect",
+   "entityType": "hero",
+   "answerIds": [
+    "hero_artist",
+    "hero_astro",
+    "hero_atlas",
+    "hero_chessmaster",
+    "hero_dynamo",
+    "hero_frank",
+    "hero_gigawatt",
+    "hero_inferno",
+    "hero_krill",
+    "hero_lash",
+    "hero_orion",
+    "hero_priest",
+    "hero_tengu",
+    "hero_viscous"
+   ],
+   "validation": {
+    "method": "llm",
+    "criterion": "The base ability description (not upgrade text, not base value lists alone) says the ability applies Stun to enemies, or that enemies suffer from or are stunned. Self-stun does not count. Examples from the data: Violet, Holliday, Abrams, Dynamo, Seven, Solomon, Infernus, Victor, Ivy, Grey Talon.",
+    "notes": [
+     "Violet: \"If the sketch is completed they take additional Spirit Damage, suffer from Stun, and drop a sketch that can be picked up.\"",
+     "Holliday: \"Throw out your lasso, dealing Spirit Damage, Pulling, and applying Stun.\"",
+     "Abrams: \"Leap high into the air before crashing into the ground, dealing Spirit Damage and applying Stun.\"",
+     "Solomon: \"the queen releases squares in straight lines that deal Spirit Damage again and apply Stun.\"",
+     "Dynamo: \"Create a singularity in your hands, dealing Spirit DPS, applying Stun, and pulling in nearby enemies.\"",
+     "Victor: \"you reanimate, dealing Spirit Damage and applying Stun to nearby enemies.\"",
+     "Seven: \"After a short duration, the static charge stuns and damages enemies within the radius.\"",
+     "Infernus: \"Become a living bomb, dealing Spirit Damage and applying Stun to all nearby enemies after a delay.\"",
+     "Mo & Krill: \"Hold the target in place, stunning them and dealing damage during the channel.\"",
+     "Lash: \"connected enemies are lifted and stunned then slammed into the ground.\"",
+     "Grey Talon: \"which explodes on impact, damaging and stunning enemies.\"",
+     "Venator: \"Enemies near a wall receive Stun and take Bonus Weapon Damage.\"",
+     "Ivy: \"smash into the ground, stunning and damaging enemies nearby.\"",
+     "Viscous: \"deals damage and stuns enemies on impact.\""
+    ]
+   }
+  },
+  {
+   "signature": "semantic:hero:at-least-one-upgrade-line-t1-t2-or-t3-of-one-of-the-hero-s-abilities-explicitly-",
+   "prompt": "Name a hero with an ability upgrade (T1-T3) that grants a Barrier or increases a Barrier.",
+   "category": "hero-ability-upgrade",
+   "entityType": "hero",
+   "answerIds": [
+    "hero_bookworm",
+    "hero_chessmaster",
+    "hero_chrono",
+    "hero_doorman",
+    "hero_familiar",
+    "hero_mirage",
+    "hero_ratking",
+    "hero_tengu",
+    "hero_unicorn",
+    "hero_viper",
+    "hero_warden",
+    "hero_wraith"
+   ],
+   "validation": {
+    "method": "llm",
+    "criterion": "At least one upgrade line (T1, T2, or T3) of one of the hero's abilities explicitly mentions a Barrier, either granting one or adding to it, or improving its scaling. Examples from the data: Paradox, Wraith, Vyper, Ivy, Doorman, Paige, Solomon, Celeste, Warden, Mirage.",
+    "notes": [
+     "Paige: \"+100 Barrier and +2s Duration\"",
+     "Solomon: \"+80 Barrier +1 Stamina\"",
+     "Paradox: \"200 Barrier for 8s. Barrier scales with Spirit\"",
+     "The Doorman: \"Grants a Barrier first time traveling through doors\"",
+     "Rem: \"35% Bonus Item Range, Duration, and Barrier Effectiveness while napping\"",
+     "Mirage: \"Cannot be interrupted by damage Barrier gains Spirit Scaling\"",
+     "Rat King: \"Reduce all damage to a max of 250 +10% Max Health as Barrier\"",
+     "Ivy: \"On Fly End : 300 Barrier to Ivy and ally that scales with Spirit\"",
+     "Celeste: \"+70 Barrier and Increased Barrier Spirit Scaling\"",
+     "Vyper: \"On Slide: Gain 180 barrier for 4s\"",
+     "Warden: \"+30% Debuff Resistance and improved Barrier scaling\"",
+     "Wraith: \"300 Barrier for 5s. Barrier scales with Spirit Power.\""
+    ]
+   }
+  }
+ ],
+ "rejected": [
+  {
+   "proposal": {
+    "prompt": "Name a hero with an ability upgrade (T1-T3) that grants the hero bonus Fire Rate.",
+    "entityType": "hero",
+    "category": "hero-ability-upgrade",
+    "criterion": "At least one upgrade line (T1, T2, or T3) of one of the hero's abilities explicitly grants a positive Fire Rate bonus to the hero or allies, such as +X% Fire Rate. Debuffs that reduce enemy fire rate do not count. Examples from the data: Violet, Apollo, Paige, Mina, Celeste, Mirage, Wraith, Ivy, Lady Geist, Victor, Sinclair, Deadman Danny."
+   },
+   "reason": "ambiguous: McGinnis (unsure)",
+   "notes": [
+    "Violet: \"On Empower: Gain +10% Fire Rate for 10s, stacking 5 times\"",
+    "Paige: \"On Barrier: +14% Fire Rate\"",
+    "Deadman Danny: \"On Backblast Hit: +18% Fire Rate for 7s\"",
+    "Apollo: \"Gain +25% Fire Rate and +25% Bullet Speed for 8s\"",
+    "Victor: \"While On Cooldown: Gain +15% Fire Rate and 6 Spirit Damage per Bullet\"",
+    "Lady Geist: \"On cast, +60 Spirit Power, +40% Fire Rate and +50% Spirit Resistance for 8s.\"",
+    "Sinclair: \"+60% Fire Rate and +12.6 Assistant Damage\"",
+    "Mirage: \"+3m Move Speed and +20% Fire Rate\"",
+    "Ivy: \"+8% Fire Rate and +8% Bullet Lifesteal\"",
+    "Celeste: \"Spirit Amp per Stack +5, Fire Rate Per Stack +9\"",
+    "Mina: \"On Cast: Gain +25% Fire Rate for 8s and add 8 bullets\"",
+    "Wraith: \"+10% Fire Rate and +3s Duration\""
+   ]
+  },
+  {
+   "proposal": {
+    "prompt": "Name a hero with an ability or ability upgrade that reduces enemies' Fire Rate.",
+    "entityType": "hero",
+    "category": "hero-ability-effect",
+    "criterion": "The hero's ability description or any upgrade text explicitly reduces the Fire Rate of enemies hit, for example a Reduced Fire Rate effect or -X% Fire Rate applied to enemies. Examples from the data: Bebop, Kelvin, Sinclair, Rem, Warden, Solomon, Yamato, Pocket, Lash."
+   },
+   "reason": "ambiguous: Nurse Harrow (unsure)",
+   "notes": [
+    "Bebop: \"apply Reduced Fire Rate to other nearby enemies\"",
+    "Solomon: \"On Hit: Reduce 25% Fire Rate for 5s\"",
+    "Rem: \"+2m Radius and applies -35% Fire Rate\"",
+    "Kelvin: \"Applies -20% Fire Rate\"",
+    "Lash: \"Apply -30% Fire Rate -16s Cooldown\"",
+    "Sinclair: \"Bolts apply -25% Fire Rate for 5s.\"",
+    "Pocket: \"-32% Move Speed and Fire Rate for 4s\"",
+    "Warden: \"Applies -30% Fire Rate\"",
+    "Yamato: \"Slash enemies in front of you, damaging them and slowing their fire rate.\""
+   ]
+  },
+  {
+   "proposal": {
+    "prompt": "Name a hero with an ability whose base description says it Heals.",
+    "entityType": "hero",
+    "category": "hero-ability-effect",
+    "criterion": "The base ability description (not upgrade text) explicitly says the ability heals, restores health, or provides Healing to the hero or allies, such as Heal, Healing, Heals, or Receive a Heal. Examples from the data: Abrams, Calico, Lash, Mo & Krill, Yamato, Warden, Kelvin, Dynamo, McGinnis, Lady Geist, Paige, Ivy."
+   },
+   "reason": "ambiguous: Mirage (unsure); Viscous (unsure)",
+   "notes": [
+    "Abrams: \"Drain health from nearby enemies, dealing Spirit DPS and Healing for a portion of the damage dealt.\"",
+    "Paige: \"Healing allies and dealing Spirit Damage to enemies.\"",
+    "Dynamo: \"While channeling, restore health over time to you and any allies nearby.\"",
+    "Rem: \"Both you and the ally receive a burst Heal based on missing health followed by lingering Regen.\"",
+    "McGinnis: \"Deploy a spirit that provides Healing to nearby allies.\"",
+    "Lady Geist: \"Create a tether that drains enemy health over time and heals you.\"",
+    "Kelvin: \"explodes in a cloud of freezing ice that Heals allies\"",
+    "Mo & Krill: \"Deal damage to nearby enemies and heal yourself based on the damage done.\"",
+    "Lash: \"Strike enemies in front of you with your whip, Healing for a portion of the damage dealt.\"",
+    "Calico: \"If the ability hits at least one hero, Heal a small amount of health.\"",
+    "Nurse Harrow: \"Load your weapon with a full clip of syringes that Heal allies.\"",
+    "Ivy: \"Heals you for a percentage of your max health.\"",
+    "Mina: \"Receive a Heal for every target killed.\"",
+    "Warden: \"heal you based on the damage done\"",
+    "Yamato: \"If any enemy heroes are hit, you heal.\""
+   ]
+  }
+ ]
+}

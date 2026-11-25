@@ -1,0 +1,15 @@
+{
+  "about": "Human obscurity judgments from experienced players. Ground truth for evaluating scoring; never fed to the ranking model.",
+  "rarest": [
+    {
+      "signature": "hero-stat:maxHealth:high:820",
+      "entityId": "hero_inferno",
+      "note": "Played as a carry, so players don't associate him with being tanky."
+    },
+    {
+      "signature": "hero-category:Heroes with spreadshot weapons",
+      "entityId": "hero_ratking",
+      "note": "His gun is automatic and most people assume it's an AR."
+    }
+  ]
+}
