@@ -87,3 +87,19 @@ agreement (mean Kendall tau). These are model estimates, not measured answer fre
   nothing else within 2 edits). Anything less certain is a "did you mean" suggestion, never a guess.
 - `session.ts`: per-player state with timestamps; 30 seconds per question, unlimited retries for wrong or
   unknown answers, the first correct answer locks in, results with each question's 100-point answer.
+
+## Discord bot
+
+Players run `/play` in the server; the game runs in their DMs (type answers as messages). `/share` posts a
+spoiler-free score line. Progress is saved after every step in `data/plays/<date>/<user>.json`, so a restart
+resumes games and nobody can replay a day. If today's game is not published yet, the bot builds it from the
+scored questions (deterministic, no LLM).
+
+Setup:
+1. https://discord.com/developers/applications: New Application, then under **Bot** reset/copy the token.
+   No privileged intents are needed.
+2. Under **OAuth2 > URL Generator** pick scopes `bot` and `applications.commands`, permission `Send Messages`,
+   open the URL and add the bot to your server.
+3. `.env`: `DISCORD_TOKEN=...`, `DISCORD_CLIENT_ID=...` (Application ID), `DISCORD_GUILD_ID=...` (server ID,
+   for instant command registration).
+4. `npm run bot:register` once, then `npm run bot` (keep it running).

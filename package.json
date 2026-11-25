@@ -13,7 +13,9 @@
     "typecheck": "tsc",
     "questions": "node --experimental-strip-types --no-warnings --env-file-if-exists=.env src/cli/questions.ts",
     "ingest:stats": "node --experimental-strip-types --no-warnings src/knowledge/ingest-stats.ts",
-    "game": "node --experimental-strip-types --no-warnings src/cli/game.ts"
+    "game": "node --experimental-strip-types --no-warnings src/cli/game.ts",
+    "bot": "node --experimental-strip-types --no-warnings --env-file-if-exists=.env src/bot/bot.ts",
+    "bot:register": "node --experimental-strip-types --no-warnings --env-file-if-exists=.env src/bot/register.ts"
   },
   "devDependencies": {
     "@types/node": "^26.6.7",
@@ -22,6 +24,7 @@
   "dependencies": {
     "@anthropic-ai/sdk": "^1.14.0",
     "@google/genai": "^3.6.1",
+    "discord.js": "^14.28.1",
     "zod": "^4.6.7"
   }
 }
