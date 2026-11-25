@@ -54,14 +54,14 @@
    "score": 85
   },
   {
-   "entityId": "hero_ratking",
-   "name": "Rat King",
+   "entityId": "hero_mirage",
+   "name": "Mirage",
    "rank": 6,
    "score": 85
   },
   {
-   "entityId": "hero_mirage",
-   "name": "Mirage",
+   "entityId": "hero_ratking",
+   "name": "Rat King",
    "rank": 7,
    "score": 100
   }
@@ -330,6 +330,9 @@
     "reason": "Rat King's name contains a G, in 'King'. It is a distinctive, memorable name, so it is not clearly rarer than Mirage, which also contains a G. Putting Rat King at 100 pts, above McGinnis and Mirage, looks unjustified. It should come in at or below their score.",
     "outcome": "applied-by-data"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "hero_ratking"
+  }
  }
 }

@@ -87,7 +87,7 @@
     "rarest": "hero_magician"
   },
   "name:hero:contains:d": {
-    "rarest": "hero_astro"
+    "rarest": "hero_chrono"
   },
   "name:hero:contains:h": {
     "rarest": "hero_wraith"
@@ -106,5 +106,8 @@
   },
   "name:hero:double-letter": {
     "rarest": "hero_fencer"
+  },
+  "name:hero:contains:g": {
+    "rarest": "hero_ratking"
   }
 }
