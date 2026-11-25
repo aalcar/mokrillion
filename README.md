@@ -1,8 +1,7 @@
 # Mokrillion
 
-Daily Deadlock trivia. Every question has many right answers; rarer ones score more (10–100, max 700 a day).
-Facts come from [The Deadlock Wiki](https://deadlock.wiki) (CC BY-NC-SA 4.0), play stats from
-[Deadlock API](https://deadlock-api.com).
+Daily Deadlock trivia based on Mokrillion which is based on Krillion (i didnt like the other scoring algorithm)
+Data comes from [The Deadlock Wiki](https://deadlock.wiki) (CC BY-NC-SA 4.0) and [Deadlock API](https://deadlock-api.com).
 
 ## Quick start
 
