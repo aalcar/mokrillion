@@ -1,0 +1,453 @@
+{
+ "question": {
+  "signature": "item-slot-tier:Weapon:4",
+  "prompt": "Name a Tier 4 Weapon item.",
+  "category": "item-cost",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_aprounds",
+   "upgrade_banshee_slugs",
+   "upgrade_capacitor",
+   "upgrade_critshot",
+   "upgrade_crushing_fists",
+   "upgrade_enchanted_holsters",
+   "upgrade_fervor",
+   "upgrade_glass_cannon",
+   "upgrade_proc_silence",
+   "upgrade_ricochet",
+   "upgrade_tech_overflow"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "slot == Weapon && tier == 4"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "5",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T03:39:23.965Z",
+ "answers": [
+  {
+   "entityId": "upgrade_glass_cannon",
+   "name": "Glass Cannon",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_ricochet",
+   "name": "Ricochet",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_proc_silence",
+   "name": "Silencer",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_banshee_slugs",
+   "name": "Crippling Headshot",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_critshot",
+   "name": "Lucky Shot",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_enchanted_holsters",
+   "name": "Spellslinger",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_tech_overflow",
+   "name": "Spiritual Overflow",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_capacitor",
+   "name": "Capacitor",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_fervor",
+   "name": "Frenzy",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_aprounds",
+   "name": "Armor Piercer",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_crushing_fists",
+   "name": "Crushing Fists",
+   "rank": 11,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "upgrade_aprounds",
+    "name": "Armor Piercer",
+    "passPositions": [
+     5,
+     3,
+     6,
+     3,
+     7
+    ],
+    "borda": 0.48,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "unavoidable piercing bullets",
+    "popularity": 1.55,
+    "popularityObscurity": 0.9,
+    "spellingCost": 12,
+    "spellingObscurity": 0.85,
+    "key": 0.6665000000000001
+   },
+   {
+    "id": "upgrade_banshee_slugs",
+    "name": "Crippling Headshot",
+    "passPositions": [
+     3,
+     1,
+     2,
+     2,
+     3
+    ],
+    "borda": 0.22000000000000003,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "headshot resist shred",
+    "popularity": 4.06,
+    "popularityObscurity": 0.6,
+    "spellingCost": 9,
+    "spellingObscurity": 0.6,
+    "key": 0.391
+   },
+   {
+    "id": "upgrade_capacitor",
+    "name": "Capacitor",
+    "passPositions": [
+     9,
+     10,
+     9,
+     8,
+     10
+    ],
+    "borda": 0.9199999999999999,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "slowing projectile, silence of movement",
+    "popularity": 8.07,
+    "popularityObscurity": 0.2,
+    "spellingCost": 9,
+    "spellingObscurity": 0.6,
+    "key": 0.6160000000000001
+   },
+   {
+    "id": "upgrade_critshot",
+    "name": "Lucky Shot",
+    "passPositions": [
+     6,
+     5,
+     1,
+     6,
+     2
+    ],
+    "borda": 0.4000000000000001,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "proc bonus bullet damage",
+    "popularity": 4.12,
+    "popularityObscurity": 0.5,
+    "spellingCost": 9,
+    "spellingObscurity": 0.6,
+    "key": 0.45000000000000007
+   },
+   {
+    "id": "upgrade_crushing_fists",
+    "name": "Crushing Fists",
+    "passPositions": [
+     10,
+     8,
+     8,
+     10,
+     9
+    ],
+    "borda": 0.9,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "melee-focused stun item, niche",
+    "popularity": 5.5,
+    "popularityObscurity": 0.4,
+    "spellingCost": 13,
+    "spellingObscurity": 1,
+    "key": 0.7050000000000001
+   },
+   {
+    "id": "upgrade_enchanted_holsters",
+    "name": "Spellslinger",
+    "passPositions": [
+     7,
+     6,
+     4,
+     1,
+     1
+    ],
+    "borda": 0.38,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "fire rate from casting abilities",
+    "popularity": 2.96,
+    "popularityObscurity": 0.7,
+    "spellingCost": 12,
+    "spellingObscurity": 0.85,
+    "key": 0.5315
+   },
+   {
+    "id": "upgrade_fervor",
+    "name": "Frenzy",
+    "passPositions": [
+     2,
+     7,
+     5,
+     5,
+     4
+    ],
+    "borda": 0.45999999999999996,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "low health fire rate burst",
+    "popularity": 1.32,
+    "popularityObscurity": 1,
+    "spellingCost": 6,
+    "spellingObscurity": 0.1,
+    "key": 0.658
+   },
+   {
+    "id": "upgrade_glass_cannon",
+    "name": "Glass Cannon",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "big weapon damage, low health",
+    "popularity": 2.22,
+    "popularityObscurity": 0.8,
+    "spellingCost": 5,
+    "spellingObscurity": 0,
+    "key": 0.32000000000000006
+   },
+   {
+    "id": "upgrade_proc_silence",
+    "name": "Silencer",
+    "passPositions": [
+     4,
+     4,
+     7,
+     7,
+     5
+    ],
+    "borda": 0.54,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "bullets silence enemies",
+    "popularity": 6.81,
+    "popularityObscurity": 0.3,
+    "spellingCost": 8,
+    "spellingObscurity": 0.3,
+    "key": 0.43200000000000005
+   },
+   {
+    "id": "upgrade_ricochet",
+    "name": "Ricochet",
+    "passPositions": [
+     1,
+     2,
+     3,
+     4,
+     6
+    ],
+    "borda": 0.32,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "bouncing bullets, gun build staple",
+    "popularity": 10.76,
+    "popularityObscurity": 0,
+    "spellingCost": 8,
+    "spellingObscurity": 0.3,
+    "key": 0.191
+   },
+   {
+    "id": "upgrade_tech_overflow",
+    "name": "Spiritual Overflow",
+    "passPositions": [
+     8,
+     9,
+     10,
+     9,
+     8
+    ],
+    "borda": 0.8800000000000001,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "spirit/weapon hybrid charge item",
+    "popularity": 8.69,
+    "popularityObscurity": 0.1,
+    "spellingCost": 8,
+    "spellingObscurity": 0.3,
+    "key": 0.5390000000000001
+   }
+  ],
+  "passAgreement": 0.5709090909090908,
+  "orderBeforeRefinement": [
+   "upgrade_ricochet",
+   "upgrade_glass_cannon",
+   "upgrade_banshee_slugs",
+   "upgrade_proc_silence",
+   "upgrade_critshot",
+   "upgrade_enchanted_holsters",
+   "upgrade_tech_overflow",
+   "upgrade_capacitor",
+   "upgrade_fervor",
+   "upgrade_aprounds",
+   "upgrade_crushing_fists"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_capacitor",
+    "b": "upgrade_fervor",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_fervor"
+   },
+   {
+    "a": "upgrade_capacitor",
+    "b": "upgrade_aprounds",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_aprounds"
+   },
+   {
+    "a": "upgrade_capacitor",
+    "b": "upgrade_crushing_fists",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_crushing_fists"
+   },
+   {
+    "a": "upgrade_fervor",
+    "b": "upgrade_aprounds",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_fervor",
+    "b": "upgrade_crushing_fists",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_crushing_fists"
+   },
+   {
+    "a": "upgrade_aprounds",
+    "b": "upgrade_crushing_fists",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_crushing_fists"
+   },
+   {
+    "a": "upgrade_ricochet",
+    "b": "upgrade_glass_cannon",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_ricochet"
+   },
+   {
+    "a": "upgrade_banshee_slugs",
+    "b": "upgrade_proc_silence",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_banshee_slugs"
+   },
+   {
+    "a": "upgrade_enchanted_holsters",
+    "b": "upgrade_tech_overflow",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_tech_overflow"
+   },
+   {
+    "a": "upgrade_crushing_fists",
+    "b": "upgrade_aprounds",
+    "purpose": "review",
+    "rarer": "upgrade_crushing_fists"
+   }
+  ],
+  "review": [
+   {
+    "name": "Crushing Fists",
+    "compareWith": "Armor Piercer",
+    "claim": "should_be_more_obvious",
+    "reason": "Crushing Fists is not clearly rarer than Armor Piercer. Both are rarely bought situational Tier 4 weapon items. Crushing Fists has a distinctive name and a melee-themed effect, so it is easy to recall, and 100 pts for it looks too harsh.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Armor Piercer",
+    "compareWith": "Lucky Shot",
+    "claim": "should_be_more_obscure",
+    "reason": "Armor Piercer is a plain niche item that players rarely think of when listing Tier 4 weapon items. Lucky Shot has a more memorable proc effect, so Armor Piercer should be rarer.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Spellslinger",
+    "compareWith": "Spiritual Overflow",
+    "claim": "should_be_more_obvious",
+    "reason": "Spellslinger is a well-known hybrid weapon/spirit item with a distinctive name, so players should recall it faster than the niche Spiritual Overflow. Giving it 60 pts and Spiritual Overflow 85 pts is roughly right, but it could sit closer to Crippling Headshot.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}

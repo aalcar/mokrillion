@@ -66,6 +66,12 @@
       "rarer": "upgrade_rechargingbullets",
       "commoner": "upgrade_kinetic_sash",
       "note": "Kinetic Dash should be more obvious than Split Shot and Recharging Rush."
+    },
+    {
+      "signature": "item-slot-tier:Weapon:4",
+      "rarer": "upgrade_aprounds",
+      "commoner": "upgrade_crushing_fists",
+      "note": "Agree with reviewer: Crushing Fists has a distinctive name and melee effect, easy to recall; not rarer than Armor Piercer."
     }
   ]
 }
