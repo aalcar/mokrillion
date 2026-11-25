@@ -1,14 +1,15 @@
 // Manually run: downloads gameplay statistics from the Deadlock API (https://deadlock-api.com, MIT)
 // into data/raw/. Two cheap analytics requests: hero pick counts and item purchase counts,
-// restricted to matches whose average badge is at least MIN_BADGE (tier * 10 + subtier).
+// restricted to matches whose average badge (tier * 10 + subtier) is within the players' own range.
 import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 
 const API = "https://api.deadlock-api.com";
 const UA = "mokrillion-ingest/0.1 (private non-commercial trivia game)";
 const RAW_DIR = join(import.meta.dirname, "../../data/raw");
-/** 71 = Emissary 1 and above: a proxy for "experienced players". */
-const MIN_BADGE = Number(process.env.MOKRILLION_MIN_BADGE ?? 71);
+/** Default 61-89 = Ritualist 1 through Oracle 9, the rank range of the intended players. */
+const MIN_BADGE = Number(process.env.MOKRILLION_MIN_BADGE ?? 61);
+const MAX_BADGE = Number(process.env.MOKRILLION_MAX_BADGE ?? 89);
 
 async function get(path: string): Promise<unknown> {
   for (let attempt = 1; ; attempt++) {
@@ -20,7 +21,7 @@ async function get(path: string): Promise<unknown> {
   }
 }
 
-const query = `min_average_badge=${MIN_BADGE}&game_mode=normal`;
+const query = `min_average_badge=${MIN_BADGE}&max_average_badge=${MAX_BADGE}&game_mode=normal`;
 const heroStats = await get(`/v1/analytics/hero-stats?${query}`);
 const itemStats = await get(`/v1/analytics/item-stats?${query}`);
 if (!Array.isArray(heroStats) || !Array.isArray(itemStats)) throw new Error("unexpected response shape");

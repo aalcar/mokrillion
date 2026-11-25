@@ -21,10 +21,10 @@
    "criterion": "maxHealth >= 820"
   }
  },
- "knowledgeVersion": "2026-11-24-793c0d03",
+ "knowledgeVersion": "2026-11-24-ba1caa19",
  "scoringVersion": "3",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T02:37:44.245Z",
+ "generatedAt": "2026-11-25T02:58:08.338Z",
  "answers": [
   {
    "entityId": "hero_bebop",
@@ -51,8 +51,8 @@
    "score": 60
   },
   {
-   "entityId": "hero_ghost",
-   "name": "Lady Geist",
+   "entityId": "hero_dynamo",
+   "name": "Dynamo",
    "rank": 5,
    "score": 60
   },
@@ -63,8 +63,8 @@
    "score": 60
   },
   {
-   "entityId": "hero_dynamo",
-   "name": "Dynamo",
+   "entityId": "hero_ghost",
+   "name": "Lady Geist",
    "rank": 7,
    "score": 85
   },
@@ -106,7 +106,7 @@
      "surprising": 0
     },
     "perception": "Tanky brawler, hook and beam",
-    "popularity": 50.61,
+    "popularity": 50.94,
     "popularityObscurity": 0,
     "spellingCost": 5,
     "spellingObscurity": 0.3888888888888889,
@@ -129,11 +129,11 @@
      "surprising": 0
     },
     "perception": "Healer, Singularity ult",
-    "popularity": 22.77,
-    "popularityObscurity": 0.7777777777777778,
+    "popularity": 25.11,
+    "popularityObscurity": 0.6666666666666666,
     "spellingCost": 6,
     "spellingObscurity": 0.6666666666666666,
-    "key": 0.5666666666666667
+    "key": 0.5333333333333333
    },
    {
     "id": "hero_ghost",
@@ -152,11 +152,11 @@
      "surprising": 1
     },
     "perception": "Health-sacrificing lifesteal caster",
-    "popularity": 35.29,
-    "popularityObscurity": 0.3333333333333333,
+    "popularity": 37.57,
+    "popularityObscurity": 0.4444444444444444,
     "spellingCost": 4,
     "spellingObscurity": 0.16666666666666666,
-    "key": 0.53
+    "key": 0.5633333333333334
    },
    {
     "id": "hero_inferno",
@@ -175,11 +175,11 @@
      "surprising": 3
     },
     "perception": "Burning mystic damage dealer",
-    "popularity": 33.74,
-    "popularityObscurity": 0.4444444444444444,
+    "popularity": 39.43,
+    "popularityObscurity": 0.1111111111111111,
     "spellingCost": 8,
     "spellingObscurity": 1,
-    "key": 0.7266666666666666
+    "key": 0.6266666666666666
    },
    {
     "id": "hero_kelvin",
@@ -198,11 +198,11 @@
      "surprising": 1
     },
     "perception": "Ice healer, Frozen Shelter",
-    "popularity": 25.31,
-    "popularityObscurity": 0.6666666666666666,
+    "popularity": 25.01,
+    "popularityObscurity": 0.7777777777777778,
     "spellingCost": 6,
     "spellingObscurity": 0.6666666666666666,
-    "key": 0.7466666666666666
+    "key": 0.78
    },
    {
     "id": "hero_krill",
@@ -221,7 +221,7 @@
      "surprising": 0
     },
     "perception": "Burrowing tanky brawler",
-    "popularity": 21.69,
+    "popularity": 21.96,
     "popularityObscurity": 0.8888888888888888,
     "spellingCost": 2,
     "spellingObscurity": 0,
@@ -244,7 +244,7 @@
      "surprising": 5
     },
     "perception": "Marksman with long-range sniping",
-    "popularity": 40.28,
+    "popularity": 39.11,
     "popularityObscurity": 0.2222222222222222,
     "spellingCost": 7,
     "spellingObscurity": 0.8888888888888888,
@@ -267,7 +267,7 @@
      "surprising": 0
     },
     "perception": "Fast-charging punching brawler",
-    "popularity": 30.05,
+    "popularity": 30.96,
     "popularityObscurity": 0.5555555555555556,
     "spellingCost": 5,
     "spellingObscurity": 0.3888888888888889,
@@ -290,11 +290,11 @@
      "surprising": 0
     },
     "perception": "Bleed brawler, Killing Blow",
-    "popularity": 40.99,
-    "popularityObscurity": 0.1111111111111111,
+    "popularity": 38.71,
+    "popularityObscurity": 0.3333333333333333,
     "spellingCost": 4,
     "spellingObscurity": 0.16666666666666666,
-    "key": 0.31666666666666665
+    "key": 0.3833333333333333
    },
    {
     "id": "hero_werewolf",
@@ -313,7 +313,7 @@
      "surprising": 0
     },
     "perception": "Werewolf brawler, melee and shotgun",
-    "popularity": 19.63,
+    "popularity": 19.71,
     "popularityObscurity": 1,
     "spellingCost": 6,
     "spellingObscurity": 0.6666666666666666,
@@ -324,50 +324,50 @@
   "orderBeforeRefinement": [
    "hero_bebop",
    "hero_krill",
-   "hero_shiv",
    "hero_punkgoat",
-   "hero_ghost",
-   "hero_werewolf",
+   "hero_shiv",
    "hero_dynamo",
+   "hero_werewolf",
+   "hero_ghost",
    "hero_inferno",
-   "hero_kelvin",
-   "hero_priest"
+   "hero_priest",
+   "hero_kelvin"
   ],
   "pairwise": [
    {
-    "a": "hero_dynamo",
+    "a": "hero_ghost",
     "b": "hero_inferno",
     "purpose": "rare-contenders",
-    "rarer": "hero_inferno"
+    "rarer": null
    },
    {
-    "a": "hero_dynamo",
+    "a": "hero_ghost",
+    "b": "hero_priest",
+    "purpose": "rare-contenders",
+    "rarer": "hero_priest"
+   },
+   {
+    "a": "hero_ghost",
+    "b": "hero_kelvin",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_inferno",
+    "b": "hero_priest",
+    "purpose": "rare-contenders",
+    "rarer": "hero_priest"
+   },
+   {
+    "a": "hero_inferno",
     "b": "hero_kelvin",
     "purpose": "rare-contenders",
     "rarer": "hero_kelvin"
    },
    {
-    "a": "hero_dynamo",
-    "b": "hero_priest",
-    "purpose": "rare-contenders",
-    "rarer": "hero_priest"
-   },
-   {
-    "a": "hero_inferno",
+    "a": "hero_priest",
     "b": "hero_kelvin",
     "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_inferno",
-    "b": "hero_priest",
-    "purpose": "rare-contenders",
-    "rarer": "hero_priest"
-   },
-   {
-    "a": "hero_kelvin",
-    "b": "hero_priest",
-    "purpose": "rare-contenders",
     "rarer": "hero_priest"
    },
    {
@@ -377,22 +377,22 @@
     "rarer": null
    },
    {
-    "a": "hero_shiv",
-    "b": "hero_punkgoat",
+    "a": "hero_punkgoat",
+    "b": "hero_shiv",
     "purpose": "tier-boundary",
-    "rarer": null
+    "rarer": "hero_punkgoat"
    },
    {
     "a": "hero_bebop",
     "b": "hero_krill",
     "purpose": "review",
-    "rarer": "hero_krill"
+    "rarer": null
    },
    {
-    "a": "hero_krill",
-    "b": "hero_bebop",
+    "a": "hero_priest",
+    "b": "hero_ghost",
     "purpose": "review",
-    "rarer": "hero_krill"
+    "rarer": "hero_priest"
    }
   ],
   "review": [
@@ -400,22 +400,22 @@
     "name": "Bebop",
     "compareWith": "Mo & Krill",
     "claim": "should_be_more_obscure",
-    "reason": "Bebop is a ranged hero known for his hook and bomb, not for his health. A player asked for high base health would think of tanky brawlers like Mo & Krill, Abrams or Shiv first. Bebop at 10 pts as the single most obvious answer rests on a questionable assumption.",
+    "reason": "Bebop is a tanky brawler, but nothing about his identity is health-related. Mo & Krill and Dynamo are more strongly tied to being sturdy bruisers, so they would come to mind at least as readily as Bebop. Bebop's 10 pts looks too confident as the clear top answer.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Mo & Krill",
-    "compareWith": "Bebop",
+    "name": "Shiv",
+    "compareWith": "Billy",
     "claim": "should_be_more_obvious",
-    "reason": "Mo & Krill is a well-known tanky, burrowing bruiser, so it comes to mind immediately for a question about high health. It should be at least as obvious as Bebop and probably more so.",
-    "outcome": "rejected-by-comparison"
-   },
-   {
-    "name": "Infernus",
-    "compareWith": "Venator",
-    "claim": "should_be_more_obvious",
-    "reason": "Infernus is one of the most recognizable heroes, and many players will name him at random. He is more easily recalled than at 85 pts, so he should not sit alongside Dynamo and Kelvin.",
+    "reason": "Shiv is a popular melee bruiser with a well-known high-health, sustain-based identity, so players would think of him quickly. Placing him at 30 pts, tied with Mo & Krill, seems fine, but Billy at 60 is less often associated with health than Shiv. They should be closer.",
     "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Venator",
+    "compareWith": "Lady Geist",
+    "claim": "should_be_more_obvious",
+    "reason": "Venator is not especially forgettable, but Lady Geist is a distinctive health-cost hero whose health pool is a recognizable part of her kit. Players would more readily think of her than Venator for a health question, and in practice Venator is the rarer answer. Lady Geist at 85 may be too obscure relative to her association with health.",
+    "outcome": "rejected-by-comparison"
    }
   ]
  }

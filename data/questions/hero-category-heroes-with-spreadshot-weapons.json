@@ -21,10 +21,10 @@
    "criterion": "in wiki category \"Heroes with spreadshot weapons\""
   }
  },
- "knowledgeVersion": "2026-11-24-793c0d03",
+ "knowledgeVersion": "2026-11-24-ba1caa19",
  "scoringVersion": "3",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T02:38:02.042Z",
+ "generatedAt": "2026-11-25T02:58:25.403Z",
  "answers": [
   {
    "entityId": "hero_atlas",
@@ -63,26 +63,26 @@
    "score": 60
   },
   {
-   "entityId": "hero_ratking",
-   "name": "Rat King",
+   "entityId": "hero_yamato",
+   "name": "Yamato",
    "rank": 7,
    "score": 85
   },
   {
-   "entityId": "hero_yamato",
-   "name": "Yamato",
+   "entityId": "hero_ratking",
+   "name": "Rat King",
    "rank": 8,
-   "score": 85
-  },
-  {
-   "entityId": "hero_baba",
-   "name": "Baba",
-   "rank": 9,
    "score": 85
   },
   {
    "entityId": "hero_krill",
    "name": "Mo & Krill",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "hero_baba",
+   "name": "Baba",
    "rank": 10,
    "score": 100
   }
@@ -106,11 +106,11 @@
      "surprising": 0
     },
     "perception": "shotgun tank brawler with shoulder charge",
-    "popularity": 40,
-    "popularityObscurity": 0.2222222222222222,
+    "popularity": 39.95,
+    "popularityObscurity": 0.1111111111111111,
     "spellingCost": 6,
     "spellingObscurity": 0.5555555555555556,
-    "key": 0.12222222222222223
+    "key": 0.08888888888888889
    },
    {
     "id": "hero_baba",
@@ -129,7 +129,7 @@
      "surprising": 3
     },
     "perception": "mystic with witchy abilities",
-    "popularity": 13.81,
+    "popularity": 10.87,
     "popularityObscurity": 1,
     "spellingCost": 4,
     "spellingObscurity": 0.16666666666666666,
@@ -152,7 +152,7 @@
      "surprising": 3
     },
     "perception": "stalking melee-ish assassin with mark",
-    "popularity": 45.58,
+    "popularity": 45.26,
     "popularityObscurity": 0,
     "spellingCost": 7,
     "spellingObscurity": 0.9444444444444444,
@@ -175,7 +175,7 @@
      "surprising": 4
     },
     "perception": "burrowing brawler with sand blast",
-    "popularity": 21.69,
+    "popularity": 21.96,
     "popularityObscurity": 0.6666666666666666,
     "spellingCost": 2,
     "spellingObscurity": 0,
@@ -198,7 +198,7 @@
      "surprising": 2
     },
     "perception": "cat assassin with leaping slash",
-    "popularity": 21.21,
+    "popularity": 21.39,
     "popularityObscurity": 0.7777777777777778,
     "spellingCost": 6,
     "spellingObscurity": 0.5555555555555556,
@@ -221,7 +221,7 @@
      "surprising": 2
     },
     "perception": "rat swarm summoner brawler",
-    "popularity": 23.03,
+    "popularity": 24.46,
     "popularityObscurity": 0.5555555555555556,
     "spellingCost": 7,
     "spellingObscurity": 0.9444444444444444,
@@ -244,11 +244,11 @@
      "surprising": 2
     },
     "perception": "knife bleed fighter, shotgun-like pistol",
-    "popularity": 40.99,
-    "popularityObscurity": 0.1111111111111111,
+    "popularity": 38.71,
+    "popularityObscurity": 0.2222222222222222,
     "spellingCost": 4,
     "spellingObscurity": 0.16666666666666666,
-    "key": 0.32999999999999996
+    "key": 0.3633333333333333
    },
    {
     "id": "hero_synth",
@@ -267,11 +267,11 @@
      "surprising": 0
     },
     "perception": "teleporting assassin with shotgun-like weapon",
-    "popularity": 25.48,
-    "popularityObscurity": 0.4444444444444444,
+    "popularity": 24.78,
+    "popularityObscurity": 0.3333333333333333,
     "spellingCost": 6,
     "spellingObscurity": 0.5555555555555556,
-    "key": 0.28222222222222226
+    "key": 0.24888888888888888
    },
    {
     "id": "hero_werewolf",
@@ -290,7 +290,7 @@
      "surprising": 0
     },
     "perception": "werewolf brawler with shotgun",
-    "popularity": 19.63,
+    "popularity": 19.71,
     "popularityObscurity": 0.8888888888888888,
     "spellingCost": 6,
     "spellingObscurity": 0.5555555555555556,
@@ -313,11 +313,11 @@
      "surprising": 4
     },
     "perception": "sword slash assassin",
-    "popularity": 26.56,
-    "popularityObscurity": 0.3333333333333333,
+    "popularity": 24.73,
+    "popularityObscurity": 0.4444444444444444,
     "spellingCost": 6,
     "spellingObscurity": 0.5555555555555556,
-    "key": 0.6755555555555555
+    "key": 0.7088888888888888
    }
   ],
   "passAgreement": 0.5555555555555556,
@@ -329,46 +329,46 @@
    "hero_werewolf",
    "hero_nano",
    "hero_ratking",
-   "hero_yamato",
    "hero_krill",
+   "hero_yamato",
    "hero_baba"
   ],
   "pairwise": [
    {
     "a": "hero_ratking",
+    "b": "hero_krill",
+    "purpose": "rare-contenders",
+    "rarer": "hero_krill"
+   },
+   {
+    "a": "hero_ratking",
     "b": "hero_yamato",
     "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_ratking",
-    "b": "hero_krill",
-    "purpose": "rare-contenders",
-    "rarer": "hero_krill"
+    "rarer": "hero_ratking"
    },
    {
     "a": "hero_ratking",
     "b": "hero_baba",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "hero_baba"
    },
    {
-    "a": "hero_yamato",
-    "b": "hero_krill",
+    "a": "hero_krill",
+    "b": "hero_yamato",
     "purpose": "rare-contenders",
     "rarer": "hero_krill"
-   },
-   {
-    "a": "hero_yamato",
-    "b": "hero_baba",
-    "purpose": "rare-contenders",
-    "rarer": null
    },
    {
     "a": "hero_krill",
     "b": "hero_baba",
     "purpose": "rare-contenders",
-    "rarer": "hero_krill"
+    "rarer": null
+   },
+   {
+    "a": "hero_yamato",
+    "b": "hero_baba",
+    "purpose": "rare-contenders",
+    "rarer": "hero_baba"
    },
    {
     "a": "hero_atlas",
@@ -389,16 +389,10 @@
     "rarer": "hero_synth"
    },
    {
-    "a": "hero_synth",
-    "b": "hero_atlas",
+    "a": "hero_yamato",
+    "b": "hero_werewolf",
     "purpose": "review",
-    "rarer": "hero_synth"
-   },
-   {
-    "a": "hero_krill",
-    "b": "hero_ratking",
-    "purpose": "review",
-    "rarer": null
+    "rarer": "hero_yamato"
    }
   ],
   "review": [
@@ -406,22 +400,22 @@
     "name": "Abrams",
     "compareWith": "Pocket",
     "claim": "should_be_more_obscure",
-    "reason": "Abrams' shotgun is a short-range spread weapon, but players mostly associate him with his melee-range brawling, Shoulder Charge and Siphon Life. Pocket's Enchanter's Satchel shotgun is more of a defining trait, and Pocket is probably the first hero many players think of for a spreadshot. Abrams should not be the single most obvious answer.",
+    "reason": "Abrams is a shotgun-style hero, but Pocket is the more iconic and instantly associated spreadshot hero because his Enchanter's Satchel shotgun-like fire is his defining feature. Players asked for a spreadshot hero will likely think of Pocket at least as readily as Abrams, so Abrams at 10 pts and Pocket at 30 is not clearly justified.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Pocket",
-    "compareWith": "Abrams",
+    "name": "Yamato",
+    "compareWith": "Silver",
     "claim": "should_be_more_obvious",
-    "reason": "Pocket's weapon is a clear spreadshot, and he is often described as the shotgun hero in the game. He should be at least as obvious as Abrams, so they should swap or tie.",
+    "reason": "Yamato's shotgun-like Shadow Transformation weapon... Actually her standard weapon fires a spread of pellets, which is memorable, and she is a widely played hero. Silver's wolf form and spread weapon are less strongly tied to this question, so Yamato should be rated more obvious than Silver.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Mo & Krill",
-    "compareWith": "Rat King",
+    "name": "Rat King",
+    "compareWith": "Baba",
     "claim": "should_be_more_obvious",
-    "reason": "Mo & Krill is not a spreadshot hero in the usual sense, but if it counts, it is a well-known hero with a distinctive kit. The 100-point slot goes to a hero that is not even clearly a spreadshot, and it is likely more recognizable than Rat King, who is a niche, newer pick. Rat King (a less played hero with a shotgun-like weapon) is the rarer answer here.",
-    "outcome": "rejected-by-comparison"
+    "reason": "Rat King is a new, less commonly recalled hero and is placed at 85 pts, but Baba at 100 is an unfamiliar answer that few would think of; still, Rat King should be nearer the obscure end, so the pair should be reconsidered with Rat King being the more obscure one.",
+    "outcome": "ignored-invalid"
    }
   ]
  }

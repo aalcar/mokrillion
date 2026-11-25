@@ -36,6 +36,24 @@
       "rarer": "upgrade_restorative_locket",
       "commoner": "upgrade_melee_charge",
       "note": "Melee Charge should be more common."
+    },
+    {
+      "signature": "item-cost:6400",
+      "rarer": "upgrade_aoe_root",
+      "commoner": "upgrade_crushing_fists",
+      "note": "Crushing Fists should be lower; Vortex Web, Lightning Scroll and Phantom Strike are closer to the 100-point answer than another melee item."
+    },
+    {
+      "signature": "item-cost:6400",
+      "rarer": "upgrade_ultimate_burst",
+      "commoner": "upgrade_crushing_fists",
+      "note": "Crushing Fists should be lower; Vortex Web, Lightning Scroll and Phantom Strike are closer to the 100-point answer than another melee item."
+    },
+    {
+      "signature": "item-cost:6400",
+      "rarer": "upgrade_phantom_strike",
+      "commoner": "upgrade_crushing_fists",
+      "note": "Crushing Fists should be lower; Vortex Web, Lightning Scroll and Phantom Strike are closer to the 100-point answer than another melee item."
     }
   ]
 }
