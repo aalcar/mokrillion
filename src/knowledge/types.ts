@@ -127,3 +127,43 @@ export interface KnowledgeFile {
   generatedFrom: Record<string, number>; // data page -> revision id
   entities: Entity[];
 }
+
+export type EntityType = Entity["type"];
+
+/** A question with its complete, validated answer pool, before rarity scoring. */
+export interface CandidateQuestion {
+  /** Stable identity used to avoid repeats, e.g. "item-cost:3200". */
+  signature: string;
+  prompt: string;
+  category: string;
+  entityType: EntityType;
+  answerIds: string[];
+  validation: {
+    method: "deterministic" | "llm";
+    /** The exact rule answers were checked against. */
+    criterion: string;
+    notes?: string[];
+  };
+}
+
+export interface ScoredAnswer {
+  entityId: string;
+  /** 1 = most obvious. */
+  rank: number;
+  score: Score;
+}
+
+export interface Question {
+  id: string;
+  prompt: string;
+  category: string;
+  entityType: EntityType;
+  answers: ScoredAnswer[];
+}
+
+export interface DailyGame {
+  date: string;
+  questions: Question[];
+  knowledgeVersion: string;
+  scoringVersion: string;
+}
