@@ -28,9 +28,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:09:35.149Z",
+ "generatedAt": "2026-11-25T04:43:14.016Z",
  "answers": [
   {
    "entityId": "upgrade_sprint_booster",
@@ -45,20 +45,20 @@
    "score": 30
   },
   {
-   "entityId": "upgrade_blitz_bullets",
-   "name": "Swift Striker",
+   "entityId": "upgrade_cloaking_device_active",
+   "name": "Shadow Weave",
    "rank": 3,
    "score": 30
   },
   {
-   "entityId": "upgrade_cloaking_device_active",
-   "name": "Shadow Weave",
+   "entityId": "upgrade_dps_aura",
+   "name": "Heroic Aura",
    "rank": 4,
    "score": 30
   },
   {
-   "entityId": "upgrade_long_range",
-   "name": "Long Range",
+   "entityId": "upgrade_blitz_bullets",
+   "name": "Swift Striker",
    "rank": 5,
    "score": 60
   },
@@ -75,26 +75,26 @@
    "score": 60
   },
   {
-   "entityId": "upgrade_dps_aura",
-   "name": "Heroic Aura",
+   "entityId": "upgrade_long_range",
+   "name": "Long Range",
    "rank": 8,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_goose_egg",
+   "name": "Golden Goose Egg",
+   "rank": 9,
    "score": 60
   },
   {
    "entityId": "upgrade_bullet_armor_reduction_aura",
    "name": "Hunter's Aura",
-   "rank": 9,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_magic_slow",
-   "name": "Mystic Slow",
    "rank": 10,
    "score": 85
   },
   {
-   "entityId": "upgrade_goose_egg",
-   "name": "Golden Goose Egg",
+   "entityId": "upgrade_magic_slow",
+   "name": "Mystic Slow",
    "rank": 11,
    "score": 85
   },
@@ -130,6 +130,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_aoe_root",
@@ -152,7 +158,7 @@
     "popularityObscurity": 0.8,
     "spellingCost": 6,
     "spellingObscurity": 0.13333333333333333,
-    "key": 0.7886666666666668
+    "key": 0.7986666666666669
    },
    {
     "id": "upgrade_blitz_bullets",
@@ -175,7 +181,7 @@
     "popularityObscurity": 0.06666666666666667,
     "spellingCost": 12,
     "spellingObscurity": 0.7666666666666667,
-    "key": 0.27033333333333337
+    "key": 0.34700000000000003
    },
    {
     "id": "upgrade_bullet_armor_reduction_aura",
@@ -198,7 +204,7 @@
     "popularityObscurity": 0.26666666666666666,
     "spellingCost": 15,
     "spellingObscurity": 0.9666666666666667,
-    "key": 0.5143333333333333
+    "key": 0.6110000000000001
    },
    {
     "id": "upgrade_cloaking_device_active",
@@ -221,7 +227,7 @@
     "popularityObscurity": 0.5333333333333333,
     "spellingCost": 11,
     "spellingObscurity": 0.5666666666666667,
-    "key": 0.315
+    "key": 0.21500000000000002
    },
    {
     "id": "upgrade_containment",
@@ -244,7 +250,7 @@
     "popularityObscurity": 0.2,
     "spellingCost": 10,
     "spellingObscurity": 0.4,
-    "key": 0.35666666666666674
+    "key": 0.42333333333333334
    },
    {
     "id": "upgrade_dps_aura",
@@ -267,7 +273,7 @@
     "popularityObscurity": 0.7333333333333333,
     "spellingCost": 6,
     "spellingObscurity": 0.13333333333333333,
-    "key": 0.42466666666666664
+    "key": 0.298
    },
    {
     "id": "upgrade_goose_egg",
@@ -290,7 +296,7 @@
     "popularityObscurity": 1,
     "spellingCost": 3,
     "spellingObscurity": 0,
-    "key": 0.6713333333333333
+    "key": 0.5446666666666667
    },
    {
     "id": "upgrade_greater_withering_whip",
@@ -313,7 +319,7 @@
     "popularityObscurity": 0.6666666666666666,
     "spellingCost": 12,
     "spellingObscurity": 0.7666666666666667,
-    "key": 0.7963333333333333
+    "key": 0.853
    },
    {
     "id": "upgrade_long_range",
@@ -336,7 +342,7 @@
     "popularityObscurity": 0.4,
     "spellingCost": 9,
     "spellingObscurity": 0.26666666666666666,
-    "key": 0.4226666666666667
+    "key": 0.436
    },
    {
     "id": "upgrade_magic_slow",
@@ -359,7 +365,7 @@
     "popularityObscurity": 0.4666666666666667,
     "spellingCost": 10,
     "spellingObscurity": 0.4,
-    "key": 0.5660000000000001
+    "key": 0.6126666666666667
    },
    {
     "id": "upgrade_rescue_beam",
@@ -382,7 +388,7 @@
     "popularityObscurity": 0.8666666666666667,
     "spellingCost": 10,
     "spellingObscurity": 0.4,
-    "key": 0.7040000000000001
+    "key": 0.6406666666666667
    },
    {
     "id": "upgrade_sharpshooter",
@@ -405,7 +411,7 @@
     "popularityObscurity": 0.3333333333333333,
     "spellingCost": 12,
     "spellingObscurity": 0.7666666666666667,
-    "key": 0.399
+    "key": 0.419
    },
    {
     "id": "upgrade_sprint_booster",
@@ -451,7 +457,7 @@
     "popularityObscurity": 0.13333333333333333,
     "spellingCost": 6,
     "spellingObscurity": 0.13333333333333333,
-    "key": 0.09666666666666668
+    "key": 0.08
    },
    {
     "id": "upgrade_ultimate_burst",
@@ -474,7 +480,7 @@
     "popularityObscurity": 0.9333333333333333,
     "spellingCost": 15,
     "spellingObscurity": 0.9666666666666667,
-    "key": 0.913
+    "key": 0.903
    },
    {
     "id": "upgrade_withering_whip",
@@ -497,22 +503,22 @@
     "popularityObscurity": 0.6,
     "spellingCost": 12,
     "spellingObscurity": 0.7666666666666667,
-    "key": 0.7330000000000001
+    "key": 0.7896666666666667
    }
   ],
   "passAgreement": 0.6633333333333333,
   "orderBeforeRefinement": [
    "upgrade_sprint_booster",
    "upgrade_trophy_collector",
-   "upgrade_blitz_bullets",
    "upgrade_cloaking_device_active",
-   "upgrade_containment",
-   "upgrade_sharpshooter",
-   "upgrade_long_range",
    "upgrade_dps_aura",
+   "upgrade_blitz_bullets",
+   "upgrade_sharpshooter",
+   "upgrade_containment",
+   "upgrade_long_range",
+   "upgrade_goose_egg",
    "upgrade_bullet_armor_reduction_aura",
    "upgrade_magic_slow",
-   "upgrade_goose_egg",
    "upgrade_rescue_beam",
    "upgrade_withering_whip",
    "upgrade_aoe_root",
@@ -563,69 +569,63 @@
     "rarer": "upgrade_trophy_collector"
    },
    {
-    "a": "upgrade_cloaking_device_active",
-    "b": "upgrade_containment",
+    "a": "upgrade_dps_aura",
+    "b": "upgrade_blitz_bullets",
     "purpose": "tier-boundary",
-    "rarer": "upgrade_containment"
-   },
-   {
-    "a": "upgrade_bullet_armor_reduction_aura",
-    "b": "upgrade_magic_slow",
-    "purpose": "tier-boundary",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_containment",
-    "b": "upgrade_long_range",
-    "purpose": "review",
-    "rarer": "upgrade_containment"
+    "rarer": "upgrade_blitz_bullets"
    },
    {
     "a": "upgrade_goose_egg",
-    "b": "upgrade_magic_slow",
-    "purpose": "review",
-    "rarer": "upgrade_goose_egg"
+    "b": "upgrade_bullet_armor_reduction_aura",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_bullet_armor_reduction_aura"
    },
    {
-    "a": "upgrade_dps_aura",
-    "b": "upgrade_sharpshooter",
+    "a": "upgrade_goose_egg",
+    "b": "upgrade_containment",
     "purpose": "review",
     "rarer": null
    },
    {
     "a": "upgrade_ultimate_burst",
-    "b": "upgrade_aoe_root",
+    "b": "upgrade_rescue_beam",
     "purpose": "review",
-    "rarer": null
+    "rarer": "upgrade_ultimate_burst"
+   },
+   {
+    "a": "upgrade_sharpshooter",
+    "b": "upgrade_blitz_bullets",
+    "purpose": "review",
+    "rarer": "upgrade_sharpshooter"
    }
   ],
   "review": [
    {
-    "name": "Slowing Hex",
-    "compareWith": "Long Range",
+    "name": "Heroic Aura",
+    "compareWith": "Trophy Collector",
     "claim": "should_be_more_obscure",
-    "reason": "Slowing Hex is known for its slow and movement silence, and its 0.5m sprint speed is a minor stat that few players would recall. Long Range is a common weapon item with a more visible 0.75m bonus, so it is more likely to come to mind than Slowing Hex.",
-    "outcome": "applied"
+    "reason": "Heroic Aura is mainly known for its bullet resist aura, and its 1.5m sprint is a minor stat. Trophy Collector is a direct upgrade of Sprint Boots with the same 2.0m sprint, so it comes to mind much sooner for this question.",
+    "outcome": "ignored-invalid"
    },
    {
     "name": "Golden Goose Egg",
-    "compareWith": "Mystic Slow",
+    "compareWith": "Slowing Hex",
     "claim": "should_be_more_obvious",
-    "reason": "Golden Goose Egg is a distinctive, memorable Tier 1 item that players buy and joke about, and it is known to give a small sprint bonus. Mystic Slow is mainly known for its slow effect, so players would be less likely to think of it for a sprint speed question. Golden Goose Egg should score lower.",
-    "outcome": "rejected-by-comparison"
-   },
-   {
-    "name": "Heroic Aura",
-    "compareWith": "Sharpshooter",
-    "claim": "should_be_more_obvious",
-    "reason": "Heroic Aura is a popular, frequently bought aura item whose 1.5m sprint bonus is among the largest. Sharpshooter is a niche item that also carries a move speed penalty, so players would find it less natural for this question. Heroic Aura should be rated easier than Sharpshooter.",
+    "reason": "Golden Goose Egg is a commonly bought tier 1 item and its 1m sprint is a fairly large bonus for a non-sprint item. Slowing Hex is known for its slow and its 0.5m sprint is easy to forget, so Golden Goose Egg should be the easier recall.",
     "outcome": "rejected-by-comparison"
    },
    {
     "name": "Lightning Scroll",
-    "compareWith": "Vortex Web",
+    "compareWith": "Rescue Beam",
     "claim": "should_be_more_obvious",
-    "reason": "Lightning Scroll is a well-known, commonly built Tier 4 item, and it sits at the 100-point maximum. Vortex Web is a rarer, situational Tier 4 item, so players are less likely to recall it. Lightning Scroll should be rated easier than Vortex Web.",
+    "reason": "Lightning Scroll is a well-known tier 4 item that players see often. Rescue Beam is a niche active heal, and its 0.75m sprint is an odd stat that few would link to it. Rescue Beam should be the rarer of the two.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Sharpshooter",
+    "compareWith": "Swift Striker",
+    "claim": "should_be_more_obvious",
+    "reason": "Sharpshooter is a famous weapon item whose 1.0m sprint is one of the largest bonuses among non-boot items. That makes it more likely to be recalled than Swift Striker, which is less memorable.",
     "outcome": "rejected-by-comparison"
    }
   ]

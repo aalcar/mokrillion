@@ -22,9 +22,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:11:58.462Z",
+ "generatedAt": "2026-11-25T04:35:42.614Z",
  "answers": [
   {
    "entityId": "hero_atlas",
@@ -39,55 +39,61 @@
    "score": 30
   },
   {
-   "entityId": "hero_shiv",
-   "name": "Shiv",
+   "entityId": "hero_werewolf",
+   "name": "Silver",
    "rank": 3,
    "score": 30
   },
   {
-   "entityId": "hero_drifter",
-   "name": "Drifter",
+   "entityId": "hero_shiv",
+   "name": "Shiv",
    "rank": 4,
    "score": 60
   },
   {
-   "entityId": "hero_werewolf",
-   "name": "Silver",
+   "entityId": "hero_drifter",
+   "name": "Drifter",
    "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "hero_nano",
+   "name": "Calico",
+   "rank": 6,
    "score": 60
   },
   {
    "entityId": "hero_ratking",
    "name": "Rat King",
-   "rank": 6,
-   "score": 60
-  },
-  {
-   "entityId": "hero_yamato",
-   "name": "Yamato",
    "rank": 7,
-   "score": 85
-  },
-  {
-   "entityId": "hero_nano",
-   "name": "Calico",
-   "rank": 8,
-   "score": 85
-  },
-  {
-   "entityId": "hero_krill",
-   "name": "Mo & Krill",
-   "rank": 9,
    "score": 85
   },
   {
    "entityId": "hero_baba",
    "name": "Baba",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "hero_yamato",
+   "name": "Yamato",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "hero_krill",
+   "name": "Mo & Krill",
    "rank": 10,
    "score": 100
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_atlas",
@@ -110,7 +116,7 @@
     "popularityObscurity": 0.1111111111111111,
     "spellingCost": 6,
     "spellingObscurity": 0.5555555555555556,
-    "key": 0.07222222222222223
+    "key": 0.044444444444444446
    },
    {
     "id": "hero_baba",
@@ -133,7 +139,7 @@
     "popularityObscurity": 1,
     "spellingCost": 4,
     "spellingObscurity": 0.16666666666666666,
-    "key": 0.8116666666666668
+    "key": 0.7450000000000001
    },
    {
     "id": "hero_drifter",
@@ -156,7 +162,7 @@
     "popularityObscurity": 0,
     "spellingCost": 7,
     "spellingObscurity": 0.9444444444444444,
-    "key": 0.3527777777777778
+    "key": 0.4916666666666667
    },
    {
     "id": "hero_krill",
@@ -179,7 +185,7 @@
     "popularityObscurity": 0.6666666666666666,
     "spellingCost": 2,
     "spellingObscurity": 0,
-    "key": 0.7188888888888889
+    "key": 0.7577777777777778
    },
    {
     "id": "hero_nano",
@@ -202,7 +208,7 @@
     "popularityObscurity": 0.7777777777777778,
     "spellingCost": 6,
     "spellingObscurity": 0.5555555555555556,
-    "key": 0.6444444444444445
+    "key": 0.5888888888888889
    },
    {
     "id": "hero_ratking",
@@ -225,7 +231,7 @@
     "popularityObscurity": 0.5555555555555556,
     "spellingCost": 7,
     "spellingObscurity": 0.9444444444444444,
-    "key": 0.6238888888888889
+    "key": 0.6461111111111112
    },
    {
     "id": "hero_shiv",
@@ -248,7 +254,7 @@
     "popularityObscurity": 0.2222222222222222,
     "spellingCost": 4,
     "spellingObscurity": 0.16666666666666666,
-    "key": 0.3538888888888889
+    "key": 0.415
    },
    {
     "id": "hero_synth",
@@ -271,7 +277,7 @@
     "popularityObscurity": 0.3333333333333333,
     "spellingCost": 6,
     "spellingObscurity": 0.5555555555555556,
-    "key": 0.24666666666666667
+    "key": 0.20222222222222222
    },
    {
     "id": "hero_werewolf",
@@ -294,7 +300,7 @@
     "popularityObscurity": 0.8888888888888888,
     "spellingCost": 6,
     "spellingObscurity": 0.5555555555555556,
-    "key": 0.4933333333333334
+    "key": 0.3211111111111111
    },
    {
     "id": "hero_yamato",
@@ -317,58 +323,58 @@
     "popularityObscurity": 0.4444444444444444,
     "spellingCost": 6,
     "spellingObscurity": 0.5555555555555556,
-    "key": 0.6822222222222223
+    "key": 0.7877777777777778
    }
   ],
   "passAgreement": 0.5555555555555556,
   "orderBeforeRefinement": [
    "hero_atlas",
    "hero_synth",
-   "hero_drifter",
-   "hero_shiv",
    "hero_werewolf",
-   "hero_ratking",
+   "hero_shiv",
+   "hero_drifter",
    "hero_nano",
-   "hero_yamato",
+   "hero_ratking",
+   "hero_baba",
    "hero_krill",
-   "hero_baba"
+   "hero_yamato"
   ],
   "pairwise": [
    {
-    "a": "hero_nano",
-    "b": "hero_yamato",
-    "purpose": "rare-contenders",
-    "rarer": "hero_nano"
-   },
-   {
-    "a": "hero_nano",
-    "b": "hero_krill",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_nano",
+    "a": "hero_ratking",
     "b": "hero_baba",
     "purpose": "rare-contenders",
     "rarer": null
    },
    {
-    "a": "hero_yamato",
+    "a": "hero_ratking",
     "b": "hero_krill",
     "purpose": "rare-contenders",
     "rarer": "hero_krill"
    },
    {
-    "a": "hero_yamato",
-    "b": "hero_baba",
+    "a": "hero_ratking",
+    "b": "hero_yamato",
     "purpose": "rare-contenders",
-    "rarer": "hero_baba"
+    "rarer": null
+   },
+   {
+    "a": "hero_baba",
+    "b": "hero_krill",
+    "purpose": "rare-contenders",
+    "rarer": "hero_krill"
+   },
+   {
+    "a": "hero_baba",
+    "b": "hero_yamato",
+    "purpose": "rare-contenders",
+    "rarer": null
    },
    {
     "a": "hero_krill",
-    "b": "hero_baba",
+    "b": "hero_yamato",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "hero_krill"
    },
    {
     "a": "hero_atlas",
@@ -377,38 +383,38 @@
     "rarer": "hero_synth"
    },
    {
-    "a": "hero_drifter",
+    "a": "hero_werewolf",
     "b": "hero_shiv",
     "purpose": "tier-boundary",
-    "rarer": null
+    "rarer": "hero_shiv"
    },
    {
-    "a": "hero_drifter",
-    "b": "hero_shiv",
+    "a": "hero_krill",
+    "b": "hero_yamato",
     "purpose": "review",
-    "rarer": "hero_drifter"
+    "rarer": "hero_krill"
    }
   ],
   "review": [
    {
-    "name": "Drifter",
-    "compareWith": "Shiv",
-    "claim": "should_be_more_obscure",
-    "reason": "Drifter's Crimson Grasp is not strongly known as a spreadshot weapon, so he shouldn't be 30 pts, level with Pocket. Shiv is a more commonly played hero who also gets named for shotgun-like weapons, so Drifter should sit at or beyond Shiv's score.",
-    "outcome": "applied"
+    "name": "Mo & Krill",
+    "compareWith": "Yamato",
+    "claim": "should_be_more_obvious",
+    "reason": "Mo & Krill's Yellow Canary is a shotgun-style spreadshot, and he is a well-known brawler. Yamato's Sister's Lament is a charged-attack weapon that players tend not to associate with spreadshots, so she should be the rarest answer. Mo & Krill should rank below Yamato in obscurity.",
+    "outcome": "rejected-by-comparison"
    },
    {
     "name": "Shiv",
-    "compareWith": "Silver",
+    "compareWith": "Rat King",
     "claim": "should_be_more_obvious",
-    "reason": "Shiv is a very popular, heavily played hero and Busted Flush is a shotgun-style weapon that players know. He should rank no lower than Silver, and arguably above Drifter.",
+    "reason": "Shiv's Busted Flush is commonly remembered as a shotgun-like spreadshot, and he is a popular hero. He should score closer to Pocket and Silver than to the more obscure heroes. Rat King's Sovereign's Decree is less strongly tied to spreadshots, so the two should be placed accordingly.",
     "outcome": "ignored-invalid"
    },
    {
-    "name": "Mo & Krill",
-    "compareWith": "Yamato",
-    "claim": "should_be_more_obscure",
-    "reason": "Mo & Krill's Yellow Canary is rarely thought of as a spreadshot, so players would rarely name it. Yamato's weapon is similarly unassociated, but Yamato is much more famous, so Mo & Krill should rank at least as obscure as Yamato.",
+    "name": "Abrams",
+    "compareWith": "Silver",
+    "claim": "should_be_more_obvious",
+    "reason": "This one is plausible, but Abrams' shotgun is the most famous spreadshot, so he should stay at the top. Silver's wolf-themed hero is less commonly recalled for shotguns, so Silver at 30 is perhaps slightly too obvious.",
     "outcome": "ignored-invalid"
    }
   ]

@@ -19,43 +19,43 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:13:36.906Z",
+ "generatedAt": "2026-11-25T04:35:00.215Z",
  "answers": [
   {
-   "entityId": "hero_punkgoat",
-   "name": "Billy",
+   "entityId": "hero_yamato",
+   "name": "Yamato",
    "rank": 1,
    "score": 10
   },
   {
-   "entityId": "hero_drifter",
-   "name": "Drifter",
+   "entityId": "hero_punkgoat",
+   "name": "Billy",
    "rank": 2,
    "score": 30
   },
   {
-   "entityId": "hero_yamato",
-   "name": "Yamato",
+   "entityId": "hero_viscous",
+   "name": "Viscous",
    "rank": 3,
    "score": 60
   },
   {
-   "entityId": "hero_bebop",
-   "name": "Bebop",
+   "entityId": "hero_drifter",
+   "name": "Drifter",
    "rank": 4,
    "score": 60
   },
   {
-   "entityId": "hero_viscous",
-   "name": "Viscous",
+   "entityId": "hero_werewolf",
+   "name": "Silver",
    "rank": 5,
    "score": 85
   },
   {
-   "entityId": "hero_werewolf",
-   "name": "Silver",
+   "entityId": "hero_bebop",
+   "name": "Bebop",
    "rank": 6,
    "score": 85
   },
@@ -67,6 +67,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_bebop",
@@ -89,7 +95,7 @@
     "popularityObscurity": 0,
     "spellingCost": 5,
     "spellingObscurity": 0.08333333333333333,
-    "key": 0.48083333333333333
+    "key": 0.6975
    },
    {
     "id": "hero_drifter",
@@ -112,7 +118,7 @@
     "popularityObscurity": 0.16666666666666666,
     "spellingCost": 7,
     "spellingObscurity": 0.9166666666666666,
-    "key": 0.2775
+    "key": 0.31083333333333335
    },
    {
     "id": "hero_nano",
@@ -135,7 +141,7 @@
     "popularityObscurity": 0.6666666666666666,
     "spellingCost": 6,
     "spellingObscurity": 0.5,
-    "key": 0.75
+    "key": 0.7916666666666667
    },
    {
     "id": "hero_punkgoat",
@@ -158,7 +164,7 @@
     "popularityObscurity": 0.3333333333333333,
     "spellingCost": 5,
     "spellingObscurity": 0.08333333333333333,
-    "key": 0.26583333333333337
+    "key": 0.24083333333333332
    },
    {
     "id": "hero_viscous",
@@ -181,7 +187,7 @@
     "popularityObscurity": 1,
     "spellingCost": 7,
     "spellingObscurity": 0.9166666666666666,
-    "key": 0.7391666666666667
+    "key": 0.6225
    },
    {
     "id": "hero_werewolf",
@@ -204,7 +210,7 @@
     "popularityObscurity": 0.8333333333333334,
     "spellingCost": 6,
     "spellingObscurity": 0.5,
-    "key": 0.7066666666666668
+    "key": 0.6566666666666667
    },
    {
     "id": "hero_yamato",
@@ -227,89 +233,102 @@
     "popularityObscurity": 0.5,
     "spellingCost": 6,
     "spellingObscurity": 0.5,
-    "key": 0.28
+    "key": 0.18
    }
   ],
   "passAgreement": 0.4666666666666666,
   "orderBeforeRefinement": [
+   "hero_yamato",
    "hero_punkgoat",
    "hero_drifter",
-   "hero_yamato",
-   "hero_bebop",
-   "hero_werewolf",
    "hero_viscous",
+   "hero_werewolf",
+   "hero_bebop",
    "hero_nano"
   ],
   "pairwise": [
    {
-    "a": "hero_bebop",
+    "a": "hero_viscous",
     "b": "hero_werewolf",
     "purpose": "rare-contenders",
     "rarer": "hero_werewolf"
    },
    {
-    "a": "hero_bebop",
-    "b": "hero_viscous",
+    "a": "hero_viscous",
+    "b": "hero_bebop",
     "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_bebop",
-    "b": "hero_nano",
-    "purpose": "rare-contenders",
-    "rarer": "hero_nano"
-   },
-   {
-    "a": "hero_werewolf",
-    "b": "hero_viscous",
-    "purpose": "rare-contenders",
-    "rarer": "hero_viscous"
-   },
-   {
-    "a": "hero_werewolf",
-    "b": "hero_nano",
-    "purpose": "rare-contenders",
-    "rarer": "hero_nano"
+    "rarer": "hero_bebop"
    },
    {
     "a": "hero_viscous",
     "b": "hero_nano",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "hero_nano"
+   },
+   {
+    "a": "hero_werewolf",
+    "b": "hero_bebop",
+    "purpose": "rare-contenders",
+    "rarer": "hero_bebop"
+   },
+   {
+    "a": "hero_werewolf",
+    "b": "hero_nano",
+    "purpose": "rare-contenders",
+    "rarer": "hero_nano"
+   },
+   {
+    "a": "hero_bebop",
+    "b": "hero_nano",
+    "purpose": "rare-contenders",
+    "rarer": "hero_nano"
+   },
+   {
+    "a": "hero_yamato",
+    "b": "hero_punkgoat",
+    "purpose": "tier-boundary",
+    "rarer": "hero_punkgoat"
    },
    {
     "a": "hero_punkgoat",
     "b": "hero_drifter",
     "purpose": "tier-boundary",
-    "rarer": "hero_drifter"
-   },
-   {
-    "a": "hero_drifter",
-    "b": "hero_yamato",
-    "purpose": "tier-boundary",
-    "rarer": "hero_drifter"
+    "rarer": null
    },
    {
     "a": "hero_viscous",
-    "b": "hero_werewolf",
+    "b": "hero_drifter",
     "purpose": "review",
-    "rarer": "hero_werewolf"
+    "rarer": "hero_drifter"
+   },
+   {
+    "a": "hero_nano",
+    "b": "hero_bebop",
+    "purpose": "review",
+    "rarer": null
    }
   ],
   "review": [
    {
     "name": "Viscous",
-    "compareWith": "Silver",
+    "compareWith": "Drifter",
     "claim": "should_be_more_obvious",
-    "reason": "Viscous's Puddle Punch is a melee attack and Viscous is a well-known melee brawler, so players link him to melee scaling more readily than the placement as an equally obscure answer to Silver suggests. Silver is better known for his gun and werewolf form, so he should sit above Viscous in obscurity.",
+    "reason": "Viscous's Puddle Punch is a melee-themed ability that players tie to melee, and Viscous is a melee-focused brawler. Drifter is mainly known for his Rend and Stalker's Mark kit, so he should be rarer than Viscous.",
     "outcome": "applied"
    },
    {
-    "name": "Drifter",
-    "compareWith": "Yamato",
+    "name": "Silver",
+    "compareWith": "Bebop",
     "claim": "should_be_more_obvious",
-    "reason": "Drifter is a melee-focused assassin whose weapon, Crimson Grasp, is a melee weapon, and his kit is strongly associated with melee. He should be nearer to Yamato than the 30-point gap suggests, possibly even above her.",
-    "outcome": "applied-by-data"
+    "reason": "Silver's kit is built around melee, with Boot Kick and the werewolf Lycan Curse, so players link him to melee scaling more readily than Bebop, who is known for hooks and Hyper Beam. Bebop should be rarer than Silver.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Calico",
+    "compareWith": "Bebop",
+    "claim": "should_be_more_obvious",
+    "reason": "Calico has Leaping Slash and Gloom Bombs and is an assassin with a melee-style kit, so players associate her with melee more than Bebop, a beam and bomb hero. Bebop should be the 100-point answer, or the two should at least be tied.",
+    "outcome": "rejected-by-comparison"
    }
   ]
  }

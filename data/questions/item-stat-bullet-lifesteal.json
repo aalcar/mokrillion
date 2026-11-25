@@ -17,9 +17,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
- "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:11:40.870Z",
+ "scoringVersion": "8",
+ "model": "cache only",
+ "generatedAt": "2026-11-25T04:41:16.970Z",
  "answers": [
   {
    "entityId": "upgrade_vampire",
@@ -53,6 +53,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_damage_recycler",
@@ -75,7 +81,7 @@
     "popularityObscurity": 0.5,
     "spellingCost": 5,
     "spellingObscurity": 0.25,
-    "key": 0.35000000000000003
+    "key": 0.28750000000000003
    },
    {
     "id": "upgrade_fervor",
@@ -98,7 +104,7 @@
     "popularityObscurity": 0.75,
     "spellingCost": 6,
     "spellingObscurity": 0.5,
-    "key": 0.8750000000000001
+    "key": 0.9375
    },
    {
     "id": "upgrade_fury_trance",
@@ -121,7 +127,7 @@
     "popularityObscurity": 1,
     "spellingCost": 4,
     "spellingObscurity": 0,
-    "key": 0.8125
+    "key": 0.7500000000000001
    },
    {
     "id": "upgrade_surging_power",
@@ -144,7 +150,7 @@
     "popularityObscurity": 0.25,
     "spellingCost": 13,
     "spellingObscurity": 0.75,
-    "key": 0.4125
+    "key": 0.475
    },
    {
     "id": "upgrade_vampire",

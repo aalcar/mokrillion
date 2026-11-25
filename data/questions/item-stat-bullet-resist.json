@@ -28,19 +28,19 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:08:34.018Z",
+ "generatedAt": "2026-11-25T04:41:30.365Z",
  "answers": [
   {
-   "entityId": "upgrade_regenerating_bullet_shield",
-   "name": "Battle Vest",
+   "entityId": "upgrade_improved_bullet_armor",
+   "name": "Bullet Resilience",
    "rank": 1,
    "score": 10
   },
   {
-   "entityId": "upgrade_bullet_resist_shredder",
-   "name": "Bullet Resist Shredder",
+   "entityId": "upgrade_regenerating_bullet_shield",
+   "name": "Battle Vest",
    "rank": 2,
    "score": 30
   },
@@ -51,74 +51,74 @@
    "score": 30
   },
   {
-   "entityId": "upgrade_improved_bullet_armor",
-   "name": "Bullet Resilience",
+   "entityId": "upgrade_auto_cleanse",
+   "name": "Indomitable",
    "rank": 4,
    "score": 30
   },
   {
-   "entityId": "upgrade_auto_cleanse",
-   "name": "Indomitable",
+   "entityId": "upgrade_return_fire",
+   "name": "Return Fire",
    "rank": 5,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_siphon_bullets",
-   "name": "Siphon Bullets",
-   "rank": 6,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_berserker",
-   "name": "Berserker",
-   "rank": 7,
    "score": 60
   },
   {
    "entityId": "upgrade_cheat_death",
    "name": "Cheat Death",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_bullet_resist_shredder",
+   "name": "Bullet Resist Shredder",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_siphon_bullets",
+   "name": "Siphon Bullets",
    "rank": 8,
    "score": 60
   },
   {
-   "entityId": "upgrade_return_fire",
-   "name": "Return Fire",
+   "entityId": "upgrade_surging_power",
+   "name": "Vampiric Burst",
    "rank": 9,
    "score": 60
   },
   {
-   "entityId": "upgrade_melee_charge",
-   "name": "Melee Charge",
+   "entityId": "upgrade_berserker",
+   "name": "Berserker",
    "rank": 10,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_fleetfoot_boots",
-   "name": "Fleetfoot",
-   "rank": 11,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_imbued_duration_extender",
-   "name": "Superior Duration",
-   "rank": 12,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_surging_power",
-   "name": "Vampiric Burst",
-   "rank": 13,
    "score": 85
   },
   {
    "entityId": "upgrade_crushing_fists",
    "name": "Crushing Fists",
-   "rank": 14,
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_fleetfoot_boots",
+   "name": "Fleetfoot",
+   "rank": 12,
    "score": 85
   },
   {
    "entityId": "upgrade_suppressor",
    "name": "Suppressor",
+   "rank": 13,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_melee_charge",
+   "name": "Melee Charge",
+   "rank": 14,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_imbued_duration_extender",
+   "name": "Superior Duration",
    "rank": 15,
    "score": 85
   },
@@ -130,6 +130,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_ability_power_shard",
@@ -152,7 +158,7 @@
     "popularityObscurity": 0.9333333333333333,
     "spellingCost": 9,
     "spellingObscurity": 0.43333333333333335,
-    "key": 0.901
+    "key": 0.8976666666666667
    },
    {
     "id": "upgrade_auto_cleanse",
@@ -175,7 +181,7 @@
     "popularityObscurity": 0.3333333333333333,
     "spellingCost": 5,
     "spellingObscurity": 0.1,
-    "key": 0.351
+    "key": 0.3643333333333333
    },
    {
     "id": "upgrade_berserker",
@@ -198,7 +204,7 @@
     "popularityObscurity": 0.4,
     "spellingCost": 9,
     "spellingObscurity": 0.43333333333333335,
-    "key": 0.4823333333333334
+    "key": 0.519
    },
    {
     "id": "upgrade_bullet_resist_shredder",
@@ -221,7 +227,7 @@
     "popularityObscurity": 0.13333333333333333,
     "spellingCost": 3,
     "spellingObscurity": 0,
-    "key": 0.3026666666666667
+    "key": 0.3826666666666667
    },
    {
     "id": "upgrade_cheat_death",
@@ -244,7 +250,7 @@
     "popularityObscurity": 0.8,
     "spellingCost": 5,
     "spellingObscurity": 0.1,
-    "key": 0.4936666666666667
+    "key": 0.3703333333333333
    },
    {
     "id": "upgrade_crushing_fists",
@@ -267,7 +273,7 @@
     "popularityObscurity": 0.5333333333333333,
     "spellingCost": 13,
     "spellingObscurity": 0.8333333333333334,
-    "key": 0.6070000000000001
+    "key": 0.6336666666666666
    },
    {
     "id": "upgrade_fleetfoot_boots",
@@ -290,7 +296,7 @@
     "popularityObscurity": 0.26666666666666666,
     "spellingCost": 9,
     "spellingObscurity": 0.43333333333333335,
-    "key": 0.561
+    "key": 0.6910000000000001
    },
    {
     "id": "upgrade_imbued_duration_extender",
@@ -313,7 +319,7 @@
     "popularityObscurity": 0,
     "spellingCost": 16,
     "spellingObscurity": 0.9666666666666667,
-    "key": 0.5836666666666668
+    "key": 0.8270000000000001
    },
    {
     "id": "upgrade_improved_bullet_armor",
@@ -336,7 +342,7 @@
     "popularityObscurity": 0.8666666666666667,
     "spellingCost": 16,
     "spellingObscurity": 0.9666666666666667,
-    "key": 0.395
+    "key": 0.17833333333333334
    },
    {
     "id": "upgrade_melee_charge",
@@ -359,7 +365,7 @@
     "popularityObscurity": 0.2,
     "spellingCost": 11,
     "spellingObscurity": 0.7333333333333333,
-    "key": 0.5566666666666668
+    "key": 0.7066666666666668
    },
    {
     "id": "upgrade_metal_skin",
@@ -382,7 +388,7 @@
     "popularityObscurity": 0.7333333333333333,
     "spellingCost": 9,
     "spellingObscurity": 0.43333333333333335,
-    "key": 0.3883333333333333
+    "key": 0.23833333333333334
    },
    {
     "id": "upgrade_regenerating_bullet_shield",
@@ -428,7 +434,7 @@
     "popularityObscurity": 1,
     "spellingCost": 10,
     "spellingObscurity": 0.6333333333333333,
-    "key": 0.5416666666666667
+    "key": 0.3416666666666667
    },
    {
     "id": "upgrade_siphon_bullets",
@@ -451,7 +457,7 @@
     "popularityObscurity": 0.4666666666666667,
     "spellingCost": 6,
     "spellingObscurity": 0.2,
-    "key": 0.4753333333333334
+    "key": 0.48533333333333334
    },
    {
     "id": "upgrade_suppressor",
@@ -474,7 +480,7 @@
     "popularityObscurity": 0.6,
     "spellingCost": 8,
     "spellingObscurity": 0.26666666666666666,
-    "key": 0.6713333333333333
+    "key": 0.7113333333333334
    },
    {
     "id": "upgrade_surging_power",
@@ -497,58 +503,52 @@
     "popularityObscurity": 0.6666666666666666,
     "spellingCost": 13,
     "spellingObscurity": 0.8333333333333334,
-    "key": 0.5943333333333334
+    "key": 0.5576666666666668
    }
   ],
   "passAgreement": 0.7666666666666666,
   "orderBeforeRefinement": [
    "upgrade_regenerating_bullet_shield",
-   "upgrade_bullet_resist_shredder",
-   "upgrade_auto_cleanse",
-   "upgrade_metal_skin",
    "upgrade_improved_bullet_armor",
+   "upgrade_metal_skin",
+   "upgrade_return_fire",
+   "upgrade_auto_cleanse",
+   "upgrade_cheat_death",
+   "upgrade_bullet_resist_shredder",
    "upgrade_siphon_bullets",
    "upgrade_berserker",
-   "upgrade_cheat_death",
-   "upgrade_return_fire",
-   "upgrade_melee_charge",
-   "upgrade_fleetfoot_boots",
-   "upgrade_imbued_duration_extender",
    "upgrade_surging_power",
    "upgrade_crushing_fists",
+   "upgrade_fleetfoot_boots",
+   "upgrade_melee_charge",
    "upgrade_suppressor",
+   "upgrade_imbued_duration_extender",
    "upgrade_ability_power_shard"
   ],
   "pairwise": [
    {
-    "a": "upgrade_surging_power",
-    "b": "upgrade_crushing_fists",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_crushing_fists"
-   },
-   {
-    "a": "upgrade_surging_power",
+    "a": "upgrade_melee_charge",
     "b": "upgrade_suppressor",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_suppressor"
+    "rarer": "upgrade_melee_charge"
    },
    {
-    "a": "upgrade_surging_power",
+    "a": "upgrade_melee_charge",
+    "b": "upgrade_imbued_duration_extender",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_imbued_duration_extender"
+   },
+   {
+    "a": "upgrade_melee_charge",
     "b": "upgrade_ability_power_shard",
     "purpose": "rare-contenders",
     "rarer": "upgrade_ability_power_shard"
    },
    {
-    "a": "upgrade_crushing_fists",
-    "b": "upgrade_suppressor",
+    "a": "upgrade_suppressor",
+    "b": "upgrade_imbued_duration_extender",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_suppressor"
-   },
-   {
-    "a": "upgrade_crushing_fists",
-    "b": "upgrade_ability_power_shard",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_ability_power_shard"
+    "rarer": "upgrade_imbued_duration_extender"
    },
    {
     "a": "upgrade_suppressor",
@@ -557,83 +557,71 @@
     "rarer": "upgrade_ability_power_shard"
    },
    {
+    "a": "upgrade_imbued_duration_extender",
+    "b": "upgrade_ability_power_shard",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
     "a": "upgrade_regenerating_bullet_shield",
-    "b": "upgrade_bullet_resist_shredder",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_bullet_resist_shredder"
-   },
-   {
-    "a": "upgrade_metal_skin",
     "b": "upgrade_improved_bullet_armor",
     "purpose": "tier-boundary",
-    "rarer": "upgrade_metal_skin"
+    "rarer": "upgrade_regenerating_bullet_shield"
    },
    {
     "a": "upgrade_return_fire",
-    "b": "upgrade_melee_charge",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_melee_charge"
-   },
-   {
-    "a": "upgrade_bullet_resist_shredder",
-    "b": "upgrade_improved_bullet_armor",
-    "purpose": "review",
-    "rarer": "upgrade_bullet_resist_shredder"
-   },
-   {
-    "a": "upgrade_improved_bullet_armor",
-    "b": "upgrade_bullet_resist_shredder",
-    "purpose": "review",
-    "rarer": "upgrade_bullet_resist_shredder"
-   },
-   {
-    "a": "upgrade_metal_skin",
     "b": "upgrade_auto_cleanse",
-    "purpose": "review",
-    "rarer": "upgrade_auto_cleanse"
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_return_fire"
    },
    {
-    "a": "upgrade_return_fire",
-    "b": "upgrade_berserker",
+    "a": "upgrade_berserker",
+    "b": "upgrade_surging_power",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_berserker"
+   },
+   {
+    "a": "upgrade_auto_cleanse",
+    "b": "upgrade_return_fire",
     "purpose": "review",
     "rarer": null
    }
   ],
   "review": [
    {
-    "name": "Bullet Resist Shredder",
-    "compareWith": "Bullet Resilience",
-    "claim": "should_be_more_obscure",
-    "reason": "Bullet Resist Shredder is known for reducing enemy bullet resist, so players think of it as the opposite of a bullet resist item. Its own 9 Bullet Resist is a minor stat. Bullet Resilience is named for the stat and has the highest value (35), so it should be the more obvious of the two.",
-    "outcome": "applied"
-   },
-   {
-    "name": "Bullet Resilience",
-    "compareWith": "Bullet Resist Shredder",
-    "claim": "should_be_more_obvious",
-    "reason": "Bullet Resilience is the direct, name-matched answer for this question and gives the largest flat bullet resist (35). It should score at or near Battle Vest, not tied with the Shredder and Indomitable.",
-    "outcome": "applied"
-   },
-   {
     "name": "Metal Skin",
-    "compareWith": "Indomitable",
+    "compareWith": "Battle Vest",
+    "claim": "should_be_more_obscure",
+    "reason": "Metal Skin is known for the bullet immunity active, and its small passive Bullet Resist 12 is barely associated with this question. Battle Vest is a classic bullet-resist vitality item, so it should be more obvious than Metal Skin.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Indomitable",
+    "compareWith": "Return Fire",
+    "claim": "should_be_more_obscure",
+    "reason": "Indomitable is known for its cleanse effect and its Spirit Resist, and its 10 Bullet Resist is incidental. It should not be as obvious as Battle Vest and should sit near or below Return Fire.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Cheat Death",
+    "compareWith": "Return Fire",
+    "claim": "should_be_more_obscure",
+    "reason": "Cheat Death is famous for the death-save effect, not for its Bullet Resist stat. Players thinking of Bullet Resist would reach for Return Fire before it.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Bullet Resist Shredder",
+    "compareWith": "Siphon Bullets",
     "claim": "should_be_more_obvious",
-    "reason": "Metal Skin is a well-known defensive item tied to bullets (bullet immunity), so players link it to bullet resistance. Indomitable is known for cleansing crowd control and has a spirit-resist association, so it should be rarer than Metal Skin.",
-    "outcome": "applied"
+    "reason": "The name contains 'Bullet Resist', so it comes to mind immediately. Many players would name it despite it being the opposite of a defensive item. It should be more obvious than Siphon Bullets or Vampiric Burst.",
+    "outcome": "ignored-invalid"
    },
    {
     "name": "Crushing Fists",
     "compareWith": "Echo Shard",
     "claim": "should_be_more_obvious",
-    "reason": "Crushing Fists is a distinctive item whose description mentions a bullet resist debuff, which prompts bullet-resist thinking. Echo Shard is known only for resetting cooldowns and gives just 5 Bullet Resist, so it is the obscure answer here. Crushing Fists should score below Melee Charge, Fleetfoot, and Suppressor.",
+    "reason": "Crushing Fists is a popular melee item that players know and buy, and it appears near the top of the Bullet Resist list. Echo Shard is a rarely linked 5 Bullet Resist item, so Echo Shard is the better 100-point pick.",
     "outcome": "ignored-invalid"
-   },
-   {
-    "name": "Return Fire",
-    "compareWith": "Berserker",
-    "claim": "should_be_more_obvious",
-    "reason": "Return Fire is a Tier 2 Vitality item that players buy for survivability, and it is more strongly associated with defense than Berserker, a damage-scaling weapon item. It should be rarer than Berserker only if players think of Berserker as defensive, which is unlikely. Return Fire should score lower than Berserker.",
-    "outcome": "rejected-by-comparison"
    }
   ]
  }

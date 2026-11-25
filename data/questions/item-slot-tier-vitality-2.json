@@ -27,85 +27,85 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:04:47.463Z",
+ "generatedAt": "2026-11-25T04:39:44.893Z",
  "answers": [
   {
-   "entityId": "upgrade_regenerating_bullet_shield",
-   "name": "Battle Vest",
+   "entityId": "upgrade_health_stealing_magic",
+   "name": "Spirit Lifesteal",
    "rank": 1,
    "score": 10
   },
   {
-   "entityId": "upgrade_vampire",
-   "name": "Bullet Lifesteal",
+   "entityId": "upgrade_healbane",
+   "name": "Healbane",
    "rank": 2,
    "score": 30
   },
   {
-   "entityId": "upgrade_health_stealing_magic",
-   "name": "Spirit Lifesteal",
+   "entityId": "upgrade_cardio_calibrator",
+   "name": "Enduring Speed",
    "rank": 3,
    "score": 30
   },
   {
-   "entityId": "upgrade_healing_booster",
-   "name": "Healing Booster",
+   "entityId": "upgrade_regenerating_bullet_shield",
+   "name": "Battle Vest",
    "rank": 4,
    "score": 30
   },
   {
-   "entityId": "upgrade_healbane",
-   "name": "Healbane",
+   "entityId": "upgrade_magic_shield",
+   "name": "Enchanter's Emblem",
    "rank": 5,
    "score": 60
   },
   {
-   "entityId": "upgrade_magic_shield",
-   "name": "Enchanter's Emblem",
+   "entityId": "upgrade_trophy_collector",
+   "name": "Trophy Collector",
    "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_healing_booster",
+   "name": "Healing Booster",
+   "rank": 7,
    "score": 60
   },
   {
    "entityId": "upgrade_vex_barrier",
    "name": "Reactive Barrier",
-   "rank": 7,
+   "rank": 8,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_vampire",
+   "name": "Bullet Lifesteal",
+   "rank": 9,
    "score": 60
   },
   {
    "entityId": "upgrade_debuff_reducer",
    "name": "Debuff Reducer",
-   "rank": 8,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_cardio_calibrator",
-   "name": "Enduring Speed",
-   "rank": 9,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_spirit_bubble",
-   "name": "Spirit Shielding",
    "rank": 10,
    "score": 85
   },
   {
-   "entityId": "upgrade_trophy_collector",
-   "name": "Trophy Collector",
+   "entityId": "upgrade_spirit_bubble",
+   "name": "Spirit Shielding",
    "rank": 11,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_return_fire",
-   "name": "Return Fire",
-   "rank": 12,
    "score": 85
   },
   {
    "entityId": "upgrade_guardian_ward",
    "name": "Guardian Ward",
+   "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_return_fire",
+   "name": "Return Fire",
    "rank": 13,
    "score": 85
   },
@@ -123,6 +123,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_cardio_calibrator",
@@ -145,7 +151,7 @@
     "popularityObscurity": 0.07142857142857142,
     "spellingCost": 13,
     "spellingObscurity": 0.6071428571428571,
-    "key": 0.4910714285714286
+    "key": 0.2767857142857143
    },
    {
     "id": "upgrade_debuff_reducer",
@@ -168,7 +174,7 @@
     "popularityObscurity": 0.5714285714285714,
     "spellingCost": 13,
     "spellingObscurity": 0.6071428571428571,
-    "key": 0.48678571428571427
+    "key": 0.5339285714285714
    },
    {
     "id": "upgrade_guardian_ward",
@@ -191,7 +197,7 @@
     "popularityObscurity": 0.7857142857142857,
     "spellingCost": 12,
     "spellingObscurity": 0.4642857142857143,
-    "key": 0.7146428571428571
+    "key": 0.744642857142857
    },
    {
     "id": "upgrade_healbane",
@@ -214,7 +220,7 @@
     "popularityObscurity": 0,
     "spellingCost": 8,
     "spellingObscurity": 0.14285714285714285,
-    "key": 0.3842857142857143
+    "key": 0.17857142857142858
    },
    {
     "id": "upgrade_healing_booster",
@@ -237,7 +243,7 @@
     "popularityObscurity": 0.42857142857142855,
     "spellingCost": 14,
     "spellingObscurity": 0.7142857142857143,
-    "key": 0.3642857142857143
+    "key": 0.40714285714285714
    },
    {
     "id": "upgrade_health_stealing_magic",
@@ -260,7 +266,7 @@
     "popularityObscurity": 0.14285714285714285,
     "spellingCost": 15,
     "spellingObscurity": 0.8928571428571429,
-    "key": 0.14107142857142857
+    "key": 0.16249999999999998
    },
    {
     "id": "upgrade_magic_shield",
@@ -283,7 +289,7 @@
     "popularityObscurity": 0.2857142857142857,
     "spellingCost": 10,
     "spellingObscurity": 0.2857142857142857,
-    "key": 0.4114285714285715
+    "key": 0.34285714285714286
    },
    {
     "id": "upgrade_regenerating_bullet_shield",
@@ -306,7 +312,7 @@
     "popularityObscurity": 0.35714285714285715,
     "spellingCost": 10,
     "spellingObscurity": 0.2857142857142857,
-    "key": 0.25142857142857145
+    "key": 0.30714285714285716
    },
    {
     "id": "upgrade_restorative_locket",
@@ -329,7 +335,7 @@
     "popularityObscurity": 0.9285714285714286,
     "spellingCost": 6,
     "spellingObscurity": 0.03571428571428571,
-    "key": 0.7896428571428571
+    "key": 0.8410714285714286
    },
    {
     "id": "upgrade_return_fire",
@@ -352,7 +358,7 @@
     "popularityObscurity": 1,
     "spellingCost": 10,
     "spellingObscurity": 0.2857142857142857,
-    "key": 0.712857142857143
+    "key": 0.85
    },
    {
     "id": "upgrade_spirit_bubble",
@@ -375,7 +381,7 @@
     "popularityObscurity": 0.6428571428571429,
     "spellingCost": 12,
     "spellingObscurity": 0.4642857142857143,
-    "key": 0.6339285714285716
+    "key": 0.6339285714285714
    },
    {
     "id": "upgrade_trophy_collector",
@@ -398,7 +404,7 @@
     "popularityObscurity": 0.21428571428571427,
     "spellingCost": 6,
     "spellingObscurity": 0.03571428571428571,
-    "key": 0.6375000000000001
+    "key": 0.4017857142857143
    },
    {
     "id": "upgrade_vampire",
@@ -421,7 +427,7 @@
     "popularityObscurity": 0.7142857142857143,
     "spellingCost": 15,
     "spellingObscurity": 0.8928571428571429,
-    "key": 0.3303571428571429
+    "key": 0.5446428571428572
    },
    {
     "id": "upgrade_vex_barrier",
@@ -444,7 +450,7 @@
     "popularityObscurity": 0.5,
     "spellingCost": 15,
     "spellingObscurity": 0.8928571428571429,
-    "key": 0.4332142857142858
+    "key": 0.4803571428571428
    },
    {
     "id": "upgrade_weapon_shielding",
@@ -467,47 +473,29 @@
     "popularityObscurity": 0.8571428571428571,
     "spellingCost": 15,
     "spellingObscurity": 0.8928571428571429,
-    "key": 0.7175
+    "key": 0.7946428571428571
    }
   ],
   "passAgreement": 0.5999999999999999,
   "orderBeforeRefinement": [
    "upgrade_health_stealing_magic",
-   "upgrade_regenerating_bullet_shield",
-   "upgrade_vampire",
-   "upgrade_healing_booster",
    "upgrade_healbane",
+   "upgrade_cardio_calibrator",
+   "upgrade_regenerating_bullet_shield",
    "upgrade_magic_shield",
+   "upgrade_trophy_collector",
+   "upgrade_healing_booster",
    "upgrade_vex_barrier",
    "upgrade_debuff_reducer",
-   "upgrade_cardio_calibrator",
+   "upgrade_vampire",
    "upgrade_spirit_bubble",
-   "upgrade_trophy_collector",
-   "upgrade_return_fire",
    "upgrade_guardian_ward",
    "upgrade_weapon_shielding",
-   "upgrade_restorative_locket"
+   "upgrade_restorative_locket",
+   "upgrade_return_fire"
   ],
   "pairwise": [
    {
-    "a": "upgrade_return_fire",
-    "b": "upgrade_guardian_ward",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_guardian_ward"
-   },
-   {
-    "a": "upgrade_return_fire",
-    "b": "upgrade_weapon_shielding",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_weapon_shielding"
-   },
-   {
-    "a": "upgrade_return_fire",
-    "b": "upgrade_restorative_locket",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_restorative_locket"
-   },
-   {
     "a": "upgrade_guardian_ward",
     "b": "upgrade_weapon_shielding",
     "purpose": "rare-contenders",
@@ -518,30 +506,54 @@
     "b": "upgrade_restorative_locket",
     "purpose": "rare-contenders",
     "rarer": "upgrade_restorative_locket"
+   },
+   {
+    "a": "upgrade_guardian_ward",
+    "b": "upgrade_return_fire",
+    "purpose": "rare-contenders",
+    "rarer": null
    },
    {
     "a": "upgrade_weapon_shielding",
     "b": "upgrade_restorative_locket",
     "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_weapon_shielding",
+    "b": "upgrade_return_fire",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_restorative_locket",
+    "b": "upgrade_return_fire",
+    "purpose": "rare-contenders",
     "rarer": "upgrade_restorative_locket"
    },
    {
     "a": "upgrade_health_stealing_magic",
-    "b": "upgrade_regenerating_bullet_shield",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_regenerating_bullet_shield"
-   },
-   {
-    "a": "upgrade_healing_booster",
     "b": "upgrade_healbane",
     "purpose": "tier-boundary",
     "rarer": "upgrade_healbane"
    },
    {
-    "a": "upgrade_cardio_calibrator",
-    "b": "upgrade_spirit_bubble",
+    "a": "upgrade_regenerating_bullet_shield",
+    "b": "upgrade_magic_shield",
     "purpose": "tier-boundary",
-    "rarer": null
+    "rarer": "upgrade_magic_shield"
+   },
+   {
+    "a": "upgrade_debuff_reducer",
+    "b": "upgrade_vampire",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_debuff_reducer"
+   },
+   {
+    "a": "upgrade_vampire",
+    "b": "upgrade_health_stealing_magic",
+    "purpose": "review",
+    "rarer": "upgrade_health_stealing_magic"
    },
    {
     "a": "upgrade_health_stealing_magic",
@@ -550,64 +562,52 @@
     "rarer": "upgrade_health_stealing_magic"
    },
    {
-    "a": "upgrade_vampire",
-    "b": "upgrade_regenerating_bullet_shield",
-    "purpose": "review",
-    "rarer": "upgrade_regenerating_bullet_shield"
-   },
-   {
     "a": "upgrade_return_fire",
-    "b": "upgrade_magic_shield",
-    "purpose": "review",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_guardian_ward",
     "b": "upgrade_debuff_reducer",
     "purpose": "review",
     "rarer": null
    },
    {
-    "a": "upgrade_restorative_locket",
-    "b": "upgrade_weapon_shielding",
+    "a": "upgrade_magic_shield",
+    "b": "upgrade_restorative_locket",
     "purpose": "review",
-    "rarer": null
+    "rarer": "upgrade_restorative_locket"
    }
   ],
   "review": [
    {
-    "name": "Spirit Lifesteal",
-    "compareWith": "Bullet Lifesteal",
-    "claim": "should_be_more_obscure",
-    "reason": "Spirit Lifesteal is a fairly niche pick compared with Bullet Lifesteal, which is a core, widely bought lifesteal item that players think of first. Giving Spirit Lifesteal the 10-point slot over Bullet Lifesteal overstates how readily it comes to mind.",
+    "name": "Bullet Lifesteal",
+    "compareWith": "Spirit Lifesteal",
+    "claim": "should_be_more_obvious",
+    "reason": "Bullet Lifesteal is the counterpart to Spirit Lifesteal and a very common vitality purchase, and it is the lifesteal item most players think of first. Ranking it at 60 against 10 for its sibling is too wide a gap, so it belongs near the top.",
     "outcome": "applied"
    },
    {
-    "name": "Bullet Lifesteal",
-    "compareWith": "Battle Vest",
-    "claim": "should_be_more_obvious",
-    "reason": "Bullet Lifesteal is the archetypal Vitality sustain item and is very strongly tied to the category. It should be at least as obvious as Battle Vest, which is mostly a resist stat stick.",
+    "name": "Spirit Lifesteal",
+    "compareWith": "Bullet Lifesteal",
+    "claim": "should_be_more_obscure",
+    "reason": "Spirit Lifesteal is only slightly more prominent than Bullet Lifesteal. Giving it the single most obvious slot at 10 overstates how often it comes to mind first for a generic Tier 2 Vitality question.",
     "outcome": "applied"
    },
    {
     "name": "Return Fire",
-    "compareWith": "Enchanter's Emblem",
-    "claim": "should_be_more_obvious",
-    "reason": "Return Fire is a memorable, distinctively named active with a unique effect, and it is commonly seen in builds. It should not score as obscure as Spirit Shielding or Weapon Shielding, and it is likely more recalled than Enchanter's Emblem.",
-    "outcome": "rejected-by-comparison"
-   },
-   {
-    "name": "Guardian Ward",
     "compareWith": "Debuff Reducer",
     "claim": "should_be_more_obvious",
-    "reason": "Guardian Ward is a well-known active that players frequently buy and cast on allies. It is more memorable than the generic Debuff Reducer, so 85 points seems too obscure.",
+    "reason": "Return Fire has a distinctive name and a memorable active effect that players associate with Vitality, so it should be more readily recalled than a plain stat item like Debuff Reducer.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Restorative Locket",
-    "compareWith": "Weapon Shielding",
+    "name": "Reactive Barrier",
+    "compareWith": "Spirit Shielding",
     "claim": "should_be_more_obvious",
-    "reason": "Restorative Locket has a unique name and mechanic and is not clearly rarer than Weapon Shielding or Spirit Shielding. Those two are easily confused with each other and with the other shielding items, which makes each harder to name than the Locket.",
+    "reason": "Reactive Barrier is a commonly bought anti-CC item with a clear name, and it is more distinctive than the Spirit/Weapon Shielding pair. It should be rated at least as obvious as Healbane or Enchanter's Emblem.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Enchanter's Emblem",
+    "compareWith": "Restorative Locket",
+    "claim": "should_be_more_obscure",
+    "reason": "Enchanter's Emblem is a Spirit-flavored item in the Vitality category, and it is the kind of answer many players would not think of for a Vitality question. It is arguably rarer than the locket, whose name clearly sounds like a healing item.",
     "outcome": "rejected-by-comparison"
    }
   ]

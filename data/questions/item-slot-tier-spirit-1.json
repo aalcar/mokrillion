@@ -20,9 +20,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:06:14.215Z",
+ "generatedAt": "2026-11-25T04:38:47.753Z",
  "answers": [
   {
    "entityId": "upgrade_improved_spirit",
@@ -31,26 +31,26 @@
    "score": 10
   },
   {
-   "entityId": "upgrade_extra_charge",
-   "name": "Extra Charge",
+   "entityId": "upgrade_magic_reach",
+   "name": "Mystic Expansion",
    "rank": 2,
    "score": 30
   },
   {
-   "entityId": "upgrade_magic_burst",
-   "name": "Mystic Burst",
+   "entityId": "upgrade_mystic_regeneration",
+   "name": "Mystic Regeneration",
    "rank": 3,
    "score": 60
   },
   {
-   "entityId": "upgrade_magic_reach",
-   "name": "Mystic Expansion",
+   "entityId": "upgrade_magic_burst",
+   "name": "Mystic Burst",
    "rank": 4,
    "score": 60
   },
   {
-   "entityId": "upgrade_mystic_regeneration",
-   "name": "Mystic Regeneration",
+   "entityId": "upgrade_extra_charge",
+   "name": "Extra Charge",
    "rank": 5,
    "score": 85
   },
@@ -74,6 +74,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_acolytes_glove",
@@ -96,7 +102,7 @@
     "popularityObscurity": 0.5714285714285714,
     "spellingCost": 12,
     "spellingObscurity": 0.9285714285714286,
-    "key": 0.6678571428571429
+    "key": 0.625
    },
    {
     "id": "upgrade_extra_charge",
@@ -119,7 +125,7 @@
     "popularityObscurity": 0.42857142857142855,
     "spellingCost": 11,
     "spellingObscurity": 0.5,
-    "key": 0.33785714285714286
+    "key": 0.38928571428571423
    },
    {
     "id": "upgrade_goose_egg",
@@ -142,7 +148,7 @@
     "popularityObscurity": 1,
     "spellingCost": 3,
     "spellingObscurity": 0,
-    "key": 0.9500000000000001
+    "key": 0.95
    },
    {
     "id": "upgrade_improved_spirit",
@@ -188,7 +194,7 @@
     "popularityObscurity": 0.14285714285714285,
     "spellingCost": 11,
     "spellingObscurity": 0.5,
-    "key": 0.1764285714285714
+    "key": 0.16785714285714284
    },
    {
     "id": "upgrade_magic_reach",
@@ -211,7 +217,7 @@
     "popularityObscurity": 0.2857142857142857,
     "spellingCost": 9,
     "spellingObscurity": 0.14285714285714285,
-    "key": 0.37285714285714283
+    "key": 0.3214285714285714
    },
    {
     "id": "upgrade_mystic_regeneration",
@@ -234,7 +240,7 @@
     "popularityObscurity": 0.7142857142857143,
     "spellingCost": 11,
     "spellingObscurity": 0.5,
-    "key": 0.625
+    "key": 0.6678571428571428
    },
    {
     "id": "upgrade_withering_whip",
@@ -257,26 +263,38 @@
     "popularityObscurity": 0.8571428571428571,
     "spellingCost": 12,
     "spellingObscurity": 0.9285714285714286,
-    "key": 0.8450000000000001
+    "key": 0.8535714285714285
    }
   ],
   "passAgreement": 0.8857142857142856,
   "orderBeforeRefinement": [
    "upgrade_improved_spirit",
    "upgrade_magic_burst",
-   "upgrade_extra_charge",
    "upgrade_magic_reach",
-   "upgrade_mystic_regeneration",
+   "upgrade_extra_charge",
    "upgrade_acolytes_glove",
+   "upgrade_mystic_regeneration",
    "upgrade_withering_whip",
    "upgrade_goose_egg"
   ],
   "pairwise": [
    {
-    "a": "upgrade_mystic_regeneration",
-    "b": "upgrade_acolytes_glove",
+    "a": "upgrade_acolytes_glove",
+    "b": "upgrade_mystic_regeneration",
     "purpose": "rare-contenders",
     "rarer": "upgrade_acolytes_glove"
+   },
+   {
+    "a": "upgrade_acolytes_glove",
+    "b": "upgrade_withering_whip",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_acolytes_glove",
+    "b": "upgrade_goose_egg",
+    "purpose": "rare-contenders",
+    "rarer": null
    },
    {
     "a": "upgrade_mystic_regeneration",
@@ -289,18 +307,6 @@
     "b": "upgrade_goose_egg",
     "purpose": "rare-contenders",
     "rarer": "upgrade_goose_egg"
-   },
-   {
-    "a": "upgrade_acolytes_glove",
-    "b": "upgrade_withering_whip",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_acolytes_glove",
-    "b": "upgrade_goose_egg",
-    "purpose": "rare-contenders",
-    "rarer": null
    },
    {
     "a": "upgrade_withering_whip",
@@ -316,8 +322,14 @@
    },
    {
     "a": "upgrade_magic_burst",
-    "b": "upgrade_extra_charge",
+    "b": "upgrade_magic_reach",
     "purpose": "tier-boundary",
+    "rarer": "upgrade_magic_burst"
+   },
+   {
+    "a": "upgrade_mystic_regeneration",
+    "b": "upgrade_magic_burst",
+    "purpose": "review",
     "rarer": "upgrade_magic_burst"
    },
    {
@@ -327,33 +339,33 @@
     "rarer": "upgrade_goose_egg"
    },
    {
-    "a": "upgrade_magic_burst",
-    "b": "upgrade_mystic_regeneration",
+    "a": "upgrade_extra_charge",
+    "b": "upgrade_magic_burst",
     "purpose": "review",
-    "rarer": "upgrade_mystic_regeneration"
+    "rarer": "upgrade_magic_burst"
    }
   ],
   "review": [
    {
+    "name": "Mystic Regeneration",
+    "compareWith": "Mystic Burst",
+    "claim": "should_be_more_obvious",
+    "reason": "Mystic Regeneration is a very common early buy with a name that matches the Spirit category, and players often think of it right after Extra Spirit. Mystic Burst is less commonly recalled, so it should not score 25 points less than Mystic Regeneration.",
+    "outcome": "applied"
+   },
+   {
     "name": "Golden Goose Egg",
     "compareWith": "Rusted Barrel",
     "claim": "should_be_more_obvious",
-    "reason": "Golden Goose Egg has a very distinctive, memorable name and a unique souls-over-time effect, so players tend to recall it. Rusted Barrel is a less memorable, more situational item, so it should sit at the 100-point end rather than Golden Goose Egg.",
+    "reason": "Golden Goose Egg has a distinctive, memorable name and a unique soul-generating effect, so many players will recall it. Rusted Barrel is a forgettable active item, so it is plausibly rarer and should take the 100-point slot, with the egg scored below it.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Mystic Burst",
-    "compareWith": "Mystic Regeneration",
-    "claim": "should_be_more_obscure",
-    "reason": "Mystic Burst is a fairly forgettable item with no flat stats listed, and it is bought less often than Mystic Regeneration, which gives health and is a common early pick. Mystic Regeneration should not be rated more obscure than Mystic Burst.",
-    "outcome": "rejected-by-comparison"
-   },
-   {
-    "name": "Mystic Expansion",
-    "compareWith": "Spirit Strike",
+    "name": "Extra Charge",
+    "compareWith": "Mystic Burst",
     "claim": "should_be_more_obvious",
-    "reason": "Mystic Expansion is a staple Tier 1 spirit item that experienced players know well, with a clear mechanic and two upgrade paths, so it should be rated closer to Extra Charge than to Mystic Burst.",
-    "outcome": "ignored-invalid"
+    "reason": "Extra Charge is a straightforward 'Extra' item whose name sits next to Extra Spirit, so it comes to mind easily. It is also widely bought on charge-based heroes, so it should be at least as obvious as Mystic Burst.",
+    "outcome": "applied"
    }
   ]
  }

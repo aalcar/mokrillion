@@ -25,9 +25,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:06:49.474Z",
+ "generatedAt": "2026-11-25T04:39:08.029Z",
  "answers": [
   {
    "entityId": "upgrade_cooldown_reduction",
@@ -36,20 +36,20 @@
    "score": 10
   },
   {
-   "entityId": "upgrade_tech_damage_pulse",
-   "name": "Torment Pulse",
+   "entityId": "upgrade_magic_shock",
+   "name": "Tankbuster",
    "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_rapid_recharge",
+   "name": "Rapid Recharge",
+   "rank": 3,
    "score": 30
   },
   {
    "entityId": "upgrade_tech_range",
    "name": "Greater Expansion",
-   "rank": 3,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_targeted_silence",
-   "name": "Silence Wave",
    "rank": 4,
    "score": 60
   },
@@ -60,44 +60,44 @@
    "score": 60
   },
   {
-   "entityId": "upgrade_target_stun",
-   "name": "Knockdown",
+   "entityId": "upgrade_tech_damage_pulse",
+   "name": "Torment Pulse",
    "rank": 6,
    "score": 60
   },
   {
-   "entityId": "upgrade_magic_shock",
-   "name": "Tankbuster",
+   "entityId": "upgrade_magic_storm",
+   "name": "Surge of Power",
    "rank": 7,
    "score": 60
   },
   {
-   "entityId": "upgrade_rupture",
-   "name": "Decay",
+   "entityId": "upgrade_targeted_silence",
+   "name": "Silence Wave",
    "rank": 8,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_rapid_recharge",
-   "name": "Rapid Recharge",
-   "rank": 9,
    "score": 85
   },
   {
    "entityId": "upgrade_resonant_healing",
    "name": "Radiant Regeneration",
-   "rank": 10,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_magic_storm",
-   "name": "Surge of Power",
-   "rank": 11,
+   "rank": 9,
    "score": 85
   },
   {
    "entityId": "upgrade_spirit_snatch",
    "name": "Spirit Snatch",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_target_stun",
+   "name": "Knockdown",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_rupture",
+   "name": "Decay",
    "rank": 12,
    "score": 85
   },
@@ -109,6 +109,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_cooldown_reduction",
@@ -131,7 +137,7 @@
     "popularityObscurity": 0,
     "spellingCost": 16,
     "spellingObscurity": 0.9583333333333334,
-    "key": 0.08458333333333334
+    "key": 0.06458333333333334
    },
    {
     "id": "upgrade_greater_withering_whip",
@@ -154,7 +160,7 @@
     "popularityObscurity": 0.8333333333333334,
     "spellingCost": 12,
     "spellingObscurity": 0.5833333333333334,
-    "key": 0.8025
+    "key": 0.8125
    },
    {
     "id": "upgrade_imbued_duration_extender",
@@ -177,7 +183,7 @@
     "popularityObscurity": 0.3333333333333333,
     "spellingCost": 16,
     "spellingObscurity": 0.9583333333333334,
-    "key": 0.4470833333333333
+    "key": 0.4020833333333333
    },
    {
     "id": "upgrade_magic_shock",
@@ -200,7 +206,7 @@
     "popularityObscurity": 0.08333333333333333,
     "spellingCost": 10,
     "spellingObscurity": 0.3333333333333333,
-    "key": 0.47166666666666673
+    "key": 0.26666666666666666
    },
    {
     "id": "upgrade_magic_storm",
@@ -246,7 +252,7 @@
     "popularityObscurity": 0.25,
     "spellingCost": 13,
     "spellingObscurity": 0.7916666666666666,
-    "key": 0.5429166666666666
+    "key": 0.39791666666666664
    },
    {
     "id": "upgrade_resonant_healing",
@@ -269,7 +275,7 @@
     "popularityObscurity": 0.6666666666666666,
     "spellingCost": 7,
     "spellingObscurity": 0.16666666666666666,
-    "key": 0.5225
+    "key": 0.5874999999999999
    },
    {
     "id": "upgrade_rupture",
@@ -292,7 +298,7 @@
     "popularityObscurity": 0.9166666666666666,
     "spellingCost": 5,
     "spellingObscurity": 0,
-    "key": 0.5683333333333334
+    "key": 0.7333333333333333
    },
    {
     "id": "upgrade_spirit_snatch",
@@ -315,7 +321,7 @@
     "popularityObscurity": 0.4166666666666667,
     "spellingCost": 6,
     "spellingObscurity": 0.08333333333333333,
-    "key": 0.7024999999999999
+    "key": 0.5375
    },
    {
     "id": "upgrade_target_stun",
@@ -338,7 +344,7 @@
     "popularityObscurity": 0.75,
     "spellingCost": 9,
     "spellingObscurity": 0.25,
-    "key": 0.4958333333333334
+    "key": 0.6208333333333332
    },
    {
     "id": "upgrade_targeted_silence",
@@ -361,7 +367,7 @@
     "popularityObscurity": 1,
     "spellingCost": 11,
     "spellingObscurity": 0.4166666666666667,
-    "key": 0.44833333333333336
+    "key": 0.7333333333333333
    },
    {
     "id": "upgrade_tech_damage_pulse",
@@ -384,7 +390,7 @@
     "popularityObscurity": 0.5,
     "spellingCost": 12,
     "spellingObscurity": 0.5833333333333334,
-    "key": 0.4033333333333334
+    "key": 0.4583333333333333
    },
    {
     "id": "upgrade_tech_range",
@@ -407,133 +413,120 @@
     "popularityObscurity": 0.16666666666666666,
     "spellingCost": 13,
     "spellingObscurity": 0.7916666666666666,
-    "key": 0.42708333333333337
+    "key": 0.3020833333333333
    }
   ],
   "passAgreement": 0.5128205128205129,
   "orderBeforeRefinement": [
    "upgrade_cooldown_reduction",
-   "upgrade_tech_damage_pulse",
-   "upgrade_tech_range",
-   "upgrade_imbued_duration_extender",
-   "upgrade_targeted_silence",
    "upgrade_magic_shock",
-   "upgrade_target_stun",
-   "upgrade_resonant_healing",
+   "upgrade_tech_range",
    "upgrade_rapid_recharge",
-   "upgrade_rupture",
-   "upgrade_magic_storm",
+   "upgrade_imbued_duration_extender",
+   "upgrade_tech_damage_pulse",
    "upgrade_spirit_snatch",
+   "upgrade_magic_storm",
+   "upgrade_resonant_healing",
+   "upgrade_target_stun",
+   "upgrade_rupture",
+   "upgrade_targeted_silence",
    "upgrade_greater_withering_whip"
   ],
   "pairwise": [
    {
-    "a": "upgrade_rupture",
-    "b": "upgrade_magic_storm",
+    "a": "upgrade_target_stun",
+    "b": "upgrade_rupture",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_magic_storm"
+    "rarer": "upgrade_rupture"
    },
    {
-    "a": "upgrade_rupture",
-    "b": "upgrade_spirit_snatch",
+    "a": "upgrade_target_stun",
+    "b": "upgrade_targeted_silence",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_spirit_snatch"
+    "rarer": "upgrade_target_stun"
    },
    {
-    "a": "upgrade_rupture",
+    "a": "upgrade_target_stun",
     "b": "upgrade_greater_withering_whip",
     "purpose": "rare-contenders",
     "rarer": "upgrade_greater_withering_whip"
    },
    {
-    "a": "upgrade_magic_storm",
-    "b": "upgrade_spirit_snatch",
+    "a": "upgrade_rupture",
+    "b": "upgrade_targeted_silence",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "upgrade_rupture"
    },
    {
-    "a": "upgrade_magic_storm",
+    "a": "upgrade_rupture",
     "b": "upgrade_greater_withering_whip",
     "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_spirit_snatch",
-    "b": "upgrade_greater_withering_whip",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_cooldown_reduction",
-    "b": "upgrade_tech_damage_pulse",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_tech_damage_pulse"
-   },
-   {
-    "a": "upgrade_tech_range",
-    "b": "upgrade_imbued_duration_extender",
-    "purpose": "tier-boundary",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_target_stun",
-    "b": "upgrade_resonant_healing",
-    "purpose": "tier-boundary",
     "rarer": null
    },
    {
     "a": "upgrade_targeted_silence",
-    "b": "upgrade_imbued_duration_extender",
-    "purpose": "review",
-    "rarer": "upgrade_imbued_duration_extender"
+    "b": "upgrade_greater_withering_whip",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_greater_withering_whip"
    },
    {
-    "a": "upgrade_rupture",
-    "b": "upgrade_resonant_healing",
-    "purpose": "review",
-    "rarer": "upgrade_resonant_healing"
+    "a": "upgrade_cooldown_reduction",
+    "b": "upgrade_magic_shock",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_magic_shock"
    },
    {
-    "a": "upgrade_rapid_recharge",
-    "b": "upgrade_imbued_duration_extender",
+    "a": "upgrade_tech_range",
+    "b": "upgrade_rapid_recharge",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_tech_range"
+   },
+   {
+    "a": "upgrade_spirit_snatch",
+    "b": "upgrade_magic_storm",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_spirit_snatch"
+   },
+   {
+    "a": "upgrade_targeted_silence",
+    "b": "upgrade_spirit_snatch",
+    "purpose": "review",
+    "rarer": "upgrade_spirit_snatch"
+   },
+   {
+    "a": "upgrade_tech_damage_pulse",
+    "b": "upgrade_tech_range",
     "purpose": "review",
     "rarer": null
    },
    {
-    "a": "upgrade_target_stun",
-    "b": "upgrade_magic_shock",
+    "a": "upgrade_greater_withering_whip",
+    "b": "upgrade_spirit_snatch",
     "purpose": "review",
-    "rarer": "upgrade_magic_shock"
+    "rarer": null
    }
   ],
   "review": [
    {
     "name": "Silence Wave",
-    "compareWith": "Superior Duration",
+    "compareWith": "Spirit Snatch",
     "claim": "should_be_more_obvious",
-    "reason": "Silence Wave is a famous, distinctive active item that experienced players buy often and think of readily for spirit items. Superior Duration is a bland upgrade of a basic item. Silence Wave should score lower, not tie it at 60.",
+    "reason": "Silence Wave is a well-known, widely used active with a very memorable effect and name. Spirit Snatch is a niche melee-oriented item that few players recall, so Silence Wave should be easier to name.",
     "outcome": "applied"
    },
    {
-    "name": "Decay",
-    "compareWith": "Radiant Regeneration",
+    "name": "Torment Pulse",
+    "compareWith": "Greater Expansion",
     "claim": "should_be_more_obvious",
-    "reason": "Decay is a memorable active with a distinctive health-based damage-over-time effect and a short, easy name. It should come to mind more readily than the upgrade-style Radiant Regeneration, so it should not sit at 85 alongside it.",
-    "outcome": "applied"
-   },
-   {
-    "name": "Rapid Recharge",
-    "compareWith": "Superior Duration",
-    "claim": "should_be_more_obvious",
-    "reason": "Rapid Recharge is a commonly bought charge-ability item with a strong identity, and its name is easy to recall. It should not be scored as more obscure than Superior Duration, a forgettable upgrade.",
+    "reason": "Torment Pulse is a very recognizable and commonly built item with a distinctive name. Greater Expansion is a plain upgrade that players seldom think of unprompted, so Torment Pulse should score as more obvious.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Knockdown",
-    "compareWith": "Tankbuster",
+    "name": "Disarming Hex",
+    "compareWith": "Spirit Snatch",
     "claim": "should_be_more_obvious",
-    "reason": "Knockdown is a well-known active crowd-control item that players often buy and recognise. It is more memorable than Tankbuster, so it should be scored lower than the 60 it shares with Tankbuster.",
-    "outcome": "applied"
+    "reason": "Disarming Hex is a distinctive named active that experienced players know well, so it is not clearly rarer than niche items like Spirit Snatch. Placing it as the single rarest answer looks too harsh.",
+    "outcome": "rejected-by-comparison"
    }
   ]
  }

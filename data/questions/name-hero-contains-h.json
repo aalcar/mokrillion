@@ -18,9 +18,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:16:28.541Z",
+ "generatedAt": "2026-11-25T04:44:08.371Z",
  "answers": [
   {
    "entityId": "hero_haze",
@@ -29,20 +29,20 @@
    "score": 10
   },
   {
-   "entityId": "hero_wraith",
-   "name": "Wraith",
+   "entityId": "hero_lash",
+   "name": "Lash",
    "rank": 2,
    "score": 30
   },
   {
-   "entityId": "hero_shiv",
-   "name": "Shiv",
+   "entityId": "hero_wraith",
+   "name": "Wraith",
    "rank": 3,
    "score": 60
   },
   {
-   "entityId": "hero_lash",
-   "name": "Lash",
+   "entityId": "hero_shiv",
+   "name": "Shiv",
    "rank": 4,
    "score": 60
   },
@@ -60,6 +60,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_astro",
@@ -82,7 +88,7 @@
     "popularityObscurity": 0.8,
     "spellingCost": 8,
     "spellingObscurity": 1,
-    "key": 0.5680000000000001
+    "key": 0.7
    },
    {
     "id": "hero_haze",
@@ -128,7 +134,7 @@
     "popularityObscurity": 0.2,
     "spellingCost": 4,
     "spellingObscurity": 0.2,
-    "key": 0.508
+    "key": 0.33999999999999997
    },
    {
     "id": "hero_nurse",
@@ -151,7 +157,7 @@
     "popularityObscurity": 1,
     "spellingCost": 5,
     "spellingObscurity": 0.6,
-    "key": 0.9800000000000001
+    "key": 0.98
    },
    {
     "id": "hero_shiv",
@@ -174,7 +180,7 @@
     "popularityObscurity": 0.6,
     "spellingCost": 4,
     "spellingObscurity": 0.2,
-    "key": 0.47000000000000003
+    "key": 0.53
    },
    {
     "id": "hero_wraith",
@@ -197,45 +203,45 @@
     "popularityObscurity": 0.4,
     "spellingCost": 6,
     "spellingObscurity": 0.8,
-    "key": 0.4640000000000001
+    "key": 0.43999999999999995
    }
   ],
   "passAgreement": 0.7333333333333334,
   "orderBeforeRefinement": [
    "hero_haze",
+   "hero_lash",
    "hero_wraith",
    "hero_shiv",
-   "hero_lash",
    "hero_astro",
    "hero_nurse"
   ],
   "pairwise": [
    {
-    "a": "hero_shiv",
-    "b": "hero_lash",
+    "a": "hero_wraith",
+    "b": "hero_shiv",
     "purpose": "rare-contenders",
-    "rarer": "hero_lash"
+    "rarer": "hero_shiv"
    },
    {
-    "a": "hero_shiv",
+    "a": "hero_wraith",
     "b": "hero_astro",
     "purpose": "rare-contenders",
     "rarer": "hero_astro"
    },
    {
-    "a": "hero_shiv",
+    "a": "hero_wraith",
     "b": "hero_nurse",
     "purpose": "rare-contenders",
     "rarer": "hero_nurse"
    },
    {
-    "a": "hero_lash",
+    "a": "hero_shiv",
     "b": "hero_astro",
     "purpose": "rare-contenders",
     "rarer": "hero_astro"
    },
    {
-    "a": "hero_lash",
+    "a": "hero_shiv",
     "b": "hero_nurse",
     "purpose": "rare-contenders",
     "rarer": "hero_nurse"
@@ -248,36 +254,36 @@
    },
    {
     "a": "hero_haze",
-    "b": "hero_wraith",
+    "b": "hero_lash",
     "purpose": "tier-boundary",
-    "rarer": "hero_wraith"
+    "rarer": "hero_lash"
+   },
+   {
+    "a": "hero_shiv",
+    "b": "hero_wraith",
+    "purpose": "review",
+    "rarer": "hero_shiv"
    },
    {
     "a": "hero_nurse",
     "b": "hero_astro",
     "purpose": "review",
     "rarer": "hero_nurse"
-   },
-   {
-    "a": "hero_wraith",
-    "b": "hero_shiv",
-    "purpose": "review",
-    "rarer": "hero_shiv"
    }
   ],
   "review": [
    {
-    "name": "Nurse Harrow",
-    "compareWith": "Holliday",
+    "name": "Shiv",
+    "compareWith": "Wraith",
     "claim": "should_be_more_obvious",
-    "reason": "The question is about letter H, and Harrow's name starts with H as a surname, and the title 'Nurse Harrow' is memorable. Players scanning for H names would plausibly think of both. Holliday and Harrow are similar in recall, so a 15-point gap is exaggerated. It's the newest hero, though, so she may still be rarest.",
+    "reason": "Shiv's name is short and starts with an H-adjacent hint: the letter H sits right in the middle of a 4-letter name, so it is very easy to spot. Wraith's H is also easy, but Wraith is a long-standing popular hero. Shiv is similarly well known and should not score the same or higher than Wraith's difficulty in a way that implies it is less accessible; it should be placed at or slightly below Wraith's points.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Wraith",
-    "compareWith": "Shiv",
-    "claim": "should_be_more_obscure",
-    "reason": "Wraith contains H only in the middle (w-r-a-i-t-h), at the end, so players do not naturally think of it for an H prompt. It is popular, but that popularity is for unrelated reasons, so 30 pts is too low relative to Shiv and Lash.",
+    "name": "Nurse Harrow",
+    "compareWith": "Holliday",
+    "claim": "should_be_more_obvious",
+    "reason": "Nurse Harrow has H at the start of both her title-less surname and her prominent name, and the letter is very visible. Holliday also has H at the start, but Holliday is a more established hero. The 15-point gap is plausible, though Harrow is not so obscure that she should sit far above Holliday.",
     "outcome": "rejected-by-comparison"
    }
   ]

@@ -26,49 +26,49 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:05:06.366Z",
+ "generatedAt": "2026-11-25T04:39:56.554Z",
  "answers": [
   {
-   "entityId": "upgrade_chonky",
-   "name": "Fortitude",
+   "entityId": "upgrade_improved_bullet_armor",
+   "name": "Bullet Resilience",
    "rank": 1,
    "score": 10
   },
   {
-   "entityId": "upgrade_tech_purge",
-   "name": "Spirit Resilience",
+   "entityId": "upgrade_reduce_debuff_duration",
+   "name": "Dispel Magic",
    "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_chonky",
+   "name": "Fortitude",
+   "rank": 3,
    "score": 30
   },
   {
    "entityId": "upgrade_metal_skin",
    "name": "Metal Skin",
-   "rank": 3,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_reduce_debuff_duration",
-   "name": "Dispel Magic",
    "rank": 4,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_improved_bullet_armor",
-   "name": "Bullet Resilience",
-   "rank": 5,
    "score": 60
   },
   {
    "entityId": "upgrade_warp_stone",
    "name": "Warp Stone",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_fury_trance",
+   "name": "Fury Trance",
    "rank": 6,
    "score": 60
   },
   {
-   "entityId": "upgrade_rocket_booster",
-   "name": "Majestic Leap",
+   "entityId": "upgrade_tech_purge",
+   "name": "Spirit Resilience",
    "rank": 7,
    "score": 60
   },
@@ -85,8 +85,8 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_rescue_beam",
-   "name": "Rescue Beam",
+   "entityId": "upgrade_rocket_booster",
+   "name": "Majestic Leap",
    "rank": 10,
    "score": 85
   },
@@ -97,25 +97,31 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_veil_walker",
-   "name": "Veil Walker",
+   "entityId": "upgrade_rescue_beam",
+   "name": "Rescue Beam",
    "rank": 12,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_fury_trance",
-   "name": "Fury Trance",
-   "rank": 13,
    "score": 85
   },
   {
    "entityId": "upgrade_superior_stamina",
    "name": "Stamina Mastery",
+   "rank": 13,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_veil_walker",
+   "name": "Veil Walker",
    "rank": 14,
    "score": 100
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_boxing_glove",
@@ -138,7 +144,7 @@
     "popularityObscurity": 0.38461538461538464,
     "spellingCost": 10,
     "spellingObscurity": 0.5,
-    "key": 0.5342307692307693
+    "key": 0.45576923076923076
    },
    {
     "id": "upgrade_chonky",
@@ -161,7 +167,7 @@
     "popularityObscurity": 0.23076923076923078,
     "spellingCost": 9,
     "spellingObscurity": 0.23076923076923078,
-    "key": 0.2053846153846154
+    "key": 0.21923076923076923
    },
    {
     "id": "upgrade_counterspell",
@@ -184,7 +190,7 @@
     "popularityObscurity": 0.46153846153846156,
     "spellingCost": 12,
     "spellingObscurity": 0.7307692307692307,
-    "key": 0.601923076923077
+    "key": 0.5326923076923077
    },
    {
     "id": "upgrade_fury_trance",
@@ -207,7 +213,7 @@
     "popularityObscurity": 1,
     "spellingCost": 4,
     "spellingObscurity": 0,
-    "key": 0.8315384615384616
+    "key": 0.8961538461538461
    },
    {
     "id": "upgrade_health_nova",
@@ -230,7 +236,7 @@
     "popularityObscurity": 0.9230769230769231,
     "spellingCost": 10,
     "spellingObscurity": 0.5,
-    "key": 0.7157692307692309
+    "key": 0.8173076923076923
    },
    {
     "id": "upgrade_improved_bullet_armor",
@@ -253,7 +259,7 @@
     "popularityObscurity": 0.6153846153846154,
     "spellingCost": 16,
     "spellingObscurity": 0.9615384615384616,
-    "key": 0.3703846153846154
+    "key": 0.5134615384615385
    },
    {
     "id": "upgrade_metal_skin",
@@ -276,7 +282,7 @@
     "popularityObscurity": 0.5384615384615384,
     "spellingCost": 9,
     "spellingObscurity": 0.23076923076923078,
-    "key": 0.22692307692307695
+    "key": 0.3884615384615384
    },
    {
     "id": "upgrade_reduce_debuff_duration",
@@ -299,7 +305,7 @@
     "popularityObscurity": 0.07692307692307693,
     "spellingCost": 6,
     "spellingObscurity": 0.07692307692307693,
-    "key": 0.33076923076923076
+    "key": 0.19230769230769232
    },
    {
     "id": "upgrade_rescue_beam",
@@ -322,7 +328,7 @@
     "popularityObscurity": 0.8461538461538461,
     "spellingCost": 10,
     "spellingObscurity": 0.5,
-    "key": 0.6088461538461539
+    "key": 0.7288461538461539
    },
    {
     "id": "upgrade_rocket_booster",
@@ -345,7 +351,7 @@
     "popularityObscurity": 0.6923076923076923,
     "spellingCost": 12,
     "spellingObscurity": 0.7307692307692307,
-    "key": 0.4996153846153847
+    "key": 0.6057692307692307
    },
    {
     "id": "upgrade_superior_stamina",
@@ -368,7 +374,7 @@
     "popularityObscurity": 0.15384615384615385,
     "spellingCost": 14,
     "spellingObscurity": 0.8461538461538461,
-    "key": 0.6538461538461539
+    "key": 0.4
    },
    {
     "id": "upgrade_tech_purge",
@@ -391,7 +397,7 @@
     "popularityObscurity": 0,
     "spellingCost": 16,
     "spellingObscurity": 0.9615384615384616,
-    "key": 0.1326923076923077
+    "key": 0.08653846153846154
    },
    {
     "id": "upgrade_veil_walker",
@@ -414,7 +420,7 @@
     "popularityObscurity": 0.7692307692307693,
     "spellingCost": 10,
     "spellingObscurity": 0.5,
-    "key": 0.8234615384615386
+    "key": 0.7865384615384615
    },
    {
     "id": "upgrade_warp_stone",
@@ -437,56 +443,50 @@
     "popularityObscurity": 0.3076923076923077,
     "spellingCost": 9,
     "spellingObscurity": 0.23076923076923078,
-    "key": 0.46461538461538465
+    "key": 0.3769230769230769
    }
   ],
   "passAgreement": 0.7186813186813186,
   "orderBeforeRefinement": [
    "upgrade_tech_purge",
-   "upgrade_chonky",
-   "upgrade_metal_skin",
    "upgrade_reduce_debuff_duration",
-   "upgrade_improved_bullet_armor",
+   "upgrade_chonky",
    "upgrade_warp_stone",
-   "upgrade_rocket_booster",
-   "upgrade_boxing_glove",
-   "upgrade_counterspell",
-   "upgrade_rescue_beam",
+   "upgrade_metal_skin",
    "upgrade_superior_stamina",
-   "upgrade_health_nova",
+   "upgrade_boxing_glove",
+   "upgrade_improved_bullet_armor",
+   "upgrade_counterspell",
+   "upgrade_rocket_booster",
+   "upgrade_rescue_beam",
    "upgrade_veil_walker",
+   "upgrade_health_nova",
    "upgrade_fury_trance"
   ],
   "pairwise": [
    {
-    "a": "upgrade_superior_stamina",
+    "a": "upgrade_rescue_beam",
+    "b": "upgrade_veil_walker",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_veil_walker"
+   },
+   {
+    "a": "upgrade_rescue_beam",
     "b": "upgrade_health_nova",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_superior_stamina"
+    "rarer": "upgrade_rescue_beam"
    },
    {
-    "a": "upgrade_superior_stamina",
-    "b": "upgrade_veil_walker",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_superior_stamina"
-   },
-   {
-    "a": "upgrade_superior_stamina",
-    "b": "upgrade_fury_trance",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_superior_stamina"
-   },
-   {
-    "a": "upgrade_health_nova",
-    "b": "upgrade_veil_walker",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_health_nova",
+    "a": "upgrade_rescue_beam",
     "b": "upgrade_fury_trance",
     "purpose": "rare-contenders",
     "rarer": null
+   },
+   {
+    "a": "upgrade_veil_walker",
+    "b": "upgrade_health_nova",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_veil_walker"
    },
    {
     "a": "upgrade_veil_walker",
@@ -495,57 +495,95 @@
     "rarer": null
    },
    {
+    "a": "upgrade_health_nova",
+    "b": "upgrade_fury_trance",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_fury_trance"
+   },
+   {
     "a": "upgrade_tech_purge",
-    "b": "upgrade_chonky",
+    "b": "upgrade_reduce_debuff_duration",
     "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_chonky",
+    "b": "upgrade_warp_stone",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_warp_stone"
+   },
+   {
+    "a": "upgrade_boxing_glove",
+    "b": "upgrade_improved_bullet_armor",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_boxing_glove"
+   },
+   {
+    "a": "upgrade_improved_bullet_armor",
+    "b": "upgrade_tech_purge",
+    "purpose": "review",
     "rarer": "upgrade_tech_purge"
    },
    {
     "a": "upgrade_metal_skin",
-    "b": "upgrade_reduce_debuff_duration",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_reduce_debuff_duration"
-   },
-   {
-    "a": "upgrade_rocket_booster",
-    "b": "upgrade_boxing_glove",
-    "purpose": "tier-boundary",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_improved_bullet_armor",
-    "b": "upgrade_reduce_debuff_duration",
+    "b": "upgrade_warp_stone",
     "purpose": "review",
-    "rarer": "upgrade_improved_bullet_armor"
+    "rarer": "upgrade_warp_stone"
+   },
+   {
+    "a": "upgrade_fury_trance",
+    "b": "upgrade_superior_stamina",
+    "purpose": "review",
+    "rarer": "upgrade_superior_stamina"
    },
    {
     "a": "upgrade_health_nova",
-    "b": "upgrade_boxing_glove",
+    "b": "upgrade_counterspell",
     "purpose": "review",
     "rarer": null
+   },
+   {
+    "a": "upgrade_veil_walker",
+    "b": "upgrade_rocket_booster",
+    "purpose": "review",
+    "rarer": "upgrade_veil_walker"
    }
   ],
   "review": [
    {
     "name": "Bullet Resilience",
-    "compareWith": "Dispel Magic",
+    "compareWith": "Spirit Resilience",
     "claim": "should_be_more_obvious",
-    "reason": "Bullet Resilience is the direct counterpart of Spirit Resilience (30 pts) and is among the best-known defensive Vitality items. Players who think of Spirit Resilience will almost always think of it too, so it should sit near 30 pts, ahead of Dispel Magic.",
-    "outcome": "rejected-by-comparison"
+    "reason": "Bullet Resilience is the direct counterpart of Spirit Resilience, a staple defensive item with the same Tier 3 slot and name pattern. Players who think of one will think of the other immediately, so 60 pts versus 10 pts overstates the gap.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Metal Skin",
+    "compareWith": "Warp Stone",
+    "claim": "should_be_more_obvious",
+    "reason": "Metal Skin is a well-known bullet-immunity active with a very memorable effect, used often against heavy gun builds. It should be more readily recalled than Warp Stone, so it should sit at least level with it or below it in points.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Fury Trance",
+    "compareWith": "Stamina Mastery",
+    "claim": "should_be_more_obvious",
+    "reason": "Fury Trance is a distinctive, memorable active with a recognizable name and playstyle, and it is a notable lifesteal item. Stamina Mastery is a plain utility item that is easier to forget, so Fury Trance should not score higher than it.",
+    "outcome": "applied"
    },
    {
     "name": "Healing Nova",
-    "compareWith": "Lifestrike",
+    "compareWith": "Counterspell",
     "claim": "should_be_more_obvious",
-    "reason": "Healing Nova is a recognizable healing active with a plain name that players link to Vitality, and the wiki gives it a strong healing identity. It should be easier to recall than Lifestrike, a niche melee build item.",
+    "reason": "Healing Nova has a clear name with 'heal' in it, which fits a Vitality question, and it is a recognizable heal active. Counterspell is more situational and less tied to Vitality, so Healing Nova should be rated more obvious.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Stamina Mastery",
-    "compareWith": "Veil Walker",
-    "claim": "should_be_more_obscure",
-    "reason": "Stamina Mastery is the weakest fit for a Vitality question. It is about stamina and air movement, not health or durability, so few players would recall it, and it is likely to be rarer than Veil Walker, which at least has Health and Heal on it. The proposed order is plausibly right, but Veil Walker is probably a bit too obscure at the same 85 pts as the others.",
-    "outcome": "ignored-invalid"
+    "name": "Veil Walker",
+    "compareWith": "Majestic Leap",
+    "claim": "should_be_more_obvious",
+    "reason": "Veil Walker is not meaningfully rarer than Majestic Leap, Rescue Beam or Lifestrike. Its name is distinctive and memorable, and it is a commonly built mobility item. Giving it the single 100-pt slot looks arbitrary, so it should swap with Majestic Leap.",
+    "outcome": "rejected-by-comparison"
    }
   ]
  }

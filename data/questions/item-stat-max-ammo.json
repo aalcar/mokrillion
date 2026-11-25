@@ -20,9 +20,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:09:03.406Z",
+ "generatedAt": "2026-11-25T04:42:07.537Z",
  "answers": [
   {
    "entityId": "upgrade_clip_size",
@@ -43,37 +43,43 @@
    "score": 60
   },
   {
-   "entityId": "upgrade_rechargingbullets",
-   "name": "Recharging Rush",
+   "entityId": "upgrade_intensifying_clip",
+   "name": "Intensifying Magazine",
    "rank": 4,
    "score": 60
   },
   {
-   "entityId": "upgrade_intensifying_clip",
-   "name": "Intensifying Magazine",
-   "rank": 5,
-   "score": 85
-  },
-  {
    "entityId": "upgrade_reinforcing_casings",
    "name": "Escalating Resilience",
-   "rank": 6,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_ethereal_bullets",
-   "name": "Mercurial Magnum",
-   "rank": 7,
+   "rank": 5,
    "score": 85
   },
   {
    "entityId": "upgrade_critshot",
    "name": "Lucky Shot",
+   "rank": 6,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_rechargingbullets",
+   "name": "Recharging Rush",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_ethereal_bullets",
+   "name": "Mercurial Magnum",
    "rank": 8,
    "score": 100
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_active_reload",
@@ -96,7 +102,7 @@
     "popularityObscurity": 0.5714285714285714,
     "spellingCost": 12,
     "spellingObscurity": 0.42857142857142855,
-    "key": 0.43857142857142856
+    "key": 0.38142857142857134
    },
    {
     "id": "upgrade_clip_size",
@@ -119,7 +125,7 @@
     "popularityObscurity": 0.14285714285714285,
     "spellingCost": 13,
     "spellingObscurity": 0.5714285714285714,
-    "key": 0.08571428571428572
+    "key": 0.049999999999999996
    },
    {
     "id": "upgrade_critshot",
@@ -142,7 +148,7 @@
     "popularityObscurity": 0.7142857142857143,
     "spellingCost": 9,
     "spellingObscurity": 0.2857142857142857,
-    "key": 0.7557142857142858
+    "key": 0.7842857142857141
    },
    {
     "id": "upgrade_ethereal_bullets",
@@ -165,7 +171,7 @@
     "popularityObscurity": 0.42857142857142855,
     "spellingCost": 6,
     "spellingObscurity": 0,
-    "key": 0.7214285714285715
+    "key": 0.8642857142857143
    },
    {
     "id": "upgrade_intensifying_clip",
@@ -188,7 +194,7 @@
     "popularityObscurity": 0.9285714285714286,
     "spellingCost": 20,
     "spellingObscurity": 0.9285714285714286,
-    "key": 0.6535714285714286
+    "key": 0.5285714285714286
    },
    {
     "id": "upgrade_rechargingbullets",
@@ -211,7 +217,7 @@
     "popularityObscurity": 0.2857142857142857,
     "spellingCost": 14,
     "spellingObscurity": 0.7142857142857143,
-    "key": 0.5585714285714286
+    "key": 0.6728571428571428
    },
    {
     "id": "upgrade_reinforcing_casings",
@@ -234,7 +240,7 @@
     "popularityObscurity": 0.9285714285714286,
     "spellingCost": 20,
     "spellingObscurity": 0.9285714285714286,
-    "key": 0.7007142857142857
+    "key": 0.5971428571428572
    },
    {
     "id": "upgrade_titan_round",
@@ -257,7 +263,7 @@
     "popularityObscurity": 0,
     "spellingCost": 7,
     "spellingObscurity": 0.14285714285714285,
-    "key": 0.08571428571428572
+    "key": 0.12142857142857143
    }
   ],
   "passAgreement": 0.8857142857142858,
@@ -265,27 +271,21 @@
    "upgrade_clip_size",
    "upgrade_titan_round",
    "upgrade_active_reload",
-   "upgrade_rechargingbullets",
    "upgrade_intensifying_clip",
    "upgrade_reinforcing_casings",
-   "upgrade_ethereal_bullets",
-   "upgrade_critshot"
+   "upgrade_rechargingbullets",
+   "upgrade_critshot",
+   "upgrade_ethereal_bullets"
   ],
   "pairwise": [
    {
-    "a": "upgrade_intensifying_clip",
-    "b": "upgrade_reinforcing_casings",
+    "a": "upgrade_reinforcing_casings",
+    "b": "upgrade_rechargingbullets",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "upgrade_rechargingbullets"
    },
    {
-    "a": "upgrade_intensifying_clip",
-    "b": "upgrade_ethereal_bullets",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_ethereal_bullets"
-   },
-   {
-    "a": "upgrade_intensifying_clip",
+    "a": "upgrade_reinforcing_casings",
     "b": "upgrade_critshot",
     "purpose": "rare-contenders",
     "rarer": "upgrade_critshot"
@@ -297,14 +297,20 @@
     "rarer": "upgrade_ethereal_bullets"
    },
    {
-    "a": "upgrade_reinforcing_casings",
+    "a": "upgrade_rechargingbullets",
     "b": "upgrade_critshot",
     "purpose": "rare-contenders",
     "rarer": "upgrade_critshot"
    },
    {
-    "a": "upgrade_ethereal_bullets",
-    "b": "upgrade_critshot",
+    "a": "upgrade_rechargingbullets",
+    "b": "upgrade_ethereal_bullets",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_ethereal_bullets"
+   },
+   {
+    "a": "upgrade_critshot",
+    "b": "upgrade_ethereal_bullets",
     "purpose": "rare-contenders",
     "rarer": "upgrade_ethereal_bullets"
    },
@@ -312,36 +318,48 @@
     "a": "upgrade_clip_size",
     "b": "upgrade_titan_round",
     "purpose": "tier-boundary",
-    "rarer": "upgrade_titan_round"
+    "rarer": null
    },
    {
     "a": "upgrade_titan_round",
     "b": "upgrade_active_reload",
     "purpose": "tier-boundary",
     "rarer": "upgrade_active_reload"
+   },
+   {
+    "a": "upgrade_intensifying_clip",
+    "b": "upgrade_active_reload",
+    "purpose": "review",
+    "rarer": "upgrade_intensifying_clip"
+   },
+   {
+    "a": "upgrade_critshot",
+    "b": "upgrade_rechargingbullets",
+    "purpose": "review",
+    "rarer": "upgrade_rechargingbullets"
    }
   ],
   "review": [
    {
-    "name": "Intensifying Magazine",
-    "compareWith": "Escalating Resilience",
+    "name": "Escalating Resilience",
+    "compareWith": "Recharging Rush",
     "claim": "should_be_more_obvious",
-    "reason": "Intensifying Magazine is a Tier 2 weapon item that is commonly bought and well known for its damage ramp. Escalating Resilience is a Tier 3 upgrade that people mostly associate with its Bullet Resist. Neither is strongly tied to Max Ammo, but the Tier 2 item should come to mind more often, so it should score lower than Escalating Resilience.",
+    "reason": "Escalating Resilience is a commonly built Tier 3 upgrade of Extended Magazine with big ammo, health and damage stats. Players see it often, and it is tied directly to the ammo-heavy Extended Magazine line. Recharging Rush is a niche ability-cycling item whose ammo bonus is incidental, so it should score as rarer.",
     "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Intensifying Magazine",
+    "compareWith": "Active Reload",
+    "claim": "should_be_more_obvious",
+    "reason": "Intensifying Magazine is a very common tier 2 weapon pick and its name directly evokes magazine and ammo. Players are more likely to name it than Active Reload, which they know for its reload-timing mechanic rather than its small ammo bonus.",
+    "outcome": "rejected-by-comparison"
    },
    {
     "name": "Lucky Shot",
-    "compareWith": "Intensifying Magazine",
-    "claim": "should_be_more_obscure",
-    "reason": "Lucky Shot is a Tier 4 item known for its proc damage. Its 30 Max Ammo is easy to forget, and it is bought less often than Tier 2 items. It should be at least as obscure as Intensifying Magazine, which is a common early purchase.",
-    "outcome": "ignored-invalid"
-   },
-   {
-    "name": "Mercurial Magnum",
-    "compareWith": "Lucky Shot",
+    "compareWith": "Recharging Rush",
     "claim": "should_be_more_obvious",
-    "reason": "Mercurial Magnum is a Tier 4 Spirit item that is tied to the bullet-spirit hybrid theme and is memorable by name. A player who recalls it will probably remember it for its imbue. The Max Ammo stat is still obscure, so it is plausibly the rarest answer, but 100 points ranks it clearly above Lucky Shot's equal-tier obscurity. A small swap or a score slightly lower than the others seems more reasonable.",
-    "outcome": "applied-by-data"
+    "reason": "Lucky Shot is a well-known Tier 4 weapon item that players buy and discuss often. Recharging Rush is a more forgettable item, so the two should not share the same 85 point score. Lucky Shot should be more obvious.",
+    "outcome": "applied"
    }
   ]
  }

@@ -29,9 +29,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:07:53.059Z",
+ "generatedAt": "2026-11-25T04:37:21.428Z",
  "answers": [
   {
    "entityId": "upgrade_improved_spirit",
@@ -46,32 +46,32 @@
    "score": 30
   },
   {
+   "entityId": "upgrade_mystic_regeneration",
+   "name": "Mystic Regeneration",
+   "rank": 3,
+   "score": 30
+  },
+  {
    "entityId": "upgrade_magic_reach",
    "name": "Mystic Expansion",
-   "rank": 3,
+   "rank": 4,
    "score": 30
   },
   {
    "entityId": "upgrade_extra_charge",
    "name": "Extra Charge",
-   "rank": 4,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_magic_tempo",
-   "name": "Compress Cooldown",
    "rank": 5,
    "score": 60
   },
   {
-   "entityId": "upgrade_magic_burst",
-   "name": "Mystic Burst",
+   "entityId": "upgrade_magic_tempo",
+   "name": "Compress Cooldown",
    "rank": 6,
    "score": 60
   },
   {
-   "entityId": "upgrade_arcane_extension",
-   "name": "Duration Extender",
+   "entityId": "upgrade_cooldown_reduction",
+   "name": "Superior Cooldown",
    "rank": 7,
    "score": 60
   },
@@ -82,61 +82,67 @@
    "score": 60
   },
   {
-   "entityId": "upgrade_cooldown_reduction",
-   "name": "Superior Cooldown",
+   "entityId": "upgrade_quick_silver",
+   "name": "Quicksilver Reload",
    "rank": 9,
    "score": 60
   },
   {
-   "entityId": "upgrade_containment",
-   "name": "Slowing Hex",
+   "entityId": "upgrade_arcane_extension",
+   "name": "Duration Extender",
    "rank": 10,
    "score": 85
   },
   {
-   "entityId": "upgrade_mystic_regeneration",
-   "name": "Mystic Regeneration",
+   "entityId": "upgrade_containment",
+   "name": "Slowing Hex",
    "rank": 11,
    "score": 85
   },
   {
-   "entityId": "upgrade_magic_slow",
-   "name": "Mystic Slow",
+   "entityId": "upgrade_magic_burst",
+   "name": "Mystic Burst",
    "rank": 12,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_quick_silver",
-   "name": "Quicksilver Reload",
-   "rank": 13,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_cold_front",
-   "name": "Cold Front",
-   "rank": 14,
    "score": 85
   },
   {
    "entityId": "upgrade_acolytes_glove",
    "name": "Spirit Strike",
-   "rank": 15,
+   "rank": 13,
    "score": 85
   },
   {
-   "entityId": "upgrade_spirit_sap",
-   "name": "Spirit Sap",
-   "rank": 16,
+   "entityId": "upgrade_magic_slow",
+   "name": "Mystic Slow",
+   "rank": 14,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_cold_front",
+   "name": "Cold Front",
+   "rank": 15,
    "score": 85
   },
   {
    "entityId": "upgrade_withering_whip",
    "name": "Rusted Barrel",
+   "rank": 16,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_spirit_sap",
+   "name": "Spirit Sap",
    "rank": 17,
    "score": 100
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_acolytes_glove",
@@ -159,7 +165,7 @@
     "popularityObscurity": 0.625,
     "spellingCost": 12,
     "spellingObscurity": 0.65625,
-    "key": 0.7503125
+    "key": 0.6828125
    },
    {
     "id": "upgrade_arcane_extension",
@@ -182,7 +188,7 @@
     "popularityObscurity": 0.5625,
     "spellingCost": 16,
     "spellingObscurity": 0.875,
-    "key": 0.48875
+    "key": 0.5375
    },
    {
     "id": "upgrade_cold_front",
@@ -205,7 +211,7 @@
     "popularityObscurity": 0.8125,
     "spellingCost": 9,
     "spellingObscurity": 0.125,
-    "key": 0.74375
+    "key": 0.7625
    },
    {
     "id": "upgrade_containment",
@@ -228,7 +234,7 @@
     "popularityObscurity": 0.6875,
     "spellingCost": 10,
     "spellingObscurity": 0.28125,
-    "key": 0.5984375
+    "key": 0.6359374999999999
    },
    {
     "id": "upgrade_cooldown_reduction",
@@ -251,7 +257,7 @@
     "popularityObscurity": 0.1875,
     "spellingCost": 16,
     "spellingObscurity": 0.875,
-    "key": 0.5725
+    "key": 0.38125
    },
    {
     "id": "upgrade_extra_charge",
@@ -274,7 +280,7 @@
     "popularityObscurity": 0.3125,
     "spellingCost": 11,
     "spellingObscurity": 0.46875,
-    "key": 0.2584375
+    "key": 0.2921875
    },
    {
     "id": "upgrade_improved_spirit",
@@ -320,7 +326,7 @@
     "popularityObscurity": 0.125,
     "spellingCost": 11,
     "spellingObscurity": 0.46875,
-    "key": 0.28656250000000005
+    "key": 0.2078125
    },
    {
     "id": "upgrade_magic_reach",
@@ -343,7 +349,7 @@
     "popularityObscurity": 0.25,
     "spellingCost": 9,
     "spellingObscurity": 0.125,
-    "key": 0.21625000000000003
+    "key": 0.23124999999999998
    },
    {
     "id": "upgrade_magic_slow",
@@ -366,7 +372,7 @@
     "popularityObscurity": 0.875,
     "spellingCost": 10,
     "spellingObscurity": 0.28125,
-    "key": 0.6528125
+    "key": 0.7578125
    },
    {
     "id": "upgrade_magic_tempo",
@@ -389,7 +395,7 @@
     "popularityObscurity": 0.375,
     "spellingCost": 16,
     "spellingObscurity": 0.875,
-    "key": 0.24187500000000003
+    "key": 0.32812499999999994
    },
    {
     "id": "upgrade_magic_vulnerability",
@@ -412,7 +418,7 @@
     "popularityObscurity": 0.4375,
     "spellingCost": 19,
     "spellingObscurity": 1,
-    "key": 0.534375
+    "key": 0.49687499999999996
    },
    {
     "id": "upgrade_mystic_regeneration",
@@ -435,7 +441,7 @@
     "popularityObscurity": 0.75,
     "spellingCost": 11,
     "spellingObscurity": 0.46875,
-    "key": 0.6121875000000001
+    "key": 0.6796874999999999
    },
    {
     "id": "upgrade_quick_silver",
@@ -458,7 +464,7 @@
     "popularityObscurity": 0.5,
     "spellingCost": 3,
     "spellingObscurity": 0,
-    "key": 0.660625
+    "key": 0.559375
    },
    {
     "id": "upgrade_soaring_spirit",
@@ -481,7 +487,7 @@
     "popularityObscurity": 0.0625,
     "spellingCost": 14,
     "spellingObscurity": 0.75,
-    "key": 0.179375
+    "key": 0.13437500000000002
    },
    {
     "id": "upgrade_spirit_sap",
@@ -504,7 +510,7 @@
     "popularityObscurity": 1,
     "spellingCost": 9,
     "spellingObscurity": 0.125,
-    "key": 0.839375
+    "key": 0.903125
    },
    {
     "id": "upgrade_withering_whip",
@@ -527,41 +533,47 @@
     "popularityObscurity": 0.9375,
     "spellingCost": 12,
     "spellingObscurity": 0.65625,
-    "key": 0.8409375000000001
+    "key": 0.8859375
    }
   ],
   "passAgreement": 0.6088235294117649,
   "orderBeforeRefinement": [
    "upgrade_improved_spirit",
    "upgrade_soaring_spirit",
-   "upgrade_magic_reach",
-   "upgrade_magic_tempo",
-   "upgrade_extra_charge",
    "upgrade_magic_burst",
-   "upgrade_arcane_extension",
-   "upgrade_magic_vulnerability",
+   "upgrade_magic_reach",
+   "upgrade_extra_charge",
+   "upgrade_magic_tempo",
    "upgrade_cooldown_reduction",
+   "upgrade_magic_vulnerability",
+   "upgrade_arcane_extension",
+   "upgrade_quick_silver",
    "upgrade_containment",
    "upgrade_mystic_regeneration",
-   "upgrade_magic_slow",
-   "upgrade_quick_silver",
-   "upgrade_cold_front",
    "upgrade_acolytes_glove",
-   "upgrade_spirit_sap",
-   "upgrade_withering_whip"
+   "upgrade_magic_slow",
+   "upgrade_cold_front",
+   "upgrade_withering_whip",
+   "upgrade_spirit_sap"
   ],
   "pairwise": [
    {
-    "a": "upgrade_cold_front",
-    "b": "upgrade_acolytes_glove",
+    "a": "upgrade_magic_slow",
+    "b": "upgrade_cold_front",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_acolytes_glove"
+    "rarer": null
    },
    {
-    "a": "upgrade_cold_front",
+    "a": "upgrade_magic_slow",
+    "b": "upgrade_withering_whip",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_magic_slow",
     "b": "upgrade_spirit_sap",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_spirit_sap"
+    "rarer": null
    },
    {
     "a": "upgrade_cold_front",
@@ -570,20 +582,14 @@
     "rarer": "upgrade_withering_whip"
    },
    {
-    "a": "upgrade_acolytes_glove",
+    "a": "upgrade_cold_front",
     "b": "upgrade_spirit_sap",
     "purpose": "rare-contenders",
     "rarer": "upgrade_spirit_sap"
    },
    {
-    "a": "upgrade_acolytes_glove",
-    "b": "upgrade_withering_whip",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_withering_whip"
-   },
-   {
-    "a": "upgrade_spirit_sap",
-    "b": "upgrade_withering_whip",
+    "a": "upgrade_withering_whip",
+    "b": "upgrade_spirit_sap",
     "purpose": "rare-contenders",
     "rarer": "upgrade_withering_whip"
    },
@@ -594,59 +600,64 @@
     "rarer": "upgrade_soaring_spirit"
    },
    {
-    "a": "upgrade_magic_tempo",
+    "a": "upgrade_magic_reach",
     "b": "upgrade_extra_charge",
     "purpose": "tier-boundary",
-    "rarer": "upgrade_magic_tempo"
+    "rarer": null
    },
    {
-    "a": "upgrade_cooldown_reduction",
-    "b": "upgrade_containment",
+    "a": "upgrade_arcane_extension",
+    "b": "upgrade_quick_silver",
     "purpose": "tier-boundary",
-    "rarer": null
+    "rarer": "upgrade_arcane_extension"
+   },
+   {
+    "a": "upgrade_magic_burst",
+    "b": "upgrade_mystic_regeneration",
+    "purpose": "review",
+    "rarer": "upgrade_magic_burst"
    },
    {
     "a": "upgrade_cooldown_reduction",
-    "b": "upgrade_magic_vulnerability",
+    "b": "upgrade_magic_tempo",
     "purpose": "review",
-    "rarer": null
+    "rarer": "upgrade_cooldown_reduction"
+   },
+   {
+    "a": "upgrade_containment",
+    "b": "upgrade_arcane_extension",
+    "purpose": "review",
+    "rarer": "upgrade_containment"
    }
   ],
   "review": [
    {
+    "name": "Rusted Barrel",
+    "compareWith": "Spirit Sap",
+    "claim": "should_be_more_obvious",
+    "reason": "Rusted Barrel is a Tier 1 item that players often buy early in lane, and it is memorable for its distinctive name and its fire rate reduction. Spirit Sap is a niche Tier 2 active that sees much less play, so Rusted Barrel should not be the single rarest answer.",
+    "outcome": "applied-by-data"
+   },
+   {
     "name": "Mystic Burst",
-    "compareWith": "Compress Cooldown",
+    "compareWith": "Mystic Regeneration",
     "claim": "should_be_more_obscure",
-    "reason": "Mystic Burst is a Tier 1 item players rarely think of, and it has an unclear identity and a niche upgrade (Tankbuster). Compress Cooldown is a far more recognizable imbue item whose name directly evokes upgrading into Superior Cooldown.",
-    "outcome": "ignored-invalid"
+    "reason": "Mystic Burst shares a 30-point tier with Improved Spirit and Mystic Expansion, but it is not as strongly tied to upgrade chains. Mystic Regeneration is a staple early-game sustain buy and is arguably as recognizable, so it should not sit 55 points further out.",
+    "outcome": "applied"
    },
    {
     "name": "Superior Cooldown",
-    "compareWith": "Mystic Vulnerability",
+    "compareWith": "Compress Cooldown",
     "claim": "should_be_more_obvious",
-    "reason": "Superior Cooldown is a very commonly built Tier 3 item. Its name directly signals that it is an upgrade, and it is the obvious next step after Compress Cooldown, so players would think of it more readily than Mystic Vulnerability.",
+    "reason": "Superior Cooldown is a very widely bought Tier 3 cooldown item, and its name is strongly associated with the Transcendent Cooldown upgrade. Players are likely to name it before the Tier 2 Compress Cooldown, so it should score lower.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Cold Front",
-    "compareWith": "Rusted Barrel",
+    "name": "Slowing Hex",
+    "compareWith": "Duration Extender",
     "claim": "should_be_more_obvious",
-    "reason": "Cold Front is a well-known active item that players frequently buy, and Arctic Blast is a recognizable upgrade. Rusted Barrel is more obscure but is not exceptionally rare, so Cold Front should sit below it in points.",
-    "outcome": "ignored-invalid"
-   },
-   {
-    "name": "Spirit Strike",
-    "compareWith": "Mystic Regeneration",
-    "claim": "should_be_more_obscure",
-    "reason": "Spirit Strike is a niche melee-based item that few players recall when asked about components. Mystic Regeneration is a popular early-game item, so players would think of it more readily.",
-    "outcome": "ignored-invalid"
-   },
-   {
-    "name": "Mystic Slow",
-    "compareWith": "Spirit Sap",
-    "claim": "should_be_more_obvious",
-    "reason": "Mystic Slow is a commonly bought Tier 2 item that leads to Lightning Scroll, so players would think of it more readily. Spirit Sap is a niche item and should be more obscure.",
-    "outcome": "ignored-invalid"
+    "reason": "Slowing Hex is a popular and memorable active that is well known for building into Vortex Web. Duration Extender is a bland stat-style item that is easy to forget, so Slowing Hex should be rated more obvious.",
+    "outcome": "rejected-by-comparison"
    }
   ]
  }

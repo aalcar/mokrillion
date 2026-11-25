@@ -24,19 +24,19 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:19:23.998Z",
+ "generatedAt": "2026-11-25T04:45:12.418Z",
  "answers": [
   {
-   "entityId": "hero_orion",
-   "name": "Grey Talon",
+   "entityId": "hero_wraith",
+   "name": "Wraith",
    "rank": 1,
    "score": 10
   },
   {
-   "entityId": "hero_wraith",
-   "name": "Wraith",
+   "entityId": "hero_orion",
+   "name": "Grey Talon",
    "rank": 2,
    "score": 30
   },
@@ -47,8 +47,8 @@
    "score": 30
   },
   {
-   "entityId": "hero_priest",
-   "name": "Venator",
+   "entityId": "hero_drifter",
+   "name": "Drifter",
    "rank": 4,
    "score": 60
   },
@@ -59,8 +59,8 @@
    "score": 60
   },
   {
-   "entityId": "hero_frank",
-   "name": "Victor",
+   "entityId": "hero_synth",
+   "name": "Pocket",
    "rank": 6,
    "score": 60
   },
@@ -71,37 +71,43 @@
    "score": 60
   },
   {
-   "entityId": "hero_ratking",
-   "name": "Rat King",
+   "entityId": "hero_frank",
+   "name": "Victor",
    "rank": 8,
    "score": 85
   },
   {
-   "entityId": "hero_drifter",
-   "name": "Drifter",
+   "entityId": "hero_priest",
+   "name": "Venator",
    "rank": 9,
    "score": 85
   },
   {
-   "entityId": "hero_synth",
-   "name": "Pocket",
+   "entityId": "hero_ratking",
+   "name": "Rat King",
    "rank": 10,
-   "score": 85
-  },
-  {
-   "entityId": "hero_artist",
-   "name": "Violet",
-   "rank": 11,
    "score": 85
   },
   {
    "entityId": "hero_unicorn",
    "name": "Celeste",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "hero_artist",
+   "name": "Violet",
    "rank": 12,
    "score": 100
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_artist",
@@ -124,7 +130,7 @@
     "popularityObscurity": 0.9090909090909091,
     "spellingCost": 6,
     "spellingObscurity": 0.36363636363636365,
-    "key": 0.8718181818181818
+    "key": 0.8772727272727272
    },
    {
     "id": "hero_drifter",
@@ -147,7 +153,7 @@
     "popularityObscurity": 0.09090909090909091,
     "spellingCost": 7,
     "spellingObscurity": 0.7727272727272727,
-    "key": 0.5950000000000002
+    "key": 0.3386363636363636
    },
    {
     "id": "hero_frank",
@@ -170,7 +176,7 @@
     "popularityObscurity": 0.6818181818181818,
     "spellingCost": 6,
     "spellingObscurity": 0.36363636363636365,
-    "key": 0.47090909090909094
+    "key": 0.5772727272727272
    },
    {
     "id": "hero_ghost",
@@ -193,7 +199,7 @@
     "popularityObscurity": 0.2727272727272727,
     "spellingCost": 4,
     "spellingObscurity": 0,
-    "key": 0.35909090909090907
+    "key": 0.3045454545454545
    },
    {
     "id": "hero_hornet",
@@ -216,7 +222,7 @@
     "popularityObscurity": 0.36363636363636365,
     "spellingCost": 8,
     "spellingObscurity": 1,
-    "key": 0.4054545454545455
+    "key": 0.39999999999999997
    },
    {
     "id": "hero_orion",
@@ -239,7 +245,7 @@
     "popularityObscurity": 0.8181818181818182,
     "spellingCost": 5,
     "spellingObscurity": 0.09090909090909091,
-    "key": 0.34181818181818185
+    "key": 0.5818181818181818
    },
    {
     "id": "hero_priest",
@@ -262,7 +268,7 @@
     "popularityObscurity": 0.18181818181818182,
     "spellingCost": 7,
     "spellingObscurity": 0.7727272727272727,
-    "key": 0.38136363636363635
+    "key": 0.2886363636363636
    },
    {
     "id": "hero_ratking",
@@ -285,7 +291,7 @@
     "popularityObscurity": 0.6818181818181818,
     "spellingCost": 7,
     "spellingObscurity": 0.7727272727272727,
-    "key": 0.5513636363636364
+    "key": 0.6249999999999999
    },
    {
     "id": "hero_synth",
@@ -308,7 +314,7 @@
     "popularityObscurity": 0.45454545454545453,
     "spellingCost": 6,
     "spellingObscurity": 0.36363636363636365,
-    "key": 0.5800000000000001
+    "key": 0.509090909090909
    },
    {
     "id": "hero_unicorn",
@@ -331,7 +337,7 @@
     "popularityObscurity": 1,
     "spellingCost": 7,
     "spellingObscurity": 0.7727272727272727,
-    "key": 0.8186363636363636
+    "key": 0.9113636363636363
    },
    {
     "id": "hero_wraith",
@@ -354,7 +360,7 @@
     "popularityObscurity": 0,
     "spellingCost": 6,
     "spellingObscurity": 0.36363636363636365,
-    "key": 0.1281818181818182
+    "key": 0.06818181818181819
    },
    {
     "id": "hero_yamato",
@@ -377,113 +383,125 @@
     "popularityObscurity": 0.5454545454545454,
     "spellingCost": 6,
     "spellingObscurity": 0.36363636363636365,
-    "key": 0.49636363636363634
+    "key": 0.5181818181818181
    }
   ],
   "passAgreement": 0.44848484848484843,
   "orderBeforeRefinement": [
    "hero_wraith",
-   "hero_orion",
-   "hero_ghost",
    "hero_priest",
-   "hero_hornet",
-   "hero_frank",
-   "hero_yamato",
-   "hero_ratking",
-   "hero_synth",
+   "hero_ghost",
    "hero_drifter",
-   "hero_unicorn",
-   "hero_artist"
+   "hero_hornet",
+   "hero_synth",
+   "hero_yamato",
+   "hero_frank",
+   "hero_orion",
+   "hero_ratking",
+   "hero_artist",
+   "hero_unicorn"
   ],
   "pairwise": [
    {
-    "a": "hero_synth",
-    "b": "hero_drifter",
+    "a": "hero_orion",
+    "b": "hero_ratking",
     "purpose": "rare-contenders",
-    "rarer": "hero_synth"
+    "rarer": "hero_ratking"
    },
    {
-    "a": "hero_synth",
-    "b": "hero_unicorn",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_synth",
+    "a": "hero_orion",
     "b": "hero_artist",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "hero_artist"
    },
    {
-    "a": "hero_drifter",
+    "a": "hero_orion",
     "b": "hero_unicorn",
     "purpose": "rare-contenders",
     "rarer": "hero_unicorn"
    },
    {
-    "a": "hero_drifter",
+    "a": "hero_ratking",
     "b": "hero_artist",
     "purpose": "rare-contenders",
     "rarer": "hero_artist"
    },
    {
-    "a": "hero_unicorn",
-    "b": "hero_artist",
+    "a": "hero_ratking",
+    "b": "hero_unicorn",
     "purpose": "rare-contenders",
-    "rarer": "hero_artist"
+    "rarer": "hero_unicorn"
+   },
+   {
+    "a": "hero_artist",
+    "b": "hero_unicorn",
+    "purpose": "rare-contenders",
+    "rarer": "hero_unicorn"
    },
    {
     "a": "hero_wraith",
-    "b": "hero_orion",
-    "purpose": "tier-boundary",
-    "rarer": "hero_wraith"
-   },
-   {
-    "a": "hero_ghost",
     "b": "hero_priest",
     "purpose": "tier-boundary",
     "rarer": "hero_priest"
    },
    {
-    "a": "hero_yamato",
-    "b": "hero_ratking",
+    "a": "hero_ghost",
+    "b": "hero_drifter",
     "purpose": "tier-boundary",
-    "rarer": "hero_ratking"
+    "rarer": null
    },
    {
-    "a": "hero_artist",
-    "b": "hero_unicorn",
+    "a": "hero_yamato",
+    "b": "hero_frank",
+    "purpose": "tier-boundary",
+    "rarer": "hero_frank"
+   },
+   {
+    "a": "hero_orion",
+    "b": "hero_priest",
     "purpose": "review",
-    "rarer": "hero_unicorn"
+    "rarer": "hero_priest"
+   },
+   {
+    "a": "hero_frank",
+    "b": "hero_drifter",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "hero_unicorn",
+    "b": "hero_artist",
+    "purpose": "review",
+    "rarer": "hero_artist"
    }
   ],
   "review": [
    {
-    "name": "Violet",
-    "compareWith": "Celeste",
+    "name": "Grey Talon",
+    "compareWith": "Venator",
     "claim": "should_be_more_obvious",
-    "reason": "Violet is a 100-pt answer, but her name contains a conspicuous T at the end, and she is a standard hero in the roster. Celeste's T is mid-word and equally easy to find. Both are low-association names, so Violet should not sit a full tier above Celeste.",
+    "reason": "Grey Talon has the letter T in both words of his name (Talon is the obvious T), so players scanning for T will think of him quickly. He is more likely to come to mind than Venator, whose T is hidden mid-name.",
     "outcome": "applied"
    },
    {
-    "name": "Yamato",
-    "compareWith": "Vindicta",
-    "claim": "should_be_more_obscure",
-    "reason": "Yamato's name has no T at all in its letters (Y-a-m-a-t-o contains a T). It is a well-known hero, but nothing about the name draws attention to the T, so it is less obvious than Vindicta. Vindicta is a famous sniper with a T in the middle, so there is no reason for them to be tied at 60.",
-    "outcome": "ignored-invalid"
+    "name": "Victor",
+    "compareWith": "Drifter",
+    "claim": "should_be_more_obvious",
+    "reason": "Victor is a well-known hero whose name contains a clear T, so he should be easier to recall than Drifter, whose T is in the middle of the word and is less of a name-spelling cue.",
+    "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Rat King",
-    "compareWith": "Pocket",
+    "name": "Celeste",
+    "compareWith": "Violet",
     "claim": "should_be_more_obvious",
-    "reason": "Rat King starts with the word Rat, which has a T right at the beginning of the name and is prominent. Players scanning for T will see it immediately, so it should be easier to recall than Pocket, where the T sits in the final letters of 'Pocket'.",
-    "outcome": "ignored-invalid"
+    "reason": "Celeste has two Ts-like obvious cues? Actually its T is in the middle, but Violet's T is at the end; both are equally hidden, so Celeste should not be rarer than Violet, which is a more familiar, often-picked hero. Celeste should be around the same level or slightly easier.",
+    "outcome": "applied"
    },
    {
-    "name": "Wraith",
-    "compareWith": "Lady Geist",
+    "name": "Pocket",
+    "compareWith": "Yamato",
     "claim": "should_be_more_obvious",
-    "reason": "Wraith is a very popular, iconic hero, and the T is in the middle of a short name. Lady Geist is also well known, but her T is less visible, so Wraith should be at least as obvious and probably more so.",
+    "reason": "Pocket is a distinctive name with a T near the end and is a commonly played hero. Yamato has a T in the middle of the name, which is less salient, so Yamato should be somewhat more obscure than Pocket.",
     "outcome": "ignored-invalid"
    }
   ]

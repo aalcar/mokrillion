@@ -25,9 +25,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:06:01.153Z",
+ "generatedAt": "2026-11-25T04:37:33.206Z",
  "answers": [
   {
    "entityId": "upgrade_health",
@@ -36,14 +36,14 @@
    "score": 10
   },
   {
-   "entityId": "upgrade_sprint_booster",
-   "name": "Sprint Boots",
+   "entityId": "upgrade_improved_stamina",
+   "name": "Extra Stamina",
    "rank": 2,
    "score": 30
   },
   {
-   "entityId": "upgrade_improved_stamina",
-   "name": "Extra Stamina",
+   "entityId": "upgrade_sprint_booster",
+   "name": "Sprint Boots",
    "rank": 3,
    "score": 30
   },
@@ -54,44 +54,44 @@
    "score": 60
   },
   {
-   "entityId": "upgrade_health_stealing_magic",
-   "name": "Spirit Lifesteal",
+   "entityId": "upgrade_cardio_calibrator",
+   "name": "Enduring Speed",
    "rank": 5,
    "score": 60
   },
   {
-   "entityId": "upgrade_cardio_calibrator",
-   "name": "Enduring Speed",
+   "entityId": "upgrade_health_stealing_magic",
+   "name": "Spirit Lifesteal",
    "rank": 6,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_vampire",
-   "name": "Bullet Lifesteal",
-   "rank": 7,
    "score": 60
   },
   {
    "entityId": "upgrade_lifestrike_gauntlets",
    "name": "Melee Lifesteal",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_healing_booster",
+   "name": "Healing Booster",
    "rank": 8,
    "score": 85
   },
   {
-   "entityId": "upgrade_vex_barrier",
-   "name": "Reactive Barrier",
+   "entityId": "upgrade_vampire",
+   "name": "Bullet Lifesteal",
    "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_health_stimpak",
+   "name": "Healing Rite",
+   "rank": 10,
    "score": 85
   },
   {
    "entityId": "upgrade_debuff_reducer",
    "name": "Debuff Reducer",
-   "rank": 10,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_healing_booster",
-   "name": "Healing Booster",
    "rank": 11,
    "score": 85
   },
@@ -102,13 +102,19 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_health_stimpak",
-   "name": "Healing Rite",
+   "entityId": "upgrade_vex_barrier",
+   "name": "Reactive Barrier",
    "rank": 13,
    "score": 100
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_cardio_calibrator",
@@ -131,7 +137,7 @@
     "popularityObscurity": 0.16666666666666666,
     "spellingCost": 13,
     "spellingObscurity": 0.5416666666666666,
-    "key": 0.5704166666666668
+    "key": 0.36041666666666666
    },
    {
     "id": "upgrade_debuff_reducer",
@@ -154,7 +160,7 @@
     "popularityObscurity": 0.75,
     "spellingCost": 13,
     "spellingObscurity": 0.5416666666666666,
-    "key": 0.66625
+    "key": 0.7062499999999998
    },
    {
     "id": "upgrade_grit",
@@ -177,7 +183,7 @@
     "popularityObscurity": 0.25,
     "spellingCost": 4,
     "spellingObscurity": 0,
-    "key": 0.2833333333333334
+    "key": 0.2583333333333333
    },
    {
     "id": "upgrade_guardian_ward",
@@ -200,7 +206,7 @@
     "popularityObscurity": 0.9166666666666666,
     "spellingCost": 12,
     "spellingObscurity": 0.375,
-    "key": 0.8804166666666667
+    "key": 0.8854166666666666
    },
    {
     "id": "upgrade_healing_booster",
@@ -223,7 +229,7 @@
     "popularityObscurity": 0.5833333333333334,
     "spellingCost": 14,
     "spellingObscurity": 0.7083333333333334,
-    "key": 0.7545833333333335
+    "key": 0.6645833333333333
    },
    {
     "id": "upgrade_health",
@@ -246,7 +252,7 @@
     "popularityObscurity": 0.4166666666666667,
     "spellingCost": 11,
     "spellingObscurity": 0.16666666666666666,
-    "key": 0.17500000000000002
+    "key": 0.30000000000000004
    },
    {
     "id": "upgrade_health_stealing_magic",
@@ -269,7 +275,7 @@
     "popularityObscurity": 0.3333333333333333,
     "spellingCost": 15,
     "spellingObscurity": 0.9166666666666666,
-    "key": 0.42666666666666664
+    "key": 0.3916666666666666
    },
    {
     "id": "upgrade_health_stimpak",
@@ -292,7 +298,7 @@
     "popularityObscurity": 1,
     "spellingCost": 11,
     "spellingObscurity": 0.16666666666666666,
-    "key": 0.6466666666666667
+    "key": 0.8166666666666667
    },
    {
     "id": "upgrade_improved_stamina",
@@ -315,7 +321,7 @@
     "popularityObscurity": 0.08333333333333333,
     "spellingCost": 12,
     "spellingObscurity": 0.375,
-    "key": 0.19874999999999998
+    "key": 0.14375
    },
    {
     "id": "upgrade_lifestrike_gauntlets",
@@ -338,7 +344,7 @@
     "popularityObscurity": 0.5,
     "spellingCost": 14,
     "spellingObscurity": 0.7083333333333334,
-    "key": 0.50125
+    "key": 0.50625
    },
    {
     "id": "upgrade_sprint_booster",
@@ -361,7 +367,7 @@
     "popularityObscurity": 0,
     "spellingCost": 11,
     "spellingObscurity": 0.16666666666666666,
-    "key": 0.10916666666666666
+    "key": 0.05416666666666666
    },
    {
     "id": "upgrade_vampire",
@@ -384,7 +390,7 @@
     "popularityObscurity": 0.8333333333333334,
     "spellingCost": 15,
     "spellingObscurity": 0.9166666666666666,
-    "key": 0.5075000000000001
+    "key": 0.6875
    },
    {
     "id": "upgrade_vex_barrier",
@@ -407,55 +413,49 @@
     "popularityObscurity": 0.6666666666666666,
     "spellingCost": 15,
     "spellingObscurity": 0.9166666666666666,
-    "key": 0.78
+    "key": 0.7249999999999999
    }
   ],
   "passAgreement": 0.6615384615384615,
   "orderBeforeRefinement": [
    "upgrade_sprint_booster",
-   "upgrade_health",
    "upgrade_improved_stamina",
    "upgrade_grit",
+   "upgrade_health",
+   "upgrade_cardio_calibrator",
    "upgrade_health_stealing_magic",
    "upgrade_lifestrike_gauntlets",
-   "upgrade_vampire",
-   "upgrade_cardio_calibrator",
-   "upgrade_health_stimpak",
-   "upgrade_debuff_reducer",
    "upgrade_healing_booster",
+   "upgrade_vampire",
+   "upgrade_debuff_reducer",
    "upgrade_vex_barrier",
+   "upgrade_health_stimpak",
    "upgrade_guardian_ward"
   ],
   "pairwise": [
    {
     "a": "upgrade_debuff_reducer",
-    "b": "upgrade_healing_booster",
+    "b": "upgrade_vex_barrier",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_healing_booster"
+    "rarer": null
    },
    {
     "a": "upgrade_debuff_reducer",
-    "b": "upgrade_vex_barrier",
+    "b": "upgrade_health_stimpak",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_debuff_reducer"
+   },
+   {
+    "a": "upgrade_debuff_reducer",
+    "b": "upgrade_guardian_ward",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_vex_barrier",
+    "b": "upgrade_health_stimpak",
     "purpose": "rare-contenders",
     "rarer": "upgrade_vex_barrier"
-   },
-   {
-    "a": "upgrade_debuff_reducer",
-    "b": "upgrade_guardian_ward",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_guardian_ward"
-   },
-   {
-    "a": "upgrade_healing_booster",
-    "b": "upgrade_vex_barrier",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_healing_booster",
-    "b": "upgrade_guardian_ward",
-    "purpose": "rare-contenders",
-    "rarer": null
    },
    {
     "a": "upgrade_vex_barrier",
@@ -464,63 +464,81 @@
     "rarer": "upgrade_vex_barrier"
    },
    {
-    "a": "upgrade_sprint_booster",
-    "b": "upgrade_health",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_sprint_booster"
+    "a": "upgrade_health_stimpak",
+    "b": "upgrade_guardian_ward",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_guardian_ward"
    },
    {
-    "a": "upgrade_improved_stamina",
-    "b": "upgrade_grit",
+    "a": "upgrade_sprint_booster",
+    "b": "upgrade_improved_stamina",
     "purpose": "tier-boundary",
     "rarer": null
    },
    {
-    "a": "upgrade_vampire",
-    "b": "upgrade_cardio_calibrator",
+    "a": "upgrade_grit",
+    "b": "upgrade_health",
     "purpose": "tier-boundary",
-    "rarer": "upgrade_cardio_calibrator"
+    "rarer": "upgrade_grit"
+   },
+   {
+    "a": "upgrade_lifestrike_gauntlets",
+    "b": "upgrade_healing_booster",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_healing_booster"
    },
    {
     "a": "upgrade_health",
-    "b": "upgrade_improved_stamina",
+    "b": "upgrade_sprint_booster",
     "purpose": "review",
-    "rarer": "upgrade_improved_stamina"
+    "rarer": "upgrade_sprint_booster"
    },
    {
-    "a": "upgrade_guardian_ward",
-    "b": "upgrade_healing_booster",
+    "a": "upgrade_lifestrike_gauntlets",
+    "b": "upgrade_improved_stamina",
     "purpose": "review",
-    "rarer": "upgrade_guardian_ward"
+    "rarer": "upgrade_lifestrike_gauntlets"
+   },
+   {
+    "a": "upgrade_health_stealing_magic",
+    "b": "upgrade_grit",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_health_stimpak",
+    "b": "upgrade_vampire",
+    "purpose": "review",
+    "rarer": "upgrade_health_stimpak"
    }
   ],
   "review": [
    {
     "name": "Extra Health",
-    "compareWith": "Extra Stamina",
-    "claim": "should_be_more_obscure",
-    "reason": "Extra Health is the most familiar basic Vitality item, but it is not the only one players think of for components. Placing it at 10 is plausible, though Extra Stamina's three upgrades make it a strong competitor, so Extra Health should not sit so far below it.",
-    "outcome": "rejected-by-comparison"
-   },
-   {
-    "name": "Reactive Barrier",
-    "compareWith": "Healing Rite",
+    "compareWith": "Sprint Boots",
     "claim": "should_be_more_obvious",
-    "reason": "Reactive Barrier is a Tier 2 item and is only a component for Indomitable. Its tie to the question is no weaker than Healing Rite's, which is a Tier 1 item that is widely known as a component for Healing Nova and Rescue Beam. Healing Rite should be rarer than Reactive Barrier, or at least no easier.",
-    "outcome": "applied-by-data"
+    "reason": "Extra Health is the most iconic basic Vitality item, a plain health purchase nearly every player buys and recognizes. It is likely to be named as quickly as Sprint Boots and should be at or near the top.",
+    "outcome": "applied"
    },
    {
     "name": "Melee Lifesteal",
-    "compareWith": "Enduring Speed",
-    "claim": "should_be_more_obscure",
-    "reason": "Melee Lifesteal is a Tier 1 item that is niche and upgrades into only one item, Lifestrike. Players looking for components tend to recall Enduring Speed and its Juggernaut upgrade more readily, so Melee Lifesteal does not belong at the same 60 as Grit and the lifesteal items.",
-    "outcome": "applied-by-data"
+    "compareWith": "Extra Stamina",
+    "claim": "should_be_more_obvious",
+    "reason": "Melee Lifesteal is a commonly bought and discussed Tier 1 item that leads to Lifestrike. Players tend to recall the lifesteal items readily, so it should not sit at 60 while Extra Stamina is 30.",
+    "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Guardian Ward",
-    "compareWith": "Healing Booster",
+    "name": "Spirit Lifesteal",
+    "compareWith": "Grit",
     "claim": "should_be_more_obvious",
-    "reason": "Guardian Ward is a well-known active item that explicitly shows its Grit parentage and leads to Divine Barrier. It should be more obvious than Healing Booster, which is a plain passive item that players rarely recall.",
+    "reason": "Spirit Lifesteal is a popular, well-known lifesteal item that feeds Leech and Infuser. It is likely more readily recalled than the situational Grit, so it should be scored at or below Grit.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Healing Rite",
+    "compareWith": "Bullet Lifesteal",
+    "claim": "should_be_more_obvious",
+    "reason": "Healing Rite is a recognizable support Tier 1 active that upgrades into Healing Nova and Rescue Beam. Players who know these upgrades would name it readily, so it should be easier than the Tier 2 Bullet Lifesteal, which is mainly thought of as an end item.",
     "outcome": "rejected-by-comparison"
    }
   ]

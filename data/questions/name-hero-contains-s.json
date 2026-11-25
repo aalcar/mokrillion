@@ -26,43 +26,43 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:18:59.162Z",
+ "generatedAt": "2026-11-25T04:44:54.468Z",
  "answers": [
   {
-   "entityId": "hero_shiv",
-   "name": "Shiv",
+   "entityId": "hero_atlas",
+   "name": "Abrams",
    "rank": 1,
    "score": 10
   },
   {
-   "entityId": "hero_gigawatt",
-   "name": "Seven",
+   "entityId": "hero_shiv",
+   "name": "Shiv",
    "rank": 2,
-   "score": 30
-  },
-  {
-   "entityId": "hero_atlas",
-   "name": "Abrams",
-   "rank": 3,
    "score": 30
   },
   {
    "entityId": "hero_lash",
    "name": "Lash",
-   "rank": 4,
-   "score": 60
+   "rank": 3,
+   "score": 30
   },
   {
    "entityId": "hero_inferno",
    "name": "Infernus",
-   "rank": 5,
+   "rank": 4,
    "score": 60
   },
   {
    "entityId": "hero_ghost",
    "name": "Lady Geist",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "hero_gigawatt",
+   "name": "Seven",
    "rank": 6,
    "score": 60
   },
@@ -85,26 +85,26 @@
    "score": 85
   },
   {
+   "entityId": "hero_nurse",
+   "name": "Nurse Harrow",
+   "rank": 10,
+   "score": 85
+  },
+  {
    "entityId": "hero_forge",
    "name": "McGinnis",
-   "rank": 10,
+   "rank": 11,
    "score": 85
   },
   {
    "entityId": "hero_magician",
    "name": "Sinclair",
-   "rank": 11,
+   "rank": 12,
    "score": 85
   },
   {
    "entityId": "hero_unicorn",
    "name": "Celeste",
-   "rank": 12,
-   "score": 85
-  },
-  {
-   "entityId": "hero_nurse",
-   "name": "Nurse Harrow",
    "rank": 13,
    "score": 85
   },
@@ -116,6 +116,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_atlas",
@@ -138,7 +144,7 @@
     "popularityObscurity": 0.07692307692307693,
     "spellingCost": 6,
     "spellingObscurity": 0.5384615384615384,
-    "key": 0.13384615384615386
+    "key": 0.11538461538461539
    },
    {
     "id": "hero_chessmaster",
@@ -161,7 +167,7 @@
     "popularityObscurity": 1,
     "spellingCost": 7,
     "spellingObscurity": 0.7692307692307693,
-    "key": 0.8446153846153847
+    "key": 0.923076923076923
    },
    {
     "id": "hero_forge",
@@ -184,7 +190,7 @@
     "popularityObscurity": 0.8461538461538461,
     "spellingCost": 3,
     "spellingObscurity": 0,
-    "key": 0.7023076923076924
+    "key": 0.7576923076923077
    },
    {
     "id": "hero_ghost",
@@ -207,7 +213,7 @@
     "popularityObscurity": 0.3076923076923077,
     "spellingCost": 4,
     "spellingObscurity": 0.15384615384615385,
-    "key": 0.3676923076923077
+    "key": 0.33076923076923076
    },
    {
     "id": "hero_gigawatt",
@@ -230,7 +236,7 @@
     "popularityObscurity": 0.46153846153846156,
     "spellingCost": 5,
     "spellingObscurity": 0.34615384615384615,
-    "key": 0.22730769230769232
+    "key": 0.35192307692307695
    },
    {
     "id": "hero_inferno",
@@ -253,7 +259,7 @@
     "popularityObscurity": 0.15384615384615385,
     "spellingCost": 8,
     "spellingObscurity": 0.9615384615384616,
-    "key": 0.2534615384615385
+    "key": 0.22115384615384617
    },
    {
     "id": "hero_lash",
@@ -276,7 +282,7 @@
     "popularityObscurity": 0,
     "spellingCost": 4,
     "spellingObscurity": 0.15384615384615385,
-    "key": 0.21923076923076928
+    "key": 0.10384615384615387
    },
    {
     "id": "hero_magician",
@@ -299,7 +305,7 @@
     "popularityObscurity": 0.9230769230769231,
     "spellingCost": 8,
     "spellingObscurity": 0.9615384615384616,
-    "key": 0.7473076923076922
+    "key": 0.8442307692307692
    },
    {
     "id": "hero_necro",
@@ -322,7 +328,7 @@
     "popularityObscurity": 0.38461538461538464,
     "spellingCost": 6,
     "spellingObscurity": 0.5384615384615384,
-    "key": 0.5869230769230769
+    "key": 0.4807692307692307
    },
    {
     "id": "hero_nurse",
@@ -345,7 +351,7 @@
     "popularityObscurity": 0.5384615384615384,
     "spellingCost": 5,
     "spellingObscurity": 0.34615384615384615,
-    "key": 0.7826923076923078
+    "key": 0.6442307692307692
    },
    {
     "id": "hero_shiv",
@@ -368,7 +374,7 @@
     "popularityObscurity": 0.23076923076923078,
     "spellingCost": 4,
     "spellingObscurity": 0.15384615384615385,
-    "key": 0.1676923076923077
+    "key": 0.2
    },
    {
     "id": "hero_unicorn",
@@ -391,7 +397,7 @@
     "popularityObscurity": 0.6923076923076923,
     "spellingCost": 7,
     "spellingObscurity": 0.7692307692307693,
-    "key": 0.8061538461538462
+    "key": 0.7461538461538462
    },
    {
     "id": "hero_viscous",
@@ -414,7 +420,7 @@
     "popularityObscurity": 0.7692307692307693,
     "spellingCost": 7,
     "spellingObscurity": 0.7692307692307693,
-    "key": 0.6084615384615385
+    "key": 0.6961538461538461
    },
    {
     "id": "hero_werewolf",
@@ -437,56 +443,38 @@
     "popularityObscurity": 0.6153846153846154,
     "spellingCost": 6,
     "spellingObscurity": 0.5384615384615384,
-    "key": 0.5523076923076924
+    "key": 0.5846153846153846
    }
   ],
   "passAgreement": 0.6439560439560439,
   "orderBeforeRefinement": [
+   "hero_lash",
    "hero_atlas",
    "hero_shiv",
-   "hero_lash",
-   "hero_gigawatt",
    "hero_inferno",
    "hero_ghost",
-   "hero_werewolf",
+   "hero_gigawatt",
    "hero_necro",
+   "hero_werewolf",
+   "hero_nurse",
    "hero_viscous",
+   "hero_unicorn",
    "hero_forge",
    "hero_magician",
-   "hero_nurse",
-   "hero_unicorn",
    "hero_chessmaster"
   ],
   "pairwise": [
    {
-    "a": "hero_magician",
-    "b": "hero_nurse",
+    "a": "hero_unicorn",
+    "b": "hero_forge",
     "purpose": "rare-contenders",
-    "rarer": "hero_nurse"
+    "rarer": "hero_unicorn"
    },
    {
-    "a": "hero_magician",
-    "b": "hero_unicorn",
+    "a": "hero_unicorn",
+    "b": "hero_magician",
     "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_magician",
-    "b": "hero_chessmaster",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_nurse",
-    "b": "hero_unicorn",
-    "purpose": "rare-contenders",
-    "rarer": "hero_nurse"
-   },
-   {
-    "a": "hero_nurse",
-    "b": "hero_chessmaster",
-    "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "hero_unicorn"
    },
    {
     "a": "hero_unicorn",
@@ -495,63 +483,106 @@
     "rarer": null
    },
    {
-    "a": "hero_atlas",
-    "b": "hero_shiv",
-    "purpose": "tier-boundary",
-    "rarer": "hero_atlas"
+    "a": "hero_forge",
+    "b": "hero_magician",
+    "purpose": "rare-contenders",
+    "rarer": "hero_magician"
+   },
+   {
+    "a": "hero_forge",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": "hero_chessmaster"
+   },
+   {
+    "a": "hero_magician",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": "hero_chessmaster"
    },
    {
     "a": "hero_lash",
-    "b": "hero_gigawatt",
+    "b": "hero_atlas",
     "purpose": "tier-boundary",
     "rarer": "hero_lash"
    },
    {
-    "a": "hero_werewolf",
-    "b": "hero_necro",
+    "a": "hero_shiv",
+    "b": "hero_inferno",
     "purpose": "tier-boundary",
-    "rarer": "hero_necro"
+    "rarer": "hero_inferno"
+   },
+   {
+    "a": "hero_necro",
+    "b": "hero_werewolf",
+    "purpose": "tier-boundary",
+    "rarer": null
    },
    {
     "a": "hero_shiv",
-    "b": "hero_atlas",
+    "b": "hero_lash",
     "purpose": "review",
-    "rarer": "hero_atlas"
+    "rarer": "hero_lash"
    },
    {
     "a": "hero_gigawatt",
-    "b": "hero_atlas",
+    "b": "hero_inferno",
     "purpose": "review",
-    "rarer": "hero_atlas"
+    "rarer": null
+   },
+   {
+    "a": "hero_viscous",
+    "b": "hero_nurse",
+    "purpose": "review",
+    "rarer": "hero_nurse"
+   },
+   {
+    "a": "hero_chessmaster",
+    "b": "hero_forge",
+    "purpose": "review",
+    "rarer": "hero_chessmaster"
+   },
+   {
+    "a": "hero_werewolf",
+    "b": "hero_necro",
+    "purpose": "review",
+    "rarer": "hero_necro"
    }
   ],
   "review": [
    {
     "name": "Shiv",
-    "compareWith": "Abrams",
-    "claim": "should_be_more_obscure",
-    "reason": "Shiv is a short name whose S is the first letter, so it is easy to think of. Abrams, by contrast, has an S only at the end, which is easy to overlook, so Abrams should be at least as obscure as Shiv. Giving Shiv a 10 and Abrams a 30 is a plausible gap, but Shiv should not be as obvious as the best answer by a wide margin.",
-    "outcome": "rejected-by-comparison"
-   },
-   {
-    "name": "Infernus",
     "compareWith": "Lash",
-    "claim": "should_be_more_obscure",
-    "reason": "Infernus has its S at the very end of a long name, and nothing about it makes players look for an S. Lash has the S in a prominent position in a short name, so Lash should be easier to think of. Placing them at the same score ignores this difference.",
-    "outcome": "ignored-invalid"
-   },
-   {
-    "name": "Nurse Harrow",
-    "compareWith": "Solomon",
     "claim": "should_be_more_obvious",
-    "reason": "Nurse contains an S in a very visible position, so players scanning for S will notice it. Harrow is a healer and gets little attention, but the S is no harder to spot than the one in Solomon, and Solomon's S is the first letter of a very well-known name. The gap between 85 and 100 is therefore wider than warranted for Nurse Harrow, though it still belongs near the obscure end.",
-    "outcome": "applied-by-data"
+    "reason": "Shiv's name is short and has a prominent S at the very start, so it is probably the first hero many players type for this question. Lash is a good answer, but its S is in the middle of the name, so it should not be rated more obvious than Shiv.",
+    "outcome": "applied"
    },
    {
     "name": "Seven",
-    "compareWith": "Abrams",
+    "compareWith": "Infernus",
     "claim": "should_be_more_obvious",
-    "reason": "Seven starts with S and is a short, memorable, widely played hero name, so it should come to mind at least as readily as Abrams, whose S is hidden at the end.",
+    "reason": "Seven starts with S and is a very well-known hero, so it should be at least as obvious as Infernus. Infernus has the S buried in the middle of its name, which makes it less likely to be typed first.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Viscous",
+    "compareWith": "Nurse Harrow",
+    "claim": "should_be_more_obvious",
+    "reason": "Viscous has an S in the name and the hero is popular and memorable, so players should think of it readily. Nurse Harrow is a multi-word name where the S is less prominent, so it should be rated more obscure than Viscous.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Solomon",
+    "compareWith": "McGinnis",
+    "claim": "should_be_more_obvious",
+    "reason": "Solomon starts with S, which is the most salient position for this question. McGinnis has only a buried S and is more of an obscure answer. If one of them is the 100-point answer, it should be McGinnis, not Solomon.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Silver",
+    "compareWith": "Graves",
+    "claim": "should_be_more_obvious",
+    "reason": "Silver starts with S, so it should be at least as readily recalled as Graves. Graves has the S at the end of the name, which makes it less prominent.",
     "outcome": "applied"
    }
   ]

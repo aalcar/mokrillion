@@ -20,25 +20,25 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:04:24.692Z",
+ "generatedAt": "2026-11-25T04:39:28.815Z",
  "answers": [
   {
-   "entityId": "upgrade_health",
-   "name": "Extra Health",
+   "entityId": "upgrade_sprint_booster",
+   "name": "Sprint Boots",
    "rank": 1,
    "score": 10
   },
   {
-   "entityId": "upgrade_sprint_booster",
-   "name": "Sprint Boots",
+   "entityId": "upgrade_endurance",
+   "name": "Extra Regen",
    "rank": 2,
    "score": 30
   },
   {
-   "entityId": "upgrade_endurance",
-   "name": "Extra Regen",
+   "entityId": "upgrade_health",
+   "name": "Extra Health",
    "rank": 3,
    "score": 60
   },
@@ -49,20 +49,20 @@
    "score": 60
   },
   {
+   "entityId": "upgrade_improved_stamina",
+   "name": "Extra Stamina",
+   "rank": 5,
+   "score": 85
+  },
+  {
    "entityId": "upgrade_health_stimpak",
    "name": "Healing Rite",
-   "rank": 5,
+   "rank": 6,
    "score": 85
   },
   {
    "entityId": "upgrade_grit",
    "name": "Grit",
-   "rank": 6,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_improved_stamina",
-   "name": "Extra Stamina",
    "rank": 7,
    "score": 85
   },
@@ -74,6 +74,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_endurance",
@@ -96,7 +102,7 @@
     "popularityObscurity": 0.2857142857142857,
     "spellingCost": 10,
     "spellingObscurity": 0.2857142857142857,
-    "key": 0.27
+    "key": 0.2785714285714286
    },
    {
     "id": "upgrade_grit",
@@ -119,7 +125,7 @@
     "popularityObscurity": 0.42857142857142855,
     "spellingCost": 4,
     "spellingObscurity": 0,
-    "key": 0.6271428571428572
+    "key": 0.5071428571428571
    },
    {
     "id": "upgrade_health",
@@ -142,7 +148,7 @@
     "popularityObscurity": 0.5714285714285714,
     "spellingCost": 11,
     "spellingObscurity": 0.5714285714285714,
-    "key": 0.2571428571428571
+    "key": 0.42857142857142855
    },
    {
     "id": "upgrade_health_stimpak",
@@ -165,7 +171,7 @@
     "popularityObscurity": 0.8571428571428571,
     "spellingCost": 11,
     "spellingObscurity": 0.5714285714285714,
-    "key": 0.5914285714285714
+    "key": 0.7285714285714285
    },
    {
     "id": "upgrade_improved_stamina",
@@ -188,7 +194,7 @@
     "popularityObscurity": 0.14285714285714285,
     "spellingCost": 12,
     "spellingObscurity": 0.8571428571428571,
-    "key": 0.5557142857142858
+    "key": 0.35
    },
    {
     "id": "upgrade_lifestrike_gauntlets",
@@ -211,7 +217,7 @@
     "popularityObscurity": 0.7142857142857143,
     "spellingCost": 14,
     "spellingObscurity": 1,
-    "key": 0.54
+    "key": 0.6428571428571428
    },
    {
     "id": "upgrade_melee_rebuttal",
@@ -234,7 +240,7 @@
     "popularityObscurity": 1,
     "spellingCost": 8,
     "spellingObscurity": 0.14285714285714285,
-    "key": 0.91
+    "key": 0.9357142857142857
    },
    {
     "id": "upgrade_sprint_booster",
@@ -257,97 +263,122 @@
     "popularityObscurity": 0,
     "spellingCost": 11,
     "spellingObscurity": 0.5714285714285714,
-    "key": 0.24857142857142858
+    "key": 0.12857142857142856
    }
   ],
   "passAgreement": 0.6571428571428573,
   "orderBeforeRefinement": [
    "upgrade_sprint_booster",
-   "upgrade_health",
    "upgrade_endurance",
-   "upgrade_lifestrike_gauntlets",
    "upgrade_improved_stamina",
-   "upgrade_health_stimpak",
+   "upgrade_health",
    "upgrade_grit",
+   "upgrade_lifestrike_gauntlets",
+   "upgrade_health_stimpak",
    "upgrade_melee_rebuttal"
   ],
   "pairwise": [
    {
-    "a": "upgrade_improved_stamina",
+    "a": "upgrade_grit",
+    "b": "upgrade_lifestrike_gauntlets",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_grit"
+   },
+   {
+    "a": "upgrade_grit",
     "b": "upgrade_health_stimpak",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_improved_stamina"
+    "rarer": "upgrade_grit"
    },
    {
-    "a": "upgrade_improved_stamina",
-    "b": "upgrade_grit",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_improved_stamina"
-   },
-   {
-    "a": "upgrade_improved_stamina",
+    "a": "upgrade_grit",
     "b": "upgrade_melee_rebuttal",
     "purpose": "rare-contenders",
     "rarer": null
    },
    {
-    "a": "upgrade_health_stimpak",
-    "b": "upgrade_grit",
+    "a": "upgrade_lifestrike_gauntlets",
+    "b": "upgrade_health_stimpak",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_grit"
+    "rarer": "upgrade_health_stimpak"
    },
    {
-    "a": "upgrade_health_stimpak",
+    "a": "upgrade_lifestrike_gauntlets",
     "b": "upgrade_melee_rebuttal",
     "purpose": "rare-contenders",
     "rarer": "upgrade_melee_rebuttal"
    },
    {
-    "a": "upgrade_grit",
+    "a": "upgrade_health_stimpak",
     "b": "upgrade_melee_rebuttal",
     "purpose": "rare-contenders",
     "rarer": "upgrade_melee_rebuttal"
    },
    {
     "a": "upgrade_sprint_booster",
-    "b": "upgrade_health",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_sprint_booster"
-   },
-   {
-    "a": "upgrade_health",
     "b": "upgrade_endurance",
     "purpose": "tier-boundary",
     "rarer": "upgrade_endurance"
    },
    {
+    "a": "upgrade_endurance",
+    "b": "upgrade_improved_stamina",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_improved_stamina"
+   },
+   {
+    "a": "upgrade_health",
+    "b": "upgrade_improved_stamina",
+    "purpose": "review",
+    "rarer": "upgrade_improved_stamina"
+   },
+   {
+    "a": "upgrade_endurance",
+    "b": "upgrade_sprint_booster",
+    "purpose": "review",
+    "rarer": "upgrade_endurance"
+   },
+   {
     "a": "upgrade_lifestrike_gauntlets",
-    "b": "upgrade_endurance",
+    "b": "upgrade_improved_stamina",
+    "purpose": "review",
+    "rarer": "upgrade_improved_stamina"
+   },
+   {
+    "a": "upgrade_grit",
+    "b": "upgrade_melee_rebuttal",
     "purpose": "review",
     "rarer": null
    }
   ],
   "review": [
    {
-    "name": "Melee Lifesteal",
-    "compareWith": "Extra Regen",
+    "name": "Extra Health",
+    "compareWith": "Extra Stamina",
     "claim": "should_be_more_obvious",
-    "reason": "Melee Lifesteal is a commonly bought, well-known early item and a staple of melee-oriented builds. It is more memorable than Extra Regen, a plain stat stick, so it should score as more obvious than Extra Regen.",
+    "reason": "Extra Health is the most generic, instantly recognizable Vitality item and is bought constantly, and its name literally matches the category. It should be at least as obvious as Extra Stamina, and likely more so, so it should not share the same 60 points.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Extra Regen",
+    "compareWith": "Sprint Boots",
+    "claim": "should_be_more_obvious",
+    "reason": "Extra Regen has a very on-the-nose name tied to the Vitality theme. Sprint Boots is well known for movement, but its association with Vitality is weaker, so Extra Regen could plausibly be named as often or more often.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Healing Rite",
+    "name": "Melee Lifesteal",
     "compareWith": "Extra Stamina",
     "claim": "should_be_more_obvious",
-    "reason": "Healing Rite is a distinctive active with a memorable name, and it upgrades into well-known items like Rescue Beam and Healing Nova. Extra Stamina is a bland stat item that players rarely think of, so Healing Rite should be less obscure than it.",
-    "outcome": "ignored-invalid"
+    "reason": "Melee Lifesteal is a commonly bought and well known sustain item, and sustain is the Vitality theme. It is more strongly associated with Vitality than Extra Stamina, so 85 points is too obscure relative to Extra Stamina at 60.",
+    "outcome": "applied"
    },
    {
     "name": "Grit",
     "compareWith": "Rebuttal",
-    "claim": "should_be_more_obvious",
-    "reason": "Grit is a popular active that upgrades into four items, so players see it often. Rebuttal is the rarer pick and deserves the 100, but Grit at 85 is tied with weaker answers when it should be nearer 60.",
-    "outcome": "ignored-invalid"
+    "claim": "should_be_more_obscure",
+    "reason": "Rebuttal is a niche item, but Grit has a generic name that is easy to forget, and it is an active item many players rarely buy. Grit is arguably no more memorable than Rebuttal, so it should not be scored below it at 85 versus 100.",
+    "outcome": "rejected-by-comparison"
    }
   ]
  }

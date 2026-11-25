@@ -17,9 +17,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:18:40.729Z",
+ "generatedAt": "2026-11-25T04:46:21.802Z",
  "answers": [
   {
    "entityId": "hero_atlas",
@@ -53,6 +53,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_atlas",
@@ -75,7 +81,7 @@
     "popularityObscurity": 0,
     "spellingCost": 6,
     "spellingObscurity": 0.375,
-    "key": 0.046250000000000006
+    "key": 0.03125
    },
    {
     "id": "hero_forge",
@@ -98,7 +104,7 @@
     "popularityObscurity": 1,
     "spellingCost": 3,
     "spellingObscurity": 0,
-    "key": 0.785
+    "key": 0.875
    },
    {
     "id": "hero_inferno",
@@ -121,7 +127,7 @@
     "popularityObscurity": 0.25,
     "spellingCost": 8,
     "spellingObscurity": 1,
-    "key": 0.26
+    "key": 0.275
    },
    {
     "id": "hero_necro",
@@ -144,7 +150,7 @@
     "popularityObscurity": 0.5,
     "spellingCost": 6,
     "spellingObscurity": 0.375,
-    "key": 0.60375
+    "key": 0.54375
    },
    {
     "id": "hero_viscous",
@@ -167,7 +173,7 @@
     "popularityObscurity": 0.75,
     "spellingCost": 7,
     "spellingObscurity": 0.75,
-    "key": 0.805
+    "key": 0.7749999999999999
    }
   ],
   "passAgreement": 0.6,
@@ -175,8 +181,8 @@
    "hero_atlas",
    "hero_inferno",
    "hero_necro",
-   "hero_forge",
-   "hero_viscous"
+   "hero_viscous",
+   "hero_forge"
   ],
   "pairwise": [
    {
@@ -187,18 +193,12 @@
    },
    {
     "a": "hero_inferno",
-    "b": "hero_forge",
+    "b": "hero_viscous",
     "purpose": "rare-contenders",
-    "rarer": "hero_forge"
+    "rarer": "hero_viscous"
    },
    {
     "a": "hero_inferno",
-    "b": "hero_viscous",
-    "purpose": "rare-contenders",
-    "rarer": "hero_viscous"
-   },
-   {
-    "a": "hero_necro",
     "b": "hero_forge",
     "purpose": "rare-contenders",
     "rarer": "hero_forge"
@@ -210,10 +210,16 @@
     "rarer": "hero_viscous"
    },
    {
-    "a": "hero_forge",
-    "b": "hero_viscous",
+    "a": "hero_necro",
+    "b": "hero_forge",
     "purpose": "rare-contenders",
     "rarer": null
+   },
+   {
+    "a": "hero_viscous",
+    "b": "hero_forge",
+    "purpose": "rare-contenders",
+    "rarer": "hero_viscous"
    },
    {
     "a": "hero_viscous",

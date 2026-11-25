@@ -23,67 +23,67 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:03:58.490Z",
+ "generatedAt": "2026-11-25T04:40:48.783Z",
  "answers": [
   {
-   "entityId": "upgrade_glass_cannon",
-   "name": "Glass Cannon",
+   "entityId": "upgrade_ricochet",
+   "name": "Ricochet",
    "rank": 1,
    "score": 10
   },
   {
-   "entityId": "upgrade_ricochet",
-   "name": "Ricochet",
+   "entityId": "upgrade_tech_overflow",
+   "name": "Spiritual Overflow",
    "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_capacitor",
+   "name": "Capacitor",
+   "rank": 3,
    "score": 30
   },
   {
    "entityId": "upgrade_proc_silence",
    "name": "Silencer",
-   "rank": 3,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_banshee_slugs",
-   "name": "Crippling Headshot",
    "rank": 4,
    "score": 60
   },
   {
-   "entityId": "upgrade_fervor",
-   "name": "Frenzy",
+   "entityId": "upgrade_critshot",
+   "name": "Lucky Shot",
    "rank": 5,
    "score": 60
   },
   {
-   "entityId": "upgrade_capacitor",
-   "name": "Capacitor",
+   "entityId": "upgrade_banshee_slugs",
+   "name": "Crippling Headshot",
    "rank": 6,
    "score": 60
   },
   {
-   "entityId": "upgrade_tech_overflow",
-   "name": "Spiritual Overflow",
+   "entityId": "upgrade_crushing_fists",
+   "name": "Crushing Fists",
    "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_glass_cannon",
+   "name": "Glass Cannon",
+   "rank": 8,
    "score": 85
   },
   {
    "entityId": "upgrade_enchanted_holsters",
    "name": "Spellslinger",
-   "rank": 8,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_critshot",
-   "name": "Lucky Shot",
    "rank": 9,
    "score": 85
   },
   {
-   "entityId": "upgrade_crushing_fists",
-   "name": "Crushing Fists",
+   "entityId": "upgrade_fervor",
+   "name": "Frenzy",
    "rank": 10,
    "score": 85
   },
@@ -95,6 +95,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_aprounds",
@@ -117,7 +123,7 @@
     "popularityObscurity": 0.9,
     "spellingCost": 12,
     "spellingObscurity": 0.85,
-    "key": 0.6445000000000001
+    "key": 0.7825
    },
    {
     "id": "upgrade_banshee_slugs",
@@ -140,7 +146,7 @@
     "popularityObscurity": 0.6,
     "spellingCost": 9,
     "spellingObscurity": 0.6,
-    "key": 0.435
+    "key": 0.525
    },
    {
     "id": "upgrade_capacitor",
@@ -163,7 +169,7 @@
     "popularityObscurity": 0.2,
     "spellingCost": 9,
     "spellingObscurity": 0.6,
-    "key": 0.528
+    "key": 0.36
    },
    {
     "id": "upgrade_critshot",
@@ -186,7 +192,7 @@
     "popularityObscurity": 0.5,
     "spellingCost": 9,
     "spellingObscurity": 0.6,
-    "key": 0.5050000000000001
+    "key": 0.505
    },
    {
     "id": "upgrade_crushing_fists",
@@ -209,7 +215,7 @@
     "popularityObscurity": 0.4,
     "spellingCost": 13,
     "spellingObscurity": 1,
-    "key": 0.6940000000000002
+    "key": 0.55
    },
    {
     "id": "upgrade_enchanted_holsters",
@@ -232,7 +238,7 @@
     "popularityObscurity": 0.7,
     "spellingCost": 12,
     "spellingObscurity": 0.85,
-    "key": 0.5645
+    "key": 0.6425
    },
    {
     "id": "upgrade_fervor",
@@ -255,7 +261,7 @@
     "popularityObscurity": 1,
     "spellingCost": 6,
     "spellingObscurity": 0.1,
-    "key": 0.6910000000000001
+    "key": 0.835
    },
    {
     "id": "upgrade_glass_cannon",
@@ -278,7 +284,7 @@
     "popularityObscurity": 0.8,
     "spellingCost": 5,
     "spellingObscurity": 0,
-    "key": 0.32000000000000006
+    "key": 0.5599999999999999
    },
    {
     "id": "upgrade_proc_silence",
@@ -301,7 +307,7 @@
     "popularityObscurity": 0.3,
     "spellingCost": 8,
     "spellingObscurity": 0.3,
-    "key": 0.432
+    "key": 0.36
    },
    {
     "id": "upgrade_ricochet",
@@ -324,7 +330,7 @@
     "popularityObscurity": 0,
     "spellingCost": 8,
     "spellingObscurity": 0.3,
-    "key": 0.12500000000000003
+    "key": 0.065
    },
    {
     "id": "upgrade_tech_overflow",
@@ -347,106 +353,125 @@
     "popularityObscurity": 0.1,
     "spellingCost": 8,
     "spellingObscurity": 0.3,
-    "key": 0.561
+    "key": 0.315
    }
   ],
   "passAgreement": 0.4981818181818182,
   "orderBeforeRefinement": [
    "upgrade_ricochet",
-   "upgrade_glass_cannon",
-   "upgrade_proc_silence",
-   "upgrade_banshee_slugs",
-   "upgrade_critshot",
-   "upgrade_capacitor",
    "upgrade_tech_overflow",
+   "upgrade_capacitor",
+   "upgrade_proc_silence",
+   "upgrade_critshot",
+   "upgrade_banshee_slugs",
+   "upgrade_crushing_fists",
+   "upgrade_glass_cannon",
    "upgrade_enchanted_holsters",
    "upgrade_aprounds",
-   "upgrade_fervor",
-   "upgrade_crushing_fists"
+   "upgrade_fervor"
   ],
   "pairwise": [
    {
-    "a": "upgrade_enchanted_holsters",
+    "a": "upgrade_glass_cannon",
+    "b": "upgrade_enchanted_holsters",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_enchanted_holsters"
+   },
+   {
+    "a": "upgrade_glass_cannon",
     "b": "upgrade_aprounds",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_enchanted_holsters",
-    "b": "upgrade_fervor",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_enchanted_holsters",
-    "b": "upgrade_crushing_fists",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_crushing_fists"
-   },
-   {
-    "a": "upgrade_aprounds",
-    "b": "upgrade_fervor",
     "purpose": "rare-contenders",
     "rarer": "upgrade_aprounds"
    },
    {
-    "a": "upgrade_aprounds",
-    "b": "upgrade_crushing_fists",
+    "a": "upgrade_glass_cannon",
+    "b": "upgrade_fervor",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_crushing_fists"
+    "rarer": "upgrade_fervor"
    },
    {
-    "a": "upgrade_fervor",
-    "b": "upgrade_crushing_fists",
+    "a": "upgrade_enchanted_holsters",
+    "b": "upgrade_aprounds",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_crushing_fists"
+    "rarer": "upgrade_aprounds"
+   },
+   {
+    "a": "upgrade_enchanted_holsters",
+    "b": "upgrade_fervor",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_fervor"
+   },
+   {
+    "a": "upgrade_aprounds",
+    "b": "upgrade_fervor",
+    "purpose": "rare-contenders",
+    "rarer": null
    },
    {
     "a": "upgrade_ricochet",
-    "b": "upgrade_glass_cannon",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_ricochet"
-   },
-   {
-    "a": "upgrade_proc_silence",
-    "b": "upgrade_banshee_slugs",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_banshee_slugs"
-   },
-   {
-    "a": "upgrade_capacitor",
     "b": "upgrade_tech_overflow",
     "purpose": "tier-boundary",
     "rarer": "upgrade_tech_overflow"
    },
    {
-    "a": "upgrade_fervor",
-    "b": "upgrade_critshot",
+    "a": "upgrade_capacitor",
+    "b": "upgrade_proc_silence",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_banshee_slugs",
+    "b": "upgrade_crushing_fists",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_crushing_fists"
+   },
+   {
+    "a": "upgrade_glass_cannon",
+    "b": "upgrade_tech_overflow",
     "purpose": "review",
-    "rarer": "upgrade_critshot"
+    "rarer": "upgrade_tech_overflow"
+   },
+   {
+    "a": "upgrade_tech_overflow",
+    "b": "upgrade_glass_cannon",
+    "purpose": "review",
+    "rarer": "upgrade_tech_overflow"
+   },
+   {
+    "a": "upgrade_fervor",
+    "b": "upgrade_aprounds",
+    "purpose": "review",
+    "rarer": "upgrade_aprounds"
    }
   ],
   "review": [
    {
-    "name": "Crushing Fists",
-    "compareWith": "Armor Piercer",
+    "name": "Glass Cannon",
+    "compareWith": "Spiritual Overflow",
     "claim": "should_be_more_obvious",
-    "reason": "Crushing Fists is a distinctive, memorable melee item with a stun effect, and its name stands out. Players picking weapon items would plausibly recall it about as often as Armor Piercer or Frenzy, so it shouldn't be the single rarest answer.",
-    "outcome": "applied-by-data"
+    "reason": "Glass Cannon is a famous, memorable name and a classic weapon item with a distinctive trade-off (big damage, lower health). Players buy it often and would think of it quickly for a Tier 4 Weapon question. Spiritual Overflow is a niche spirit-lifesteal hybrid and should be rarer.",
+    "outcome": "applied"
    },
    {
-    "name": "Armor Piercer",
-    "compareWith": "Crushing Fists",
+    "name": "Spiritual Overflow",
+    "compareWith": "Glass Cannon",
     "claim": "should_be_more_obscure",
-    "reason": "Armor Piercer is a generic-sounding upgrade of High-Velocity Rounds. It is easily forgotten as a Tier 4 weapon item, so it is probably as rare as or rarer than Crushing Fists.",
-    "outcome": "ignored-invalid"
+    "reason": "Spiritual Overflow is a Spirit-themed item that sits in the Weapon category, so players rarely associate it with weapon items. It is a poor fit for this question and should score above Glass Cannon.",
+    "outcome": "applied"
    },
    {
     "name": "Frenzy",
-    "compareWith": "Lucky Shot",
+    "compareWith": "Armor Piercer",
     "claim": "should_be_more_obvious",
-    "reason": "Frenzy is a well-known, commonly built weapon item with a clear low-health identity, so it is more likely to come to mind than 85 points implies. It should sit closer to Lucky Shot or Capacitor.",
+    "reason": "Frenzy is a well-known low-health item with a short, memorable name. It is no more forgettable than Armor Piercer or Crushing Fists, so 100 pts is too harsh; it should swap with one of them.",
     "outcome": "applied"
+   },
+   {
+    "name": "Silencer",
+    "compareWith": "Crippling Headshot",
+    "claim": "should_be_more_obvious",
+    "reason": "Silencer has a simple, iconic name and a strong, well-known effect, so it would come to mind faster than Crippling Headshot. It should sit nearer Capacitor than the middle tier.",
+    "outcome": "ignored-invalid"
    }
   ]
  }

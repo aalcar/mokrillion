@@ -18,9 +18,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:19:33.059Z",
+ "generatedAt": "2026-11-25T04:46:32.957Z",
  "answers": [
   {
    "entityId": "hero_hornet",
@@ -29,26 +29,26 @@
    "score": 10
   },
   {
-   "entityId": "hero_viscous",
-   "name": "Viscous",
+   "entityId": "hero_priest",
+   "name": "Venator",
    "rank": 2,
    "score": 30
   },
   {
+   "entityId": "hero_viscous",
+   "name": "Viscous",
+   "rank": 3,
+   "score": 60
+  },
+  {
    "entityId": "hero_viper",
    "name": "Vyper",
-   "rank": 3,
+   "rank": 4,
    "score": 60
   },
   {
    "entityId": "hero_frank",
    "name": "Victor",
-   "rank": 4,
-   "score": 60
-  },
-  {
-   "entityId": "hero_priest",
-   "name": "Venator",
    "rank": 5,
    "score": 85
   },
@@ -60,6 +60,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_artist",
@@ -82,7 +88,7 @@
     "popularityObscurity": 0.6,
     "spellingCost": 6,
     "spellingObscurity": 0.3,
-    "key": 0.7170000000000001
+    "key": 0.645
    },
    {
     "id": "hero_frank",
@@ -105,7 +111,7 @@
     "popularityObscurity": 0.4,
     "spellingCost": 6,
     "spellingObscurity": 0.3,
-    "key": 0.4830000000000001
+    "key": 0.435
    },
    {
     "id": "hero_hornet",
@@ -128,7 +134,7 @@
     "popularityObscurity": 0.2,
     "spellingCost": 8,
     "spellingObscurity": 1,
-    "key": 0.13
+    "key": 0.19
    },
    {
     "id": "hero_priest",
@@ -151,7 +157,7 @@
     "popularityObscurity": 0,
     "spellingCost": 7,
     "spellingObscurity": 0.7,
-    "key": 0.5630000000000001
+    "key": 0.27499999999999997
    },
    {
     "id": "hero_viper",
@@ -174,7 +180,7 @@
     "popularityObscurity": 1,
     "spellingCost": 5,
     "spellingObscurity": 0,
-    "key": 0.642
+    "key": 0.8099999999999999
    },
    {
     "id": "hero_viscous",
@@ -197,28 +203,22 @@
     "popularityObscurity": 0.8,
     "spellingCost": 7,
     "spellingObscurity": 0.7,
-    "key": 0.4650000000000001
+    "key": 0.6449999999999999
    }
   ],
   "passAgreement": 0.8933333333333333,
   "orderBeforeRefinement": [
    "hero_hornet",
-   "hero_viscous",
-   "hero_frank",
    "hero_priest",
-   "hero_viper",
-   "hero_artist"
+   "hero_frank",
+   "hero_viscous",
+   "hero_artist",
+   "hero_viper"
   ],
   "pairwise": [
    {
     "a": "hero_frank",
-    "b": "hero_priest",
-    "purpose": "rare-contenders",
-    "rarer": "hero_priest"
-   },
-   {
-    "a": "hero_frank",
-    "b": "hero_viper",
+    "b": "hero_viscous",
     "purpose": "rare-contenders",
     "rarer": "hero_frank"
    },
@@ -229,43 +229,55 @@
     "rarer": null
    },
    {
-    "a": "hero_priest",
+    "a": "hero_frank",
     "b": "hero_viper",
     "purpose": "rare-contenders",
-    "rarer": "hero_priest"
+    "rarer": "hero_frank"
    },
    {
-    "a": "hero_priest",
-    "b": "hero_artist",
-    "purpose": "rare-contenders",
-    "rarer": "hero_priest"
-   },
-   {
-    "a": "hero_viper",
+    "a": "hero_viscous",
     "b": "hero_artist",
     "purpose": "rare-contenders",
     "rarer": "hero_artist"
    },
    {
+    "a": "hero_viscous",
+    "b": "hero_viper",
+    "purpose": "rare-contenders",
+    "rarer": "hero_viscous"
+   },
+   {
+    "a": "hero_artist",
+    "b": "hero_viper",
+    "purpose": "rare-contenders",
+    "rarer": "hero_artist"
+   },
+   {
     "a": "hero_hornet",
-    "b": "hero_viscous",
+    "b": "hero_priest",
     "purpose": "tier-boundary",
-    "rarer": null
+    "rarer": "hero_priest"
+   },
+   {
+    "a": "hero_viscous",
+    "b": "hero_viper",
+    "purpose": "review",
+    "rarer": "hero_viper"
    }
   ],
   "review": [
    {
-    "name": "Venator",
-    "compareWith": "Violet",
+    "name": "Viscous",
+    "compareWith": "Vyper",
     "claim": "should_be_more_obvious",
-    "reason": "Venator is a newer hero, but his name is distinctive and a Marksman with a V name would likely be recalled by experienced players. Violet is a generic name that is easy to overlook, so she should be rarer than Venator or at least tied with him for the 100-point slot.",
-    "outcome": "applied-by-data"
+    "reason": "Viscous is a long-standing, very recognizable hero with a memorable name and a distinctive Goo Ball and Cube identity. Vyper is also well known, but Viscous is at least as quick to come to mind for V, so giving both 60 points undervalues how readily players think of Viscous.",
+    "outcome": "applied"
    },
    {
-    "name": "Vyper",
-    "compareWith": "Victor",
-    "claim": "should_be_more_obvious",
-    "reason": "Vyper has a memorable snake-themed name and a clear Assassin identity, so players usually recall her sooner than Victor. Victor is a less prominent Brawler, so he should be rarer, not tied with her at 60.",
+    "name": "Venator",
+    "compareWith": "Vindicta",
+    "claim": "should_be_more_obscure",
+    "reason": "Venator is less strongly tied to V than Vindicta. Vindicta is the first V hero most players name, while Venator is a newer hero and a likely second or third answer. A 20-point gap is fine, but 30 points may be slightly too obvious relative to Vyper.",
     "outcome": "ignored-invalid"
    }
   ]

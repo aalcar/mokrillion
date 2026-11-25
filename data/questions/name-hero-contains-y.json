@@ -21,13 +21,13 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:20:06.703Z",
+ "generatedAt": "2026-11-25T04:45:41.632Z",
  "answers": [
   {
-   "entityId": "hero_yamato",
-   "name": "Yamato",
+   "entityId": "hero_punkgoat",
+   "name": "Billy",
    "rank": 1,
    "score": 10
   },
@@ -38,20 +38,20 @@
    "score": 30
   },
   {
-   "entityId": "hero_dynamo",
-   "name": "Dynamo",
+   "entityId": "hero_tengu",
+   "name": "Ivy",
    "rank": 3,
    "score": 30
   },
   {
-   "entityId": "hero_punkgoat",
-   "name": "Billy",
+   "entityId": "hero_yamato",
+   "name": "Yamato",
    "rank": 4,
    "score": 60
   },
   {
-   "entityId": "hero_tengu",
-   "name": "Ivy",
+   "entityId": "hero_dynamo",
+   "name": "Dynamo",
    "rank": 5,
    "score": 60
   },
@@ -81,6 +81,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_astro",
@@ -103,7 +109,7 @@
     "popularityObscurity": 0.375,
     "spellingCost": 8,
     "spellingObscurity": 1,
-    "key": 0.5025000000000001
+    "key": 0.44999999999999996
    },
    {
     "id": "hero_deadpack",
@@ -126,7 +132,7 @@
     "popularityObscurity": 0.75,
     "spellingCost": 5,
     "spellingObscurity": 0.4375,
-    "key": 0.8718750000000001
+    "key": 0.7968749999999999
    },
    {
     "id": "hero_dynamo",
@@ -149,7 +155,7 @@
     "popularityObscurity": 0.5,
     "spellingCost": 6,
     "spellingObscurity": 0.8125,
-    "key": 0.39187500000000003
+    "key": 0.459375
    },
    {
     "id": "hero_ghost",
@@ -172,7 +178,7 @@
     "popularityObscurity": 0,
     "spellingCost": 4,
     "spellingObscurity": 0.125,
-    "key": 0.36375
+    "key": 0.16875
    },
    {
     "id": "hero_orion",
@@ -195,7 +201,7 @@
     "popularityObscurity": 0.875,
     "spellingCost": 5,
     "spellingObscurity": 0.4375,
-    "key": 0.7981250000000001
+    "key": 0.828125
    },
    {
     "id": "hero_punkgoat",
@@ -218,7 +224,7 @@
     "popularityObscurity": 0.125,
     "spellingCost": 5,
     "spellingObscurity": 0.4375,
-    "key": 0.374375
+    "key": 0.246875
    },
    {
     "id": "hero_tengu",
@@ -241,7 +247,7 @@
     "popularityObscurity": 0.25,
     "spellingCost": 3,
     "spellingObscurity": 0,
-    "key": 0.4025000000000001
+    "key": 0.3125
    },
    {
     "id": "hero_viper",
@@ -264,7 +270,7 @@
     "popularityObscurity": 1,
     "spellingCost": 5,
     "spellingObscurity": 0.4375,
-    "key": 0.504375
+    "key": 0.7593749999999999
    },
    {
     "id": "hero_yamato",
@@ -287,42 +293,36 @@
     "popularityObscurity": 0.625,
     "spellingCost": 6,
     "spellingObscurity": 0.8125,
-    "key": 0.290625
+    "key": 0.478125
    }
   ],
   "passAgreement": 0.6777777777777778,
   "orderBeforeRefinement": [
-   "hero_yamato",
    "hero_ghost",
    "hero_punkgoat",
-   "hero_dynamo",
    "hero_tengu",
    "hero_astro",
+   "hero_dynamo",
+   "hero_yamato",
    "hero_viper",
-   "hero_orion",
-   "hero_deadpack"
+   "hero_deadpack",
+   "hero_orion"
   ],
   "pairwise": [
    {
-    "a": "hero_astro",
+    "a": "hero_yamato",
     "b": "hero_viper",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "hero_viper"
    },
    {
-    "a": "hero_astro",
-    "b": "hero_orion",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_astro",
+    "a": "hero_yamato",
     "b": "hero_deadpack",
     "purpose": "rare-contenders",
     "rarer": "hero_deadpack"
    },
    {
-    "a": "hero_viper",
+    "a": "hero_yamato",
     "b": "hero_orion",
     "purpose": "rare-contenders",
     "rarer": "hero_orion"
@@ -334,45 +334,82 @@
     "rarer": "hero_deadpack"
    },
    {
-    "a": "hero_orion",
-    "b": "hero_deadpack",
+    "a": "hero_viper",
+    "b": "hero_orion",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "hero_orion"
    },
    {
-    "a": "hero_yamato",
-    "b": "hero_ghost",
+    "a": "hero_deadpack",
+    "b": "hero_orion",
+    "purpose": "rare-contenders",
+    "rarer": "hero_deadpack"
+   },
+   {
+    "a": "hero_ghost",
+    "b": "hero_punkgoat",
     "purpose": "tier-boundary",
     "rarer": "hero_ghost"
    },
    {
-    "a": "hero_punkgoat",
-    "b": "hero_dynamo",
+    "a": "hero_tengu",
+    "b": "hero_astro",
     "purpose": "tier-boundary",
-    "rarer": "hero_punkgoat"
+    "rarer": "hero_astro"
+   },
+   {
+    "a": "hero_yamato",
+    "b": "hero_astro",
+    "purpose": "review",
+    "rarer": "hero_astro"
+   },
+   {
+    "a": "hero_viper",
+    "b": "hero_ghost",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "hero_ghost",
+    "b": "hero_astro",
+    "purpose": "review",
+    "rarer": "hero_astro"
+   },
+   {
+    "a": "hero_deadpack",
+    "b": "hero_orion",
+    "purpose": "review",
+    "rarer": "hero_deadpack"
    }
   ],
   "review": [
    {
-    "name": "Vyper",
-    "compareWith": "Grey Talon",
+    "name": "Yamato",
+    "compareWith": "Holliday",
     "claim": "should_be_more_obvious",
-    "reason": "Vyper has the letter Y as its second letter, and the name starts with 'Vy', so it jumps out in a letter-Y prompt. Grey Talon's Y is hidden inside 'Grey', which is easy to overlook, so Vyper should score lower than Grey Talon.",
-    "outcome": "ignored-invalid"
+    "reason": "Yamato is the hero whose name begins with Y, so it is the most direct match for this question. Holliday's Y is buried mid-name and is easy to miss, so Yamato should score lower (more obvious) than Holliday.",
+    "outcome": "applied"
    },
    {
-    "name": "Holliday",
-    "compareWith": "Billy",
-    "claim": "should_be_more_obscure",
-    "reason": "Holliday's Y is the second-to-last letter and sits behind a doubled 'l' and 'i', so it is much less salient than Billy's Y, which is also near the end of a short name. Both are plausible, but Holliday is the less likely to be recalled, so it should be rarer than Billy.",
-    "outcome": "ignored-invalid"
+    "name": "Vyper",
+    "compareWith": "Lady Geist",
+    "claim": "should_be_more_obvious",
+    "reason": "Vyper has a Y in a short, simple name and is a well-known assassin, so many players would think of it quickly. At 85 points it is rated as obscure as Grey Talon, and it should sit closer to Lady Geist than that.",
+    "outcome": "rejected-by-comparison"
    },
    {
     "name": "Lady Geist",
-    "compareWith": "Dynamo",
+    "compareWith": "Holliday",
+    "claim": "should_be_more_obscure",
+    "reason": "Lady Geist's Y is in the word Lady, which is easy to overlook, so it is less obvious than a 30-point rating suggests. It belongs nearer Holliday's tier than Ivy's.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Deadman Danny",
+    "compareWith": "Grey Talon",
     "claim": "should_be_more_obvious",
-    "reason": "Lady has Y as a stand-out letter right in the first word, and Lady Geist is a well-known hero. Dynamo's Y is mid-name and less salient, so Lady Geist should score at least as low as Dynamo, if not lower.",
-    "outcome": "ignored-invalid"
+    "reason": "Deadman Danny has two Y-adjacent chances in his name (Danny contains Y), though he is a newer, less-known hero. Grey Talon's Y is in Grey, which is easy to miss, so Talon is plausibly rarer than 85 and Danny's 100 is too far above him.",
+    "outcome": "rejected-by-comparison"
    }
   ]
  }

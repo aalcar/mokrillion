@@ -32,9 +32,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:08:51.402Z",
+ "generatedAt": "2026-11-25T04:42:48.599Z",
  "answers": [
   {
    "entityId": "upgrade_improved_spirit",
@@ -55,92 +55,92 @@
    "score": 30
   },
   {
-   "entityId": "upgrade_health_stealing_magic",
-   "name": "Spirit Lifesteal",
+   "entityId": "upgrade_crackshot",
+   "name": "Mystic Shot",
    "rank": 4,
    "score": 30
   },
   {
-   "entityId": "upgrade_suppressor",
-   "name": "Suppressor",
+   "entityId": "upgrade_health_stealing_magic",
+   "name": "Spirit Lifesteal",
    "rank": 5,
    "score": 30
   },
   {
-   "entityId": "upgrade_healbane",
-   "name": "Healbane",
+   "entityId": "upgrade_infuser",
+   "name": "Infuser",
    "rank": 6,
    "score": 60
   },
   {
-   "entityId": "upgrade_tech_overflow",
-   "name": "Spiritual Overflow",
+   "entityId": "upgrade_healbane",
+   "name": "Healbane",
    "rank": 7,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_infuser",
-   "name": "Infuser",
-   "rank": 8,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_crackshot",
-   "name": "Mystic Shot",
-   "rank": 9,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_ethereal_bullets",
-   "name": "Mercurial Magnum",
-   "rank": 10,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_absorbing_armor",
-   "name": "Witchmail",
-   "rank": 11,
    "score": 60
   },
   {
    "entityId": "upgrade_rupture",
    "name": "Decay",
-   "rank": 12,
-   "score": 85
+   "rank": 8,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_suppressor",
+   "name": "Suppressor",
+   "rank": 9,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_tech_overflow",
+   "name": "Spiritual Overflow",
+   "rank": 10,
+   "score": 60
   },
   {
    "entityId": "upgrade_damage_recycler",
    "name": "Leech",
+   "rank": 11,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_absorbing_armor",
+   "name": "Witchmail",
+   "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_ethereal_bullets",
+   "name": "Mercurial Magnum",
    "rank": 13,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_counterspell",
-   "name": "Counterspell",
-   "rank": 14,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_pristine_emblem",
-   "name": "Opening Rounds",
-   "rank": 15,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_thermal_detonator",
-   "name": "Alchemical Fire",
-   "rank": 16,
    "score": 85
   },
   {
    "entityId": "upgrade_magic_carpet",
    "name": "Magic Carpet",
-   "rank": 17,
+   "rank": 14,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_thermal_detonator",
+   "name": "Alchemical Fire",
+   "rank": 15,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_counterspell",
+   "name": "Counterspell",
+   "rank": 16,
    "score": 85
   },
   {
    "entityId": "upgrade_health_nova",
    "name": "Healing Nova",
+   "rank": 17,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_pristine_emblem",
+   "name": "Opening Rounds",
    "rank": 18,
    "score": 85
   },
@@ -158,6 +158,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_absorbing_armor",
@@ -180,7 +186,7 @@
     "popularityObscurity": 0.5263157894736842,
     "spellingCost": 9,
     "spellingObscurity": 0.4473684210526316,
-    "key": 0.5339473684210526
+    "key": 0.5392105263157895
    },
    {
     "id": "upgrade_boundless_spirit",
@@ -203,7 +209,7 @@
     "popularityObscurity": 0.15789473684210525,
     "spellingCost": 9,
     "spellingObscurity": 0.4473684210526316,
-    "key": 0.14342105263157895
+    "key": 0.13026315789473683
    },
    {
     "id": "upgrade_counterspell",
@@ -226,7 +232,7 @@
     "popularityObscurity": 0.3157894736842105,
     "spellingCost": 12,
     "spellingObscurity": 0.7368421052631579,
-    "key": 0.6321052631578947
+    "key": 0.7663157894736844
    },
    {
     "id": "upgrade_crackshot",
@@ -249,7 +255,7 @@
     "popularityObscurity": 0.3684210526315789,
     "spellingCost": 10,
     "spellingObscurity": 0.5789473684210527,
-    "key": 0.2631578947368421
+    "key": 0.2105263157894737
    },
    {
     "id": "upgrade_damage_recycler",
@@ -272,7 +278,7 @@
     "popularityObscurity": 0.631578947368421,
     "spellingCost": 5,
     "spellingObscurity": 0.02631578947368421,
-    "key": 0.5492105263157896
+    "key": 0.5255263157894737
    },
    {
     "id": "upgrade_ethereal_bullets",
@@ -295,7 +301,7 @@
     "popularityObscurity": 0.47368421052631576,
     "spellingCost": 6,
     "spellingObscurity": 0.13157894736842105,
-    "key": 0.531842105263158
+    "key": 0.5660526315789474
    },
    {
     "id": "upgrade_healbane",
@@ -318,7 +324,7 @@
     "popularityObscurity": 0.10526315789473684,
     "spellingCost": 8,
     "spellingObscurity": 0.3157894736842105,
-    "key": 0.32421052631578945
+    "key": 0.41894736842105257
    },
    {
     "id": "upgrade_health_nova",
@@ -341,7 +347,7 @@
     "popularityObscurity": 0.9473684210526315,
     "spellingCost": 10,
     "spellingObscurity": 0.5789473684210527,
-    "key": 0.8363157894736842
+    "key": 0.7942105263157895
    },
    {
     "id": "upgrade_health_stealing_magic",
@@ -410,7 +416,7 @@
     "popularityObscurity": 0.6842105263157895,
     "spellingCost": 7,
     "spellingObscurity": 0.21052631578947367,
-    "key": 0.45210526315789473
+    "key": 0.3573684210526315
    },
    {
     "id": "upgrade_magic_carpet",
@@ -433,7 +439,7 @@
     "popularityObscurity": 1,
     "spellingCost": 6,
     "spellingObscurity": 0.13157894736842105,
-    "key": 0.7539473684210527
+    "key": 0.6618421052631579
    },
    {
     "id": "upgrade_phantom_strike",
@@ -456,7 +462,7 @@
     "popularityObscurity": 0.7368421052631579,
     "spellingCost": 13,
     "spellingObscurity": 0.8157894736842105,
-    "key": 0.8565789473684211
+    "key": 0.9092105263157895
    },
    {
     "id": "upgrade_pristine_emblem",
@@ -479,7 +485,7 @@
     "popularityObscurity": 0.2631578947368421,
     "spellingCost": 13,
     "spellingObscurity": 0.8157894736842105,
-    "key": 0.6786842105263158
+    "key": 0.855
    },
    {
     "id": "upgrade_rupture",
@@ -502,7 +508,7 @@
     "popularityObscurity": 0.8421052631578947,
     "spellingCost": 5,
     "spellingObscurity": 0.02631578947368421,
-    "key": 0.546578947368421
+    "key": 0.4307894736842105
    },
    {
     "id": "upgrade_soaring_spirit",
@@ -525,7 +531,7 @@
     "popularityObscurity": 0.05263157894736842,
     "spellingCost": 14,
     "spellingObscurity": 0.9210526315789473,
-    "key": 0.09605263157894738
+    "key": 0.09605263157894736
    },
    {
     "id": "upgrade_suppressor",
@@ -548,7 +554,7 @@
     "popularityObscurity": 0.5789473684210527,
     "spellingCost": 8,
     "spellingObscurity": 0.3157894736842105,
-    "key": 0.4789473684210527
+    "key": 0.4394736842105263
    },
    {
     "id": "upgrade_tech_overflow",
@@ -571,7 +577,7 @@
     "popularityObscurity": 0.42105263157894735,
     "spellingCost": 8,
     "spellingObscurity": 0.3157894736842105,
-    "key": 0.45052631578947366
+    "key": 0.4663157894736842
    },
    {
     "id": "upgrade_thermal_detonator",
@@ -594,7 +600,7 @@
     "popularityObscurity": 0.8947368421052632,
     "spellingCost": 14,
     "spellingObscurity": 0.9210526315789473,
-    "key": 0.7455263157894737
+    "key": 0.6771052631578947
    },
    {
     "id": "upgrade_veil_walker",
@@ -617,7 +623,7 @@
     "popularityObscurity": 0.7894736842105263,
     "spellingCost": 10,
     "spellingObscurity": 0.5789473684210527,
-    "key": 0.8426315789473684
+    "key": 0.871578947368421
    }
   ],
   "passAgreement": 0.7873684210526315,
@@ -625,54 +631,54 @@
    "upgrade_improved_spirit",
    "upgrade_soaring_spirit",
    "upgrade_boundless_spirit",
-   "upgrade_health_stealing_magic",
    "upgrade_crackshot",
-   "upgrade_healbane",
-   "upgrade_tech_overflow",
+   "upgrade_health_stealing_magic",
    "upgrade_infuser",
-   "upgrade_suppressor",
-   "upgrade_ethereal_bullets",
-   "upgrade_absorbing_armor",
+   "upgrade_healbane",
    "upgrade_rupture",
+   "upgrade_suppressor",
+   "upgrade_tech_overflow",
    "upgrade_damage_recycler",
-   "upgrade_counterspell",
-   "upgrade_pristine_emblem",
-   "upgrade_thermal_detonator",
+   "upgrade_absorbing_armor",
+   "upgrade_ethereal_bullets",
    "upgrade_magic_carpet",
+   "upgrade_thermal_detonator",
+   "upgrade_counterspell",
    "upgrade_health_nova",
+   "upgrade_pristine_emblem",
    "upgrade_veil_walker",
    "upgrade_phantom_strike"
   ],
   "pairwise": [
    {
-    "a": "upgrade_magic_carpet",
-    "b": "upgrade_health_nova",
+    "a": "upgrade_health_nova",
+    "b": "upgrade_pristine_emblem",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_health_nova"
-   },
-   {
-    "a": "upgrade_magic_carpet",
-    "b": "upgrade_veil_walker",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_veil_walker"
-   },
-   {
-    "a": "upgrade_magic_carpet",
-    "b": "upgrade_phantom_strike",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_phantom_strike"
+    "rarer": null
    },
    {
     "a": "upgrade_health_nova",
     "b": "upgrade_veil_walker",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_veil_walker"
+    "rarer": null
    },
    {
     "a": "upgrade_health_nova",
     "b": "upgrade_phantom_strike",
     "purpose": "rare-contenders",
     "rarer": "upgrade_phantom_strike"
+   },
+   {
+    "a": "upgrade_pristine_emblem",
+    "b": "upgrade_veil_walker",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_pristine_emblem",
+    "b": "upgrade_phantom_strike",
+    "purpose": "rare-contenders",
+    "rarer": null
    },
    {
     "a": "upgrade_veil_walker",
@@ -687,14 +693,14 @@
     "rarer": "upgrade_boundless_spirit"
    },
    {
-    "a": "upgrade_crackshot",
-    "b": "upgrade_healbane",
+    "a": "upgrade_health_stealing_magic",
+    "b": "upgrade_infuser",
     "purpose": "tier-boundary",
     "rarer": null
    },
    {
-    "a": "upgrade_absorbing_armor",
-    "b": "upgrade_rupture",
+    "a": "upgrade_damage_recycler",
+    "b": "upgrade_absorbing_armor",
     "purpose": "tier-boundary",
     "rarer": null
    },
@@ -702,17 +708,11 @@
     "a": "upgrade_phantom_strike",
     "b": "upgrade_veil_walker",
     "purpose": "review",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_absorbing_armor",
-    "b": "upgrade_crackshot",
-    "purpose": "review",
-    "rarer": "upgrade_absorbing_armor"
+    "rarer": "upgrade_phantom_strike"
    },
    {
     "a": "upgrade_crackshot",
-    "b": "upgrade_suppressor",
+    "b": "upgrade_boundless_spirit",
     "purpose": "review",
     "rarer": "upgrade_crackshot"
    }
@@ -722,22 +722,29 @@
     "name": "Phantom Strike",
     "compareWith": "Veil Walker",
     "claim": "should_be_more_obvious",
-    "reason": "Phantom Strike is a well-known, memorable item. The wiki lists only Spirit Power 8 as a minor secondary stat, but players know the item by name. Veil Walker is a lesser-known Tier 3 item with a small Spirit Power stat, so it is more likely to be forgotten here and should score at least as high as Phantom Strike.",
-    "outcome": "rejected-by-comparison"
-   },
-   {
-    "name": "Witchmail",
-    "compareWith": "Mystic Shot",
-    "claim": "should_be_more_obvious",
-    "reason": "Witchmail's Spirit Power 14 is among the larger flat values on any item, and it is a well-known Spirit-defence item. It is likely recalled about as readily as Mystic Shot, so it should not sit two tiers above it.",
+    "reason": "Phantom Strike is a well-known teleport item and a big-ticket purchase, so players recall it readily. Its Spirit Power 8 is a minor stat, but it is no rarer than Veil Walker, a niche stealth item whose stat line is just as unmemorable. Veil Walker or Counterspell is more likely to be the rarest answer.",
     "outcome": "rejected-by-comparison"
    },
    {
     "name": "Mystic Shot",
-    "compareWith": "Suppressor",
+    "compareWith": "Boundless Spirit",
+    "claim": "should_be_more_obvious",
+    "reason": "Mystic Shot is a cheap, commonly bought early Spirit-flavored weapon item that players associate with Spirit damage. It is as easy to name as Boundless Spirit, which is a late-game item. It deserves 10-30 points on par with or below Boundless Spirit.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Magic Carpet",
+    "compareWith": "Counterspell",
+    "claim": "should_be_more_obvious",
+    "reason": "Magic Carpet is a distinctive, memorable item that players often buy, so it comes to mind more easily than Counterspell, which is a niche parry-based item. It should sit below Counterspell in obscurity.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Decay",
+    "compareWith": "Infuser",
     "claim": "should_be_more_obscure",
-    "reason": "Mystic Shot is a Weapon item whose main identity is its bonus Spirit Damage bullet, and its Spirit Power is only 7. It is not as strongly tied to this question as the dedicated Spirit items. It should be closer to Suppressor's tier than to the 30-point tier.",
-    "outcome": "applied"
+    "reason": "Decay is mostly thought of as an active health-percent DoT, not as a Spirit Power item, so players rarely recall it when asked about Spirit Power. Infuser is better known as a Spirit-boosting item. Decay should score higher than Infuser.",
+    "outcome": "ignored-invalid"
    }
   ]
  }

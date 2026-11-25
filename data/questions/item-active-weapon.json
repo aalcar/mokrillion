@@ -20,9 +20,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:04:10.868Z",
+ "generatedAt": "2026-11-25T04:37:07.541Z",
  "answers": [
   {
    "entityId": "upgrade_capacitor",
@@ -31,14 +31,14 @@
    "score": 10
   },
   {
-   "entityId": "upgrade_cloaking_device_active",
-   "name": "Shadow Weave",
+   "entityId": "upgrade_non_player_bonus_sacrifice",
+   "name": "Cultist Sacrifice",
    "rank": 2,
    "score": 30
   },
   {
-   "entityId": "upgrade_split_shot",
-   "name": "Split Shot",
+   "entityId": "upgrade_fleetfoot_boots",
+   "name": "Fleetfoot",
    "rank": 3,
    "score": 60
   },
@@ -49,31 +49,37 @@
    "score": 60
   },
   {
-   "entityId": "upgrade_non_player_bonus_sacrifice",
-   "name": "Cultist Sacrifice",
+   "entityId": "upgrade_split_shot",
+   "name": "Split Shot",
    "rank": 5,
    "score": 85
   },
   {
-   "entityId": "upgrade_fleetfoot_boots",
-   "name": "Fleetfoot",
+   "entityId": "upgrade_cloaking_device_active",
+   "name": "Shadow Weave",
    "rank": 6,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_dps_aura",
-   "name": "Heroic Aura",
-   "rank": 7,
    "score": 85
   },
   {
    "entityId": "upgrade_blood_tribute",
    "name": "Blood Tribute",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_dps_aura",
+   "name": "Heroic Aura",
    "rank": 8,
    "score": 100
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_blood_tribute",
@@ -96,7 +102,7 @@
     "popularityObscurity": 1,
     "spellingCost": 12,
     "spellingObscurity": 0.8571428571428571,
-    "key": 0.7728571428571429
+    "key": 0.8928571428571428
    },
    {
     "id": "upgrade_capacitor",
@@ -119,7 +125,7 @@
     "popularityObscurity": 0.2857142857142857,
     "spellingCost": 9,
     "spellingObscurity": 0.5,
-    "key": 0.2807142857142857
+    "key": 0.28928571428571426
    },
    {
     "id": "upgrade_cloaking_device_active",
@@ -142,7 +148,7 @@
     "popularityObscurity": 0.42857142857142855,
     "spellingCost": 11,
     "spellingObscurity": 0.7142857142857143,
-    "key": 0.30142857142857143
+    "key": 0.37857142857142856
    },
    {
     "id": "upgrade_dps_aura",
@@ -165,7 +171,7 @@
     "popularityObscurity": 0.5714285714285714,
     "spellingCost": 6,
     "spellingObscurity": 0.14285714285714285,
-    "key": 0.7857142857142857
+    "key": 0.657142857142857
    },
    {
     "id": "upgrade_fleetfoot_boots",
@@ -188,7 +194,7 @@
     "popularityObscurity": 0.14285714285714285,
     "spellingCost": 9,
     "spellingObscurity": 0.5,
-    "key": 0.45928571428571435
+    "key": 0.29642857142857143
    },
    {
     "id": "upgrade_non_player_bonus_sacrifice",
@@ -211,7 +217,7 @@
     "popularityObscurity": 0,
     "spellingCost": 7,
     "spellingObscurity": 0.2857142857142857,
-    "key": 0.45428571428571435
+    "key": 0.2142857142857143
    },
    {
     "id": "upgrade_split_shot",
@@ -234,7 +240,7 @@
     "popularityObscurity": 0.7142857142857143,
     "spellingCost": 5,
     "spellingObscurity": 0,
-    "key": 0.49
+    "key": 0.5928571428571429
    },
    {
     "id": "upgrade_thermal_detonator",
@@ -257,38 +263,32 @@
     "popularityObscurity": 0.8571428571428571,
     "spellingCost": 14,
     "spellingObscurity": 1,
-    "key": 0.45571428571428574
+    "key": 0.6785714285714286
    }
   ],
   "passAgreement": 0.6428571428571429,
   "orderBeforeRefinement": [
-   "upgrade_capacitor",
-   "upgrade_cloaking_device_active",
    "upgrade_non_player_bonus_sacrifice",
-   "upgrade_thermal_detonator",
+   "upgrade_capacitor",
    "upgrade_fleetfoot_boots",
+   "upgrade_cloaking_device_active",
    "upgrade_split_shot",
-   "upgrade_blood_tribute",
-   "upgrade_dps_aura"
+   "upgrade_dps_aura",
+   "upgrade_thermal_detonator",
+   "upgrade_blood_tribute"
   ],
   "pairwise": [
    {
-    "a": "upgrade_fleetfoot_boots",
-    "b": "upgrade_split_shot",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_fleetfoot_boots"
-   },
-   {
-    "a": "upgrade_fleetfoot_boots",
-    "b": "upgrade_blood_tribute",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_blood_tribute"
-   },
-   {
-    "a": "upgrade_fleetfoot_boots",
+    "a": "upgrade_split_shot",
     "b": "upgrade_dps_aura",
     "purpose": "rare-contenders",
     "rarer": "upgrade_dps_aura"
+   },
+   {
+    "a": "upgrade_split_shot",
+    "b": "upgrade_thermal_detonator",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_thermal_detonator"
    },
    {
     "a": "upgrade_split_shot",
@@ -297,63 +297,69 @@
     "rarer": "upgrade_blood_tribute"
    },
    {
-    "a": "upgrade_split_shot",
-    "b": "upgrade_dps_aura",
+    "a": "upgrade_dps_aura",
+    "b": "upgrade_thermal_detonator",
     "purpose": "rare-contenders",
     "rarer": "upgrade_dps_aura"
    },
    {
-    "a": "upgrade_blood_tribute",
-    "b": "upgrade_dps_aura",
+    "a": "upgrade_dps_aura",
+    "b": "upgrade_blood_tribute",
     "purpose": "rare-contenders",
     "rarer": "upgrade_dps_aura"
+   },
+   {
+    "a": "upgrade_thermal_detonator",
+    "b": "upgrade_blood_tribute",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_non_player_bonus_sacrifice",
+    "b": "upgrade_capacitor",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_non_player_bonus_sacrifice"
    },
    {
     "a": "upgrade_capacitor",
-    "b": "upgrade_cloaking_device_active",
+    "b": "upgrade_fleetfoot_boots",
     "purpose": "tier-boundary",
-    "rarer": "upgrade_cloaking_device_active"
-   },
-   {
-    "a": "upgrade_cloaking_device_active",
-    "b": "upgrade_non_player_bonus_sacrifice",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_non_player_bonus_sacrifice"
+    "rarer": "upgrade_fleetfoot_boots"
    },
    {
     "a": "upgrade_split_shot",
-    "b": "upgrade_non_player_bonus_sacrifice",
+    "b": "upgrade_fleetfoot_boots",
     "purpose": "review",
-    "rarer": "upgrade_non_player_bonus_sacrifice"
+    "rarer": null
    },
    {
-    "a": "upgrade_blood_tribute",
-    "b": "upgrade_thermal_detonator",
+    "a": "upgrade_thermal_detonator",
+    "b": "upgrade_cloaking_device_active",
     "purpose": "review",
-    "rarer": "upgrade_blood_tribute"
+    "rarer": "upgrade_cloaking_device_active"
    }
   ],
   "review": [
    {
     "name": "Split Shot",
-    "compareWith": "Cultist Sacrifice",
+    "compareWith": "Fleetfoot",
     "claim": "should_be_more_obvious",
-    "reason": "Split Shot is a common, cheap Tier 2 weapon item that players buy often. Its name is memorable and its active multishot is well known. Cultist Sacrifice is a niche pick, so Split Shot should score lower than it.",
+    "reason": "Split Shot is a very commonly bought Tier 2 weapon item whose multishot is clearly activated, so experienced players would name it readily. It should score closer to or lower than Fleetfoot, not 25 points above it.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Alchemical Fire",
+    "compareWith": "Shadow Weave",
+    "claim": "should_be_more_obvious",
+    "reason": "Alchemical Fire is a thrown flask, so it is an obvious active that players associate with clicking an ability. Its ability is more memorable than Shadow Weave's stealth, so it shouldn't be rated 25 points more obscure.",
     "outcome": "applied"
    },
    {
     "name": "Blood Tribute",
-    "compareWith": "Alchemical Fire",
+    "compareWith": "Heroic Aura",
     "claim": "should_be_more_obvious",
-    "reason": "Blood Tribute is a toggle with a distinctive health-for-fire-rate trade-off. Experienced players recall it readily as an item with an activatable effect. Placing it at 85 alongside forgettable items seems too obscure.",
-    "outcome": "rejected-by-comparison"
-   },
-   {
-    "name": "Heroic Aura",
-    "compareWith": "Blood Tribute",
-    "claim": "should_be_more_obvious",
-    "reason": "Heroic Aura is not clearly rarer than Blood Tribute or Fleetfoot. It is a recognizable team-support item whose name is easy to recall. Putting it alone at 100 points looks too harsh.",
-    "outcome": "applied-by-data"
+    "reason": "Blood Tribute is a distinctive toggle with a memorable name and mechanic, and is widely recognized as an active. Heroic Aura is the more forgettable item, so Blood Tribute should not share the 85 tier below it by so little.",
+    "outcome": "ignored-invalid"
    }
   ]
  }

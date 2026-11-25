@@ -35,9 +35,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:01:35.753Z",
+ "generatedAt": "2026-11-25T04:38:34.440Z",
  "answers": [
   {
    "entityId": "upgrade_improved_spirit",
@@ -52,44 +52,44 @@
    "score": 10
   },
   {
-   "entityId": "upgrade_health",
-   "name": "Extra Health",
+   "entityId": "upgrade_magic_burst",
+   "name": "Mystic Burst",
    "rank": 3,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_rapid_rounds",
-   "name": "Rapid Rounds",
-   "rank": 4,
    "score": 30
   },
   {
    "entityId": "upgrade_extra_charge",
    "name": "Extra Charge",
-   "rank": 5,
+   "rank": 4,
    "score": 30
-  },
-  {
-   "entityId": "upgrade_high_velocity_mag",
-   "name": "High-Velocity Rounds",
-   "rank": 6,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_magic_burst",
-   "name": "Mystic Burst",
-   "rank": 7,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_non_player_bonus",
-   "name": "Monster Rounds",
-   "rank": 8,
-   "score": 60
   },
   {
    "entityId": "upgrade_magic_reach",
    "name": "Mystic Expansion",
+   "rank": 5,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_rapid_rounds",
+   "name": "Rapid Rounds",
+   "rank": 6,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_endurance",
+   "name": "Extra Regen",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_high_velocity_mag",
+   "name": "High-Velocity Rounds",
+   "rank": 8,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_health",
+   "name": "Extra Health",
    "rank": 9,
    "score": 60
   },
@@ -100,26 +100,26 @@
    "score": 60
   },
   {
-   "entityId": "upgrade_endurance",
-   "name": "Extra Regen",
+   "entityId": "upgrade_non_player_bonus",
+   "name": "Monster Rounds",
    "rank": 11,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_grit",
+   "name": "Grit",
+   "rank": 12,
    "score": 60
   },
   {
    "entityId": "upgrade_clip_size",
    "name": "Extended Magazine",
-   "rank": 12,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_lifestrike_gauntlets",
-   "name": "Melee Lifesteal",
    "rank": 13,
    "score": 60
   },
   {
-   "entityId": "upgrade_headshot_booster",
-   "name": "Headshot Booster",
+   "entityId": "upgrade_medic_bullets",
+   "name": "Restorative Shot",
    "rank": 14,
    "score": 85
   },
@@ -130,26 +130,26 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_medic_bullets",
-   "name": "Restorative Shot",
+   "entityId": "upgrade_lifestrike_gauntlets",
+   "name": "Melee Lifesteal",
    "rank": 16,
    "score": 85
   },
   {
-   "entityId": "upgrade_health_stimpak",
-   "name": "Healing Rite",
+   "entityId": "upgrade_headshot_booster",
+   "name": "Headshot Booster",
    "rank": 17,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_grit",
-   "name": "Grit",
-   "rank": 18,
    "score": 85
   },
   {
    "entityId": "upgrade_acolytes_glove",
    "name": "Spirit Strike",
+   "rank": 18,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_health_stimpak",
+   "name": "Healing Rite",
    "rank": 19,
    "score": 85
   },
@@ -179,6 +179,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_acolytes_glove",
@@ -201,7 +207,7 @@
     "popularityObscurity": 0.5909090909090909,
     "spellingCost": 12,
     "spellingObscurity": 0.75,
-    "key": 0.7738636363636364
+    "key": 0.678409090909091
    },
    {
     "id": "upgrade_clip_size",
@@ -224,7 +230,7 @@
     "popularityObscurity": 0.7272727272727273,
     "spellingCost": 13,
     "spellingObscurity": 0.8863636363636364,
-    "key": 0.4502272727272728
+    "key": 0.6056818181818181
    },
    {
     "id": "upgrade_close_range",
@@ -247,7 +253,7 @@
     "popularityObscurity": 0.6363636363636364,
     "spellingCost": 13,
     "spellingObscurity": 0.8863636363636364,
-    "key": 0.5838636363636365
+    "key": 0.6193181818181818
    },
    {
     "id": "upgrade_endurance",
@@ -270,7 +276,7 @@
     "popularityObscurity": 0.3181818181818182,
     "spellingCost": 10,
     "spellingObscurity": 0.2727272727272727,
-    "key": 0.4409090909090909
+    "key": 0.37272727272727274
    },
    {
     "id": "upgrade_extra_charge",
@@ -293,7 +299,7 @@
     "popularityObscurity": 0.13636363636363635,
     "spellingCost": 11,
     "spellingObscurity": 0.4772727272727273,
-    "key": 0.29340909090909095
+    "key": 0.21704545454545454
    },
    {
     "id": "upgrade_goose_egg",
@@ -316,7 +322,7 @@
     "popularityObscurity": 1,
     "spellingCost": 3,
     "spellingObscurity": 0.022727272727272728,
-    "key": 0.8911363636363638
+    "key": 0.9238636363636363
    },
    {
     "id": "upgrade_grit",
@@ -339,7 +345,7 @@
     "popularityObscurity": 0.4090909090909091,
     "spellingCost": 4,
     "spellingObscurity": 0.09090909090909091,
-    "key": 0.6181818181818182
+    "key": 0.4954545454545455
    },
    {
     "id": "upgrade_headshot_booster",
@@ -362,7 +368,7 @@
     "popularityObscurity": 0.7727272727272727,
     "spellingCost": 15,
     "spellingObscurity": 1,
-    "key": 0.49909090909090914
+    "key": 0.6545454545454545
    },
    {
     "id": "upgrade_health",
@@ -385,7 +391,7 @@
     "popularityObscurity": 0.5,
     "spellingCost": 11,
     "spellingObscurity": 0.4772727272727273,
-    "key": 0.22386363636363638
+    "key": 0.37386363636363634
    },
    {
     "id": "upgrade_health_stimpak",
@@ -408,7 +414,7 @@
     "popularityObscurity": 0.8636363636363636,
     "spellingCost": 11,
     "spellingObscurity": 0.4772727272727273,
-    "key": 0.6093181818181819
+    "key": 0.7374999999999999
    },
    {
     "id": "upgrade_high_velocity_mag",
@@ -431,7 +437,7 @@
     "popularityObscurity": 0.36363636363636365,
     "spellingCost": 3,
     "spellingObscurity": 0.022727272727272728,
-    "key": 0.36659090909090913
+    "key": 0.35568181818181815
    },
    {
     "id": "upgrade_improved_spirit",
@@ -454,7 +460,7 @@
     "popularityObscurity": 0,
     "spellingCost": 11,
     "spellingObscurity": 0.4772727272727273,
-    "key": 0.048863636363636366
+    "key": 0.03522727272727273
    },
    {
     "id": "upgrade_improved_stamina",
@@ -477,7 +483,7 @@
     "popularityObscurity": 0.22727272727272727,
     "spellingCost": 12,
     "spellingObscurity": 0.75,
-    "key": 0.43840909090909097
+    "key": 0.3375
    },
    {
     "id": "upgrade_lifestrike_gauntlets",
@@ -500,7 +506,7 @@
     "popularityObscurity": 0.6818181818181818,
     "spellingCost": 14,
     "spellingObscurity": 0.9545454545454546,
-    "key": 0.5804545454545456
+    "key": 0.6431818181818181
    },
    {
     "id": "upgrade_magic_burst",
@@ -523,7 +529,7 @@
     "popularityObscurity": 0.045454545454545456,
     "spellingCost": 11,
     "spellingObscurity": 0.4772727272727273,
-    "key": 0.3220454545454545
+    "key": 0.18295454545454543
    },
    {
     "id": "upgrade_magic_reach",
@@ -546,7 +552,7 @@
     "popularityObscurity": 0.09090909090909091,
     "spellingCost": 9,
     "spellingObscurity": 0.22727272727272727,
-    "key": 0.39272727272727276
+    "key": 0.2318181818181818
    },
    {
     "id": "upgrade_medic_bullets",
@@ -569,7 +575,7 @@
     "popularityObscurity": 0.5454545454545454,
     "spellingCost": 12,
     "spellingObscurity": 0.75,
-    "key": 0.5856818181818182
+    "key": 0.5693181818181818
    },
    {
     "id": "upgrade_melee_rebuttal",
@@ -592,7 +598,7 @@
     "popularityObscurity": 0.9090909090909091,
     "spellingCost": 8,
     "spellingObscurity": 0.18181818181818182,
-    "key": 0.8227272727272728
+    "key": 0.85
    },
    {
     "id": "upgrade_mystic_regeneration",
@@ -615,7 +621,7 @@
     "popularityObscurity": 0.8181818181818182,
     "spellingCost": 11,
     "spellingObscurity": 0.4772727272727273,
-    "key": 0.7761363636363637
+    "key": 0.7897727272727273
    },
    {
     "id": "upgrade_non_player_bonus",
@@ -638,7 +644,7 @@
     "popularityObscurity": 0.45454545454545453,
     "spellingCost": 7,
     "spellingObscurity": 0.13636363636363635,
-    "key": 0.3786363636363636
+    "key": 0.4113636363636364
    },
    {
     "id": "upgrade_rapid_rounds",
@@ -661,7 +667,7 @@
     "popularityObscurity": 0.2727272727272727,
     "spellingCost": 11,
     "spellingObscurity": 0.4772727272727273,
-    "key": 0.28795454545454546
+    "key": 0.2852272727272727
    },
    {
     "id": "upgrade_sprint_booster",
@@ -684,7 +690,7 @@
     "popularityObscurity": 0.18181818181818182,
     "spellingCost": 11,
     "spellingObscurity": 0.4772727272727273,
-    "key": 0.1815909090909091
+    "key": 0.18977272727272726
    },
    {
     "id": "upgrade_withering_whip",
@@ -707,30 +713,30 @@
     "popularityObscurity": 0.9545454545454546,
     "spellingCost": 12,
     "spellingObscurity": 0.75,
-    "key": 0.9343181818181818
+    "key": 0.9397727272727273
    }
   ],
   "passAgreement": 0.5652173913043479,
   "orderBeforeRefinement": [
    "upgrade_improved_spirit",
-   "upgrade_sprint_booster",
-   "upgrade_health",
-   "upgrade_rapid_rounds",
-   "upgrade_extra_charge",
    "upgrade_magic_burst",
-   "upgrade_high_velocity_mag",
-   "upgrade_non_player_bonus",
+   "upgrade_sprint_booster",
+   "upgrade_extra_charge",
    "upgrade_magic_reach",
+   "upgrade_rapid_rounds",
    "upgrade_improved_stamina",
+   "upgrade_high_velocity_mag",
    "upgrade_endurance",
-   "upgrade_clip_size",
-   "upgrade_headshot_booster",
-   "upgrade_lifestrike_gauntlets",
-   "upgrade_close_range",
-   "upgrade_medic_bullets",
-   "upgrade_health_stimpak",
+   "upgrade_health",
+   "upgrade_non_player_bonus",
    "upgrade_grit",
+   "upgrade_medic_bullets",
+   "upgrade_clip_size",
+   "upgrade_close_range",
+   "upgrade_lifestrike_gauntlets",
+   "upgrade_headshot_booster",
    "upgrade_acolytes_glove",
+   "upgrade_health_stimpak",
    "upgrade_mystic_regeneration",
    "upgrade_melee_rebuttal",
    "upgrade_goose_egg",
@@ -774,70 +780,83 @@
     "rarer": "upgrade_withering_whip"
    },
    {
-    "a": "upgrade_sprint_booster",
-    "b": "upgrade_health",
-    "purpose": "tier-boundary",
-    "rarer": null
-   },
-   {
     "a": "upgrade_magic_burst",
-    "b": "upgrade_high_velocity_mag",
+    "b": "upgrade_sprint_booster",
     "purpose": "tier-boundary",
     "rarer": "upgrade_magic_burst"
    },
    {
-    "a": "upgrade_headshot_booster",
-    "b": "upgrade_lifestrike_gauntlets",
+    "a": "upgrade_rapid_rounds",
+    "b": "upgrade_improved_stamina",
     "purpose": "tier-boundary",
-    "rarer": "upgrade_headshot_booster"
+    "rarer": null
+   },
+   {
+    "a": "upgrade_medic_bullets",
+    "b": "upgrade_clip_size",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_medic_bullets"
+   },
+   {
+    "a": "upgrade_health",
+    "b": "upgrade_improved_stamina",
+    "purpose": "review",
+    "rarer": "upgrade_improved_stamina"
+   },
+   {
+    "a": "upgrade_endurance",
+    "b": "upgrade_health",
+    "purpose": "review",
+    "rarer": "upgrade_endurance"
+   },
+   {
+    "a": "upgrade_goose_egg",
+    "b": "upgrade_mystic_regeneration",
+    "purpose": "review",
+    "rarer": "upgrade_goose_egg"
    },
    {
     "a": "upgrade_withering_whip",
-    "b": "upgrade_goose_egg",
+    "b": "upgrade_melee_rebuttal",
     "purpose": "review",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_lifestrike_gauntlets",
-    "b": "upgrade_improved_stamina",
-    "purpose": "review",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_health_stimpak",
-    "b": "upgrade_magic_reach",
-    "purpose": "review",
-    "rarer": null
+    "rarer": "upgrade_withering_whip"
    }
   ],
   "review": [
    {
-    "name": "Extra Charge",
+    "name": "Extra Health",
+    "compareWith": "Extra Stamina",
+    "claim": "should_be_more_obvious",
+    "reason": "Extra Health is one of the most commonly bought and recognized early items, and it is the first thing many players think of when asked about cheap Tier 1 items. It should score no worse than Extra Stamina, and arguably sits with Extra Spirit.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Extra Regen",
     "compareWith": "Extra Health",
     "claim": "should_be_more_obscure",
-    "reason": "Extra Health is the archetypal 'Extra X' item and is bought by nearly everyone early. Extra Charge is a niche pick that only certain spirit heroes with charged abilities buy, so it is recalled less readily and should score higher than Extra Health.",
-    "outcome": "ignored-invalid"
+    "reason": "Extra Regen is a minor, rarely prioritized item with plain stats and no distinctive mechanic. It is less likely to come to mind than Extra Health, so it should sit above it in obscurity rather than tie.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Golden Goose Egg",
+    "compareWith": "Mystic Regeneration",
+    "claim": "should_be_more_obvious",
+    "reason": "Golden Goose Egg has a memorable name and a unique soul-gaining effect, so players recall it far more readily than a generic item like Mystic Regeneration. It should not tie with the bland 85-point items.",
+    "outcome": "rejected-by-comparison"
    },
    {
     "name": "Rusted Barrel",
-    "compareWith": "Golden Goose Egg",
+    "compareWith": "Rebuttal",
     "claim": "should_be_more_obvious",
-    "reason": "Rusted Barrel is a well-known, frequently built active with a distinctive name and a clear fire-rate-reducing debuff that players buy against gun carries. It is no rarer than Golden Goose Egg, a joke-ish item with a memorable name, so it should not hold the unique top-rarity spot.",
+    "reason": "Rusted Barrel has a distinctive name and an active debuff that players run into often. It is not clearly rarer than Rebuttal or Melee Lifesteal, so the 100-point slot looks too extreme.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Melee Lifesteal",
-    "compareWith": "Extra Stamina",
-    "claim": "should_be_more_obvious",
-    "reason": "Melee Lifesteal is a commonly built vitality item for melee-oriented heroes and has a straightforward descriptive name. Extra Stamina is rarely thought of by players, so Melee Lifesteal should be rated at least as obvious.",
-    "outcome": "rejected-by-comparison"
-   },
-   {
-    "name": "Healing Rite",
-    "compareWith": "Mystic Expansion",
-    "claim": "should_be_more_obvious",
-    "reason": "Healing Rite is a popular, widely recognized active healing item, frequently bought for support play. It should be easier to recall than Mystic Expansion, which is more of a niche spirit pick.",
-    "outcome": "rejected-by-comparison"
+    "name": "Mystic Expansion",
+    "compareWith": "Mystic Burst",
+    "claim": "should_be_more_obscure",
+    "reason": "Mystic Expansion is a utility item with a less memorable effect and is bought less often than the other Tier 1 spirit items. It should be slightly rarer than Mystic Burst, which has a clearer identity.",
+    "outcome": "ignored-invalid"
    }
   ]
  }

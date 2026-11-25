@@ -18,9 +18,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:17:45.792Z",
+ "generatedAt": "2026-11-25T04:44:43.799Z",
  "answers": [
   {
    "entityId": "hero_chrono",
@@ -29,26 +29,26 @@
    "score": 10
   },
   {
-   "entityId": "hero_bookworm",
-   "name": "Paige",
+   "entityId": "hero_bebop",
+   "name": "Bebop",
    "rank": 2,
    "score": 30
   },
   {
-   "entityId": "hero_bebop",
-   "name": "Bebop",
-   "rank": 3,
-   "score": 60
-  },
-  {
    "entityId": "hero_synth",
    "name": "Pocket",
-   "rank": 4,
+   "rank": 3,
    "score": 60
   },
   {
    "entityId": "hero_viper",
    "name": "Vyper",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_bookworm",
+   "name": "Paige",
    "rank": 5,
    "score": 85
   },
@@ -60,6 +60,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_bebop",
@@ -82,7 +88,7 @@
     "popularityObscurity": 0,
     "spellingCost": 5,
     "spellingObscurity": 0.2,
-    "key": 0.42800000000000005
+    "key": 0.2
    },
    {
     "id": "hero_bookworm",
@@ -105,7 +111,7 @@
     "popularityObscurity": 0.4,
     "spellingCost": 5,
     "spellingObscurity": 0.2,
-    "key": 0.36800000000000005
+    "key": 0.38
    },
    {
     "id": "hero_chrono",
@@ -128,7 +134,7 @@
     "popularityObscurity": 0.2,
     "spellingCost": 7,
     "spellingObscurity": 1,
-    "key": 0.13
+    "key": 0.19
    },
    {
     "id": "hero_fencer",
@@ -151,7 +157,7 @@
     "popularityObscurity": 0.8,
     "spellingCost": 6,
     "spellingObscurity": 0.7,
-    "key": 0.8390000000000001
+    "key": 0.815
    },
    {
     "id": "hero_synth",
@@ -174,7 +180,7 @@
     "popularityObscurity": 0.6,
     "spellingCost": 6,
     "spellingObscurity": 0.7,
-    "key": 0.40700000000000003
+    "key": 0.515
    },
    {
     "id": "hero_viper",
@@ -197,30 +203,36 @@
     "popularityObscurity": 1,
     "spellingCost": 5,
     "spellingObscurity": 0.2,
-    "key": 0.8280000000000001
+    "key": 0.8999999999999999
    }
   ],
   "passAgreement": 0.7333333333333333,
   "orderBeforeRefinement": [
    "hero_chrono",
+   "hero_bebop",
    "hero_bookworm",
    "hero_synth",
-   "hero_bebop",
-   "hero_viper",
-   "hero_fencer"
+   "hero_fencer",
+   "hero_viper"
   ],
   "pairwise": [
    {
-    "a": "hero_synth",
-    "b": "hero_bebop",
+    "a": "hero_bookworm",
+    "b": "hero_synth",
+    "purpose": "rare-contenders",
+    "rarer": "hero_bookworm"
+   },
+   {
+    "a": "hero_bookworm",
+    "b": "hero_fencer",
     "purpose": "rare-contenders",
     "rarer": null
    },
    {
-    "a": "hero_synth",
+    "a": "hero_bookworm",
     "b": "hero_viper",
     "purpose": "rare-contenders",
-    "rarer": "hero_viper"
+    "rarer": "hero_bookworm"
    },
    {
     "a": "hero_synth",
@@ -229,44 +241,57 @@
     "rarer": "hero_fencer"
    },
    {
-    "a": "hero_bebop",
+    "a": "hero_synth",
     "b": "hero_viper",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "hero_synth"
    },
    {
-    "a": "hero_bebop",
-    "b": "hero_fencer",
-    "purpose": "rare-contenders",
-    "rarer": "hero_fencer"
-   },
-   {
-    "a": "hero_viper",
-    "b": "hero_fencer",
+    "a": "hero_fencer",
+    "b": "hero_viper",
     "purpose": "rare-contenders",
     "rarer": "hero_fencer"
    },
    {
     "a": "hero_chrono",
-    "b": "hero_bookworm",
+    "b": "hero_bebop",
     "purpose": "tier-boundary",
-    "rarer": "hero_bookworm"
+    "rarer": "hero_bebop"
+   },
+   {
+    "a": "hero_fencer",
+    "b": "hero_bookworm",
+    "purpose": "review",
+    "rarer": "hero_fencer"
+   },
+   {
+    "a": "hero_bebop",
+    "b": "hero_chrono",
+    "purpose": "review",
+    "rarer": "hero_bebop"
    }
   ],
   "review": [
    {
-    "name": "Bebop",
-    "compareWith": "Pocket",
+    "name": "Apollo",
+    "compareWith": "Paige",
     "claim": "should_be_more_obvious",
-    "reason": "Bebop is a long-standing, very recognizable hero, and the P in his name is not hidden. It sits in the middle of the word, like the P in Paradox, and in his weapon Humble Pie. Pocket is a newer hero whose name starts with P, so it should come to mind first. But the ranking only needs Bebop to be at least as obvious as Pocket, and a tie or slight swap is plausible. A 60 for both is probably too obscure for Bebop.",
-    "outcome": "applied-by-data"
+    "reason": "Apollo is a long-standing, well-known hero with a prominent name, and the letter P sits in the first syllable, so it should come to mind more readily than the 100-point slot implies. Paige has a similar profile as a healer and is arguably the more forgettable. Apollo and Paige should swap, with Paige as the rarest answer.",
+    "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Vyper",
-    "compareWith": "Apollo",
+    "name": "Bebop",
+    "compareWith": "Paradox",
     "claim": "should_be_more_obvious",
-    "reason": "Vyper has a P in the middle of its name and is spelled with a y, so the spelling cue is distinct and players scanning for P will pick it up. Apollo's P is also mid-word, but Apollo is less closely tied to the letter, so it is plausibly the rarer answer. The 85 vs 100 gap is questionable, but Apollo is correctly the most obscure.",
-    "outcome": "ignored-invalid"
+    "reason": "Bebop has two Ps in the name and is a very recognizable hero, so it is probably as easy to recall as Paradox. A 30 vs 10 gap is too large, since Bebop's name contains the letter twice and is very memorable.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Pocket",
+    "compareWith": "Vyper",
+    "claim": "should_be_more_obvious",
+    "reason": "Pocket starts with P, the first letter players will think of when scanning for P names, so it is more directly tied to this question than Vyper, where the P is in the middle. Pocket should be more obvious than Vyper, not tied with it.",
+    "outcome": "applied-by-data"
    }
   ]
  }

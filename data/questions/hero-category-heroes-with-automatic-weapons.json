@@ -43,9 +43,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:12:26.130Z",
+ "generatedAt": "2026-11-25T04:34:16.550Z",
  "answers": [
   {
    "entityId": "hero_haze",
@@ -66,20 +66,20 @@
    "score": 30
   },
   {
-   "entityId": "hero_ghost",
-   "name": "Lady Geist",
+   "entityId": "hero_forge",
+   "name": "McGinnis",
    "rank": 4,
    "score": 30
   },
   {
-   "entityId": "hero_bebop",
-   "name": "Bebop",
+   "entityId": "hero_ghost",
+   "name": "Lady Geist",
    "rank": 5,
    "score": 30
   },
   {
-   "entityId": "hero_forge",
-   "name": "McGinnis",
+   "entityId": "hero_viper",
+   "name": "Vyper",
    "rank": 6,
    "score": 30
   },
@@ -90,86 +90,86 @@
    "score": 30
   },
   {
-   "entityId": "hero_vampirebat",
-   "name": "Mina",
+   "entityId": "hero_bebop",
+   "name": "Bebop",
    "rank": 8,
    "score": 60
   },
   {
-   "entityId": "hero_bookworm",
-   "name": "Paige",
+   "entityId": "hero_warden",
+   "name": "Warden",
    "rank": 9,
-   "score": 60
-  },
-  {
-   "entityId": "hero_priest",
-   "name": "Venator",
-   "rank": 10,
    "score": 60
   },
   {
    "entityId": "hero_kelvin",
    "name": "Kelvin",
-   "rank": 11,
-   "score": 60
-  },
-  {
-   "entityId": "hero_punkgoat",
-   "name": "Billy",
-   "rank": 12,
-   "score": 60
-  },
-  {
-   "entityId": "hero_viper",
-   "name": "Vyper",
-   "rank": 13,
+   "rank": 10,
    "score": 60
   },
   {
    "entityId": "hero_frank",
    "name": "Victor",
-   "rank": 14,
+   "rank": 11,
    "score": 60
   },
   {
-   "entityId": "hero_tengu",
-   "name": "Ivy",
-   "rank": 15,
+   "entityId": "hero_vampirebat",
+   "name": "Mina",
+   "rank": 12,
+   "score": 60
+  },
+  {
+   "entityId": "hero_unicorn",
+   "name": "Celeste",
+   "rank": 13,
+   "score": 60
+  },
+  {
+   "entityId": "hero_bookworm",
+   "name": "Paige",
+   "rank": 14,
    "score": 60
   },
   {
    "entityId": "hero_deadpack",
    "name": "Deadman Danny",
+   "rank": 15,
+   "score": 60
+  },
+  {
+   "entityId": "hero_punkgoat",
+   "name": "Billy",
    "rank": 16,
    "score": 60
   },
   {
-   "entityId": "hero_necro",
-   "name": "Graves",
+   "entityId": "hero_priest",
+   "name": "Venator",
    "rank": 17,
+   "score": 85
+  },
+  {
+   "entityId": "hero_tengu",
+   "name": "Ivy",
+   "rank": 18,
    "score": 85
   },
   {
    "entityId": "hero_nurse",
    "name": "Nurse Harrow",
-   "rank": 18,
-   "score": 85
-  },
-  {
-   "entityId": "hero_warden",
-   "name": "Warden",
    "rank": 19,
    "score": 85
   },
   {
-   "entityId": "hero_unicorn",
-   "name": "Celeste",
+   "entityId": "hero_mirage",
+   "name": "Mirage",
    "rank": 20,
    "score": 85
   },
   {
-   "entityId": "hero_astro",
-   "name": "Holliday",
+   "entityId": "hero_necro",
+   "name": "Graves",
    "rank": 21,
    "score": 85
   },
@@ -180,50 +180,50 @@
    "score": 85
   },
   {
+   "entityId": "hero_astro",
+   "name": "Holliday",
+   "rank": 23,
+   "score": 85
+  },
+  {
    "entityId": "hero_familiar",
    "name": "Rem",
-   "rank": 23,
+   "rank": 24,
    "score": 85
   },
   {
    "entityId": "hero_fencer",
    "name": "Apollo",
-   "rank": 24,
-   "score": 85
-  },
-  {
-   "entityId": "hero_mirage",
-   "name": "Mirage",
    "rank": 25,
-   "score": 85
-  },
-  {
-   "entityId": "hero_hornet",
-   "name": "Vindicta",
-   "rank": 26,
-   "score": 85
-  },
-  {
-   "entityId": "hero_werewolf",
-   "name": "Silver",
-   "rank": 27,
-   "score": 85
-  },
-  {
-   "entityId": "hero_viscous",
-   "name": "Viscous",
-   "rank": 28,
    "score": 85
   },
   {
    "entityId": "hero_doorman",
    "name": "The Doorman",
-   "rank": 29,
+   "rank": 26,
+   "score": 85
+  },
+  {
+   "entityId": "hero_viscous",
+   "name": "Viscous",
+   "rank": 27,
    "score": 85
   },
   {
    "entityId": "hero_orion",
    "name": "Grey Talon",
+   "rank": 28,
+   "score": 85
+  },
+  {
+   "entityId": "hero_werewolf",
+   "name": "Silver",
+   "rank": 29,
+   "score": 85
+  },
+  {
+   "entityId": "hero_hornet",
+   "name": "Vindicta",
    "rank": 30,
    "score": 85
   },
@@ -235,6 +235,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_artist",
@@ -257,7 +263,7 @@
     "popularityObscurity": 0.7,
     "spellingCost": 6,
     "spellingObscurity": 0.5833333333333334,
-    "key": 0.6281666666666665
+    "key": 0.5981666666666666
    },
    {
     "id": "hero_astro",
@@ -280,7 +286,7 @@
     "popularityObscurity": 0.4,
     "spellingCost": 8,
     "spellingObscurity": 0.9666666666666667,
-    "key": 0.5713333333333335
+    "key": 0.6363333333333334
    },
    {
     "id": "hero_bebop",
@@ -303,7 +309,7 @@
     "popularityObscurity": 0.03333333333333333,
     "spellingCost": 5,
     "spellingObscurity": 0.3,
-    "key": 0.31433333333333335
+    "key": 0.43600000000000005
    },
    {
     "id": "hero_bookworm",
@@ -326,7 +332,7 @@
     "popularityObscurity": 0.23333333333333334,
     "spellingCost": 5,
     "spellingObscurity": 0.3,
-    "key": 0.40166666666666667
+    "key": 0.4766666666666667
    },
    {
     "id": "hero_chessmaster",
@@ -349,7 +355,7 @@
     "popularityObscurity": 0.9666666666666667,
     "spellingCost": 7,
     "spellingObscurity": 0.8333333333333334,
-    "key": 0.8243333333333334
+    "key": 0.7626666666666666
    },
    {
     "id": "hero_deadpack",
@@ -372,7 +378,7 @@
     "popularityObscurity": 0.5666666666666667,
     "spellingCost": 5,
     "spellingObscurity": 0.3,
-    "key": 0.5093333333333334
+    "key": 0.4893333333333333
    },
    {
     "id": "hero_doorman",
@@ -395,7 +401,7 @@
     "popularityObscurity": 0.8666666666666667,
     "spellingCost": 7,
     "spellingObscurity": 0.8333333333333334,
-    "key": 0.7770000000000001
+    "key": 0.737
    },
    {
     "id": "hero_dynamo",
@@ -418,7 +424,7 @@
     "popularityObscurity": 0.4666666666666667,
     "spellingCost": 6,
     "spellingObscurity": 0.5833333333333334,
-    "key": 0.3478333333333333
+    "key": 0.2911666666666667
    },
    {
     "id": "hero_familiar",
@@ -441,7 +447,7 @@
     "popularityObscurity": 0.7666666666666667,
     "spellingCost": 3,
     "spellingObscurity": 0.03333333333333333,
-    "key": 0.6786666666666666
+    "key": 0.6553333333333333
    },
    {
     "id": "hero_fencer",
@@ -464,7 +470,7 @@
     "popularityObscurity": 0.6333333333333333,
     "spellingCost": 6,
     "spellingObscurity": 0.5833333333333334,
-    "key": 0.6821666666666668
+    "key": 0.7055000000000001
    },
    {
     "id": "hero_forge",
@@ -487,7 +493,7 @@
     "popularityObscurity": 0.9,
     "spellingCost": 3,
     "spellingObscurity": 0.03333333333333333,
-    "key": 0.391
+    "key": 0.17933333333333334
    },
    {
     "id": "hero_frank",
@@ -510,7 +516,7 @@
     "popularityObscurity": 0.5333333333333333,
     "spellingCost": 6,
     "spellingObscurity": 0.5833333333333334,
-    "key": 0.4698333333333333
+    "key": 0.43983333333333335
    },
    {
     "id": "hero_ghost",
@@ -533,7 +539,7 @@
     "popularityObscurity": 0.16666666666666666,
     "spellingCost": 4,
     "spellingObscurity": 0.13333333333333333,
-    "key": 0.2346666666666667
+    "key": 0.26633333333333337
    },
    {
     "id": "hero_haze",
@@ -556,7 +562,7 @@
     "popularityObscurity": 0,
     "spellingCost": 4,
     "spellingObscurity": 0.13333333333333333,
-    "key": 0.010333333333333333
+    "key": 0.012
    },
    {
     "id": "hero_hornet",
@@ -579,7 +585,7 @@
     "popularityObscurity": 0.3333333333333333,
     "spellingCost": 8,
     "spellingObscurity": 0.9666666666666667,
-    "key": 0.7133333333333334
+    "key": 0.8716666666666668
    },
    {
     "id": "hero_inferno",
@@ -602,7 +608,7 @@
     "popularityObscurity": 0.1,
     "spellingCost": 8,
     "spellingObscurity": 0.9666666666666667,
-    "key": 0.14700000000000002
+    "key": 0.14866666666666667
    },
    {
     "id": "hero_kelvin",
@@ -625,7 +631,7 @@
     "popularityObscurity": 0.5,
     "spellingCost": 6,
     "spellingObscurity": 0.5833333333333334,
-    "key": 0.44183333333333336
+    "key": 0.41350000000000003
    },
    {
     "id": "hero_mirage",
@@ -648,7 +654,7 @@
     "popularityObscurity": 1,
     "spellingCost": 6,
     "spellingObscurity": 0.5833333333333334,
-    "key": 0.7005000000000001
+    "key": 0.5738333333333334
    },
    {
     "id": "hero_necro",
@@ -671,7 +677,7 @@
     "popularityObscurity": 0.26666666666666666,
     "spellingCost": 6,
     "spellingObscurity": 0.5833333333333334,
-    "key": 0.4915000000000001
+    "key": 0.5865000000000001
    },
    {
     "id": "hero_nurse",
@@ -694,7 +700,7 @@
     "popularityObscurity": 0.43333333333333335,
     "spellingCost": 5,
     "spellingObscurity": 0.3,
-    "key": 0.5146666666666666
+    "key": 0.5546666666666666
    },
    {
     "id": "hero_orion",
@@ -717,7 +723,7 @@
     "popularityObscurity": 0.6,
     "spellingCost": 5,
     "spellingObscurity": 0.3,
-    "key": 0.7866666666666666
+    "key": 0.8783333333333333
    },
    {
     "id": "hero_priest",
@@ -740,7 +746,7 @@
     "popularityObscurity": 0.13333333333333333,
     "spellingCost": 7,
     "spellingObscurity": 0.8333333333333334,
-    "key": 0.41766666666666674
+    "key": 0.531
    },
    {
     "id": "hero_punkgoat",
@@ -763,7 +769,7 @@
     "popularityObscurity": 0.3,
     "spellingCost": 5,
     "spellingObscurity": 0.3,
-    "key": 0.454
+    "key": 0.524
    },
    {
     "id": "hero_tengu",
@@ -786,7 +792,7 @@
     "popularityObscurity": 0.36666666666666664,
     "spellingCost": 3,
     "spellingObscurity": 0.03333333333333333,
-    "key": 0.47833333333333333
+    "key": 0.5366666666666666
    },
    {
     "id": "hero_unicorn",
@@ -809,7 +815,7 @@
     "popularityObscurity": 0.7333333333333333,
     "spellingCost": 7,
     "spellingObscurity": 0.8333333333333334,
-    "key": 0.544
+    "key": 0.4556666666666667
    },
    {
     "id": "hero_vampirebat",
@@ -832,7 +838,7 @@
     "popularityObscurity": 0.2,
     "spellingCost": 4,
     "spellingObscurity": 0.13333333333333333,
-    "key": 0.3726666666666667
+    "key": 0.45266666666666666
    },
    {
     "id": "hero_viper",
@@ -855,7 +861,7 @@
     "popularityObscurity": 0.9333333333333333,
     "spellingCost": 5,
     "spellingObscurity": 0.3,
-    "key": 0.4653333333333334
+    "key": 0.267
    },
    {
     "id": "hero_viscous",
@@ -878,7 +884,7 @@
     "popularityObscurity": 0.8333333333333334,
     "spellingCost": 7,
     "spellingObscurity": 0.8333333333333334,
-    "key": 0.7783333333333333
+    "key": 0.7533333333333333
    },
    {
     "id": "hero_warden",
@@ -901,7 +907,7 @@
     "popularityObscurity": 0.8,
     "spellingCost": 6,
     "spellingObscurity": 0.5833333333333334,
-    "key": 0.5398333333333334
+    "key": 0.4265
    },
    {
     "id": "hero_werewolf",
@@ -924,7 +930,7 @@
     "popularityObscurity": 0.6666666666666666,
     "spellingCost": 6,
     "spellingObscurity": 0.5833333333333334,
-    "key": 0.7358333333333333
+    "key": 0.7691666666666668
    },
    {
     "id": "hero_wraith",
@@ -947,7 +953,7 @@
     "popularityObscurity": 0.06666666666666667,
     "spellingCost": 6,
     "spellingObscurity": 0.5833333333333334,
-    "key": 0.07783333333333334
+    "key": 0.07116666666666667
    }
   ],
   "passAgreement": 0.4924731182795699,
@@ -955,69 +961,69 @@
    "hero_haze",
    "hero_wraith",
    "hero_inferno",
-   "hero_ghost",
-   "hero_bebop",
-   "hero_dynamo",
-   "hero_vampirebat",
    "hero_forge",
-   "hero_bookworm",
-   "hero_priest",
-   "hero_kelvin",
-   "hero_punkgoat",
+   "hero_ghost",
    "hero_viper",
-   "hero_frank",
-   "hero_tengu",
-   "hero_necro",
-   "hero_deadpack",
-   "hero_nurse",
+   "hero_dynamo",
+   "hero_kelvin",
    "hero_warden",
+   "hero_bebop",
+   "hero_frank",
+   "hero_vampirebat",
    "hero_unicorn",
-   "hero_astro",
+   "hero_bookworm",
+   "hero_deadpack",
+   "hero_punkgoat",
+   "hero_priest",
+   "hero_tengu",
+   "hero_nurse",
+   "hero_mirage",
+   "hero_necro",
    "hero_artist",
+   "hero_astro",
    "hero_familiar",
    "hero_fencer",
-   "hero_mirage",
-   "hero_hornet",
-   "hero_werewolf",
    "hero_doorman",
    "hero_viscous",
-   "hero_orion",
-   "hero_chessmaster"
+   "hero_chessmaster",
+   "hero_werewolf",
+   "hero_hornet",
+   "hero_orion"
   ],
   "pairwise": [
    {
-    "a": "hero_doorman",
-    "b": "hero_viscous",
-    "purpose": "rare-contenders",
-    "rarer": "hero_doorman"
-   },
-   {
-    "a": "hero_doorman",
-    "b": "hero_orion",
-    "purpose": "rare-contenders",
-    "rarer": "hero_orion"
-   },
-   {
-    "a": "hero_doorman",
-    "b": "hero_chessmaster",
+    "a": "hero_chessmaster",
+    "b": "hero_werewolf",
     "purpose": "rare-contenders",
     "rarer": null
    },
    {
-    "a": "hero_viscous",
+    "a": "hero_chessmaster",
+    "b": "hero_hornet",
+    "purpose": "rare-contenders",
+    "rarer": "hero_hornet"
+   },
+   {
+    "a": "hero_chessmaster",
     "b": "hero_orion",
     "purpose": "rare-contenders",
     "rarer": "hero_orion"
    },
    {
-    "a": "hero_viscous",
-    "b": "hero_chessmaster",
+    "a": "hero_werewolf",
+    "b": "hero_hornet",
     "purpose": "rare-contenders",
-    "rarer": "hero_chessmaster"
+    "rarer": "hero_hornet"
    },
    {
-    "a": "hero_orion",
-    "b": "hero_chessmaster",
+    "a": "hero_werewolf",
+    "b": "hero_orion",
+    "purpose": "rare-contenders",
+    "rarer": "hero_orion"
+   },
+   {
+    "a": "hero_hornet",
+    "b": "hero_orion",
     "purpose": "rare-contenders",
     "rarer": "hero_orion"
    },
@@ -1028,77 +1034,46 @@
     "rarer": "hero_inferno"
    },
    {
-    "a": "hero_vampirebat",
-    "b": "hero_forge",
-    "purpose": "tier-boundary",
-    "rarer": "hero_vampirebat"
-   },
-   {
-    "a": "hero_necro",
-    "b": "hero_deadpack",
-    "purpose": "tier-boundary",
-    "rarer": "hero_necro"
-   },
-   {
-    "a": "hero_hornet",
-    "b": "hero_orion",
-    "purpose": "review",
-    "rarer": "hero_orion"
-   },
-   {
-    "a": "hero_viper",
-    "b": "hero_haze",
-    "purpose": "review",
-    "rarer": "hero_viper"
-   },
-   {
-    "a": "hero_inferno",
-    "b": "hero_bebop",
-    "purpose": "review",
-    "rarer": "hero_bebop"
-   },
-   {
     "a": "hero_dynamo",
-    "b": "hero_forge",
-    "purpose": "review",
-    "rarer": "hero_dynamo"
+    "b": "hero_kelvin",
+    "purpose": "tier-boundary",
+    "rarer": "hero_kelvin"
+   },
+   {
+    "a": "hero_punkgoat",
+    "b": "hero_priest",
+    "purpose": "tier-boundary",
+    "rarer": null
    }
   ],
   "review": [
    {
+    "name": "McGinnis",
+    "compareWith": "Dynamo",
+    "claim": "should_be_more_obvious",
+    "reason": "McGinnis's minigun-style gun spins up and increases fire rate, which is the strongest link to a fully automatic weapon. Dynamo's Vonnegun is not known for being automatic, so he should not sit at the same tier.",
+    "outcome": "ignored-invalid"
+   },
+   {
     "name": "Vindicta",
-    "compareWith": "Grey Talon",
+    "compareWith": "Infernus",
     "claim": "should_be_more_obscure",
-    "reason": "Vindicta is a bolt-action sniper, the opposite of a fully automatic weapon, so few players would name her here. She should score at least as high as Grey Talon, who is similarly semi-auto.",
-    "outcome": "rejected-by-comparison"
+    "reason": "Vindicta is a sniper-style hero known for slow precision shots, and players link her to the opposite of full auto. She should be rarer than Infernus, who has a standard automatic weapon.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Bebop",
+    "compareWith": "Kelvin",
+    "claim": "should_be_more_obvious",
+    "reason": "Bebop's beam weapon fires continuously with no bullet travel, so players may think of it as automatic. It should score lower than Kelvin.",
+    "outcome": "applied-by-data"
    },
    {
     "name": "Grey Talon",
     "compareWith": "Solomon",
     "claim": "should_be_more_obvious",
-    "reason": "Grey Talon is a very well-known hero and a bow user, so he is not specifically rarer than other non-automatic picks. A 100-point slot above Solomon and Viscous is not justified.",
+    "reason": "Grey Talon is a bow user, so a fully automatic weapon is clearly the opposite of what he is known for. He is not rarer than Solomon, who is hard to place and easy to forget. Grey Talon should be swapped with Solomon as the 100-point answer.",
     "outcome": "applied-by-data"
-   },
-   {
-    "name": "Vyper",
-    "compareWith": "Haze",
-    "claim": "should_be_more_obvious",
-    "reason": "The Rattler is an SMG-style rapid-fire weapon, so Vyper is a reasonably plausible answer. She is more likely to come to mind than the 60-point group around Ivy and Victor suggests.",
-    "outcome": "rejected-by-comparison"
-   },
-   {
-    "name": "Infernus",
-    "compareWith": "Bebop",
-    "claim": "should_be_more_obscure",
-    "reason": "Infernus is known for flame abilities and a basic rifle-style gun, not for being automatic. He should not sit at 30 alongside McGinnis, whose spin-up gun is distinctly automatic.",
-    "outcome": "rejected-by-comparison"
-   },
-   {
-    "name": "Dynamo",
-    "compareWith": "McGinnis",
-    "claim": "should_be_more_obscure",
-    "reason": "Dynamo is a healer known for Singularity and has a shotgun-like weapon. Few players would name him for a fully automatic gun, so 30 is too obvious.",
-    "outcome": "applied"
    }
   ]
  }

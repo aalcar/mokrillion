@@ -23,9 +23,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
- "model": "cache only",
- "generatedAt": "2026-11-25T04:12:46.868Z",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:34:45.835Z",
  "answers": [
   {
    "entityId": "hero_haze",
@@ -34,26 +34,26 @@
    "score": 10
   },
   {
+   "entityId": "hero_nano",
+   "name": "Calico",
+   "rank": 2,
+   "score": 30
+  },
+  {
    "entityId": "hero_vampirebat",
    "name": "Mina",
-   "rank": 2,
+   "rank": 3,
    "score": 30
   },
   {
    "entityId": "hero_astro",
    "name": "Holliday",
-   "rank": 3,
-   "score": 30
-  },
-  {
-   "entityId": "hero_chrono",
-   "name": "Paradox",
    "rank": 4,
    "score": 60
   },
   {
-   "entityId": "hero_nano",
-   "name": "Calico",
+   "entityId": "hero_chrono",
+   "name": "Paradox",
    "rank": 5,
    "score": 60
   },
@@ -76,8 +76,8 @@
    "score": 85
   },
   {
-   "entityId": "hero_doorman",
-   "name": "The Doorman",
+   "entityId": "hero_orion",
+   "name": "Grey Talon",
    "rank": 9,
    "score": 85
   },
@@ -88,13 +88,19 @@
    "score": 85
   },
   {
-   "entityId": "hero_orion",
-   "name": "Grey Talon",
+   "entityId": "hero_doorman",
+   "name": "The Doorman",
    "rank": 11,
    "score": 100
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_artist",
@@ -117,7 +123,7 @@
     "popularityObscurity": 0.8,
     "spellingCost": 6,
     "spellingObscurity": 0.55,
-    "key": 0.5675000000000001
+    "key": 0.4675000000000001
    },
    {
     "id": "hero_astro",
@@ -140,7 +146,7 @@
     "popularityObscurity": 0.4,
     "spellingCost": 8,
     "spellingObscurity": 1,
-    "key": 0.342
+    "key": 0.302
    },
    {
     "id": "hero_chrono",
@@ -163,7 +169,7 @@
     "popularityObscurity": 0.1,
     "spellingCost": 7,
     "spellingObscurity": 0.8,
-    "key": 0.3440000000000001
+    "key": 0.43900000000000006
    },
    {
     "id": "hero_deadpack",
@@ -186,7 +192,7 @@
     "popularityObscurity": 0.5,
     "spellingCost": 5,
     "spellingObscurity": 0.35,
-    "key": 0.6135000000000002
+    "key": 0.6685
    },
    {
     "id": "hero_doorman",
@@ -209,7 +215,7 @@
     "popularityObscurity": 1,
     "spellingCost": 7,
     "spellingObscurity": 0.8,
-    "key": 0.9680000000000001
+    "key": 0.9580000000000001
    },
    {
     "id": "hero_haze",
@@ -255,7 +261,7 @@
     "popularityObscurity": 0.7,
     "spellingCost": 6,
     "spellingObscurity": 0.55,
-    "key": 0.37349999999999994
+    "key": 0.22849999999999998
    },
    {
     "id": "hero_orion",
@@ -278,7 +284,7 @@
     "popularityObscurity": 0.6,
     "spellingCost": 5,
     "spellingObscurity": 0.35,
-    "key": 0.7085000000000001
+    "key": 0.7635000000000001
    },
    {
     "id": "hero_tengu",
@@ -301,7 +307,7 @@
     "popularityObscurity": 0.3,
     "spellingCost": 3,
     "spellingObscurity": 0,
-    "key": 0.593
+    "key": 0.7330000000000001
    },
    {
     "id": "hero_unicorn",
@@ -324,7 +330,7 @@
     "popularityObscurity": 0.9,
     "spellingCost": 7,
     "spellingObscurity": 0.8,
-    "key": 0.7410000000000001
+    "key": 0.671
    },
    {
     "id": "hero_vampirebat",
@@ -347,51 +353,33 @@
     "popularityObscurity": 0.2,
     "spellingCost": 4,
     "spellingObscurity": 0.15,
-    "key": 0.24150000000000002
+    "key": 0.26149999999999995
    }
   ],
   "passAgreement": 0.7890909090909091,
   "orderBeforeRefinement": [
    "hero_haze",
+   "hero_nano",
    "hero_vampirebat",
    "hero_astro",
    "hero_chrono",
-   "hero_nano",
    "hero_artist",
-   "hero_tengu",
    "hero_deadpack",
-   "hero_orion",
    "hero_unicorn",
+   "hero_tengu",
+   "hero_orion",
    "hero_doorman"
   ],
   "pairwise": [
    {
-    "a": "hero_deadpack",
+    "a": "hero_unicorn",
+    "b": "hero_tengu",
+    "purpose": "rare-contenders",
+    "rarer": "hero_tengu"
+   },
+   {
+    "a": "hero_unicorn",
     "b": "hero_orion",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_deadpack",
-    "b": "hero_unicorn",
-    "purpose": "rare-contenders",
-    "rarer": "hero_deadpack"
-   },
-   {
-    "a": "hero_deadpack",
-    "b": "hero_doorman",
-    "purpose": "rare-contenders",
-    "rarer": "hero_deadpack"
-   },
-   {
-    "a": "hero_orion",
-    "b": "hero_unicorn",
-    "purpose": "rare-contenders",
-    "rarer": "hero_orion"
-   },
-   {
-    "a": "hero_orion",
-    "b": "hero_doorman",
     "purpose": "rare-contenders",
     "rarer": "hero_orion"
    },
@@ -402,63 +390,69 @@
     "rarer": "hero_doorman"
    },
    {
-    "a": "hero_haze",
-    "b": "hero_vampirebat",
-    "purpose": "tier-boundary",
-    "rarer": "hero_vampirebat"
+    "a": "hero_tengu",
+    "b": "hero_orion",
+    "purpose": "rare-contenders",
+    "rarer": "hero_tengu"
    },
    {
-    "a": "hero_astro",
-    "b": "hero_chrono",
-    "purpose": "tier-boundary",
+    "a": "hero_tengu",
+    "b": "hero_doorman",
+    "purpose": "rare-contenders",
     "rarer": null
    },
    {
-    "a": "hero_artist",
-    "b": "hero_tengu",
-    "purpose": "tier-boundary",
-    "rarer": null
+    "a": "hero_orion",
+    "b": "hero_doorman",
+    "purpose": "rare-contenders",
+    "rarer": "hero_doorman"
    },
    {
     "a": "hero_haze",
-    "b": "hero_vampirebat",
-    "purpose": "review",
-    "rarer": "hero_vampirebat"
+    "b": "hero_nano",
+    "purpose": "tier-boundary",
+    "rarer": null
    },
    {
     "a": "hero_vampirebat",
-    "b": "hero_haze",
-    "purpose": "review",
-    "rarer": "hero_vampirebat"
+    "b": "hero_astro",
+    "purpose": "tier-boundary",
+    "rarer": "hero_astro"
    },
    {
-    "a": "hero_unicorn",
-    "b": "hero_chrono",
+    "a": "hero_artist",
+    "b": "hero_deadpack",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "hero_deadpack",
+    "b": "hero_tengu",
     "purpose": "review",
-    "rarer": "hero_unicorn"
+    "rarer": "hero_deadpack"
    }
   ],
   "review": [
    {
-    "name": "Haze",
-    "compareWith": "Mina",
-    "claim": "should_be_more_obscure",
-    "reason": "Haze's Bullet Dance and Smoke Bomb are about stealth and damage, and she has no famously fast dash. Mina has a strong association with a fast, mobile dash, so she is the more natural first answer, and Haze at 10 points looks too obvious for this question.",
-    "outcome": "rejected-by-comparison"
-   },
-   {
-    "name": "Mina",
-    "compareWith": "Haze",
-    "claim": "should_be_more_obvious",
-    "reason": "Mina is a mobile mystic whose dash and movement are widely discussed, so many players would name her first. She should be rated more obvious than Haze, who is better known for stealth and sleep.",
-    "outcome": "rejected-by-comparison"
-   },
-   {
     "name": "Celeste",
-    "compareWith": "Paradox",
+    "compareWith": "Grey Talon",
     "claim": "should_be_more_obvious",
-    "reason": "Celeste is a very popular hero. Paradox's mobility comes from Paradoxical Swap, which is a different kind of movement, so Paradox is not tied to dash speed any better than Celeste. Celeste at 85 and Paradox at 60 looks inverted or at least too far apart.",
-    "outcome": "rejected-by-comparison"
+    "reason": "Celeste is not a notable dash hero. Grey Talon has no real dash-speed association either, so both belong in the obscure tier. Celeste being tied with Grey Talon at 85 is fine, but Celeste's Dazzling Trick and general mobility kit make her slightly more likely to come to mind than Grey Talon.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Holliday",
+    "compareWith": "Violet",
+    "claim": "should_be_more_obvious",
+    "reason": "Holliday's kit is built around bouncing and mobility, and her Bounce Pad and Crackshot make her a common pick when players think of movement-focused heroes. She should sit closer to Calico and Mina than to Violet.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Deadman Danny",
+    "compareWith": "Ivy",
+    "claim": "should_be_more_obscure",
+    "reason": "Deadman Danny is a newer, lower-profile hero whose kit is not strongly tied to dashing. Ivy has Air Drop and some recognizable mobility, so Danny should be rarer than Ivy.",
+    "outcome": "applied"
    }
   ]
  }

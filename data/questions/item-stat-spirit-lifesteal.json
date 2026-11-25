@@ -17,9 +17,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:11:27.453Z",
+ "generatedAt": "2026-11-25T04:42:37.335Z",
  "answers": [
   {
    "entityId": "upgrade_health_stealing_magic",
@@ -40,19 +40,25 @@
    "score": 60
   },
   {
-   "entityId": "upgrade_tech_overflow",
-   "name": "Spiritual Overflow",
+   "entityId": "upgrade_mystic_reverb",
+   "name": "Mystic Reverb",
    "rank": 4,
    "score": 85
   },
   {
-   "entityId": "upgrade_mystic_reverb",
-   "name": "Mystic Reverb",
+   "entityId": "upgrade_tech_overflow",
+   "name": "Spiritual Overflow",
    "rank": 5,
    "score": 100
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_damage_recycler",
@@ -75,7 +81,7 @@
     "popularityObscurity": 0.75,
     "spellingCost": 5,
     "spellingObscurity": 0,
-    "key": 0.43750000000000006
+    "key": 0.3125
    },
    {
     "id": "upgrade_health_stealing_magic",
@@ -121,7 +127,7 @@
     "popularityObscurity": 1,
     "spellingCost": 7,
     "spellingObscurity": 0.5,
-    "key": 0.7000000000000001
+    "key": 0.5750000000000001
    },
    {
     "id": "upgrade_mystic_reverb",
@@ -144,7 +150,7 @@
     "popularityObscurity": 0.25,
     "spellingCost": 6,
     "spellingObscurity": 0.25,
-    "key": 0.6625
+    "key": 0.85
    },
    {
     "id": "upgrade_tech_overflow",
@@ -167,30 +173,18 @@
     "popularityObscurity": 0.5,
     "spellingCost": 8,
     "spellingObscurity": 0.75,
-    "key": 0.6500000000000001
+    "key": 0.7125
    }
   ],
   "passAgreement": 1,
   "orderBeforeRefinement": [
    "upgrade_health_stealing_magic",
    "upgrade_damage_recycler",
+   "upgrade_infuser",
    "upgrade_tech_overflow",
-   "upgrade_mystic_reverb",
-   "upgrade_infuser"
+   "upgrade_mystic_reverb"
   ],
   "pairwise": [
-   {
-    "a": "upgrade_damage_recycler",
-    "b": "upgrade_tech_overflow",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_tech_overflow"
-   },
-   {
-    "a": "upgrade_damage_recycler",
-    "b": "upgrade_mystic_reverb",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_mystic_reverb"
-   },
    {
     "a": "upgrade_damage_recycler",
     "b": "upgrade_infuser",
@@ -198,37 +192,43 @@
     "rarer": "upgrade_infuser"
    },
    {
-    "a": "upgrade_tech_overflow",
+    "a": "upgrade_damage_recycler",
+    "b": "upgrade_tech_overflow",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_tech_overflow"
+   },
+   {
+    "a": "upgrade_damage_recycler",
+    "b": "upgrade_mystic_reverb",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_mystic_reverb"
+   },
+   {
+    "a": "upgrade_infuser",
+    "b": "upgrade_tech_overflow",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_tech_overflow"
+   },
+   {
+    "a": "upgrade_infuser",
     "b": "upgrade_mystic_reverb",
     "purpose": "rare-contenders",
     "rarer": null
    },
    {
     "a": "upgrade_tech_overflow",
-    "b": "upgrade_infuser",
+    "b": "upgrade_mystic_reverb",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_tech_overflow"
-   },
-   {
-    "a": "upgrade_mystic_reverb",
-    "b": "upgrade_infuser",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_mystic_reverb"
-   },
-   {
-    "a": "upgrade_mystic_reverb",
-    "b": "upgrade_tech_overflow",
-    "purpose": "review",
     "rarer": null
    }
   ],
   "review": [
    {
     "name": "Mystic Reverb",
-    "compareWith": "Spiritual Overflow",
-    "claim": "should_be_more_obvious",
-    "reason": "Spiritual Overflow is a Spirit Lifesteal-themed item whose name and description say it gives Spirit Lifesteal, so players are likely to name it here. Mystic Reverb's lifesteal is a small stat on a mostly different item, so it is the rarer answer, and the 100-point slot is correct. The gap between Spiritual Overflow and Infuser is too large, though. Spiritual Overflow should sit closer to Infuser, around 70.",
-    "outcome": "rejected-by-comparison"
+    "compareWith": "Infuser",
+    "claim": "should_be_more_obscure",
+    "reason": "Mystic Reverb is mainly known as an imbue/slow item, and its Spirit Lifesteal is only 8 and tucked into an ability imbue. It is less likely to come to mind for a built-in lifesteal question than Infuser, whose name and stats are directly lifesteal-themed and which is built from Spirit Lifesteal. Infuser being rated 60 versus Reverb 85 is reasonable on that basis, but Infuser may be somewhat too obscure relative to Leech and so should sit closer to it.",
+    "outcome": "ignored-invalid"
    }
   ]
  }

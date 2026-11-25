@@ -19,9 +19,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:09:19.488Z",
+ "generatedAt": "2026-11-25T04:41:02.000Z",
  "answers": [
   {
    "entityId": "upgrade_guardian_ward",
@@ -30,20 +30,20 @@
    "score": 10
   },
   {
-   "entityId": "upgrade_target_stun",
-   "name": "Knockdown",
+   "entityId": "upgrade_rescue_beam",
+   "name": "Rescue Beam",
    "rank": 2,
    "score": 30
   },
   {
-   "entityId": "upgrade_divine_barrier",
-   "name": "Divine Barrier",
+   "entityId": "upgrade_target_stun",
+   "name": "Knockdown",
    "rank": 3,
    "score": 60
   },
   {
-   "entityId": "upgrade_rescue_beam",
-   "name": "Rescue Beam",
+   "entityId": "upgrade_divine_barrier",
+   "name": "Divine Barrier",
    "rank": 4,
    "score": 60
   },
@@ -67,6 +67,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_aoe_root",
@@ -89,7 +95,7 @@
     "popularityObscurity": 0.6666666666666666,
     "spellingCost": 6,
     "spellingObscurity": 0.08333333333333333,
-    "key": 0.6191666666666666
+    "key": 0.6108333333333333
    },
    {
     "id": "upgrade_divine_barrier",
@@ -112,7 +118,7 @@
     "popularityObscurity": 0.5,
     "spellingCost": 6,
     "spellingObscurity": 0.08333333333333333,
-    "key": 0.4058333333333333
+    "key": 0.37249999999999994
    },
    {
     "id": "upgrade_guardian_ward",
@@ -135,7 +141,7 @@
     "popularityObscurity": 0.3333333333333333,
     "spellingCost": 12,
     "spellingObscurity": 1,
-    "key": 0.31166666666666665
+    "key": 0.2866666666666666
    },
    {
     "id": "upgrade_health_nova",
@@ -158,7 +164,7 @@
     "popularityObscurity": 1,
     "spellingCost": 10,
     "spellingObscurity": 0.6666666666666666,
-    "key": 0.8550000000000001
+    "key": 0.7966666666666667
    },
    {
     "id": "upgrade_rescue_beam",
@@ -181,7 +187,7 @@
     "popularityObscurity": 0.8333333333333334,
     "spellingCost": 10,
     "spellingObscurity": 0.6666666666666666,
-    "key": 0.45833333333333337
+    "key": 0.29166666666666663
    },
    {
     "id": "upgrade_spirit_burn",
@@ -204,7 +210,7 @@
     "popularityObscurity": 0,
     "spellingCost": 10,
     "spellingObscurity": 0.6666666666666666,
-    "key": 0.5833333333333334
+    "key": 0.8333333333333334
    },
    {
     "id": "upgrade_target_stun",
@@ -227,95 +233,107 @@
     "popularityObscurity": 0.16666666666666666,
     "spellingCost": 9,
     "spellingObscurity": 0.3333333333333333,
-    "key": 0.26666666666666666
+    "key": 0.30833333333333335
    }
   ],
   "passAgreement": 0.5428571428571429,
   "orderBeforeRefinement": [
-   "upgrade_target_stun",
    "upgrade_guardian_ward",
-   "upgrade_divine_barrier",
    "upgrade_rescue_beam",
-   "upgrade_spirit_burn",
+   "upgrade_target_stun",
+   "upgrade_divine_barrier",
    "upgrade_aoe_root",
-   "upgrade_health_nova"
+   "upgrade_health_nova",
+   "upgrade_spirit_burn"
   ],
   "pairwise": [
    {
-    "a": "upgrade_rescue_beam",
-    "b": "upgrade_spirit_burn",
+    "a": "upgrade_divine_barrier",
+    "b": "upgrade_aoe_root",
     "purpose": "rare-contenders",
     "rarer": null
    },
    {
-    "a": "upgrade_rescue_beam",
-    "b": "upgrade_aoe_root",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_aoe_root"
-   },
-   {
-    "a": "upgrade_rescue_beam",
+    "a": "upgrade_divine_barrier",
     "b": "upgrade_health_nova",
     "purpose": "rare-contenders",
     "rarer": "upgrade_health_nova"
    },
    {
-    "a": "upgrade_spirit_burn",
-    "b": "upgrade_aoe_root",
+    "a": "upgrade_divine_barrier",
+    "b": "upgrade_spirit_burn",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_aoe_root"
+    "rarer": null
    },
    {
-    "a": "upgrade_spirit_burn",
+    "a": "upgrade_aoe_root",
     "b": "upgrade_health_nova",
     "purpose": "rare-contenders",
     "rarer": "upgrade_health_nova"
    },
    {
     "a": "upgrade_aoe_root",
-    "b": "upgrade_health_nova",
+    "b": "upgrade_spirit_burn",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "upgrade_aoe_root"
    },
    {
-    "a": "upgrade_target_stun",
-    "b": "upgrade_guardian_ward",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_target_stun"
+    "a": "upgrade_health_nova",
+    "b": "upgrade_spirit_burn",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_health_nova"
    },
    {
     "a": "upgrade_guardian_ward",
-    "b": "upgrade_divine_barrier",
+    "b": "upgrade_rescue_beam",
     "purpose": "tier-boundary",
-    "rarer": "upgrade_divine_barrier"
+    "rarer": null
+   },
+   {
+    "a": "upgrade_rescue_beam",
+    "b": "upgrade_target_stun",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_divine_barrier",
+    "b": "upgrade_target_stun",
+    "purpose": "review",
+    "rarer": null
    },
    {
     "a": "upgrade_health_nova",
     "b": "upgrade_spirit_burn",
     "purpose": "review",
-    "rarer": "upgrade_health_nova"
+    "rarer": null
+   },
+   {
+    "a": "upgrade_spirit_burn",
+    "b": "upgrade_aoe_root",
+    "purpose": "review",
+    "rarer": "upgrade_aoe_root"
    }
   ],
   "review": [
    {
-    "name": "Knockdown",
-    "compareWith": "Guardian Ward",
-    "claim": "should_be_more_obscure",
-    "reason": "Guardian Ward's Ability Range is its first listed stat and it is a well-known item. Knockdown is mostly known for its stun, and its Ability Range is a secondary stat next to Bonus Health, so it is less likely to come to mind. It should not sit just 20 points behind Guardian Ward.",
-    "outcome": "ignored-invalid"
-   },
-   {
     "name": "Divine Barrier",
-    "compareWith": "Rescue Beam",
+    "compareWith": "Knockdown",
     "claim": "should_be_more_obvious",
-    "reason": "Divine Barrier is the direct upgrade of Guardian Ward and carries Ability Range 10 as its first stat. Players who think of Guardian Ward will naturally think of its upgrade. Rescue Beam is a tier 3 item mainly known for healing and the pull, so Divine Barrier should be at least as obvious.",
-    "outcome": "ignored-invalid"
+    "reason": "Divine Barrier has Ability Range 10, the largest bonus in the list, and it is the direct upgrade of Guardian Ward, the top answer. Players who think of Guardian Ward will likely think of its upgrade too. Knockdown's Ability Range is a minor secondary stat on a Spirit item, so Divine Barrier should be scored at or below Knockdown's 60.",
+    "outcome": "rejected-by-comparison"
    },
    {
     "name": "Healing Nova",
     "compareWith": "Spirit Burn",
     "claim": "should_be_more_obvious",
-    "reason": "Healing Nova is a popular, recognizable tier 3 Vitality item bought often, and it lists Ability Range among its stats. Spirit Burn is a tier 4 item that fewer players buy and is mainly known for its burn. Healing Nova is not clearly the rarest answer, and it should probably swap places with Spirit Burn or Vortex Web.",
+    "reason": "Healing Nova is a Tier 3 item at 3200 souls, so it is bought much more often than the Tier 4 Spirit Burn. Its Ability Range 5 is a built-in stat, so it is not especially forgettable. Putting it at 100, above the 6400-soul Spirit Burn and Vortex Web at 85, is too extreme. It should rank at or slightly below those two.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Spirit Burn",
+    "compareWith": "Vortex Web",
+    "claim": "should_be_more_obscure",
+    "reason": "Spirit Burn is a passive item with a vague, mostly damage-related identity, so Ability Range is rarely what players associate with it. Vortex Web is an active ability item where range matters for aiming, and its range of 8 is larger than Spirit Burn's 6. Spirit Burn should be scored as more obscure than Vortex Web.",
     "outcome": "rejected-by-comparison"
    }
   ]

@@ -19,9 +19,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:16:12.141Z",
+ "generatedAt": "2026-11-25T04:43:55.070Z",
  "answers": [
   {
    "entityId": "hero_ghost",
@@ -42,14 +42,14 @@
    "score": 60
   },
   {
-   "entityId": "hero_forge",
-   "name": "McGinnis",
+   "entityId": "hero_bookworm",
+   "name": "Paige",
    "rank": 4,
    "score": 60
   },
   {
-   "entityId": "hero_bookworm",
-   "name": "Paige",
+   "entityId": "hero_forge",
+   "name": "McGinnis",
    "rank": 5,
    "score": 85
   },
@@ -67,6 +67,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_bookworm",
@@ -89,7 +95,7 @@
     "popularityObscurity": 0.16666666666666666,
     "spellingCost": 5,
     "spellingObscurity": 0.4166666666666667,
-    "key": 0.5458333333333334
+    "key": 0.3458333333333333
    },
    {
     "id": "hero_forge",
@@ -112,7 +118,7 @@
     "popularityObscurity": 0.8333333333333334,
     "spellingCost": 3,
     "spellingObscurity": 0,
-    "key": 0.5716666666666668
+    "key": 0.6916666666666667
    },
    {
     "id": "hero_ghost",
@@ -135,7 +141,7 @@
     "popularityObscurity": 0,
     "spellingCost": 4,
     "spellingObscurity": 0.16666666666666666,
-    "key": 0.045
+    "key": 0.025
    },
    {
     "id": "hero_mirage",
@@ -158,7 +164,7 @@
     "popularityObscurity": 1,
     "spellingCost": 6,
     "spellingObscurity": 0.75,
-    "key": 0.9141666666666667
+    "key": 0.9541666666666666
    },
    {
     "id": "hero_necro",
@@ -181,7 +187,7 @@
     "popularityObscurity": 0.3333333333333333,
     "spellingCost": 6,
     "spellingObscurity": 0.75,
-    "key": 0.39083333333333337
+    "key": 0.37083333333333335
    },
    {
     "id": "hero_orion",
@@ -204,7 +210,7 @@
     "popularityObscurity": 0.6666666666666666,
     "spellingCost": 5,
     "spellingObscurity": 0.4166666666666667,
-    "key": 0.3425
+    "key": 0.5125
    },
    {
     "id": "hero_ratking",
@@ -227,108 +233,102 @@
     "popularityObscurity": 0.5,
     "spellingCost": 7,
     "spellingObscurity": 1,
-    "key": 0.69
+    "key": 0.6
    }
   ],
   "passAgreement": 0.7142857142857142,
   "orderBeforeRefinement": [
    "hero_ghost",
-   "hero_orion",
-   "hero_necro",
    "hero_bookworm",
-   "hero_forge",
+   "hero_necro",
+   "hero_orion",
    "hero_ratking",
+   "hero_forge",
    "hero_mirage"
   ],
   "pairwise": [
    {
-    "a": "hero_bookworm",
+    "a": "hero_orion",
+    "b": "hero_ratking",
+    "purpose": "rare-contenders",
+    "rarer": "hero_ratking"
+   },
+   {
+    "a": "hero_orion",
     "b": "hero_forge",
     "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_orion",
+    "b": "hero_mirage",
+    "purpose": "rare-contenders",
+    "rarer": "hero_mirage"
+   },
+   {
+    "a": "hero_ratking",
+    "b": "hero_forge",
+    "purpose": "rare-contenders",
+    "rarer": "hero_ratking"
+   },
+   {
+    "a": "hero_ratking",
+    "b": "hero_mirage",
+    "purpose": "rare-contenders",
+    "rarer": "hero_ratking"
+   },
+   {
+    "a": "hero_forge",
+    "b": "hero_mirage",
+    "purpose": "rare-contenders",
+    "rarer": "hero_mirage"
+   },
+   {
+    "a": "hero_ghost",
+    "b": "hero_bookworm",
+    "purpose": "tier-boundary",
     "rarer": "hero_bookworm"
    },
    {
     "a": "hero_bookworm",
-    "b": "hero_ratking",
-    "purpose": "rare-contenders",
-    "rarer": null
+    "b": "hero_necro",
+    "purpose": "tier-boundary",
+    "rarer": "hero_bookworm"
    },
    {
     "a": "hero_bookworm",
-    "b": "hero_mirage",
-    "purpose": "rare-contenders",
-    "rarer": "hero_mirage"
-   },
-   {
-    "a": "hero_forge",
-    "b": "hero_ratking",
-    "purpose": "rare-contenders",
-    "rarer": "hero_ratking"
-   },
-   {
-    "a": "hero_forge",
-    "b": "hero_mirage",
-    "purpose": "rare-contenders",
-    "rarer": "hero_mirage"
-   },
-   {
-    "a": "hero_ratking",
-    "b": "hero_mirage",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_ghost",
     "b": "hero_orion",
-    "purpose": "tier-boundary",
-    "rarer": "hero_orion"
+    "purpose": "review",
+    "rarer": "hero_bookworm"
    },
    {
     "a": "hero_orion",
     "b": "hero_necro",
-    "purpose": "tier-boundary",
+    "purpose": "review",
     "rarer": "hero_necro"
-   },
-   {
-    "a": "hero_bookworm",
-    "b": "hero_ratking",
-    "purpose": "review",
-    "rarer": "hero_ratking"
-   },
-   {
-    "a": "hero_ratking",
-    "b": "hero_necro",
-    "purpose": "review",
-    "rarer": "hero_ratking"
-   },
-   {
-    "a": "hero_mirage",
-    "b": "hero_bookworm",
-    "purpose": "review",
-    "rarer": null
    }
   ],
   "review": [
    {
     "name": "Paige",
-    "compareWith": "Rat King",
+    "compareWith": "Grey Talon",
     "claim": "should_be_more_obscure",
-    "reason": "Paige's name has no G, so it is not a valid answer; the G in the question is only in 'Chapter's End' or similar. Rat King likewise has a G ('King') and is a real hero, so Paige should not rank as a plausible answer at all and should not be placed alongside the valid answers. If kept, it is no more obscure than Rat King.",
-    "outcome": "rejected-by-comparison"
+    "reason": "Paige has no G in her name, so she is not a valid answer for this question. Few players would type her, and the 60 pts she gets is arbitrary. She should be the most obscure answer, not tied with Grey Talon, who does have a G and is a direct hit.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Grey Talon",
+    "compareWith": "Graves",
+    "claim": "should_be_more_obvious",
+    "reason": "Grey Talon starts with G, which makes him a very natural answer to a letter-G question. A well-known hero whose name begins with the letter should be closer to Graves's score. A 60 pt rating for him seems too obscure.",
+    "outcome": "applied"
    },
    {
     "name": "Rat King",
-    "compareWith": "Graves",
+    "compareWith": "Mirage",
     "claim": "should_be_more_obvious",
-    "reason": "Rat King contains a G in 'King', and a distinctive, well-known hero name like this is likely to come to mind more readily than Graves, whose name is shorter and less associated with the letter. Rat King at 85 appears too obscure.",
-    "outcome": "rejected-by-comparison"
-   },
-   {
-    "name": "Mirage",
-    "compareWith": "Paige",
-    "claim": "should_be_more_obvious",
-    "reason": "Mirage contains a G and is a popular, widely played hero, so 100 points as the rarest answer is implausible. It is likely named more often than weaker candidates and should score below Rat King.",
-    "outcome": "rejected-by-comparison"
+    "reason": "Rat King's name contains a G, in 'King'. It is a distinctive, memorable name, so it is not clearly rarer than Mirage, which also contains a G. Putting Rat King at 100 pts, above McGinnis and Mirage, looks unjustified. It should come in at or below their score.",
+    "outcome": "applied-by-data"
    }
   ]
  }

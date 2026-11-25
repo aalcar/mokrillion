@@ -23,37 +23,37 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:17:07.744Z",
+ "generatedAt": "2026-11-25T04:44:33.661Z",
  "answers": [
   {
-   "entityId": "hero_vampirebat",
-   "name": "Mina",
+   "entityId": "hero_atlas",
+   "name": "Abrams",
    "rank": 1,
    "score": 10
   },
   {
-   "entityId": "hero_atlas",
-   "name": "Abrams",
+   "entityId": "hero_vampirebat",
+   "name": "Mina",
    "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_dynamo",
+   "name": "Dynamo",
+   "rank": 3,
    "score": 30
   },
   {
    "entityId": "hero_yamato",
    "name": "Yamato",
-   "rank": 3,
-   "score": 30
-  },
-  {
-   "entityId": "hero_krill",
-   "name": "Mo & Krill",
    "rank": 4,
    "score": 60
   },
   {
-   "entityId": "hero_dynamo",
-   "name": "Dynamo",
+   "entityId": "hero_krill",
+   "name": "Mo & Krill",
    "rank": 5,
    "score": 60
   },
@@ -70,31 +70,37 @@
    "score": 85
   },
   {
+   "entityId": "hero_deadpack",
+   "name": "Deadman Danny",
+   "rank": 8,
+   "score": 85
+  },
+  {
    "entityId": "hero_familiar",
    "name": "Rem",
-   "rank": 8,
+   "rank": 9,
    "score": 85
   },
   {
    "entityId": "hero_chessmaster",
    "name": "Solomon",
-   "rank": 9,
+   "rank": 10,
    "score": 85
   },
   {
    "entityId": "hero_doorman",
    "name": "The Doorman",
-   "rank": 10,
-   "score": 85
-  },
-  {
-   "entityId": "hero_deadpack",
-   "name": "Deadman Danny",
    "rank": 11,
    "score": 100
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_atlas",
@@ -117,7 +123,7 @@
     "popularityObscurity": 0,
     "spellingCost": 6,
     "spellingObscurity": 0.65,
-    "key": 0.2305
+    "key": 0.1225
    },
    {
     "id": "hero_chessmaster",
@@ -140,7 +146,7 @@
     "popularityObscurity": 0.9,
     "spellingCost": 7,
     "spellingObscurity": 0.95,
-    "key": 0.8365
+    "key": 0.8725
    },
    {
     "id": "hero_deadpack",
@@ -163,7 +169,7 @@
     "popularityObscurity": 0.4,
     "spellingCost": 5,
     "spellingObscurity": 0.4,
-    "key": 0.7190000000000002
+    "key": 0.5449999999999999
    },
    {
     "id": "hero_doorman",
@@ -186,7 +192,7 @@
     "popularityObscurity": 0.7,
     "spellingCost": 7,
     "spellingObscurity": 0.95,
-    "key": 0.8225
+    "key": 0.7625
    },
    {
     "id": "hero_dynamo",
@@ -209,7 +215,7 @@
     "popularityObscurity": 0.2,
     "spellingCost": 6,
     "spellingObscurity": 0.65,
-    "key": 0.3875
+    "key": 0.2975
    },
    {
     "id": "hero_familiar",
@@ -232,7 +238,7 @@
     "popularityObscurity": 0.6,
     "spellingCost": 3,
     "spellingObscurity": 0.15,
-    "key": 0.6545000000000001
+    "key": 0.6125
    },
    {
     "id": "hero_forge",
@@ -255,7 +261,7 @@
     "popularityObscurity": 0.8,
     "spellingCost": 3,
     "spellingObscurity": 0.15,
-    "key": 0.4265000000000001
+    "key": 0.6124999999999999
    },
    {
     "id": "hero_krill",
@@ -278,7 +284,7 @@
     "popularityObscurity": 0.5,
     "spellingCost": 2,
     "spellingObscurity": 0,
-    "key": 0.354
+    "key": 0.42
    },
    {
     "id": "hero_mirage",
@@ -301,7 +307,7 @@
     "popularityObscurity": 1,
     "spellingCost": 6,
     "spellingObscurity": 0.65,
-    "key": 0.5205000000000001
+    "key": 0.7725
    },
    {
     "id": "hero_vampirebat",
@@ -324,7 +330,7 @@
     "popularityObscurity": 0.1,
     "spellingCost": 4,
     "spellingObscurity": 0.3,
-    "key": 0.209
+    "key": 0.15499999999999997
    },
    {
     "id": "hero_yamato",
@@ -347,119 +353,131 @@
     "popularityObscurity": 0.3,
     "spellingCost": 6,
     "spellingObscurity": 0.65,
-    "key": 0.3395
+    "key": 0.3275
    }
   ],
   "passAgreement": 0.6145454545454545,
   "orderBeforeRefinement": [
-   "hero_vampirebat",
    "hero_atlas",
+   "hero_vampirebat",
+   "hero_dynamo",
    "hero_yamato",
    "hero_krill",
-   "hero_dynamo",
-   "hero_forge",
-   "hero_mirage",
-   "hero_familiar",
    "hero_deadpack",
+   "hero_forge",
+   "hero_familiar",
    "hero_doorman",
+   "hero_mirage",
    "hero_chessmaster"
   ],
   "pairwise": [
    {
     "a": "hero_familiar",
-    "b": "hero_deadpack",
-    "purpose": "rare-contenders",
-    "rarer": "hero_deadpack"
-   },
-   {
-    "a": "hero_familiar",
     "b": "hero_doorman",
     "purpose": "rare-contenders",
     "rarer": null
    },
    {
     "a": "hero_familiar",
-    "b": "hero_chessmaster",
+    "b": "hero_mirage",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "hero_familiar"
    },
    {
-    "a": "hero_deadpack",
-    "b": "hero_doorman",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_deadpack",
+    "a": "hero_familiar",
     "b": "hero_chessmaster",
     "purpose": "rare-contenders",
-    "rarer": "hero_deadpack"
+    "rarer": "hero_familiar"
+   },
+   {
+    "a": "hero_doorman",
+    "b": "hero_mirage",
+    "purpose": "rare-contenders",
+    "rarer": "hero_doorman"
    },
    {
     "a": "hero_doorman",
     "b": "hero_chessmaster",
     "purpose": "rare-contenders",
-    "rarer": "hero_doorman"
-   },
-   {
-    "a": "hero_vampirebat",
-    "b": "hero_atlas",
-    "purpose": "tier-boundary",
     "rarer": null
    },
    {
-    "a": "hero_yamato",
-    "b": "hero_krill",
-    "purpose": "tier-boundary",
-    "rarer": null
-   },
-   {
-    "a": "hero_forge",
-    "b": "hero_mirage",
-    "purpose": "tier-boundary",
-    "rarer": "hero_mirage"
+    "a": "hero_mirage",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": "hero_chessmaster"
    },
    {
     "a": "hero_atlas",
-    "b": "hero_krill",
-    "purpose": "review",
-    "rarer": "hero_krill"
+    "b": "hero_vampirebat",
+    "purpose": "tier-boundary",
+    "rarer": "hero_vampirebat"
    },
    {
-    "a": "hero_yamato",
+    "a": "hero_dynamo",
+    "b": "hero_yamato",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "hero_deadpack",
     "b": "hero_forge",
+    "purpose": "tier-boundary",
+    "rarer": "hero_deadpack"
+   },
+   {
+    "a": "hero_krill",
+    "b": "hero_yamato",
     "purpose": "review",
     "rarer": null
+   },
+   {
+    "a": "hero_atlas",
+    "b": "hero_vampirebat",
+    "purpose": "review",
+    "rarer": "hero_vampirebat"
+   },
+   {
+    "a": "hero_mirage",
+    "b": "hero_deadpack",
+    "purpose": "review",
+    "rarer": "hero_deadpack"
+   },
+   {
+    "a": "hero_familiar",
+    "b": "hero_doorman",
+    "purpose": "review",
+    "rarer": "hero_doorman"
    }
   ],
   "review": [
    {
     "name": "Mo & Krill",
-    "compareWith": "Dynamo",
+    "compareWith": "Yamato",
     "claim": "should_be_more_obvious",
-    "reason": "Mo & Krill is the one hero whose name literally begins with M, so it is the most direct trigger for this question. It should sit near Mina and well above Dynamo, whose M is buried mid-word.",
-    "outcome": "ignored-invalid"
-   },
-   {
-    "name": "Mirage",
-    "compareWith": "Rem",
-    "claim": "should_be_more_obvious",
-    "reason": "Mirage has a clear M in its name and is a popular, well-known hero. Rem is a lower-profile hero whose M is the final letter and is easy to overlook, so Mirage should score lower than Rem.",
-    "outcome": "ignored-invalid"
+    "reason": "Mo & Krill has the letter M in its very first word, and its name is short and easy to recall. Yamato has the M in the middle of the name, which players are less likely to notice. Mo & Krill should rank at or above Yamato in obviousness.",
+    "outcome": "rejected-by-comparison"
    },
    {
     "name": "Abrams",
-    "compareWith": "Mo & Krill",
+    "compareWith": "Mina",
     "claim": "should_be_more_obscure",
-    "reason": "The M in Abrams is in the middle of the word and is not salient. Players scanning for M will think of names starting with M first, so Abrams should be rarer than Mo & Krill.",
+    "reason": "Abrams has its M at the end of the name, which is less salient than Mina, where M is the first letter. A player thinking of M would reach Mina, Mirage, McGinnis or Mo & Krill first, so Abrams at the 10-point level is too obvious.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Yamato",
-    "compareWith": "McGinnis",
-    "claim": "should_be_more_obscure",
-    "reason": "The M in Yamato is hidden mid-name, while McGinnis starts with M. Yamato should not be scored as obvious as 30 points compared with McGinnis at 60.",
-    "outcome": "rejected-by-comparison"
+    "name": "Mirage",
+    "compareWith": "Deadman Danny",
+    "claim": "should_be_more_obvious",
+    "reason": "Mirage starts with M, so it comes to mind immediately for this question. It should not sit at the same 85-point level as heroes whose M is buried in the name, like Deadman Danny or Solomon.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Rem",
+    "compareWith": "The Doorman",
+    "claim": "should_be_more_obvious",
+    "reason": "Rem is a short name with M as its last letter, and it is an easy answer for anyone scanning the roster. The Doorman is a longer name with M hidden in the middle of 'Doorman', so it is less likely to be thought of and should score higher than Rem.",
+    "outcome": "applied"
    }
   ]
  }

@@ -24,9 +24,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:19:52.008Z",
+ "generatedAt": "2026-11-25T04:45:22.612Z",
  "answers": [
   {
    "entityId": "hero_hornet",
@@ -47,8 +47,8 @@
    "score": 30
   },
   {
-   "entityId": "hero_frank",
-   "name": "Victor",
+   "entityId": "hero_viper",
+   "name": "Vyper",
    "rank": 4,
    "score": 60
   },
@@ -65,32 +65,32 @@
    "score": 60
   },
   {
-   "entityId": "hero_viper",
-   "name": "Vyper",
+   "entityId": "hero_necro",
+   "name": "Graves",
    "rank": 7,
    "score": 60
   },
   {
+   "entityId": "hero_kelvin",
+   "name": "Kelvin",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "hero_frank",
+   "name": "Victor",
+   "rank": 9,
+   "score": 85
+  },
+  {
    "entityId": "hero_tengu",
    "name": "Ivy",
-   "rank": 8,
+   "rank": 10,
    "score": 85
   },
   {
    "entityId": "hero_artist",
    "name": "Violet",
-   "rank": 9,
-   "score": 85
-  },
-  {
-   "entityId": "hero_kelvin",
-   "name": "Kelvin",
-   "rank": 10,
-   "score": 85
-  },
-  {
-   "entityId": "hero_necro",
-   "name": "Graves",
    "rank": 11,
    "score": 85
   },
@@ -102,6 +102,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_artist",
@@ -124,7 +130,7 @@
     "popularityObscurity": 0.8181818181818182,
     "spellingCost": 6,
     "spellingObscurity": 0.5454545454545454,
-    "key": 0.5445454545454547
+    "key": 0.6863636363636364
    },
    {
     "id": "hero_frank",
@@ -147,7 +153,7 @@
     "popularityObscurity": 0.6363636363636364,
     "spellingCost": 6,
     "spellingObscurity": 0.5454545454545454,
-    "key": 0.4418181818181819
+    "key": 0.5454545454545454
    },
    {
     "id": "hero_gigawatt",
@@ -170,7 +176,7 @@
     "popularityObscurity": 0.36363636363636365,
     "spellingCost": 5,
     "spellingObscurity": 0.22727272727272727,
-    "key": 0.4468181818181818
+    "key": 0.39772727272727265
    },
    {
     "id": "hero_hornet",
@@ -193,7 +199,7 @@
     "popularityObscurity": 0.2727272727272727,
     "spellingCost": 8,
     "spellingObscurity": 1,
-    "key": 0.1590909090909091
+    "key": 0.2409090909090909
    },
    {
     "id": "hero_kelvin",
@@ -216,7 +222,7 @@
     "popularityObscurity": 0.5454545454545454,
     "spellingCost": 6,
     "spellingObscurity": 0.5454545454545454,
-    "key": 0.6854545454545455
+    "key": 0.6090909090909091
    },
    {
     "id": "hero_necro",
@@ -239,7 +245,7 @@
     "popularityObscurity": 0.18181818181818182,
     "spellingCost": 6,
     "spellingObscurity": 0.5454545454545454,
-    "key": 0.5900000000000001
+    "key": 0.37727272727272726
    },
    {
     "id": "hero_priest",
@@ -262,7 +268,7 @@
     "popularityObscurity": 0,
     "spellingCost": 7,
     "spellingObscurity": 0.8636363636363636,
-    "key": 0.31318181818181823
+    "key": 0.1659090909090909
    },
    {
     "id": "hero_shiv",
@@ -285,7 +291,7 @@
     "popularityObscurity": 0.09090909090909091,
     "spellingCost": 4,
     "spellingObscurity": 0.09090909090909091,
-    "key": 0.42090909090909095
+    "key": 0.2409090909090909
    },
    {
     "id": "hero_tengu",
@@ -308,7 +314,7 @@
     "popularityObscurity": 0.45454545454545453,
     "spellingCost": 3,
     "spellingObscurity": 0,
-    "key": 0.5418181818181819
+    "key": 0.4818181818181818
    },
    {
     "id": "hero_viper",
@@ -331,7 +337,7 @@
     "popularityObscurity": 1,
     "spellingCost": 5,
     "spellingObscurity": 0.22727272727272727,
-    "key": 0.5413636363636364
+    "key": 0.7704545454545454
    },
    {
     "id": "hero_viscous",
@@ -354,7 +360,7 @@
     "popularityObscurity": 0.9090909090909091,
     "spellingCost": 7,
     "spellingObscurity": 0.8636363636363636,
-    "key": 0.45681818181818185
+    "key": 0.7022727272727273
    },
    {
     "id": "hero_werewolf",
@@ -377,36 +383,36 @@
     "popularityObscurity": 0.7272727272727273,
     "spellingCost": 6,
     "spellingObscurity": 0.5454545454545454,
-    "key": 0.8581818181818182
+    "key": 0.7818181818181817
    }
   ],
   "passAgreement": 0.7939393939393941,
   "orderBeforeRefinement": [
-   "hero_hornet",
    "hero_priest",
+   "hero_hornet",
    "hero_shiv",
-   "hero_frank",
+   "hero_necro",
    "hero_gigawatt",
+   "hero_tengu",
+   "hero_frank",
+   "hero_kelvin",
+   "hero_artist",
    "hero_viscous",
    "hero_viper",
-   "hero_tengu",
-   "hero_artist",
-   "hero_necro",
-   "hero_kelvin",
    "hero_werewolf"
   ],
   "pairwise": [
    {
     "a": "hero_artist",
-    "b": "hero_necro",
+    "b": "hero_viscous",
     "purpose": "rare-contenders",
-    "rarer": "hero_necro"
+    "rarer": "hero_artist"
    },
    {
     "a": "hero_artist",
-    "b": "hero_kelvin",
+    "b": "hero_viper",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "hero_artist"
    },
    {
     "a": "hero_artist",
@@ -415,88 +421,101 @@
     "rarer": "hero_werewolf"
    },
    {
-    "a": "hero_necro",
-    "b": "hero_kelvin",
+    "a": "hero_viscous",
+    "b": "hero_viper",
     "purpose": "rare-contenders",
-    "rarer": "hero_necro"
+    "rarer": "hero_viscous"
    },
    {
-    "a": "hero_necro",
-    "b": "hero_werewolf",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_kelvin",
+    "a": "hero_viscous",
     "b": "hero_werewolf",
     "purpose": "rare-contenders",
     "rarer": "hero_werewolf"
    },
    {
-    "a": "hero_hornet",
-    "b": "hero_priest",
+    "a": "hero_viper",
+    "b": "hero_werewolf",
+    "purpose": "rare-contenders",
+    "rarer": "hero_werewolf"
+   },
+   {
+    "a": "hero_priest",
+    "b": "hero_hornet",
     "purpose": "tier-boundary",
     "rarer": "hero_priest"
    },
    {
     "a": "hero_shiv",
-    "b": "hero_frank",
+    "b": "hero_necro",
+    "purpose": "tier-boundary",
+    "rarer": "hero_necro"
+   },
+   {
+    "a": "hero_frank",
+    "b": "hero_kelvin",
     "purpose": "tier-boundary",
     "rarer": null
    },
    {
     "a": "hero_viper",
+    "b": "hero_necro",
+    "purpose": "review",
+    "rarer": "hero_necro"
+   },
+   {
+    "a": "hero_artist",
+    "b": "hero_gigawatt",
+    "purpose": "review",
+    "rarer": "hero_artist"
+   },
+   {
+    "a": "hero_viscous",
     "b": "hero_tengu",
-    "purpose": "tier-boundary",
+    "purpose": "review",
     "rarer": "hero_tengu"
    },
    {
-    "a": "hero_shiv",
-    "b": "hero_priest",
-    "purpose": "review",
-    "rarer": null
-   },
-   {
-    "a": "hero_gigawatt",
-    "b": "hero_frank",
-    "purpose": "review",
-    "rarer": null
-   },
-   {
-    "a": "hero_werewolf",
+    "a": "hero_frank",
     "b": "hero_necro",
     "purpose": "review",
-    "rarer": null
+    "rarer": "hero_necro"
    }
   ],
   "review": [
    {
-    "name": "Shiv",
-    "compareWith": "Venator",
+    "name": "Vyper",
+    "compareWith": "Graves",
     "claim": "should_be_more_obvious",
-    "reason": "Shiv is a long-standing, very recognizable hero whose name starts with a different letter pattern, and its V is in the middle of the name. Still, a one-syllable well-known name like Shiv is more likely to be typed than Venator, a newer and less familiar hero. Shiv should be at or above Venator in obviousness.",
+    "reason": "Vyper has a V as the very first letter of its name, and its name is clearly tied to the question. Players scanning the roster for V names will think of it quickly. Graves has its V buried mid-name, so Graves belongs at a higher point value than Vyper.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Violet",
+    "compareWith": "Seven",
+    "claim": "should_be_more_obvious",
+    "reason": "Violet starts with V, so it comes to mind readily when thinking of V names. Seven's V is in the middle of the name and is much less salient. Violet should score lower than Seven, not higher.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Seven",
-    "compareWith": "Victor",
+    "name": "Viscous",
+    "compareWith": "Ivy",
     "claim": "should_be_more_obvious",
-    "reason": "Seven is a very recognizable hero with an iconic electric kit and a simple, memorable name. Victor is mainly known as a revive-themed brawler. Both are about equally likely, but Seven's V-in-the-middle is easy to spot because the name is a common word, so it should score no worse than Victor.",
-    "outcome": "rejected-by-comparison"
+    "reason": "Viscous begins with V and has a distinctive name, so it should be recalled easily. Ivy's V is in the middle of a short name, which makes it less prominent for this question. Viscous should be cheaper than Ivy.",
+    "outcome": "applied"
    },
    {
-    "name": "Ivy",
-    "compareWith": "Violet",
+    "name": "Victor",
+    "compareWith": "Graves",
     "claim": "should_be_more_obvious",
-    "reason": "Ivy is a short, memorable name where the V is prominent in a three-letter word, which is easy to scan. Violet starts with V, which makes it more obvious for this question, so Violet should be placed below Ivy in points. Violet is more directly tied to V.",
-    "outcome": "ignored-invalid"
+    "reason": "Victor starts with V and is a natural pick for a letter-V question, so it should be well below Graves, whose V is hidden mid-name.",
+    "outcome": "applied"
    },
    {
     "name": "Silver",
-    "compareWith": "Graves",
-    "claim": "should_be_more_obvious",
-    "reason": "Silver is a well-known hero and its V is in the middle of a common English word, so players scanning heroes for a V will find it easily. Graves is also V-in-the-middle but is less commonly picked, so Graves should be the 100-point answer rather than Silver.",
-    "outcome": "rejected-by-comparison"
+    "compareWith": "Kelvin",
+    "claim": "should_be_more_obscure",
+    "reason": "Silver's V is buried in the middle of the name, which makes it the hardest to think of. Kelvin's V is also mid-name, but Silver is the least associated with the letter, so it is the proper 100-point answer. Kelvin should be priced a bit lower, but Silver must remain above it.",
+    "outcome": "ignored-invalid"
    }
   ]
  }

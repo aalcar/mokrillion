@@ -19,9 +19,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:11:01.569Z",
+ "generatedAt": "2026-11-25T04:41:56.898Z",
  "answers": [
   {
    "entityId": "upgrade_rapid_rounds",
@@ -67,6 +67,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_blitz_bullets",
@@ -89,7 +95,7 @@
     "popularityObscurity": 0,
     "spellingCost": 12,
     "spellingObscurity": 1,
-    "key": 0.10500000000000001
+    "key": 0.13
    },
    {
     "id": "upgrade_burst_fire",
@@ -112,7 +118,7 @@
     "popularityObscurity": 0.5,
     "spellingCost": 9,
     "spellingObscurity": 0.5,
-    "key": 0.4083333333333333
+    "key": 0.3666666666666667
    },
    {
     "id": "upgrade_capacitor",
@@ -135,7 +141,7 @@
     "popularityObscurity": 0.6666666666666666,
     "spellingCost": 9,
     "spellingObscurity": 0.5,
-    "key": 0.8050000000000002
+    "key": 0.8716666666666667
    },
    {
     "id": "upgrade_fervor",
@@ -158,7 +164,7 @@
     "popularityObscurity": 0.8333333333333334,
     "spellingCost": 6,
     "spellingObscurity": 0,
-    "key": 0.645
+    "key": 0.5783333333333334
    },
    {
     "id": "upgrade_focus_lens",
@@ -181,7 +187,7 @@
     "popularityObscurity": 1,
     "spellingCost": 9,
     "spellingObscurity": 0.5,
-    "key": 0.92
+    "key": 0.8950000000000001
    },
    {
     "id": "upgrade_rapid_rounds",
@@ -204,7 +210,7 @@
     "popularityObscurity": 0.16666666666666666,
     "spellingCost": 11,
     "spellingObscurity": 0.8333333333333334,
-    "key": 0.14500000000000002
+    "key": 0.12
    },
    {
     "id": "upgrade_ricochet",
@@ -227,13 +233,13 @@
     "popularityObscurity": 0.3333333333333333,
     "spellingCost": 8,
     "spellingObscurity": 0.16666666666666666,
-    "key": 0.4716666666666667
+    "key": 0.5383333333333333
    }
   ],
   "passAgreement": 0.8285714285714285,
   "orderBeforeRefinement": [
-   "upgrade_blitz_bullets",
    "upgrade_rapid_rounds",
+   "upgrade_blitz_bullets",
    "upgrade_burst_fire",
    "upgrade_ricochet",
    "upgrade_fervor",
@@ -278,57 +284,50 @@
     "rarer": "upgrade_focus_lens"
    },
    {
-    "a": "upgrade_blitz_bullets",
-    "b": "upgrade_rapid_rounds",
+    "a": "upgrade_rapid_rounds",
+    "b": "upgrade_blitz_bullets",
     "purpose": "tier-boundary",
-    "rarer": null
+    "rarer": "upgrade_blitz_bullets"
    },
    {
-    "a": "upgrade_rapid_rounds",
+    "a": "upgrade_blitz_bullets",
     "b": "upgrade_burst_fire",
     "purpose": "tier-boundary",
     "rarer": "upgrade_burst_fire"
    },
    {
-    "a": "upgrade_rapid_rounds",
-    "b": "upgrade_blitz_bullets",
+    "a": "upgrade_ricochet",
+    "b": "upgrade_burst_fire",
     "purpose": "review",
-    "rarer": "upgrade_blitz_bullets"
+    "rarer": null
    },
    {
     "a": "upgrade_focus_lens",
     "b": "upgrade_capacitor",
     "purpose": "review",
-    "rarer": null
+    "rarer": "upgrade_focus_lens"
    }
   ],
   "review": [
    {
-    "name": "Rapid Rounds",
-    "compareWith": "Swift Striker",
+    "name": "Ricochet",
+    "compareWith": "Burst Fire",
     "claim": "should_be_more_obvious",
-    "reason": "Rapid Rounds is the tier 1 item whose only stat is Fire Rate, so it is the purest fit for the question. Experienced players would name it as readily as Swift Striker, so it should be at or very near 10 pts.",
-    "outcome": "applied"
+    "reason": "Ricochet is a well-known tier 4 weapon item with a plain Fire Rate stat and no conditional wording in its stat line. Burst Fire's fire rate comes with a conditional on-hit buff, so players may doubt it fits the question. Ricochet should rank at least as obvious as Burst Fire.",
+    "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Burst Fire",
-    "compareWith": "Ricochet",
+    "name": "Frenzy",
+    "compareWith": "Capacitor",
     "claim": "should_be_more_obvious",
-    "reason": "Burst Fire is a very common Fire Rate upgrade built directly from Rapid Rounds, and players see it constantly. Its Fire Rate is partly tied to a conditional effect, but it still has a base Fire Rate stat. It should rank a bit easier than Ricochet, which is mainly known for its ricochet proc.",
-    "outcome": "ignored-invalid"
-   },
-   {
-    "name": "Capacitor",
-    "compareWith": "Frenzy",
-    "claim": "should_be_more_obscure",
-    "reason": "Capacitor is known as a slow and silence active, and its Fire Rate 5 is a minor stat that players rarely associate with it. Frenzy has a larger, more visible Fire Rate stat, so Frenzy should be easier than Capacitor.",
+    "reason": "Frenzy is a commonly built weapon item and players know it for its low-health stat bonuses, with fire rate among them. Capacitor is mainly an active slow/silence item with a minor 5 Fire Rate stat, and few people associate it with fire rate. Frenzy should be rated more obvious than Capacitor, which is the more obscure of the two.",
     "outcome": "ignored-invalid"
    },
    {
     "name": "Focus Lens",
     "compareWith": "Capacitor",
     "claim": "should_be_more_obvious",
-    "reason": "Focus Lens is a Spirit item, so players are unlikely to link it to Fire Rate. The 100-point slot is plausible, but Capacitor is also a weapon active whose Fire Rate is a minor stat, and both are comparably obscure. Capacitor should probably be scored at 100 alongside it.",
+    "reason": "Focus Lens is a popular spirit item, so players know it well. But it is a spirit silence item, and few would connect it with a Fire Rate bonus, so it stays very obscure for this question. The 100-point slot is reasonable, though Capacitor's 85 points is nearly as high and the two are close.",
     "outcome": "rejected-by-comparison"
    }
   ]

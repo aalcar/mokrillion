@@ -24,9 +24,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:13:25.331Z",
+ "generatedAt": "2026-11-25T04:34:34.976Z",
  "answers": [
   {
    "entityId": "hero_necro",
@@ -35,26 +35,26 @@
    "score": 10
   },
   {
-   "entityId": "hero_krill",
-   "name": "Mo & Krill",
+   "entityId": "hero_forge",
+   "name": "McGinnis",
    "rank": 2,
    "score": 30
   },
   {
-   "entityId": "hero_forge",
-   "name": "McGinnis",
+   "entityId": "hero_krill",
+   "name": "Mo & Krill",
    "rank": 3,
    "score": 30
   },
   {
-   "entityId": "hero_tengu",
-   "name": "Ivy",
+   "entityId": "hero_viper",
+   "name": "Vyper",
    "rank": 4,
    "score": 60
   },
   {
-   "entityId": "hero_werewolf",
-   "name": "Silver",
+   "entityId": "hero_tengu",
+   "name": "Ivy",
    "rank": 5,
    "score": 60
   },
@@ -65,20 +65,20 @@
    "score": 60
   },
   {
-   "entityId": "hero_nurse",
-   "name": "Nurse Harrow",
+   "entityId": "hero_werewolf",
+   "name": "Silver",
    "rank": 7,
    "score": 60
   },
   {
-   "entityId": "hero_familiar",
-   "name": "Rem",
+   "entityId": "hero_nurse",
+   "name": "Nurse Harrow",
    "rank": 8,
    "score": 85
   },
   {
-   "entityId": "hero_deadpack",
-   "name": "Deadman Danny",
+   "entityId": "hero_chessmaster",
+   "name": "Solomon",
    "rank": 9,
    "score": 85
   },
@@ -89,19 +89,25 @@
    "score": 85
   },
   {
-   "entityId": "hero_chessmaster",
-   "name": "Solomon",
+   "entityId": "hero_familiar",
+   "name": "Rem",
    "rank": 11,
    "score": 85
   },
   {
-   "entityId": "hero_viper",
-   "name": "Vyper",
+   "entityId": "hero_deadpack",
+   "name": "Deadman Danny",
    "rank": 12,
    "score": 100
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_baba",
@@ -124,7 +130,7 @@
     "popularityObscurity": 0.9090909090909091,
     "spellingCost": 4,
     "spellingObscurity": 0.36363636363636365,
-    "key": 0.761818181818182
+    "key": 0.7072727272727273
    },
    {
     "id": "hero_chessmaster",
@@ -147,7 +153,7 @@
     "popularityObscurity": 1,
     "spellingCost": 7,
     "spellingObscurity": 0.9545454545454546,
-    "key": 0.7877272727272728
+    "key": 0.6922727272727273
    },
    {
     "id": "hero_deadpack",
@@ -170,7 +176,7 @@
     "popularityObscurity": 0.36363636363636365,
     "spellingCost": 5,
     "spellingObscurity": 0.5454545454545454,
-    "key": 0.7027272727272728
+    "key": 0.8527272727272728
    },
    {
     "id": "hero_familiar",
@@ -193,7 +199,7 @@
     "popularityObscurity": 0.6363636363636364,
     "spellingCost": 3,
     "spellingObscurity": 0.18181818181818182,
-    "key": 0.6536363636363637
+    "key": 0.6718181818181818
    },
    {
     "id": "hero_forge",
@@ -216,7 +222,7 @@
     "popularityObscurity": 0.7272727272727273,
     "spellingCost": 3,
     "spellingObscurity": 0.18181818181818182,
-    "key": 0.32000000000000006
+    "key": 0.14727272727272728
    },
    {
     "id": "hero_krill",
@@ -239,7 +245,7 @@
     "popularityObscurity": 0.45454545454545453,
     "spellingCost": 2,
     "spellingObscurity": 0,
-    "key": 0.26181818181818184
+    "key": 0.18454545454545454
    },
    {
     "id": "hero_necro",
@@ -262,7 +268,7 @@
     "popularityObscurity": 0.09090909090909091,
     "spellingCost": 6,
     "spellingObscurity": 0.7727272727272727,
-    "key": 0.135
+    "key": 0.13954545454545456
    },
    {
     "id": "hero_nurse",
@@ -285,7 +291,7 @@
     "popularityObscurity": 0.2727272727272727,
     "spellingCost": 5,
     "spellingObscurity": 0.5454545454545454,
-    "key": 0.5263636363636365
+    "key": 0.6354545454545455
    },
    {
     "id": "hero_priest",
@@ -308,7 +314,7 @@
     "popularityObscurity": 0,
     "spellingCost": 7,
     "spellingObscurity": 0.9545454545454546,
-    "key": 0.4277272727272728
+    "key": 0.6004545454545455
    },
    {
     "id": "hero_tengu",
@@ -331,7 +337,7 @@
     "popularityObscurity": 0.18181818181818182,
     "spellingCost": 3,
     "spellingObscurity": 0.18181818181818182,
-    "key": 0.3418181818181819
+    "key": 0.4145454545454546
    },
    {
     "id": "hero_viper",
@@ -354,7 +360,7 @@
     "popularityObscurity": 0.8181818181818182,
     "spellingCost": 5,
     "spellingObscurity": 0.5454545454545454,
-    "key": 0.6645454545454547
+    "key": 0.600909090909091
    },
    {
     "id": "hero_werewolf",
@@ -377,112 +383,112 @@
     "popularityObscurity": 0.5454545454545454,
     "spellingCost": 6,
     "spellingObscurity": 0.7727272727272727,
-    "key": 0.4168181818181818
+    "key": 0.35318181818181815
    }
   ],
   "passAgreement": 0.5757575757575758,
   "orderBeforeRefinement": [
    "hero_necro",
-   "hero_krill",
    "hero_forge",
-   "hero_tengu",
+   "hero_krill",
    "hero_werewolf",
+   "hero_tengu",
    "hero_priest",
+   "hero_viper",
    "hero_nurse",
    "hero_familiar",
-   "hero_viper",
-   "hero_deadpack",
+   "hero_chessmaster",
    "hero_baba",
-   "hero_chessmaster"
+   "hero_deadpack"
   ],
   "pairwise": [
    {
-    "a": "hero_viper",
+    "a": "hero_familiar",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": "hero_familiar"
+   },
+   {
+    "a": "hero_familiar",
+    "b": "hero_baba",
+    "purpose": "rare-contenders",
+    "rarer": "hero_familiar"
+   },
+   {
+    "a": "hero_familiar",
     "b": "hero_deadpack",
     "purpose": "rare-contenders",
     "rarer": "hero_deadpack"
    },
    {
-    "a": "hero_viper",
+    "a": "hero_chessmaster",
     "b": "hero_baba",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "hero_baba"
    },
    {
-    "a": "hero_viper",
-    "b": "hero_chessmaster",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_deadpack",
-    "b": "hero_baba",
-    "purpose": "rare-contenders",
-    "rarer": "hero_deadpack"
-   },
-   {
-    "a": "hero_deadpack",
-    "b": "hero_chessmaster",
+    "a": "hero_chessmaster",
+    "b": "hero_deadpack",
     "purpose": "rare-contenders",
     "rarer": "hero_deadpack"
    },
    {
     "a": "hero_baba",
-    "b": "hero_chessmaster",
+    "b": "hero_deadpack",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "hero_deadpack"
    },
    {
     "a": "hero_necro",
-    "b": "hero_krill",
+    "b": "hero_forge",
     "purpose": "tier-boundary",
-    "rarer": "hero_krill"
+    "rarer": "hero_necro"
    },
    {
-    "a": "hero_forge",
-    "b": "hero_tengu",
+    "a": "hero_krill",
+    "b": "hero_werewolf",
     "purpose": "tier-boundary",
-    "rarer": "hero_tengu"
+    "rarer": null
    },
    {
-    "a": "hero_nurse",
+    "a": "hero_viper",
+    "b": "hero_nurse",
+    "purpose": "tier-boundary",
+    "rarer": "hero_nurse"
+   },
+   {
+    "a": "hero_viper",
+    "b": "hero_werewolf",
+    "purpose": "review",
+    "rarer": "hero_werewolf"
+   },
+   {
+    "a": "hero_deadpack",
     "b": "hero_familiar",
-    "purpose": "tier-boundary",
-    "rarer": "hero_familiar"
-   },
-   {
-    "a": "hero_necro",
-    "b": "hero_krill",
     "purpose": "review",
-    "rarer": null
-   },
-   {
-    "a": "hero_chessmaster",
-    "b": "hero_tengu",
-    "purpose": "review",
-    "rarer": "hero_chessmaster"
+    "rarer": "hero_deadpack"
    }
   ],
   "review": [
    {
-    "name": "Graves",
-    "compareWith": "Mo & Krill",
+    "name": "McGinnis",
+    "compareWith": "Graves",
     "claim": "should_be_more_obscure",
-    "reason": "Graves is placed as the most obvious answer, yet his kit (Jar of Dead, Grasping Hands, Essence Theft, Borrowed Decree) is not strongly tied to boon scaling in players' minds. Mo & Krill is better known for Burrow and Combo, which many players link to scaling, so the two should be closer, and Graves should not sit a full tier below it.",
-    "outcome": "rejected-by-comparison"
-   },
-   {
-    "name": "Vyper",
-    "compareWith": "Deadman Danny",
-    "claim": "should_be_more_obscure",
-    "reason": "Vyper is an assassin with a well-known kit built around Slither and Lethal Venom, so players recall her easily. Placing her at 85 alongside much less recognized heroes overstates her obscurity, while Deadman Danny at 100 is plausible only because he is a newer, rarely discussed hero. Vyper should sit nearer 60.",
+    "reason": "McGinnis is a turret hero and is mostly known for turrets and walls, which don't obviously scale with boons. The question needs an association with boon scaling, and a 10-point placement assumes it is the default answer. Graves, with Jar of Dead and his Mystic kit, is at least as likely to come to mind.",
     "outcome": "applied-by-data"
    },
    {
-    "name": "Solomon",
-    "compareWith": "Ivy",
+    "name": "Vyper",
+    "compareWith": "Silver",
     "claim": "should_be_more_obvious",
-    "reason": "Solomon's chess-themed kit (Setup Bishop, Kingside Knight, Rook Battery, Develop Queen) is highly memorable and he is a commonly played Mystic. He should be rated at least as obvious as Ivy, not placed in the 85-point tier.",
+    "reason": "Vyper has several ability-based tools, including Lethal Venom and Screwjab Dagger, and these are more likely to be recalled for boon scaling than Silver's werewolf kit. Giving both 60 points flattens a likely difference in how readily players name them.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Deadman Danny",
+    "compareWith": "Rem",
+    "claim": "should_be_more_obvious",
+    "reason": "Deadman Danny is a distinctive marksman with several iconic abilities, such as Chimera Mk1 and Close The Deal. A seasoned player is not obviously less likely to name him than Rem, whose kit is mostly support utility. The 100-point slot looks too extreme for him compared with the 85-point group.",
     "outcome": "rejected-by-comparison"
    }
   ]

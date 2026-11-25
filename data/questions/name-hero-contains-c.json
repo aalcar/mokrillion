@@ -20,49 +20,49 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:15:35.091Z",
+ "generatedAt": "2026-11-25T04:43:32.978Z",
  "answers": [
   {
-   "entityId": "hero_nano",
-   "name": "Calico",
+   "entityId": "hero_hornet",
+   "name": "Vindicta",
    "rank": 1,
    "score": 10
   },
   {
-   "entityId": "hero_hornet",
-   "name": "Vindicta",
+   "entityId": "hero_nano",
+   "name": "Calico",
    "rank": 2,
    "score": 30
   },
   {
-   "entityId": "hero_unicorn",
-   "name": "Celeste",
+   "entityId": "hero_viscous",
+   "name": "Viscous",
    "rank": 3,
    "score": 60
   },
   {
-   "entityId": "hero_viscous",
-   "name": "Viscous",
+   "entityId": "hero_frank",
+   "name": "Victor",
    "rank": 4,
    "score": 60
   },
   {
+   "entityId": "hero_unicorn",
+   "name": "Celeste",
+   "rank": 5,
+   "score": 85
+  },
+  {
    "entityId": "hero_forge",
    "name": "McGinnis",
-   "rank": 5,
+   "rank": 6,
    "score": 85
   },
   {
    "entityId": "hero_magician",
    "name": "Sinclair",
-   "rank": 6,
-   "score": 85
-  },
-  {
-   "entityId": "hero_frank",
-   "name": "Victor",
    "rank": 7,
    "score": 85
   },
@@ -74,6 +74,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_forge",
@@ -96,7 +102,7 @@
     "popularityObscurity": 0.8571428571428571,
     "spellingCost": 3,
     "spellingObscurity": 0,
-    "key": 0.5314285714285715
+    "key": 0.6857142857142857
    },
    {
     "id": "hero_frank",
@@ -119,7 +125,7 @@
     "popularityObscurity": 0.2857142857142857,
     "spellingCost": 6,
     "spellingObscurity": 0.2857142857142857,
-    "key": 0.5214285714285715
+    "key": 0.3928571428571428
    },
    {
     "id": "hero_hornet",
@@ -142,7 +148,7 @@
     "popularityObscurity": 0,
     "spellingCost": 8,
     "spellingObscurity": 0.9285714285714286,
-    "key": 0.3135714285714286
+    "key": 0.16785714285714287
    },
    {
     "id": "hero_magician",
@@ -165,7 +171,7 @@
     "popularityObscurity": 1,
     "spellingCost": 8,
     "spellingObscurity": 0.9285714285714286,
-    "key": 0.8550000000000001
+    "key": 0.9321428571428572
    },
    {
     "id": "hero_nano",
@@ -188,7 +194,7 @@
     "popularityObscurity": 0.42857142857142855,
     "spellingCost": 6,
     "spellingObscurity": 0.2857142857142857,
-    "key": 0.24857142857142858
+    "key": 0.34285714285714286
    },
    {
     "id": "hero_synth",
@@ -211,7 +217,7 @@
     "popularityObscurity": 0.14285714285714285,
     "spellingCost": 6,
     "spellingObscurity": 0.2857142857142857,
-    "key": 0.6214285714285714
+    "key": 0.36428571428571427
    },
    {
     "id": "hero_unicorn",
@@ -234,7 +240,7 @@
     "popularityObscurity": 0.5714285714285714,
     "spellingCost": 7,
     "spellingObscurity": 0.6428571428571429,
-    "key": 0.4492857142857143
+    "key": 0.5178571428571428
    },
    {
     "id": "hero_viscous",
@@ -257,44 +263,50 @@
     "popularityObscurity": 0.7142857142857143,
     "spellingCost": 7,
     "spellingObscurity": 0.6428571428571429,
-    "key": 0.4592857142857143
+    "key": 0.5964285714285714
    }
   ],
   "passAgreement": 0.5571428571428572,
   "orderBeforeRefinement": [
-   "hero_nano",
    "hero_hornet",
+   "hero_nano",
+   "hero_synth",
+   "hero_frank",
    "hero_unicorn",
    "hero_viscous",
-   "hero_frank",
    "hero_forge",
-   "hero_synth",
    "hero_magician"
   ],
   "pairwise": [
    {
-    "a": "hero_frank",
+    "a": "hero_unicorn",
+    "b": "hero_viscous",
+    "purpose": "rare-contenders",
+    "rarer": "hero_unicorn"
+   },
+   {
+    "a": "hero_unicorn",
     "b": "hero_forge",
     "purpose": "rare-contenders",
-    "rarer": "hero_frank"
+    "rarer": "hero_unicorn"
    },
    {
-    "a": "hero_frank",
-    "b": "hero_synth",
-    "purpose": "rare-contenders",
-    "rarer": "hero_synth"
-   },
-   {
-    "a": "hero_frank",
+    "a": "hero_unicorn",
     "b": "hero_magician",
     "purpose": "rare-contenders",
     "rarer": null
    },
    {
-    "a": "hero_forge",
-    "b": "hero_synth",
+    "a": "hero_viscous",
+    "b": "hero_forge",
     "purpose": "rare-contenders",
-    "rarer": "hero_synth"
+    "rarer": null
+   },
+   {
+    "a": "hero_viscous",
+    "b": "hero_magician",
+    "purpose": "rare-contenders",
+    "rarer": "hero_magician"
    },
    {
     "a": "hero_forge",
@@ -303,44 +315,57 @@
     "rarer": null
    },
    {
-    "a": "hero_synth",
-    "b": "hero_magician",
-    "purpose": "rare-contenders",
+    "a": "hero_hornet",
+    "b": "hero_nano",
+    "purpose": "tier-boundary",
     "rarer": null
    },
    {
     "a": "hero_nano",
-    "b": "hero_hornet",
+    "b": "hero_synth",
     "purpose": "tier-boundary",
-    "rarer": "hero_hornet"
+    "rarer": "hero_synth"
+   },
+   {
+    "a": "hero_unicorn",
+    "b": "hero_viscous",
+    "purpose": "review",
+    "rarer": "hero_viscous"
+   },
+   {
+    "a": "hero_viscous",
+    "b": "hero_synth",
+    "purpose": "review",
+    "rarer": "hero_synth"
    },
    {
     "a": "hero_hornet",
-    "b": "hero_unicorn",
-    "purpose": "tier-boundary",
-    "rarer": "hero_hornet"
-   },
-   {
-    "a": "hero_synth",
-    "b": "hero_frank",
+    "b": "hero_nano",
     "purpose": "review",
     "rarer": null
    }
   ],
   "review": [
    {
-    "name": "Pocket",
-    "compareWith": "Victor",
+    "name": "Celeste",
+    "compareWith": "Viscous",
     "claim": "should_be_more_obvious",
-    "reason": "Pocket's name has a C right in the middle and is a distinctive, memorable word, whereas Victor is a plainer name. Both are likely to be rare, but Pocket's 'ck' is easy to spot, so it should not be rarer than Victor or Sinclair. Victor's C is hidden in the middle, so Victor should be at least as obscure as Pocket.",
-    "outcome": "rejected-by-comparison"
+    "reason": "Celeste has a very plain, easily recognized name with a clear C at the start. She is not an especially obscure hero, and players scanning for a C name would reach her about as readily as Viscous, whose C is buried mid-name. Maxing her out as the rarest answer rests on an implausible assumption.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Viscous",
+    "compareWith": "Pocket",
+    "claim": "should_be_more_obvious",
+    "reason": "Viscous is a well-known, memorable hero whose name has two Cs and a distinctive sound. Placing it 25 points rarer than Pocket, whose C is in the middle, underrates how strongly the C registers in the name.",
+    "outcome": "applied"
    },
    {
     "name": "Vindicta",
-    "compareWith": "Celeste",
-    "claim": "should_be_more_obvious",
-    "reason": "Vindicta is a very popular marksman and a well-known hero. Her C sits in the middle of the name, but players who scan the roster will think of her quickly, so she is likely about as obvious as Celeste and should not sit 30 points above her.",
-    "outcome": "applied-by-data"
+    "compareWith": "Calico",
+    "claim": "should_be_more_obscure",
+    "reason": "Vindicta's C is in the middle of her name, so players hunting for a C will often think of names starting with C first. Calico starts with C and should be at least as obvious, so Vindicta at 10 is likely too low.",
+    "outcome": "rejected-by-comparison"
    }
   ]
  }

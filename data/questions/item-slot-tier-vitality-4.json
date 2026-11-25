@@ -29,9 +29,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:05:25.615Z",
+ "generatedAt": "2026-11-25T04:40:07.836Z",
  "answers": [
   {
    "entityId": "upgrade_unstoppable",
@@ -40,38 +40,38 @@
    "score": 10
   },
   {
-   "entityId": "upgrade_cheat_death",
-   "name": "Cheat Death",
+   "entityId": "upgrade_auto_cleanse",
+   "name": "Indomitable",
    "rank": 2,
    "score": 30
   },
   {
-   "entityId": "upgrade_auto_cleanse",
-   "name": "Indomitable",
+   "entityId": "upgrade_cheat_death",
+   "name": "Cheat Death",
    "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_damage_recycler",
+   "name": "Leech",
+   "rank": 4,
    "score": 30
   },
   {
    "entityId": "upgrade_juggernaut",
    "name": "Juggernaut",
-   "rank": 4,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_phantom_strike",
-   "name": "Phantom Strike",
    "rank": 5,
    "score": 60
   },
   {
-   "entityId": "upgrade_damage_recycler",
-   "name": "Leech",
+   "entityId": "upgrade_siphon_bullets",
+   "name": "Siphon Bullets",
    "rank": 6,
    "score": 60
   },
   {
-   "entityId": "upgrade_deflecting_armor",
-   "name": "Plated Armor",
+   "entityId": "upgrade_spellbreaker",
+   "name": "Spellbreaker",
    "rank": 7,
    "score": 60
   },
@@ -82,50 +82,50 @@
    "score": 60
   },
   {
-   "entityId": "upgrade_surging_power",
-   "name": "Vampiric Burst",
+   "entityId": "upgrade_deflecting_armor",
+   "name": "Plated Armor",
    "rank": 9,
    "score": 60
   },
   {
-   "entityId": "upgrade_siphon_bullets",
-   "name": "Siphon Bullets",
+   "entityId": "upgrade_surging_power",
+   "name": "Vampiric Burst",
    "rank": 10,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_absorbing_armor",
-   "name": "Witchmail",
-   "rank": 11,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_divine_barrier",
-   "name": "Divine Barrier",
-   "rank": 12,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_spellbreaker",
-   "name": "Spellbreaker",
-   "rank": 13,
    "score": 85
   },
   {
    "entityId": "upgrade_infuser",
    "name": "Infuser",
-   "rank": 14,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_inhibitor",
-   "name": "Inhibitor",
-   "rank": 15,
+   "rank": 11,
    "score": 85
   },
   {
    "entityId": "upgrade_healbuff",
    "name": "Healing Tempo",
+   "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_phantom_strike",
+   "name": "Phantom Strike",
+   "rank": 13,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_absorbing_armor",
+   "name": "Witchmail",
+   "rank": 14,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_divine_barrier",
+   "name": "Divine Barrier",
+   "rank": 15,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_inhibitor",
+   "name": "Inhibitor",
    "rank": 16,
    "score": 85
   },
@@ -137,6 +137,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_absorbing_armor",
@@ -159,7 +165,7 @@
     "popularityObscurity": 0.375,
     "spellingCost": 9,
     "spellingObscurity": 0.71875,
-    "key": 0.5365625
+    "key": 0.45781249999999996
    },
    {
     "id": "upgrade_auto_cleanse",
@@ -182,7 +188,7 @@
     "popularityObscurity": 0.0625,
     "spellingCost": 5,
     "spellingObscurity": 0.09375,
-    "key": 0.3528125000000001
+    "key": 0.1953125
    },
    {
     "id": "upgrade_cheat_death",
@@ -205,7 +211,7 @@
     "popularityObscurity": 0.75,
     "spellingCost": 5,
     "spellingObscurity": 0.09375,
-    "key": 0.37343750000000003
+    "key": 0.5609374999999999
    },
    {
     "id": "upgrade_colossus",
@@ -228,7 +234,7 @@
     "popularityObscurity": 1,
     "spellingCost": 8,
     "spellingObscurity": 0.625,
-    "key": 0.47250000000000003
+    "key": 0.75
    },
    {
     "id": "upgrade_damage_recycler",
@@ -251,7 +257,7 @@
     "popularityObscurity": 0.5,
     "spellingCost": 5,
     "spellingObscurity": 0.09375,
-    "key": 0.3146875
+    "key": 0.4046875
    },
    {
     "id": "upgrade_deflecting_armor",
@@ -274,7 +280,7 @@
     "popularityObscurity": 0.125,
     "spellingCost": 6,
     "spellingObscurity": 0.375,
-    "key": 0.46749999999999997
+    "key": 0.2875
    },
    {
     "id": "upgrade_divine_barrier",
@@ -297,7 +303,7 @@
     "popularityObscurity": 0.8125,
     "spellingCost": 6,
     "spellingObscurity": 0.375,
-    "key": 0.5431250000000001
+    "key": 0.678125
    },
    {
     "id": "upgrade_diviners_kevlar",
@@ -320,7 +326,7 @@
     "popularityObscurity": 0.9375,
     "spellingCost": 6,
     "spellingObscurity": 0.375,
-    "key": 0.9231250000000001
+    "key": 0.915625
    },
    {
     "id": "upgrade_healbuff",
@@ -343,7 +349,7 @@
     "popularityObscurity": 0.625,
     "spellingCost": 5,
     "spellingObscurity": 0.09375,
-    "key": 0.7015625000000001
+    "key": 0.6453125
    },
    {
     "id": "upgrade_infuser",
@@ -366,7 +372,7 @@
     "popularityObscurity": 0.5625,
     "spellingCost": 7,
     "spellingObscurity": 0.5625,
-    "key": 0.7000000000000001
+    "key": 0.625
    },
    {
     "id": "upgrade_inhibitor",
@@ -389,7 +395,7 @@
     "popularityObscurity": 0.875,
     "spellingCost": 9,
     "spellingObscurity": 0.71875,
-    "key": 0.7296875
+    "key": 0.8046875
    },
    {
     "id": "upgrade_juggernaut",
@@ -412,7 +418,7 @@
     "popularityObscurity": 0.3125,
     "spellingCost": 10,
     "spellingObscurity": 0.8125,
-    "key": 0.365
+    "key": 0.35
    },
    {
     "id": "upgrade_phantom_strike",
@@ -435,7 +441,7 @@
     "popularityObscurity": 0.6875,
     "spellingCost": 13,
     "spellingObscurity": 0.96875,
-    "key": 0.6396875
+    "key": 0.6734374999999999
    },
    {
     "id": "upgrade_siphon_bullets",
@@ -458,7 +464,7 @@
     "popularityObscurity": 0.25,
     "spellingCost": 6,
     "spellingObscurity": 0.375,
-    "key": 0.4900000000000001
+    "key": 0.3625
    },
    {
     "id": "upgrade_spellbreaker",
@@ -481,7 +487,7 @@
     "popularityObscurity": 0.1875,
     "spellingCost": 12,
     "spellingObscurity": 0.875,
-    "key": 0.37312500000000004
+    "key": 0.290625
    },
    {
     "id": "upgrade_surging_power",
@@ -504,7 +510,7 @@
     "popularityObscurity": 0.4375,
     "spellingCost": 13,
     "spellingObscurity": 0.96875,
-    "key": 0.4915625
+    "key": 0.4765625
    },
    {
     "id": "upgrade_unstoppable",
@@ -527,56 +533,56 @@
     "popularityObscurity": 0,
     "spellingCost": 6,
     "spellingObscurity": 0.375,
-    "key": 0.025625000000000002
+    "key": 0.021875000000000002
    }
   ],
   "passAgreement": 0.5735294117647058,
   "orderBeforeRefinement": [
    "upgrade_unstoppable",
-   "upgrade_damage_recycler",
    "upgrade_auto_cleanse",
-   "upgrade_juggernaut",
-   "upgrade_spellbreaker",
-   "upgrade_cheat_death",
    "upgrade_deflecting_armor",
-   "upgrade_colossus",
+   "upgrade_spellbreaker",
+   "upgrade_juggernaut",
    "upgrade_siphon_bullets",
-   "upgrade_surging_power",
+   "upgrade_damage_recycler",
    "upgrade_absorbing_armor",
-   "upgrade_divine_barrier",
-   "upgrade_phantom_strike",
+   "upgrade_surging_power",
+   "upgrade_cheat_death",
    "upgrade_infuser",
    "upgrade_healbuff",
+   "upgrade_phantom_strike",
+   "upgrade_divine_barrier",
+   "upgrade_colossus",
    "upgrade_inhibitor",
    "upgrade_diviners_kevlar"
   ],
   "pairwise": [
    {
-    "a": "upgrade_infuser",
-    "b": "upgrade_healbuff",
+    "a": "upgrade_divine_barrier",
+    "b": "upgrade_colossus",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_healbuff"
+    "rarer": "upgrade_divine_barrier"
    },
    {
-    "a": "upgrade_infuser",
+    "a": "upgrade_divine_barrier",
     "b": "upgrade_inhibitor",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "upgrade_inhibitor"
    },
    {
-    "a": "upgrade_infuser",
+    "a": "upgrade_divine_barrier",
     "b": "upgrade_diviners_kevlar",
     "purpose": "rare-contenders",
     "rarer": "upgrade_diviners_kevlar"
    },
    {
-    "a": "upgrade_healbuff",
+    "a": "upgrade_colossus",
     "b": "upgrade_inhibitor",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_healbuff"
+    "rarer": "upgrade_inhibitor"
    },
    {
-    "a": "upgrade_healbuff",
+    "a": "upgrade_colossus",
     "b": "upgrade_diviners_kevlar",
     "purpose": "rare-contenders",
     "rarer": "upgrade_diviners_kevlar"
@@ -589,75 +595,75 @@
    },
    {
     "a": "upgrade_unstoppable",
-    "b": "upgrade_damage_recycler",
+    "b": "upgrade_auto_cleanse",
     "purpose": "tier-boundary",
-    "rarer": "upgrade_damage_recycler"
+    "rarer": "upgrade_auto_cleanse"
    },
    {
-    "a": "upgrade_juggernaut",
-    "b": "upgrade_spellbreaker",
+    "a": "upgrade_spellbreaker",
+    "b": "upgrade_juggernaut",
     "purpose": "tier-boundary",
-    "rarer": null
+    "rarer": "upgrade_juggernaut"
    },
    {
-    "a": "upgrade_siphon_bullets",
-    "b": "upgrade_surging_power",
+    "a": "upgrade_surging_power",
+    "b": "upgrade_cheat_death",
     "purpose": "tier-boundary",
-    "rarer": "upgrade_siphon_bullets"
+    "rarer": "upgrade_surging_power"
+   },
+   {
+    "a": "upgrade_cheat_death",
+    "b": "upgrade_deflecting_armor",
+    "purpose": "review",
+    "rarer": "upgrade_deflecting_armor"
    },
    {
     "a": "upgrade_phantom_strike",
     "b": "upgrade_spellbreaker",
     "purpose": "review",
-    "rarer": "upgrade_spellbreaker"
+    "rarer": null
    },
    {
-    "a": "upgrade_cheat_death",
-    "b": "upgrade_damage_recycler",
-    "purpose": "review",
-    "rarer": "upgrade_damage_recycler"
-   },
-   {
-    "a": "upgrade_healbuff",
-    "b": "upgrade_diviners_kevlar",
-    "purpose": "review",
-    "rarer": "upgrade_diviners_kevlar"
-   },
-   {
-    "a": "upgrade_divine_barrier",
+    "a": "upgrade_colossus",
     "b": "upgrade_absorbing_armor",
     "purpose": "review",
-    "rarer": null
+    "rarer": "upgrade_absorbing_armor"
+   },
+   {
+    "a": "upgrade_spellbreaker",
+    "b": "upgrade_damage_recycler",
+    "purpose": "review",
+    "rarer": "upgrade_spellbreaker"
    }
   ],
   "review": [
    {
+    "name": "Cheat Death",
+    "compareWith": "Plated Armor",
+    "claim": "should_be_more_obvious",
+    "reason": "Cheat Death is a famously memorable item whose name and effect are widely recognized, and it is a common answer for a Tier 4 Vitality item. Plated Armor is a more forgettable item and shouldn't sit at 30 pts while Cheat Death is at 60.",
+    "outcome": "applied"
+   },
+   {
     "name": "Phantom Strike",
     "compareWith": "Spellbreaker",
     "claim": "should_be_more_obvious",
-    "reason": "Phantom Strike is a well-known, iconic item with a memorable teleport-and-pull effect that players see often, so it should not sit at the same 85-point tier as niche picks. Spellbreaker is a more situational counter item and should be rarer.",
-    "outcome": "applied"
-   },
-   {
-    "name": "Cheat Death",
-    "compareWith": "Leech",
-    "claim": "should_be_more_obvious",
-    "reason": "Cheat Death has a very memorable name and effect, and it is one of the best-known late-game survival items for a question about Vitality. It should be at least as obvious as Leech, whose name is more generic and whose role is less tied to a Vitality identity.",
-    "outcome": "applied"
-   },
-   {
-    "name": "Healing Tempo",
-    "compareWith": "Diviner's Kevlar",
-    "claim": "should_be_more_obscure",
-    "reason": "Healing Tempo is built from Healing Booster and is a niche support item, so it should be rarer than the generic 85 tier. Diviner's Kevlar is a straightforward Vitality-named item, so it should not automatically be the rarest.",
+    "reason": "Phantom Strike is a flashy, widely used and memorable active item that experienced players readily recall. Putting it at 85 pts, level with niche items like Inhibitor, rests on the assumption that players forget it, and it should be closer to Spellbreaker's level.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Divine Barrier",
+    "name": "Colossus",
     "compareWith": "Witchmail",
     "claim": "should_be_more_obvious",
-    "reason": "Divine Barrier is a well-known active that players recognize as a Vitality item, with a memorable cleanse-and-barrier effect, so it should rank above the more niche Witchmail.",
-    "outcome": "rejected-by-comparison"
+    "reason": "Colossus has a highly memorable name and visible effect (growing larger), and it is a commonly bought active. It should not be as obscure as 85 pts and is arguably as likely to come to mind as Witchmail.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Spellbreaker",
+    "compareWith": "Leech",
+    "claim": "should_be_more_obscure",
+    "reason": "Spellbreaker is a situational counter-item that players mostly know for being niche, while Leech is a more recognizable lifesteal-themed item tied to the Vitality category. Spellbreaker at 30 pts is too obvious relative to Leech at 60.",
+    "outcome": "applied"
    }
   ]
  }

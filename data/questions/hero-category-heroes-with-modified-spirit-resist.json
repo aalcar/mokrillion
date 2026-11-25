@@ -18,31 +18,31 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:14:16.243Z",
+ "generatedAt": "2026-11-25T04:35:11.187Z",
  "answers": [
   {
-   "entityId": "hero_lash",
-   "name": "Lash",
+   "entityId": "hero_kelvin",
+   "name": "Kelvin",
    "rank": 1,
    "score": 10
   },
   {
-   "entityId": "hero_kelvin",
-   "name": "Kelvin",
+   "entityId": "hero_forge",
+   "name": "McGinnis",
    "rank": 2,
    "score": 30
   },
   {
-   "entityId": "hero_forge",
-   "name": "McGinnis",
+   "entityId": "hero_synth",
+   "name": "Pocket",
    "rank": 3,
    "score": 60
   },
   {
-   "entityId": "hero_synth",
-   "name": "Pocket",
+   "entityId": "hero_lash",
+   "name": "Lash",
    "rank": 4,
    "score": 60
   },
@@ -60,6 +60,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_baba",
@@ -82,7 +88,7 @@
     "popularityObscurity": 1,
     "spellingCost": 4,
     "spellingObscurity": 0.3,
-    "key": 0.8770000000000001
+    "key": 0.8370000000000002
    },
    {
     "id": "hero_forge",
@@ -105,7 +111,7 @@
     "popularityObscurity": 0.8,
     "spellingCost": 3,
     "spellingObscurity": 0,
-    "key": 0.4080000000000001
+    "key": 0.248
    },
    {
     "id": "hero_kelvin",
@@ -128,7 +134,7 @@
     "popularityObscurity": 0.4,
     "spellingCost": 6,
     "spellingObscurity": 0.7,
-    "key": 0.34900000000000003
+    "key": 0.31899999999999995
    },
    {
     "id": "hero_lash",
@@ -151,7 +157,7 @@
     "popularityObscurity": 0,
     "spellingCost": 4,
     "spellingObscurity": 0.3,
-    "key": 0.367
+    "key": 0.5269999999999999
    },
    {
     "id": "hero_priest",
@@ -174,7 +180,7 @@
     "popularityObscurity": 0.2,
     "spellingCost": 7,
     "spellingObscurity": 1,
-    "key": 0.548
+    "key": 0.6880000000000002
    },
    {
     "id": "hero_synth",
@@ -197,45 +203,45 @@
     "popularityObscurity": 0.6,
     "spellingCost": 6,
     "spellingObscurity": 0.7,
-    "key": 0.45099999999999996
+    "key": 0.3809999999999999
    }
   ],
   "passAgreement": 0.3866666666666667,
   "orderBeforeRefinement": [
-   "hero_kelvin",
-   "hero_lash",
    "hero_forge",
+   "hero_kelvin",
    "hero_synth",
+   "hero_lash",
    "hero_priest",
    "hero_baba"
   ],
   "pairwise": [
    {
-    "a": "hero_forge",
-    "b": "hero_synth",
+    "a": "hero_synth",
+    "b": "hero_lash",
     "purpose": "rare-contenders",
-    "rarer": "hero_synth"
+    "rarer": "hero_lash"
    },
    {
-    "a": "hero_forge",
+    "a": "hero_synth",
     "b": "hero_priest",
     "purpose": "rare-contenders",
     "rarer": "hero_priest"
    },
    {
-    "a": "hero_forge",
+    "a": "hero_synth",
     "b": "hero_baba",
     "purpose": "rare-contenders",
     "rarer": "hero_baba"
    },
    {
-    "a": "hero_synth",
+    "a": "hero_lash",
     "b": "hero_priest",
     "purpose": "rare-contenders",
     "rarer": "hero_priest"
    },
    {
-    "a": "hero_synth",
+    "a": "hero_lash",
     "b": "hero_baba",
     "purpose": "rare-contenders",
     "rarer": "hero_baba"
@@ -244,29 +250,22 @@
     "a": "hero_priest",
     "b": "hero_baba",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "hero_baba"
    },
    {
-    "a": "hero_kelvin",
-    "b": "hero_lash",
+    "a": "hero_forge",
+    "b": "hero_kelvin",
     "purpose": "tier-boundary",
-    "rarer": null
+    "rarer": "hero_kelvin"
    }
   ],
   "review": [
    {
-    "name": "Kelvin",
-    "compareWith": "Lash",
+    "name": "McGinnis",
+    "compareWith": "Kelvin",
     "claim": "should_be_more_obscure",
-    "reason": "Nothing in the wiki facts ties Kelvin to unusual Spirit Resist, and his Healer/freeze identity is unrelated to the question. Placing him as the single most obvious answer at 10 pts rests on general popularity rather than association with this question. He should not sit below Lash, who is a more commonly cited outlier.",
+    "reason": "The wiki facts give no link between McGinnis and unusual Spirit Resist. Experienced players mostly know him for turrets and walls, so he is a surprising answer here. Listing him as the single most obvious pick at 10 pts assumes players tie him to this question, and the wiki excerpt doesn't support that.",
     "outcome": "applied-by-data"
-   },
-   {
-    "name": "Venator",
-    "compareWith": "Baba",
-    "claim": "should_be_more_obvious",
-    "reason": "Venator is a Marksman with a distinct weapon and kit. He is no more obscure than the others, and Baba being at 100 while Venator is at 85 is fine. But 85 for Venator is too close to the bottom compared with Pocket and McGinnis, so he should rank nearer them.",
-    "outcome": "ignored-invalid"
    }
   ]
  }

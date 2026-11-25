@@ -20,9 +20,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:12:45.985Z",
+ "generatedAt": "2026-11-25T04:34:05.304Z",
  "answers": [
   {
    "entityId": "hero_hornet",
@@ -37,26 +37,26 @@
    "score": 30
   },
   {
+   "entityId": "hero_necro",
+   "name": "Graves",
+   "rank": 3,
+   "score": 60
+  },
+  {
    "entityId": "hero_astro",
    "name": "Holliday",
-   "rank": 3,
+   "rank": 4,
    "score": 60
   },
   {
    "entityId": "hero_vampirebat",
    "name": "Mina",
-   "rank": 4,
-   "score": 60
-  },
-  {
-   "entityId": "hero_necro",
-   "name": "Graves",
    "rank": 5,
    "score": 85
   },
   {
-   "entityId": "hero_baba",
-   "name": "Baba",
+   "entityId": "hero_chessmaster",
+   "name": "Solomon",
    "rank": 6,
    "score": 85
   },
@@ -67,13 +67,19 @@
    "score": 85
   },
   {
-   "entityId": "hero_chessmaster",
-   "name": "Solomon",
+   "entityId": "hero_baba",
+   "name": "Baba",
    "rank": 8,
    "score": 100
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_astro",
@@ -96,7 +102,7 @@
     "popularityObscurity": 0.42857142857142855,
     "spellingCost": 8,
     "spellingObscurity": 0.9285714285714286,
-    "key": 0.4692857142857143
+    "key": 0.4764285714285714
    },
    {
     "id": "hero_baba",
@@ -119,7 +125,7 @@
     "popularityObscurity": 0.8571428571428571,
     "spellingCost": 4,
     "spellingObscurity": 0.21428571428571427,
-    "key": 0.7464285714285714
+    "key": 0.7107142857142857
    },
    {
     "id": "hero_chessmaster",
@@ -142,7 +148,7 @@
     "popularityObscurity": 1,
     "spellingCost": 7,
     "spellingObscurity": 0.7142857142857143,
-    "key": 0.75
+    "key": 0.6428571428571428
    },
    {
     "id": "hero_forge",
@@ -165,7 +171,7 @@
     "popularityObscurity": 0.7142857142857143,
     "spellingCost": 3,
     "spellingObscurity": 0,
-    "key": 0.3328571428571429
+    "key": 0.1757142857142857
    },
    {
     "id": "hero_hornet",
@@ -188,7 +194,7 @@
     "popularityObscurity": 0.2857142857142857,
     "spellingCost": 8,
     "spellingObscurity": 0.9285714285714286,
-    "key": 0.2707142857142857
+    "key": 0.24928571428571425
    },
    {
     "id": "hero_necro",
@@ -211,7 +217,7 @@
     "popularityObscurity": 0.14285714285714285,
     "spellingCost": 6,
     "spellingObscurity": 0.5,
-    "key": 0.2864285714285714
+    "key": 0.3435714285714285
    },
    {
     "id": "hero_vampirebat",
@@ -234,7 +240,7 @@
     "popularityObscurity": 0,
     "spellingCost": 4,
     "spellingObscurity": 0.21428571428571427,
-    "key": 0.38785714285714284
+    "key": 0.5592857142857142
    },
    {
     "id": "hero_werewolf",
@@ -257,103 +263,84 @@
     "popularityObscurity": 0.5714285714285714,
     "spellingCost": 6,
     "spellingObscurity": 0.5,
-    "key": 0.7564285714285715
+    "key": 0.8421428571428572
    }
   ],
   "passAgreement": 0.45714285714285713,
   "orderBeforeRefinement": [
+   "hero_forge",
    "hero_hornet",
    "hero_necro",
-   "hero_forge",
-   "hero_vampirebat",
    "hero_astro",
-   "hero_baba",
+   "hero_vampirebat",
    "hero_chessmaster",
+   "hero_baba",
    "hero_werewolf"
   ],
   "pairwise": [
    {
-    "a": "hero_astro",
+    "a": "hero_vampirebat",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": "hero_chessmaster"
+   },
+   {
+    "a": "hero_vampirebat",
     "b": "hero_baba",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "hero_baba"
    },
    {
-    "a": "hero_astro",
-    "b": "hero_chessmaster",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_astro",
-    "b": "hero_werewolf",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_baba",
-    "b": "hero_chessmaster",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_baba",
-    "b": "hero_werewolf",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_chessmaster",
+    "a": "hero_vampirebat",
     "b": "hero_werewolf",
     "purpose": "rare-contenders",
     "rarer": "hero_werewolf"
    },
    {
-    "a": "hero_hornet",
-    "b": "hero_necro",
+    "a": "hero_chessmaster",
+    "b": "hero_baba",
+    "purpose": "rare-contenders",
+    "rarer": "hero_baba"
+   },
+   {
+    "a": "hero_chessmaster",
+    "b": "hero_werewolf",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_baba",
+    "b": "hero_werewolf",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_forge",
+    "b": "hero_hornet",
     "purpose": "tier-boundary",
     "rarer": null
    },
    {
-    "a": "hero_necro",
-    "b": "hero_forge",
-    "purpose": "tier-boundary",
-    "rarer": "hero_necro"
-   },
-   {
     "a": "hero_hornet",
-    "b": "hero_forge",
-    "purpose": "review",
-    "rarer": null
-   },
-   {
-    "a": "hero_astro",
     "b": "hero_necro",
-    "purpose": "review",
+    "purpose": "tier-boundary",
     "rarer": "hero_necro"
    }
   ],
   "review": [
    {
-    "name": "Silver",
-    "compareWith": "Solomon",
-    "claim": "should_be_more_obvious",
-    "reason": "Silver is a Brawler, so players probably have a more obvious association between him and a stamina-related stat than they do with a Mystic like Solomon. His Boot Kick and Slam Fire are mobility-adjacent, which makes him easier to recall. Solomon is a lower-profile Mystic, so the 100-point slot is not clearly more obscure than Solomon, who should rank at or above it.",
+    "name": "McGinnis",
+    "compareWith": "Vindicta",
+    "claim": "should_be_more_obscure",
+    "reason": "The wiki text gives nothing tying McGinnis to low stamina, and the question rests on a stat most players never check. A turret-and-wall hero is not an obvious pick for 2 stamina. Giving McGinnis 10 points implies near-universal recall that the evidence does not support, so he should sit closer to Vindicta.",
     "outcome": "applied-by-data"
    },
    {
-    "name": "Vindicta",
-    "compareWith": "McGinnis",
-    "claim": "should_be_more_obscure",
-    "reason": "Vindicta is a famous Marksman whose identity is flight and sniping, not stamina. Her popularity is unrelated to this question, so she is not clearly the top answer at 10 pts. McGinnis, with his turrets, is a Mystic that players more readily group with low-mobility, low-stamina heroes.",
-    "outcome": "rejected-by-comparison"
-   },
-   {
-    "name": "Holliday",
-    "compareWith": "Graves",
+    "name": "Silver",
+    "compareWith": "Baba",
     "claim": "should_be_more_obvious",
-    "reason": "Holliday is a very popular, widely played Marksman with a highly memorable kit (Bounce Pad, Spirit Lasso). She should come to mind more readily than the less-played Graves and Mina, so 85 pts is too obscure.",
-    "outcome": "applied"
+    "reason": "Silver is a popular, widely played brawler. Players tend to know him well, so he should be recalled more readily than Baba, who is less played. Silver's 85 points is the same as for Mina and Solomon, which looks too obscure.",
+    "outcome": "ignored-invalid"
    }
   ]
  }

@@ -26,9 +26,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:16:48.979Z",
+ "generatedAt": "2026-11-25T04:44:19.428Z",
  "answers": [
   {
    "entityId": "hero_ghost",
@@ -43,79 +43,85 @@
    "score": 30
   },
   {
-   "entityId": "hero_kelvin",
-   "name": "Kelvin",
+   "entityId": "hero_astro",
+   "name": "Holliday",
    "rank": 3,
    "score": 30
   },
   {
-   "entityId": "hero_astro",
-   "name": "Holliday",
+   "entityId": "hero_punkgoat",
+   "name": "Billy",
    "rank": 4,
    "score": 60
   },
   {
-   "entityId": "hero_punkgoat",
-   "name": "Billy",
+   "entityId": "hero_kelvin",
+   "name": "Kelvin",
    "rank": 5,
-   "score": 60
-  },
-  {
-   "entityId": "hero_nano",
-   "name": "Calico",
-   "rank": 6,
    "score": 60
   },
   {
    "entityId": "hero_orion",
    "name": "Grey Talon",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "hero_nano",
+   "name": "Calico",
    "rank": 7,
    "score": 60
   },
   {
-   "entityId": "hero_werewolf",
-   "name": "Silver",
-   "rank": 8,
-   "score": 85
-  },
-  {
-   "entityId": "hero_artist",
-   "name": "Violet",
-   "rank": 9,
-   "score": 85
-  },
-  {
    "entityId": "hero_unicorn",
    "name": "Celeste",
-   "rank": 10,
+   "rank": 8,
    "score": 85
   },
   {
    "entityId": "hero_fencer",
    "name": "Apollo",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "hero_werewolf",
+   "name": "Silver",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "hero_artist",
+   "name": "Violet",
    "rank": 11,
-   "score": 85
-  },
-  {
-   "entityId": "hero_chessmaster",
-   "name": "Solomon",
-   "rank": 12,
-   "score": 85
-  },
-  {
-   "entityId": "hero_krill",
-   "name": "Mo & Krill",
-   "rank": 13,
    "score": 85
   },
   {
    "entityId": "hero_magician",
    "name": "Sinclair",
+   "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "hero_chessmaster",
+   "name": "Solomon",
+   "rank": 13,
+   "score": 85
+  },
+  {
+   "entityId": "hero_krill",
+   "name": "Mo & Krill",
    "rank": 14,
    "score": 100
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_artist",
@@ -138,7 +144,7 @@
     "popularityObscurity": 0.7692307692307693,
     "spellingCost": 6,
     "spellingObscurity": 0.5384615384615384,
-    "key": 0.6561538461538461
+    "key": 0.7115384615384615
    },
    {
     "id": "hero_astro",
@@ -184,7 +190,7 @@
     "popularityObscurity": 1,
     "spellingCost": 7,
     "spellingObscurity": 0.8076923076923077,
-    "key": 0.9057692307692308
+    "key": 0.9519230769230769
    },
    {
     "id": "hero_fencer",
@@ -207,7 +213,7 @@
     "popularityObscurity": 0.5384615384615384,
     "spellingCost": 6,
     "spellingObscurity": 0.5384615384615384,
-    "key": 0.6907692307692309
+    "key": 0.6076923076923076
    },
    {
     "id": "hero_ghost",
@@ -230,7 +236,7 @@
     "popularityObscurity": 0.07692307692307693,
     "spellingCost": 4,
     "spellingObscurity": 0.11538461538461539,
-    "key": 0.05346153846153846
+    "key": 0.06730769230769232
    },
    {
     "id": "hero_kelvin",
@@ -253,7 +259,7 @@
     "popularityObscurity": 0.3076923076923077,
     "spellingCost": 6,
     "spellingObscurity": 0.5384615384615384,
-    "key": 0.24307692307692308
+    "key": 0.2846153846153846
    },
    {
     "id": "hero_krill",
@@ -276,7 +282,7 @@
     "popularityObscurity": 0.46153846153846156,
     "spellingCost": 2,
     "spellingObscurity": 0,
-    "key": 0.7092307692307692
+    "key": 0.5615384615384615
    },
    {
     "id": "hero_lash",
@@ -299,7 +305,7 @@
     "popularityObscurity": 0,
     "spellingCost": 4,
     "spellingObscurity": 0.11538461538461539,
-    "key": 0.031153846153846157
+    "key": 0.01730769230769231
    },
    {
     "id": "hero_magician",
@@ -322,7 +328,7 @@
     "popularityObscurity": 0.9230769230769231,
     "spellingCost": 8,
     "spellingObscurity": 0.9615384615384616,
-    "key": 0.8234615384615385
+    "key": 0.8788461538461538
    },
    {
     "id": "hero_nano",
@@ -345,7 +351,7 @@
     "popularityObscurity": 0.6153846153846154,
     "spellingCost": 6,
     "spellingObscurity": 0.5384615384615384,
-    "key": 0.4592307692307693
+    "key": 0.5423076923076924
    },
    {
     "id": "hero_orion",
@@ -368,7 +374,7 @@
     "popularityObscurity": 0.38461538461538464,
     "spellingCost": 5,
     "spellingObscurity": 0.2692307692307692,
-    "key": 0.5903846153846154
+    "key": 0.475
    },
    {
     "id": "hero_punkgoat",
@@ -391,7 +397,7 @@
     "popularityObscurity": 0.15384615384615385,
     "spellingCost": 5,
     "spellingObscurity": 0.2692307692307692,
-    "key": 0.31192307692307697
+    "key": 0.22884615384615387
    },
    {
     "id": "hero_unicorn",
@@ -414,7 +420,7 @@
     "popularityObscurity": 0.8461538461538461,
     "spellingCost": 7,
     "spellingObscurity": 0.8076923076923077,
-    "key": 0.6834615384615386
+    "key": 0.7711538461538462
    },
    {
     "id": "hero_werewolf",
@@ -437,56 +443,56 @@
     "popularityObscurity": 0.6923076923076923,
     "spellingCost": 6,
     "spellingObscurity": 0.5384615384615384,
-    "key": 0.5746153846153847
+    "key": 0.6346153846153846
    }
   ],
   "passAgreement": 0.7274725274725274,
   "orderBeforeRefinement": [
    "hero_lash",
    "hero_ghost",
-   "hero_kelvin",
-   "hero_astro",
    "hero_punkgoat",
-   "hero_nano",
-   "hero_werewolf",
+   "hero_astro",
+   "hero_kelvin",
    "hero_orion",
+   "hero_nano",
+   "hero_krill",
+   "hero_fencer",
+   "hero_werewolf",
    "hero_artist",
    "hero_unicorn",
-   "hero_fencer",
-   "hero_krill",
    "hero_magician",
    "hero_chessmaster"
   ],
   "pairwise": [
    {
-    "a": "hero_fencer",
-    "b": "hero_krill",
+    "a": "hero_artist",
+    "b": "hero_unicorn",
     "purpose": "rare-contenders",
-    "rarer": "hero_krill"
+    "rarer": "hero_unicorn"
    },
    {
-    "a": "hero_fencer",
+    "a": "hero_artist",
     "b": "hero_magician",
     "purpose": "rare-contenders",
     "rarer": "hero_magician"
    },
    {
-    "a": "hero_fencer",
+    "a": "hero_artist",
     "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": "hero_chessmaster"
+   },
+   {
+    "a": "hero_unicorn",
+    "b": "hero_magician",
     "purpose": "rare-contenders",
     "rarer": null
    },
    {
-    "a": "hero_krill",
-    "b": "hero_magician",
-    "purpose": "rare-contenders",
-    "rarer": "hero_krill"
-   },
-   {
-    "a": "hero_krill",
+    "a": "hero_unicorn",
     "b": "hero_chessmaster",
     "purpose": "rare-contenders",
-    "rarer": "hero_krill"
+    "rarer": "hero_unicorn"
    },
    {
     "a": "hero_magician",
@@ -501,58 +507,70 @@
     "rarer": "hero_lash"
    },
    {
-    "a": "hero_kelvin",
+    "a": "hero_punkgoat",
     "b": "hero_astro",
     "purpose": "tier-boundary",
-    "rarer": "hero_astro"
+    "rarer": "hero_punkgoat"
+   },
+   {
+    "a": "hero_nano",
+    "b": "hero_krill",
+    "purpose": "tier-boundary",
+    "rarer": "hero_krill"
+   },
+   {
+    "a": "hero_unicorn",
+    "b": "hero_krill",
+    "purpose": "review",
+    "rarer": "hero_krill"
    },
    {
     "a": "hero_werewolf",
-    "b": "hero_orion",
-    "purpose": "tier-boundary",
-    "rarer": "hero_werewolf"
+    "b": "hero_punkgoat",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "hero_chessmaster",
+    "b": "hero_nano",
+    "purpose": "review",
+    "rarer": "hero_chessmaster"
    },
    {
     "a": "hero_artist",
-    "b": "hero_astro",
-    "purpose": "review",
-    "rarer": "hero_artist"
-   },
-   {
-    "a": "hero_ghost",
     "b": "hero_kelvin",
     "purpose": "review",
-    "rarer": "hero_kelvin"
+    "rarer": null
    }
   ],
   "review": [
    {
-    "name": "Mo & Krill",
-    "compareWith": "Sinclair",
+    "name": "Celeste",
+    "compareWith": "Mo & Krill",
     "claim": "should_be_more_obvious",
-    "reason": "Mo & Krill is a well-known hero whose name literally contains an L (Krill), and players often type 'Mo' or 'Krill' directly. Placing it as the single rarest answer ignores its familiarity; it should be no more obscure than Sinclair, Solomon or Apollo.",
-    "outcome": "applied-by-data"
+    "reason": "Celeste has a plain, single-word name with an L right at the start of her second syllable, and she is a standard roster hero. Mo & Krill is a clunky two-part name whose L is easy to overlook, since it sits in 'Krill' and players often just say 'Mo'. Celeste should not be the single rarest answer; Mo & Krill should be rarer.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Silver",
+    "compareWith": "Billy",
+    "claim": "should_be_more_obvious",
+    "reason": "Silver is a well-known brawler with a short, memorable name, and its L is the first thing a player sees when scanning the letters. Billy's double L is also obvious, but the two are close, so Silver at 85 vs Billy at 60 overstates the gap. Silver should sit nearer 60.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Solomon",
+    "compareWith": "Calico",
+    "claim": "should_be_more_obvious",
+    "reason": "Solomon has an L in the middle of a common, easy-to-spell name and is a familiar roster mystic. Calico is no more prominent, so placing Calico at 60 and Solomon at 85 is hard to justify. Solomon should be roughly level with Calico.",
+    "outcome": "rejected-by-comparison"
    },
    {
     "name": "Violet",
-    "compareWith": "Holliday",
-    "claim": "should_be_more_obvious",
-    "reason": "Violet has the L in a very prominent position and is a short, memorable name. Violet is at least as likely to come to mind as Holliday, whose L is buried in the middle of a double-L name that players do not often scan for the letter.",
-    "outcome": "rejected-by-comparison"
-   },
-   {
-    "name": "Lady Geist",
     "compareWith": "Kelvin",
-    "claim": "should_be_more_obscure",
-    "reason": "Lady Geist is placed as the most obvious answer, but Kelvin and Lash are shorter names where the L is just as visible. Lady Geist has an L at the start, but a lot of players know her as 'Geist', so she should be a bit less dominant than 10 points suggests.",
-    "outcome": "rejected-by-comparison"
-   },
-   {
-    "name": "Billy",
-    "compareWith": "Calico",
     "claim": "should_be_more_obvious",
-    "reason": "Billy has a doubled L in a short, well-known name, so it should come to mind quickly, probably quicker than Calico, which is less commonly seen.",
-    "outcome": "ignored-invalid"
+    "reason": "Violet is a simple, memorable name whose L is the third letter, so it is easy to spot. Kelvin is no easier to recall, so the 25-point gap between them is not warranted. Violet should be near 60.",
+    "outcome": "rejected-by-comparison"
    }
   ]
  }

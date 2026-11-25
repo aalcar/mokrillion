@@ -17,9 +17,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:13:57.581Z",
+ "generatedAt": "2026-11-25T04:35:48.865Z",
  "answers": [
   {
    "entityId": "hero_haze",
@@ -53,6 +53,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_chrono",
@@ -75,7 +81,7 @@
     "popularityObscurity": 0.25,
     "spellingCost": 7,
     "spellingObscurity": 0.75,
-    "key": 0.35750000000000004
+    "key": 0.395
    },
    {
     "id": "hero_deadpack",
@@ -98,7 +104,7 @@
     "popularityObscurity": 1,
     "spellingCost": 5,
     "spellingObscurity": 0.25,
-    "key": 0.8525
+    "key": 0.8025000000000001
    },
    {
     "id": "hero_haze",
@@ -144,7 +150,7 @@
     "popularityObscurity": 0.5,
     "spellingCost": 7,
     "spellingObscurity": 0.75,
-    "key": 0.43000000000000005
+    "key": 0.3925
    },
    {
     "id": "hero_ratking",
@@ -167,23 +173,35 @@
     "popularityObscurity": 0.75,
     "spellingCost": 7,
     "spellingObscurity": 0.75,
-    "key": 0.86
+    "key": 0.9099999999999999
    }
   ],
   "passAgreement": 0.7999999999999999,
   "orderBeforeRefinement": [
    "hero_haze",
-   "hero_chrono",
    "hero_priest",
+   "hero_chrono",
    "hero_deadpack",
    "hero_ratking"
   ],
   "pairwise": [
    {
-    "a": "hero_chrono",
-    "b": "hero_priest",
+    "a": "hero_priest",
+    "b": "hero_chrono",
     "purpose": "rare-contenders",
     "rarer": "hero_priest"
+   },
+   {
+    "a": "hero_priest",
+    "b": "hero_deadpack",
+    "purpose": "rare-contenders",
+    "rarer": "hero_deadpack"
+   },
+   {
+    "a": "hero_priest",
+    "b": "hero_ratking",
+    "purpose": "rare-contenders",
+    "rarer": "hero_ratking"
    },
    {
     "a": "hero_chrono",
@@ -198,22 +216,10 @@
     "rarer": "hero_ratking"
    },
    {
-    "a": "hero_priest",
-    "b": "hero_deadpack",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_priest",
-    "b": "hero_ratking",
-    "purpose": "rare-contenders",
-    "rarer": "hero_ratking"
-   },
-   {
     "a": "hero_deadpack",
     "b": "hero_ratking",
     "purpose": "rare-contenders",
-    "rarer": "hero_ratking"
+    "rarer": null
    },
    {
     "a": "hero_haze",

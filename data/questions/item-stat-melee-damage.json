@@ -17,9 +17,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
- "model": "cache only",
- "generatedAt": "2026-11-25T04:11:02.722Z",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:42:12.868Z",
  "answers": [
   {
    "entityId": "upgrade_lifestrike_gauntlets",
@@ -53,6 +53,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_boxing_glove",
@@ -75,7 +81,7 @@
     "popularityObscurity": 0.5,
     "spellingCost": 10,
     "spellingObscurity": 0.25,
-    "key": 0.5975
+    "key": 0.6474999999999999
    },
    {
     "id": "upgrade_crushing_fists",
@@ -98,7 +104,7 @@
     "popularityObscurity": 1,
     "spellingCost": 13,
     "spellingObscurity": 0.75,
-    "key": 0.685
+    "key": 0.5475000000000001
    },
    {
     "id": "upgrade_lifestrike_gauntlets",
@@ -121,7 +127,7 @@
     "popularityObscurity": 0.25,
     "spellingCost": 14,
     "spellingObscurity": 1,
-    "key": 0.26
+    "key": 0.24750000000000003
    },
    {
     "id": "upgrade_melee_charge",
@@ -144,7 +150,7 @@
     "popularityObscurity": 0.75,
     "spellingCost": 11,
     "spellingObscurity": 0.5,
-    "key": 0.4075000000000001
+    "key": 0.25749999999999995
    },
    {
     "id": "upgrade_spirit_snatch",
@@ -167,18 +173,30 @@
     "popularityObscurity": 0,
     "spellingCost": 6,
     "spellingObscurity": 0,
-    "key": 0.55
+    "key": 0.8
    }
   ],
   "passAgreement": 0.6399999999999999,
   "orderBeforeRefinement": [
    "upgrade_lifestrike_gauntlets",
    "upgrade_melee_charge",
-   "upgrade_spirit_snatch",
+   "upgrade_crushing_fists",
    "upgrade_boxing_glove",
-   "upgrade_crushing_fists"
+   "upgrade_spirit_snatch"
   ],
   "pairwise": [
+   {
+    "a": "upgrade_melee_charge",
+    "b": "upgrade_crushing_fists",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_crushing_fists"
+   },
+   {
+    "a": "upgrade_melee_charge",
+    "b": "upgrade_boxing_glove",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_boxing_glove"
+   },
    {
     "a": "upgrade_melee_charge",
     "b": "upgrade_spirit_snatch",
@@ -186,43 +204,31 @@
     "rarer": "upgrade_spirit_snatch"
    },
    {
-    "a": "upgrade_melee_charge",
+    "a": "upgrade_crushing_fists",
     "b": "upgrade_boxing_glove",
     "purpose": "rare-contenders",
     "rarer": "upgrade_boxing_glove"
    },
    {
-    "a": "upgrade_melee_charge",
-    "b": "upgrade_crushing_fists",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_melee_charge"
-   },
-   {
-    "a": "upgrade_spirit_snatch",
-    "b": "upgrade_boxing_glove",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_spirit_snatch"
-   },
-   {
-    "a": "upgrade_spirit_snatch",
-    "b": "upgrade_crushing_fists",
+    "a": "upgrade_crushing_fists",
+    "b": "upgrade_spirit_snatch",
     "purpose": "rare-contenders",
     "rarer": "upgrade_spirit_snatch"
    },
    {
     "a": "upgrade_boxing_glove",
-    "b": "upgrade_crushing_fists",
+    "b": "upgrade_spirit_snatch",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_boxing_glove"
+    "rarer": "upgrade_spirit_snatch"
    }
   ],
   "review": [
    {
-    "name": "Melee Charge",
-    "compareWith": "Crushing Fists",
+    "name": "Crushing Fists",
+    "compareWith": "Lifestrike",
     "claim": "should_be_more_obvious",
-    "reason": "Melee Charge is a Tier 2 item whose whole identity is melee (Heavy Melee Distance, Melee Damage, a heavy melee attack bonus). Players who think of melee items will name it right alongside Crushing Fists, and its cheaper tier means more people buy it. Placing it 30 points behind Crushing Fists overstates the gap.",
-    "outcome": "applied-by-data"
+    "reason": "Crushing Fists is the tier 4 capstone of the melee-focused Weapon line, and its name and effect are strongly tied to melee. Players thinking of melee damage items will recall it readily. Lifestrike is a Vitality upgrade that mainly comes to mind as a lifesteal item, so it should be rarer than Crushing Fists. The current order is arguably right, but the gap between 60 and 85 is arguably too large.",
+    "outcome": "ignored-invalid"
    }
   ]
  }

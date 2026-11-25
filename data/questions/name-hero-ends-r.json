@@ -18,9 +18,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:18:04.687Z",
+ "generatedAt": "2026-11-25T04:46:18.520Z",
  "answers": [
   {
    "entityId": "hero_drifter",
@@ -47,19 +47,25 @@
    "score": 60
   },
   {
-   "entityId": "hero_magician",
-   "name": "Sinclair",
+   "entityId": "hero_priest",
+   "name": "Venator",
    "rank": 5,
    "score": 85
   },
   {
-   "entityId": "hero_priest",
-   "name": "Venator",
+   "entityId": "hero_magician",
+   "name": "Sinclair",
    "rank": 6,
    "score": 100
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_drifter",
@@ -82,7 +88,7 @@
     "popularityObscurity": 0,
     "spellingCost": 7,
     "spellingObscurity": 0.7,
-    "key": 0.16700000000000004
+    "key": 0.095
    },
    {
     "id": "hero_frank",
@@ -105,7 +111,7 @@
     "popularityObscurity": 0.4,
     "spellingCost": 6,
     "spellingObscurity": 0.3,
-    "key": 0.30700000000000005
+    "key": 0.355
    },
    {
     "id": "hero_magician",
@@ -128,7 +134,7 @@
     "popularityObscurity": 1,
     "spellingCost": 8,
     "spellingObscurity": 1,
-    "key": 0.758
+    "key": 0.8899999999999999
    },
    {
     "id": "hero_priest",
@@ -151,7 +157,7 @@
     "popularityObscurity": 0.2,
     "spellingCost": 7,
     "spellingObscurity": 0.7,
-    "key": 0.5990000000000002
+    "key": 0.395
    },
    {
     "id": "hero_viper",
@@ -174,7 +180,7 @@
     "popularityObscurity": 0.8,
     "spellingCost": 5,
     "spellingObscurity": 0,
-    "key": 0.54
+    "key": 0.6599999999999999
    },
    {
     "id": "hero_werewolf",
@@ -197,38 +203,20 @@
     "popularityObscurity": 0.6,
     "spellingCost": 6,
     "spellingObscurity": 0.3,
-    "key": 0.629
+    "key": 0.605
    }
   ],
   "passAgreement": 0.28000000000000014,
   "orderBeforeRefinement": [
    "hero_drifter",
    "hero_frank",
-   "hero_viper",
    "hero_priest",
    "hero_werewolf",
+   "hero_viper",
    "hero_magician"
   ],
   "pairwise": [
    {
-    "a": "hero_viper",
-    "b": "hero_priest",
-    "purpose": "rare-contenders",
-    "rarer": "hero_priest"
-   },
-   {
-    "a": "hero_viper",
-    "b": "hero_werewolf",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_viper",
-    "b": "hero_magician",
-    "purpose": "rare-contenders",
-    "rarer": "hero_magician"
-   },
-   {
     "a": "hero_priest",
     "b": "hero_werewolf",
     "purpose": "rare-contenders",
@@ -236,9 +224,21 @@
    },
    {
     "a": "hero_priest",
+    "b": "hero_viper",
+    "purpose": "rare-contenders",
+    "rarer": "hero_priest"
+   },
+   {
+    "a": "hero_priest",
     "b": "hero_magician",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "hero_priest"
+   },
+   {
+    "a": "hero_werewolf",
+    "b": "hero_viper",
+    "purpose": "rare-contenders",
+    "rarer": "hero_viper"
    },
    {
     "a": "hero_werewolf",
@@ -247,32 +247,32 @@
     "rarer": "hero_magician"
    },
    {
+    "a": "hero_viper",
+    "b": "hero_magician",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
     "a": "hero_drifter",
     "b": "hero_frank",
     "purpose": "tier-boundary",
-    "rarer": "hero_frank"
-   },
-   {
-    "a": "hero_magician",
-    "b": "hero_priest",
-    "purpose": "review",
-    "rarer": "hero_priest"
+    "rarer": null
    }
   ],
   "review": [
    {
-    "name": "Silver",
-    "compareWith": "Vyper",
+    "name": "Venator",
+    "compareWith": "Sinclair",
     "claim": "should_be_more_obvious",
-    "reason": "Silver is a short, distinctive name, and the werewolf Brawler is well known. Vyper's spelling ends in R, but players may stumble on it or not parse it as ending in R, so Silver likely comes to mind slightly more readily.",
+    "reason": "Venator is a name players see constantly and a plain 'ends in R' answer. Sinclair is a longer, less distinctive name that fewer players will think to check against the final letter, so Sinclair is likely rarer than Venator, and the 100-point slot should arguably go to Sinclair or at least be shared.",
     "outcome": "applied-by-data"
    },
    {
-    "name": "Sinclair",
-    "compareWith": "Venator",
-    "claim": "should_be_more_obvious",
-    "reason": "Sinclair is a widely known Mystic whose name clearly ends in R. Venator is a less familiar name and is easy to forget, so Venator is likely the rarer answer and should take the 100-point slot.",
-    "outcome": "applied"
+    "name": "Vyper",
+    "compareWith": "Silver",
+    "claim": "should_be_more_obscure",
+    "reason": "Vyper is spelled with a 'y', so players scanning for names ending in R may not think of it at once. Silver is a plain word whose final R is easy to spot, so Vyper should score above Silver instead of equal to it.",
+    "outcome": "ignored-invalid"
    }
   ]
  }

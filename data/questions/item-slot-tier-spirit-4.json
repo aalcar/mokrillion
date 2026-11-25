@@ -28,43 +28,43 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:07:07.726Z",
+ "generatedAt": "2026-11-25T04:39:18.064Z",
  "answers": [
   {
-   "entityId": "upgrade_ability_refresher",
-   "name": "Refresher",
+   "entityId": "upgrade_escalating_exposure",
+   "name": "Escalating Exposure",
    "rank": 1,
    "score": 10
   },
   {
-   "entityId": "upgrade_self_bubble",
-   "name": "Ethereal Shift",
+   "entityId": "upgrade_boundless_spirit",
+   "name": "Boundless Spirit",
    "rank": 2,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_transcendent_cooldown",
-   "name": "Transcendent Cooldown",
-   "rank": 3,
    "score": 30
   },
   {
    "entityId": "upgrade_spirit_burn",
    "name": "Spirit Burn",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_ability_refresher",
+   "name": "Refresher",
    "rank": 4,
    "score": 30
   },
   {
-   "entityId": "upgrade_ability_power_shard",
-   "name": "Echo Shard",
+   "entityId": "upgrade_transcendent_cooldown",
+   "name": "Transcendent Cooldown",
    "rank": 5,
    "score": 60
   },
   {
-   "entityId": "upgrade_escalating_exposure",
-   "name": "Escalating Exposure",
+   "entityId": "upgrade_ability_power_shard",
+   "name": "Echo Shard",
    "rank": 6,
    "score": 60
   },
@@ -75,14 +75,14 @@
    "score": 60
   },
   {
-   "entityId": "upgrade_boundless_spirit",
-   "name": "Boundless Spirit",
+   "entityId": "upgrade_ethereal_bullets",
+   "name": "Mercurial Magnum",
    "rank": 8,
    "score": 60
   },
   {
-   "entityId": "upgrade_magic_carpet",
-   "name": "Magic Carpet",
+   "entityId": "upgrade_self_bubble",
+   "name": "Ethereal Shift",
    "rank": 9,
    "score": 60
   },
@@ -99,20 +99,20 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_ethereal_bullets",
-   "name": "Mercurial Magnum",
+   "entityId": "upgrade_discord",
+   "name": "Scourge",
    "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_magic_carpet",
+   "name": "Magic Carpet",
+   "rank": 13,
    "score": 85
   },
   {
    "entityId": "upgrade_aoe_root",
    "name": "Vortex Web",
-   "rank": 13,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_discord",
-   "name": "Scourge",
    "rank": 14,
    "score": 85
   },
@@ -130,6 +130,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_ability_power_shard",
@@ -152,7 +158,7 @@
     "popularityObscurity": 0.6666666666666666,
     "spellingCost": 9,
     "spellingObscurity": 0.5,
-    "key": 0.387
+    "key": 0.5349999999999999
    },
    {
     "id": "upgrade_ability_refresher",
@@ -175,7 +181,7 @@
     "popularityObscurity": 0.4,
     "spellingCost": 9,
     "spellingObscurity": 0.5,
-    "key": 0.18500000000000003
+    "key": 0.305
    },
    {
     "id": "upgrade_aoe_root",
@@ -198,7 +204,7 @@
     "popularityObscurity": 0.8,
     "spellingCost": 6,
     "spellingObscurity": 0.16666666666666666,
-    "key": 0.7756666666666667
+    "key": 0.7716666666666666
    },
    {
     "id": "upgrade_arctic_blast",
@@ -221,7 +227,7 @@
     "popularityObscurity": 0.5333333333333333,
     "spellingCost": 11,
     "spellingObscurity": 0.8,
-    "key": 0.5906666666666667
+    "key": 0.5666666666666667
    },
    {
     "id": "upgrade_boundless_spirit",
@@ -244,7 +250,7 @@
     "popularityObscurity": 0,
     "spellingCost": 9,
     "spellingObscurity": 0.5,
-    "key": 0.14966666666666667
+    "key": 0.08166666666666667
    },
    {
     "id": "upgrade_discord",
@@ -267,7 +273,7 @@
     "popularityObscurity": 0.7333333333333333,
     "spellingCost": 7,
     "spellingObscurity": 0.3333333333333333,
-    "key": 0.7206666666666668
+    "key": 0.7166666666666667
    },
    {
     "id": "upgrade_escalating_exposure",
@@ -290,7 +296,7 @@
     "popularityObscurity": 0.13333333333333333,
     "spellingCost": 10,
     "spellingObscurity": 0.7,
-    "key": 0.3156666666666667
+    "key": 0.23166666666666666
    },
    {
     "id": "upgrade_ethereal_bullets",
@@ -313,7 +319,7 @@
     "popularityObscurity": 0.3333333333333333,
     "spellingCost": 6,
     "spellingObscurity": 0.16666666666666666,
-    "key": 0.611
+    "key": 0.45499999999999996
    },
    {
     "id": "upgrade_focus_lens",
@@ -336,7 +342,7 @@
     "popularityObscurity": 0.9333333333333333,
     "spellingCost": 9,
     "spellingObscurity": 0.5,
-    "key": 0.8310000000000002
+    "key": 0.875
    },
    {
     "id": "upgrade_glitch",
@@ -359,7 +365,7 @@
     "popularityObscurity": 0.4666666666666667,
     "spellingCost": 5,
     "spellingObscurity": 0,
-    "key": 0.34800000000000003
+    "key": 0.4
    },
    {
     "id": "upgrade_magic_carpet",
@@ -382,7 +388,7 @@
     "popularityObscurity": 1,
     "spellingCost": 6,
     "spellingObscurity": 0.16666666666666666,
-    "key": 0.5476666666666667
+    "key": 0.7716666666666666
    },
    {
     "id": "upgrade_mystic_reverb",
@@ -405,7 +411,7 @@
     "popularityObscurity": 0.26666666666666666,
     "spellingCost": 6,
     "spellingObscurity": 0.16666666666666666,
-    "key": 0.49633333333333335
+    "key": 0.3683333333333333
    },
    {
     "id": "upgrade_self_bubble",
@@ -428,7 +434,7 @@
     "popularityObscurity": 0.6,
     "spellingCost": 13,
     "spellingObscurity": 0.8666666666666667,
-    "key": 0.42266666666666663
+    "key": 0.5266666666666666
    },
    {
     "id": "upgrade_spirit_burn",
@@ -451,7 +457,7 @@
     "popularityObscurity": 0.06666666666666667,
     "spellingCost": 10,
     "spellingObscurity": 0.7,
-    "key": 0.39166666666666666
+    "key": 0.23166666666666666
    },
    {
     "id": "upgrade_transcendent_cooldown",
@@ -474,7 +480,7 @@
     "popularityObscurity": 0.2,
     "spellingCost": 20,
     "spellingObscurity": 1,
-    "key": 0.30600000000000005
+    "key": 0.27
    },
    {
     "id": "upgrade_ultimate_burst",
@@ -497,46 +503,34 @@
     "popularityObscurity": 0.8666666666666667,
     "spellingCost": 15,
     "spellingObscurity": 0.9333333333333333,
-    "key": 0.9213333333333334
+    "key": 0.8933333333333334
    }
   ],
   "passAgreement": 0.6399999999999999,
   "orderBeforeRefinement": [
    "upgrade_boundless_spirit",
-   "upgrade_ability_refresher",
-   "upgrade_transcendent_cooldown",
    "upgrade_escalating_exposure",
-   "upgrade_glitch",
-   "upgrade_ability_power_shard",
    "upgrade_spirit_burn",
-   "upgrade_self_bubble",
+   "upgrade_transcendent_cooldown",
+   "upgrade_ability_refresher",
    "upgrade_mystic_reverb",
-   "upgrade_magic_carpet",
-   "upgrade_arctic_blast",
+   "upgrade_glitch",
    "upgrade_ethereal_bullets",
+   "upgrade_self_bubble",
+   "upgrade_ability_power_shard",
+   "upgrade_arctic_blast",
    "upgrade_discord",
    "upgrade_aoe_root",
+   "upgrade_magic_carpet",
    "upgrade_focus_lens",
    "upgrade_ultimate_burst"
   ],
   "pairwise": [
    {
-    "a": "upgrade_discord",
-    "b": "upgrade_aoe_root",
+    "a": "upgrade_aoe_root",
+    "b": "upgrade_magic_carpet",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_discord"
-   },
-   {
-    "a": "upgrade_discord",
-    "b": "upgrade_focus_lens",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_discord",
-    "b": "upgrade_ultimate_burst",
-    "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "upgrade_aoe_root"
    },
    {
     "a": "upgrade_aoe_root",
@@ -551,89 +545,94 @@
     "rarer": "upgrade_ultimate_burst"
    },
    {
-    "a": "upgrade_focus_lens",
-    "b": "upgrade_ultimate_burst",
+    "a": "upgrade_magic_carpet",
+    "b": "upgrade_focus_lens",
     "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_boundless_spirit",
-    "b": "upgrade_ability_refresher",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_boundless_spirit"
-   },
-   {
-    "a": "upgrade_escalating_exposure",
-    "b": "upgrade_glitch",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_escalating_exposure"
-   },
-   {
-    "a": "upgrade_mystic_reverb",
-    "b": "upgrade_magic_carpet",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_mystic_reverb"
-   },
-   {
-    "a": "upgrade_self_bubble",
-    "b": "upgrade_boundless_spirit",
-    "purpose": "review",
-    "rarer": "upgrade_boundless_spirit"
+    "rarer": "upgrade_focus_lens"
    },
    {
     "a": "upgrade_magic_carpet",
+    "b": "upgrade_ultimate_burst",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_ultimate_burst"
+   },
+   {
+    "a": "upgrade_focus_lens",
+    "b": "upgrade_ultimate_burst",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_ultimate_burst"
+   },
+   {
+    "a": "upgrade_boundless_spirit",
     "b": "upgrade_escalating_exposure",
-    "purpose": "review",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_boundless_spirit"
+   },
+   {
+    "a": "upgrade_transcendent_cooldown",
+    "b": "upgrade_ability_refresher",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_transcendent_cooldown"
+   },
+   {
+    "a": "upgrade_self_bubble",
+    "b": "upgrade_ability_power_shard",
+    "purpose": "tier-boundary",
     "rarer": null
    },
    {
-    "a": "upgrade_discord",
-    "b": "upgrade_mystic_reverb",
+    "a": "upgrade_ability_refresher",
+    "b": "upgrade_escalating_exposure",
     "purpose": "review",
-    "rarer": null
+    "rarer": "upgrade_escalating_exposure"
    },
    {
     "a": "upgrade_ability_power_shard",
-    "b": "upgrade_escalating_exposure",
+    "b": "upgrade_mystic_reverb",
+    "purpose": "review",
+    "rarer": "upgrade_mystic_reverb"
+   },
+   {
+    "a": "upgrade_magic_carpet",
+    "b": "upgrade_self_bubble",
+    "purpose": "review",
+    "rarer": "upgrade_magic_carpet"
+   },
+   {
+    "a": "upgrade_escalating_exposure",
+    "b": "upgrade_ability_refresher",
     "purpose": "review",
     "rarer": "upgrade_escalating_exposure"
    }
   ],
   "review": [
    {
-    "name": "Ethereal Shift",
-    "compareWith": "Boundless Spirit",
+    "name": "Refresher",
+    "compareWith": "Escalating Exposure",
     "claim": "should_be_more_obvious",
-    "reason": "Ethereal Shift is a famous, widely bought invulnerability active that players strongly associate with top-tier spirit items. It should be about as easy to recall as Boundless Spirit, not 60 pts.",
+    "reason": "Refresher is one of the most iconic and widely recognized Tier 4 Spirit items, with a simple, memorable name and effect. It should probably be at or above Escalating Exposure in obviousness, and certainly not tied with Boundless Spirit and Spirit Burn.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Echo Shard",
+    "compareWith": "Mystic Reverb",
+    "claim": "should_be_more_obvious",
+    "reason": "Echo Shard is a very commonly bought and discussed active item with a distinctive effect (resetting an ability). It is more memorable than Mystic Reverb and Transcendent Cooldown, so it should be scored lower than the 60-point items.",
     "outcome": "applied"
    },
    {
     "name": "Magic Carpet",
-    "compareWith": "Escalating Exposure",
+    "compareWith": "Ethereal Shift",
     "claim": "should_be_more_obvious",
-    "reason": "Magic Carpet is a distinctive, memorable name that players see often. It is more likely to come to mind than Escalating Exposure, so it should not score the same.",
+    "reason": "Magic Carpet has a very distinctive name and mechanic that players readily recall. It should be at least as easy to name as Ethereal Shift or Mystic Reverb, not at the 85-point obscure tier.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Scourge",
-    "compareWith": "Mystic Reverb",
-    "claim": "should_be_more_obvious",
-    "reason": "Scourge is a well-known, frequently purchased item with a memorable name. It should not be grouped with obscure items like Mystic Reverb and Lightning Scroll.",
-    "outcome": "rejected-by-comparison"
-   },
-   {
-    "name": "Echo Shard",
-    "compareWith": "Escalating Exposure",
-    "claim": "should_be_more_obvious",
-    "reason": "Echo Shard is a very popular ability-reset item and is closely tied to Refresher in players' minds. It should sit below Escalating Exposure and nearer the 30 pt tier.",
-    "outcome": "applied"
-   },
-   {
-    "name": "Cursed Relic",
-    "compareWith": "Spirit Burn",
+    "name": "Escalating Exposure",
+    "compareWith": "Refresher",
     "claim": "should_be_more_obscure",
-    "reason": "Cursed Relic is a situational pick that few players buy. Players are more likely to name Spirit Burn, so Cursed Relic should be scored closer to 60 pts.",
-    "outcome": "applied-by-data"
+    "reason": "Escalating Exposure is a niche amp item that players think of less readily than Refresher or Spirit Burn. Giving it the single most obvious slot at 10 points is implausible.",
+    "outcome": "applied"
    }
   ]
  }

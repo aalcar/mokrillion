@@ -17,9 +17,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:11:17.037Z",
+ "generatedAt": "2026-11-25T04:42:16.760Z",
  "answers": [
   {
    "entityId": "upgrade_close_range",
@@ -53,6 +53,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_close_quarter_combat",
@@ -75,7 +81,7 @@
     "popularityObscurity": 0.5,
     "spellingCost": 10,
     "spellingObscurity": 0.375,
-    "key": 0.38375000000000004
+    "key": 0.33375
    },
    {
     "id": "upgrade_close_range",
@@ -121,7 +127,7 @@
     "popularityObscurity": 0.75,
     "spellingCost": 10,
     "spellingObscurity": 0.375,
-    "key": 0.67625
+    "key": 0.6512500000000001
    },
    {
     "id": "upgrade_melee_rebuttal",
@@ -144,7 +150,7 @@
     "popularityObscurity": 1,
     "spellingCost": 8,
     "spellingObscurity": 0,
-    "key": 0.7025000000000001
+    "key": 0.5900000000000001
    },
    {
     "id": "upgrade_tech_damage_pulse",
@@ -167,18 +173,24 @@
     "popularityObscurity": 0.25,
     "spellingCost": 12,
     "spellingObscurity": 0.75,
-    "key": 0.6875
+    "key": 0.875
    }
   ],
   "passAgreement": 0.7999999999999999,
   "orderBeforeRefinement": [
    "upgrade_close_range",
    "upgrade_close_quarter_combat",
+   "upgrade_melee_rebuttal",
    "upgrade_juggernaut",
-   "upgrade_tech_damage_pulse",
-   "upgrade_melee_rebuttal"
+   "upgrade_tech_damage_pulse"
   ],
   "pairwise": [
+   {
+    "a": "upgrade_close_quarter_combat",
+    "b": "upgrade_melee_rebuttal",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_close_quarter_combat"
+   },
    {
     "a": "upgrade_close_quarter_combat",
     "b": "upgrade_juggernaut",
@@ -192,26 +204,20 @@
     "rarer": "upgrade_tech_damage_pulse"
    },
    {
-    "a": "upgrade_close_quarter_combat",
-    "b": "upgrade_melee_rebuttal",
+    "a": "upgrade_melee_rebuttal",
+    "b": "upgrade_juggernaut",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_close_quarter_combat"
+    "rarer": "upgrade_juggernaut"
    },
    {
-    "a": "upgrade_juggernaut",
+    "a": "upgrade_melee_rebuttal",
     "b": "upgrade_tech_damage_pulse",
     "purpose": "rare-contenders",
     "rarer": "upgrade_tech_damage_pulse"
    },
    {
     "a": "upgrade_juggernaut",
-    "b": "upgrade_melee_rebuttal",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_juggernaut"
-   },
-   {
-    "a": "upgrade_tech_damage_pulse",
-    "b": "upgrade_melee_rebuttal",
+    "b": "upgrade_tech_damage_pulse",
     "purpose": "rare-contenders",
     "rarer": "upgrade_tech_damage_pulse"
    },

@@ -30,9 +30,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:07:29.917Z",
+ "generatedAt": "2026-11-25T04:36:42.735Z",
  "answers": [
   {
    "entityId": "upgrade_ability_refresher",
@@ -41,38 +41,38 @@
    "score": 10
   },
   {
-   "entityId": "upgrade_self_bubble",
-   "name": "Ethereal Shift",
-   "rank": 2,
-   "score": 30
-  },
-  {
    "entityId": "upgrade_containment",
    "name": "Slowing Hex",
-   "rank": 3,
+   "rank": 2,
    "score": 30
   },
   {
    "entityId": "upgrade_target_stun",
    "name": "Knockdown",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_self_bubble",
+   "name": "Ethereal Shift",
    "rank": 4,
    "score": 30
   },
   {
+   "entityId": "upgrade_magic_carpet",
+   "name": "Magic Carpet",
+   "rank": 5,
+   "score": 60
+  },
+  {
    "entityId": "upgrade_glitch",
    "name": "Cursed Relic",
-   "rank": 5,
+   "rank": 6,
    "score": 60
   },
   {
    "entityId": "upgrade_ability_power_shard",
    "name": "Echo Shard",
-   "rank": 6,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_cold_front",
-   "name": "Cold Front",
    "rank": 7,
    "score": 60
   },
@@ -83,20 +83,20 @@
    "score": 60
   },
   {
-   "entityId": "upgrade_magic_carpet",
-   "name": "Magic Carpet",
+   "entityId": "upgrade_rupture",
+   "name": "Decay",
    "rank": 9,
    "score": 60
   },
   {
-   "entityId": "upgrade_targeted_silence",
-   "name": "Silence Wave",
+   "entityId": "upgrade_greater_withering_whip",
+   "name": "Disarming Hex",
    "rank": 10,
    "score": 85
   },
   {
-   "entityId": "upgrade_rupture",
-   "name": "Decay",
+   "entityId": "upgrade_discord",
+   "name": "Scourge",
    "rank": 11,
    "score": 85
   },
@@ -107,43 +107,49 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_greater_withering_whip",
-   "name": "Disarming Hex",
-   "rank": 13,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_discord",
-   "name": "Scourge",
-   "rank": 14,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_focus_lens",
-   "name": "Focus Lens",
-   "rank": 15,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_spirit_sap",
-   "name": "Spirit Sap",
-   "rank": 16,
-   "score": 85
-  },
-  {
    "entityId": "upgrade_withering_whip",
    "name": "Rusted Barrel",
-   "rank": 17,
+   "rank": 13,
    "score": 85
   },
   {
    "entityId": "upgrade_goose_egg",
    "name": "Golden Goose Egg",
+   "rank": 14,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_targeted_silence",
+   "name": "Silence Wave",
+   "rank": 15,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_cold_front",
+   "name": "Cold Front",
+   "rank": 16,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_focus_lens",
+   "name": "Focus Lens",
+   "rank": 17,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_spirit_sap",
+   "name": "Spirit Sap",
    "rank": 18,
    "score": 100
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_ability_power_shard",
@@ -166,7 +172,7 @@
     "popularityObscurity": 0.47058823529411764,
     "spellingCost": 9,
     "spellingObscurity": 0.5,
-    "key": 0.27147058823529413
+    "key": 0.38088235294117645
    },
    {
     "id": "upgrade_ability_refresher",
@@ -189,7 +195,7 @@
     "popularityObscurity": 0.11764705882352941,
     "spellingCost": 9,
     "spellingObscurity": 0.5,
-    "key": 0.07205882352941176
+    "key": 0.1073529411764706
    },
    {
     "id": "upgrade_aoe_root",
@@ -212,7 +218,7 @@
     "popularityObscurity": 0.6470588235294118,
     "spellingCost": 6,
     "spellingObscurity": 0.20588235294117646,
-    "key": 0.6250000000000001
+    "key": 0.625
    },
    {
     "id": "upgrade_arctic_blast",
@@ -235,7 +241,7 @@
     "popularityObscurity": 0.29411764705882354,
     "spellingCost": 11,
     "spellingObscurity": 0.7941176470588235,
-    "key": 0.4614705882352942
+    "key": 0.3838235294117647
    },
    {
     "id": "upgrade_cold_front",
@@ -258,7 +264,7 @@
     "popularityObscurity": 0.058823529411764705,
     "spellingCost": 9,
     "spellingObscurity": 0.5,
-    "key": 0.40441176470588247
+    "key": 0.22794117647058823
    },
    {
     "id": "upgrade_containment",
@@ -281,7 +287,7 @@
     "popularityObscurity": 0,
     "spellingCost": 10,
     "spellingObscurity": 0.7058823529411765,
-    "key": 0.22294117647058828
+    "key": 0.12058823529411766
    },
    {
     "id": "upgrade_discord",
@@ -304,7 +310,7 @@
     "popularityObscurity": 0.5882352941176471,
     "spellingCost": 7,
     "spellingObscurity": 0.29411764705882354,
-    "key": 0.6770588235294119
+    "key": 0.6205882352941177
    },
    {
     "id": "upgrade_focus_lens",
@@ -327,7 +333,7 @@
     "popularityObscurity": 0.8823529411764706,
     "spellingCost": 9,
     "spellingObscurity": 0.5,
-    "key": 0.7597058823529412
+    "key": 0.8161764705882352
    },
    {
     "id": "upgrade_glitch",
@@ -350,7 +356,7 @@
     "popularityObscurity": 0.23529411764705882,
     "spellingCost": 5,
     "spellingObscurity": 0.08823529411764706,
-    "key": 0.266764705882353
+    "key": 0.24558823529411766
    },
    {
     "id": "upgrade_goose_egg",
@@ -373,7 +379,7 @@
     "popularityObscurity": 0.7647058823529411,
     "spellingCost": 3,
     "spellingObscurity": 0,
-    "key": 0.8105882352941177
+    "key": 0.764705882352941
    },
    {
     "id": "upgrade_greater_withering_whip",
@@ -396,7 +402,7 @@
     "popularityObscurity": 0.5294117647058824,
     "spellingCost": 12,
     "spellingObscurity": 0.9117647058823529,
-    "key": 0.665
+    "key": 0.6014705882352941
    },
    {
     "id": "upgrade_magic_carpet",
@@ -419,7 +425,7 @@
     "popularityObscurity": 1,
     "spellingCost": 6,
     "spellingObscurity": 0.20588235294117646,
-    "key": 0.5914705882352942
+    "key": 0.7926470588235294
    },
    {
     "id": "upgrade_rupture",
@@ -442,7 +448,7 @@
     "popularityObscurity": 0.7058823529411765,
     "spellingCost": 5,
     "spellingObscurity": 0.08823529411764706,
-    "key": 0.6038235294117648
+    "key": 0.6426470588235295
    },
    {
     "id": "upgrade_self_bubble",
@@ -465,7 +471,7 @@
     "popularityObscurity": 0.35294117647058826,
     "spellingCost": 13,
     "spellingObscurity": 1,
-    "key": 0.24294117647058827
+    "key": 0.3205882352941177
    },
    {
     "id": "upgrade_spirit_sap",
@@ -488,7 +494,7 @@
     "popularityObscurity": 0.8235294117647058,
     "spellingCost": 9,
     "spellingObscurity": 0.5,
-    "key": 0.8526470588235295
+    "key": 0.8279411764705882
    },
    {
     "id": "upgrade_target_stun",
@@ -511,7 +517,7 @@
     "popularityObscurity": 0.17647058823529413,
     "spellingCost": 9,
     "spellingObscurity": 0.5,
-    "key": 0.2120588235294118
+    "key": 0.20147058823529412
    },
    {
     "id": "upgrade_targeted_silence",
@@ -534,7 +540,7 @@
     "popularityObscurity": 0.9411764705882353,
     "spellingCost": 11,
     "spellingObscurity": 0.7941176470588235,
-    "key": 0.5650000000000001
+    "key": 0.7661764705882352
    },
    {
     "id": "upgrade_withering_whip",
@@ -557,54 +563,60 @@
     "popularityObscurity": 0.4117647058823529,
     "spellingCost": 12,
     "spellingObscurity": 0.9117647058823529,
-    "key": 0.6955882352941177
+    "key": 0.5544117647058824
    }
   ],
   "passAgreement": 0.7254901960784313,
   "orderBeforeRefinement": [
    "upgrade_ability_refresher",
-   "upgrade_target_stun",
    "upgrade_containment",
-   "upgrade_self_bubble",
-   "upgrade_glitch",
-   "upgrade_ability_power_shard",
+   "upgrade_target_stun",
    "upgrade_cold_front",
+   "upgrade_glitch",
+   "upgrade_self_bubble",
+   "upgrade_ability_power_shard",
    "upgrade_arctic_blast",
-   "upgrade_targeted_silence",
-   "upgrade_magic_carpet",
-   "upgrade_rupture",
-   "upgrade_aoe_root",
+   "upgrade_withering_whip",
    "upgrade_greater_withering_whip",
    "upgrade_discord",
-   "upgrade_withering_whip",
-   "upgrade_focus_lens",
+   "upgrade_aoe_root",
+   "upgrade_rupture",
    "upgrade_goose_egg",
+   "upgrade_targeted_silence",
+   "upgrade_magic_carpet",
+   "upgrade_focus_lens",
    "upgrade_spirit_sap"
   ],
   "pairwise": [
    {
-    "a": "upgrade_withering_whip",
-    "b": "upgrade_focus_lens",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_withering_whip"
-   },
-   {
-    "a": "upgrade_withering_whip",
-    "b": "upgrade_goose_egg",
+    "a": "upgrade_targeted_silence",
+    "b": "upgrade_magic_carpet",
     "purpose": "rare-contenders",
     "rarer": null
    },
    {
-    "a": "upgrade_withering_whip",
-    "b": "upgrade_spirit_sap",
+    "a": "upgrade_targeted_silence",
+    "b": "upgrade_focus_lens",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_withering_whip"
+    "rarer": "upgrade_focus_lens"
    },
    {
-    "a": "upgrade_focus_lens",
-    "b": "upgrade_goose_egg",
+    "a": "upgrade_targeted_silence",
+    "b": "upgrade_spirit_sap",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_goose_egg"
+    "rarer": "upgrade_spirit_sap"
+   },
+   {
+    "a": "upgrade_magic_carpet",
+    "b": "upgrade_focus_lens",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_focus_lens"
+   },
+   {
+    "a": "upgrade_magic_carpet",
+    "b": "upgrade_spirit_sap",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_spirit_sap"
    },
    {
     "a": "upgrade_focus_lens",
@@ -613,83 +625,76 @@
     "rarer": "upgrade_spirit_sap"
    },
    {
-    "a": "upgrade_goose_egg",
-    "b": "upgrade_spirit_sap",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_goose_egg"
-   },
-   {
     "a": "upgrade_ability_refresher",
-    "b": "upgrade_target_stun",
+    "b": "upgrade_containment",
     "purpose": "tier-boundary",
-    "rarer": "upgrade_target_stun"
+    "rarer": "upgrade_containment"
    },
    {
-    "a": "upgrade_self_bubble",
+    "a": "upgrade_cold_front",
     "b": "upgrade_glitch",
     "purpose": "tier-boundary",
-    "rarer": "upgrade_glitch"
+    "rarer": "upgrade_cold_front"
    },
    {
-    "a": "upgrade_targeted_silence",
-    "b": "upgrade_magic_carpet",
+    "a": "upgrade_withering_whip",
+    "b": "upgrade_greater_withering_whip",
     "purpose": "tier-boundary",
-    "rarer": "upgrade_targeted_silence"
+    "rarer": "upgrade_greater_withering_whip"
    },
    {
-    "a": "upgrade_targeted_silence",
-    "b": "upgrade_magic_carpet",
+    "a": "upgrade_spirit_sap",
+    "b": "upgrade_goose_egg",
     "purpose": "review",
     "rarer": null
    },
    {
-    "a": "upgrade_self_bubble",
-    "b": "upgrade_target_stun",
+    "a": "upgrade_magic_carpet",
+    "b": "upgrade_cold_front",
     "purpose": "review",
-    "rarer": "upgrade_target_stun"
+    "rarer": "upgrade_cold_front"
    },
    {
-    "a": "upgrade_goose_egg",
+    "a": "upgrade_self_bubble",
+    "b": "upgrade_glitch",
+    "purpose": "review",
+    "rarer": "upgrade_glitch"
+   },
+   {
+    "a": "upgrade_rupture",
     "b": "upgrade_withering_whip",
     "purpose": "review",
-    "rarer": "upgrade_goose_egg"
+    "rarer": "upgrade_withering_whip"
    }
   ],
   "review": [
    {
-    "name": "Silence Wave",
-    "compareWith": "Magic Carpet",
+    "name": "Spirit Sap",
+    "compareWith": "Golden Goose Egg",
     "claim": "should_be_more_obvious",
-    "reason": "Silence Wave is a very well-known Spirit active, bought often and clearly tied to 'active ability'. Magic Carpet is a niche pick, so Silence Wave should score lower than it.",
+    "reason": "Spirit Sap is a Tier 2 item with a clear spirit-debuff identity that players buy often and know well. Golden Goose Egg is a niche Tier 1 economy item that few would name for an active ability, so it should be rarer than Spirit Sap.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Ethereal Shift",
-    "compareWith": "Knockdown",
+    "name": "Magic Carpet",
+    "compareWith": "Cold Front",
     "claim": "should_be_more_obvious",
-    "reason": "Ethereal Shift is a famous, instantly recognizable invulnerability active that players think of right away. It should be at least as obvious as Knockdown.",
+    "reason": "Magic Carpet is a distinctive, memorable Tier 4 active that players associate strongly with 'active'. It should not sit in the same bracket as other less-iconic items, and is likely more commonly named than Cold Front.",
     "outcome": "applied"
    },
    {
-    "name": "Cursed Relic",
-    "compareWith": "Cold Front",
+    "name": "Ethereal Shift",
+    "compareWith": "Cursed Relic",
     "claim": "should_be_more_obvious",
-    "reason": "Cursed Relic is a high-profile Tier 4 active with a strong, memorable effect. It is more likely to come to mind than the Tier 2 Cold Front.",
-    "outcome": "ignored-invalid"
-   },
-   {
-    "name": "Golden Goose Egg",
-    "compareWith": "Rusted Barrel",
-    "claim": "should_be_more_obvious",
-    "reason": "Golden Goose Egg has a distinctive, memorable name and is a well-known Tier 1 active. Players are likely to recall it, so it is probably not rarer than Rusted Barrel or Spirit Sap. The 100-point slot fits one of those better.",
-    "outcome": "rejected-by-comparison"
+    "reason": "Ethereal Shift is a famous, widely used active, an invulnerability button, and is as readily recalled as Cursed Relic. 60 pts is too obscure for it.",
+    "outcome": "applied"
    },
    {
     "name": "Decay",
-    "compareWith": "Disarming Hex",
+    "compareWith": "Rusted Barrel",
     "claim": "should_be_more_obvious",
-    "reason": "Decay is a popular, well-known Spirit active with a distinctive name and effect. It should rank above the more forgettable Disarming Hex and Scourge.",
-    "outcome": "ignored-invalid"
+    "reason": "Decay is a well-known Tier 3 active that players buy for its health-based damage over time. Rusted Barrel is a cheap Tier 1 item that is less likely to come to mind, so Decay should score better than 85.",
+    "outcome": "applied"
    }
   ]
  }

@@ -55,31 +55,31 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:01:56.722Z",
+ "generatedAt": "2026-11-25T04:37:58.092Z",
  "answers": [
   {
-   "entityId": "upgrade_health_stealing_magic",
-   "name": "Spirit Lifesteal",
+   "entityId": "upgrade_soaring_spirit",
+   "name": "Improved Spirit",
    "rank": 1,
    "score": 10
   },
   {
-   "entityId": "upgrade_regenerating_bullet_shield",
-   "name": "Battle Vest",
+   "entityId": "upgrade_health_stealing_magic",
+   "name": "Spirit Lifesteal",
    "rank": 2,
    "score": 10
   },
   {
-   "entityId": "upgrade_soaring_spirit",
-   "name": "Improved Spirit",
+   "entityId": "upgrade_vampire",
+   "name": "Bullet Lifesteal",
    "rank": 3,
    "score": 10
   },
   {
-   "entityId": "upgrade_healbane",
-   "name": "Healbane",
+   "entityId": "upgrade_magic_tempo",
+   "name": "Compress Cooldown",
    "rank": 4,
    "score": 30
   },
@@ -90,62 +90,62 @@
    "score": 30
   },
   {
-   "entityId": "upgrade_magic_tempo",
-   "name": "Compress Cooldown",
+   "entityId": "upgrade_blitz_bullets",
+   "name": "Swift Striker",
    "rank": 6,
    "score": 30
   },
   {
-   "entityId": "upgrade_magic_shield",
-   "name": "Enchanter's Emblem",
+   "entityId": "upgrade_crackshot",
+   "name": "Mystic Shot",
    "rank": 7,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_regenerating_bullet_shield",
+   "name": "Battle Vest",
+   "rank": 8,
    "score": 30
   },
   {
    "entityId": "upgrade_titan_round",
    "name": "Titanic Magazine",
-   "rank": 8,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_vampire",
-   "name": "Bullet Lifesteal",
    "rank": 9,
    "score": 30
   },
   {
-   "entityId": "upgrade_blitz_bullets",
-   "name": "Swift Striker",
+   "entityId": "upgrade_cardio_calibrator",
+   "name": "Enduring Speed",
    "rank": 10,
    "score": 30
   },
   {
-   "entityId": "upgrade_containment",
-   "name": "Slowing Hex",
+   "entityId": "upgrade_arcane_extension",
+   "name": "Duration Extender",
    "rank": 11,
    "score": 60
   },
   {
-   "entityId": "upgrade_active_reload",
-   "name": "Active Reload",
+   "entityId": "upgrade_quick_silver",
+   "name": "Quicksilver Reload",
    "rank": 12,
    "score": 60
   },
   {
-   "entityId": "upgrade_cold_front",
-   "name": "Cold Front",
+   "entityId": "upgrade_containment",
+   "name": "Slowing Hex",
    "rank": 13,
    "score": 60
   },
   {
-   "entityId": "upgrade_arcane_extension",
-   "name": "Duration Extender",
+   "entityId": "upgrade_trophy_collector",
+   "name": "Trophy Collector",
    "rank": 14,
    "score": 60
   },
   {
-   "entityId": "upgrade_debuff_reducer",
-   "name": "Debuff Reducer",
+   "entityId": "upgrade_healbane",
+   "name": "Healbane",
    "rank": 15,
    "score": 60
   },
@@ -156,128 +156,128 @@
    "score": 60
   },
   {
-   "entityId": "upgrade_spirit_bubble",
-   "name": "Spirit Shielding",
+   "entityId": "upgrade_pristine_emblem",
+   "name": "Opening Rounds",
    "rank": 17,
    "score": 60
   },
   {
-   "entityId": "upgrade_fleetfoot_boots",
-   "name": "Fleetfoot",
+   "entityId": "upgrade_debuff_reducer",
+   "name": "Debuff Reducer",
    "rank": 18,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_quick_silver",
-   "name": "Quicksilver Reload",
-   "rank": 19,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_cardio_calibrator",
-   "name": "Enduring Speed",
-   "rank": 20,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_long_range",
-   "name": "Long Range",
-   "rank": 21,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_pristine_emblem",
-   "name": "Opening Rounds",
-   "rank": 22,
    "score": 60
   },
   {
    "entityId": "upgrade_healing_booster",
    "name": "Healing Booster",
-   "rank": 23,
+   "rank": 19,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_spirit_bubble",
+   "name": "Spirit Shielding",
+   "rank": 20,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_bullet_resist_shredder",
+   "name": "Bullet Resist Shredder",
+   "rank": 21,
    "score": 60
   },
   {
    "entityId": "upgrade_vex_barrier",
    "name": "Reactive Barrier",
+   "rank": 22,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_cold_front",
+   "name": "Cold Front",
+   "rank": 23,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_fleetfoot_boots",
+   "name": "Fleetfoot",
    "rank": 24,
    "score": 85
   },
   {
-   "entityId": "upgrade_tech_defense_shredders",
-   "name": "Spirit Shredder",
+   "entityId": "upgrade_magic_shield",
+   "name": "Enchanter's Emblem",
    "rank": 25,
    "score": 85
   },
   {
-   "entityId": "upgrade_magic_slow",
-   "name": "Mystic Slow",
+   "entityId": "upgrade_active_reload",
+   "name": "Active Reload",
    "rank": 26,
    "score": 85
   },
   {
-   "entityId": "upgrade_trophy_collector",
-   "name": "Trophy Collector",
+   "entityId": "upgrade_long_range",
+   "name": "Long Range",
    "rank": 27,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_slowing_bullets",
-   "name": "Slowing Bullets",
-   "rank": 28,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_split_shot",
-   "name": "Split Shot",
-   "rank": 29,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_crackshot",
-   "name": "Mystic Shot",
-   "rank": 30,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_guardian_ward",
-   "name": "Guardian Ward",
-   "rank": 31,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_weapon_shielding",
-   "name": "Weapon Shielding",
-   "rank": 32,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_headshot_booster2",
-   "name": "Weakening Headshot",
-   "rank": 33,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_bullet_resist_shredder",
-   "name": "Bullet Resist Shredder",
-   "rank": 34,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_intensifying_clip",
-   "name": "Intensifying Magazine",
-   "rank": 35,
    "score": 85
   },
   {
    "entityId": "upgrade_arcane_surge",
    "name": "Arcane Surge",
-   "rank": 36,
+   "rank": 28,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_melee_charge",
+   "name": "Melee Charge",
+   "rank": 29,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_tech_defense_shredders",
+   "name": "Spirit Shredder",
+   "rank": 30,
    "score": 85
   },
   {
    "entityId": "upgrade_suppressor",
    "name": "Suppressor",
+   "rank": 31,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_headshot_booster2",
+   "name": "Weakening Headshot",
+   "rank": 32,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_guardian_ward",
+   "name": "Guardian Ward",
+   "rank": 33,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_rechargingbullets",
+   "name": "Recharging Rush",
+   "rank": 34,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_magic_slow",
+   "name": "Mystic Slow",
+   "rank": 35,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_weapon_shielding",
+   "name": "Weapon Shielding",
+   "rank": 36,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_slowing_bullets",
+   "name": "Slowing Bullets",
    "rank": 37,
    "score": 85
   },
@@ -288,37 +288,43 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_melee_charge",
-   "name": "Melee Charge",
+   "entityId": "upgrade_split_shot",
+   "name": "Split Shot",
    "rank": 39,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_intensifying_clip",
+   "name": "Intensifying Magazine",
+   "rank": 40,
    "score": 85
   },
   {
    "entityId": "upgrade_return_fire",
    "name": "Return Fire",
-   "rank": 40,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_restorative_locket",
-   "name": "Restorative Locket",
    "rank": 41,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_rechargingbullets",
-   "name": "Recharging Rush",
-   "rank": 42,
    "score": 85
   },
   {
    "entityId": "upgrade_spirit_sap",
    "name": "Spirit Sap",
+   "rank": 42,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_restorative_locket",
+   "name": "Restorative Locket",
    "rank": 43,
    "score": 100
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_active_reload",
@@ -341,7 +347,7 @@
     "popularityObscurity": 0.7619047619047619,
     "spellingCost": 12,
     "spellingObscurity": 0.5595238095238095,
-    "key": 0.3694047619047619
+    "key": 0.5779761904761903
    },
    {
     "id": "upgrade_arcane_extension",
@@ -364,7 +370,7 @@
     "popularityObscurity": 0.23809523809523808,
     "spellingCost": 16,
     "spellingObscurity": 0.9166666666666666,
-    "key": 0.4029761904761905
+    "key": 0.33154761904761904
    },
    {
     "id": "upgrade_arcane_surge",
@@ -387,7 +393,7 @@
     "popularityObscurity": 0.5714285714285714,
     "spellingCost": 11,
     "spellingObscurity": 0.47619047619047616,
-    "key": 0.7002380952380952
+    "key": 0.6273809523809524
    },
    {
     "id": "upgrade_blitz_bullets",
@@ -410,7 +416,7 @@
     "popularityObscurity": 0.07142857142857142,
     "spellingCost": 12,
     "spellingObscurity": 0.5595238095238095,
-    "key": 0.32369047619047625
+    "key": 0.19940476190476192
    },
    {
     "id": "upgrade_bullet_resist_shredder",
@@ -433,7 +439,7 @@
     "popularityObscurity": 0.38095238095238093,
     "spellingCost": 3,
     "spellingObscurity": 0.011904761904761904,
-    "key": 0.6505952380952382
+    "key": 0.49345238095238086
    },
    {
     "id": "upgrade_cardio_calibrator",
@@ -456,7 +462,7 @@
     "popularityObscurity": 0.09523809523809523,
     "spellingCost": 13,
     "spellingObscurity": 0.6428571428571429,
-    "key": 0.4866666666666667
+    "key": 0.28809523809523807
    },
    {
     "id": "upgrade_cold_front",
@@ -479,7 +485,7 @@
     "popularityObscurity": 0.6190476190476191,
     "spellingCost": 9,
     "spellingObscurity": 0.25,
-    "key": 0.388452380952381
+    "key": 0.5041666666666667
    },
    {
     "id": "upgrade_containment",
@@ -502,7 +508,7 @@
     "popularityObscurity": 0.42857142857142855,
     "spellingCost": 10,
     "spellingObscurity": 0.36904761904761907,
-    "key": 0.25273809523809526
+    "key": 0.3470238095238095
    },
    {
     "id": "upgrade_crackshot",
@@ -525,7 +531,7 @@
     "popularityObscurity": 0.5238095238095238,
     "spellingCost": 10,
     "spellingObscurity": 0.36904761904761907,
-    "key": 0.623452380952381
+    "key": 0.5648809523809524
    },
    {
     "id": "upgrade_debuff_reducer",
@@ -548,7 +554,7 @@
     "popularityObscurity": 0.4523809523809524,
     "spellingCost": 13,
     "spellingObscurity": 0.6428571428571429,
-    "key": 0.4095238095238095
+    "key": 0.4380952380952381
    },
    {
     "id": "upgrade_fleetfoot_boots",
@@ -571,7 +577,7 @@
     "popularityObscurity": 0.5952380952380952,
     "spellingCost": 9,
     "spellingObscurity": 0.25,
-    "key": 0.47321428571428575
+    "key": 0.5303571428571429
    },
    {
     "id": "upgrade_guardian_ward",
@@ -594,7 +600,7 @@
     "popularityObscurity": 0.7857142857142857,
     "spellingCost": 12,
     "spellingObscurity": 0.5595238095238095,
-    "key": 0.6382142857142857
+    "key": 0.7124999999999999
    },
    {
     "id": "upgrade_headshot_booster2",
@@ -617,7 +623,7 @@
     "popularityObscurity": 0.7380952380952381,
     "spellingCost": 17,
     "spellingObscurity": 0.9523809523809523,
-    "key": 0.6466666666666667
+    "key": 0.7023809523809524
    },
    {
     "id": "upgrade_healbane",
@@ -640,7 +646,7 @@
     "popularityObscurity": 0.047619047619047616,
     "spellingCost": 8,
     "spellingObscurity": 0.17857142857142858,
-    "key": 0.17202380952380952
+    "key": 0.10773809523809522
    },
    {
     "id": "upgrade_healing_booster",
@@ -663,7 +669,7 @@
     "popularityObscurity": 0.3333333333333333,
     "spellingCost": 14,
     "spellingObscurity": 0.7380952380952381,
-    "key": 0.5761904761904763
+    "key": 0.45476190476190476
    },
    {
     "id": "upgrade_health_stealing_magic",
@@ -686,7 +692,7 @@
     "popularityObscurity": 0.14285714285714285,
     "spellingCost": 15,
     "spellingObscurity": 0.8452380952380952,
-    "key": 0.1125
+    "key": 0.14821428571428572
    },
    {
     "id": "upgrade_intensifying_clip",
@@ -709,7 +715,7 @@
     "popularityObscurity": 0.9047619047619048,
     "spellingCost": 20,
     "spellingObscurity": 1,
-    "key": 0.6659523809523811
+    "key": 0.7988095238095237
    },
    {
     "id": "upgrade_kinetic_sash",
@@ -732,7 +738,7 @@
     "popularityObscurity": 0.8095238095238095,
     "spellingCost": 11,
     "spellingObscurity": 0.47619047619047616,
-    "key": 0.7116666666666667
+    "key": 0.7559523809523809
    },
    {
     "id": "upgrade_long_range",
@@ -755,7 +761,7 @@
     "popularityObscurity": 0.6666666666666666,
     "spellingCost": 9,
     "spellingObscurity": 0.25,
-    "key": 0.5410714285714286
+    "key": 0.5982142857142857
    },
    {
     "id": "upgrade_magic_shield",
@@ -778,7 +784,7 @@
     "popularityObscurity": 0.19047619047619047,
     "spellingCost": 10,
     "spellingObscurity": 0.36904761904761907,
-    "key": 0.23607142857142857
+    "key": 0.21607142857142853
    },
    {
     "id": "upgrade_magic_slow",
@@ -801,7 +807,7 @@
     "popularityObscurity": 0.8571428571428571,
     "spellingCost": 10,
     "spellingObscurity": 0.36904761904761907,
-    "key": 0.6048809523809524
+    "key": 0.7291666666666666
    },
    {
     "id": "upgrade_magic_tempo",
@@ -824,7 +830,7 @@
     "popularityObscurity": 0.023809523809523808,
     "spellingCost": 16,
     "spellingObscurity": 0.9166666666666666,
-    "key": 0.19678571428571429
+    "key": 0.12678571428571428
    },
    {
     "id": "upgrade_magic_vulnerability",
@@ -847,7 +853,7 @@
     "popularityObscurity": 0.11904761904761904,
     "spellingCost": 19,
     "spellingObscurity": 0.9761904761904762,
-    "key": 0.19333333333333333
+    "key": 0.17619047619047618
    },
    {
     "id": "upgrade_melee_charge",
@@ -870,7 +876,7 @@
     "popularityObscurity": 0.5476190476190477,
     "spellingCost": 11,
     "spellingObscurity": 0.47619047619047616,
-    "key": 0.7483333333333334
+    "key": 0.6369047619047619
    },
    {
     "id": "upgrade_pristine_emblem",
@@ -893,7 +899,7 @@
     "popularityObscurity": 0.2857142857142857,
     "spellingCost": 13,
     "spellingObscurity": 0.6428571428571429,
-    "key": 0.5419047619047619
+    "key": 0.4119047619047619
    },
    {
     "id": "upgrade_quick_silver",
@@ -916,7 +922,7 @@
     "popularityObscurity": 0.21428571428571427,
     "spellingCost": 3,
     "spellingObscurity": 0.011904761904761904,
-    "key": 0.4844047619047619
+    "key": 0.33154761904761904
    },
    {
     "id": "upgrade_rechargingbullets",
@@ -939,7 +945,7 @@
     "popularityObscurity": 0.6428571428571429,
     "spellingCost": 14,
     "spellingObscurity": 0.7380952380952381,
-    "key": 0.8073809523809523
+    "key": 0.7202380952380952
    },
    {
     "id": "upgrade_regenerating_bullet_shield",
@@ -962,7 +968,7 @@
     "popularityObscurity": 0.2619047619047619,
     "spellingCost": 10,
     "spellingObscurity": 0.36904761904761907,
-    "key": 0.17035714285714287
+    "key": 0.2232142857142857
    },
    {
     "id": "upgrade_restorative_locket",
@@ -985,7 +991,7 @@
     "popularityObscurity": 0.9523809523809523,
     "spellingCost": 6,
     "spellingObscurity": 0.08333333333333333,
-    "key": 0.8801190476190477
+    "key": 0.8958333333333333
    },
    {
     "id": "upgrade_return_fire",
@@ -1008,7 +1014,7 @@
     "popularityObscurity": 1,
     "spellingCost": 10,
     "spellingObscurity": 0.36904761904761907,
-    "key": 0.7536904761904761
+    "key": 0.8708333333333332
    },
    {
     "id": "upgrade_slowing_bullets",
@@ -1031,7 +1037,7 @@
     "popularityObscurity": 0.8809523809523809,
     "spellingCost": 14,
     "spellingObscurity": 0.7380952380952381,
-    "key": 0.611904761904762
+    "key": 0.7547619047619047
    },
    {
     "id": "upgrade_soaring_spirit",
@@ -1054,7 +1060,7 @@
     "popularityObscurity": 0,
     "spellingCost": 14,
     "spellingObscurity": 0.7380952380952381,
-    "key": 0.17833333333333334
+    "key": 0.10119047619047619
    },
    {
     "id": "upgrade_spirit_bubble",
@@ -1077,7 +1083,7 @@
     "popularityObscurity": 0.47619047619047616,
     "spellingCost": 12,
     "spellingObscurity": 0.5595238095238095,
-    "key": 0.4698809523809524
+    "key": 0.47559523809523807
    },
    {
     "id": "upgrade_spirit_sap",
@@ -1100,7 +1106,7 @@
     "popularityObscurity": 0.9761904761904762,
     "spellingCost": 9,
     "spellingObscurity": 0.25,
-    "key": 0.8036904761904762
+    "key": 0.8779761904761904
    },
    {
     "id": "upgrade_split_shot",
@@ -1123,7 +1129,7 @@
     "popularityObscurity": 0.9285714285714286,
     "spellingCost": 5,
     "spellingObscurity": 0.047619047619047616,
-    "key": 0.62
+    "key": 0.7642857142857143
    },
    {
     "id": "upgrade_suppressor",
@@ -1146,7 +1152,7 @@
     "popularityObscurity": 0.7142857142857143,
     "spellingCost": 8,
     "spellingObscurity": 0.17857142857142858,
-    "key": 0.7084523809523811
+    "key": 0.6970238095238095
    },
    {
     "id": "upgrade_tech_defense_shredders",
@@ -1169,7 +1175,7 @@
     "popularityObscurity": 0.6904761904761905,
     "spellingCost": 14,
     "spellingObscurity": 0.7380952380952381,
-    "key": 0.5985714285714286
+    "key": 0.6499999999999999
    },
    {
     "id": "upgrade_titan_round",
@@ -1192,7 +1198,7 @@
     "popularityObscurity": 0.30952380952380953,
     "spellingCost": 7,
     "spellingObscurity": 0.13095238095238096,
-    "key": 0.23773809523809528
+    "key": 0.27202380952380956
    },
    {
     "id": "upgrade_trophy_collector",
@@ -1215,7 +1221,7 @@
     "popularityObscurity": 0.16666666666666666,
     "spellingCost": 6,
     "spellingObscurity": 0.08333333333333333,
-    "key": 0.6051190476190477
+    "key": 0.36369047619047623
    },
    {
     "id": "upgrade_vampire",
@@ -1238,7 +1244,7 @@
     "popularityObscurity": 0.5,
     "spellingCost": 15,
     "spellingObscurity": 0.8452380952380952,
-    "key": 0.2422619047619048
+    "key": 0.39226190476190476
    },
    {
     "id": "upgrade_vex_barrier",
@@ -1261,7 +1267,7 @@
     "popularityObscurity": 0.40476190476190477,
     "spellingCost": 15,
     "spellingObscurity": 0.8452380952380952,
-    "key": 0.573452380952381
+    "key": 0.493452380952381
    },
    {
     "id": "upgrade_weapon_backstabber",
@@ -1284,7 +1290,7 @@
     "popularityObscurity": 0.35714285714285715,
     "spellingCost": 7,
     "spellingObscurity": 0.13095238095238096,
-    "key": 0.44797619047619053
+    "key": 0.39226190476190476
    },
    {
     "id": "upgrade_weapon_shielding",
@@ -1307,56 +1313,74 @@
     "popularityObscurity": 0.8333333333333334,
     "spellingCost": 15,
     "spellingObscurity": 0.8452380952380952,
-    "key": 0.6401190476190477
+    "key": 0.7458333333333333
    }
   ],
   "passAgreement": 0.5800664451827242,
   "orderBeforeRefinement": [
-   "upgrade_health_stealing_magic",
-   "upgrade_regenerating_bullet_shield",
-   "upgrade_healbane",
    "upgrade_soaring_spirit",
-   "upgrade_magic_vulnerability",
+   "upgrade_healbane",
    "upgrade_magic_tempo",
-   "upgrade_magic_shield",
-   "upgrade_titan_round",
-   "upgrade_vampire",
-   "upgrade_containment",
+   "upgrade_health_stealing_magic",
+   "upgrade_magic_vulnerability",
    "upgrade_blitz_bullets",
-   "upgrade_active_reload",
-   "upgrade_cold_front",
-   "upgrade_arcane_extension",
-   "upgrade_debuff_reducer",
-   "upgrade_weapon_backstabber",
-   "upgrade_spirit_bubble",
-   "upgrade_fleetfoot_boots",
-   "upgrade_quick_silver",
+   "upgrade_magic_shield",
+   "upgrade_regenerating_bullet_shield",
+   "upgrade_titan_round",
    "upgrade_cardio_calibrator",
-   "upgrade_long_range",
-   "upgrade_pristine_emblem",
-   "upgrade_vex_barrier",
-   "upgrade_healing_booster",
-   "upgrade_tech_defense_shredders",
-   "upgrade_magic_slow",
+   "upgrade_arcane_extension",
+   "upgrade_quick_silver",
+   "upgrade_containment",
    "upgrade_trophy_collector",
-   "upgrade_slowing_bullets",
-   "upgrade_split_shot",
-   "upgrade_crackshot",
-   "upgrade_guardian_ward",
-   "upgrade_weapon_shielding",
-   "upgrade_headshot_booster2",
+   "upgrade_vampire",
+   "upgrade_weapon_backstabber",
+   "upgrade_pristine_emblem",
+   "upgrade_debuff_reducer",
+   "upgrade_healing_booster",
+   "upgrade_spirit_bubble",
    "upgrade_bullet_resist_shredder",
-   "upgrade_intensifying_clip",
+   "upgrade_vex_barrier",
+   "upgrade_cold_front",
+   "upgrade_fleetfoot_boots",
+   "upgrade_crackshot",
+   "upgrade_active_reload",
+   "upgrade_long_range",
    "upgrade_arcane_surge",
-   "upgrade_suppressor",
-   "upgrade_kinetic_sash",
    "upgrade_melee_charge",
+   "upgrade_tech_defense_shredders",
+   "upgrade_suppressor",
+   "upgrade_headshot_booster2",
+   "upgrade_guardian_ward",
+   "upgrade_rechargingbullets",
+   "upgrade_magic_slow",
+   "upgrade_weapon_shielding",
+   "upgrade_slowing_bullets",
+   "upgrade_kinetic_sash",
+   "upgrade_split_shot",
+   "upgrade_intensifying_clip",
    "upgrade_return_fire",
    "upgrade_spirit_sap",
-   "upgrade_rechargingbullets",
    "upgrade_restorative_locket"
   ],
   "pairwise": [
+   {
+    "a": "upgrade_intensifying_clip",
+    "b": "upgrade_return_fire",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_return_fire"
+   },
+   {
+    "a": "upgrade_intensifying_clip",
+    "b": "upgrade_spirit_sap",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_spirit_sap"
+   },
+   {
+    "a": "upgrade_intensifying_clip",
+    "b": "upgrade_restorative_locket",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_restorative_locket"
+   },
    {
     "a": "upgrade_return_fire",
     "b": "upgrade_spirit_sap",
@@ -1365,106 +1389,100 @@
    },
    {
     "a": "upgrade_return_fire",
-    "b": "upgrade_rechargingbullets",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_rechargingbullets"
-   },
-   {
-    "a": "upgrade_return_fire",
     "b": "upgrade_restorative_locket",
     "purpose": "rare-contenders",
     "rarer": "upgrade_restorative_locket"
    },
    {
     "a": "upgrade_spirit_sap",
-    "b": "upgrade_rechargingbullets",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_rechargingbullets"
-   },
-   {
-    "a": "upgrade_spirit_sap",
     "b": "upgrade_restorative_locket",
     "purpose": "rare-contenders",
     "rarer": "upgrade_restorative_locket"
    },
    {
-    "a": "upgrade_rechargingbullets",
-    "b": "upgrade_restorative_locket",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_restorative_locket"
+    "a": "upgrade_magic_tempo",
+    "b": "upgrade_health_stealing_magic",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_magic_tempo"
+   },
+   {
+    "a": "upgrade_cardio_calibrator",
+    "b": "upgrade_arcane_extension",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_cold_front",
+    "b": "upgrade_fleetfoot_boots",
+    "purpose": "tier-boundary",
+    "rarer": null
    },
    {
     "a": "upgrade_healbane",
-    "b": "upgrade_soaring_spirit",
-    "purpose": "tier-boundary",
+    "b": "upgrade_vampire",
+    "purpose": "review",
     "rarer": "upgrade_healbane"
    },
    {
-    "a": "upgrade_containment",
-    "b": "upgrade_blitz_bullets",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_containment"
+    "a": "upgrade_health_stealing_magic",
+    "b": "upgrade_vampire",
+    "purpose": "review",
+    "rarer": "upgrade_health_stealing_magic"
    },
    {
-    "a": "upgrade_vex_barrier",
-    "b": "upgrade_healing_booster",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_vex_barrier"
+    "a": "upgrade_containment",
+    "b": "upgrade_magic_vulnerability",
+    "purpose": "review",
+    "rarer": null
    },
    {
     "a": "upgrade_restorative_locket",
     "b": "upgrade_spirit_sap",
     "purpose": "review",
-    "rarer": "upgrade_spirit_sap"
+    "rarer": "upgrade_restorative_locket"
    },
    {
-    "a": "upgrade_blitz_bullets",
-    "b": "upgrade_containment",
+    "a": "upgrade_magic_shield",
+    "b": "upgrade_crackshot",
     "purpose": "review",
-    "rarer": "upgrade_containment"
-   },
-   {
-    "a": "upgrade_return_fire",
-    "b": "upgrade_magic_vulnerability",
-    "purpose": "review",
-    "rarer": "upgrade_return_fire"
+    "rarer": "upgrade_magic_shield"
    }
   ],
   "review": [
    {
-    "name": "Improved Spirit",
-    "compareWith": "Spirit Lifesteal",
+    "name": "Healbane",
+    "compareWith": "Bullet Lifesteal",
     "claim": "should_be_more_obscure",
-    "reason": "Improved Spirit is a plain stat-stick that few players tie to a specific price. Spirit Lifesteal is a core, widely bought vitality item, so Improved Spirit should not sit at the same 10-point tier.",
-    "outcome": "ignored-invalid"
+    "reason": "Healbane is a niche anti-heal pick, while Bullet Lifesteal is a core, widely bought item. Healbane is unlikely to come to mind as a 1,600-soul item, so it should be rarer than Bullet Lifesteal.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Spirit Lifesteal",
+    "compareWith": "Bullet Lifesteal",
+    "claim": "should_be_more_obscure",
+    "reason": "Spirit Lifesteal and Bullet Lifesteal are close in recognition. Putting Spirit Lifesteal at 10 and Bullet Lifesteal at 60 is too large a gap. Bullet Lifesteal is a very commonly bought lifesteal item and should be more obvious.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Slowing Hex",
+    "compareWith": "Mystic Vulnerability",
+    "claim": "should_be_more_obvious",
+    "reason": "Slowing Hex is a well-known active with a distinctive name and effect, and it is commonly bought. It should be no rarer than Mystic Vulnerability, whose name and effect are easily forgotten.",
+    "outcome": "rejected-by-comparison"
    },
    {
     "name": "Restorative Locket",
     "compareWith": "Spirit Sap",
     "claim": "should_be_more_obvious",
-    "reason": "Restorative Locket is a distinctive, named active item that experienced players know. Spirit Sap and Recharging Rush are more forgettable, so the Locket does not deserve the single rarest score.",
-    "outcome": "applied"
+    "reason": "Restorative Locket is a popular, well-known healing active with a strong identity. It should not be rarer than Spirit Sap, which is a niche item that players rarely think of.",
+    "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Healing Booster",
-    "compareWith": "Reactive Barrier",
-    "claim": "should_be_more_obvious",
-    "reason": "Healing Booster is a common, memorable utility item that is bought often. It is more recognizable than Reactive Barrier or Weapon Shielding, so it should not be scored the same as obscure items.",
-    "outcome": "ignored-invalid"
-   },
-   {
-    "name": "Swift Striker",
-    "compareWith": "Slowing Hex",
+    "name": "Enchanter's Emblem",
+    "compareWith": "Mystic Shot",
     "claim": "should_be_more_obscure",
-    "reason": "Swift Striker is a simple fire rate item with weak identity. Slowing Hex is a recognizable active item, so Swift Striker should not be rated more obvious than it.",
-    "outcome": "rejected-by-comparison"
-   },
-   {
-    "name": "Return Fire",
-    "compareWith": "Mystic Vulnerability",
-    "claim": "should_be_more_obvious",
-    "reason": "Return Fire is a very memorable active item with a distinctive effect and is well known. It should be easier to recall than Mystic Vulnerability, so it should not sit near the top of the obscurity scale.",
-    "outcome": "rejected-by-comparison"
+    "reason": "Enchanter's Emblem is a niche item that players rarely recall by name, so it should not sit at 30 points. Mystic Shot is similarly obscure, so the two should be rated closer together.",
+    "outcome": "applied"
    }
   ]
  }

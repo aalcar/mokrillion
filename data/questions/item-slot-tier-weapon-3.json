@@ -31,9 +31,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:03:41.791Z",
+ "generatedAt": "2026-11-25T04:40:37.786Z",
  "answers": [
   {
    "entityId": "upgrade_toxic_bullets",
@@ -54,103 +54,109 @@
    "score": 30
   },
   {
-   "entityId": "upgrade_headhunter",
-   "name": "Headhunter",
+   "entityId": "upgrade_bullet_armor_reduction_aura",
+   "name": "Hunter's Aura",
    "rank": 4,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_sharpshooter",
-   "name": "Sharpshooter",
-   "rank": 5,
    "score": 30
   },
   {
    "entityId": "upgrade_berserker",
    "name": "Berserker",
+   "rank": 5,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_headhunter",
+   "name": "Headhunter",
    "rank": 6,
    "score": 60
   },
   {
-   "entityId": "upgrade_close_quarter_combat",
-   "name": "Point Blank",
+   "entityId": "upgrade_sharpshooter",
+   "name": "Sharpshooter",
    "rank": 7,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_hollow_point_rounds",
-   "name": "Hollow Point",
-   "rank": 8,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_express_shot",
-   "name": "Express Shot",
-   "rank": 9,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_bullet_armor_reduction_aura",
-   "name": "Hunter's Aura",
-   "rank": 10,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_spellslinger_headshots",
-   "name": "Spirit Rend",
-   "rank": 11,
    "score": 60
   },
   {
    "entityId": "upgrade_non_player_bonus_sacrifice",
    "name": "Cultist Sacrifice",
-   "rank": 12,
-   "score": 85
+   "rank": 8,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_close_quarter_combat",
+   "name": "Point Blank",
+   "rank": 9,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_express_shot",
+   "name": "Express Shot",
+   "rank": 10,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_hollow_point_rounds",
+   "name": "Hollow Point",
+   "rank": 11,
+   "score": 60
   },
   {
    "entityId": "upgrade_weighted_shots",
    "name": "Weighted Shots",
+   "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_spellslinger_headshots",
+   "name": "Spirit Rend",
    "rank": 13,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_reinforcing_casings",
-   "name": "Escalating Resilience",
-   "rank": 14,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_blood_tribute",
-   "name": "Blood Tribute",
-   "rank": 15,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_thermal_detonator",
-   "name": "Alchemical Fire",
-   "rank": 16,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_cloaking_device_active",
-   "name": "Shadow Weave",
-   "rank": 17,
    "score": 85
   },
   {
    "entityId": "upgrade_bulletshredimbue",
    "name": "Ballistic Enchantment",
-   "rank": 18,
+   "rank": 14,
    "score": 85
   },
   {
    "entityId": "upgrade_dps_aura",
    "name": "Heroic Aura",
+   "rank": 15,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_reinforcing_casings",
+   "name": "Escalating Resilience",
+   "rank": 16,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_blood_tribute",
+   "name": "Blood Tribute",
+   "rank": 17,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_cloaking_device_active",
+   "name": "Shadow Weave",
+   "rank": 18,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_thermal_detonator",
+   "name": "Alchemical Fire",
    "rank": 19,
    "score": 100
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_berserker",
@@ -173,7 +179,7 @@
     "popularityObscurity": 0.3333333333333333,
     "spellingCost": 9,
     "spellingObscurity": 0.3333333333333333,
-    "key": 0.24166666666666667
+    "key": 0.29166666666666663
    },
    {
     "id": "upgrade_blood_tribute",
@@ -196,7 +202,7 @@
     "popularityObscurity": 1,
     "spellingCost": 12,
     "spellingObscurity": 0.8055555555555556,
-    "key": 0.7702777777777778
+    "key": 0.8902777777777777
    },
    {
     "id": "upgrade_bullet_armor_reduction_aura",
@@ -219,7 +225,7 @@
     "popularityObscurity": 0.05555555555555555,
     "spellingCost": 15,
     "spellingObscurity": 0.9444444444444444,
-    "key": 0.4666666666666667
+    "key": 0.26666666666666666
    },
    {
     "id": "upgrade_bulletshredimbue",
@@ -242,7 +248,7 @@
     "popularityObscurity": 0.7222222222222222,
     "spellingCost": 9,
     "spellingObscurity": 0.3333333333333333,
-    "key": 0.7883333333333334
+    "key": 0.7416666666666667
    },
    {
     "id": "upgrade_burst_fire",
@@ -265,7 +271,7 @@
     "popularityObscurity": 0.16666666666666666,
     "spellingCost": 9,
     "spellingObscurity": 0.3333333333333333,
-    "key": 0.23000000000000004
+    "key": 0.2
    },
    {
     "id": "upgrade_chain_lightning",
@@ -288,7 +294,7 @@
     "popularityObscurity": 0.1111111111111111,
     "spellingCost": 5,
     "spellingObscurity": 0.027777777777777776,
-    "key": 0.12527777777777777
+    "key": 0.11527777777777776
    },
    {
     "id": "upgrade_cloaking_device_active",
@@ -311,7 +317,7 @@
     "popularityObscurity": 0.7777777777777778,
     "spellingCost": 11,
     "spellingObscurity": 0.6666666666666666,
-    "key": 0.8822222222222224
+    "key": 0.8222222222222222
    },
    {
     "id": "upgrade_close_quarter_combat",
@@ -334,7 +340,7 @@
     "popularityObscurity": 0.3888888888888889,
     "spellingCost": 10,
     "spellingObscurity": 0.5,
-    "key": 0.40055555555555555
+    "key": 0.3972222222222222
    },
    {
     "id": "upgrade_dps_aura",
@@ -357,7 +363,7 @@
     "popularityObscurity": 0.8333333333333334,
     "spellingCost": 6,
     "spellingObscurity": 0.1111111111111111,
-    "key": 0.8033333333333335
+    "key": 0.8
    },
    {
     "id": "upgrade_express_shot",
@@ -380,7 +386,7 @@
     "popularityObscurity": 0.5,
     "spellingCost": 11,
     "spellingObscurity": 0.6666666666666666,
-    "key": 0.4594444444444445
+    "key": 0.48611111111111105
    },
    {
     "id": "upgrade_headhunter",
@@ -403,7 +409,7 @@
     "popularityObscurity": 0.4444444444444444,
     "spellingCost": 10,
     "spellingObscurity": 0.5,
-    "key": 0.23333333333333334
+    "key": 0.35
    },
    {
     "id": "upgrade_hollow_point_rounds",
@@ -426,7 +432,7 @@
     "popularityObscurity": 0.5555555555555556,
     "spellingCost": 11,
     "spellingObscurity": 0.6666666666666666,
-    "key": 0.4083333333333333
+    "key": 0.4916666666666667
    },
    {
     "id": "upgrade_non_player_bonus_sacrifice",
@@ -449,7 +455,7 @@
     "popularityObscurity": 0.2222222222222222,
     "spellingCost": 7,
     "spellingObscurity": 0.16666666666666666,
-    "key": 0.5616666666666668
+    "key": 0.375
    },
    {
     "id": "upgrade_reinforcing_casings",
@@ -472,7 +478,7 @@
     "popularityObscurity": 0.8888888888888888,
     "spellingCost": 20,
     "spellingObscurity": 1,
-    "key": 0.7050000000000001
+    "key": 0.8083333333333332
    },
    {
     "id": "upgrade_sharpshooter",
@@ -495,7 +501,7 @@
     "popularityObscurity": 0.2777777777777778,
     "spellingCost": 12,
     "spellingObscurity": 0.8055555555555556,
-    "key": 0.3408333333333334
+    "key": 0.3208333333333333
    },
    {
     "id": "upgrade_spellslinger_headshots",
@@ -518,7 +524,7 @@
     "popularityObscurity": 0.6666666666666666,
     "spellingCost": 10,
     "spellingObscurity": 0.5,
-    "key": 0.578888888888889
+    "key": 0.6222222222222222
    },
    {
     "id": "upgrade_thermal_detonator",
@@ -541,7 +547,7 @@
     "popularityObscurity": 0.9444444444444444,
     "spellingCost": 14,
     "spellingObscurity": 0.8888888888888888,
-    "key": 0.9049999999999999
+    "key": 0.9249999999999999
    },
    {
     "id": "upgrade_toxic_bullets",
@@ -564,7 +570,7 @@
     "popularityObscurity": 0,
     "spellingCost": 5,
     "spellingObscurity": 0.027777777777777776,
-    "key": 0.0075
+    "key": 0.004166666666666667
    },
    {
     "id": "upgrade_weighted_shots",
@@ -595,59 +601,59 @@
    "upgrade_toxic_bullets",
    "upgrade_chain_lightning",
    "upgrade_burst_fire",
-   "upgrade_headhunter",
+   "upgrade_bullet_armor_reduction_aura",
    "upgrade_berserker",
    "upgrade_sharpshooter",
-   "upgrade_close_quarter_combat",
-   "upgrade_hollow_point_rounds",
-   "upgrade_express_shot",
-   "upgrade_bullet_armor_reduction_aura",
+   "upgrade_headhunter",
    "upgrade_non_player_bonus_sacrifice",
-   "upgrade_spellslinger_headshots",
+   "upgrade_close_quarter_combat",
+   "upgrade_express_shot",
+   "upgrade_hollow_point_rounds",
    "upgrade_weighted_shots",
-   "upgrade_reinforcing_casings",
-   "upgrade_blood_tribute",
+   "upgrade_spellslinger_headshots",
    "upgrade_bulletshredimbue",
    "upgrade_dps_aura",
+   "upgrade_reinforcing_casings",
    "upgrade_cloaking_device_active",
+   "upgrade_blood_tribute",
    "upgrade_thermal_detonator"
   ],
   "pairwise": [
    {
-    "a": "upgrade_bulletshredimbue",
-    "b": "upgrade_dps_aura",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_bulletshredimbue",
+    "a": "upgrade_reinforcing_casings",
     "b": "upgrade_cloaking_device_active",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_bulletshredimbue"
+    "rarer": "upgrade_cloaking_device_active"
    },
    {
-    "a": "upgrade_bulletshredimbue",
+    "a": "upgrade_reinforcing_casings",
+    "b": "upgrade_blood_tribute",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_blood_tribute"
+   },
+   {
+    "a": "upgrade_reinforcing_casings",
     "b": "upgrade_thermal_detonator",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_bulletshredimbue"
+    "rarer": "upgrade_thermal_detonator"
    },
    {
-    "a": "upgrade_dps_aura",
-    "b": "upgrade_cloaking_device_active",
+    "a": "upgrade_cloaking_device_active",
+    "b": "upgrade_blood_tribute",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_dps_aura"
-   },
-   {
-    "a": "upgrade_dps_aura",
-    "b": "upgrade_thermal_detonator",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_dps_aura"
+    "rarer": "upgrade_cloaking_device_active"
    },
    {
     "a": "upgrade_cloaking_device_active",
     "b": "upgrade_thermal_detonator",
     "purpose": "rare-contenders",
     "rarer": "upgrade_cloaking_device_active"
+   },
+   {
+    "a": "upgrade_blood_tribute",
+    "b": "upgrade_thermal_detonator",
+    "purpose": "rare-contenders",
+    "rarer": null
    },
    {
     "a": "upgrade_chain_lightning",
@@ -659,56 +665,55 @@
     "a": "upgrade_berserker",
     "b": "upgrade_sharpshooter",
     "purpose": "tier-boundary",
-    "rarer": "upgrade_berserker"
+    "rarer": "upgrade_sharpshooter"
    },
    {
-    "a": "upgrade_non_player_bonus_sacrifice",
-    "b": "upgrade_spellslinger_headshots",
+    "a": "upgrade_hollow_point_rounds",
+    "b": "upgrade_weighted_shots",
     "purpose": "tier-boundary",
-    "rarer": "upgrade_non_player_bonus_sacrifice"
+    "rarer": "upgrade_weighted_shots"
    },
    {
-    "a": "upgrade_dps_aura",
-    "b": "upgrade_bulletshredimbue",
+    "a": "upgrade_headhunter",
+    "b": "upgrade_sharpshooter",
     "purpose": "review",
-    "rarer": null
+    "rarer": "upgrade_sharpshooter"
+   },
+   {
+    "a": "upgrade_chain_lightning",
+    "b": "upgrade_burst_fire",
+    "purpose": "review",
+    "rarer": "upgrade_burst_fire"
    }
   ],
   "review": [
    {
-    "name": "Shadow Weave",
-    "compareWith": "Weighted Shots",
-    "claim": "should_be_more_obscure",
-    "reason": "Shadow Weave is a stealth active that feels like a Vitality/Spirit utility item rather than a weapon item, so players rarely list it under Weapon. Weighted Shots is clearly weapon-flavored with a Slowing Bullets upgrade path and fits the question much better, so Shadow Weave should score at least as high.",
-    "outcome": "ignored-invalid"
+    "name": "Headhunter",
+    "compareWith": "Sharpshooter",
+    "claim": "should_be_more_obvious",
+    "reason": "Headhunter is a well-known, much-built weapon item with a clear, memorable name, and it is one of the first Tier 3 weapon items players think of. It should score closer to the 30-point group than to the 60-point one.",
+    "outcome": "applied"
    },
    {
-    "name": "Alchemical Fire",
-    "compareWith": "Escalating Resilience",
+    "name": "Tesla Bullets",
+    "compareWith": "Burst Fire",
     "claim": "should_be_more_obscure",
-    "reason": "Alchemical Fire is a thrown Spirit-damage flask with Spirit Power, so it is weakly associated with Weapon items. Escalating Resilience has a clear weapon-line identity, built from Extended Magazine, and is easier to recall for this question.",
-    "outcome": "ignored-invalid"
-   },
-   {
-    "name": "Hunter's Aura",
-    "compareWith": "Berserker",
-    "claim": "should_be_more_obscure",
-    "reason": "Hunter's Aura is an aura-style item with a niche effect and is less commonly bought or recalled than the straightforward weapon-damage Berserker. It should sit above Berserker in obscurity.",
-    "outcome": "ignored-invalid"
+    "reason": "Tesla Bullets is a recognizable item, but it is no more strongly tied to the Tier 3 Weapon question than Burst Fire or Berserker. Scoring it equal to Toxic Bullets at 10 points overstates how often it would be named.",
+    "outcome": "rejected-by-comparison"
    },
    {
     "name": "Spirit Rend",
-    "compareWith": "Point Blank",
-    "claim": "should_be_more_obscure",
-    "reason": "Spirit Rend is a Spirit-flavored Weapon item that is an upgrade of Spirit Shredder, so it is less obviously a Weapon item than Point Blank. Point Blank has a clear name and mechanic tied to weapon play, so Spirit Rend should be rarer.",
+    "compareWith": "Alchemical Fire",
+    "claim": "should_be_more_obvious",
+    "reason": "Spirit Rend is a popular, commonly purchased item with a recognizable name, and its weapon-focused debuff makes it a reasonable answer here. Alchemical Fire is primarily a spirit-damage item that players would rarely think of as a weapon item, so it should be rarer than Spirit Rend.",
     "outcome": "ignored-invalid"
    },
    {
-    "name": "Heroic Aura",
-    "compareWith": "Ballistic Enchantment",
+    "name": "Shadow Weave",
+    "compareWith": "Alchemical Fire",
     "claim": "should_be_more_obvious",
-    "reason": "Heroic Aura is a simple, recognizable aura item with an easy-to-remember name. Ballistic Enchantment is a niche ability-imbue item with a harder name to recall, so it is plausibly rarer than Heroic Aura.",
-    "outcome": "rejected-by-comparison"
+    "reason": "Shadow Weave is a distinctive, memorable stealth item, so its name sticks. Alchemical Fire is a less obvious weapon-category pick, so Shadow Weave is not clearly rarer than the 85-point group and should not be the lone 100-point answer.",
+    "outcome": "applied-by-data"
    }
   ]
  }

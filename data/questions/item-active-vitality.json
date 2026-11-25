@@ -30,9 +30,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:05:44.252Z",
+ "generatedAt": "2026-11-25T04:36:56.444Z",
  "answers": [
   {
    "entityId": "upgrade_unstoppable",
@@ -47,38 +47,38 @@
    "score": 30
   },
   {
+   "entityId": "upgrade_warp_stone",
+   "name": "Warp Stone",
+   "rank": 3,
+   "score": 30
+  },
+  {
    "entityId": "upgrade_health_stimpak",
    "name": "Healing Rite",
-   "rank": 3,
+   "rank": 4,
    "score": 30
   },
   {
    "entityId": "upgrade_metal_skin",
    "name": "Metal Skin",
-   "rank": 4,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_warp_stone",
-   "name": "Warp Stone",
    "rank": 5,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_colossus",
-   "name": "Colossus",
-   "rank": 6,
    "score": 60
   },
   {
    "entityId": "upgrade_grit",
    "name": "Grit",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_guardian_ward",
+   "name": "Guardian Ward",
    "rank": 7,
    "score": 60
   },
   {
-   "entityId": "upgrade_rescue_beam",
-   "name": "Rescue Beam",
+   "entityId": "upgrade_surging_power",
+   "name": "Vampiric Burst",
    "rank": 8,
    "score": 60
   },
@@ -89,8 +89,8 @@
    "score": 60
   },
   {
-   "entityId": "upgrade_guardian_ward",
-   "name": "Guardian Ward",
+   "entityId": "upgrade_colossus",
+   "name": "Colossus",
    "rank": 10,
    "score": 85
   },
@@ -101,26 +101,26 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_surging_power",
-   "name": "Vampiric Burst",
-   "rank": 12,
-   "score": 85
-  },
-  {
    "entityId": "upgrade_phantom_strike",
    "name": "Phantom Strike",
-   "rank": 13,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_health_nova",
-   "name": "Healing Nova",
-   "rank": 14,
+   "rank": 12,
    "score": 85
   },
   {
    "entityId": "upgrade_infuser",
    "name": "Infuser",
+   "rank": 13,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_rescue_beam",
+   "name": "Rescue Beam",
+   "rank": 14,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_health_nova",
+   "name": "Healing Nova",
    "rank": 15,
    "score": 85
   },
@@ -131,19 +131,25 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_return_fire",
-   "name": "Return Fire",
+   "entityId": "upgrade_restorative_locket",
+   "name": "Restorative Locket",
    "rank": 17,
    "score": 85
   },
   {
-   "entityId": "upgrade_restorative_locket",
-   "name": "Restorative Locket",
+   "entityId": "upgrade_return_fire",
+   "name": "Return Fire",
    "rank": 18,
    "score": 100
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_colossus",
@@ -166,7 +172,7 @@
     "popularityObscurity": 0.7647058823529411,
     "spellingCost": 8,
     "spellingObscurity": 0.4117647058823529,
-    "key": 0.4105882352941177
+    "key": 0.5941176470588234
    },
    {
     "id": "upgrade_divine_barrier",
@@ -189,7 +195,7 @@
     "popularityObscurity": 0.5882352941176471,
     "spellingCost": 6,
     "spellingObscurity": 0.20588235294117646,
-    "key": 0.5626470588235295
+    "key": 0.5661764705882353
    },
    {
     "id": "upgrade_fury_trance",
@@ -212,7 +218,7 @@
     "popularityObscurity": 1,
     "spellingCost": 4,
     "spellingObscurity": 0.029411764705882353,
-    "key": 0.783235294117647
+    "key": 0.875
    },
    {
     "id": "upgrade_grit",
@@ -235,7 +241,7 @@
     "popularityObscurity": 0.058823529411764705,
     "spellingCost": 4,
     "spellingObscurity": 0.029411764705882353,
-    "key": 0.44558823529411773
+    "key": 0.23382352941176474
    },
    {
     "id": "upgrade_guardian_ward",
@@ -258,7 +264,7 @@
     "popularityObscurity": 0.29411764705882354,
     "spellingCost": 12,
     "spellingObscurity": 0.8529411764705882,
-    "key": 0.496764705882353
+    "key": 0.4014705882352941
    },
    {
     "id": "upgrade_health_nova",
@@ -281,7 +287,7 @@
     "popularityObscurity": 0.8823529411764706,
     "spellingCost": 10,
     "spellingObscurity": 0.6470588235294118,
-    "key": 0.6635294117647059
+    "key": 0.776470588235294
    },
    {
     "id": "upgrade_health_stimpak",
@@ -304,7 +310,7 @@
     "popularityObscurity": 0.35294117647058826,
     "spellingCost": 11,
     "spellingObscurity": 0.7647058823529411,
-    "key": 0.24411764705882355
+    "key": 0.31470588235294117
    },
    {
     "id": "upgrade_infuser",
@@ -327,7 +333,7 @@
     "popularityObscurity": 0.4117647058823529,
     "spellingCost": 7,
     "spellingObscurity": 0.35294117647058826,
-    "key": 0.7194117647058824
+    "key": 0.55
    },
    {
     "id": "upgrade_metal_skin",
@@ -350,7 +356,7 @@
     "popularityObscurity": 0.47058823529411764,
     "spellingCost": 9,
     "spellingObscurity": 0.5,
-    "key": 0.2585294117647059
+    "key": 0.375
    },
    {
     "id": "upgrade_phantom_strike",
@@ -373,7 +379,7 @@
     "popularityObscurity": 0.5294117647058824,
     "spellingCost": 13,
     "spellingObscurity": 0.9705882352941176,
-    "key": 0.5773529411764706
+    "key": 0.5632352941176471
    },
    {
     "id": "upgrade_reduce_debuff_duration",
@@ -396,7 +402,7 @@
     "popularityObscurity": 0,
     "spellingCost": 6,
     "spellingObscurity": 0.20588235294117646,
-    "key": 0.18500000000000003
+    "key": 0.08970588235294119
    },
    {
     "id": "upgrade_rescue_beam",
@@ -419,7 +425,7 @@
     "popularityObscurity": 0.7058823529411765,
     "spellingCost": 10,
     "spellingObscurity": 0.6470588235294118,
-    "key": 0.4700000000000001
+    "key": 0.5970588235294118
    },
    {
     "id": "upgrade_restorative_locket",
@@ -442,7 +448,7 @@
     "popularityObscurity": 0.8235294117647058,
     "spellingCost": 6,
     "spellingObscurity": 0.20588235294117646,
-    "key": 0.8250000000000002
+    "key": 0.8073529411764706
    },
    {
     "id": "upgrade_return_fire",
@@ -465,7 +471,7 @@
     "popularityObscurity": 0.9411764705882353,
     "spellingCost": 10,
     "spellingObscurity": 0.6470588235294118,
-    "key": 0.8488235294117648
+    "key": 0.8911764705882352
    },
    {
     "id": "upgrade_rocket_booster",
@@ -488,7 +494,7 @@
     "popularityObscurity": 0.6470588235294118,
     "spellingCost": 12,
     "spellingObscurity": 0.8529411764705882,
-    "key": 0.47617647058823537
+    "key": 0.575
    },
    {
     "id": "upgrade_surging_power",
@@ -511,7 +517,7 @@
     "popularityObscurity": 0.23529411764705882,
     "spellingCost": 13,
     "spellingObscurity": 0.9705882352941176,
-    "key": 0.5697058823529413
+    "key": 0.4073529411764706
    },
    {
     "id": "upgrade_unstoppable",
@@ -534,7 +540,7 @@
     "popularityObscurity": 0.17647058823529413,
     "spellingCost": 6,
     "spellingObscurity": 0.20588235294117646,
-    "key": 0.13911764705882357
+    "key": 0.16029411764705884
    },
    {
     "id": "upgrade_warp_stone",
@@ -557,88 +563,106 @@
     "popularityObscurity": 0.11764705882352941,
     "spellingCost": 9,
     "spellingObscurity": 0.5,
-    "key": 0.3244117647058824
+    "key": 0.22205882352941175
    }
   ],
   "passAgreement": 0.6287581699346405,
   "orderBeforeRefinement": [
-   "upgrade_unstoppable",
    "upgrade_reduce_debuff_duration",
+   "upgrade_unstoppable",
+   "upgrade_warp_stone",
+   "upgrade_grit",
    "upgrade_health_stimpak",
    "upgrade_metal_skin",
-   "upgrade_warp_stone",
-   "upgrade_colossus",
-   "upgrade_grit",
-   "upgrade_rescue_beam",
-   "upgrade_rocket_booster",
    "upgrade_guardian_ward",
-   "upgrade_divine_barrier",
    "upgrade_surging_power",
-   "upgrade_phantom_strike",
-   "upgrade_health_nova",
    "upgrade_infuser",
-   "upgrade_fury_trance",
+   "upgrade_phantom_strike",
+   "upgrade_divine_barrier",
+   "upgrade_rocket_booster",
+   "upgrade_colossus",
+   "upgrade_rescue_beam",
+   "upgrade_health_nova",
    "upgrade_restorative_locket",
+   "upgrade_fury_trance",
    "upgrade_return_fire"
   ],
   "pairwise": [
    {
-    "a": "upgrade_infuser",
+    "a": "upgrade_health_nova",
+    "b": "upgrade_restorative_locket",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_restorative_locket"
+   },
+   {
+    "a": "upgrade_health_nova",
     "b": "upgrade_fury_trance",
     "purpose": "rare-contenders",
     "rarer": "upgrade_fury_trance"
    },
    {
-    "a": "upgrade_infuser",
-    "b": "upgrade_restorative_locket",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_restorative_locket"
-   },
-   {
-    "a": "upgrade_infuser",
-    "b": "upgrade_return_fire",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_return_fire"
-   },
-   {
-    "a": "upgrade_fury_trance",
-    "b": "upgrade_restorative_locket",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_restorative_locket"
-   },
-   {
-    "a": "upgrade_fury_trance",
+    "a": "upgrade_health_nova",
     "b": "upgrade_return_fire",
     "purpose": "rare-contenders",
     "rarer": "upgrade_return_fire"
    },
    {
     "a": "upgrade_restorative_locket",
-    "b": "upgrade_return_fire",
+    "b": "upgrade_fury_trance",
     "purpose": "rare-contenders",
     "rarer": "upgrade_restorative_locket"
    },
    {
-    "a": "upgrade_unstoppable",
-    "b": "upgrade_reduce_debuff_duration",
+    "a": "upgrade_restorative_locket",
+    "b": "upgrade_return_fire",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_return_fire"
+   },
+   {
+    "a": "upgrade_fury_trance",
+    "b": "upgrade_return_fire",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_return_fire"
+   },
+   {
+    "a": "upgrade_reduce_debuff_duration",
+    "b": "upgrade_unstoppable",
     "purpose": "tier-boundary",
     "rarer": "upgrade_reduce_debuff_duration"
    },
    {
+    "a": "upgrade_grit",
+    "b": "upgrade_health_stimpak",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_grit"
+   },
+   {
+    "a": "upgrade_infuser",
+    "b": "upgrade_phantom_strike",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_infuser"
+   },
+   {
     "a": "upgrade_metal_skin",
-    "b": "upgrade_warp_stone",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_warp_stone"
+    "b": "upgrade_grit",
+    "purpose": "review",
+    "rarer": "upgrade_grit"
+   },
+   {
+    "a": "upgrade_colossus",
+    "b": "upgrade_infuser",
+    "purpose": "review",
+    "rarer": "upgrade_infuser"
    },
    {
     "a": "upgrade_rocket_booster",
-    "b": "upgrade_guardian_ward",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_guardian_ward"
+    "b": "upgrade_phantom_strike",
+    "purpose": "review",
+    "rarer": "upgrade_phantom_strike"
    },
    {
-    "a": "upgrade_rocket_booster",
-    "b": "upgrade_warp_stone",
+    "a": "upgrade_return_fire",
+    "b": "upgrade_restorative_locket",
     "purpose": "review",
     "rarer": null
    }
@@ -646,31 +670,38 @@
   "review": [
    {
     "name": "Metal Skin",
-    "compareWith": "Unstoppable",
-    "claim": "should_be_more_obscure",
-    "reason": "Metal Skin is a niche situational pick, whereas Unstoppable is the iconic active Vitality item, so Metal Skin should sit rather further from the obvious end than 30 pts suggests.",
-    "outcome": "ignored-invalid"
+    "compareWith": "Grit",
+    "claim": "should_be_more_obvious",
+    "reason": "Metal Skin is a very memorable, iconic active (bullet immunity) that players strongly associate with active Vitality items. Grit is a cheap tier 1 item whose active (a short barrier) is easy to forget, so Metal Skin should score at or below Grit.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Colossus",
+    "compareWith": "Infuser",
+    "claim": "should_be_more_obvious",
+    "reason": "Colossus is a famous, frequently built tier 4 item with a very distinctive active (grow larger). Players name it readily. Infuser's active is much less top-of-mind, so Colossus should be more obvious than Infuser.",
+    "outcome": "applied"
    },
    {
     "name": "Majestic Leap",
-    "compareWith": "Warp Stone",
+    "compareWith": "Phantom Strike",
     "claim": "should_be_more_obvious",
-    "reason": "Majestic Leap is a distinctive, memorable movement active that is commonly bought and is strongly associated with an active Vitality item, so it should rank at least as obvious as Warp Stone.",
-    "outcome": "rejected-by-comparison"
+    "reason": "Majestic Leap is a well-known mobility active that players commonly buy, with a memorable name. It should sit near Phantom Strike rather than in the 85-point tier.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Healing Rite",
+    "compareWith": "Warp Stone",
+    "claim": "should_be_more_obscure",
+    "reason": "Healing Rite is a cheap early item whose active is less distinctive in recall than Warp Stone's teleport, which is more strongly tied to the 'active' idea. Healing Rite is not especially top-of-mind among Vitality actives.",
+    "outcome": "ignored-invalid"
    },
    {
     "name": "Return Fire",
     "compareWith": "Restorative Locket",
     "claim": "should_be_more_obvious",
-    "reason": "Return Fire is a memorable named item that players recall, but Restorative Locket is the more forgettable active and its stack mechanic is less known, so Locket should stay at 100 and Return Fire should be rated more obvious than the other 85-pt answers.",
-    "outcome": "ignored-invalid"
-   },
-   {
-    "name": "Colossus",
-    "compareWith": "Grit",
-    "claim": "should_be_more_obvious",
-    "reason": "Colossus is a very well-known tier 4 Vitality item with a striking active (growing larger), so it comes to mind far more readily than Grit and deserves a more obvious score.",
-    "outcome": "ignored-invalid"
+    "reason": "Return Fire is a recognizable tier 2 item with a memorable name. Restorative Locket has a more complex, forgettable mechanic, so Return Fire is not clearly rarer and should not be the sole 100-point answer.",
+    "outcome": "rejected-by-comparison"
    }
   ]
  }

@@ -20,9 +20,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:20:28.509Z",
+ "generatedAt": "2026-11-25T04:45:57.222Z",
  "answers": [
   {
    "entityId": "hero_punkgoat",
@@ -43,37 +43,43 @@
    "score": 60
   },
   {
-   "entityId": "hero_fencer",
-   "name": "Apollo",
+   "entityId": "hero_krill",
+   "name": "Mo & Krill",
    "rank": 4,
    "score": 60
   },
   {
-   "entityId": "hero_forge",
-   "name": "McGinnis",
+   "entityId": "hero_fencer",
+   "name": "Apollo",
    "rank": 5,
-   "score": 85
-  },
-  {
-   "entityId": "hero_deadpack",
-   "name": "Deadman Danny",
-   "rank": 6,
-   "score": 85
-  },
-  {
-   "entityId": "hero_krill",
-   "name": "Mo & Krill",
-   "rank": 7,
    "score": 85
   },
   {
    "entityId": "hero_doorman",
    "name": "The Doorman",
+   "rank": 6,
+   "score": 85
+  },
+  {
+   "entityId": "hero_forge",
+   "name": "McGinnis",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "hero_deadpack",
+   "name": "Deadman Danny",
    "rank": 8,
    "score": 100
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_astro",
@@ -96,7 +102,7 @@
     "popularityObscurity": 0.14285714285714285,
     "spellingCost": 8,
     "spellingObscurity": 1,
-    "key": 0.13857142857142857
+    "key": 0.16428571428571428
    },
    {
     "id": "hero_deadpack",
@@ -119,7 +125,7 @@
     "popularityObscurity": 0.42857142857142855,
     "spellingCost": 5,
     "spellingObscurity": 0.42857142857142855,
-    "key": 0.7271428571428573
+    "key": 0.5642857142857143
    },
    {
     "id": "hero_doorman",
@@ -142,7 +148,7 @@
     "popularityObscurity": 0.8571428571428571,
     "spellingCost": 7,
     "spellingObscurity": 0.8571428571428571,
-    "key": 0.6842857142857144
+    "key": 0.7785714285714285
    },
    {
     "id": "hero_fencer",
@@ -165,7 +171,7 @@
     "popularityObscurity": 0.7142857142857143,
     "spellingCost": 6,
     "spellingObscurity": 0.7142857142857143,
-    "key": 0.5414285714285715
+    "key": 0.6357142857142857
    },
    {
     "id": "hero_forge",
@@ -188,7 +194,7 @@
     "popularityObscurity": 1,
     "spellingCost": 3,
     "spellingObscurity": 0.14285714285714285,
-    "key": 0.5800000000000001
+    "key": 0.7857142857142857
    },
    {
     "id": "hero_krill",
@@ -211,7 +217,7 @@
     "popularityObscurity": 0.5714285714285714,
     "spellingCost": 2,
     "spellingObscurity": 0,
-    "key": 0.5742857142857143
+    "key": 0.5571428571428572
    },
    {
     "id": "hero_nurse",
@@ -234,7 +240,7 @@
     "popularityObscurity": 0.2857142857142857,
     "spellingCost": 5,
     "spellingObscurity": 0.42857142857142855,
-    "key": 0.5128571428571428
+    "key": 0.3928571428571428
    },
    {
     "id": "hero_punkgoat",
@@ -257,96 +263,102 @@
     "popularityObscurity": 0,
     "spellingCost": 5,
     "spellingObscurity": 0.42857142857142855,
-    "key": 0.24142857142857146
+    "key": 0.12142857142857144
    }
   ],
   "passAgreement": 0.45714285714285713,
   "orderBeforeRefinement": [
-   "hero_astro",
    "hero_punkgoat",
+   "hero_astro",
    "hero_nurse",
-   "hero_fencer",
    "hero_krill",
-   "hero_forge",
+   "hero_deadpack",
+   "hero_fencer",
    "hero_doorman",
-   "hero_deadpack"
+   "hero_forge"
   ],
   "pairwise": [
    {
-    "a": "hero_krill",
-    "b": "hero_forge",
-    "purpose": "rare-contenders",
-    "rarer": "hero_krill"
-   },
-   {
-    "a": "hero_krill",
-    "b": "hero_doorman",
-    "purpose": "rare-contenders",
-    "rarer": "hero_krill"
-   },
-   {
-    "a": "hero_krill",
-    "b": "hero_deadpack",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_forge",
-    "b": "hero_doorman",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_forge",
-    "b": "hero_deadpack",
+    "a": "hero_deadpack",
+    "b": "hero_fencer",
     "purpose": "rare-contenders",
     "rarer": "hero_deadpack"
+   },
+   {
+    "a": "hero_deadpack",
+    "b": "hero_doorman",
+    "purpose": "rare-contenders",
+    "rarer": "hero_deadpack"
+   },
+   {
+    "a": "hero_deadpack",
+    "b": "hero_forge",
+    "purpose": "rare-contenders",
+    "rarer": "hero_deadpack"
+   },
+   {
+    "a": "hero_fencer",
+    "b": "hero_doorman",
+    "purpose": "rare-contenders",
+    "rarer": "hero_doorman"
+   },
+   {
+    "a": "hero_fencer",
+    "b": "hero_forge",
+    "purpose": "rare-contenders",
+    "rarer": "hero_forge"
    },
    {
     "a": "hero_doorman",
-    "b": "hero_deadpack",
+    "b": "hero_forge",
     "purpose": "rare-contenders",
-    "rarer": "hero_deadpack"
+    "rarer": "hero_forge"
    },
    {
-    "a": "hero_astro",
-    "b": "hero_punkgoat",
+    "a": "hero_punkgoat",
+    "b": "hero_astro",
     "purpose": "tier-boundary",
     "rarer": null
    },
    {
-    "a": "hero_punkgoat",
+    "a": "hero_astro",
     "b": "hero_nurse",
     "purpose": "tier-boundary",
     "rarer": "hero_nurse"
    },
    {
-    "a": "hero_punkgoat",
-    "b": "hero_astro",
+    "a": "hero_doorman",
+    "b": "hero_fencer",
     "purpose": "review",
-    "rarer": "hero_astro"
+    "rarer": null
+   },
+   {
+    "a": "hero_deadpack",
+    "b": "hero_fencer",
+    "purpose": "review",
+    "rarer": "hero_deadpack"
    }
   ],
   "review": [
    {
-    "name": "Billy",
-    "compareWith": "Holliday",
+    "name": "The Doorman",
+    "compareWith": "Apollo",
     "claim": "should_be_more_obvious",
-    "reason": "The question's own example is the \"ll\" in \"Billy\", so players are primed to type it first. It should be at least as obvious as Holliday, probably the cheapest answer.",
-    "outcome": "applied"
+    "reason": "The Doorman is spelled with a double 'o' in both 'Doorman' and 'Doorway', so the doubled letter is prominent and it is an easy one to spot. Apollo has a double 'l' that players rarely notice, so it should be rarer than The Doorman.",
+    "outcome": "rejected-by-comparison"
    },
    {
     "name": "Deadman Danny",
-    "compareWith": "The Doorman",
+    "compareWith": "Apollo",
     "claim": "should_be_more_obvious",
-    "reason": "This is the weakest case for a 100-point ranking. Deadman Danny has a doubled letter in \"Deadman\"? No, but \"Danny\" has a double n, which is easy to see. The Doorman has \"oo\" twice, so both are visible, and Danny should not be rarer than the others at 85.",
-    "outcome": "applied-by-data"
+    "reason": "Deadman Danny has no doubled letters in its name, so it is not a valid answer at all. It should not count as the most obscure pick, and if it is included it should be no rarer than Apollo.",
+    "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Apollo",
-    "compareWith": "Nurse Harrow",
-    "claim": "should_be_more_obscure",
-    "reason": "Apollo's double letter (\"ll\") is easy to overlook next to \"Nurse Harrow\" with its \"rr\". Both are plausible mid-tier answers, but Apollo is a more commonly played hero, so it is more likely to come to mind than Nurse Harrow.",
+    "name": "Nurse Harrow",
+    "compareWith": "Mo & Krill",
+    "claim": "should_be_more_obvious",
+    "reason": "Harrow's double 'r' is easy to spot in the name, and Harrow is a commonly picked healer. Mo & Krill has no doubled letter, so it should not be scored like a valid answer.",
     "outcome": "ignored-invalid"
    }
   ]

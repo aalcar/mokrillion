@@ -18,25 +18,25 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:17:31.093Z",
+ "generatedAt": "2026-11-25T04:46:08.367Z",
  "answers": [
   {
-   "entityId": "hero_warden",
-   "name": "Warden",
+   "entityId": "hero_gigawatt",
+   "name": "Seven",
    "rank": 1,
    "score": 10
   },
   {
-   "entityId": "hero_kelvin",
-   "name": "Kelvin",
+   "entityId": "hero_warden",
+   "name": "Warden",
    "rank": 2,
    "score": 30
   },
   {
-   "entityId": "hero_gigawatt",
-   "name": "Seven",
+   "entityId": "hero_kelvin",
+   "name": "Kelvin",
    "rank": 3,
    "score": 60
   },
@@ -60,6 +60,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_chessmaster",
@@ -82,7 +88,7 @@
     "popularityObscurity": 1,
     "spellingCost": 7,
     "spellingObscurity": 0.9,
-    "key": 0.775
+    "key": 0.895
    },
    {
     "id": "hero_doorman",
@@ -105,7 +111,7 @@
     "popularityObscurity": 0.8,
     "spellingCost": 7,
     "spellingObscurity": 0.9,
-    "key": 0.9150000000000001
+    "key": 0.855
    },
    {
     "id": "hero_gigawatt",
@@ -128,7 +134,7 @@
     "popularityObscurity": 0,
     "spellingCost": 5,
     "spellingObscurity": 0.1,
-    "key": 0.269
+    "key": 0.125
    },
    {
     "id": "hero_kelvin",
@@ -151,7 +157,7 @@
     "popularityObscurity": 0.2,
     "spellingCost": 6,
     "spellingObscurity": 0.5,
-    "key": 0.259
+    "key": 0.235
    },
    {
     "id": "hero_orion",
@@ -174,7 +180,7 @@
     "popularityObscurity": 0.4,
     "spellingCost": 5,
     "spellingObscurity": 0.1,
-    "key": 0.5170000000000001
+    "key": 0.44499999999999995
    },
    {
     "id": "hero_warden",
@@ -197,82 +203,88 @@
     "popularityObscurity": 0.6,
     "spellingCost": 6,
     "spellingObscurity": 0.5,
-    "key": 0.265
+    "key": 0.445
    }
   ],
   "passAgreement": 0.6799999999999999,
   "orderBeforeRefinement": [
-   "hero_kelvin",
-   "hero_warden",
    "hero_gigawatt",
+   "hero_kelvin",
    "hero_orion",
-   "hero_chessmaster",
-   "hero_doorman"
+   "hero_warden",
+   "hero_doorman",
+   "hero_chessmaster"
   ],
   "pairwise": [
    {
-    "a": "hero_gigawatt",
-    "b": "hero_orion",
+    "a": "hero_orion",
+    "b": "hero_warden",
     "purpose": "rare-contenders",
     "rarer": "hero_orion"
    },
    {
-    "a": "hero_gigawatt",
+    "a": "hero_orion",
+    "b": "hero_doorman",
+    "purpose": "rare-contenders",
+    "rarer": "hero_doorman"
+   },
+   {
+    "a": "hero_orion",
     "b": "hero_chessmaster",
     "purpose": "rare-contenders",
     "rarer": "hero_chessmaster"
    },
    {
-    "a": "hero_gigawatt",
+    "a": "hero_warden",
     "b": "hero_doorman",
     "purpose": "rare-contenders",
     "rarer": "hero_doorman"
    },
    {
-    "a": "hero_orion",
+    "a": "hero_warden",
     "b": "hero_chessmaster",
     "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_orion",
-    "b": "hero_doorman",
-    "purpose": "rare-contenders",
-    "rarer": "hero_doorman"
-   },
-   {
-    "a": "hero_chessmaster",
-    "b": "hero_doorman",
-    "purpose": "rare-contenders",
-    "rarer": "hero_doorman"
-   },
-   {
-    "a": "hero_kelvin",
-    "b": "hero_warden",
-    "purpose": "tier-boundary",
-    "rarer": "hero_kelvin"
+    "rarer": "hero_chessmaster"
    },
    {
     "a": "hero_doorman",
     "b": "hero_chessmaster",
-    "purpose": "review",
+    "purpose": "rare-contenders",
     "rarer": "hero_doorman"
+   },
+   {
+    "a": "hero_gigawatt",
+    "b": "hero_kelvin",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "hero_chessmaster",
+    "b": "hero_orion",
+    "purpose": "review",
+    "rarer": "hero_chessmaster"
+   },
+   {
+    "a": "hero_warden",
+    "b": "hero_kelvin",
+    "purpose": "review",
+    "rarer": "hero_kelvin"
    }
   ],
   "review": [
    {
-    "name": "Seven",
+    "name": "Solomon",
     "compareWith": "Grey Talon",
     "claim": "should_be_more_obvious",
-    "reason": "Seven is a short, simple name that ends in N and is easy to spot when scanning the roster. Grey Talon ends in N only once you ignore the multiword structure, and it is less likely to come to mind. Seven should score lower (more obvious) than Grey Talon, not tie with it.",
-    "outcome": "ignored-invalid"
+    "reason": "Solomon ends in N and is an easy name for experienced players to recall. Grey Talon is less natural here because the name is two words and ends in 'Talon' (N), which players may not think to check. Solomon should score lower than Grey Talon, or at least not 25 points rarer.",
+    "outcome": "rejected-by-comparison"
    },
    {
-    "name": "The Doorman",
-    "compareWith": "Solomon",
+    "name": "Warden",
+    "compareWith": "Kelvin",
     "claim": "should_be_more_obvious",
-    "reason": "Solomon is a plain name ending in N and is no harder to recall than The Doorman. The Doorman's rule hint (ignore a leading 'The') points to it directly, which makes it more obvious than the 100-point score implies. Solomon should be rarer, or at least the two should be near-equal.",
-    "outcome": "rejected-by-comparison"
+    "reason": "Warden is a well-known hero with a short, memorable name that clearly ends in N. It is probably about as readily recalled as Kelvin, so a 30-point gap is too large and Warden should sit closer to Kelvin's score.",
+    "outcome": "applied"
    }
   ]
  }

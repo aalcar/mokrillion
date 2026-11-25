@@ -39,9 +39,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
- "model": "cache only",
- "generatedAt": "2026-11-25T04:10:07.718Z",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:42:27.300Z",
  "answers": [
   {
    "entityId": "upgrade_endurance",
@@ -56,50 +56,50 @@
    "score": 10
   },
   {
-   "entityId": "upgrade_tech_purge",
-   "name": "Spirit Resilience",
+   "entityId": "upgrade_healing_booster",
+   "name": "Healing Booster",
    "rank": 3,
    "score": 30
   },
   {
-   "entityId": "upgrade_healing_booster",
-   "name": "Healing Booster",
+   "entityId": "upgrade_tech_purge",
+   "name": "Spirit Resilience",
    "rank": 4,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_grit",
-   "name": "Grit",
-   "rank": 5,
    "score": 30
   },
   {
    "entityId": "upgrade_regenerating_bullet_shield",
    "name": "Battle Vest",
-   "rank": 6,
+   "rank": 5,
    "score": 30
-  },
-  {
-   "entityId": "upgrade_cardio_calibrator",
-   "name": "Enduring Speed",
-   "rank": 7,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_magic_shield",
-   "name": "Enchanter's Emblem",
-   "rank": 8,
-   "score": 60
   },
   {
    "entityId": "upgrade_healbuff",
    "name": "Healing Tempo",
-   "rank": 9,
-   "score": 60
+   "rank": 6,
+   "score": 30
   },
   {
    "entityId": "upgrade_improved_bullet_armor",
    "name": "Bullet Resilience",
+   "rank": 7,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_grit",
+   "name": "Grit",
+   "rank": 8,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_magic_shield",
+   "name": "Enchanter's Emblem",
+   "rank": 9,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_cardio_calibrator",
+   "name": "Enduring Speed",
    "rank": 10,
    "score": 60
   },
@@ -110,80 +110,80 @@
    "score": 60
   },
   {
-   "entityId": "upgrade_cooldown_reduction",
-   "name": "Superior Cooldown",
+   "entityId": "upgrade_weapon_shielding",
+   "name": "Weapon Shielding",
    "rank": 12,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_boundless_spirit",
-   "name": "Boundless Spirit",
-   "rank": 13,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_soaring_spirit",
-   "name": "Improved Spirit",
-   "rank": 14,
    "score": 60
   },
   {
    "entityId": "upgrade_vex_barrier",
    "name": "Reactive Barrier",
-   "rank": 15,
+   "rank": 13,
    "score": 60
-  },
-  {
-   "entityId": "upgrade_trophy_collector",
-   "name": "Trophy Collector",
-   "rank": 16,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_weapon_shielding",
-   "name": "Weapon Shielding",
-   "rank": 17,
-   "score": 85
   },
   {
    "entityId": "upgrade_auto_cleanse",
    "name": "Indomitable",
-   "rank": 18,
-   "score": 85
+   "rank": 14,
+   "score": 60
   },
   {
-   "entityId": "upgrade_non_player_bonus",
-   "name": "Monster Rounds",
-   "rank": 19,
-   "score": 85
+   "entityId": "upgrade_hollow_point_rounds",
+   "name": "Hollow Point",
+   "rank": 15,
+   "score": 60
   },
   {
    "entityId": "upgrade_guardian_ward",
    "name": "Guardian Ward",
-   "rank": 20,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_transcendent_cooldown",
-   "name": "Transcendent Cooldown",
-   "rank": 21,
+   "rank": 16,
    "score": 85
   },
   {
    "entityId": "upgrade_cloaking_device_active",
    "name": "Shadow Weave",
-   "rank": 22,
+   "rank": 17,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_trophy_collector",
+   "name": "Trophy Collector",
+   "rank": 18,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_boundless_spirit",
+   "name": "Boundless Spirit",
+   "rank": 19,
    "score": 85
   },
   {
    "entityId": "upgrade_divine_barrier",
    "name": "Divine Barrier",
+   "rank": 20,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_cooldown_reduction",
+   "name": "Superior Cooldown",
+   "rank": 21,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_soaring_spirit",
+   "name": "Improved Spirit",
+   "rank": 22,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_non_player_bonus",
+   "name": "Monster Rounds",
    "rank": 23,
    "score": 85
   },
   {
-   "entityId": "upgrade_hollow_point_rounds",
-   "name": "Hollow Point",
+   "entityId": "upgrade_blood_tribute",
+   "name": "Blood Tribute",
    "rank": 24,
    "score": 85
   },
@@ -194,19 +194,25 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_goose_egg",
-   "name": "Golden Goose Egg",
+   "entityId": "upgrade_transcendent_cooldown",
+   "name": "Transcendent Cooldown",
    "rank": 26,
    "score": 85
   },
   {
-   "entityId": "upgrade_blood_tribute",
-   "name": "Blood Tribute",
+   "entityId": "upgrade_goose_egg",
+   "name": "Golden Goose Egg",
    "rank": 27,
    "score": 100
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_auto_cleanse",
@@ -229,7 +235,7 @@
     "popularityObscurity": 0.6538461538461539,
     "spellingCost": 5,
     "spellingObscurity": 0.09615384615384616,
-    "key": 0.5751923076923078
+    "key": 0.5521153846153847
    },
    {
     "id": "upgrade_blood_tribute",
@@ -252,7 +258,7 @@
     "popularityObscurity": 1,
     "spellingCost": 12,
     "spellingObscurity": 0.6153846153846154,
-    "key": 0.8834615384615385
+    "key": 0.8392307692307692
    },
    {
     "id": "upgrade_boundless_spirit",
@@ -275,7 +281,7 @@
     "popularityObscurity": 0.11538461538461539,
     "spellingCost": 9,
     "spellingObscurity": 0.3076923076923077,
-    "key": 0.4888461538461539
+    "key": 0.6542307692307693
    },
    {
     "id": "upgrade_cardio_calibrator",
@@ -298,7 +304,7 @@
     "popularityObscurity": 0.19230769230769232,
     "spellingCost": 13,
     "spellingObscurity": 0.6923076923076923,
-    "key": 0.3273076923076923
+    "key": 0.3773076923076923
    },
    {
     "id": "upgrade_cloaking_device_active",
@@ -321,7 +327,7 @@
     "popularityObscurity": 0.9230769230769231,
     "spellingCost": 11,
     "spellingObscurity": 0.5,
-    "key": 0.7030769230769232
+    "key": 0.6126923076923078
    },
    {
     "id": "upgrade_cooldown_reduction",
@@ -344,7 +350,7 @@
     "popularityObscurity": 0.038461538461538464,
     "spellingCost": 16,
     "spellingObscurity": 0.9230769230769231,
-    "key": 0.48038461538461547
+    "key": 0.6611538461538462
    },
    {
     "id": "upgrade_divine_barrier",
@@ -367,7 +373,7 @@
     "popularityObscurity": 0.8461538461538461,
     "spellingCost": 6,
     "spellingObscurity": 0.17307692307692307,
-    "key": 0.7067307692307694
+    "key": 0.6586538461538461
    },
    {
     "id": "upgrade_endurance",
@@ -390,7 +396,7 @@
     "popularityObscurity": 0.23076923076923078,
     "spellingCost": 10,
     "spellingObscurity": 0.38461538461538464,
-    "key": 0.11153846153846154
+    "key": 0.05384615384615385
    },
    {
     "id": "upgrade_goose_egg",
@@ -413,7 +419,7 @@
     "popularityObscurity": 0.9615384615384616,
     "spellingCost": 3,
     "spellingObscurity": 0,
-    "key": 0.9134615384615385
+    "key": 0.9134615384615383
    },
    {
     "id": "upgrade_grit",
@@ -436,7 +442,7 @@
     "popularityObscurity": 0.2692307692307692,
     "spellingCost": 4,
     "spellingObscurity": 0.038461538461538464,
-    "key": 0.27038461538461533
+    "key": 0.2761538461538461
    },
    {
     "id": "upgrade_guardian_ward",
@@ -459,7 +465,7 @@
     "popularityObscurity": 0.6923076923076923,
     "spellingCost": 12,
     "spellingObscurity": 0.6153846153846154,
-    "key": 0.5953846153846154
+    "key": 0.5530769230769231
    },
    {
     "id": "upgrade_healbuff",
@@ -482,7 +488,7 @@
     "popularityObscurity": 0.8076923076923077,
     "spellingCost": 5,
     "spellingObscurity": 0.09615384615384616,
-    "key": 0.4209615384615385
+    "key": 0.2613461538461539
    },
    {
     "id": "upgrade_healing_booster",
@@ -505,7 +511,7 @@
     "popularityObscurity": 0.46153846153846156,
     "spellingCost": 14,
     "spellingObscurity": 0.75,
-    "key": 0.2644230769230769
+    "key": 0.16826923076923078
    },
    {
     "id": "upgrade_hollow_point_rounds",
@@ -528,7 +534,7 @@
     "popularityObscurity": 0.7307692307692307,
     "spellingCost": 11,
     "spellingObscurity": 0.5,
-    "key": 0.6388461538461538
+    "key": 0.6023076923076922
    },
    {
     "id": "upgrade_improved_bullet_armor",
@@ -551,7 +557,7 @@
     "popularityObscurity": 0.8846153846153846,
     "spellingCost": 16,
     "spellingObscurity": 0.9230769230769231,
-    "key": 0.4634615384615385
+    "key": 0.2711538461538462
    },
    {
     "id": "upgrade_magic_shield",
@@ -574,7 +580,7 @@
     "popularityObscurity": 0.38461538461538464,
     "spellingCost": 10,
     "spellingObscurity": 0.38461538461538464,
-    "key": 0.3634615384615385
+    "key": 0.35384615384615387
    },
    {
     "id": "upgrade_non_player_bonus",
@@ -597,7 +603,7 @@
     "popularityObscurity": 0.3076923076923077,
     "spellingCost": 7,
     "spellingObscurity": 0.25,
-    "key": 0.5925
+    "key": 0.7232692307692308
    },
    {
     "id": "upgrade_non_player_bonus_sacrifice",
@@ -620,7 +626,7 @@
     "popularityObscurity": 0.6153846153846154,
     "spellingCost": 7,
     "spellingObscurity": 0.25,
-    "key": 0.7748076923076923
+    "key": 0.8555769230769231
    },
    {
     "id": "upgrade_regenerating_bullet_shield",
@@ -643,7 +649,7 @@
     "popularityObscurity": 0.4230769230769231,
     "spellingCost": 10,
     "spellingObscurity": 0.38461538461538464,
-    "key": 0.28153846153846157
+    "key": 0.2180769230769231
    },
    {
     "id": "upgrade_soaring_spirit",
@@ -666,7 +672,7 @@
     "popularityObscurity": 0,
     "spellingCost": 14,
     "spellingObscurity": 0.75,
-    "key": 0.48596153846153844
+    "key": 0.6898076923076923
    },
    {
     "id": "upgrade_spirit_bubble",
@@ -689,7 +695,7 @@
     "popularityObscurity": 0.5769230769230769,
     "spellingCost": 12,
     "spellingObscurity": 0.6153846153846154,
-    "key": 0.4773076923076923
+    "key": 0.43115384615384617
    },
    {
     "id": "upgrade_sprint_booster",
@@ -712,7 +718,7 @@
     "popularityObscurity": 0.07692307692307693,
     "spellingCost": 11,
     "spellingObscurity": 0.5,
-    "key": 0.12769230769230772
+    "key": 0.14115384615384619
    },
    {
     "id": "upgrade_tech_purge",
@@ -758,7 +764,7 @@
     "popularityObscurity": 0.5,
     "spellingCost": 20,
     "spellingObscurity": 1,
-    "key": 0.7196153846153848
+    "key": 0.8080769230769231
    },
    {
     "id": "upgrade_trophy_collector",
@@ -781,7 +787,7 @@
     "popularityObscurity": 0.34615384615384615,
     "spellingCost": 6,
     "spellingObscurity": 0.17307692307692307,
-    "key": 0.5363461538461538
+    "key": 0.6267307692307692
    },
    {
     "id": "upgrade_vex_barrier",
@@ -804,7 +810,7 @@
     "popularityObscurity": 0.5384615384615384,
     "spellingCost": 15,
     "spellingObscurity": 0.8269230769230769,
-    "key": 0.5359615384615385
+    "key": 0.5282692307692307
    },
    {
     "id": "upgrade_weapon_shielding",
@@ -827,51 +833,51 @@
     "popularityObscurity": 0.7692307692307693,
     "spellingCost": 15,
     "spellingObscurity": 0.8269230769230769,
-    "key": 0.5690384615384616
+    "key": 0.4767307692307693
    }
   ],
   "passAgreement": 0.7413105413105413,
   "orderBeforeRefinement": [
    "upgrade_endurance",
    "upgrade_sprint_booster",
-   "upgrade_tech_purge",
    "upgrade_healing_booster",
-   "upgrade_grit",
+   "upgrade_tech_purge",
    "upgrade_regenerating_bullet_shield",
-   "upgrade_cardio_calibrator",
-   "upgrade_magic_shield",
    "upgrade_healbuff",
    "upgrade_improved_bullet_armor",
+   "upgrade_grit",
+   "upgrade_magic_shield",
+   "upgrade_cardio_calibrator",
    "upgrade_spirit_bubble",
-   "upgrade_cooldown_reduction",
-   "upgrade_soaring_spirit",
-   "upgrade_boundless_spirit",
-   "upgrade_vex_barrier",
-   "upgrade_trophy_collector",
    "upgrade_weapon_shielding",
+   "upgrade_vex_barrier",
    "upgrade_auto_cleanse",
-   "upgrade_non_player_bonus",
    "upgrade_guardian_ward",
    "upgrade_hollow_point_rounds",
    "upgrade_cloaking_device_active",
+   "upgrade_trophy_collector",
+   "upgrade_boundless_spirit",
    "upgrade_divine_barrier",
+   "upgrade_cooldown_reduction",
+   "upgrade_soaring_spirit",
+   "upgrade_non_player_bonus",
    "upgrade_transcendent_cooldown",
-   "upgrade_non_player_bonus_sacrifice",
    "upgrade_blood_tribute",
+   "upgrade_non_player_bonus_sacrifice",
    "upgrade_goose_egg"
   ],
   "pairwise": [
    {
     "a": "upgrade_transcendent_cooldown",
-    "b": "upgrade_non_player_bonus_sacrifice",
+    "b": "upgrade_blood_tribute",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_non_player_bonus_sacrifice"
+    "rarer": "upgrade_transcendent_cooldown"
    },
    {
     "a": "upgrade_transcendent_cooldown",
-    "b": "upgrade_blood_tribute",
+    "b": "upgrade_non_player_bonus_sacrifice",
     "purpose": "rare-contenders",
-    "rarer": "upgrade_blood_tribute"
+    "rarer": "upgrade_transcendent_cooldown"
    },
    {
     "a": "upgrade_transcendent_cooldown",
@@ -880,16 +886,10 @@
     "rarer": "upgrade_goose_egg"
    },
    {
-    "a": "upgrade_non_player_bonus_sacrifice",
-    "b": "upgrade_blood_tribute",
+    "a": "upgrade_blood_tribute",
+    "b": "upgrade_non_player_bonus_sacrifice",
     "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_non_player_bonus_sacrifice",
-    "b": "upgrade_goose_egg",
-    "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "upgrade_non_player_bonus_sacrifice"
    },
    {
     "a": "upgrade_blood_tribute",
@@ -898,65 +898,58 @@
     "rarer": "upgrade_goose_egg"
    },
    {
+    "a": "upgrade_non_player_bonus_sacrifice",
+    "b": "upgrade_goose_egg",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_goose_egg"
+   },
+   {
     "a": "upgrade_sprint_booster",
-    "b": "upgrade_tech_purge",
+    "b": "upgrade_healing_booster",
     "purpose": "tier-boundary",
-    "rarer": "upgrade_tech_purge"
+    "rarer": "upgrade_healing_booster"
    },
    {
-    "a": "upgrade_cardio_calibrator",
-    "b": "upgrade_magic_shield",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_magic_shield"
-   },
-   {
-    "a": "upgrade_vex_barrier",
-    "b": "upgrade_trophy_collector",
+    "a": "upgrade_improved_bullet_armor",
+    "b": "upgrade_grit",
     "purpose": "tier-boundary",
     "rarer": null
    },
    {
-    "a": "upgrade_boundless_spirit",
-    "b": "upgrade_soaring_spirit",
-    "purpose": "review",
-    "rarer": "upgrade_soaring_spirit"
+    "a": "upgrade_guardian_ward",
+    "b": "upgrade_hollow_point_rounds",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_guardian_ward"
    }
   ],
   "review": [
    {
-    "name": "Extra Regen",
-    "compareWith": "Sprint Boots",
+    "name": "Grit",
+    "compareWith": "Enchanter's Emblem",
     "claim": "should_be_more_obvious",
-    "reason": "Extra Regen is a regeneration item, and its name and purpose point straight at the Out of Combat Regen question. It is the most obvious answer, while Sprint Boots is known mainly for sprint speed. Sprint Boots should not share the 10-point tier.",
+    "reason": "Grit is a Tier 1 item bought constantly as an early-game staple and is the base of the whole barrier tree. Its Out of Combat Regen is its only stat, so it is more readily recalled than a Tier 2 conditional-bonus item like Enchanter's Emblem.",
     "outcome": "ignored-invalid"
-   },
-   {
-    "name": "Healing Booster",
-    "compareWith": "Grit",
-    "claim": "should_be_more_obvious",
-    "reason": "Healing Booster is a core Vitality item with a simple name that players see often and associate with healing and regen. Grit is mostly remembered for its active Barrier, so it is a less natural answer for an OOC regen question. Healing Booster should score lower than Grit.",
-    "outcome": "ignored-invalid"
-   },
-   {
-    "name": "Blood Tribute",
-    "compareWith": "Golden Goose Egg",
-    "claim": "should_be_more_obscure",
-    "reason": "Blood Tribute is a memorable Weapon toggle that players know for sacrificing health. It has no link to regen, so few would name it here. It should be at least as rare as Golden Goose Egg, which is a visible Tier 1 item that players recall easily.",
-    "outcome": "applied-by-data"
    },
    {
     "name": "Hollow Point",
-    "compareWith": "Transcendent Cooldown",
+    "compareWith": "Spirit Shielding",
     "claim": "should_be_more_obscure",
-    "reason": "Hollow Point is a Weapon item known for damage and shred, and nobody connects it with Out of Combat Regen. Transcendent Cooldown is a Spirit item that players more easily connect with built-in stats. Hollow Point should be rarer, near the top of the scale.",
-    "outcome": "applied-by-data"
+    "reason": "Hollow Point is a Weapon item known for its bullet resist shred and weapon damage. Its Out of Combat Regen of 4.5 is unrelated to why players know it, so it should be rarer than the Vitality items that are directly associated with regen, such as Spirit Shielding.",
+    "outcome": "ignored-invalid"
    },
    {
     "name": "Boundless Spirit",
-    "compareWith": "Improved Spirit",
+    "compareWith": "Monster Rounds",
     "claim": "should_be_more_obvious",
-    "reason": "Boundless Spirit is a well-known, popular Tier 4 Spirit item that players see in many late-game builds. Its name and stats are more memorable than those of Improved Spirit, so it should score as more obvious than Improved Spirit.",
-    "outcome": "applied"
+    "reason": "Boundless Spirit is a popular Tier 4 Spirit item that players see in many spirit builds. It is more recognizable than Monster Rounds, which is a niche jungle item.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Superior Cooldown",
+    "compareWith": "Golden Goose Egg",
+    "claim": "should_be_more_obvious",
+    "reason": "Superior Cooldown is a commonly bought Tier 3 spirit staple, so it should be a more common answer than the low-profile Golden Goose Egg. Its 85 points puts it too close to the 100-point answer.",
+    "outcome": "ignored-invalid"
    }
   ]
  }

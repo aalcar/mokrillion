@@ -17,9 +17,9 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
- "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:18:21.162Z",
+ "scoringVersion": "8",
+ "model": "cache only",
+ "generatedAt": "2026-11-25T04:46:22.824Z",
  "answers": [
   {
    "entityId": "hero_shiv",
@@ -53,6 +53,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_chessmaster",
@@ -75,7 +81,7 @@
     "popularityObscurity": 1,
     "spellingCost": 7,
     "spellingObscurity": 0.75,
-    "key": 0.9875
+    "key": 0.9874999999999999
    },
    {
     "id": "hero_gigawatt",
@@ -98,7 +104,7 @@
     "popularityObscurity": 0.25,
     "spellingCost": 5,
     "spellingObscurity": 0.25,
-    "key": 0.195
+    "key": 0.22499999999999998
    },
    {
     "id": "hero_magician",
@@ -121,7 +127,7 @@
     "popularityObscurity": 0.75,
     "spellingCost": 8,
     "spellingObscurity": 1,
-    "key": 0.7075
+    "key": 0.7374999999999999
    },
    {
     "id": "hero_shiv",
@@ -144,7 +150,7 @@
     "popularityObscurity": 0,
     "spellingCost": 4,
     "spellingObscurity": 0,
-    "key": 0.05500000000000001
+    "key": 0.025
    },
    {
     "id": "hero_werewolf",
@@ -167,7 +173,7 @@
     "popularityObscurity": 0.5,
     "spellingCost": 6,
     "spellingObscurity": 0.5,
-    "key": 0.555
+    "key": 0.5249999999999999
    }
   ],
   "passAgreement": 0.76,

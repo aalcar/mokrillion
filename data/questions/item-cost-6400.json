@@ -56,13 +56,13 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "7",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T04:02:44.867Z",
+ "generatedAt": "2026-11-25T04:38:19.799Z",
  "answers": [
   {
-   "entityId": "upgrade_ability_refresher",
-   "name": "Refresher",
+   "entityId": "upgrade_boundless_spirit",
+   "name": "Boundless Spirit",
    "rank": 1,
    "score": 10
   },
@@ -73,248 +73,248 @@
    "score": 10
   },
   {
-   "entityId": "upgrade_cheat_death",
-   "name": "Cheat Death",
+   "entityId": "upgrade_transcendent_cooldown",
+   "name": "Transcendent Cooldown",
    "rank": 3,
    "score": 10
   },
   {
-   "entityId": "upgrade_boundless_spirit",
-   "name": "Boundless Spirit",
+   "entityId": "upgrade_self_bubble",
+   "name": "Ethereal Shift",
    "rank": 4,
    "score": 10
   },
   {
-   "entityId": "upgrade_transcendent_cooldown",
-   "name": "Transcendent Cooldown",
+   "entityId": "upgrade_ability_refresher",
+   "name": "Refresher",
    "rank": 5,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_escalating_exposure",
-   "name": "Escalating Exposure",
-   "rank": 6,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_spirit_burn",
-   "name": "Spirit Burn",
-   "rank": 7,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_glitch",
-   "name": "Cursed Relic",
-   "rank": 8,
    "score": 30
   },
   {
    "entityId": "upgrade_ricochet",
    "name": "Ricochet",
+   "rank": 6,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_escalating_exposure",
+   "name": "Escalating Exposure",
+   "rank": 7,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_mystic_reverb",
+   "name": "Mystic Reverb",
+   "rank": 8,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_auto_cleanse",
+   "name": "Indomitable",
    "rank": 9,
    "score": 30
   },
   {
-   "entityId": "upgrade_damage_recycler",
-   "name": "Leech",
+   "entityId": "upgrade_tech_overflow",
+   "name": "Spiritual Overflow",
    "rank": 10,
    "score": 30
   },
   {
-   "entityId": "upgrade_ability_power_shard",
-   "name": "Echo Shard",
+   "entityId": "upgrade_deflecting_armor",
+   "name": "Plated Armor",
    "rank": 11,
    "score": 30
   },
   {
-   "entityId": "upgrade_absorbing_armor",
-   "name": "Witchmail",
+   "entityId": "upgrade_capacitor",
+   "name": "Capacitor",
    "rank": 12,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_glass_cannon",
-   "name": "Glass Cannon",
-   "rank": 13,
    "score": 60
   },
   {
    "entityId": "upgrade_proc_silence",
    "name": "Silencer",
+   "rank": 13,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_ethereal_bullets",
+   "name": "Mercurial Magnum",
    "rank": 14,
    "score": 60
   },
   {
-   "entityId": "upgrade_self_bubble",
-   "name": "Ethereal Shift",
+   "entityId": "upgrade_glitch",
+   "name": "Cursed Relic",
    "rank": 15,
    "score": 60
   },
   {
-   "entityId": "upgrade_deflecting_armor",
-   "name": "Plated Armor",
+   "entityId": "upgrade_absorbing_armor",
+   "name": "Witchmail",
    "rank": 16,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_phantom_strike",
-   "name": "Phantom Strike",
-   "rank": 17,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_auto_cleanse",
-   "name": "Indomitable",
-   "rank": 18,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_capacitor",
-   "name": "Capacitor",
-   "rank": 19,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_colossus",
-   "name": "Colossus",
-   "rank": 20,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_tech_overflow",
-   "name": "Spiritual Overflow",
-   "rank": 21,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_mystic_reverb",
-   "name": "Mystic Reverb",
-   "rank": 22,
    "score": 60
   },
   {
    "entityId": "upgrade_siphon_bullets",
    "name": "Siphon Bullets",
-   "rank": 23,
+   "rank": 17,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_spellbreaker",
+   "name": "Spellbreaker",
+   "rank": 18,
    "score": 60
   },
   {
    "entityId": "upgrade_juggernaut",
    "name": "Juggernaut",
-   "rank": 24,
+   "rank": 19,
    "score": 60
   },
   {
-   "entityId": "upgrade_magic_carpet",
-   "name": "Magic Carpet",
-   "rank": 25,
-   "score": 85
+   "entityId": "upgrade_cheat_death",
+   "name": "Cheat Death",
+   "rank": 20,
+   "score": 60
   },
   {
-   "entityId": "upgrade_spellbreaker",
-   "name": "Spellbreaker",
-   "rank": 26,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_divine_barrier",
-   "name": "Divine Barrier",
-   "rank": 27,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_ethereal_bullets",
-   "name": "Mercurial Magnum",
-   "rank": 28,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_arctic_blast",
-   "name": "Arctic Blast",
-   "rank": 29,
-   "score": 85
+   "entityId": "upgrade_damage_recycler",
+   "name": "Leech",
+   "rank": 21,
+   "score": 60
   },
   {
    "entityId": "upgrade_surging_power",
    "name": "Vampiric Burst",
-   "rank": 30,
-   "score": 85
+   "rank": 22,
+   "score": 60
   },
   {
    "entityId": "upgrade_critshot",
    "name": "Lucky Shot",
-   "rank": 31,
-   "score": 85
+   "rank": 23,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_phantom_strike",
+   "name": "Phantom Strike",
+   "rank": 24,
+   "score": 60
   },
   {
    "entityId": "upgrade_infuser",
    "name": "Infuser",
-   "rank": 32,
+   "rank": 25,
    "score": 85
   },
   {
    "entityId": "upgrade_banshee_slugs",
    "name": "Crippling Headshot",
-   "rank": 33,
+   "rank": 26,
    "score": 85
   },
   {
-   "entityId": "upgrade_aoe_root",
-   "name": "Vortex Web",
-   "rank": 34,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_enchanted_holsters",
-   "name": "Spellslinger",
-   "rank": 35,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_fervor",
-   "name": "Frenzy",
-   "rank": 36,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_inhibitor",
-   "name": "Inhibitor",
-   "rank": 37,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_healbuff",
-   "name": "Healing Tempo",
-   "rank": 38,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_discord",
-   "name": "Scourge",
-   "rank": 39,
+   "entityId": "upgrade_arctic_blast",
+   "name": "Arctic Blast",
+   "rank": 27,
    "score": 85
   },
   {
    "entityId": "upgrade_crushing_fists",
    "name": "Crushing Fists",
-   "rank": 40,
+   "rank": 28,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_spirit_burn",
+   "name": "Spirit Burn",
+   "rank": 29,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_divine_barrier",
+   "name": "Divine Barrier",
+   "rank": 30,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_ability_power_shard",
+   "name": "Echo Shard",
+   "rank": 31,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_glass_cannon",
+   "name": "Glass Cannon",
+   "rank": 32,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_healbuff",
+   "name": "Healing Tempo",
+   "rank": 33,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_inhibitor",
+   "name": "Inhibitor",
+   "rank": 34,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_colossus",
+   "name": "Colossus",
+   "rank": 35,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_enchanted_holsters",
+   "name": "Spellslinger",
+   "rank": 36,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_aoe_root",
+   "name": "Vortex Web",
+   "rank": 37,
    "score": 85
   },
   {
    "entityId": "upgrade_diviners_kevlar",
    "name": "Diviner's Kevlar",
-   "rank": 41,
+   "rank": 38,
    "score": 85
   },
   {
-   "entityId": "upgrade_aprounds",
-   "name": "Armor Piercer",
-   "rank": 42,
+   "entityId": "upgrade_magic_carpet",
+   "name": "Magic Carpet",
+   "rank": 39,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_discord",
+   "name": "Scourge",
+   "rank": 40,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_fervor",
+   "name": "Frenzy",
+   "rank": 41,
    "score": 85
   },
   {
    "entityId": "upgrade_ultimate_burst",
    "name": "Lightning Scroll",
+   "rank": 42,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_aprounds",
+   "name": "Armor Piercer",
    "rank": 43,
    "score": 85
   },
@@ -326,6 +326,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "upgrade_ability_power_shard",
@@ -348,7 +354,7 @@
     "popularityObscurity": 0.7906976744186046,
     "spellingCost": 9,
     "spellingObscurity": 0.6046511627906976,
-    "key": 0.3925581395348837
+    "key": 0.6046511627906975
    },
    {
     "id": "upgrade_ability_refresher",
@@ -371,7 +377,7 @@
     "popularityObscurity": 0.37209302325581395,
     "spellingCost": 9,
     "spellingObscurity": 0.6046511627906976,
-    "key": 0.17906976744186046
+    "key": 0.29069767441860467
    },
    {
     "id": "upgrade_absorbing_armor",
@@ -394,7 +400,7 @@
     "popularityObscurity": 0.3953488372093023,
     "spellingCost": 9,
     "spellingObscurity": 0.6046511627906976,
-    "key": 0.39046511627906977
+    "key": 0.3988372093023255
    },
    {
     "id": "upgrade_aoe_root",
@@ -417,7 +423,7 @@
     "popularityObscurity": 0.8372093023255814,
     "spellingCost": 6,
     "spellingObscurity": 0.2441860465116279,
-    "key": 0.6566279069767442
+    "key": 0.7389534883720931
    },
    {
     "id": "upgrade_aprounds",
@@ -440,7 +446,7 @@
     "popularityObscurity": 0.9302325581395349,
     "spellingCost": 12,
     "spellingObscurity": 0.8372093023255814,
-    "key": 0.8513953488372092
+    "key": 0.891860465116279
    },
    {
     "id": "upgrade_arctic_blast",
@@ -463,7 +469,7 @@
     "popularityObscurity": 0.5813953488372093,
     "spellingCost": 11,
     "spellingObscurity": 0.7906976744186046,
-    "key": 0.556046511627907
+    "key": 0.5755813953488372
    },
    {
     "id": "upgrade_auto_cleanse",
@@ -486,7 +492,7 @@
     "popularityObscurity": 0.18604651162790697,
     "spellingCost": 5,
     "spellingObscurity": 0.05813953488372093,
-    "key": 0.4533720930232559
+    "key": 0.3040697674418605
    },
    {
     "id": "upgrade_banshee_slugs",
@@ -509,7 +515,7 @@
     "popularityObscurity": 0.5116279069767442,
     "spellingCost": 9,
     "spellingObscurity": 0.6046511627906976,
-    "key": 0.6467441860465117
+    "key": 0.5755813953488371
    },
    {
     "id": "upgrade_boundless_spirit",
@@ -532,7 +538,7 @@
     "popularityObscurity": 0,
     "spellingCost": 9,
     "spellingObscurity": 0.6046511627906976,
-    "key": 0.12232558139534885
+    "key": 0.07209302325581396
    },
    {
     "id": "upgrade_capacitor",
@@ -555,7 +561,7 @@
     "popularityObscurity": 0.20930232558139536,
     "spellingCost": 9,
     "spellingObscurity": 0.6046511627906976,
-    "key": 0.4695348837209303
+    "key": 0.33837209302325577
    },
    {
     "id": "upgrade_cheat_death",
@@ -578,7 +584,7 @@
     "popularityObscurity": 0.6511627906976745,
     "spellingCost": 5,
     "spellingObscurity": 0.05813953488372093,
-    "key": 0.28895348837209306
+    "key": 0.4703488372093024
    },
    {
     "id": "upgrade_colossus",
@@ -601,7 +607,7 @@
     "popularityObscurity": 0.9069767441860465,
     "spellingCost": 8,
     "spellingObscurity": 0.45348837209302323,
-    "key": 0.48011627906976745
+    "key": 0.7005813953488371
    },
    {
     "id": "upgrade_critshot",
@@ -624,7 +630,7 @@
     "popularityObscurity": 0.4883720930232558,
     "spellingCost": 9,
     "spellingObscurity": 0.6046511627906976,
-    "key": 0.5786046511627907
+    "key": 0.5325581395348836
    },
    {
     "id": "upgrade_crushing_fists",
@@ -647,7 +653,7 @@
     "popularityObscurity": 0.4186046511627907,
     "spellingCost": 13,
     "spellingObscurity": 0.9186046511627907,
-    "key": 0.7377906976744186
+    "key": 0.5773255813953488
    },
    {
     "id": "upgrade_damage_recycler",
@@ -670,7 +676,7 @@
     "popularityObscurity": 0.5348837209302325,
     "spellingCost": 5,
     "spellingObscurity": 0.05813953488372093,
-    "key": 0.3780232558139535
+    "key": 0.4505813953488371
    },
    {
     "id": "upgrade_deflecting_armor",
@@ -693,7 +699,7 @@
     "popularityObscurity": 0.2558139534883721,
     "spellingCost": 6,
     "spellingObscurity": 0.2441860465116279,
-    "key": 0.41895348837209306
+    "key": 0.32965116279069767
    },
    {
     "id": "upgrade_discord",
@@ -716,7 +722,7 @@
     "popularityObscurity": 0.813953488372093,
     "spellingCost": 7,
     "spellingObscurity": 0.38372093023255816,
-    "key": 0.7336046511627907
+    "key": 0.7656976744186047
    },
    {
     "id": "upgrade_divine_barrier",
@@ -739,7 +745,7 @@
     "popularityObscurity": 0.6744186046511628,
     "spellingCost": 6,
     "spellingObscurity": 0.2441860465116279,
-    "key": 0.5429069767441861
+    "key": 0.602906976744186
    },
    {
     "id": "upgrade_diviners_kevlar",
@@ -762,7 +768,7 @@
     "popularityObscurity": 0.7674418604651163,
     "spellingCost": 6,
     "spellingObscurity": 0.2441860465116279,
-    "key": 0.759186046511628
+    "key": 0.7494186046511628
    },
    {
     "id": "upgrade_enchanted_holsters",
@@ -785,7 +791,7 @@
     "popularityObscurity": 0.7441860465116279,
     "spellingCost": 12,
     "spellingObscurity": 0.8372093023255814,
-    "key": 0.6772093023255814
+    "key": 0.7162790697674419
    },
    {
     "id": "upgrade_escalating_exposure",
@@ -808,7 +814,7 @@
     "popularityObscurity": 0.046511627906976744,
     "spellingCost": 10,
     "spellingObscurity": 0.7441860465116279,
-    "key": 0.30395348837209296
+    "key": 0.1825581395348837
    },
    {
     "id": "upgrade_ethereal_bullets",
@@ -831,7 +837,7 @@
     "popularityObscurity": 0.23255813953488372,
     "spellingCost": 6,
     "spellingObscurity": 0.2441860465116279,
-    "key": 0.5529069767441861
+    "key": 0.3784883720930232
    },
    {
     "id": "upgrade_fervor",
@@ -854,7 +860,7 @@
     "popularityObscurity": 0.9534883720930233,
     "spellingCost": 6,
     "spellingObscurity": 0.2441860465116279,
-    "key": 0.7056976744186046
+    "key": 0.8215116279069767
    },
    {
     "id": "upgrade_focus_lens",
@@ -877,7 +883,7 @@
     "popularityObscurity": 0.9767441860465116,
     "spellingCost": 9,
     "spellingObscurity": 0.6046511627906976,
-    "key": 0.8046511627906977
+    "key": 0.8883720930232557
    },
    {
     "id": "upgrade_glass_cannon",
@@ -900,7 +906,7 @@
     "popularityObscurity": 0.8604651162790697,
     "spellingCost": 5,
     "spellingObscurity": 0.05813953488372093,
-    "key": 0.39313953488372094
+    "key": 0.6261627906976743
    },
    {
     "id": "upgrade_glitch",
@@ -923,7 +929,7 @@
     "popularityObscurity": 0.46511627906976744,
     "spellingCost": 5,
     "spellingObscurity": 0.05813953488372093,
-    "key": 0.3398837209302326
+    "key": 0.39709302325581397
    },
    {
     "id": "upgrade_healbuff",
@@ -946,7 +952,7 @@
     "popularityObscurity": 0.6046511627906976,
     "spellingCost": 5,
     "spellingObscurity": 0.05813953488372093,
-    "key": 0.7333720930232559
+    "key": 0.6482558139534884
    },
    {
     "id": "upgrade_infuser",
@@ -969,7 +975,7 @@
     "popularityObscurity": 0.5581395348837209,
     "spellingCost": 7,
     "spellingObscurity": 0.38372093023255816,
-    "key": 0.5877906976744187
+    "key": 0.5668604651162791
    },
    {
     "id": "upgrade_inhibitor",
@@ -992,7 +998,7 @@
     "popularityObscurity": 0.6976744186046512,
     "spellingCost": 9,
     "spellingObscurity": 0.6046511627906976,
-    "key": 0.7083720930232559
+    "key": 0.7
    },
    {
     "id": "upgrade_juggernaut",
@@ -1015,7 +1021,7 @@
     "popularityObscurity": 0.3488372093023256,
     "spellingCost": 10,
     "spellingObscurity": 0.7441860465116279,
-    "key": 0.5093023255813953
+    "key": 0.4325581395348837
    },
    {
     "id": "upgrade_magic_carpet",
@@ -1038,7 +1044,7 @@
     "popularityObscurity": 1,
     "spellingCost": 6,
     "spellingObscurity": 0.2441860465116279,
-    "key": 0.5094186046511628
+    "key": 0.7563953488372093
    },
    {
     "id": "upgrade_mystic_reverb",
@@ -1061,7 +1067,7 @@
     "popularityObscurity": 0.11627906976744186,
     "spellingCost": 6,
     "spellingObscurity": 0.2441860465116279,
-    "key": 0.49872093023255815
+    "key": 0.2936046511627907
    },
    {
     "id": "upgrade_phantom_strike",
@@ -1084,7 +1090,7 @@
     "popularityObscurity": 0.627906976744186,
     "spellingCost": 13,
     "spellingObscurity": 0.9186046511627907,
-    "key": 0.4198837209302326
+    "key": 0.5412790697674418
    },
    {
     "id": "upgrade_proc_silence",
@@ -1107,7 +1113,7 @@
     "popularityObscurity": 0.3023255813953488,
     "spellingCost": 8,
     "spellingObscurity": 0.45348837209302323,
-    "key": 0.39430232558139533
+    "key": 0.34825581395348837
    },
    {
     "id": "upgrade_ricochet",
@@ -1130,7 +1136,7 @@
     "popularityObscurity": 0.09302325581395349,
     "spellingCost": 8,
     "spellingObscurity": 0.45348837209302323,
-    "key": 0.3566279069767443
+    "key": 0.22267441860465118
    },
    {
     "id": "upgrade_self_bubble",
@@ -1153,7 +1159,7 @@
     "popularityObscurity": 0.7209302325581395,
     "spellingCost": 13,
     "spellingObscurity": 0.9186046511627907,
-    "key": 0.3956976744186046
+    "key": 0.5784883720930233
    },
    {
     "id": "upgrade_siphon_bullets",
@@ -1176,7 +1182,7 @@
     "popularityObscurity": 0.32558139534883723,
     "spellingCost": 6,
     "spellingObscurity": 0.2441860465116279,
-    "key": 0.5031395348837209
+    "key": 0.40406976744186046
    },
    {
     "id": "upgrade_spellbreaker",
@@ -1199,7 +1205,7 @@
     "popularityObscurity": 0.27906976744186046,
     "spellingCost": 12,
     "spellingObscurity": 0.8372093023255814,
-    "key": 0.5269767441860465
+    "key": 0.4069767441860465
    },
    {
     "id": "upgrade_spirit_burn",
@@ -1222,7 +1228,7 @@
     "popularityObscurity": 0.023255813953488372,
     "spellingCost": 10,
     "spellingObscurity": 0.7441860465116279,
-    "key": 0.3279069767441861
+    "key": 0.1813953488372093
    },
    {
     "id": "upgrade_surging_power",
@@ -1245,7 +1251,7 @@
     "popularityObscurity": 0.4418604651162791,
     "spellingCost": 13,
     "spellingObscurity": 0.9186046511627907,
-    "key": 0.5629069767441861
+    "key": 0.5098837209302325
    },
    {
     "id": "upgrade_tech_overflow",
@@ -1268,7 +1274,7 @@
     "popularityObscurity": 0.16279069767441862,
     "spellingCost": 8,
     "spellingObscurity": 0.45348837209302323,
-    "key": 0.49197674418604653
+    "key": 0.32034883720930235
    },
    {
     "id": "upgrade_transcendent_cooldown",
@@ -1291,7 +1297,7 @@
     "popularityObscurity": 0.06976744186046512,
     "spellingCost": 20,
     "spellingObscurity": 1,
-    "key": 0.17511627906976746
+    "key": 0.14302325581395348
    },
    {
     "id": "upgrade_ultimate_burst",
@@ -1314,7 +1320,7 @@
     "popularityObscurity": 0.8837209302325582,
     "spellingCost": 15,
     "spellingObscurity": 0.9767441860465116,
-    "key": 0.7579069767441862
+    "key": 0.8290697674418603
    },
    {
     "id": "upgrade_unstoppable",
@@ -1337,7 +1343,7 @@
     "popularityObscurity": 0.13953488372093023,
     "spellingCost": 6,
     "spellingObscurity": 0.2441860465116279,
-    "key": 0.12686046511627908
+    "key": 0.13662790697674418
    }
   ],
   "passAgreement": 0.5255813953488372,
@@ -1345,54 +1351,66 @@
    "upgrade_boundless_spirit",
    "upgrade_unstoppable",
    "upgrade_transcendent_cooldown",
-   "upgrade_ability_refresher",
-   "upgrade_cheat_death",
-   "upgrade_escalating_exposure",
    "upgrade_spirit_burn",
-   "upgrade_glitch",
+   "upgrade_escalating_exposure",
    "upgrade_ricochet",
-   "upgrade_damage_recycler",
-   "upgrade_absorbing_armor",
-   "upgrade_ability_power_shard",
-   "upgrade_glass_cannon",
-   "upgrade_proc_silence",
-   "upgrade_self_bubble",
-   "upgrade_deflecting_armor",
-   "upgrade_phantom_strike",
-   "upgrade_auto_cleanse",
-   "upgrade_capacitor",
-   "upgrade_colossus",
-   "upgrade_tech_overflow",
+   "upgrade_ability_refresher",
    "upgrade_mystic_reverb",
-   "upgrade_siphon_bullets",
-   "upgrade_juggernaut",
-   "upgrade_magic_carpet",
-   "upgrade_spellbreaker",
-   "upgrade_divine_barrier",
+   "upgrade_auto_cleanse",
+   "upgrade_tech_overflow",
+   "upgrade_deflecting_armor",
+   "upgrade_capacitor",
+   "upgrade_proc_silence",
    "upgrade_ethereal_bullets",
-   "upgrade_arctic_blast",
+   "upgrade_glitch",
+   "upgrade_absorbing_armor",
+   "upgrade_siphon_bullets",
+   "upgrade_spellbreaker",
+   "upgrade_juggernaut",
+   "upgrade_damage_recycler",
+   "upgrade_cheat_death",
    "upgrade_surging_power",
    "upgrade_critshot",
+   "upgrade_phantom_strike",
    "upgrade_infuser",
    "upgrade_banshee_slugs",
-   "upgrade_aoe_root",
-   "upgrade_enchanted_holsters",
-   "upgrade_fervor",
-   "upgrade_inhibitor",
-   "upgrade_healbuff",
-   "upgrade_discord",
+   "upgrade_arctic_blast",
    "upgrade_crushing_fists",
-   "upgrade_ultimate_burst",
+   "upgrade_self_bubble",
+   "upgrade_divine_barrier",
+   "upgrade_ability_power_shard",
+   "upgrade_glass_cannon",
+   "upgrade_healbuff",
+   "upgrade_inhibitor",
+   "upgrade_colossus",
+   "upgrade_enchanted_holsters",
+   "upgrade_aoe_root",
    "upgrade_diviners_kevlar",
+   "upgrade_magic_carpet",
+   "upgrade_discord",
+   "upgrade_fervor",
+   "upgrade_ultimate_burst",
    "upgrade_focus_lens",
    "upgrade_aprounds"
   ],
   "pairwise": [
    {
-    "a": "upgrade_ultimate_burst",
-    "b": "upgrade_diviners_kevlar",
+    "a": "upgrade_fervor",
+    "b": "upgrade_ultimate_burst",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "upgrade_ultimate_burst"
+   },
+   {
+    "a": "upgrade_fervor",
+    "b": "upgrade_focus_lens",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_focus_lens"
+   },
+   {
+    "a": "upgrade_fervor",
+    "b": "upgrade_aprounds",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_aprounds"
    },
    {
     "a": "upgrade_ultimate_burst",
@@ -1407,95 +1425,89 @@
     "rarer": "upgrade_ultimate_burst"
    },
    {
-    "a": "upgrade_diviners_kevlar",
-    "b": "upgrade_focus_lens",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_focus_lens"
-   },
-   {
-    "a": "upgrade_diviners_kevlar",
-    "b": "upgrade_aprounds",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
     "a": "upgrade_focus_lens",
     "b": "upgrade_aprounds",
     "purpose": "rare-contenders",
     "rarer": null
+   },
+   {
+    "a": "upgrade_spirit_burn",
+    "b": "upgrade_escalating_exposure",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_deflecting_armor",
+    "b": "upgrade_capacitor",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_phantom_strike",
+    "b": "upgrade_infuser",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_infuser"
    },
    {
     "a": "upgrade_ability_refresher",
-    "b": "upgrade_cheat_death",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_cheat_death"
-   },
-   {
-    "a": "upgrade_absorbing_armor",
-    "b": "upgrade_ability_power_shard",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_absorbing_armor"
-   },
-   {
-    "a": "upgrade_juggernaut",
-    "b": "upgrade_magic_carpet",
-    "purpose": "tier-boundary",
-    "rarer": null
-   },
-   {
-    "a": "upgrade_boundless_spirit",
-    "b": "upgrade_ability_refresher",
+    "b": "upgrade_escalating_exposure",
     "purpose": "review",
-    "rarer": "upgrade_boundless_spirit"
+    "rarer": "upgrade_escalating_exposure"
+   },
+   {
+    "a": "upgrade_spirit_burn",
+    "b": "upgrade_self_bubble",
+    "purpose": "review",
+    "rarer": "upgrade_spirit_burn"
+   },
+   {
+    "a": "upgrade_cheat_death",
+    "b": "upgrade_damage_recycler",
+    "purpose": "review",
+    "rarer": "upgrade_damage_recycler"
    },
    {
     "a": "upgrade_transcendent_cooldown",
-    "b": "upgrade_cheat_death",
+    "b": "upgrade_deflecting_armor",
     "purpose": "review",
-    "rarer": "upgrade_transcendent_cooldown"
-   },
-   {
-    "a": "upgrade_focus_lens",
-    "b": "upgrade_ultimate_burst",
-    "purpose": "review",
-    "rarer": null
+    "rarer": "upgrade_deflecting_armor"
    }
   ],
   "review": [
    {
-    "name": "Boundless Spirit",
-    "compareWith": "Refresher",
+    "name": "Refresher",
+    "compareWith": "Escalating Exposure",
+    "claim": "should_be_more_obvious",
+    "reason": "Refresher is a famous, iconic 6,400-soul item with a simple, memorable effect that players recall immediately. It should score at least as obvious as Escalating Exposure, and probably more so than Spirit Burn.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Spirit Burn",
+    "compareWith": "Ethereal Shift",
     "claim": "should_be_more_obscure",
-    "reason": "Boundless Spirit is a bland stat stick, whereas Refresher is the iconic, well-known late-game item and the one players are most likely to type here. Both sit at 10 pts, but Boundless Spirit should rank rarer.",
+    "reason": "Spirit Burn sits in the top 10-point tier, which is too obvious for a niche situational item. It is less associated with the 6,400 price than Ethereal Shift or Cheat Death, so it belongs in a higher-scoring tier.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Cheat Death",
+    "compareWith": "Leech",
+    "claim": "should_be_more_obvious",
+    "reason": "Cheat Death is a very well-known, defining defensive item whose name and effect are memorable. It should be easier to recall than Leech or Vampiric Burst and not sit in the same 60-point tier.",
     "outcome": "applied"
    },
    {
     "name": "Transcendent Cooldown",
-    "compareWith": "Cheat Death",
+    "compareWith": "Plated Armor",
     "claim": "should_be_more_obscure",
-    "reason": "Transcendent Cooldown is a plain stat upgrade with a forgettable name, so fewer players would think of it than Cheat Death, a famous and memorable defensive item. Cheat Death should not score worse than Transcendent Cooldown.",
-    "outcome": "applied"
-   },
-   {
-    "name": "Focus Lens",
-    "compareWith": "Lightning Scroll",
-    "claim": "should_be_more_obvious",
-    "reason": "Focus Lens is an active silence item that players see in builds regularly. Lightning Scroll is a niche ultimate-synergy item and is less likely to come to mind, so it deserves the top 100 pts instead of Focus Lens.",
+    "reason": "Transcendent Cooldown is a plain upgraded-tier stat item with a generic effect, and players seldom remember its price. It is likely not more obvious than Plated Armor and probably should not share the top 10-point tier with Boundless Spirit.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Magic Carpet",
-    "compareWith": "Crushing Fists",
+    "name": "Lightning Scroll",
+    "compareWith": "Focus Lens",
     "claim": "should_be_more_obvious",
-    "reason": "Magic Carpet is a distinctive, memorable item name that players recall easily. It should score below Crushing Fists, a niche melee item.",
-    "outcome": "ignored-invalid"
-   },
-   {
-    "name": "Spellslinger",
-    "compareWith": "Armor Piercer",
-    "claim": "should_be_more_obvious",
-    "reason": "Spellslinger is a fairly popular weapon item with a catchy name and should be recalled more readily than Armor Piercer, a niche upgrade that few players think of.",
-    "outcome": "ignored-invalid"
+    "reason": "Lightning Scroll is not clearly rarer than Focus Lens, Armor Piercer or Vortex Web. Those items are equally niche, so a unique 100-point slot for Lightning Scroll is not justified and it should sit in the 85 tier.",
+    "outcome": "applied-by-data"
    }
   ]
  }
