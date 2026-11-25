@@ -77,7 +77,10 @@ test("deterministic candidates: pools match their predicates and bounds", () => 
 });
 
 /** Fake LLM: ranks alphabetically, judges the alphabetically later name rarer, raises no review challenges. */
-function fakeAsk(semanticYes: (name: string) => boolean = () => false): Ask & { calls: string[] } {
+function fakeAsk(
+  semanticYes: (name: string) => boolean = () => false,
+  review: (prompt: string) => unknown[] = () => [],
+): Ask & { calls: string[] } {
   const calls: string[] = [];
   const fn = (async <T,>(o: AskOptions<T>): Promise<T> => {
     calls.push(o.label);
@@ -89,7 +92,7 @@ function fakeAsk(semanticYes: (name: string) => boolean = () => false): Ask & { 
     }
     else if (o.label.startsWith("pairwise:")) {
       out = { judgments: [...o.prompt.matchAll(/^Pair (\d+): (.+?) - .*\| (.+?) - /gm)].map((m) => ({ pair: +m[1], rarer: [m[2], m[3]].sort()[1] })) };
-    } else if (o.label.startsWith("review:")) out = { challenges: [] };
+    } else if (o.label.startsWith("review:")) out = { challenges: review(o.prompt) };
     else if (o.label.startsWith("screen:")) out = { verdicts: kb.heroes.map((h) => ({ name: h.name, verdict: semanticYes(h.name) ? "yes" : "no" })) };
     else if (o.label.startsWith("verify:")) {
       const list = o.prompt.split("Candidates: ")[1]!.split(", ");
@@ -134,4 +137,23 @@ test("item summaries include built-in stats even when the description is a side 
   const leech = summary(kb.findByName("Leech")!);
   assert.match(leech, /Stats: .*Spirit Lifesteal 30.*Bullet Lifesteal 30/);
   assert.ok(leech.startsWith("Leech - Tier 4"));
+});
+
+test("review challenges backed by gameplay data are applied without a comparison", async () => {
+  const q = deterministicCandidates(kb).find((x) => x.signature === "item-cost:6400")!;
+  let picked: [string, string] | undefined;
+  const ask = fakeAsk(undefined, (prompt) => {
+    // Table lines: "1. Name - 10 pts". Pick an earlier (more obvious) item that is bought less than a later one.
+    const names = [...prompt.matchAll(/^\d+\. (.+) - \d+ pts$/gm)].map((m) => m[1]);
+    const pop = (n: string) => kb.findByName(n)!.attributes.popularity ?? 0;
+    for (let i = 0; i < names.length && !picked; i++) {
+      for (let j = i + 1; j < names.length; j++) if (pop(names[i]) < pop(names[j])) { picked = [names[i], names[j]]; break; }
+    }
+    return [{ name: picked![0], compareWith: picked![1], claim: "should_be_more_obscure", reason: "test" }];
+  });
+  const s = await scoreQuestion(kb, ask, q);
+  assert.equal(s.diagnostics.review[0].outcome, "applied-by-data");
+  const rank = (n: string) => s.answers.find((a) => a.name === n)!.rank;
+  assert.ok(rank(picked![0]) > rank(picked![1]), "challenged answer moved below the one it was compared with");
+  assert.equal(ask.calls.filter((c) => c.startsWith("pairwise:") ).length, 2, "only the regular pairwise round, no review comparison");
 });

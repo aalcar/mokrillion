@@ -52,7 +52,11 @@ export interface ReviewChallenge {
   compareWith: string;
   claim: "should_be_more_obscure" | "should_be_more_obvious";
   reason: string;
-  outcome: "applied" | "rejected-by-comparison" | "ignored-invalid";
+  /**
+   * applied-by-data: the gameplay data already agrees (the answer it calls rarer is played/bought less), so the
+   * swap needs no model comparison. applied / rejected-by-comparison: decided by a two-orientation comparison.
+   */
+  outcome: "applied-by-data" | "applied" | "rejected-by-comparison" | "ignored-invalid";
 }
 
 export interface ScoredQuestion {
@@ -314,20 +318,35 @@ export async function scoreQuestion(kb: Knowledge, ask: Ask, q: CandidateQuestio
   });
   const review: ReviewChallenge[] = [];
   const reviewPairs: Omit<PairJudgment, "rarer">[] = [];
+  const swap = (x: string, y: string) => {
+    const ix = order.indexOf(x), iy = order.indexOf(y);
+    [order[ix], order[iy]] = [order[iy], order[ix]];
+  };
+  const popularity = (id: string) => kb.get(id)!.attributes.popularity ?? 0;
   for (const c of reviewOut.challenges) {
     const a = byName.get(c.name), b = byName.get(c.compareWith);
     const valid = a && b && a !== b &&
       (c.claim === "should_be_more_obscure" ? order.indexOf(a) < order.indexOf(b) : order.indexOf(a) > order.indexOf(b));
-    review.push({ ...c, outcome: valid ? "rejected-by-comparison" : "ignored-invalid" });
-    if (valid) reviewPairs.push({ a: a!, b: b!, purpose: "review" });
+    if (!valid) {
+      review.push({ ...c, outcome: "ignored-invalid" });
+      continue;
+    }
+    const [rarer, commoner] = c.claim === "should_be_more_obscure" ? [a!, b!] : [b!, a!];
+    // The comparison model shares the ranking model's biases, so a challenge the data already supports is applied directly.
+    if (popularity(rarer) < popularity(commoner)) {
+      swap(a!, b!);
+      review.push({ ...c, outcome: "applied-by-data" });
+      continue;
+    }
+    review.push({ ...c, outcome: "rejected-by-comparison" });
+    reviewPairs.push({ a: a!, b: b!, purpose: "review" });
   }
   const reviewJudgments = await comparePairs(ask, q, kb, reviewPairs);
   for (const j of reviewJudgments) {
-    const c = review.find((r) => byName.get(r.name) === j.a && byName.get(r.compareWith) === j.b && r.outcome !== "ignored-invalid")!;
+    const c = review.find((r) => byName.get(r.name) === j.a && byName.get(r.compareWith) === j.b && r.outcome === "rejected-by-comparison")!;
     const wantRarer = c.claim === "should_be_more_obscure" ? j.a : j.b;
     if (j.rarer === wantRarer) {
-      const ia = order.indexOf(j.a), ib = order.indexOf(j.b);
-      [order[ia], order[ib]] = [order[ib], order[ia]];
+      swap(j.a, j.b);
       c.outcome = "applied";
     }
   }

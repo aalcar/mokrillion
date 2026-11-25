@@ -57,8 +57,9 @@ Target: how readily an experienced player thinks of an answer **for this questio
    `0.55 × LLM + 0.4 × gameplay rarity + 0.05 × spelling cost`. Gameplay rarity = hero pick rate or item purchase rate from the [Deadlock API](https://deadlock-api.com) in Ritualist–Oracle matches, the group's own rank range (`npm run ingest:stats`; set `MOKRILLION_MIN_BADGE`/`MOKRILLION_MAX_BADGE` to change it).
 3. **Targeted pairwise**: all pairs among the 4 rarest candidates plus each tier boundary, asked in both
    orientations; only judgments that agree both ways change the order.
-4. **Adversarial review**: a reviewer may challenge up to 5 placements; each challenge becomes a
-   two-orientation comparison and is applied only if it holds. The reviewer never sets points.
+4. **Adversarial review**: a reviewer may challenge up to 5 placements (swap X and Y). If the gameplay data
+   already agrees (the one it calls rarer is played/bought less), the swap is applied; otherwise it becomes a
+   two-orientation comparison and is applied only if that holds. The reviewer never sets points.
 5. **Tiers** (`src/scoring/tiers.ts`): ~8% → 10, ~17% → 30, ~30% → 60, rest → 85, last → 100.
 
 Every scored question stores per-pass positions, signals, pairwise results, review outcomes and pass

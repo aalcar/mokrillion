@@ -28,5 +28,5 @@ export const config = {
   tierShares: { 10: 0.08, 30: 0.17, 60: 0.3 },
 
   /** Bump when the scoring algorithm or its parameters change. */
-  scoringVersion: "5",
+  scoringVersion: "6",
 };
