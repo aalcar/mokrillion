@@ -5,7 +5,7 @@ import { deterministicCandidates, nameLetters } from "../src/generation/template
 import { validateSemantic } from "../src/generation/semantic.ts";
 import type { Ask, AskOptions } from "../src/llm.ts";
 import { loadKnowledge } from "../src/knowledge/queries.ts";
-import { aggregate, kendallTau, summary, percentiles, refineOrder, scoreQuestion, seededRandom, shuffled, spellingCost } from "../src/scoring/rank.ts";
+import { aggregate, applyOverride, kendallTau, summary, percentiles, refineOrder, scoreQuestion, seededRandom, shuffled, spellingCost } from "../src/scoring/rank.ts";
 import { assignTiers } from "../src/scoring/tiers.ts";
 
 const kb = loadKnowledge();
@@ -173,4 +173,16 @@ test("name questions: letters ignore 'The' and symbols, double letters stay with
   for (const id of ids("name:item:double-letter")) {
     assert.ok(kb.get(id)!.name.toLowerCase().split(/[^a-z]+/).some((w) => /([a-z])\1/.test(w)), kb.get(id)!.name);
   }
+});
+
+test("owner override moves the picked answer to 100 and re-tiers", async () => {
+  const q = deterministicCandidates(kb).find((x) => x.signature.startsWith("hero-stat:maxHealth"))!;
+  const s = await scoreQuestion(kb, fakeAsk(), q);
+  const pick = s.answers[0].entityId; // currently the most obvious answer
+  const o = applyOverride(s, pick);
+  assert.equal(o.answers.at(-1)!.entityId, pick);
+  assert.equal(o.answers.at(-1)!.score, 100);
+  assert.equal(o.answers.filter((a) => a.score === 100).length, 1);
+  assert.deepEqual(o.answers.map((a) => a.entityId).sort(), s.answers.map((a) => a.entityId).sort());
+  assert.throws(() => applyOverride(s, "not_an_answer"));
 });

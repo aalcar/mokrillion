@@ -1,3 +1,5 @@
+import { existsSync, readFileSync } from "node:fs";
+import { join } from "node:path";
 // Rarity scoring: shuffled listwise LLM rankings -> Borda aggregation -> blend with
 // popularity and spelling signals -> targeted pairwise refinement -> adversarial review
 // (which can only trigger comparisons) -> deterministic tiers.
@@ -75,6 +77,8 @@ export interface ScoredQuestion {
     orderBeforeRefinement: string[];
     pairwise: PairJudgment[];
     review: ReviewChallenge[];
+    /** Owner's pick for the 100-point answer (data/overrides.json), if one was applied. */
+    override?: { rarest: string; note?: string };
   };
 }
 
@@ -180,6 +184,29 @@ export function refineOrder(order: string[], judgments: PairJudgment[]): string[
     slots.forEach((slot, k) => (out[slot] = group[k]));
   }
   return out;
+}
+
+export type Overrides = Record<string, { rarest: string; note?: string }>;
+export const OVERRIDES_FILE = join(import.meta.dirname, "../../data/overrides.json");
+
+/** Human picks for 100-point answers, keyed by question signature. Production data, not evaluation data. */
+export function loadOverrides(file = OVERRIDES_FILE): Overrides {
+  return existsSync(file) ? JSON.parse(readFileSync(file, "utf8")) : {};
+}
+
+export const moveToEnd = (order: string[], id: string) => [...order.filter((x) => x !== id), id];
+
+/** Re-apply a rarest-answer pick to an already scored question without new LLM calls. */
+export function applyOverride(s: ScoredQuestion, rarest: string, note?: string): ScoredQuestion {
+  if (!s.answers.some((a) => a.entityId === rarest)) throw new Error(`${rarest} is not a valid answer to ${s.question.signature}`);
+  const byId = new Map(s.answers.map((a) => [a.entityId, a.name]));
+  const order = moveToEnd(s.answers.map((a) => a.entityId), rarest);
+  const scores = assignTiers(order.length);
+  return {
+    ...s,
+    answers: order.map((id, i) => ({ entityId: id, name: byId.get(id)!, rank: i + 1, score: scores[i] })),
+    diagnostics: { ...s.diagnostics, override: { rarest, ...(note ? { note } : {}) } },
+  };
 }
 
 // ---------- LLM steps ----------
@@ -364,7 +391,11 @@ export async function scoreQuestion(kb: Knowledge, ask: Ask, q: CandidateQuestio
     }
   }
 
-  // 5. Tiers.
+  // 5. Owner override: a human-picked rarest answer always takes the 100.
+  const override = loadOverrides()[q.signature];
+  if (override && order.includes(override.rarest)) order = moveToEnd(order, override.rarest);
+
+  // 6. Tiers.
   const scores: Score[] = assignTiers(n);
   const passAgreement = (() => {
     let sum = 0, k = 0;
@@ -379,6 +410,6 @@ export async function scoreQuestion(kb: Knowledge, ask: Ask, q: CandidateQuestio
     model: modelsUsed(),
     generatedAt: new Date().toISOString(),
     answers: order.map((id, i) => ({ entityId: id, name: kb.get(id)!.name, rank: i + 1, score: scores[i] })),
-    diagnostics: { weights: { type: questionType(q.signature), ...weights }, signals, passAgreement, orderBeforeRefinement: initial, pairwise: [...pairwise, ...reviewJudgments], review },
+    diagnostics: { ...(override && order.includes(override.rarest) ? { override } : {}), weights: { type: questionType(q.signature), ...weights }, signals, passAgreement, orderBeforeRefinement: initial, pairwise: [...pairwise, ...reviewJudgments], review },
   };
 }

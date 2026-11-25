@@ -11,7 +11,7 @@ import { proposeSemantic, validateSemantic, type Proposal } from "../generation/
 import { loadKnowledge } from "../knowledge/queries.ts";
 import type { CandidateQuestion, EntityType } from "../knowledge/types.ts";
 import { createAsk, usageSummary } from "../llm.ts";
-import { scoreQuestion, type ScoredQuestion } from "../scoring/rank.ts";
+import { applyOverride, loadOverrides, OVERRIDES_FILE, scoreQuestion, type ScoredQuestion } from "../scoring/rank.ts";
 
 const DATA = join(import.meta.dirname, "../../data");
 const SEMANTIC_FILE = join(DATA, "candidates/semantic.json");
@@ -53,6 +53,7 @@ function printScored(s: ScoredQuestion) {
   const name = (id: string) => kb.get(id)!.name;
   console.log("\npairwise:");
   for (const p of s.diagnostics.pairwise) console.log(`  [${p.purpose}] ${name(p.a)} vs ${name(p.b)}: ${p.rarer ? `${name(p.rarer)} rarer` : "disagreement (no change)"}`);
+  if (s.diagnostics.override) console.log(`owner override: 100 points -> ${kb.get(s.diagnostics.override.rarest)!.name}`);
   console.log("review:");
   for (const r of s.diagnostics.review) console.log(`  ${r.name} ${r.claim} than ${r.compareWith} -> ${r.outcome}\n    ${r.reason}`);
   if (!s.diagnostics.review.length) console.log("  no challenges");
@@ -124,12 +125,25 @@ try {
       report(r.rank > c.rank, `[pair] ${r.name} (rank ${r.rank}, ${r.score}) rarer than ${c.name} (rank ${c.rank}, ${c.score}) (v${s.scoringVersion})`);
     }
     console.log(`\n${tally.hit}/${tally.total} human judgments matched`);
+  } else if (cmd === "set-rarest") {
+    // questions set-rarest <signature> <answer name>   (picks the 100-point answer; no LLM calls)
+    const [sig, ...nameParts] = rest;
+    const entity = kb.findByName(nameParts.join(" "));
+    if (!sig || !entity) throw new Error("usage: set-rarest <signature> <answer name>");
+    const overrides = loadOverrides();
+    overrides[sig] = { rarest: entity.id };
+    writeFileSync(OVERRIDES_FILE, JSON.stringify(overrides, null, 2) + "\n");
+    if (existsSync(questionFile(sig))) {
+      const updated = applyOverride(JSON.parse(readFileSync(questionFile(sig), "utf8")), entity.id);
+      writeFileSync(questionFile(sig), JSON.stringify(updated, null, 1));
+    }
+    console.log(`${sig}: 100 points -> ${entity.name}`);
   } else if (cmd === "show") {
     const file = questionFile(rest.join(" "));
     if (!existsSync(file)) throw new Error(`not scored yet: ${rest.join(" ")}`);
     printScored(JSON.parse(readFileSync(file, "utf8")));
   } else {
-    console.log("usage: questions list | propose <hero|item> [count] | score <signature|index> | show <signature> | eval  [--no-cache]");
+    console.log("usage: questions list | propose <hero|item> [count] | score <signature|index> | show <signature> | eval | set-rarest <signature> <answer>  [--no-cache]");
   }
 } finally {
   if (cmd === "propose" || cmd === "score") console.log(`\n${usageSummary()}`);
