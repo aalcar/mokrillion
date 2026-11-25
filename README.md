@@ -1,105 +1,76 @@
 # Mokrillion
 
-Deadlock-themed daily trivia where obscure correct answers score more. Facts come from
-[The Deadlock Wiki](https://deadlock.wiki) (CC BY-NC-SA 4.0).
+Daily Deadlock trivia. Every question has many right answers; rarer ones score more (10–100, max 700 a day).
+Facts come from [The Deadlock Wiki](https://deadlock.wiki) (CC BY-NC-SA 4.0), play stats from
+[Deadlock API](https://deadlock-api.com).
 
-## Setup
+## Quick start
 
-Node 22.6+. `npm install`, then put API keys in `.env` (only needed for LLM steps):
+Needs Node 22.6+.
 
 ```
-ANTHROPIC_API_KEY=...   # optional
-GEMINI_API_KEY=...      # optional, free tier at https://aistudio.google.com/apikey
+npm install
+npm run game -- play      # play today's game in the terminal
 ```
 
-Provider choice: Anthropic if `ANTHROPIC_API_KEY` is set, otherwise Gemini. If Anthropic rejects the key or
-the account is out of credit mid-run, the run switches to Gemini automatically (when `GEMINI_API_KEY` is set).
-Force one with `MOKRILLION_PROVIDER=anthropic|gemini`.
+## Run the Discord bot
 
-Optional env: `MOKRILLION_MODEL` (Anthropic, default `claude-opus-5-5`), `MOKRILLION_GEMINI_MODEL`
-(default `gemini-3.8-flash`), `MOKRILLION_EFFORT` (Anthropic, default `medium`), `MOKRILLION_MAX_COST_USD`
-(per-run budget, default 5; Gemini free tier counts as $0).
+1. Create an app at https://discord.com/developers/applications. Under **Bot**, copy the token.
+2. Under **OAuth2 > URL Generator**, tick `bot` and `applications.commands`, then `Send Messages`. Open the link and add the bot to your server.
+3. Put this in `.env`:
+   ```
+   DISCORD_TOKEN=...
+   DISCORD_CLIENT_ID=...   # Application ID
+   DISCORD_GUILD_ID=...    # your server ID
+   ```
+4. `npm run bot:register` (once), then `npm run bot` (keep it running).
 
-Different models rank differently, so cached answers are per model and every scored question records which
-model(s) produced it. Compare rankings from different models with care.
+Players type `/play` in the server and answer in DMs. `/share` posts their score without spoilers.
+One game per player per day; the day resets at midnight Pacific.
 
-## Commands
+## Make more questions
 
-| Command | What it does |
-|---|---|
-| `npm run ingest` | Download a raw wiki snapshot into `data/raw/` |
-| `npm run normalize` | Build `data/entities.json` from the snapshot |
-| `npm run kb -- stats \| show <name> \| where <hero\|item> <path><op><value>` | Inspect the knowledge base |
-| `npm run questions -- list` | All candidate questions with pool sizes |
-| `npm run questions -- propose <hero\|item> [n]` | LLM proposes semantic questions; each is validated over the whole universe |
-| `npm run questions -- score <signature\|index>` | Rank and score one question, save to `data/questions/`, print the full table |
-| `npm run questions -- show <signature>` | Re-print a stored scored question |
-| `npm run game -- generate [date] [--days N]` | Build and publish daily games (default: today in America/Los_Angeles); published games never change |
-| `npm run game -- list` | Published games |
-| `npm run game -- play [date]` | Play a daily game in the terminal |
-| `npm run questions -- set-rarest <signature> <answer>` | Owner pick for a question's 100-point answer (`data/overrides.json`) |
-| `npm test`, `npm run typecheck` | Offline tests (LLM is faked) and type check |
+LLM steps need a key in `.env`: `ANTHROPIC_API_KEY` and/or `GEMINI_API_KEY` (free). If Anthropic fails or runs
+out of credit, it switches to Gemini.
 
-LLM responses are cached in `data/cache/llm/` so reruns are reproducible; add `--no-cache` for fresh calls.
+```
+npm run questions -- list                         # all questions
+npm run questions -- score <number|signature>     # rank answers and save (~$0.06 on Sonnet)
+npm run questions -- show <signature>             # see a saved table
+npm run questions -- set-rarest <signature> <answer>   # pick the 100-point answer yourself
+npm run questions -- propose hero 8               # have the LLM write new questions
+npm run game -- generate --days 7                 # publish the next week of games
+```
 
-## Answer pools
+## Refresh game data (after a patch)
 
-- **Deterministic questions** (cost, tier/slot, active items, component items, innate stat bonuses, wiki
-  hero categories, hero stat thresholds): pools are exact predicates over `entities.json`.
-- **Semantic questions** (effects described in text): the model screens *every* hero or item, then a
-  separate call re-checks each plausible one and must quote evidence. A yes counts only if the quote
-  appears in that entity's wiki text. Any unresolved/"unsure" entity rejects the question as ambiguous.
+```
+npm run ingest && npm run ingest:stats && npm run normalize
+```
 
-## Scoring
+Then re-score questions.
 
-Target: how readily an experienced player thinks of an answer **for this question**. Steps
-(`src/scoring/rank.ts`):
+## How scoring works
 
-1. **Listwise ranking**: 5 passes, each with a differently shuffled candidate order; output must be an
-   exact permutation (validated, bounded retries).
-2. **Aggregation**: Borda (mean normalized position) blended with gameplay rarity (hero pick rate or item
-   purchase rate from the [Deadlock API](https://deadlock-api.com) in Ritualist–Oracle matches, the group's own
-   rank range; `npm run ingest:stats`, `MOKRILLION_MIN_BADGE`/`MOKRILLION_MAX_BADGE`) and spelling cost.
-   Weights depend on the question type, from human judgments:
-   - membership questions (cost, tier, active, component, name spelling): `0.25 × LLM + 0.7 × gameplay + 0.05 × spelling`
-     (recall follows what players see in games);
-   - association questions (stat bonuses, hero traits and stats, semantic): `0.8 × LLM + 0.15 × gameplay + 0.05 × spelling`
-     (recall follows whether players link the answer to the property).
-3. **Targeted pairwise**: all pairs among the 4 rarest candidates plus each tier boundary, asked in both
-   orientations; only judgments that agree both ways change the order.
-4. **Adversarial review**: a reviewer may challenge up to 5 placements (swap X and Y). If the gameplay data
-   clearly agrees (the one it calls rarer is played/bought at most 2/3 as often), the swap is applied; otherwise it becomes a
-   two-orientation comparison and is applied only if that holds. The reviewer never sets points.
-5. **Tiers** (`src/scoring/tiers.ts`): ~8% → 10, ~17% → 30, ~30% → 60, rest → 85, last → 100.
+1. Every valid answer is listed up front, from wiki data (or LLM-checked with quoted evidence).
+2. An LLM ranks the answers from most to least obvious, 5 times in shuffled order.
+3. That ranking is mixed with how often your rank range (Ritualist–Oracle) picks the hero or buys the item.
+   - "Name a 3,200 item" style questions lean on play stats.
+   - "Name an item with Melee Resist" style questions lean on the LLM.
+4. Close calls near the top get extra head-to-head checks and a review pass.
+5. Points: about 8% of answers get 10, 17% get 30, 30% get 60, the rest 85, and exactly one gets 100.
+   Your `set-rarest` picks always win.
 
-Every scored question stores per-pass positions, signals, pairwise results, review outcomes and pass
-agreement (mean Kendall tau). These are model estimates, not measured answer frequencies.
+Scores are estimates, not real answer counts. Every saved question keeps its full breakdown.
 
-## Daily games
+## Settings
 
-`src/game/` holds the engine; interfaces only call it.
+All in `src/config.ts`. Useful `.env` overrides: `MOKRILLION_PROVIDER` (`anthropic` or `gemini`),
+`MOKRILLION_MODEL`, `MOKRILLION_GEMINI_MODEL`, `MOKRILLION_MAX_COST_USD` (default 5 per run),
+`MOKRILLION_MIN_BADGE` / `MOKRILLION_MAX_BADGE` (rank range for play stats).
 
-- `daily.ts`: picks 7 scored questions per date, deterministic per date and history. Rules: at most one
-  name question, at most 2 per category, at least 2 hero and 2 item questions, no two questions on the same
-  stat or sharing more than half their answers, and no reuse within 60 days while the pool allows (otherwise
-  least recently used first). Games are validated and written atomically to `data/games/<date>.json`.
-- `matching.ts`: exact names and aliases, then one-typo auto-correction only when unambiguous (5+ letters,
-  nothing else within 2 edits). Anything less certain is a "did you mean" suggestion, never a guess.
-- `session.ts`: per-player state with timestamps; 30 seconds per question, unlimited retries for wrong or
-  unknown answers, the first correct answer locks in, results with each question's 100-point answer.
+## Tests
 
-## Discord bot
-
-Players run `/play` in the server; the game runs in their DMs (type answers as messages). `/share` posts a
-spoiler-free score line. Progress is saved after every step in `data/plays/<date>/<user>.json`, so a restart
-resumes games and nobody can replay a day. If today's game is not published yet, the bot builds it from the
-scored questions (deterministic, no LLM).
-
-Setup:
-1. https://discord.com/developers/applications: New Application, then under **Bot** reset/copy the token.
-   No privileged intents are needed.
-2. Under **OAuth2 > URL Generator** pick scopes `bot` and `applications.commands`, permission `Send Messages`,
-   open the URL and add the bot to your server.
-3. `.env`: `DISCORD_TOKEN=...`, `DISCORD_CLIENT_ID=...` (Application ID), `DISCORD_GUILD_ID=...` (server ID,
-   for instant command registration).
-4. `npm run bot:register` once, then `npm run bot` (keep it running).
+```
+npm test && npm run typecheck
+```
