@@ -91,26 +91,26 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_health_nova",
-   "name": "Healing Nova",
-   "rank": 11,
-   "score": 85
-  },
-  {
    "entityId": "upgrade_rescue_beam",
    "name": "Rescue Beam",
-   "rank": 12,
+   "rank": 11,
    "score": 85
   },
   {
    "entityId": "upgrade_superior_stamina",
    "name": "Stamina Mastery",
-   "rank": 13,
+   "rank": 12,
    "score": 85
   },
   {
    "entityId": "upgrade_veil_walker",
    "name": "Veil Walker",
+   "rank": 13,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_health_nova",
+   "name": "Healing Nova",
    "rank": 14,
    "score": 100
   }
@@ -585,6 +585,9 @@
     "reason": "Veil Walker is not meaningfully rarer than Majestic Leap, Rescue Beam or Lifestrike. Its name is distinctive and memorable, and it is a commonly built mobility item. Giving it the single 100-pt slot looks arbitrary, so it should swap with Majestic Leap.",
     "outcome": "rejected-by-comparison"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "upgrade_health_nova"
+  }
  }
 }

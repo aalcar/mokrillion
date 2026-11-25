@@ -42,26 +42,26 @@
    "score": 60
   },
   {
-   "entityId": "hero_drifter",
-   "name": "Drifter",
+   "entityId": "hero_werewolf",
+   "name": "Silver",
    "rank": 4,
    "score": 60
   },
   {
-   "entityId": "hero_werewolf",
-   "name": "Silver",
-   "rank": 5,
-   "score": 85
-  },
-  {
    "entityId": "hero_bebop",
    "name": "Bebop",
-   "rank": 6,
+   "rank": 5,
    "score": 85
   },
   {
    "entityId": "hero_nano",
    "name": "Calico",
+   "rank": 6,
+   "score": 85
+  },
+  {
+   "entityId": "hero_drifter",
+   "name": "Drifter",
    "rank": 7,
    "score": 100
   }
@@ -330,6 +330,9 @@
     "reason": "Calico has Leaping Slash and Gloom Bombs and is an assassin with a melee-style kit, so players associate her with melee more than Bebop, a beam and bomb hero. Bebop should be the 100-point answer, or the two should at least be tied.",
     "outcome": "rejected-by-comparison"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "hero_drifter"
+  }
  }
 }

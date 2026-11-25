@@ -82,14 +82,14 @@
    "score": 85
   },
   {
-   "entityId": "hero_deadpack",
-   "name": "Deadman Danny",
+   "entityId": "hero_doorman",
+   "name": "The Doorman",
    "rank": 10,
    "score": 85
   },
   {
-   "entityId": "hero_doorman",
-   "name": "The Doorman",
+   "entityId": "hero_deadpack",
+   "name": "Deadman Danny",
    "rank": 11,
    "score": 100
   }
@@ -454,6 +454,9 @@
     "reason": "Deadman Danny is a newer, lower-profile hero whose kit is not strongly tied to dashing. Ivy has Air Drop and some recognizable mobility, so Danny should be rarer than Ivy.",
     "outcome": "applied"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "hero_deadpack"
+  }
  }
 }

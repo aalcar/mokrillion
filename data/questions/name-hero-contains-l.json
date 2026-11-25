@@ -97,20 +97,20 @@
    "score": 85
   },
   {
-   "entityId": "hero_magician",
-   "name": "Sinclair",
-   "rank": 12,
-   "score": 85
-  },
-  {
    "entityId": "hero_chessmaster",
    "name": "Solomon",
-   "rank": 13,
+   "rank": 12,
    "score": 85
   },
   {
    "entityId": "hero_krill",
    "name": "Mo & Krill",
+   "rank": 13,
+   "score": 85
+  },
+  {
+   "entityId": "hero_magician",
+   "name": "Sinclair",
    "rank": 14,
    "score": 100
   }
@@ -572,6 +572,9 @@
     "reason": "Violet is a simple, memorable name whose L is the third letter, so it is easy to spot. Kelvin is no easier to recall, so the 25-point gap between them is not warranted. Violet should be near 60.",
     "outcome": "rejected-by-comparison"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "hero_magician"
+  }
  }
 }

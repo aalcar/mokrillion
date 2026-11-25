@@ -40,14 +40,14 @@
    "score": 60
   },
   {
-   "entityId": "upgrade_fervor",
-   "name": "Frenzy",
+   "entityId": "upgrade_fury_trance",
+   "name": "Fury Trance",
    "rank": 4,
    "score": 85
   },
   {
-   "entityId": "upgrade_fury_trance",
-   "name": "Fury Trance",
+   "entityId": "upgrade_fervor",
+   "name": "Frenzy",
    "rank": 5,
    "score": 100
   }
@@ -230,6 +230,9 @@
     "reason": "Frenzy is a Tier 4 weapon item with a built-in lifesteal stat that experienced players buy often. Fury Trance is a Tier 3 active item with a silence drawback and sees less use. Players asked for lifesteal items are more likely to recall Frenzy than Fury Trance, so Frenzy should not be the rarest.",
     "outcome": "applied-by-data"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "upgrade_fervor"
+  }
  }
 }

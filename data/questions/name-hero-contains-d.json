@@ -62,20 +62,20 @@
    "score": 60
   },
   {
-   "entityId": "hero_astro",
-   "name": "Holliday",
-   "rank": 7,
-   "score": 85
-  },
-  {
    "entityId": "hero_doorman",
    "name": "The Doorman",
-   "rank": 8,
+   "rank": 7,
    "score": 85
   },
   {
    "entityId": "hero_deadpack",
    "name": "Deadman Danny",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "hero_astro",
+   "name": "Holliday",
    "rank": 9,
    "score": 100
   }
@@ -392,6 +392,9 @@
     "reason": "Drifter is a relatively new hero and its D is mid-name. Paradox also has a D mid-name but is a long-standing hero. Drifter at 10 points is too obvious, since the D is not salient in 'Drifter' (it's the first letter, so actually salient). Still, Paradox and Vindicta are similarly prominent, so Drifter does not deserve a gap of 20 points below them.",
     "outcome": "rejected-by-comparison"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "hero_astro"
+  }
  }
 }

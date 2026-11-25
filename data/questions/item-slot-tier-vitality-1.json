@@ -55,20 +55,20 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_health_stimpak",
-   "name": "Healing Rite",
-   "rank": 6,
-   "score": 85
-  },
-  {
    "entityId": "upgrade_grit",
    "name": "Grit",
-   "rank": 7,
+   "rank": 6,
    "score": 85
   },
   {
    "entityId": "upgrade_melee_rebuttal",
    "name": "Rebuttal",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_health_stimpak",
+   "name": "Healing Rite",
    "rank": 8,
    "score": 100
   }
@@ -380,6 +380,9 @@
     "reason": "Rebuttal is a niche item, but Grit has a generic name that is easy to forget, and it is an active item many players rarely buy. Grit is arguably no more memorable than Rebuttal, so it should not be scored below it at 85 versus 100.",
     "outcome": "rejected-by-comparison"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "upgrade_health_stimpak"
+  }
  }
 }

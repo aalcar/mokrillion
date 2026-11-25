@@ -63,26 +63,26 @@
    "score": 60
   },
   {
-   "entityId": "hero_nurse",
-   "name": "Nurse Harrow",
-   "rank": 7,
-   "score": 85
-  },
-  {
    "entityId": "hero_chessmaster",
    "name": "Solomon",
-   "rank": 8,
+   "rank": 7,
    "score": 85
   },
   {
    "entityId": "hero_unicorn",
    "name": "Celeste",
-   "rank": 9,
+   "rank": 8,
    "score": 85
   },
   {
    "entityId": "hero_doorman",
    "name": "The Doorman",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "hero_nurse",
+   "name": "Nurse Harrow",
    "rank": 10,
    "score": 100
   }
@@ -429,6 +429,9 @@
     "reason": "The Doorman is a newer hero, but he is not clearly rarer than Celeste. Both are recent Mystic additions, and neither has a wiki note tying them to a small clip. Putting Celeste at 85 and the Doorman at 100 rests on a thin difference in how often players think of each, so Celeste should be rarer or the two should score the same.",
     "outcome": "rejected-by-comparison"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "hero_nurse"
+  }
  }
 }

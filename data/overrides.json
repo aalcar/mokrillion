@@ -28,5 +28,83 @@
   },
   "name:item:starts:r": {
     "rarest": "upgrade_withering_whip"
+  },
+  "hero-category:Heroes with 2 stamina": {
+    "rarest": "hero_chessmaster"
+  },
+  "hero-category:Heroes with boon scaling abilities": {
+    "rarest": "hero_familiar"
+  },
+  "hero-category:Heroes with fast dash speed": {
+    "rarest": "hero_deadpack"
+  },
+  "hero-category:Heroes with melee scaling abilities": {
+    "rarest": "hero_drifter"
+  },
+  "hero-category:Heroes with slow dash speed": {
+    "rarest": "hero_familiar"
+  },
+  "hero-category:Heroes with spreadshot weapons": {
+    "rarest": "hero_ratking"
+  },
+  "hero-stat:clipSize:high:29": {
+    "rarest": "hero_necro"
+  },
+  "hero-stat:clipSize:low:11": {
+    "rarest": "hero_nurse"
+  },
+  "hero-stat:maxHealth:high:820": {
+    "rarest": "hero_inferno"
+  },
+  "item-component:Vitality": {
+    "rarest": "upgrade_health_stimpak"
+  },
+  "item-slot-tier:Spirit:4": {
+    "rarest": "upgrade_focus_lens"
+  },
+  "item-slot-tier:Vitality:1": {
+    "rarest": "upgrade_health_stimpak"
+  },
+  "item-slot-tier:Vitality:3": {
+    "rarest": "upgrade_health_nova"
+  },
+  "item-stat:Bullet Lifesteal": {
+    "rarest": "upgrade_fervor"
+  },
+  "item-stat:Max Ammo": {
+    "rarest": "upgrade_rechargingbullets"
+  },
+  "item-stat:Out of Combat Regen": {
+    "rarest": "upgrade_blood_tribute"
+  },
+  "item-stat:Spirit Lifesteal": {
+    "rarest": "upgrade_mystic_reverb"
+  },
+  "item-stat:Spirit Power": {
+    "rarest": "upgrade_pristine_emblem"
+  },
+  "name:hero:contains:c": {
+    "rarest": "hero_magician"
+  },
+  "name:hero:contains:d": {
+    "rarest": "hero_astro"
+  },
+  "name:hero:contains:h": {
+    "rarest": "hero_wraith"
+  },
+  "name:hero:contains:l": {
+    "rarest": "hero_magician"
+  },
+  "name:hero:contains:m": {
+    "rarest": "hero_deadpack"
+  },
+  "name:hero:contains:p": {
+    "rarest": "hero_viper"
+  },
+  "name:hero:contains:y": {
+    "rarest": "hero_viper"
+  },
+  "name:hero:double-letter": {
+    "rarest": "hero_fencer"
   }
 }

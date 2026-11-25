@@ -70,26 +70,26 @@
    "score": 85
   },
   {
-   "entityId": "hero_deadpack",
-   "name": "Deadman Danny",
-   "rank": 8,
-   "score": 85
-  },
-  {
    "entityId": "hero_familiar",
    "name": "Rem",
-   "rank": 9,
+   "rank": 8,
    "score": 85
   },
   {
    "entityId": "hero_chessmaster",
    "name": "Solomon",
-   "rank": 10,
+   "rank": 9,
    "score": 85
   },
   {
    "entityId": "hero_doorman",
    "name": "The Doorman",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "hero_deadpack",
+   "name": "Deadman Danny",
    "rank": 11,
    "score": 100
   }
@@ -479,6 +479,9 @@
     "reason": "Rem is a short name with M as its last letter, and it is an easy answer for anyone scanning the roster. The Doorman is a longer name with M hidden in the middle of 'Doorman', so it is less likely to be thought of and should score higher than Rem.",
     "outcome": "applied"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "hero_deadpack"
+  }
  }
 }

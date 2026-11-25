@@ -96,14 +96,14 @@
    "score": 85
   },
   {
-   "entityId": "hero_familiar",
-   "name": "Rem",
+   "entityId": "hero_chessmaster",
+   "name": "Solomon",
    "rank": 12,
    "score": 85
   },
   {
-   "entityId": "hero_chessmaster",
-   "name": "Solomon",
+   "entityId": "hero_familiar",
+   "name": "Rem",
    "rank": 13,
    "score": 100
   }
@@ -522,6 +522,9 @@
     "reason": "Victor is a relatively less-played brawler with a forgettable kit and no obvious link to slow dashing. He is closer to Paige than to Kelvin or Lady Geist, who are better known, so 60 is too low for him.",
     "outcome": "applied"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "hero_familiar"
+  }
  }
 }

@@ -61,14 +61,14 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_rechargingbullets",
-   "name": "Recharging Rush",
+   "entityId": "upgrade_ethereal_bullets",
+   "name": "Mercurial Magnum",
    "rank": 7,
    "score": 85
   },
   {
-   "entityId": "upgrade_ethereal_bullets",
-   "name": "Mercurial Magnum",
+   "entityId": "upgrade_rechargingbullets",
+   "name": "Recharging Rush",
    "rank": 8,
    "score": 100
   }
@@ -361,6 +361,9 @@
     "reason": "Lucky Shot is a well-known Tier 4 weapon item that players buy and discuss often. Recharging Rush is a more forgettable item, so the two should not share the same 85 point score. Lucky Shot should be more obvious.",
     "outcome": "applied"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "upgrade_rechargingbullets"
+  }
  }
 }

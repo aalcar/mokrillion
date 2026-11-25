@@ -35,26 +35,26 @@
    "score": 30
   },
   {
-   "entityId": "hero_wraith",
-   "name": "Wraith",
-   "rank": 3,
-   "score": 60
-  },
-  {
    "entityId": "hero_shiv",
    "name": "Shiv",
-   "rank": 4,
+   "rank": 3,
    "score": 60
   },
   {
    "entityId": "hero_astro",
    "name": "Holliday",
-   "rank": 5,
-   "score": 85
+   "rank": 4,
+   "score": 60
   },
   {
    "entityId": "hero_nurse",
    "name": "Nurse Harrow",
+   "rank": 5,
+   "score": 85
+  },
+  {
+   "entityId": "hero_wraith",
+   "name": "Wraith",
    "rank": 6,
    "score": 100
   }
@@ -286,6 +286,9 @@
     "reason": "Nurse Harrow has H at the start of both her title-less surname and her prominent name, and the letter is very visible. Holliday also has H at the start, but Holliday is a more established hero. The 15-point gap is plausible, though Harrow is not so obscure that she should sit far above Holliday.",
     "outcome": "rejected-by-comparison"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "hero_wraith"
+  }
  }
 }

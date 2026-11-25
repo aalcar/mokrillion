@@ -41,20 +41,20 @@
    "score": 60
   },
   {
-   "entityId": "hero_viper",
-   "name": "Vyper",
+   "entityId": "hero_bookworm",
+   "name": "Paige",
    "rank": 4,
    "score": 60
   },
   {
-   "entityId": "hero_bookworm",
-   "name": "Paige",
+   "entityId": "hero_fencer",
+   "name": "Apollo",
    "rank": 5,
    "score": 85
   },
   {
-   "entityId": "hero_fencer",
-   "name": "Apollo",
+   "entityId": "hero_viper",
+   "name": "Vyper",
    "rank": 6,
    "score": 100
   }
@@ -293,6 +293,9 @@
     "reason": "Pocket starts with P, the first letter players will think of when scanning for P names, so it is more directly tied to this question than Vyper, where the P is in the middle. Pocket should be more obvious than Vyper, not tied with it.",
     "outcome": "applied-by-data"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "hero_viper"
+  }
  }
 }

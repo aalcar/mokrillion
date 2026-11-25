@@ -117,14 +117,14 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_focus_lens",
-   "name": "Focus Lens",
+   "entityId": "upgrade_ultimate_burst",
+   "name": "Lightning Scroll",
    "rank": 15,
    "score": 85
   },
   {
-   "entityId": "upgrade_ultimate_burst",
-   "name": "Lightning Scroll",
+   "entityId": "upgrade_focus_lens",
+   "name": "Focus Lens",
    "rank": 16,
    "score": 100
   }
@@ -634,6 +634,9 @@
     "reason": "Escalating Exposure is a niche amp item that players think of less readily than Refresher or Spirit Burn. Giving it the single most obvious slot at 10 points is implausible.",
     "outcome": "applied"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "upgrade_focus_lens"
+  }
  }
 }

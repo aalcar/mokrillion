@@ -40,14 +40,14 @@
    "score": 60
   },
   {
-   "entityId": "upgrade_mystic_reverb",
-   "name": "Mystic Reverb",
+   "entityId": "upgrade_tech_overflow",
+   "name": "Spiritual Overflow",
    "rank": 4,
    "score": 85
   },
   {
-   "entityId": "upgrade_tech_overflow",
-   "name": "Spiritual Overflow",
+   "entityId": "upgrade_mystic_reverb",
+   "name": "Mystic Reverb",
    "rank": 5,
    "score": 100
   }
@@ -230,6 +230,9 @@
     "reason": "Mystic Reverb is mainly known as an imbue/slow item, and its Spirit Lifesteal is only 8 and tucked into an ability imbue. It is less likely to come to mind for a built-in lifesteal question than Infuser, whose name and stats are directly lifesteal-themed and which is built from Spirit Lifesteal. Infuser being rated 60 versus Reverb 85 is reasonable on that basis, but Infuser may be somewhat too obscure relative to Leech and so should sit closer to it.",
     "outcome": "ignored-invalid"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "upgrade_mystic_reverb"
+  }
  }
 }

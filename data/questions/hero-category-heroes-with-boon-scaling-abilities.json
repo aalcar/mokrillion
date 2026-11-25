@@ -89,14 +89,14 @@
    "score": 85
   },
   {
-   "entityId": "hero_familiar",
-   "name": "Rem",
+   "entityId": "hero_deadpack",
+   "name": "Deadman Danny",
    "rank": 11,
    "score": 85
   },
   {
-   "entityId": "hero_deadpack",
-   "name": "Deadman Danny",
+   "entityId": "hero_familiar",
+   "name": "Rem",
    "rank": 12,
    "score": 100
   }
@@ -491,6 +491,9 @@
     "reason": "Deadman Danny is a distinctive marksman with several iconic abilities, such as Chimera Mk1 and Close The Deal. A seasoned player is not obviously less likely to name him than Rem, whose kit is mostly support utility. The 100-point slot looks too extreme for him compared with the 85-point group.",
     "outcome": "rejected-by-comparison"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "hero_familiar"
+  }
  }
 }

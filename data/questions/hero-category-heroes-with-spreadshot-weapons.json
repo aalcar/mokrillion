@@ -63,26 +63,26 @@
    "score": 60
   },
   {
-   "entityId": "hero_ratking",
-   "name": "Rat King",
-   "rank": 7,
-   "score": 85
-  },
-  {
    "entityId": "hero_baba",
    "name": "Baba",
-   "rank": 8,
+   "rank": 7,
    "score": 85
   },
   {
    "entityId": "hero_yamato",
    "name": "Yamato",
-   "rank": 9,
+   "rank": 8,
    "score": 85
   },
   {
    "entityId": "hero_krill",
    "name": "Mo & Krill",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "hero_ratking",
+   "name": "Rat King",
    "rank": 10,
    "score": 100
   }
@@ -417,6 +417,9 @@
     "reason": "This one is plausible, but Abrams' shotgun is the most famous spreadshot, so he should stay at the top. Silver's wolf-themed hero is less commonly recalled for shotguns, so Silver at 30 is perhaps slightly too obvious.",
     "outcome": "ignored-invalid"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "hero_ratking"
+  }
  }
 }

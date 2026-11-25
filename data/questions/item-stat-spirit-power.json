@@ -139,20 +139,20 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_pristine_emblem",
-   "name": "Opening Rounds",
-   "rank": 18,
-   "score": 85
-  },
-  {
    "entityId": "upgrade_veil_walker",
    "name": "Veil Walker",
-   "rank": 19,
+   "rank": 18,
    "score": 85
   },
   {
    "entityId": "upgrade_phantom_strike",
    "name": "Phantom Strike",
+   "rank": 19,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_pristine_emblem",
+   "name": "Opening Rounds",
    "rank": 20,
    "score": 100
   }
@@ -746,6 +746,9 @@
     "reason": "Decay is mostly thought of as an active health-percent DoT, not as a Spirit Power item, so players rarely recall it when asked about Spirit Power. Infuser is better known as a Spirit-boosting item. Decay should score higher than Infuser.",
     "outcome": "ignored-invalid"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "upgrade_pristine_emblem"
+  }
  }
 }

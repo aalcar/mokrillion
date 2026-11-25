@@ -55,20 +55,20 @@
    "score": 85
   },
   {
-   "entityId": "hero_chessmaster",
-   "name": "Solomon",
-   "rank": 6,
-   "score": 85
-  },
-  {
    "entityId": "hero_werewolf",
    "name": "Silver",
-   "rank": 7,
+   "rank": 6,
    "score": 85
   },
   {
    "entityId": "hero_baba",
    "name": "Baba",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "hero_chessmaster",
+   "name": "Solomon",
    "rank": 8,
    "score": 100
   }
@@ -342,6 +342,9 @@
     "reason": "Silver is a popular, widely played brawler. Players tend to know him well, so he should be recalled more readily than Baba, who is less played. Silver's 85 points is the same as for Mina and Solomon, which looks too obscure.",
     "outcome": "ignored-invalid"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "hero_chessmaster"
+  }
  }
 }

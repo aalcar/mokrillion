@@ -61,14 +61,14 @@
    "score": 85
   },
   {
-   "entityId": "hero_magician",
-   "name": "Sinclair",
+   "entityId": "hero_synth",
+   "name": "Pocket",
    "rank": 7,
    "score": 85
   },
   {
-   "entityId": "hero_synth",
-   "name": "Pocket",
+   "entityId": "hero_magician",
+   "name": "Sinclair",
    "rank": 8,
    "score": 100
   }
@@ -367,6 +367,9 @@
     "reason": "Vindicta's C is in the middle of her name, so players hunting for a C will often think of names starting with C first. Calico starts with C and should be at least as obvious, so Vindicta at 10 is likely too low.",
     "outcome": "rejected-by-comparison"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "hero_magician"
+  }
  }
 }

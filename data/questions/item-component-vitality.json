@@ -84,26 +84,26 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_health_stimpak",
-   "name": "Healing Rite",
-   "rank": 10,
-   "score": 85
-  },
-  {
    "entityId": "upgrade_debuff_reducer",
    "name": "Debuff Reducer",
-   "rank": 11,
+   "rank": 10,
    "score": 85
   },
   {
    "entityId": "upgrade_guardian_ward",
    "name": "Guardian Ward",
-   "rank": 12,
+   "rank": 11,
    "score": 85
   },
   {
    "entityId": "upgrade_vex_barrier",
    "name": "Reactive Barrier",
+   "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_health_stimpak",
+   "name": "Healing Rite",
    "rank": 13,
    "score": 100
   }
@@ -541,6 +541,9 @@
     "reason": "Healing Rite is a recognizable support Tier 1 active that upgrades into Healing Nova and Rescue Beam. Players who know these upgrades would name it readily, so it should be easier than the Tier 2 Bullet Lifesteal, which is mainly thought of as an end item.",
     "outcome": "rejected-by-comparison"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "upgrade_health_stimpak"
+  }
  }
 }

@@ -182,26 +182,26 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_blood_tribute",
-   "name": "Blood Tribute",
-   "rank": 24,
-   "score": 85
-  },
-  {
    "entityId": "upgrade_non_player_bonus_sacrifice",
    "name": "Cultist Sacrifice",
-   "rank": 25,
+   "rank": 24,
    "score": 85
   },
   {
    "entityId": "upgrade_transcendent_cooldown",
    "name": "Transcendent Cooldown",
-   "rank": 26,
+   "rank": 25,
    "score": 85
   },
   {
    "entityId": "upgrade_goose_egg",
    "name": "Golden Goose Egg",
+   "rank": 26,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_blood_tribute",
+   "name": "Blood Tribute",
    "rank": 27,
    "score": 100
   }
@@ -951,6 +951,9 @@
     "reason": "Superior Cooldown is a commonly bought Tier 3 spirit staple, so it should be a more common answer than the low-profile Golden Goose Egg. Its 85 points puts it too close to the 100-point answer.",
     "outcome": "ignored-invalid"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "upgrade_blood_tribute"
+  }
  }
 }

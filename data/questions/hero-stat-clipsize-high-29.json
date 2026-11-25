@@ -75,14 +75,14 @@
    "score": 85
   },
   {
-   "entityId": "hero_necro",
-   "name": "Graves",
+   "entityId": "hero_priest",
+   "name": "Venator",
    "rank": 9,
    "score": 85
   },
   {
-   "entityId": "hero_priest",
-   "name": "Venator",
+   "entityId": "hero_necro",
+   "name": "Graves",
    "rank": 10,
    "score": 100
   }
@@ -417,6 +417,9 @@
     "reason": "Venator is a Marksman, and his gun is not typically linked to a huge clip. Graves is a less-played Mystic and is more forgettable here, so Graves should be the 100-point answer and Venator should be somewhat more obvious.",
     "outcome": "rejected-by-comparison"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "hero_necro"
+  }
  }
 }
