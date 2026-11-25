@@ -55,25 +55,25 @@
   }
  },
  "knowledgeVersion": "2026-11-24-ba1caa19",
- "scoringVersion": "3",
+ "scoringVersion": "4",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T02:58:38.288Z",
+ "generatedAt": "2026-11-25T03:30:14.209Z",
  "answers": [
   {
-   "entityId": "upgrade_magic_vulnerability",
-   "name": "Mystic Vulnerability",
+   "entityId": "upgrade_health_stealing_magic",
+   "name": "Spirit Lifesteal",
    "rank": 1,
    "score": 10
   },
   {
-   "entityId": "upgrade_containment",
-   "name": "Slowing Hex",
+   "entityId": "upgrade_titan_round",
+   "name": "Titanic Magazine",
    "rank": 2,
    "score": 10
   },
   {
-   "entityId": "upgrade_cold_front",
-   "name": "Cold Front",
+   "entityId": "upgrade_soaring_spirit",
+   "name": "Improved Spirit",
    "rank": 3,
    "score": 10
   },
@@ -84,182 +84,182 @@
    "score": 30
   },
   {
-   "entityId": "upgrade_active_reload",
-   "name": "Active Reload",
-   "rank": 5,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_tech_defense_shredders",
-   "name": "Spirit Shredder",
-   "rank": 6,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_weapon_backstabber",
-   "name": "Stalker",
-   "rank": 7,
-   "score": 30
-  },
-  {
-   "entityId": "upgrade_fleetfoot_boots",
-   "name": "Fleetfoot",
-   "rank": 8,
-   "score": 30
-  },
-  {
    "entityId": "upgrade_regenerating_bullet_shield",
    "name": "Battle Vest",
-   "rank": 9,
+   "rank": 5,
    "score": 30
   },
   {
    "entityId": "upgrade_magic_shield",
    "name": "Enchanter's Emblem",
+   "rank": 6,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_vampire",
+   "name": "Bullet Lifesteal",
+   "rank": 7,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_blitz_bullets",
+   "name": "Swift Striker",
+   "rank": 8,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_containment",
+   "name": "Slowing Hex",
+   "rank": 9,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_active_reload",
+   "name": "Active Reload",
    "rank": 10,
    "score": 30
   },
   {
-   "entityId": "upgrade_health_stealing_magic",
-   "name": "Spirit Lifesteal",
+   "entityId": "upgrade_magic_vulnerability",
+   "name": "Mystic Vulnerability",
    "rank": 11,
    "score": 60
   },
   {
-   "entityId": "upgrade_quick_silver",
-   "name": "Quicksilver Reload",
+   "entityId": "upgrade_fleetfoot_boots",
+   "name": "Fleetfoot",
    "rank": 12,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_cold_front",
+   "name": "Cold Front",
+   "rank": 13,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_weapon_backstabber",
+   "name": "Stalker",
+   "rank": 14,
    "score": 60
   },
   {
    "entityId": "upgrade_split_shot",
    "name": "Split Shot",
-   "rank": 13,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_trophy_collector",
-   "name": "Trophy Collector",
-   "rank": 14,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_titan_round",
-   "name": "Titanic Magazine",
    "rank": 15,
    "score": 60
   },
   {
-   "entityId": "upgrade_magic_tempo",
-   "name": "Compress Cooldown",
+   "entityId": "upgrade_spirit_bubble",
+   "name": "Spirit Shielding",
    "rank": 16,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_vex_barrier",
-   "name": "Reactive Barrier",
-   "rank": 17,
    "score": 60
   },
   {
    "entityId": "upgrade_long_range",
    "name": "Long Range",
+   "rank": 17,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_crackshot",
+   "name": "Mystic Shot",
    "rank": 18,
    "score": 60
   },
   {
-   "entityId": "upgrade_soaring_spirit",
-   "name": "Improved Spirit",
+   "entityId": "upgrade_tech_defense_shredders",
+   "name": "Spirit Shredder",
    "rank": 19,
    "score": 60
   },
   {
-   "entityId": "upgrade_blitz_bullets",
-   "name": "Swift Striker",
+   "entityId": "upgrade_magic_tempo",
+   "name": "Compress Cooldown",
    "rank": 20,
    "score": 60
   },
   {
-   "entityId": "upgrade_pristine_emblem",
-   "name": "Opening Rounds",
+   "entityId": "upgrade_quick_silver",
+   "name": "Quicksilver Reload",
    "rank": 21,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_cardio_calibrator",
+   "name": "Enduring Speed",
+   "rank": 22,
    "score": 60
   },
   {
    "entityId": "upgrade_kinetic_sash",
    "name": "Kinetic Dash",
-   "rank": 22,
-   "score": 60
-  },
-  {
-   "entityId": "upgrade_vampire",
-   "name": "Bullet Lifesteal",
    "rank": 23,
    "score": 60
   },
   {
-   "entityId": "upgrade_suppressor",
-   "name": "Suppressor",
+   "entityId": "upgrade_debuff_reducer",
+   "name": "Debuff Reducer",
    "rank": 24,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_spirit_bubble",
-   "name": "Spirit Shielding",
-   "rank": 25,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_crackshot",
-   "name": "Mystic Shot",
-   "rank": 26,
    "score": 85
   },
   {
    "entityId": "upgrade_slowing_bullets",
    "name": "Slowing Bullets",
+   "rank": 25,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_trophy_collector",
+   "name": "Trophy Collector",
+   "rank": 26,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_pristine_emblem",
+   "name": "Opening Rounds",
    "rank": 27,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_bullet_resist_shredder",
+   "name": "Bullet Resist Shredder",
+   "rank": 28,
    "score": 85
   },
   {
    "entityId": "upgrade_arcane_extension",
    "name": "Duration Extender",
-   "rank": 28,
+   "rank": 29,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_vex_barrier",
+   "name": "Reactive Barrier",
+   "rank": 30,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_weapon_shielding",
+   "name": "Weapon Shielding",
+   "rank": 31,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_magic_slow",
+   "name": "Mystic Slow",
+   "rank": 32,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_suppressor",
+   "name": "Suppressor",
+   "rank": 33,
    "score": 85
   },
   {
    "entityId": "upgrade_guardian_ward",
    "name": "Guardian Ward",
-   "rank": 29,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_arcane_surge",
-   "name": "Arcane Surge",
-   "rank": 30,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_intensifying_clip",
-   "name": "Intensifying Magazine",
-   "rank": 31,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_headshot_booster2",
-   "name": "Weakening Headshot",
-   "rank": 32,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_return_fire",
-   "name": "Return Fire",
-   "rank": 33,
-   "score": 85
-  },
-  {
-   "entityId": "upgrade_debuff_reducer",
-   "name": "Debuff Reducer",
    "rank": 34,
    "score": 85
   },
@@ -270,26 +270,26 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_bullet_resist_shredder",
-   "name": "Bullet Resist Shredder",
+   "entityId": "upgrade_intensifying_clip",
+   "name": "Intensifying Magazine",
    "rank": 36,
    "score": 85
   },
   {
-   "entityId": "upgrade_cardio_calibrator",
-   "name": "Enduring Speed",
+   "entityId": "upgrade_headshot_booster2",
+   "name": "Weakening Headshot",
    "rank": 37,
    "score": 85
   },
   {
-   "entityId": "upgrade_magic_slow",
-   "name": "Mystic Slow",
+   "entityId": "upgrade_arcane_surge",
+   "name": "Arcane Surge",
    "rank": 38,
    "score": 85
   },
   {
-   "entityId": "upgrade_spirit_sap",
-   "name": "Spirit Sap",
+   "entityId": "upgrade_return_fire",
+   "name": "Return Fire",
    "rank": 39,
    "score": 85
   },
@@ -300,20 +300,20 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_weapon_shielding",
-   "name": "Weapon Shielding",
-   "rank": 41,
-   "score": 85
-  },
-  {
    "entityId": "upgrade_melee_charge",
    "name": "Melee Charge",
-   "rank": 42,
+   "rank": 41,
    "score": 85
   },
   {
    "entityId": "upgrade_restorative_locket",
    "name": "Restorative Locket",
+   "rank": 42,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_spirit_sap",
+   "name": "Spirit Sap",
    "rank": 43,
    "score": 100
   }
@@ -324,701 +324,701 @@
     "id": "upgrade_active_reload",
     "name": "Active Reload",
     "passPositions": [
+     3,
+     15,
+     2,
      0,
-     1,
-     0,
-     0,
-     4
+     3
     ],
-    "borda": 0.023809523809523808,
+    "borda": 0.10952380952380954,
     "fit": {
      "expected": 4,
      "neutral": 1,
      "surprising": 0
     },
-    "perception": "Reload timing item",
+    "perception": "reload timing",
     "popularity": 5.15,
     "popularityObscurity": 0.7619047619047619,
     "spellingCost": 12,
     "spellingObscurity": 0.5595238095238095,
-    "key": 0.29880952380952375
+    "key": 0.35023809523809524
    },
    {
     "id": "upgrade_arcane_extension",
     "name": "Duration Extender",
     "passPositions": [
-     21,
-     26,
+     13,
+     40,
+     33,
      37,
-     24,
-     39
+     28
     ],
-    "borda": 0.7,
+    "borda": 0.7190476190476189,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Imbue duration",
+    "perception": "imbue duration",
     "popularity": 17.97,
     "popularityObscurity": 0.23809523809523808,
     "spellingCost": 16,
     "spellingObscurity": 0.9166666666666666,
-    "key": 0.5830952380952381
+    "key": 0.5945238095238095
    },
    {
     "id": "upgrade_arcane_surge",
     "name": "Arcane Surge",
     "passPositions": [
      22,
-     27,
-     27,
-     22,
-     35
+     41,
+     36,
+     38,
+     37
     ],
-    "borda": 0.6333333333333334,
+    "borda": 0.8285714285714285,
     "fit": {
      "expected": 0,
-     "neutral": 5,
-     "surprising": 0
+     "neutral": 4,
+     "surprising": 1
     },
-    "perception": "Dash then empowered ability",
+    "perception": "post-dash spirit buff",
     "popularity": 9.25,
     "popularityObscurity": 0.5714285714285714,
     "spellingCost": 11,
     "spellingObscurity": 0.47619047619047616,
-    "key": 0.599047619047619
+    "key": 0.7161904761904762
    },
    {
     "id": "upgrade_blitz_bullets",
     "name": "Swift Striker",
     "passPositions": [
-     31,
-     39,
+     2,
+     5,
      4,
-     38,
-     28
+     19,
+     39
     ],
-    "borda": 0.6666666666666666,
+    "borda": 0.32857142857142857,
     "fit": {
-     "expected": 0,
+     "expected": 1,
      "neutral": 4,
-     "surprising": 1
+     "surprising": 0
     },
-    "perception": "Fire rate item",
+    "perception": "fire rate",
     "popularity": 25.07,
     "popularityObscurity": 0.07142857142857142,
     "spellingCost": 12,
     "spellingObscurity": 0.5595238095238095,
-    "key": 0.47738095238095235
+    "key": 0.2745238095238095
    },
    {
     "id": "upgrade_bullet_resist_shredder",
     "name": "Bullet Resist Shredder",
     "passPositions": [
-     40,
+     27,
      38,
-     36,
-     34,
-     34
+     26,
+     39,
+     36
     ],
-    "borda": 0.8666666666666666,
+    "borda": 0.7904761904761906,
     "fit": {
      "expected": 0,
-     "neutral": 4,
-     "surprising": 1
+     "neutral": 5,
+     "surprising": 0
     },
-    "perception": "Spirit hits shred bullet resist",
+    "perception": "shred bullet resist",
     "popularity": 14.27,
     "popularityObscurity": 0.38095238095238093,
     "spellingCost": 3,
     "spellingObscurity": 0.011904761904761904,
-    "key": 0.6354761904761903
+    "key": 0.5897619047619047
    },
    {
     "id": "upgrade_cardio_calibrator",
     "name": "Enduring Speed",
     "passPositions": [
-     39,
-     36,
-     42,
-     35,
-     41
+     28,
+     37,
+     31,
+     28,
+     32
     ],
-    "borda": 0.919047619047619,
+    "borda": 0.7428571428571428,
     "fit": {
      "expected": 0,
-     "neutral": 4,
-     "surprising": 1
+     "neutral": 5,
+     "surprising": 0
     },
-    "perception": "Slow reduction item",
+    "perception": "slow resist",
     "popularity": 23.4,
     "popularityObscurity": 0.09523809523809523,
     "spellingCost": 13,
     "spellingObscurity": 0.6428571428571429,
-    "key": 0.6442857142857142
+    "key": 0.5385714285714286
    },
    {
     "id": "upgrade_cold_front",
     "name": "Cold Front",
     "passPositions": [
-     5,
-     3,
-     8,
-     6,
-     3
+     23,
+     18,
+     20,
+     7,
+     8
     ],
-    "borda": 0.11904761904761903,
+    "borda": 0.36190476190476195,
     "fit": {
-     "expected": 2,
-     "neutral": 3,
+     "expected": 1,
+     "neutral": 4,
      "surprising": 0
     },
-    "perception": "Ice blast slow active",
+    "perception": "ice blast active",
     "popularity": 7.82,
     "popularityObscurity": 0.6190476190476191,
     "spellingCost": 9,
     "spellingObscurity": 0.25,
-    "key": 0.28214285714285714
+    "key": 0.4278571428571429
    },
    {
     "id": "upgrade_containment",
     "name": "Slowing Hex",
     "passPositions": [
-     2,
-     0,
-     7,
-     5,
-     1
+     8,
+     8,
+     8,
+     6,
+     14
     ],
-    "borda": 0.07142857142857142,
+    "borda": 0.2095238095238095,
     "fit": {
-     "expected": 2,
-     "neutral": 3,
+     "expected": 0,
+     "neutral": 5,
      "surprising": 0
     },
-    "perception": "Slow and movement silence",
+    "perception": "slow and movement silence",
     "popularity": 12.78,
     "popularityObscurity": 0.42857142857142855,
     "spellingCost": 10,
     "spellingObscurity": 0.36904761904761907,
-    "key": 0.20833333333333331
+    "key": 0.29119047619047617
    },
    {
     "id": "upgrade_crackshot",
     "name": "Mystic Shot",
     "passPositions": [
-     28,
-     28,
-     31,
-     8,
-     37
+     30,
+     12,
+     16,
+     23,
+     30
     ],
-    "borda": 0.6285714285714286,
+    "borda": 0.5285714285714286,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Spirit bonus bullet",
+    "perception": "spirit bullet bonus",
     "popularity": 9.79,
     "popularityObscurity": 0.5238095238095238,
     "spellingCost": 10,
     "spellingObscurity": 0.36904761904761907,
-    "key": 0.5711904761904761
+    "key": 0.5111904761904762
    },
    {
     "id": "upgrade_debuff_reducer",
     "name": "Debuff Reducer",
     "passPositions": [
+     11,
+     24,
      29,
-     5,
-     39,
-     37,
-     40
+     26,
+     31
     ],
-    "borda": 0.7142857142857142,
+    "borda": 0.5761904761904761,
     "fit": {
-     "expected": 1,
-     "neutral": 4,
+     "expected": 0,
+     "neutral": 5,
      "surprising": 0
     },
-    "perception": "Debuff duration cut",
+    "perception": "reduces debuff duration",
     "popularity": 12.63,
     "popularityObscurity": 0.4523809523809524,
     "spellingCost": 13,
     "spellingObscurity": 0.6428571428571429,
-    "key": 0.6285714285714284
+    "key": 0.5457142857142857
    },
    {
     "id": "upgrade_fleetfoot_boots",
     "name": "Fleetfoot",
     "passPositions": [
-     11,
-     10,
      15,
-     7,
-     11
+     14,
+     11,
+     18,
+     13
     ],
-    "borda": 0.2571428571428572,
+    "borda": 0.3380952380952381,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Move while shooting active",
+    "perception": "move while shooting",
     "popularity": 9.1,
     "popularityObscurity": 0.5952380952380952,
     "spellingCost": 9,
     "spellingObscurity": 0.25,
-    "key": 0.3578571428571429
+    "key": 0.4064285714285715
    },
    {
     "id": "upgrade_guardian_ward",
     "name": "Guardian Ward",
     "passPositions": [
-     15,
-     14,
-     14,
-     29,
-     30
+     24,
+     23,
+     21,
+     20,
+     27
     ],
-    "borda": 0.48571428571428565,
+    "borda": 0.5476190476190477,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Barrier ally ward active",
+    "perception": "ally barrier active",
     "popularity": 4.91,
     "popularityObscurity": 0.7857142857142857,
     "spellingCost": 12,
     "spellingObscurity": 0.5595238095238095,
-    "key": 0.5830952380952381
+    "key": 0.6202380952380953
    },
    {
     "id": "upgrade_headshot_booster2",
     "name": "Weakening Headshot",
     "passPositions": [
-     10,
-     21,
-     12,
      26,
-     33
+     32,
+     15,
+     31,
+     35
     ],
-    "borda": 0.48571428571428565,
+    "borda": 0.661904761904762,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Headshot bullet resist shred",
+    "perception": "headshot bullet resist shred",
     "popularity": 5.24,
     "popularityObscurity": 0.7380952380952381,
     "spellingCost": 17,
     "spellingObscurity": 0.9523809523809523,
-    "key": 0.608095238095238
+    "key": 0.7138095238095239
    },
    {
     "id": "upgrade_healbane",
     "name": "Healbane",
     "passPositions": [
-     3,
      9,
      9,
-     4,
-     10
+     9,
+     10,
+     12
     ],
-    "borda": 0.16666666666666666,
+    "borda": 0.2333333333333333,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Anti-heal item",
+    "perception": "anti-heal",
     "popularity": 31,
     "popularityObscurity": 0.047619047619047616,
     "spellingCost": 8,
     "spellingObscurity": 0.17857142857142858,
-    "key": 0.13214285714285715
+    "key": 0.17214285714285713
    },
    {
     "id": "upgrade_healing_booster",
     "name": "Healing Booster",
     "passPositions": [
-     18,
+     34,
+     25,
      30,
-     41,
-     36,
-     36
+     40,
+     33
     ],
-    "borda": 0.7666666666666667,
+    "borda": 0.7714285714285714,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Healing amp vitality item",
+    "perception": "boosts healing",
     "popularity": 15.14,
     "popularityObscurity": 0.3333333333333333,
     "spellingCost": 14,
     "spellingObscurity": 0.7380952380952381,
-    "key": 0.6338095238095238
+    "key": 0.6366666666666666
    },
    {
     "id": "upgrade_health_stealing_magic",
     "name": "Spirit Lifesteal",
     "passPositions": [
-     6,
-     40,
      1,
-     39,
-     6
+     0,
+     1,
+     2,
+     0
     ],
-    "borda": 0.43809523809523804,
+    "borda": 0.019047619047619046,
     "fit": {
-     "expected": 0,
-     "neutral": 3,
-     "surprising": 2
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
     },
-    "perception": "Common spirit sustain item",
+    "perception": "spirit sustain stat item",
     "popularity": 20.88,
     "popularityObscurity": 0.14285714285714285,
     "spellingCost": 15,
     "spellingObscurity": 0.8452380952380952,
-    "key": 0.3902380952380952
+    "key": 0.1388095238095238
    },
    {
     "id": "upgrade_intensifying_clip",
     "name": "Intensifying Magazine",
     "passPositions": [
-     13,
-     23,
-     6,
-     16,
-     22
+     14,
+     26,
+     18,
+     12,
+     23
     ],
-    "borda": 0.38095238095238093,
+    "borda": 0.4428571428571429,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Ramping damage",
+    "perception": "ramping damage",
     "popularity": 2.24,
     "popularityObscurity": 0.9047619047619048,
     "spellingCost": 20,
     "spellingObscurity": 1,
-    "key": 0.5999999999999999
+    "key": 0.6371428571428572
    },
    {
     "id": "upgrade_kinetic_sash",
     "name": "Kinetic Dash",
     "passPositions": [
-     23,
-     2,
-     13,
+     21,
      28,
-     5
-    ],
-    "borda": 0.3380952380952381,
-    "fit": {
-     "expected": 2,
-     "neutral": 3,
-     "surprising": 0
-    },
-    "perception": "Dash-jump fire rate item",
-    "popularity": 4.55,
-    "popularityObscurity": 0.8095238095238095,
-    "spellingCost": 11,
-    "spellingObscurity": 0.47619047619047616,
-    "key": 0.4933333333333334
-   },
-   {
-    "id": "upgrade_long_range",
-    "name": "Long Range",
-    "passPositions": [
-     8,
-     18,
-     19,
-     15,
-     26
-    ],
-    "borda": 0.4095238095238095,
-    "fit": {
-     "expected": 0,
-     "neutral": 5,
-     "surprising": 0
-    },
-    "perception": "Distance weapon damage item",
-    "popularity": 7.54,
-    "popularityObscurity": 0.6666666666666666,
-    "spellingCost": 9,
-    "spellingObscurity": 0.25,
-    "key": 0.47071428571428564
-   },
-   {
-    "id": "upgrade_magic_shield",
-    "name": "Enchanter's Emblem",
-    "passPositions": [
-     35,
      13,
-     24,
-     18,
-     15
+     30,
+     7
     ],
-    "borda": 0.5,
-    "fit": {
-     "expected": 0,
-     "neutral": 4,
-     "surprising": 1
-    },
-    "perception": "Spirit and cooldown vest",
-    "popularity": 18.86,
-    "popularityObscurity": 0.19047619047619047,
-    "spellingCost": 10,
-    "spellingObscurity": 0.36904761904761907,
-    "key": 0.394047619047619
-   },
-   {
-    "id": "upgrade_magic_slow",
-    "name": "Mystic Slow",
-    "passPositions": [
-     27,
-     19,
-     40,
-     20,
-     24
-    ],
-    "borda": 0.619047619047619,
-    "fit": {
-     "expected": 0,
-     "neutral": 5,
-     "surprising": 0
-    },
-    "perception": "Spirit slow item",
-    "popularity": 3.47,
-    "popularityObscurity": 0.8571428571428571,
-    "spellingCost": 10,
-    "spellingObscurity": 0.36904761904761907,
-    "key": 0.6654761904761903
-   },
-   {
-    "id": "upgrade_magic_tempo",
-    "name": "Compress Cooldown",
-    "passPositions": [
-     20,
-     4,
-     38,
-     23,
-     38
-    ],
-    "borda": 0.5857142857142856,
+    "borda": 0.47142857142857136,
     "fit": {
      "expected": 1,
      "neutral": 4,
      "surprising": 0
     },
-    "perception": "Imbue cooldown",
+    "perception": "dash-jump fire rate",
+    "popularity": 4.55,
+    "popularityObscurity": 0.8095238095238095,
+    "spellingCost": 11,
+    "spellingObscurity": 0.47619047619047616,
+    "key": 0.5733333333333333
+   },
+   {
+    "id": "upgrade_long_range",
+    "name": "Long Range",
+    "passPositions": [
+     19,
+     16,
+     12,
+     25,
+     22
+    ],
+    "borda": 0.44761904761904764,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "distance damage bonus",
+    "popularity": 7.54,
+    "popularityObscurity": 0.6666666666666666,
+    "spellingCost": 9,
+    "spellingObscurity": 0.25,
+    "key": 0.49357142857142855
+   },
+   {
+    "id": "upgrade_magic_shield",
+    "name": "Enchanter's Emblem",
+    "passPositions": [
+     10,
+     4,
+     10,
+     13,
+     10
+    ],
+    "borda": 0.22380952380952382,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "spirit and CDR above health",
+    "popularity": 18.86,
+    "popularityObscurity": 0.19047619047619047,
+    "spellingCost": 10,
+    "spellingObscurity": 0.36904761904761907,
+    "key": 0.22833333333333333
+   },
+   {
+    "id": "upgrade_magic_slow",
+    "name": "Mystic Slow",
+    "passPositions": [
+     17,
+     20,
+     25,
+     34,
+     16
+    ],
+    "borda": 0.5333333333333333,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "slow on spirit damage",
+    "popularity": 3.47,
+    "popularityObscurity": 0.8571428571428571,
+    "spellingCost": 10,
+    "spellingObscurity": 0.36904761904761907,
+    "key": 0.614047619047619
+   },
+   {
+    "id": "upgrade_magic_tempo",
+    "name": "Compress Cooldown",
+    "passPositions": [
+     12,
+     39,
+     34,
+     36,
+     29
+    ],
+    "borda": 0.7142857142857142,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "imbue cooldown",
     "popularity": 31.12,
     "popularityObscurity": 0.023809523809523808,
     "spellingCost": 16,
     "spellingObscurity": 0.9166666666666666,
-    "key": 0.45023809523809516
+    "key": 0.5273809523809523
    },
    {
     "id": "upgrade_magic_vulnerability",
     "name": "Mystic Vulnerability",
     "passPositions": [
-     14,
+     5,
+     33,
      7,
-     10,
-     1,
-     2
+     16,
+     6
     ],
-    "borda": 0.1619047619047619,
+    "borda": 0.319047619047619,
     "fit": {
      "expected": 2,
      "neutral": 3,
      "surprising": 0
     },
-    "perception": "Spirit resist reduction",
+    "perception": "spirit resist reduction",
     "popularity": 23.24,
     "popularityObscurity": 0.11904761904761904,
     "spellingCost": 19,
     "spellingObscurity": 0.9761904761904762,
-    "key": 0.23047619047619045
+    "key": 0.32476190476190475
    },
    {
     "id": "upgrade_melee_charge",
     "name": "Melee Charge",
     "passPositions": [
+     41,
+     36,
+     41,
      42,
-     29,
-     32,
-     32,
-     42
+     40
     ],
-    "borda": 0.8428571428571429,
+    "borda": 0.9523809523809523,
     "fit": {
      "expected": 0,
-     "neutral": 3,
-     "surprising": 2
+     "neutral": 2,
+     "surprising": 3
     },
-    "perception": "Heavy melee boost",
+    "perception": "heavy melee boost",
     "popularity": 9.67,
     "popularityObscurity": 0.5476190476190477,
     "spellingCost": 11,
     "spellingObscurity": 0.47619047619047616,
-    "key": 0.7176190476190475
+    "key": 0.7833333333333333
    },
    {
     "id": "upgrade_pristine_emblem",
     "name": "Opening Rounds",
     "passPositions": [
-     24,
-     24,
-     20,
-     25,
-     27
+     29,
+     27,
+     27,
+     32,
+     38
     ],
-    "borda": 0.5714285714285714,
+    "borda": 0.7285714285714285,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Damage vs high health",
+    "perception": "damage vs high health",
     "popularity": 16.64,
     "popularityObscurity": 0.2857142857142857,
     "spellingCost": 13,
     "spellingObscurity": 0.6428571428571429,
-    "key": 0.49285714285714277
+    "key": 0.5871428571428572
    },
    {
     "id": "upgrade_quick_silver",
     "name": "Quicksilver Reload",
     "passPositions": [
-     33,
-     22,
-     26,
-     21,
-     21
+     40,
+     42,
+     40,
+     15,
+     25
     ],
-    "borda": 0.5857142857142857,
+    "borda": 0.7714285714285715,
     "fit": {
      "expected": 0,
-     "neutral": 4,
-     "surprising": 1
+     "neutral": 3,
+     "surprising": 2
     },
-    "perception": "Imbue reload spirit item",
+    "perception": "imbue reload",
     "popularity": 18.57,
     "popularityObscurity": 0.21428571428571427,
     "spellingCost": 3,
     "spellingObscurity": 0.011904761904761904,
-    "key": 0.4169047619047619
+    "key": 0.5283333333333333
    },
    {
     "id": "upgrade_rechargingbullets",
     "name": "Recharging Rush",
     "passPositions": [
-     38,
-     33,
-     21,
-     33,
-     29
+     39,
+     31,
+     37,
+     41,
+     24
     ],
-    "borda": 0.7333333333333334,
+    "borda": 0.819047619047619,
     "fit": {
      "expected": 0,
-     "neutral": 4,
-     "surprising": 1
+     "neutral": 3,
+     "surprising": 2
     },
-    "perception": "Charge refund weapon item",
+    "perception": "recharge ability charges",
     "popularity": 7.66,
     "popularityObscurity": 0.6428571428571429,
     "spellingCost": 14,
     "spellingObscurity": 0.7380952380952381,
-    "key": 0.7066666666666667
+    "key": 0.758095238095238
    },
    {
     "id": "upgrade_regenerating_bullet_shield",
     "name": "Battle Vest",
     "passPositions": [
-     17,
-     12,
-     25,
-     17,
-     16
+     4,
+     3,
+     6,
+     4,
+     4
     ],
-    "borda": 0.41428571428571426,
+    "borda": 0.1,
     "fit": {
-     "expected": 0,
-     "neutral": 5,
+     "expected": 3,
+     "neutral": 2,
      "surprising": 0
     },
-    "perception": "Healthy damage vest",
+    "perception": "bullet resist and damage",
     "popularity": 16.97,
     "popularityObscurity": 0.2619047619047619,
     "spellingCost": 10,
     "spellingObscurity": 0.36904761904761907,
-    "key": 0.364047619047619
+    "key": 0.17547619047619048
    },
    {
     "id": "upgrade_restorative_locket",
     "name": "Restorative Locket",
     "passPositions": [
-     37,
-     31,
-     23,
+     38,
      30,
-     31
+     39,
+     21,
+     42
     ],
-    "borda": 0.7238095238095239,
+    "borda": 0.8095238095238095,
     "fit": {
      "expected": 0,
-     "neutral": 4,
-     "surprising": 1
+     "neutral": 2,
+     "surprising": 3
     },
-    "perception": "Stack heal active",
+    "perception": "stack-based heal active",
     "popularity": 1.64,
     "popularityObscurity": 0.9523809523809523,
     "spellingCost": 6,
     "spellingObscurity": 0.08333333333333333,
-    "key": 0.7283333333333334
+    "key": 0.7797619047619048
    },
    {
     "id": "upgrade_return_fire",
     "name": "Return Fire",
     "passPositions": [
-     32,
-     15,
+     35,
      22,
-     11,
-     18
+     32,
+     27,
+     19
     ],
-    "borda": 0.4666666666666666,
+    "borda": 0.6428571428571429,
     "fit": {
      "expected": 0,
      "neutral": 4,
      "surprising": 1
     },
-    "perception": "Auto-fire retaliation",
+    "perception": "auto return shots",
     "popularity": 1.12,
     "popularityObscurity": 1,
     "spellingCost": 10,
     "spellingObscurity": 0.36904761904761907,
-    "key": 0.6169047619047618
+    "key": 0.7226190476190476
    },
    {
     "id": "upgrade_slowing_bullets",
     "name": "Slowing Bullets",
     "passPositions": [
-     12,
-     6,
-     30,
-     14,
-     23
+     18,
+     19,
+     19,
+     24,
+     5
     ],
     "borda": 0.40476190476190477,
     "fit": {
@@ -1026,7 +1026,7 @@
      "neutral": 4,
      "surprising": 0
     },
-    "perception": "Slow on bullets",
+    "perception": "bullet slow",
     "popularity": 3.34,
     "popularityObscurity": 0.8809523809523809,
     "spellingCost": 14,
@@ -1037,340 +1037,328 @@
     "id": "upgrade_soaring_spirit",
     "name": "Improved Spirit",
     "passPositions": [
-     41,
-     42,
+     6,
+     2,
      5,
-     42,
+     11,
      9
     ],
-    "borda": 0.661904761904762,
+    "borda": 0.15714285714285714,
     "fit": {
      "expected": 0,
-     "neutral": 2,
-     "surprising": 3
+     "neutral": 5,
+     "surprising": 0
     },
-    "perception": "Plain spirit stats",
+    "perception": "plain spirit power",
     "popularity": 44.97,
     "popularityObscurity": 0,
     "spellingCost": 14,
     "spellingObscurity": 0.7380952380952381,
-    "key": 0.470952380952381
+    "key": 0.16809523809523808
    },
    {
     "id": "upgrade_spirit_bubble",
     "name": "Spirit Shielding",
     "passPositions": [
-     26,
-     35,
      33,
-     13,
-     19
+     10,
+     22,
+     8,
+     17
     ],
-    "borda": 0.6,
+    "borda": 0.42857142857142855,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Anti-spirit barrier",
+    "perception": "barrier vs spirit",
     "popularity": 10.92,
     "popularityObscurity": 0.47619047619047616,
     "spellingCost": 12,
     "spellingObscurity": 0.5595238095238095,
-    "key": 0.5588095238095239
+    "key": 0.45595238095238094
    },
    {
     "id": "upgrade_spirit_sap",
     "name": "Spirit Sap",
     "passPositions": [
-     34,
-     25,
-     28,
-     10,
-     32
-    ],
-    "borda": 0.6142857142857142,
-    "fit": {
-     "expected": 0,
-     "neutral": 4,
-     "surprising": 1
-    },
-    "perception": "Spirit debuff active",
-    "popularity": 1.57,
-    "popularityObscurity": 0.9761904761904762,
-    "spellingCost": 9,
-    "spellingObscurity": 0.25,
-    "key": 0.6864285714285714
-   },
-   {
-    "id": "upgrade_split_shot",
-    "name": "Split Shot",
-    "passPositions": [
-     4,
-     11,
-     16,
-     9,
-     12
-    ],
-    "borda": 0.24761904761904763,
-    "fit": {
-     "expected": 0,
-     "neutral": 5,
-     "surprising": 0
-    },
-    "perception": "Multishot active",
-    "popularity": 1.81,
-    "popularityObscurity": 0.9285714285714286,
-    "spellingCost": 5,
-    "spellingObscurity": 0.047619047619047616,
-    "key": 0.4319047619047619
-   },
-   {
-    "id": "upgrade_suppressor",
-    "name": "Suppressor",
-    "passPositions": [
-     16,
-     20,
-     29,
-     19,
-     25
-    ],
-    "borda": 0.519047619047619,
-    "fit": {
-     "expected": 0,
-     "neutral": 5,
-     "surprising": 0
-    },
-    "perception": "Fire rate debuff spirit item",
-    "popularity": 5.27,
-    "popularityObscurity": 0.7142857142857143,
-    "spellingCost": 8,
-    "spellingObscurity": 0.17857142857142858,
-    "key": 0.5435714285714285
-   },
-   {
-    "id": "upgrade_tech_defense_shredders",
-    "name": "Spirit Shredder",
-    "passPositions": [
-     1,
-     8,
-     11,
-     2,
-     0
-    ],
-    "borda": 0.10476190476190475,
-    "fit": {
-     "expected": 2,
-     "neutral": 3,
-     "surprising": 0
-    },
-    "perception": "Spirit resist shred bullets",
-    "popularity": 5.29,
-    "popularityObscurity": 0.6904761904761905,
-    "spellingCost": 14,
-    "spellingObscurity": 0.7380952380952381,
-    "key": 0.3438095238095238
-   },
-   {
-    "id": "upgrade_titan_round",
-    "name": "Titanic Magazine",
-    "passPositions": [
-     30,
      37,
-     3,
-     41,
-     8
+     34,
+     38,
+     35,
+     34
     ],
-    "borda": 0.5666666666666667,
-    "fit": {
-     "expected": 0,
-     "neutral": 4,
-     "surprising": 1
-    },
-    "perception": "Big ammo item",
-    "popularity": 15.59,
-    "popularityObscurity": 0.30952380952380953,
-    "spellingCost": 7,
-    "spellingObscurity": 0.13095238095238096,
-    "key": 0.44595238095238093
-   },
-   {
-    "id": "upgrade_trophy_collector",
-    "name": "Trophy Collector",
-    "passPositions": [
-     36,
-     32,
-     18,
-     31,
-     14
-    ],
-    "borda": 0.6238095238095238,
-    "fit": {
-     "expected": 0,
-     "neutral": 4,
-     "surprising": 1
-    },
-    "perception": "Snowball stacking item",
-    "popularity": 19.16,
-    "popularityObscurity": 0.16666666666666666,
-    "spellingCost": 6,
-    "spellingObscurity": 0.08333333333333333,
-    "key": 0.4326190476190476
-   },
-   {
-    "id": "upgrade_vampire",
-    "name": "Bullet Lifesteal",
-    "passPositions": [
-     7,
-     41,
-     2,
-     40,
-     7
-    ],
-    "borda": 0.4619047619047619,
+    "borda": 0.8476190476190476,
     "fit": {
      "expected": 0,
      "neutral": 3,
      "surprising": 2
     },
-    "perception": "Basic weapon sustain",
+    "perception": "spirit debuff active",
+    "popularity": 1.57,
+    "popularityObscurity": 0.9761904761904762,
+    "spellingCost": 9,
+    "spellingObscurity": 0.25,
+    "key": 0.8264285714285714
+   },
+   {
+    "id": "upgrade_split_shot",
+    "name": "Split Shot",
+    "passPositions": [
+     16,
+     7,
+     17,
+     5,
+     15
+    ],
+    "borda": 0.2857142857142857,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "multishot active",
+    "popularity": 1.81,
+    "popularityObscurity": 0.9285714285714286,
+    "spellingCost": 5,
+    "spellingObscurity": 0.047619047619047616,
+    "key": 0.45476190476190476
+   },
+   {
+    "id": "upgrade_suppressor",
+    "name": "Suppressor",
+    "passPositions": [
+     36,
+     21,
+     24,
+     33,
+     21
+    ],
+    "borda": 0.6428571428571429,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "fire rate reduction",
+    "popularity": 5.27,
+    "popularityObscurity": 0.7142857142857143,
+    "spellingCost": 8,
+    "spellingObscurity": 0.17857142857142858,
+    "key": 0.6178571428571429
+   },
+   {
+    "id": "upgrade_tech_defense_shredders",
+    "name": "Spirit Shredder",
+    "passPositions": [
+     25,
+     17,
+     14,
+     14,
+     11
+    ],
+    "borda": 0.3857142857142857,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "spirit resist shred bullets",
+    "popularity": 5.29,
+    "popularityObscurity": 0.6904761904761905,
+    "spellingCost": 14,
+    "spellingObscurity": 0.7380952380952381,
+    "key": 0.5123809523809524
+   },
+   {
+    "id": "upgrade_titan_round",
+    "name": "Titanic Magazine",
+    "passPositions": [
+     7,
+     6,
+     3,
+     3,
+     2
+    ],
+    "borda": 0.09999999999999999,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "big ammo",
+    "popularity": 15.59,
+    "popularityObscurity": 0.30952380952380953,
+    "spellingCost": 7,
+    "spellingObscurity": 0.13095238095238096,
+    "key": 0.16595238095238096
+   },
+   {
+    "id": "upgrade_trophy_collector",
+    "name": "Trophy Collector",
+    "passPositions": [
+     42,
+     29,
+     42,
+     29,
+     41
+    ],
+    "borda": 0.8714285714285716,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "snowball souls item",
+    "popularity": 19.16,
+    "popularityObscurity": 0.16666666666666666,
+    "spellingCost": 6,
+    "spellingObscurity": 0.08333333333333333,
+    "key": 0.5811904761904763
+   },
+   {
+    "id": "upgrade_vampire",
+    "name": "Bullet Lifesteal",
+    "passPositions": [
+     0,
+     1,
+     0,
+     1,
+     1
+    ],
+    "borda": 0.014285714285714285,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "bullet sustain stat item",
     "popularity": 10.25,
     "popularityObscurity": 0.5,
     "spellingCost": 15,
     "spellingObscurity": 0.8452380952380952,
-    "key": 0.5116666666666667
+    "key": 0.2430952380952381
    },
    {
     "id": "upgrade_vex_barrier",
     "name": "Reactive Barrier",
     "passPositions": [
-     19,
-     16,
+     31,
      35,
-     3,
-     17
+     28,
+     22,
+     20
     ],
-    "borda": 0.42857142857142855,
+    "borda": 0.6476190476190476,
     "fit": {
-     "expected": 1,
-     "neutral": 4,
+     "expected": 0,
+     "neutral": 5,
      "surprising": 0
     },
-    "perception": "Anti-CC barrier",
+    "perception": "anti-CC barrier",
     "popularity": 13.09,
     "popularityObscurity": 0.40476190476190477,
     "spellingCost": 15,
     "spellingObscurity": 0.8452380952380952,
-    "key": 0.4630952380952381
+    "key": 0.5945238095238096
    },
    {
     "id": "upgrade_weapon_backstabber",
     "name": "Stalker",
     "passPositions": [
-     9,
+     20,
+     13,
+     35,
      17,
-     17,
-     27,
-     13
+     26
     ],
-    "borda": 0.3952380952380952,
+    "borda": 0.5285714285714286,
     "fit": {
      "expected": 0,
-     "neutral": 5,
-     "surprising": 0
+     "neutral": 4,
+     "surprising": 1
     },
-    "perception": "Close-range wound and speed item",
+    "perception": "close-range wound, move speed",
     "popularity": 14.49,
     "popularityObscurity": 0.35714285714285715,
     "spellingCost": 7,
     "spellingObscurity": 0.13095238095238096,
-    "key": 0.35738095238095235
+    "key": 0.43738095238095237
    },
    {
     "id": "upgrade_weapon_shielding",
     "name": "Weapon Shielding",
     "passPositions": [
-     25,
-     34,
-     34,
-     12,
-     20
+     32,
+     11,
+     23,
+     9,
+     18
     ],
-    "borda": 0.5952380952380952,
+    "borda": 0.4428571428571428,
     "fit": {
      "expected": 0,
      "neutral": 5,
      "surprising": 0
     },
-    "perception": "Anti-weapon barrier",
+    "perception": "barrier vs weapon damage",
     "popularity": 3.68,
     "popularityObscurity": 0.8333333333333334,
     "spellingCost": 15,
     "spellingObscurity": 0.8452380952380952,
-    "key": 0.6916666666666667
+    "key": 0.6002380952380952
    }
   ],
-  "passAgreement": 0.32624584717607974,
+  "passAgreement": 0.5136212624584717,
   "orderBeforeRefinement": [
+   "upgrade_health_stealing_magic",
+   "upgrade_titan_round",
+   "upgrade_soaring_spirit",
    "upgrade_healbane",
+   "upgrade_regenerating_bullet_shield",
+   "upgrade_magic_shield",
+   "upgrade_vampire",
+   "upgrade_blitz_bullets",
    "upgrade_containment",
    "upgrade_magic_vulnerability",
-   "upgrade_cold_front",
    "upgrade_active_reload",
-   "upgrade_tech_defense_shredders",
-   "upgrade_weapon_backstabber",
    "upgrade_fleetfoot_boots",
-   "upgrade_regenerating_bullet_shield",
-   "upgrade_health_stealing_magic",
-   "upgrade_magic_shield",
-   "upgrade_quick_silver",
+   "upgrade_cold_front",
+   "upgrade_weapon_backstabber",
    "upgrade_split_shot",
-   "upgrade_trophy_collector",
-   "upgrade_titan_round",
-   "upgrade_magic_tempo",
-   "upgrade_vex_barrier",
-   "upgrade_long_range",
-   "upgrade_soaring_spirit",
-   "upgrade_blitz_bullets",
-   "upgrade_pristine_emblem",
-   "upgrade_kinetic_sash",
-   "upgrade_vampire",
-   "upgrade_suppressor",
    "upgrade_spirit_bubble",
+   "upgrade_long_range",
    "upgrade_crackshot",
+   "upgrade_tech_defense_shredders",
+   "upgrade_magic_tempo",
+   "upgrade_quick_silver",
+   "upgrade_cardio_calibrator",
+   "upgrade_debuff_reducer",
+   "upgrade_kinetic_sash",
    "upgrade_slowing_bullets",
+   "upgrade_trophy_collector",
+   "upgrade_pristine_emblem",
+   "upgrade_bullet_resist_shredder",
    "upgrade_arcane_extension",
+   "upgrade_vex_barrier",
+   "upgrade_weapon_shielding",
+   "upgrade_magic_slow",
+   "upgrade_suppressor",
    "upgrade_guardian_ward",
-   "upgrade_arcane_surge",
+   "upgrade_healing_booster",
    "upgrade_intensifying_clip",
    "upgrade_headshot_booster2",
+   "upgrade_arcane_surge",
    "upgrade_return_fire",
-   "upgrade_debuff_reducer",
-   "upgrade_healing_booster",
-   "upgrade_bullet_resist_shredder",
-   "upgrade_cardio_calibrator",
-   "upgrade_magic_slow",
-   "upgrade_spirit_sap",
-   "upgrade_weapon_shielding",
    "upgrade_rechargingbullets",
+   "upgrade_restorative_locket",
    "upgrade_melee_charge",
-   "upgrade_restorative_locket"
+   "upgrade_spirit_sap"
   ],
   "pairwise": [
    {
-    "a": "upgrade_weapon_shielding",
-    "b": "upgrade_rechargingbullets",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_weapon_shielding"
-   },
-   {
-    "a": "upgrade_weapon_shielding",
-    "b": "upgrade_melee_charge",
-    "purpose": "rare-contenders",
-    "rarer": "upgrade_melee_charge"
-   },
-   {
-    "a": "upgrade_weapon_shielding",
+    "a": "upgrade_rechargingbullets",
     "b": "upgrade_restorative_locket",
     "purpose": "rare-contenders",
     "rarer": "upgrade_restorative_locket"
@@ -1383,86 +1371,93 @@
    },
    {
     "a": "upgrade_rechargingbullets",
-    "b": "upgrade_restorative_locket",
+    "b": "upgrade_spirit_sap",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_restorative_locket",
+    "b": "upgrade_melee_charge",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_restorative_locket",
+    "b": "upgrade_spirit_sap",
     "purpose": "rare-contenders",
     "rarer": "upgrade_restorative_locket"
    },
    {
     "a": "upgrade_melee_charge",
-    "b": "upgrade_restorative_locket",
+    "b": "upgrade_spirit_sap",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "upgrade_melee_charge"
+   },
+   {
+    "a": "upgrade_soaring_spirit",
+    "b": "upgrade_healbane",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_healbane"
    },
    {
     "a": "upgrade_magic_vulnerability",
-    "b": "upgrade_cold_front",
+    "b": "upgrade_active_reload",
     "purpose": "tier-boundary",
     "rarer": "upgrade_magic_vulnerability"
    },
    {
-    "a": "upgrade_health_stealing_magic",
-    "b": "upgrade_magic_shield",
+    "a": "upgrade_debuff_reducer",
+    "b": "upgrade_kinetic_sash",
     "purpose": "tier-boundary",
+    "rarer": "upgrade_debuff_reducer"
+   },
+   {
+    "a": "upgrade_spirit_sap",
+    "b": "upgrade_melee_charge",
+    "purpose": "review",
+    "rarer": "upgrade_spirit_sap"
+   },
+   {
+    "a": "upgrade_pristine_emblem",
+    "b": "upgrade_kinetic_sash",
+    "purpose": "review",
     "rarer": null
-   },
-   {
-    "a": "upgrade_vampire",
-    "b": "upgrade_suppressor",
-    "purpose": "tier-boundary",
-    "rarer": "upgrade_suppressor"
-   },
-   {
-    "a": "upgrade_healbane",
-    "b": "upgrade_restorative_locket",
-    "purpose": "review",
-    "rarer": "upgrade_restorative_locket"
-   },
-   {
-    "a": "upgrade_magic_vulnerability",
-    "b": "upgrade_healbane",
-    "purpose": "review",
-    "rarer": "upgrade_healbane"
-   },
-   {
-    "a": "upgrade_health_stealing_magic",
-    "b": "upgrade_magic_shield",
-    "purpose": "review",
-    "rarer": "upgrade_health_stealing_magic"
-   },
-   {
-    "a": "upgrade_regenerating_bullet_shield",
-    "b": "upgrade_spirit_bubble",
-    "purpose": "review",
-    "rarer": "upgrade_spirit_bubble"
    }
   ],
   "review": [
    {
-    "name": "Healbane",
-    "compareWith": "Restorative Locket",
+    "name": "Titanic Magazine",
+    "compareWith": "Spirit Lifesteal",
     "claim": "should_be_more_obscure",
-    "reason": "Healbane is a niche anti-heal item that few players would name first for a price question. It should not tie for the most obvious slot with Slowing Hex and Cold Front, which are higher-profile purchases.",
-    "outcome": "rejected-by-comparison"
+    "reason": "Spirit Lifesteal is a very common, well-known purchase, so it should be the most obvious answer. Titanic Magazine is a solid item but less commonly recalled by cost, so it should score above Spirit Lifesteal.",
+    "outcome": "ignored-invalid"
    },
    {
-    "name": "Mystic Vulnerability",
+    "name": "Slowing Hex",
     "compareWith": "Healbane",
+    "claim": "should_be_more_obscure",
+    "reason": "Slowing Hex is a niche, rarely bought spirit item with a forgettable cost, so it should be rarer than Healbane. Healbane is widely known as the anti-heal staple and comes to mind more easily.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Fleetfoot",
+    "compareWith": "Cold Front",
     "claim": "should_be_more_obvious",
-    "reason": "Mystic Vulnerability is a widely bought and well-known spirit damage amp item that players see constantly. It is more recognizable than Healbane and should score at least as obvious.",
+    "reason": "Fleetfoot is a well-known movement item that experienced players see and buy often, while Cold Front is a more situational pick. Fleetfoot should score lower than Cold Front.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Spirit Sap",
+    "compareWith": "Melee Charge",
+    "claim": "should_be_more_obscure",
+    "reason": "Melee Charge is a well-known, distinctive item with a memorable name and mechanic, so it is not clearly rarer than the other low-recognition items. Spirit Sap is a more forgettable item and should take the 100-point spot.",
     "outcome": "applied"
    },
    {
-    "name": "Spirit Lifesteal",
-    "compareWith": "Enchanter's Emblem",
-    "claim": "should_be_more_obscure",
-    "reason": "Spirit Lifesteal is a plain, generic stat item that is easy to forget. It is not clearly more memorable than Enchanter's Emblem or Improved Spirit, so 30 points looks too obvious.",
-    "outcome": "applied"
-   },
-   {
-    "name": "Battle Vest",
-    "compareWith": "Spirit Shielding",
-    "claim": "should_be_more_obscure",
-    "reason": "Battle Vest is a basic, forgettable stat item with no distinctive mechanic. It is no more memorable than the 85-point items, so placing it at 30 points is too obvious.",
+    "name": "Opening Rounds",
+    "compareWith": "Kinetic Dash",
+    "claim": "should_be_more_obvious",
+    "reason": "Kinetic Dash is a fairly obscure, rarely bought movement item and is less likely to come to mind than Opening Rounds. Opening Rounds is a cheaper-tier staple that gets recalled easily, so the two should swap, making Kinetic Dash the rarer answer.",
     "outcome": "rejected-by-comparison"
    }
   ]

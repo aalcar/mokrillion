@@ -20,7 +20,7 @@ export const config = {
   /** Shuffled listwise ranking passes per question. */
   rankingPasses: 5,
   /** Weights of the final rank key; see README "Scoring". */
-  weights: { llm: 0.6, popularity: 0.3, spelling: 0.1 },
+  weights: { llm: 0.55, popularity: 0.4, spelling: 0.05 },
   /** How many of the rarest candidates get round-robin pairwise comparisons. */
   rareContenders: 4,
   maxReviewChallenges: 5,
@@ -28,5 +28,5 @@ export const config = {
   tierShares: { 10: 0.08, 30: 0.17, 60: 0.3 },
 
   /** Bump when the scoring algorithm or its parameters change. */
-  scoringVersion: "4",
+  scoringVersion: "5",
 };
