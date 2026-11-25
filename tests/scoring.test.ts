@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { config } from "../src/config.ts";
-import { deterministicCandidates } from "../src/generation/templates.ts";
+import { deterministicCandidates, nameLetters } from "../src/generation/templates.ts";
 import { validateSemantic } from "../src/generation/semantic.ts";
 import type { Ask, AskOptions } from "../src/llm.ts";
 import { loadKnowledge } from "../src/knowledge/queries.ts";
@@ -161,4 +161,16 @@ test("review challenges backed by gameplay data are applied without a comparison
 
 test("item summaries name upgrade paths", () => {
   assert.match(summary(kb, kb.findByName("Tesla Bullets")!), /Upgrades into: Capacitor\./);
+});
+
+test("name questions: letters ignore 'The' and symbols, double letters stay within a word", () => {
+  assert.equal(nameLetters("The Doorman"), "doorman");
+  assert.equal(nameLetters("Mo & Krill"), "mokrill");
+  const qs = deterministicCandidates(kb);
+  const ids = (sig: string) => qs.find((q) => q.signature === sig)?.answerIds ?? [];
+  assert.ok(ids("name:hero:double-letter").includes(kb.findByName("Billy")!.id));
+  assert.ok(ids("name:hero:double-letter").includes(kb.findByName("The Doorman")!.id));
+  for (const id of ids("name:item:double-letter")) {
+    assert.ok(kb.get(id)!.name.toLowerCase().split(/[^a-z]+/).some((w) => /([a-z])\1/.test(w)), kb.get(id)!.name);
+  }
 });

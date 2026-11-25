@@ -46,6 +46,41 @@ function threshold(values: number[], target: number, direction: "high" | "low"):
   return sorted[Math.min(target, sorted.length) - 1];
 }
 
+/** Letters of a name for spelling questions: lowercase a-z only, leading "The " dropped ("The Doorman" -> "doorman"). */
+export function nameLetters(name: string): string {
+  return name.toLowerCase().replace(/^the /, "").replace(/[^a-z]/g, "");
+}
+
+/** Questions about how names are spelled. Pools are kept small enough to be interesting. */
+function nameQuestions(kb: Knowledge): Omit<CandidateQuestion, "validation">[] {
+  const out: Omit<CandidateQuestion, "validation">[] = [];
+  for (const type of ["hero", "item"] as const) {
+    // Only hero names have a leading "The" (The Doorman) or symbols (Mo & Krill).
+    const rule = type === "hero" ? ' Ignore a leading "The" and any symbols.' : "";
+    const pool = type === "hero" ? kb.heroes : kb.items;
+    const noun = type === "hero" ? "a hero" : "an item";
+    const maxContains = type === "hero" ? 15 : 25;
+    const q = (sig: string, prompt: string, match: (letters: string, name: string) => boolean) =>
+      out.push({ signature: `name:${type}:${sig}`, prompt, category: "name-trivia", entityType: type,
+        answerIds: pool.filter((e) => match(nameLetters(e.name), e.name)).map((e) => e.id) });
+    for (const c of "abcdefghijklmnopqrstuvwxyz") {
+      const C = c.toUpperCase();
+      q(`starts:${c}`, `Name ${noun} whose name starts with the letter ${C}.${rule}`, (l) => l.startsWith(c));
+      q(`ends:${c}`, `Name ${noun} whose name ends with the letter ${C}.${rule}`, (l) => l.endsWith(c));
+      const contains = pool.filter((e) => nameLetters(e.name).includes(c)).length;
+      if (contains <= maxContains) q(`contains:${c}`, `Name ${noun} whose name contains the letter ${C}.`, (l) => l.includes(c));
+    }
+    q("double-letter", `Name ${noun} whose name has the same letter twice in a row within a word (like the "ll" in "Billy").`,
+      (_, name) => name.toLowerCase().split(/[^a-z]+/).some((w) => /([a-z])\1/.test(w)));
+    const lengths = pool.map((e) => nameLetters(e.name).length).sort((a, b) => a - b);
+    const short = lengths[Math.min(9, lengths.length - 1)];
+    q(`short:${short}`, `Name ${noun} whose name has ${short} letters or fewer (letters only, not spaces or symbols).${type === "hero" ? ' Ignore a leading "The".' : ""}`, (l) => l.length <= short);
+    if (type === "hero") q("multi-word", "Name a hero whose name is more than one word.", (_, name) => name.trim().split(/\s+/).length > 1);
+    else q("one-word", "Name an item whose name is a single word.", (_, name) => !/\s/.test(name.trim()));
+  }
+  return out;
+}
+
 export function deterministicCandidates(kb: Knowledge): CandidateQuestion[] {
   const out: CandidateQuestion[] = [];
   const add = (q: Omit<CandidateQuestion, "validation">, criterion: string) =>
@@ -95,6 +130,8 @@ export function deterministicCandidates(kb: Knowledge): CandidateQuestion[] {
     (x) => `Name a hero whose base clip size is at least ${x} (no items or boons).`);
   heroThreshold("clipSize", (h) => h.attributes.weapon.clipSize, "low",
     (x) => `Name a hero whose base clip size is ${x} or fewer (no items or boons).`);
+
+  for (const q of nameQuestions(kb)) add(q, `name spelling rule: ${q.signature}`);
 
   return out.filter((q) => q.answerIds.length >= config.minPool && q.answerIds.length <= config.maxPool);
 }
