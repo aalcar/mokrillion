@@ -21,10 +21,10 @@
    "criterion": "in wiki category \"Heroes with spreadshot weapons\""
   }
  },
- "knowledgeVersion": "2026-11-24-3a226cba",
- "scoringVersion": "2",
+ "knowledgeVersion": "2026-11-24-793c0d03",
+ "scoringVersion": "3",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T02:13:36.970Z",
+ "generatedAt": "2026-11-25T02:38:02.042Z",
  "answers": [
   {
    "entityId": "hero_atlas",
@@ -39,38 +39,38 @@
    "score": 30
   },
   {
-   "entityId": "hero_werewolf",
-   "name": "Silver",
+   "entityId": "hero_shiv",
+   "name": "Shiv",
    "rank": 3,
    "score": 30
   },
   {
-   "entityId": "hero_shiv",
-   "name": "Shiv",
+   "entityId": "hero_drifter",
+   "name": "Drifter",
    "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_werewolf",
+   "name": "Silver",
+   "rank": 5,
    "score": 60
   },
   {
    "entityId": "hero_nano",
    "name": "Calico",
-   "rank": 5,
-   "score": 60
-  },
-  {
-   "entityId": "hero_drifter",
-   "name": "Drifter",
    "rank": 6,
    "score": 60
   },
   {
-   "entityId": "hero_yamato",
-   "name": "Yamato",
+   "entityId": "hero_ratking",
+   "name": "Rat King",
    "rank": 7,
    "score": 85
   },
   {
-   "entityId": "hero_krill",
-   "name": "Mo & Krill",
+   "entityId": "hero_yamato",
+   "name": "Yamato",
    "rank": 8,
    "score": 85
   },
@@ -81,8 +81,8 @@
    "score": 85
   },
   {
-   "entityId": "hero_ratking",
-   "name": "Rat King",
+   "entityId": "hero_krill",
+   "name": "Mo & Krill",
    "rank": 10,
    "score": 100
   }
@@ -106,11 +106,11 @@
      "surprising": 0
     },
     "perception": "shotgun tank brawler with shoulder charge",
-    "popularity": null,
-    "popularityObscurity": null,
+    "popularity": 40,
+    "popularityObscurity": 0.2222222222222222,
     "spellingCost": 6,
     "spellingObscurity": 0.5555555555555556,
-    "key": 0.0617283950617284
+    "key": 0.12222222222222223
    },
    {
     "id": "hero_baba",
@@ -129,11 +129,11 @@
      "surprising": 3
     },
     "perception": "mystic with witchy abilities",
-    "popularity": null,
-    "popularityObscurity": null,
+    "popularity": 13.81,
+    "popularityObscurity": 1,
     "spellingCost": 4,
     "spellingObscurity": 0.16666666666666666,
-    "key": 0.6703703703703705
+    "key": 0.7566666666666666
    },
    {
     "id": "hero_drifter",
@@ -152,11 +152,11 @@
      "surprising": 3
     },
     "perception": "stalking melee-ish assassin with mark",
-    "popularity": null,
-    "popularityObscurity": null,
+    "popularity": 45.58,
+    "popularityObscurity": 0,
     "spellingCost": 7,
     "spellingObscurity": 0.9444444444444444,
-    "key": 0.5987654320987655
+    "key": 0.42777777777777776
    },
    {
     "id": "hero_krill",
@@ -175,11 +175,11 @@
      "surprising": 4
     },
     "perception": "burrowing brawler with sand blast",
-    "popularity": null,
-    "popularityObscurity": null,
+    "popularity": 21.69,
+    "popularityObscurity": 0.6666666666666666,
     "spellingCost": 2,
     "spellingObscurity": 0,
-    "key": 0.7308641975308642
+    "key": 0.6933333333333332
    },
    {
     "id": "hero_nano",
@@ -198,11 +198,11 @@
      "surprising": 2
     },
     "perception": "cat assassin with leaping slash",
-    "popularity": null,
-    "popularityObscurity": null,
+    "popularity": 21.21,
+    "popularityObscurity": 0.7777777777777778,
     "spellingCost": 6,
     "spellingObscurity": 0.5555555555555556,
-    "key": 0.5555555555555556
+    "key": 0.6222222222222222
    },
    {
     "id": "hero_ratking",
@@ -221,11 +221,11 @@
      "surprising": 2
     },
     "perception": "rat swarm summoner brawler",
-    "popularity": null,
-    "popularityObscurity": null,
+    "popularity": 23.03,
+    "popularityObscurity": 0.5555555555555556,
     "spellingCost": 7,
     "spellingObscurity": 0.9444444444444444,
-    "key": 0.6777777777777779
+    "key": 0.6477777777777778
    },
    {
     "id": "hero_shiv",
@@ -244,11 +244,11 @@
      "surprising": 2
     },
     "perception": "knife bleed fighter, shotgun-like pistol",
-    "popularity": null,
-    "popularityObscurity": null,
+    "popularity": 40.99,
+    "popularityObscurity": 0.1111111111111111,
     "spellingCost": 4,
     "spellingObscurity": 0.16666666666666666,
-    "key": 0.4333333333333333
+    "key": 0.32999999999999996
    },
    {
     "id": "hero_synth",
@@ -267,11 +267,11 @@
      "surprising": 0
     },
     "perception": "teleporting assassin with shotgun-like weapon",
-    "popularity": null,
-    "popularityObscurity": null,
+    "popularity": 25.48,
+    "popularityObscurity": 0.4444444444444444,
     "spellingCost": 6,
     "spellingObscurity": 0.5555555555555556,
-    "key": 0.2
+    "key": 0.28222222222222226
    },
    {
     "id": "hero_werewolf",
@@ -290,11 +290,11 @@
      "surprising": 0
     },
     "perception": "werewolf brawler with shotgun",
-    "popularity": null,
-    "popularityObscurity": null,
+    "popularity": 19.63,
+    "popularityObscurity": 0.8888888888888888,
     "spellingCost": 6,
     "spellingObscurity": 0.5555555555555556,
-    "key": 0.2395061728395062
+    "key": 0.4422222222222222
    },
    {
     "id": "hero_yamato",
@@ -313,41 +313,29 @@
      "surprising": 4
     },
     "perception": "sword slash assassin",
-    "popularity": null,
-    "popularityObscurity": null,
+    "popularity": 26.56,
+    "popularityObscurity": 0.3333333333333333,
     "spellingCost": 6,
     "spellingObscurity": 0.5555555555555556,
-    "key": 0.8320987654320988
+    "key": 0.6755555555555555
    }
   ],
   "passAgreement": 0.5555555555555556,
   "orderBeforeRefinement": [
    "hero_atlas",
    "hero_synth",
-   "hero_werewolf",
    "hero_shiv",
-   "hero_nano",
    "hero_drifter",
-   "hero_baba",
+   "hero_werewolf",
+   "hero_nano",
    "hero_ratking",
+   "hero_yamato",
    "hero_krill",
-   "hero_yamato"
+   "hero_baba"
   ],
   "pairwise": [
    {
-    "a": "hero_baba",
-    "b": "hero_ratking",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_baba",
-    "b": "hero_krill",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_baba",
+    "a": "hero_ratking",
     "b": "hero_yamato",
     "purpose": "rare-contenders",
     "rarer": null
@@ -360,45 +348,57 @@
    },
    {
     "a": "hero_ratking",
-    "b": "hero_yamato",
+    "b": "hero_baba",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_yamato",
+    "b": "hero_krill",
+    "purpose": "rare-contenders",
+    "rarer": "hero_krill"
+   },
+   {
+    "a": "hero_yamato",
+    "b": "hero_baba",
     "purpose": "rare-contenders",
     "rarer": null
    },
    {
     "a": "hero_krill",
-    "b": "hero_yamato",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_atlas",
-    "b": "hero_synth",
-    "purpose": "tier-boundary",
-    "rarer": "hero_synth"
-   },
-   {
-    "a": "hero_werewolf",
-    "b": "hero_shiv",
-    "purpose": "tier-boundary",
-    "rarer": "hero_shiv"
-   },
-   {
-    "a": "hero_atlas",
-    "b": "hero_synth",
-    "purpose": "review",
-    "rarer": "hero_synth"
-   },
-   {
-    "a": "hero_yamato",
     "b": "hero_baba",
+    "purpose": "rare-contenders",
+    "rarer": "hero_krill"
+   },
+   {
+    "a": "hero_atlas",
+    "b": "hero_synth",
+    "purpose": "tier-boundary",
+    "rarer": "hero_synth"
+   },
+   {
+    "a": "hero_shiv",
+    "b": "hero_drifter",
+    "purpose": "tier-boundary",
+    "rarer": "hero_drifter"
+   },
+   {
+    "a": "hero_atlas",
+    "b": "hero_synth",
     "purpose": "review",
-    "rarer": "hero_baba"
+    "rarer": "hero_synth"
+   },
+   {
+    "a": "hero_synth",
+    "b": "hero_atlas",
+    "purpose": "review",
+    "rarer": "hero_synth"
    },
    {
     "a": "hero_krill",
     "b": "hero_ratking",
     "purpose": "review",
-    "rarer": "hero_ratking"
+    "rarer": null
    }
   ],
   "review": [
@@ -406,22 +406,22 @@
     "name": "Abrams",
     "compareWith": "Pocket",
     "claim": "should_be_more_obscure",
-    "reason": "Abrams' Heavy Fists is a shotgun-style spread weapon, but he is better known for his melee-style tanking, so he is not the first hero most players name. Pocket's Rapid Fire Shotgun-type weapon is more strongly tied to spreadshot, so Pocket and Abrams should swap.",
+    "reason": "Abrams' shotgun is a short-range spread weapon, but players mostly associate him with his melee-range brawling, Shoulder Charge and Siphon Life. Pocket's Enchanter's Satchel shotgun is more of a defining trait, and Pocket is probably the first hero many players think of for a spreadshot. Abrams should not be the single most obvious answer.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Yamato",
-    "compareWith": "Baba",
+    "name": "Pocket",
+    "compareWith": "Abrams",
     "claim": "should_be_more_obvious",
-    "reason": "Yamato's Shadow Transformation and Flying Strike are the abilities players associate with her, but her shotgun-like spread weapon is well known to experienced players. She should be at least as obvious as Baba, whose weapon is less distinctive.",
-    "outcome": "applied"
+    "reason": "Pocket's weapon is a clear spreadshot, and he is often described as the shotgun hero in the game. He should be at least as obvious as Abrams, so they should swap or tie.",
+    "outcome": "rejected-by-comparison"
    },
    {
     "name": "Mo & Krill",
     "compareWith": "Rat King",
     "claim": "should_be_more_obvious",
-    "reason": "Mo & Krill are a high-profile, widely played duo and are likely to come to mind. Rat King is a rarer pick, so Rat King should be the 100-point answer.",
-    "outcome": "applied"
+    "reason": "Mo & Krill is not a spreadshot hero in the usual sense, but if it counts, it is a well-known hero with a distinctive kit. The 100-point slot goes to a hero that is not even clearly a spreadshot, and it is likely more recognizable than Rat King, who is a niche, newer pick. Rat King (a less played hero with a shotgun-like weapon) is the rarer answer here.",
+    "outcome": "rejected-by-comparison"
    }
   ]
  }

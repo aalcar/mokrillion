@@ -17,9 +17,9 @@ export interface CandidateSignals {
   passPositions: number[];
   /** Mean normalized pass position, 0 = most obvious, 1 = most obscure. */
   borda: number;
-  /** Mean item pick rate (%) from the wiki; null for heroes / missing data. */
-  popularity: number | null;
-  popularityObscurity: number | null;
+  /** Hero pick rate or item purchase rate (%) from the Deadlock API. */
+  popularity: number;
+  popularityObscurity: number;
   spellingCost: number;
   spellingObscurity: number;
   /** How each pass judged the answer's fit with what players mainly know it for. */
@@ -129,16 +129,14 @@ export function kendallTau(a: string[], b: string[]): number {
 export function aggregate(entities: Entity[], passResults: PassResult[], weights = config.weights): CandidateSignals[] {
   const passes = passResults.map((p) => p.ranking);
   const n = entities.length;
-  const pops = entities.map((e) => (e.type === "item" ? (e.attributes.popularity ?? 0) : null));
-  const hasPop = pops.every((p) => p !== null);
-  const popObs = hasPop ? percentiles(pops.map((p) => -p!)) : null; // more bought -> less obscure
+  const pops = entities.map((e) => e.attributes.popularity ?? 0);
+  const popObs = percentiles(pops.map((p) => -p)); // more played/bought -> less obscure
   const spell = entities.map(spellingCost);
   const spellObs = percentiles(spell);
   return entities.map((e, i) => {
     const passPositions = passes.map((p) => p.indexOf(e.id));
     const borda = passPositions.reduce((s, p) => s + p / (n - 1), 0) / passes.length;
-    const parts: [number, number][] = [[weights.llm, borda], [weights.spelling, spellObs[i]]];
-    if (popObs) parts.push([weights.popularity, popObs[i]]);
+    const parts: [number, number][] = [[weights.llm, borda], [weights.spelling, spellObs[i]], [weights.popularity, popObs[i]]];
     const key = parts.reduce((s, [w, v]) => s + w * v, 0) / parts.reduce((s, [w]) => s + w, 0);
     const fit = Object.fromEntries(FITS.map((f) => [f, 0])) as Record<Fit, number>;
     for (const p of passResults) {
@@ -148,7 +146,7 @@ export function aggregate(entities: Entity[], passResults: PassResult[], weights
     return {
       id: e.id, name: e.name, passPositions, borda, fit,
       perception: passResults[0]?.perceptions.get(e.id)?.perception ?? "",
-      popularity: pops[i], popularityObscurity: popObs?.[i] ?? null,
+      popularity: pops[i], popularityObscurity: popObs[i],
       spellingCost: spell[i], spellingObscurity: spellObs[i], key,
     };
   });

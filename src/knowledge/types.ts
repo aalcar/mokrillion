@@ -72,6 +72,8 @@ export interface HeroAttributes {
   /** Wiki categories such as "Heroes with spin up weapons". */
   categories: string[];
   abilities: Ability[];
+  /** % of matches (Deadlock API, experienced-rank matches) that include this hero; null if absent. */
+  popularity: number | null;
 }
 
 export type ItemSlot = "Weapon" | "Vitality" | "Spirit";
@@ -100,11 +102,7 @@ export interface ItemAttributes {
   description: string;
   sections: ItemSection[];
   statusEffects: string[];
-  /**
-   * Mean purchase rate (percent) across all heroes and game phases in the wiki's
-   * ItemPopularity data; absent hero/phase entries count as 0. Null if the item is
-   * missing from that data entirely.
-   */
+  /** % of players (Deadlock API, experienced-rank matches) who bought it; null if absent from the stats. */
   popularity: number | null;
 }
 

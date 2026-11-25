@@ -10,7 +10,9 @@ export interface Raw {
   abilityCards: Record<string, any>;
   itemCards: Record<string, any>;
   lang: Record<string, string>;
-  popularity: Record<string, any>;
+  /** Deadlock API analytics rows: { hero_id, matches } and { item_id, matches }. */
+  heroStats: { hero_id: number; matches: number }[];
+  itemStats: { item_id: number; matches: number }[];
   latestUpdate: { latest_update: { year: number; month: string; day: number } };
   categories: Record<string, string[]>;
   redirects: Record<string, string[]>;
@@ -115,16 +117,17 @@ function searchAliases(lang: Record<string, string>, key: string): string[] {
   return (lang[`${key}_search`] ?? "").split(/\s+/).filter(isAbbreviation);
 }
 
-function itemPopularity(popularity: Record<string, any>): Map<string, number> {
-  const sums = new Map<string, number>();
-  let slots = 0;
-  for (const hero of Object.values<any>(popularity)) {
-    for (const phase of Object.values<any>(hero.phases ?? {})) {
-      slots++;
-      for (const [item, [pickRate]] of Object.entries<any>(phase)) sums.set(item, (sums.get(item) ?? 0) + pickRate);
-    }
-  }
-  return new Map([...sums].map(([k, v]) => [k, Math.round((v / slots) * 100) / 100]));
+/**
+ * Pick and purchase rates in percent, keyed by numeric game id.
+ * Hero rows count hero-matches, so total player-matches = their sum and matches = sum / 12.
+ */
+function gameplayRates(raw: Raw) {
+  const playerMatches = raw.heroStats.reduce((s, h) => s + h.matches, 0);
+  const pct = (x: number, of: number) => (of ? Math.round((x / of) * 10000) / 100 : 0);
+  return {
+    hero: new Map(raw.heroStats.map((h) => [h.hero_id, pct(h.matches, playerMatches / 12)])),
+    item: new Map(raw.itemStats.map((i) => [i.item_id, pct(i.matches, playerMatches)])),
+  };
 }
 
 export function normalize(raw: Raw): KnowledgeFile {
@@ -137,6 +140,7 @@ export function normalize(raw: Raw): KnowledgeFile {
   const entities: Entity[] = [];
   const titleOf = new Map<string, string>(); // entity id -> wiki page title
 
+  const rates = gameplayRates(raw);
   for (const [key, h] of Object.entries<any>(raw.heroData)) {
     if (h.IsDisabled || !h.Name || !heroPages.has(h.Name)) continue;
     const cards = raw.abilityCards[key] ?? {};
@@ -183,13 +187,13 @@ export function normalize(raw: Raw): KnowledgeFile {
         levelScaling: h.LevelScaling ?? {},
         categories: traitCats.filter((c) => raw.categories[c].includes(h.Name)),
         abilities,
+        popularity: rates.hero.get(h.Id) ?? null,
       },
     };
     entities.push(hero);
     titleOf.set(key, h.Name);
   }
 
-  const pop = itemPopularity(raw.popularity);
   const items: Item[] = [];
   for (const [key, it] of Object.entries<any>(raw.itemData)) {
     if (it.IsDisabled || it.StreetBrawl || !it.Name || !it.Cost || ![1, 2, 3, 4].includes(it.Tier)) continue;
@@ -227,7 +231,7 @@ export function normalize(raw: Raw): KnowledgeFile {
         description,
         sections,
         statusEffects: [...new Set(sections.flatMap((s) => s.props.map((p) => p.statusEffect).filter((x): x is string => !!x)))],
-        popularity: pop.get(key) ?? null,
+        popularity: rates.item.get(it.Id) ?? null,
       },
     });
     titleOf.set(key, title);
@@ -313,7 +317,8 @@ export async function loadRaw(dir = RAW_DIR): Promise<Raw> {
     abilityCards: await read("AbilityCards.json"),
     itemCards: await read("ItemCards.json"),
     lang: await read("Lang_en.json"),
-    popularity: await read("ItemPopularity.json"),
+    heroStats: await read("deadlock-api-hero-stats.json"),
+    itemStats: await read("deadlock-api-item-stats.json"),
     latestUpdate: await read("LatestUpdate.json"),
     categories: await read("categories.json"),
     redirects: await read("redirects.json"),

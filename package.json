@@ -11,7 +11,8 @@
     "kb": "node --experimental-strip-types --no-warnings src/cli/kb.ts",
     "test": "node --experimental-strip-types --no-warnings --test tests/*.test.ts",
     "typecheck": "tsc",
-    "questions": "node --experimental-strip-types --no-warnings --env-file-if-exists=.env src/cli/questions.ts"
+    "questions": "node --experimental-strip-types --no-warnings --env-file-if-exists=.env src/cli/questions.ts",
+    "ingest:stats": "node --experimental-strip-types --no-warnings src/knowledge/ingest-stats.ts"
   },
   "devDependencies": {
     "@types/node": "^26.6.7",

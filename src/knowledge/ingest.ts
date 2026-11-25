@@ -14,7 +14,6 @@ export const DATA_PAGES = [
   "AbilityCards",
   "ItemCards",
   "Lang en",
-  "ItemPopularity",
   "LatestUpdate",
 ];
 

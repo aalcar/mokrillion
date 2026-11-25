@@ -10,5 +10,12 @@
   "Data:ItemCards.json": 230367,
   "Data:LatestUpdate.json": 244949,
   "Data:ItemPopularity.json": 245004
+ },
+ "stats": {
+  "source": "https://api.deadlock-api.com",
+  "license": "MIT",
+  "fetchedAt": "2026-11-25T02:32:28.175Z",
+  "query": "min_average_badge=71&game_mode=normal",
+  "window": "API default (last 30 days)"
  }
 }

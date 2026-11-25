@@ -11,14 +11,14 @@ const item = (over: Record<string, unknown>) => ({
 function fixture(over: Partial<Raw> = {}): Raw {
   return {
     heroData: {
-      hero_atlas: { Name: "Abrams", IsDisabled: false, MaxHealth: 800, Stamina: 3, StaminaCooldown: 4.5000045, Weapon: { BulletDamage: 3.78, BulletsPerShot: 9, WeaponTypes: ["Attribute_EWeaponAttribute_Spreadshot"] } },
-      hero_ghost: { Name: "Lady Geist", IsDisabled: false, Weapon: {} },
+      hero_atlas: { Id: 6, Name: "Abrams", IsDisabled: false, MaxHealth: 800, Stamina: 3, StaminaCooldown: 4.5000045, Weapon: { BulletDamage: 3.78, BulletsPerShot: 9, WeaponTypes: ["Attribute_EWeaponAttribute_Spreadshot"] } },
+      hero_ghost: { Id: 2, Name: "Lady Geist", IsDisabled: false, Weapon: {} },
       hero_testhero: { Name: "Test", IsDisabled: true, Weapon: {} },
       hero_werewolf_transformed: { Name: "Silver (Transformed)", IsDisabled: false, Weapon: {} },
     },
     itemData: {
-      upgrade_basic: item({ Name: "Basic Mag", Description: '<span class="highlight">More</span> ammo &amp; stuff' }),
-      upgrade_big: item({ Name: "Big Mag", Cost: 3200, Tier: 3, Slot: "Armor", Components: ["upgrade_basic", "upgrade_gone"] }),
+      upgrade_basic: item({ Id: 101, Name: "Basic Mag", Description: '<span class="highlight">More</span> ammo &amp; stuff' }),
+      upgrade_big: item({ Id: 102, Name: "Big Mag", Cost: 3200, Tier: 3, Slot: "Armor", Components: ["upgrade_basic", "upgrade_gone"] }),
       upgrade_gone: item({ Name: "Gone", IsDisabled: true }),
       upgrade_brawl: item({ Name: "Brawl Thing", StreetBrawl: true }),
       upgrade_t5: item({ Name: "Legend", Tier: 5, Cost: 9999 }),
@@ -42,9 +42,9 @@ function fixture(over: Partial<Raw> = {}): Raw {
       big_active: "Stun <b>enemies</b>.",
       upgrade_basic_search: "Basic Mag BM",
     },
-    popularity: {
-      hero_atlas: { phases: { early: { upgrade_basic: [40, 50] }, late: { upgrade_basic: [20, 50], upgrade_big: [10, 50] } } },
-    },
+    // 24 player-matches = 2 matches of 12 heroes.
+    heroStats: [{ hero_id: 6, matches: 2 }, { hero_id: 2, matches: 1 }, { hero_id: 99, matches: 21 }],
+    itemStats: [{ item_id: 101, matches: 6 }, { item_id: 102, matches: 12 }],
     latestUpdate: { latest_update: { year: 2026, month: "November", day: 4 } },
     categories: {
       Heroes: ["Abrams", "Lady Geist", "Heroes"],
@@ -92,9 +92,11 @@ test("item disambiguated page title is matched", () => {
   assert.ok(get("upgrade_lifesteal")!.sourceUrls[0].endsWith("Bullet_Lifesteal_(item)"));
 });
 
-test("popularity is mean pick rate over all hero phases", () => {
-  assert.equal((get("upgrade_basic") as Item).attributes.popularity, 30);
-  assert.equal((get("upgrade_big") as Item).attributes.popularity, 5);
+test("popularity: hero % of matches, item % of player-matches, null when absent", () => {
+  assert.equal((get("hero_atlas") as Hero).attributes.popularity, 100);
+  assert.equal((get("hero_ghost") as Hero).attributes.popularity, 50);
+  assert.equal((get("upgrade_basic") as Item).attributes.popularity, 25);
+  assert.equal((get("upgrade_big") as Item).attributes.popularity, 50);
   assert.equal((get("upgrade_lifesteal") as Item).attributes.popularity, null);
 });
 
