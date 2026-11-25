@@ -1,0 +1,826 @@
+{
+ "date": "2026-11-26",
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "generatedAt": "2026-11-25T05:14:48.667Z",
+ "questions": [
+  {
+   "id": "name:item:contains:k",
+   "prompt": "Name an item whose name contains the letter K.",
+   "category": "name-trivia",
+   "entityType": "item",
+   "answers": [
+    {
+     "entityId": "upgrade_target_stun",
+     "name": "Knockdown",
+     "rank": 1,
+     "score": 10
+    },
+    {
+     "entityId": "upgrade_blitz_bullets",
+     "name": "Swift Striker",
+     "rank": 2,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_weapon_backstabber",
+     "name": "Stalker",
+     "rank": 3,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_quick_silver",
+     "name": "Quicksilver Reload",
+     "rank": 4,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_berserker",
+     "name": "Berserker",
+     "rank": 5,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_acolytes_glove",
+     "name": "Spirit Strike",
+     "rank": 6,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_magic_shock",
+     "name": "Tankbuster",
+     "rank": 7,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_boxing_glove",
+     "name": "Lifestrike",
+     "rank": 8,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_close_quarter_combat",
+     "name": "Point Blank",
+     "rank": 9,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_kinetic_sash",
+     "name": "Kinetic Dash",
+     "rank": 10,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_spellbreaker",
+     "name": "Spellbreaker",
+     "rank": 11,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_critshot",
+     "name": "Lucky Shot",
+     "rank": 12,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_metal_skin",
+     "name": "Metal Skin",
+     "rank": 13,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_headshot_booster2",
+     "name": "Weakening Headshot",
+     "rank": 14,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_diviners_kevlar",
+     "name": "Diviner's Kevlar",
+     "rank": 15,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_phantom_strike",
+     "name": "Phantom Strike",
+     "rank": 16,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_restorative_locket",
+     "name": "Restorative Locket",
+     "rank": 17,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_veil_walker",
+     "name": "Veil Walker",
+     "rank": 18,
+     "score": 100
+    }
+   ]
+  },
+  {
+   "id": "item-slot-tier:Vitality:2",
+   "prompt": "Name a Tier 2 Vitality item.",
+   "category": "item-cost",
+   "entityType": "item",
+   "answers": [
+    {
+     "entityId": "upgrade_health_stealing_magic",
+     "name": "Spirit Lifesteal",
+     "rank": 1,
+     "score": 10
+    },
+    {
+     "entityId": "upgrade_healbane",
+     "name": "Healbane",
+     "rank": 2,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_cardio_calibrator",
+     "name": "Enduring Speed",
+     "rank": 3,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_regenerating_bullet_shield",
+     "name": "Battle Vest",
+     "rank": 4,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_magic_shield",
+     "name": "Enchanter's Emblem",
+     "rank": 5,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_trophy_collector",
+     "name": "Trophy Collector",
+     "rank": 6,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_healing_booster",
+     "name": "Healing Booster",
+     "rank": 7,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_vex_barrier",
+     "name": "Reactive Barrier",
+     "rank": 8,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_vampire",
+     "name": "Bullet Lifesteal",
+     "rank": 9,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_debuff_reducer",
+     "name": "Debuff Reducer",
+     "rank": 10,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_spirit_bubble",
+     "name": "Spirit Shielding",
+     "rank": 11,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_guardian_ward",
+     "name": "Guardian Ward",
+     "rank": 12,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_return_fire",
+     "name": "Return Fire",
+     "rank": 13,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_weapon_shielding",
+     "name": "Weapon Shielding",
+     "rank": 14,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_restorative_locket",
+     "name": "Restorative Locket",
+     "rank": 15,
+     "score": 100
+    }
+   ]
+  },
+  {
+   "id": "item-stat:Weapon Damage",
+   "prompt": "Name an item that gives a built-in Weapon Damage bonus (not counting conditional, stacking or active effects).",
+   "category": "item-stat-bonus",
+   "entityType": "item",
+   "answers": [
+    {
+     "entityId": "upgrade_high_velocity_mag",
+     "name": "High-Velocity Rounds",
+     "rank": 1,
+     "score": 10
+    },
+    {
+     "entityId": "upgrade_clip_size",
+     "name": "Extended Magazine",
+     "rank": 2,
+     "score": 10
+    },
+    {
+     "entityId": "upgrade_glass_cannon",
+     "name": "Glass Cannon",
+     "rank": 3,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_titan_round",
+     "name": "Titanic Magazine",
+     "rank": 4,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_medic_bullets",
+     "name": "Restorative Shot",
+     "rank": 5,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_sharpshooter",
+     "name": "Sharpshooter",
+     "rank": 6,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_pristine_emblem",
+     "name": "Opening Rounds",
+     "rank": 7,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_headhunter",
+     "name": "Headhunter",
+     "rank": 8,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_weighted_shots",
+     "name": "Weighted Shots",
+     "rank": 9,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_reinforcing_casings",
+     "name": "Escalating Resilience",
+     "rank": 10,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_express_shot",
+     "name": "Express Shot",
+     "rank": 11,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_rechargingbullets",
+     "name": "Recharging Rush",
+     "rank": 12,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_vampire",
+     "name": "Bullet Lifesteal",
+     "rank": 13,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_aprounds",
+     "name": "Armor Piercer",
+     "rank": 14,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_fleetfoot_boots",
+     "name": "Fleetfoot",
+     "rank": 15,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_siphon_bullets",
+     "name": "Siphon Bullets",
+     "rank": 16,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_damage_recycler",
+     "name": "Leech",
+     "rank": 17,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_surging_power",
+     "name": "Vampiric Burst",
+     "rank": 18,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_colossus",
+     "name": "Colossus",
+     "rank": 19,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_fury_trance",
+     "name": "Fury Trance",
+     "rank": 20,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_inhibitor",
+     "name": "Inhibitor",
+     "rank": 21,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_bullet_resist_shredder",
+     "name": "Bullet Resist Shredder",
+     "rank": 22,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_phantom_strike",
+     "name": "Phantom Strike",
+     "rank": 23,
+     "score": 100
+    }
+   ]
+  },
+  {
+   "id": "hero-stat:maxHealth:high:820",
+   "prompt": "Name a hero with at least 820 base max health (level 1, no items or boons).",
+   "category": "hero-base-stat",
+   "entityType": "hero",
+   "answers": [
+    {
+     "entityId": "hero_krill",
+     "name": "Mo & Krill",
+     "rank": 1,
+     "score": 10
+    },
+    {
+     "entityId": "hero_bebop",
+     "name": "Bebop",
+     "rank": 2,
+     "score": 30
+    },
+    {
+     "entityId": "hero_punkgoat",
+     "name": "Billy",
+     "rank": 3,
+     "score": 30
+    },
+    {
+     "entityId": "hero_shiv",
+     "name": "Shiv",
+     "rank": 4,
+     "score": 60
+    },
+    {
+     "entityId": "hero_werewolf",
+     "name": "Silver",
+     "rank": 5,
+     "score": 60
+    },
+    {
+     "entityId": "hero_ghost",
+     "name": "Lady Geist",
+     "rank": 6,
+     "score": 60
+    },
+    {
+     "entityId": "hero_dynamo",
+     "name": "Dynamo",
+     "rank": 7,
+     "score": 85
+    },
+    {
+     "entityId": "hero_kelvin",
+     "name": "Kelvin",
+     "rank": 8,
+     "score": 85
+    },
+    {
+     "entityId": "hero_priest",
+     "name": "Venator",
+     "rank": 9,
+     "score": 85
+    },
+    {
+     "entityId": "hero_inferno",
+     "name": "Infernus",
+     "rank": 10,
+     "score": 100
+    }
+   ]
+  },
+  {
+   "id": "item-slot-tier:Weapon:1",
+   "prompt": "Name a Tier 1 Weapon item.",
+   "category": "item-cost",
+   "entityType": "item",
+   "answers": [
+    {
+     "entityId": "upgrade_rapid_rounds",
+     "name": "Rapid Rounds",
+     "rank": 1,
+     "score": 10
+    },
+    {
+     "entityId": "upgrade_high_velocity_mag",
+     "name": "High-Velocity Rounds",
+     "rank": 2,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_clip_size",
+     "name": "Extended Magazine",
+     "rank": 3,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_non_player_bonus",
+     "name": "Monster Rounds",
+     "rank": 4,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_headshot_booster",
+     "name": "Headshot Booster",
+     "rank": 5,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_medic_bullets",
+     "name": "Restorative Shot",
+     "rank": 6,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_close_range",
+     "name": "Close Quarters",
+     "rank": 7,
+     "score": 100
+    }
+   ]
+  },
+  {
+   "id": "item-stat:Bonus Health",
+   "prompt": "Name an item that gives a built-in Health bonus (not counting conditional, stacking or active effects).",
+   "category": "item-stat-bonus",
+   "entityType": "item",
+   "answers": [
+    {
+     "entityId": "upgrade_health",
+     "name": "Extra Health",
+     "rank": 1,
+     "score": 10
+    },
+    {
+     "entityId": "upgrade_chonky",
+     "name": "Fortitude",
+     "rank": 2,
+     "score": 10
+    },
+    {
+     "entityId": "upgrade_cheat_death",
+     "name": "Cheat Death",
+     "rank": 3,
+     "score": 10
+    },
+    {
+     "entityId": "upgrade_damage_recycler",
+     "name": "Leech",
+     "rank": 4,
+     "score": 10
+    },
+    {
+     "entityId": "upgrade_deflecting_armor",
+     "name": "Plated Armor",
+     "rank": 5,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_health_stealing_magic",
+     "name": "Spirit Lifesteal",
+     "rank": 6,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_unstoppable",
+     "name": "Unstoppable",
+     "rank": 7,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_debuff_reducer",
+     "name": "Debuff Reducer",
+     "rank": 8,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_vampire",
+     "name": "Bullet Lifesteal",
+     "rank": 9,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_melee_rebuttal",
+     "name": "Rebuttal",
+     "rank": 10,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_boxing_glove",
+     "name": "Lifestrike",
+     "rank": 11,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_spellbreaker",
+     "name": "Spellbreaker",
+     "rank": 12,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_mystic_regeneration",
+     "name": "Mystic Regeneration",
+     "rank": 13,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_resonant_healing",
+     "name": "Radiant Regeneration",
+     "rank": 14,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_infuser",
+     "name": "Infuser",
+     "rank": 15,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_surging_power",
+     "name": "Vampiric Burst",
+     "rank": 16,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_counterspell",
+     "name": "Counterspell",
+     "rank": 17,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_inhibitor",
+     "name": "Inhibitor",
+     "rank": 18,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_fury_trance",
+     "name": "Fury Trance",
+     "rank": 19,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_fervor",
+     "name": "Frenzy",
+     "rank": 20,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_veil_walker",
+     "name": "Veil Walker",
+     "rank": 21,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_hollow_point_rounds",
+     "name": "Hollow Point",
+     "rank": 22,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_tech_damage_pulse",
+     "name": "Torment Pulse",
+     "rank": 23,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_headshot_booster",
+     "name": "Headshot Booster",
+     "rank": 24,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_weapon_backstabber",
+     "name": "Stalker",
+     "rank": 25,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_withering_whip",
+     "name": "Rusted Barrel",
+     "rank": 26,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_reinforcing_casings",
+     "name": "Escalating Resilience",
+     "rank": 27,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_bullet_armor_reduction_aura",
+     "name": "Hunter's Aura",
+     "rank": 28,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_close_quarter_combat",
+     "name": "Point Blank",
+     "rank": 29,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_magic_carpet",
+     "name": "Magic Carpet",
+     "rank": 30,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_tech_overflow",
+     "name": "Spiritual Overflow",
+     "rank": 31,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_spirit_snatch",
+     "name": "Spirit Snatch",
+     "rank": 32,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_magic_slow",
+     "name": "Mystic Slow",
+     "rank": 33,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_spirit_sap",
+     "name": "Spirit Sap",
+     "rank": 34,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_headhunter",
+     "name": "Headhunter",
+     "rank": 35,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_magic_shock",
+     "name": "Tankbuster",
+     "rank": 36,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_target_stun",
+     "name": "Knockdown",
+     "rank": 37,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_banshee_slugs",
+     "name": "Crippling Headshot",
+     "rank": 38,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_headshot_booster2",
+     "name": "Weakening Headshot",
+     "rank": 39,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_boundless_spirit",
+     "name": "Boundless Spirit",
+     "rank": 40,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_discord",
+     "name": "Scourge",
+     "rank": 41,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_rupture",
+     "name": "Decay",
+     "rank": 42,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_targeted_silence",
+     "name": "Silence Wave",
+     "rank": 43,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_greater_withering_whip",
+     "name": "Disarming Hex",
+     "rank": 44,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_spellslinger_headshots",
+     "name": "Spirit Rend",
+     "rank": 45,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_ultimate_burst",
+     "name": "Lightning Scroll",
+     "rank": 46,
+     "score": 100
+    }
+   ]
+  },
+  {
+   "id": "hero-category:Heroes with 2 stamina",
+   "prompt": "Name a hero who has only 2 base stamina.",
+   "category": "hero-weapon",
+   "entityType": "hero",
+   "answers": [
+    {
+     "entityId": "hero_hornet",
+     "name": "Vindicta",
+     "rank": 1,
+     "score": 10
+    },
+    {
+     "entityId": "hero_forge",
+     "name": "McGinnis",
+     "rank": 2,
+     "score": 30
+    },
+    {
+     "entityId": "hero_necro",
+     "name": "Graves",
+     "rank": 3,
+     "score": 60
+    },
+    {
+     "entityId": "hero_astro",
+     "name": "Holliday",
+     "rank": 4,
+     "score": 60
+    },
+    {
+     "entityId": "hero_vampirebat",
+     "name": "Mina",
+     "rank": 5,
+     "score": 85
+    },
+    {
+     "entityId": "hero_werewolf",
+     "name": "Silver",
+     "rank": 6,
+     "score": 85
+    },
+    {
+     "entityId": "hero_baba",
+     "name": "Baba",
+     "rank": 7,
+     "score": 85
+    },
+    {
+     "entityId": "hero_chessmaster",
+     "name": "Solomon",
+     "rank": 8,
+     "score": 100
+    }
+   ]
+  }
+ ]
+}

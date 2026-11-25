@@ -283,7 +283,7 @@ async function comparePairs(ask: Ask, q: CandidateQuestion, kb: Knowledge, pairs
   });
 }
 
-export async function scoreQuestion(kb: Knowledge, ask: Ask, q: CandidateQuestion): Promise<ScoredQuestion> {
+export async function scoreQuestion(kb: Knowledge, ask: Ask, q: CandidateQuestion, overrides: Overrides = loadOverrides()): Promise<ScoredQuestion> {
   const entities = q.answerIds.map((id) => kb.get(id) ?? (() => { throw new Error(`unknown answer id ${id}`); })());
   const n = entities.length;
   if (n < config.minPool) throw new Error(`${q.signature}: pool of ${n} is below ${config.minPool}`);
@@ -394,7 +394,7 @@ export async function scoreQuestion(kb: Knowledge, ask: Ask, q: CandidateQuestio
   }
 
   // 5. Owner override: a human-picked rarest answer always takes the 100.
-  const override = loadOverrides()[q.signature];
+  const override = overrides[q.signature];
   if (override && order.includes(override.rarest)) order = moveToEnd(order, override.rarest);
 
   // 6. Tiers.

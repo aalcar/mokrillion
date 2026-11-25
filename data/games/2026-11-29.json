@@ -1,0 +1,598 @@
+{
+ "date": "2026-11-29",
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "generatedAt": "2026-11-25T05:14:48.672Z",
+ "questions": [
+  {
+   "id": "name:hero:ends:s",
+   "prompt": "Name a hero whose name ends with the letter S. Ignore a leading \"The\" and any symbols.",
+   "category": "name-trivia",
+   "entityType": "hero",
+   "answers": [
+    {
+     "entityId": "hero_atlas",
+     "name": "Abrams",
+     "rank": 1,
+     "score": 10
+    },
+    {
+     "entityId": "hero_inferno",
+     "name": "Infernus",
+     "rank": 2,
+     "score": 30
+    },
+    {
+     "entityId": "hero_necro",
+     "name": "Graves",
+     "rank": 3,
+     "score": 60
+    },
+    {
+     "entityId": "hero_forge",
+     "name": "McGinnis",
+     "rank": 4,
+     "score": 85
+    },
+    {
+     "entityId": "hero_viscous",
+     "name": "Viscous",
+     "rank": 5,
+     "score": 100
+    }
+   ]
+  },
+  {
+   "id": "item-stat:Out of Combat Regen",
+   "prompt": "Name an item that gives a built-in Out of Combat Regen bonus (not counting conditional, stacking or active effects).",
+   "category": "item-stat-bonus",
+   "entityType": "item",
+   "answers": [
+    {
+     "entityId": "upgrade_endurance",
+     "name": "Extra Regen",
+     "rank": 1,
+     "score": 10
+    },
+    {
+     "entityId": "upgrade_sprint_booster",
+     "name": "Sprint Boots",
+     "rank": 2,
+     "score": 10
+    },
+    {
+     "entityId": "upgrade_healing_booster",
+     "name": "Healing Booster",
+     "rank": 3,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_tech_purge",
+     "name": "Spirit Resilience",
+     "rank": 4,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_regenerating_bullet_shield",
+     "name": "Battle Vest",
+     "rank": 5,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_healbuff",
+     "name": "Healing Tempo",
+     "rank": 6,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_improved_bullet_armor",
+     "name": "Bullet Resilience",
+     "rank": 7,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_grit",
+     "name": "Grit",
+     "rank": 8,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_magic_shield",
+     "name": "Enchanter's Emblem",
+     "rank": 9,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_cardio_calibrator",
+     "name": "Enduring Speed",
+     "rank": 10,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_spirit_bubble",
+     "name": "Spirit Shielding",
+     "rank": 11,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_weapon_shielding",
+     "name": "Weapon Shielding",
+     "rank": 12,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_vex_barrier",
+     "name": "Reactive Barrier",
+     "rank": 13,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_auto_cleanse",
+     "name": "Indomitable",
+     "rank": 14,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_hollow_point_rounds",
+     "name": "Hollow Point",
+     "rank": 15,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_guardian_ward",
+     "name": "Guardian Ward",
+     "rank": 16,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_cloaking_device_active",
+     "name": "Shadow Weave",
+     "rank": 17,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_trophy_collector",
+     "name": "Trophy Collector",
+     "rank": 18,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_boundless_spirit",
+     "name": "Boundless Spirit",
+     "rank": 19,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_divine_barrier",
+     "name": "Divine Barrier",
+     "rank": 20,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_cooldown_reduction",
+     "name": "Superior Cooldown",
+     "rank": 21,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_soaring_spirit",
+     "name": "Improved Spirit",
+     "rank": 22,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_non_player_bonus",
+     "name": "Monster Rounds",
+     "rank": 23,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_non_player_bonus_sacrifice",
+     "name": "Cultist Sacrifice",
+     "rank": 24,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_transcendent_cooldown",
+     "name": "Transcendent Cooldown",
+     "rank": 25,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_goose_egg",
+     "name": "Golden Goose Egg",
+     "rank": 26,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_blood_tribute",
+     "name": "Blood Tribute",
+     "rank": 27,
+     "score": 100
+    }
+   ]
+  },
+  {
+   "id": "item-stat:Bullet Velocity",
+   "prompt": "Name an item that gives a built-in Bullet Velocity bonus (not counting conditional, stacking or active effects).",
+   "category": "item-stat-bonus",
+   "entityType": "item",
+   "answers": [
+    {
+     "entityId": "upgrade_high_velocity_mag",
+     "name": "High-Velocity Rounds",
+     "rank": 1,
+     "score": 10
+    },
+    {
+     "entityId": "upgrade_express_shot",
+     "name": "Express Shot",
+     "rank": 2,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_sharpshooter",
+     "name": "Sharpshooter",
+     "rank": 3,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_pristine_emblem",
+     "name": "Opening Rounds",
+     "rank": 4,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_aprounds",
+     "name": "Armor Piercer",
+     "rank": 5,
+     "score": 100
+    }
+   ]
+  },
+  {
+   "id": "item-slot-tier:Vitality:4",
+   "prompt": "Name a Tier 4 Vitality item.",
+   "category": "item-cost",
+   "entityType": "item",
+   "answers": [
+    {
+     "entityId": "upgrade_unstoppable",
+     "name": "Unstoppable",
+     "rank": 1,
+     "score": 10
+    },
+    {
+     "entityId": "upgrade_auto_cleanse",
+     "name": "Indomitable",
+     "rank": 2,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_cheat_death",
+     "name": "Cheat Death",
+     "rank": 3,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_damage_recycler",
+     "name": "Leech",
+     "rank": 4,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_juggernaut",
+     "name": "Juggernaut",
+     "rank": 5,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_siphon_bullets",
+     "name": "Siphon Bullets",
+     "rank": 6,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_spellbreaker",
+     "name": "Spellbreaker",
+     "rank": 7,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_colossus",
+     "name": "Colossus",
+     "rank": 8,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_deflecting_armor",
+     "name": "Plated Armor",
+     "rank": 9,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_surging_power",
+     "name": "Vampiric Burst",
+     "rank": 10,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_infuser",
+     "name": "Infuser",
+     "rank": 11,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_healbuff",
+     "name": "Healing Tempo",
+     "rank": 12,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_phantom_strike",
+     "name": "Phantom Strike",
+     "rank": 13,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_absorbing_armor",
+     "name": "Witchmail",
+     "rank": 14,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_divine_barrier",
+     "name": "Divine Barrier",
+     "rank": 15,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_inhibitor",
+     "name": "Inhibitor",
+     "rank": 16,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_diviners_kevlar",
+     "name": "Diviner's Kevlar",
+     "rank": 17,
+     "score": 100
+    }
+   ]
+  },
+  {
+   "id": "hero-stat:clipSize:high:29",
+   "prompt": "Name a hero whose base clip size is at least 29 (no items or boons).",
+   "category": "hero-base-stat",
+   "entityType": "hero",
+   "answers": [
+    {
+     "entityId": "hero_forge",
+     "name": "McGinnis",
+     "rank": 1,
+     "score": 10
+    },
+    {
+     "entityId": "hero_wraith",
+     "name": "Wraith",
+     "rank": 2,
+     "score": 30
+    },
+    {
+     "entityId": "hero_gigawatt",
+     "name": "Seven",
+     "rank": 3,
+     "score": 30
+    },
+    {
+     "entityId": "hero_chrono",
+     "name": "Paradox",
+     "rank": 4,
+     "score": 60
+    },
+    {
+     "entityId": "hero_bebop",
+     "name": "Bebop",
+     "rank": 5,
+     "score": 60
+    },
+    {
+     "entityId": "hero_lash",
+     "name": "Lash",
+     "rank": 6,
+     "score": 60
+    },
+    {
+     "entityId": "hero_punkgoat",
+     "name": "Billy",
+     "rank": 7,
+     "score": 85
+    },
+    {
+     "entityId": "hero_tengu",
+     "name": "Ivy",
+     "rank": 8,
+     "score": 85
+    },
+    {
+     "entityId": "hero_priest",
+     "name": "Venator",
+     "rank": 9,
+     "score": 85
+    },
+    {
+     "entityId": "hero_necro",
+     "name": "Graves",
+     "rank": 10,
+     "score": 100
+    }
+   ]
+  },
+  {
+   "id": "item-slot-tier:Vitality:3",
+   "prompt": "Name a Tier 3 Vitality item.",
+   "category": "item-cost",
+   "entityType": "item",
+   "answers": [
+    {
+     "entityId": "upgrade_improved_bullet_armor",
+     "name": "Bullet Resilience",
+     "rank": 1,
+     "score": 10
+    },
+    {
+     "entityId": "upgrade_reduce_debuff_duration",
+     "name": "Dispel Magic",
+     "rank": 2,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_chonky",
+     "name": "Fortitude",
+     "rank": 3,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_metal_skin",
+     "name": "Metal Skin",
+     "rank": 4,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_warp_stone",
+     "name": "Warp Stone",
+     "rank": 5,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_fury_trance",
+     "name": "Fury Trance",
+     "rank": 6,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_tech_purge",
+     "name": "Spirit Resilience",
+     "rank": 7,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_boxing_glove",
+     "name": "Lifestrike",
+     "rank": 8,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_counterspell",
+     "name": "Counterspell",
+     "rank": 9,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_rocket_booster",
+     "name": "Majestic Leap",
+     "rank": 10,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_rescue_beam",
+     "name": "Rescue Beam",
+     "rank": 11,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_superior_stamina",
+     "name": "Stamina Mastery",
+     "rank": 12,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_veil_walker",
+     "name": "Veil Walker",
+     "rank": 13,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_health_nova",
+     "name": "Healing Nova",
+     "rank": 14,
+     "score": 100
+    }
+   ]
+  },
+  {
+   "id": "hero-category:Heroes with fast dash speed",
+   "prompt": "Name a hero with fast dash speed.",
+   "category": "hero-weapon",
+   "entityType": "hero",
+   "answers": [
+    {
+     "entityId": "hero_haze",
+     "name": "Haze",
+     "rank": 1,
+     "score": 10
+    },
+    {
+     "entityId": "hero_nano",
+     "name": "Calico",
+     "rank": 2,
+     "score": 30
+    },
+    {
+     "entityId": "hero_vampirebat",
+     "name": "Mina",
+     "rank": 3,
+     "score": 30
+    },
+    {
+     "entityId": "hero_astro",
+     "name": "Holliday",
+     "rank": 4,
+     "score": 60
+    },
+    {
+     "entityId": "hero_chrono",
+     "name": "Paradox",
+     "rank": 5,
+     "score": 60
+    },
+    {
+     "entityId": "hero_artist",
+     "name": "Violet",
+     "rank": 6,
+     "score": 60
+    },
+    {
+     "entityId": "hero_tengu",
+     "name": "Ivy",
+     "rank": 7,
+     "score": 85
+    },
+    {
+     "entityId": "hero_unicorn",
+     "name": "Celeste",
+     "rank": 8,
+     "score": 85
+    },
+    {
+     "entityId": "hero_orion",
+     "name": "Grey Talon",
+     "rank": 9,
+     "score": 85
+    },
+    {
+     "entityId": "hero_doorman",
+     "name": "The Doorman",
+     "rank": 10,
+     "score": 85
+    },
+    {
+     "entityId": "hero_deadpack",
+     "name": "Deadman Danny",
+     "rank": 11,
+     "score": 100
+    }
+   ]
+  }
+ ]
+}

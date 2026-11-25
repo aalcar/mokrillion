@@ -34,6 +34,10 @@ model(s) produced it. Compare rankings from different models with care.
 | `npm run questions -- propose <hero\|item> [n]` | LLM proposes semantic questions; each is validated over the whole universe |
 | `npm run questions -- score <signature\|index>` | Rank and score one question, save to `data/questions/`, print the full table |
 | `npm run questions -- show <signature>` | Re-print a stored scored question |
+| `npm run game -- generate [date] [--days N]` | Build and publish daily games (default: today in America/Los_Angeles); published games never change |
+| `npm run game -- list` | Published games |
+| `npm run game -- play [date]` | Play a daily game in the terminal |
+| `npm run questions -- set-rarest <signature> <answer>` | Owner pick for a question's 100-point answer (`data/overrides.json`) |
 | `npm test`, `npm run typecheck` | Offline tests (LLM is faked) and type check |
 
 LLM responses are cached in `data/cache/llm/` so reruns are reproducible; add `--no-cache` for fresh calls.
@@ -70,3 +74,16 @@ Target: how readily an experienced player thinks of an answer **for this questio
 
 Every scored question stores per-pass positions, signals, pairwise results, review outcomes and pass
 agreement (mean Kendall tau). These are model estimates, not measured answer frequencies.
+
+## Daily games
+
+`src/game/` holds the engine; interfaces only call it.
+
+- `daily.ts`: picks 7 scored questions per date, deterministic per date and history. Rules: at most one
+  name question, at most 2 per category, at least 2 hero and 2 item questions, no two questions on the same
+  stat or sharing more than half their answers, and no reuse within 60 days while the pool allows (otherwise
+  least recently used first). Games are validated and written atomically to `data/games/<date>.json`.
+- `matching.ts`: exact names and aliases, then one-typo auto-correction only when unambiguous (5+ letters,
+  nothing else within 2 edits). Anything less certain is a "did you mean" suggestion, never a guess.
+- `session.ts`: per-player state with timestamps; 30 seconds per question, unlimited retries for wrong or
+  unknown answers, the first correct answer locks in, results with each question's 100-point answer.

@@ -41,6 +41,22 @@ export const config = {
   /** Share of candidates per tier, most obvious first. 85 takes the rest, 100 is exactly one. */
   tierShares: { 10: 0.08, 30: 0.17, 60: 0.3 },
 
+  /** Daily game settings. */
+  game: {
+    questionsPerDay: 7,
+    secondsPerQuestion: 30,
+    /** Daily reset timezone. */
+    timezone: process.env.MOKRILLION_TIMEZONE ?? "America/Los_Angeles",
+    /** A question is not reused within this many days if the pool allows it. */
+    repeatWindowDays: 60,
+    maxPerCategory: 2,
+    maxNameQuestions: 1,
+    /** Two questions in one game may share at most this share of the smaller answer pool. */
+    maxAnswerOverlap: 0.5,
+    minHeroQuestions: 2,
+    minItemQuestions: 2,
+  },
+
   /** Bump when the scoring algorithm or its parameters change. */
   scoringVersion: "8",
 };

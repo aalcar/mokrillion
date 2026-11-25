@@ -1,0 +1,550 @@
+{
+ "date": "2026-11-30",
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "generatedAt": "2026-11-25T05:14:48.674Z",
+ "questions": [
+  {
+   "id": "name:hero:contains:y",
+   "prompt": "Name a hero whose name contains the letter Y.",
+   "category": "name-trivia",
+   "entityType": "hero",
+   "answers": [
+    {
+     "entityId": "hero_punkgoat",
+     "name": "Billy",
+     "rank": 1,
+     "score": 10
+    },
+    {
+     "entityId": "hero_ghost",
+     "name": "Lady Geist",
+     "rank": 2,
+     "score": 30
+    },
+    {
+     "entityId": "hero_tengu",
+     "name": "Ivy",
+     "rank": 3,
+     "score": 30
+    },
+    {
+     "entityId": "hero_yamato",
+     "name": "Yamato",
+     "rank": 4,
+     "score": 60
+    },
+    {
+     "entityId": "hero_dynamo",
+     "name": "Dynamo",
+     "rank": 5,
+     "score": 60
+    },
+    {
+     "entityId": "hero_astro",
+     "name": "Holliday",
+     "rank": 6,
+     "score": 60
+    },
+    {
+     "entityId": "hero_orion",
+     "name": "Grey Talon",
+     "rank": 7,
+     "score": 85
+    },
+    {
+     "entityId": "hero_deadpack",
+     "name": "Deadman Danny",
+     "rank": 8,
+     "score": 85
+    },
+    {
+     "entityId": "hero_viper",
+     "name": "Vyper",
+     "rank": 9,
+     "score": 100
+    }
+   ]
+  },
+  {
+   "id": "semantic:hero:the-base-ability-description-not-upgrade-text-not-base-value-lists-alone-says-th",
+   "prompt": "Name a hero with an ability whose base description says it applies Stun to enemies.",
+   "category": "hero-ability-effect",
+   "entityType": "hero",
+   "answers": [
+    {
+     "entityId": "hero_atlas",
+     "name": "Abrams",
+     "rank": 1,
+     "score": 10
+    },
+    {
+     "entityId": "hero_dynamo",
+     "name": "Dynamo",
+     "rank": 2,
+     "score": 30
+    },
+    {
+     "entityId": "hero_lash",
+     "name": "Lash",
+     "rank": 3,
+     "score": 30
+    },
+    {
+     "entityId": "hero_astro",
+     "name": "Holliday",
+     "rank": 4,
+     "score": 60
+    },
+    {
+     "entityId": "hero_inferno",
+     "name": "Infernus",
+     "rank": 5,
+     "score": 60
+    },
+    {
+     "entityId": "hero_gigawatt",
+     "name": "Seven",
+     "rank": 6,
+     "score": 60
+    },
+    {
+     "entityId": "hero_orion",
+     "name": "Grey Talon",
+     "rank": 7,
+     "score": 60
+    },
+    {
+     "entityId": "hero_krill",
+     "name": "Mo & Krill",
+     "rank": 8,
+     "score": 85
+    },
+    {
+     "entityId": "hero_tengu",
+     "name": "Ivy",
+     "rank": 9,
+     "score": 85
+    },
+    {
+     "entityId": "hero_viscous",
+     "name": "Viscous",
+     "rank": 10,
+     "score": 85
+    },
+    {
+     "entityId": "hero_frank",
+     "name": "Victor",
+     "rank": 11,
+     "score": 85
+    },
+    {
+     "entityId": "hero_priest",
+     "name": "Venator",
+     "rank": 12,
+     "score": 85
+    },
+    {
+     "entityId": "hero_chessmaster",
+     "name": "Solomon",
+     "rank": 13,
+     "score": 85
+    },
+    {
+     "entityId": "hero_artist",
+     "name": "Violet",
+     "rank": 14,
+     "score": 100
+    }
+   ]
+  },
+  {
+   "id": "item-active:Spirit",
+   "prompt": "Name a Spirit item with an active ability.",
+   "category": "item-effect",
+   "entityType": "item",
+   "answers": [
+    {
+     "entityId": "upgrade_ability_refresher",
+     "name": "Refresher",
+     "rank": 1,
+     "score": 10
+    },
+    {
+     "entityId": "upgrade_containment",
+     "name": "Slowing Hex",
+     "rank": 2,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_target_stun",
+     "name": "Knockdown",
+     "rank": 3,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_self_bubble",
+     "name": "Ethereal Shift",
+     "rank": 4,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_magic_carpet",
+     "name": "Magic Carpet",
+     "rank": 5,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_glitch",
+     "name": "Cursed Relic",
+     "rank": 6,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_ability_power_shard",
+     "name": "Echo Shard",
+     "rank": 7,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_arctic_blast",
+     "name": "Arctic Blast",
+     "rank": 8,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_rupture",
+     "name": "Decay",
+     "rank": 9,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_greater_withering_whip",
+     "name": "Disarming Hex",
+     "rank": 10,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_discord",
+     "name": "Scourge",
+     "rank": 11,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_aoe_root",
+     "name": "Vortex Web",
+     "rank": 12,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_withering_whip",
+     "name": "Rusted Barrel",
+     "rank": 13,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_goose_egg",
+     "name": "Golden Goose Egg",
+     "rank": 14,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_targeted_silence",
+     "name": "Silence Wave",
+     "rank": 15,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_cold_front",
+     "name": "Cold Front",
+     "rank": 16,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_focus_lens",
+     "name": "Focus Lens",
+     "rank": 17,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_spirit_sap",
+     "name": "Spirit Sap",
+     "rank": 18,
+     "score": 100
+    }
+   ]
+  },
+  {
+   "id": "item-slot-tier:Vitality:1",
+   "prompt": "Name a Tier 1 Vitality item.",
+   "category": "item-cost",
+   "entityType": "item",
+   "answers": [
+    {
+     "entityId": "upgrade_sprint_booster",
+     "name": "Sprint Boots",
+     "rank": 1,
+     "score": 10
+    },
+    {
+     "entityId": "upgrade_endurance",
+     "name": "Extra Regen",
+     "rank": 2,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_health",
+     "name": "Extra Health",
+     "rank": 3,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_lifestrike_gauntlets",
+     "name": "Melee Lifesteal",
+     "rank": 4,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_improved_stamina",
+     "name": "Extra Stamina",
+     "rank": 5,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_grit",
+     "name": "Grit",
+     "rank": 6,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_melee_rebuttal",
+     "name": "Rebuttal",
+     "rank": 7,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_health_stimpak",
+     "name": "Healing Rite",
+     "rank": 8,
+     "score": 100
+    }
+   ]
+  },
+  {
+   "id": "item-stat:Bullet Lifesteal",
+   "prompt": "Name an item that gives a built-in Bullet Lifesteal bonus (not counting conditional, stacking or active effects).",
+   "category": "item-stat-bonus",
+   "entityType": "item",
+   "answers": [
+    {
+     "entityId": "upgrade_vampire",
+     "name": "Bullet Lifesteal",
+     "rank": 1,
+     "score": 10
+    },
+    {
+     "entityId": "upgrade_damage_recycler",
+     "name": "Leech",
+     "rank": 2,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_surging_power",
+     "name": "Vampiric Burst",
+     "rank": 3,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_fury_trance",
+     "name": "Fury Trance",
+     "rank": 4,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_fervor",
+     "name": "Frenzy",
+     "rank": 5,
+     "score": 100
+    }
+   ]
+  },
+  {
+   "id": "item-stat:Max Ammo",
+   "prompt": "Name an item that gives a built-in Max Ammo bonus (not counting conditional, stacking or active effects).",
+   "category": "item-stat-bonus",
+   "entityType": "item",
+   "answers": [
+    {
+     "entityId": "upgrade_clip_size",
+     "name": "Extended Magazine",
+     "rank": 1,
+     "score": 10
+    },
+    {
+     "entityId": "upgrade_titan_round",
+     "name": "Titanic Magazine",
+     "rank": 2,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_active_reload",
+     "name": "Active Reload",
+     "rank": 3,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_intensifying_clip",
+     "name": "Intensifying Magazine",
+     "rank": 4,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_reinforcing_casings",
+     "name": "Escalating Resilience",
+     "rank": 5,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_critshot",
+     "name": "Lucky Shot",
+     "rank": 6,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_ethereal_bullets",
+     "name": "Mercurial Magnum",
+     "rank": 7,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_rechargingbullets",
+     "name": "Recharging Rush",
+     "rank": 8,
+     "score": 100
+    }
+   ]
+  },
+  {
+   "id": "item-slot-tier:Weapon:3",
+   "prompt": "Name a Tier 3 Weapon item.",
+   "category": "item-cost",
+   "entityType": "item",
+   "answers": [
+    {
+     "entityId": "upgrade_toxic_bullets",
+     "name": "Toxic Bullets",
+     "rank": 1,
+     "score": 10
+    },
+    {
+     "entityId": "upgrade_chain_lightning",
+     "name": "Tesla Bullets",
+     "rank": 2,
+     "score": 10
+    },
+    {
+     "entityId": "upgrade_burst_fire",
+     "name": "Burst Fire",
+     "rank": 3,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_bullet_armor_reduction_aura",
+     "name": "Hunter's Aura",
+     "rank": 4,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_berserker",
+     "name": "Berserker",
+     "rank": 5,
+     "score": 30
+    },
+    {
+     "entityId": "upgrade_headhunter",
+     "name": "Headhunter",
+     "rank": 6,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_sharpshooter",
+     "name": "Sharpshooter",
+     "rank": 7,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_non_player_bonus_sacrifice",
+     "name": "Cultist Sacrifice",
+     "rank": 8,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_close_quarter_combat",
+     "name": "Point Blank",
+     "rank": 9,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_express_shot",
+     "name": "Express Shot",
+     "rank": 10,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_hollow_point_rounds",
+     "name": "Hollow Point",
+     "rank": 11,
+     "score": 60
+    },
+    {
+     "entityId": "upgrade_weighted_shots",
+     "name": "Weighted Shots",
+     "rank": 12,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_spellslinger_headshots",
+     "name": "Spirit Rend",
+     "rank": 13,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_bulletshredimbue",
+     "name": "Ballistic Enchantment",
+     "rank": 14,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_dps_aura",
+     "name": "Heroic Aura",
+     "rank": 15,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_reinforcing_casings",
+     "name": "Escalating Resilience",
+     "rank": 16,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_blood_tribute",
+     "name": "Blood Tribute",
+     "rank": 17,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_cloaking_device_active",
+     "name": "Shadow Weave",
+     "rank": 18,
+     "score": 85
+    },
+    {
+     "entityId": "upgrade_thermal_detonator",
+     "name": "Alchemical Fire",
+     "rank": 19,
+     "score": 100
+    }
+   ]
+  }
+ ]
+}

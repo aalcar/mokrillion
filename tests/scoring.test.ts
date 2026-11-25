@@ -111,7 +111,7 @@ function fakeAsk(
 test("scoreQuestion end to end with a fake LLM", async () => {
   const q = deterministicCandidates(kb).find((x) => x.signature.startsWith("hero-stat:maxHealth"))!;
   const ask = fakeAsk();
-  const s = await scoreQuestion(kb, ask, q);
+  const s = await scoreQuestion(kb, ask, q, {});
   assert.equal(s.answers.length, q.answerIds.length);
   assert.deepEqual(s.answers.map((a) => a.entityId).sort(), [...q.answerIds].sort());
   assert.equal(s.answers.filter((a) => a.score === 100).length, 1);
@@ -152,7 +152,7 @@ test("review challenges backed by gameplay data are applied without a comparison
     }
     return [{ name: picked![0], compareWith: picked![1], claim: "should_be_more_obscure", reason: "test" }];
   });
-  const s = await scoreQuestion(kb, ask, q);
+  const s = await scoreQuestion(kb, ask, q, {});
   assert.equal(s.diagnostics.review[0].outcome, "applied-by-data");
   const rank = (n: string) => s.answers.find((a) => a.name === n)!.rank;
   assert.ok(rank(picked![0]) > rank(picked![1]), "challenged answer moved below the one it was compared with");
@@ -177,7 +177,7 @@ test("name questions: letters ignore 'The' and symbols, double letters stay with
 
 test("owner override moves the picked answer to 100 and re-tiers", async () => {
   const q = deterministicCandidates(kb).find((x) => x.signature.startsWith("hero-stat:maxHealth"))!;
-  const s = await scoreQuestion(kb, fakeAsk(), q);
+  const s = await scoreQuestion(kb, fakeAsk(), q, {});
   const pick = s.answers[0].entityId; // currently the most obvious answer
   const o = applyOverride(s, pick);
   assert.equal(o.answers.at(-1)!.entityId, pick);
