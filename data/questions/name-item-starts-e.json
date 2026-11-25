@@ -1,0 +1,546 @@
+{
+ "question": {
+  "signature": "name:item:starts:e",
+  "prompt": "Name an item whose name starts with the letter E.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_ability_power_shard",
+   "upgrade_cardio_calibrator",
+   "upgrade_clip_size",
+   "upgrade_endurance",
+   "upgrade_escalating_exposure",
+   "upgrade_express_shot",
+   "upgrade_extra_charge",
+   "upgrade_health",
+   "upgrade_improved_spirit",
+   "upgrade_improved_stamina",
+   "upgrade_magic_shield",
+   "upgrade_reinforcing_casings",
+   "upgrade_self_bubble"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:starts:e"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:22:48.101Z",
+ "answers": [
+  {
+   "entityId": "upgrade_improved_spirit",
+   "name": "Extra Spirit",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_extra_charge",
+   "name": "Extra Charge",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_health",
+   "name": "Extra Health",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_self_bubble",
+   "name": "Ethereal Shift",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_ability_power_shard",
+   "name": "Echo Shard",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_cardio_calibrator",
+   "name": "Enduring Speed",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_clip_size",
+   "name": "Extended Magazine",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_escalating_exposure",
+   "name": "Escalating Exposure",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_magic_shield",
+   "name": "Enchanter's Emblem",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_improved_stamina",
+   "name": "Extra Stamina",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_endurance",
+   "name": "Extra Regen",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_express_shot",
+   "name": "Express Shot",
+   "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_reinforcing_casings",
+   "name": "Escalating Resilience",
+   "rank": 13,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_ability_power_shard",
+    "name": "Echo Shard",
+    "passPositions": [
+     2,
+     0,
+     2,
+     2,
+     0
+    ],
+    "borda": 0.1,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "ability cooldown reset item",
+    "popularity": 2.62,
+    "popularityObscurity": 0.9166666666666666,
+    "spellingCost": 9,
+    "spellingObscurity": 0,
+    "key": 0.6666666666666666
+   },
+   {
+    "id": "upgrade_cardio_calibrator",
+    "name": "Enduring Speed",
+    "passPositions": [
+     9,
+     10,
+     11,
+     11,
+     12
+    ],
+    "borda": 0.8833333333333332,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "slow resist movement item",
+    "popularity": 23.4,
+    "popularityObscurity": 0.25,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8333333333333334,
+    "key": 0.43749999999999994
+   },
+   {
+    "id": "upgrade_clip_size",
+    "name": "Extended Magazine",
+    "passPositions": [
+     7,
+     5,
+     4,
+     4,
+     4
+    ],
+    "borda": 0.39999999999999997,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "early ammo item",
+    "popularity": 15.22,
+    "popularityObscurity": 0.6666666666666666,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8333333333333334,
+    "key": 0.6083333333333333
+   },
+   {
+    "id": "upgrade_endurance",
+    "name": "Extra Regen",
+    "passPositions": [
+     5,
+     9,
+     6,
+     6,
+     6
+    ],
+    "borda": 0.5333333333333334,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "early health regen item",
+    "popularity": 22.98,
+    "popularityObscurity": 0.3333333333333333,
+    "spellingCost": 10,
+    "spellingObscurity": 0.16666666666666666,
+    "key": 0.375
+   },
+   {
+    "id": "upgrade_escalating_exposure",
+    "name": "Escalating Exposure",
+    "passPositions": [
+     8,
+     3,
+     8,
+     8,
+     5
+    ],
+    "borda": 0.5333333333333333,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "spirit amp stacking item",
+    "popularity": 18.94,
+    "popularityObscurity": 0.5,
+    "spellingCost": 10,
+    "spellingObscurity": 0.16666666666666666,
+    "key": 0.49166666666666664
+   },
+   {
+    "id": "upgrade_express_shot",
+    "name": "Express Shot",
+    "passPositions": [
+     10,
+     8,
+     10,
+     9,
+     10
+    ],
+    "borda": 0.7833333333333334,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "double shot weapon item",
+    "popularity": 6.28,
+    "popularityObscurity": 0.75,
+    "spellingCost": 11,
+    "spellingObscurity": 0.4583333333333333,
+    "key": 0.7437499999999999
+   },
+   {
+    "id": "upgrade_extra_charge",
+    "name": "Extra Charge",
+    "passPositions": [
+     6,
+     7,
+     7,
+     7,
+     8
+    ],
+    "borda": 0.5833333333333334,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "extra ability charge item",
+    "popularity": 31.98,
+    "popularityObscurity": 0.08333333333333333,
+    "spellingCost": 11,
+    "spellingObscurity": 0.4583333333333333,
+    "key": 0.22708333333333333
+   },
+   {
+    "id": "upgrade_health",
+    "name": "Extra Health",
+    "passPositions": [
+     1,
+     2,
+     0,
+     3,
+     2
+    ],
+    "borda": 0.13333333333333333,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "cheap early health item",
+    "popularity": 19.53,
+    "popularityObscurity": 0.4166666666666667,
+    "spellingCost": 11,
+    "spellingObscurity": 0.4583333333333333,
+    "key": 0.3479166666666667
+   },
+   {
+    "id": "upgrade_improved_spirit",
+    "name": "Extra Spirit",
+    "passPositions": [
+     0,
+     4,
+     3,
+     0,
+     3
+    ],
+    "borda": 0.16666666666666666,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "cheap early spirit power item",
+    "popularity": 49.29,
+    "popularityObscurity": 0,
+    "spellingCost": 11,
+    "spellingObscurity": 0.4583333333333333,
+    "key": 0.06458333333333333
+   },
+   {
+    "id": "upgrade_improved_stamina",
+    "name": "Extra Stamina",
+    "passPositions": [
+     4,
+     6,
+     5,
+     5,
+     7
+    ],
+    "borda": 0.45,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "early stamina item for dash",
+    "popularity": 26.32,
+    "popularityObscurity": 0.16666666666666666,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6666666666666666,
+    "key": 0.2625
+   },
+   {
+    "id": "upgrade_magic_shield",
+    "name": "Enchanter's Emblem",
+    "passPositions": [
+     11,
+     11,
+     12,
+     12,
+     9
+    ],
+    "borda": 0.9166666666666666,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "spirit resist item with cooldown bonus",
+    "popularity": 18.86,
+    "popularityObscurity": 0.5833333333333334,
+    "spellingCost": 10,
+    "spellingObscurity": 0.16666666666666666,
+    "key": 0.6458333333333333
+   },
+   {
+    "id": "upgrade_reinforcing_casings",
+    "name": "Escalating Resilience",
+    "passPositions": [
+     12,
+     12,
+     9,
+     10,
+     11
+    ],
+    "borda": 0.9,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "bullet resist on hit item",
+    "popularity": 2.24,
+    "popularityObscurity": 1,
+    "spellingCost": 20,
+    "spellingObscurity": 1,
+    "key": 0.975
+   },
+   {
+    "id": "upgrade_self_bubble",
+    "name": "Ethereal Shift",
+    "passPositions": [
+     3,
+     1,
+     1,
+     1,
+     1
+    ],
+    "borda": 0.11666666666666665,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "invulnerability active",
+    "popularity": 3.08,
+    "popularityObscurity": 0.8333333333333334,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8333333333333334,
+    "key": 0.6541666666666667
+   }
+  ],
+  "passAgreement": 0.7076923076923076,
+  "orderBeforeRefinement": [
+   "upgrade_improved_spirit",
+   "upgrade_extra_charge",
+   "upgrade_improved_stamina",
+   "upgrade_health",
+   "upgrade_endurance",
+   "upgrade_cardio_calibrator",
+   "upgrade_escalating_exposure",
+   "upgrade_clip_size",
+   "upgrade_magic_shield",
+   "upgrade_self_bubble",
+   "upgrade_ability_power_shard",
+   "upgrade_express_shot",
+   "upgrade_reinforcing_casings"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_self_bubble",
+    "b": "upgrade_ability_power_shard",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_ability_power_shard"
+   },
+   {
+    "a": "upgrade_self_bubble",
+    "b": "upgrade_express_shot",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_express_shot"
+   },
+   {
+    "a": "upgrade_self_bubble",
+    "b": "upgrade_reinforcing_casings",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_reinforcing_casings"
+   },
+   {
+    "a": "upgrade_ability_power_shard",
+    "b": "upgrade_express_shot",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_express_shot"
+   },
+   {
+    "a": "upgrade_ability_power_shard",
+    "b": "upgrade_reinforcing_casings",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_reinforcing_casings"
+   },
+   {
+    "a": "upgrade_express_shot",
+    "b": "upgrade_reinforcing_casings",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_reinforcing_casings"
+   },
+   {
+    "a": "upgrade_improved_spirit",
+    "b": "upgrade_extra_charge",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_extra_charge"
+   },
+   {
+    "a": "upgrade_improved_stamina",
+    "b": "upgrade_health",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_improved_stamina"
+   },
+   {
+    "a": "upgrade_escalating_exposure",
+    "b": "upgrade_clip_size",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_escalating_exposure"
+   },
+   {
+    "a": "upgrade_self_bubble",
+    "b": "upgrade_improved_stamina",
+    "purpose": "review",
+    "rarer": "upgrade_improved_stamina"
+   },
+   {
+    "a": "upgrade_ability_power_shard",
+    "b": "upgrade_endurance",
+    "purpose": "review",
+    "rarer": "upgrade_endurance"
+   },
+   {
+    "a": "upgrade_endurance",
+    "b": "upgrade_escalating_exposure",
+    "purpose": "review",
+    "rarer": "upgrade_escalating_exposure"
+   },
+   {
+    "a": "upgrade_reinforcing_casings",
+    "b": "upgrade_express_shot",
+    "purpose": "review",
+    "rarer": "upgrade_reinforcing_casings"
+   }
+  ],
+  "review": [
+   {
+    "name": "Ethereal Shift",
+    "compareWith": "Extra Stamina",
+    "claim": "should_be_more_obvious",
+    "reason": "Ethereal Shift is a famous, memorable active item that experienced players readily recall for any E question. It is more likely to come to mind than Extra Stamina, which is a bland, forgettable tier 1 item, so it should score lower.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Echo Shard",
+    "compareWith": "Extra Regen",
+    "claim": "should_be_more_obvious",
+    "reason": "Echo Shard is a well-known, distinctive active item with a memorable name and effect, commonly bought in spirit builds. It is more salient than the minor Extra Regen, so it should not sit at 85 above it.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Extra Regen",
+    "compareWith": "Escalating Exposure",
+    "claim": "should_be_more_obscure",
+    "reason": "Extra Regen is a forgettable tier 1 filler item that is rarely thought of, and it shares a pattern with the other Extra items. It is probably less top-of-mind than Escalating Exposure, a popular late-game spirit item.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Escalating Resilience",
+    "compareWith": "Express Shot",
+    "claim": "should_be_more_obvious",
+    "reason": "Escalating Resilience is a commonly built weapon item upgraded from Extended Magazine, and it shares the very common 'Es' start with Escalating Exposure. It is not clearly rarer than Express Shot, so 100 pts looks too extreme and it should be closer to 85.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}

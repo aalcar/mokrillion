@@ -1,0 +1,434 @@
+{
+ "question": {
+  "signature": "semantic:hero:the-hero-s-ability-description-or-any-upgrade-t1-t3-text-explicitly-says-it-appl",
+  "prompt": "Name a hero with an ability or ability upgrade that applies Silence to enemies.",
+  "category": "hero-ability-effect",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_artist",
+   "hero_baba",
+   "hero_chrono",
+   "hero_drifter",
+   "hero_ghost",
+   "hero_orion",
+   "hero_tengu",
+   "hero_unicorn",
+   "hero_vampirebat",
+   "hero_warden"
+  ],
+  "validation": {
+   "method": "llm",
+   "criterion": "The hero's ability description or any upgrade (T1-T3) text explicitly says it applies Silence (or Silences) enemies. Examples from the data: Violet, Baba, Drifter, Celeste, Mina, Grey Talon, Lady Geist, Paradox, Warden, Ivy.",
+   "notes": [
+    "Violet: \"leaving causes them to take Spirit Damage and suffer from Silence and Slow, destroying the ink in the process.\"",
+    "Baba: \"cycling over time in a random order between a soothing Combat Barrier, Silence, or scalding burn that deals Spirit DPS and reduces Spirit Resist.\"",
+    "Paradox: \"Silences enemies for 2.3s +35% Weapon Damage\"",
+    "Drifter: \"Deals 55% Heavy Melee Damage Silences enemies for 2s if close range\"",
+    "Lady Geist: \"Silence enemies within 25m for 3s\"",
+    "Grey Talon: \"applying Curse and Movement Slow that interrupts, Silences, Disarms, and prevents item usage\"",
+    "Ivy: \"Silence for 3s on enemies hit. Increases damage and barrier scaling.\"",
+    "Celeste: \"If the barrier is destroyed, it silences nearby enemies and deals a portion of the barrier as damage.\"",
+    "Mina: \"Unleash a cloud of bats that seek out targets, each dealing Spirit Damage and applying Silence.\"",
+    "Warden: \"Silences enemies until they escape or are immobilized\""
+   ]
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:32:29.277Z",
+ "answers": [
+  {
+   "entityId": "hero_ghost",
+   "name": "Lady Geist",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_vampirebat",
+   "name": "Mina",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_chrono",
+   "name": "Paradox",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "hero_warden",
+   "name": "Warden",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_orion",
+   "name": "Grey Talon",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "hero_drifter",
+   "name": "Drifter",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "hero_baba",
+   "name": "Baba",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "hero_unicorn",
+   "name": "Celeste",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "hero_tengu",
+   "name": "Ivy",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "hero_artist",
+   "name": "Violet",
+   "rank": 10,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "hero_artist",
+    "name": "Violet",
+    "passPositions": [
+     7,
+     9,
+     7,
+     7,
+     5
+    ],
+    "borda": 0.7777777777777777,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Ink-field mystic with Still Life and Abstract Landscape",
+    "popularity": 19.01,
+    "popularityObscurity": 0.6666666666666666,
+    "spellingCost": 6,
+    "spellingObscurity": 0.6111111111111112,
+    "key": 0.7527777777777778
+   },
+   {
+    "id": "hero_baba",
+    "name": "Baba",
+    "passPositions": [
+     9,
+     5,
+     9,
+     9,
+     9
+    ],
+    "borda": 0.9111111111111111,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "Witch with Baba's Brew cycling effects",
+    "popularity": 10.87,
+    "popularityObscurity": 1,
+    "spellingCost": 4,
+    "spellingObscurity": 0.2222222222222222,
+    "key": 0.89
+   },
+   {
+    "id": "hero_chrono",
+    "name": "Paradox",
+    "passPositions": [
+     4,
+     2,
+     2,
+     4,
+     4
+    ],
+    "borda": 0.3555555555555555,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Time Wall, Pulse Grenade, Paradoxical Swap",
+    "popularity": 39.64,
+    "popularityObscurity": 0.1111111111111111,
+    "spellingCost": 7,
+    "spellingObscurity": 0.8888888888888888,
+    "key": 0.34555555555555556
+   },
+   {
+    "id": "hero_drifter",
+    "name": "Drifter",
+    "passPositions": [
+     6,
+     3,
+     4,
+     6,
+     6
+    ],
+    "borda": 0.5555555555555556,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "Assassin with Rend and Eternal Night",
+    "popularity": 45.26,
+    "popularityObscurity": 0,
+    "spellingCost": 7,
+    "spellingObscurity": 0.8888888888888888,
+    "key": 0.48888888888888893
+   },
+   {
+    "id": "hero_ghost",
+    "name": "Lady Geist",
+    "passPositions": [
+     2,
+     0,
+     3,
+     0,
+     2
+    ],
+    "borda": 0.15555555555555556,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Malice, Life Drain, Soul Exchange with silence upgrade",
+    "popularity": 37.57,
+    "popularityObscurity": 0.2222222222222222,
+    "spellingCost": 4,
+    "spellingObscurity": 0.2222222222222222,
+    "key": 0.1688888888888889
+   },
+   {
+    "id": "hero_orion",
+    "name": "Grey Talon",
+    "passPositions": [
+     3,
+     7,
+     6,
+     2,
+     3
+    ],
+    "borda": 0.4666666666666667,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Archer with Spirit Snare and the Guided Owl",
+    "popularity": 22.07,
+    "popularityObscurity": 0.5555555555555556,
+    "spellingCost": 5,
+    "spellingObscurity": 0.4444444444444444,
+    "key": 0.47888888888888886
+   },
+   {
+    "id": "hero_tengu",
+    "name": "Ivy",
+    "passPositions": [
+     5,
+     6,
+     5,
+     5,
+     8
+    ],
+    "borda": 0.6444444444444445,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Healer with Air Drop and Kudzu, Stone Form",
+    "popularity": 30.19,
+    "popularityObscurity": 0.4444444444444444,
+    "spellingCost": 3,
+    "spellingObscurity": 0,
+    "key": 0.5822222222222223
+   },
+   {
+    "id": "hero_unicorn",
+    "name": "Celeste",
+    "passPositions": [
+     8,
+     4,
+     8,
+     8,
+     7
+    ],
+    "borda": 0.7777777777777778,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "Light-themed mystic with a barrier ultimate",
+    "popularity": 18.71,
+    "popularityObscurity": 0.7777777777777778,
+    "spellingCost": 7,
+    "spellingObscurity": 0.8888888888888888,
+    "key": 0.7833333333333333
+   },
+   {
+    "id": "hero_vampirebat",
+    "name": "Mina",
+    "passPositions": [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "borda": 0.11111111111111112,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Bat ultimate Nox Nostra, vampire mystic",
+    "popularity": 34.02,
+    "popularityObscurity": 0.3333333333333333,
+    "spellingCost": 4,
+    "spellingObscurity": 0.2222222222222222,
+    "key": 0.15000000000000002
+   },
+   {
+    "id": "hero_warden",
+    "name": "Warden",
+    "passPositions": [
+     0,
+     8,
+     0,
+     3,
+     0
+    ],
+    "borda": 0.2444444444444444,
+    "fit": {
+     "expected": 3,
+     "neutral": 1,
+     "surprising": 1
+    },
+    "perception": "Binding Word silence-and-immobilize skill",
+    "popularity": 17.25,
+    "popularityObscurity": 0.8888888888888888,
+    "spellingCost": 6,
+    "spellingObscurity": 0.6111111111111112,
+    "key": 0.35944444444444446
+   }
+  ],
+  "passAgreement": 0.5288888888888889,
+  "orderBeforeRefinement": [
+   "hero_vampirebat",
+   "hero_ghost",
+   "hero_chrono",
+   "hero_warden",
+   "hero_orion",
+   "hero_drifter",
+   "hero_tengu",
+   "hero_artist",
+   "hero_unicorn",
+   "hero_baba"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_tengu",
+    "b": "hero_artist",
+    "purpose": "rare-contenders",
+    "rarer": "hero_tengu"
+   },
+   {
+    "a": "hero_tengu",
+    "b": "hero_unicorn",
+    "purpose": "rare-contenders",
+    "rarer": "hero_tengu"
+   },
+   {
+    "a": "hero_tengu",
+    "b": "hero_baba",
+    "purpose": "rare-contenders",
+    "rarer": "hero_tengu"
+   },
+   {
+    "a": "hero_artist",
+    "b": "hero_unicorn",
+    "purpose": "rare-contenders",
+    "rarer": "hero_artist"
+   },
+   {
+    "a": "hero_artist",
+    "b": "hero_baba",
+    "purpose": "rare-contenders",
+    "rarer": "hero_artist"
+   },
+   {
+    "a": "hero_unicorn",
+    "b": "hero_baba",
+    "purpose": "rare-contenders",
+    "rarer": "hero_unicorn"
+   },
+   {
+    "a": "hero_vampirebat",
+    "b": "hero_ghost",
+    "purpose": "tier-boundary",
+    "rarer": "hero_vampirebat"
+   },
+   {
+    "a": "hero_chrono",
+    "b": "hero_warden",
+    "purpose": "tier-boundary",
+    "rarer": "hero_chrono"
+   },
+   {
+    "a": "hero_ghost",
+    "b": "hero_vampirebat",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Lady Geist",
+    "compareWith": "Mina",
+    "claim": "should_be_more_obscure",
+    "reason": "Lady Geist's kit is mainly known for health sacrifice and Life Drain, not silence. Her place as the single most obvious answer rests on general popularity. Mina's Love Bites and Nox Nostra are more readily tied to disabling enemy casting, so Geist should not sit below her at 10 points.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Warden",
+    "compareWith": "Paradox",
+    "claim": "should_be_more_obscure",
+    "reason": "Warden's Binding Word is known mainly as a bind or immobilize. Its association with silence is not strong enough to justify 30 points. Paradox's Time Wall and Pulse Grenade are likewise not silence-related, so the two should sit closer together in scoring.",
+    "outcome": "applied-by-data"
+   },
+   {
+    "name": "Ivy",
+    "compareWith": "Violet",
+    "claim": "should_be_more_obvious",
+    "reason": "Ivy is a well-recognized support hero, and her Entangling Thorns and Kudzu Connection are widely used. She is not meaningfully harder to think of than Violet, a less commonly picked hero. Ranking Ivy as the single rarest at 100 points over Violet and Celeste looks overstated.",
+    "outcome": "applied-by-data"
+   }
+  ]
+ }
+}

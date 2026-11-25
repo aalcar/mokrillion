@@ -1,0 +1,1024 @@
+{
+ "question": {
+  "signature": "name:item:ends:r",
+  "prompt": "Name an item whose name ends with the letter R.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_ability_refresher",
+   "upgrade_aprounds",
+   "upgrade_arcane_extension",
+   "upgrade_berserker",
+   "upgrade_blitz_bullets",
+   "upgrade_bullet_resist_shredder",
+   "upgrade_capacitor",
+   "upgrade_debuff_reducer",
+   "upgrade_deflecting_armor",
+   "upgrade_divine_barrier",
+   "upgrade_diviners_kevlar",
+   "upgrade_enchanted_holsters",
+   "upgrade_headhunter",
+   "upgrade_headshot_booster",
+   "upgrade_healing_booster",
+   "upgrade_infuser",
+   "upgrade_inhibitor",
+   "upgrade_magic_shock",
+   "upgrade_magic_storm",
+   "upgrade_proc_silence",
+   "upgrade_sharpshooter",
+   "upgrade_spellbreaker",
+   "upgrade_suppressor",
+   "upgrade_tech_defense_shredders",
+   "upgrade_trophy_collector",
+   "upgrade_veil_walker",
+   "upgrade_vex_barrier",
+   "upgrade_weapon_backstabber"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:ends:r"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:27:24.528Z",
+ "answers": [
+  {
+   "entityId": "upgrade_blitz_bullets",
+   "name": "Swift Striker",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_magic_shock",
+   "name": "Tankbuster",
+   "rank": 2,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_weapon_backstabber",
+   "name": "Stalker",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_trophy_collector",
+   "name": "Trophy Collector",
+   "rank": 4,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_healing_booster",
+   "name": "Healing Booster",
+   "rank": 5,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_arcane_extension",
+   "name": "Duration Extender",
+   "rank": 6,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_debuff_reducer",
+   "name": "Debuff Reducer",
+   "rank": 7,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_bullet_resist_shredder",
+   "name": "Bullet Resist Shredder",
+   "rank": 8,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_headshot_booster",
+   "name": "Headshot Booster",
+   "rank": 9,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_capacitor",
+   "name": "Capacitor",
+   "rank": 10,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_berserker",
+   "name": "Berserker",
+   "rank": 11,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_sharpshooter",
+   "name": "Sharpshooter",
+   "rank": 12,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_vex_barrier",
+   "name": "Reactive Barrier",
+   "rank": 13,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_headhunter",
+   "name": "Headhunter",
+   "rank": 14,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_ability_refresher",
+   "name": "Refresher",
+   "rank": 15,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_proc_silence",
+   "name": "Silencer",
+   "rank": 16,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_magic_storm",
+   "name": "Surge of Power",
+   "rank": 17,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_spellbreaker",
+   "name": "Spellbreaker",
+   "rank": 18,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_deflecting_armor",
+   "name": "Plated Armor",
+   "rank": 19,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_suppressor",
+   "name": "Suppressor",
+   "rank": 20,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_infuser",
+   "name": "Infuser",
+   "rank": 21,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_tech_defense_shredders",
+   "name": "Spirit Shredder",
+   "rank": 22,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_inhibitor",
+   "name": "Inhibitor",
+   "rank": 23,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_enchanted_holsters",
+   "name": "Spellslinger",
+   "rank": 24,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_divine_barrier",
+   "name": "Divine Barrier",
+   "rank": 25,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_aprounds",
+   "name": "Armor Piercer",
+   "rank": 26,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_veil_walker",
+   "name": "Veil Walker",
+   "rank": 27,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_diviners_kevlar",
+   "name": "Diviner's Kevlar",
+   "rank": 28,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_ability_refresher",
+    "name": "Refresher",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "reset cooldowns active",
+    "popularity": 6.02,
+    "popularityObscurity": 0.6666666666666666,
+    "spellingCost": 9,
+    "spellingObscurity": 0.3888888888888889,
+    "key": 0.48611111111111105
+   },
+   {
+    "id": "upgrade_aprounds",
+    "name": "Armor Piercer",
+    "passPositions": [
+     20,
+     17,
+     19,
+     10,
+     18
+    ],
+    "borda": 0.6222222222222221,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "unavoidable piercing bullets",
+    "popularity": 1.55,
+    "popularityObscurity": 1,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6851851851851852,
+    "key": 0.8898148148148147
+   },
+   {
+    "id": "upgrade_arcane_extension",
+    "name": "Duration Extender",
+    "passPositions": [
+     16,
+     19,
+     17,
+     14,
+     15
+    ],
+    "borda": 0.6,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "ability duration imbue",
+    "popularity": 17.97,
+    "popularityObscurity": 0.1111111111111111,
+    "spellingCost": 16,
+    "spellingObscurity": 1,
+    "key": 0.2777777777777778
+   },
+   {
+    "id": "upgrade_berserker",
+    "name": "Berserker",
+    "passPositions": [
+     2,
+     2,
+     4,
+     1,
+     10
+    ],
+    "borda": 0.14074074074074075,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "damage from taking damage",
+    "popularity": 7.63,
+    "popularityObscurity": 0.48148148148148145,
+    "spellingCost": 9,
+    "spellingObscurity": 0.3888888888888889,
+    "key": 0.39166666666666666
+   },
+   {
+    "id": "upgrade_blitz_bullets",
+    "name": "Swift Striker",
+    "passPositions": [
+     13,
+     7,
+     15,
+     18,
+     6
+    ],
+    "borda": 0.437037037037037,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "fire rate item",
+    "popularity": 25.07,
+    "popularityObscurity": 0.037037037037037035,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6851851851851852,
+    "key": 0.16944444444444445
+   },
+   {
+    "id": "upgrade_bullet_resist_shredder",
+    "name": "Bullet Resist Shredder",
+    "passPositions": [
+     27,
+     20,
+     23,
+     20,
+     16
+    ],
+    "borda": 0.7851851851851851,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "long name resist shred",
+    "popularity": 14.27,
+    "popularityObscurity": 0.2222222222222222,
+    "spellingCost": 3,
+    "spellingObscurity": 0,
+    "key": 0.3518518518518518
+   },
+   {
+    "id": "upgrade_capacitor",
+    "name": "Capacitor",
+    "passPositions": [
+     8,
+     9,
+     1,
+     5,
+     9
+    ],
+    "borda": 0.237037037037037,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "slow projectile active",
+    "popularity": 8.07,
+    "popularityObscurity": 0.4444444444444444,
+    "spellingCost": 9,
+    "spellingObscurity": 0.3888888888888889,
+    "key": 0.3898148148148147
+   },
+   {
+    "id": "upgrade_debuff_reducer",
+    "name": "Debuff Reducer",
+    "passPositions": [
+     5,
+     13,
+     12,
+     12,
+     4
+    ],
+    "borda": 0.34074074074074073,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "reduces debuff duration",
+    "popularity": 12.63,
+    "popularityObscurity": 0.2962962962962963,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8148148148148148,
+    "key": 0.3333333333333333
+   },
+   {
+    "id": "upgrade_deflecting_armor",
+    "name": "Plated Armor",
+    "passPositions": [
+     22,
+     24,
+     24,
+     24,
+     19
+    ],
+    "borda": 0.837037037037037,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "bullet deflect",
+    "popularity": 7.03,
+    "popularityObscurity": 0.5555555555555556,
+    "spellingCost": 6,
+    "spellingObscurity": 0.09259259259259259,
+    "key": 0.6027777777777777
+   },
+   {
+    "id": "upgrade_divine_barrier",
+    "name": "Divine Barrier",
+    "passPositions": [
+     23,
+     25,
+     22,
+     25,
+     24
+    ],
+    "borda": 0.8814814814814815,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "cleanse and barrier active",
+    "popularity": 3.26,
+    "popularityObscurity": 0.8148148148148148,
+    "spellingCost": 6,
+    "spellingObscurity": 0.09259259259259259,
+    "key": 0.7953703703703703
+   },
+   {
+    "id": "upgrade_diviners_kevlar",
+    "name": "Diviner's Kevlar",
+    "passPositions": [
+     26,
+     27,
+     26,
+     26,
+     26
+    ],
+    "borda": 0.9703703703703702,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "barrier on ultimate",
+    "popularity": 2.67,
+    "popularityObscurity": 0.9259259259259259,
+    "spellingCost": 6,
+    "spellingObscurity": 0.09259259259259259,
+    "key": 0.8953703703703704
+   },
+   {
+    "id": "upgrade_enchanted_holsters",
+    "name": "Spellslinger",
+    "passPositions": [
+     10,
+     16,
+     11,
+     7,
+     25
+    ],
+    "borda": 0.5111111111111111,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "fire rate from casting",
+    "popularity": 2.96,
+    "popularityObscurity": 0.8888888888888888,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6851851851851852,
+    "key": 0.7842592592592592
+   },
+   {
+    "id": "upgrade_headhunter",
+    "name": "Headhunter",
+    "passPositions": [
+     3,
+     1,
+     3,
+     3,
+     13
+    ],
+    "borda": 0.17037037037037037,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "headshot bonus damage",
+    "popularity": 7.18,
+    "popularityObscurity": 0.5185185185185185,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5185185185185185,
+    "key": 0.43148148148148147
+   },
+   {
+    "id": "upgrade_headshot_booster",
+    "name": "Headshot Booster",
+    "passPositions": [
+     12,
+     5,
+     6,
+     11,
+     1
+    ],
+    "borda": 0.2592592592592592,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "cheap headshot item",
+    "popularity": 9.39,
+    "popularityObscurity": 0.37037037037037035,
+    "spellingCost": 15,
+    "spellingObscurity": 0.9444444444444444,
+    "key": 0.37129629629629624
+   },
+   {
+    "id": "upgrade_healing_booster",
+    "name": "Healing Booster",
+    "passPositions": [
+     11,
+     18,
+     13,
+     13,
+     3
+    ],
+    "borda": 0.4296296296296296,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "healing effectiveness",
+    "popularity": 15.14,
+    "popularityObscurity": 0.14814814814814814,
+    "spellingCost": 14,
+    "spellingObscurity": 0.8703703703703703,
+    "key": 0.2546296296296296
+   },
+   {
+    "id": "upgrade_infuser",
+    "name": "Infuser",
+    "passPositions": [
+     15,
+     15,
+     2,
+     9,
+     8
+    ],
+    "borda": 0.36296296296296293,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "spirit lifesteal and power active",
+    "popularity": 3.91,
+    "popularityObscurity": 0.7777777777777778,
+    "spellingCost": 7,
+    "spellingObscurity": 0.2037037037037037,
+    "key": 0.6453703703703704
+   },
+   {
+    "id": "upgrade_inhibitor",
+    "name": "Inhibitor",
+    "passPositions": [
+     6,
+     10,
+     7,
+     4,
+     7
+    ],
+    "borda": 0.2518518518518519,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "damage reduction and heal reduction",
+    "popularity": 3.21,
+    "popularityObscurity": 0.8518518518518519,
+    "spellingCost": 9,
+    "spellingObscurity": 0.3888888888888889,
+    "key": 0.6787037037037036
+   },
+   {
+    "id": "upgrade_magic_shock",
+    "name": "Tankbuster",
+    "passPositions": [
+     19,
+     14,
+     20,
+     17,
+     17
+    ],
+    "borda": 0.6444444444444445,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "big ability damage spirit item",
+    "popularity": 33.04,
+    "popularityObscurity": 0,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5185185185185185,
+    "key": 0.18703703703703706
+   },
+   {
+    "id": "upgrade_magic_storm",
+    "name": "Surge of Power",
+    "passPositions": [
+     25,
+     26,
+     27,
+     27,
+     27
+    ],
+    "borda": 0.9777777777777779,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "imbue ability for speed and power",
+    "popularity": 10.45,
+    "popularityObscurity": 0.3333333333333333,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6851851851851852,
+    "key": 0.5120370370370371
+   },
+   {
+    "id": "upgrade_proc_silence",
+    "name": "Silencer",
+    "passPositions": [
+     1,
+     3,
+     5,
+     2,
+     2
+    ],
+    "borda": 0.0962962962962963,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "bullet silence buildup",
+    "popularity": 6.81,
+    "popularityObscurity": 0.6296296296296297,
+    "spellingCost": 8,
+    "spellingObscurity": 0.2777777777777778,
+    "key": 0.4787037037037037
+   },
+   {
+    "id": "upgrade_sharpshooter",
+    "name": "Sharpshooter",
+    "passPositions": [
+     9,
+     12,
+     14,
+     8,
+     11
+    ],
+    "borda": 0.4,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "long range damage item",
+    "popularity": 8.21,
+    "popularityObscurity": 0.4074074074074074,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6851851851851852,
+    "key": 0.4194444444444444
+   },
+   {
+    "id": "upgrade_spellbreaker",
+    "name": "Spellbreaker",
+    "passPositions": [
+     4,
+     8,
+     10,
+     15,
+     23
+    ],
+    "borda": 0.4444444444444445,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "spirit damage shield",
+    "popularity": 6.87,
+    "popularityObscurity": 0.5925925925925926,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6851851851851852,
+    "key": 0.5601851851851851
+   },
+   {
+    "id": "upgrade_suppressor",
+    "name": "Suppressor",
+    "passPositions": [
+     7,
+     11,
+     9,
+     16,
+     12
+    ],
+    "borda": 0.40740740740740744,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "fire rate reduction",
+    "popularity": 5.27,
+    "popularityObscurity": 0.7407407407407407,
+    "spellingCost": 8,
+    "spellingObscurity": 0.2777777777777778,
+    "key": 0.6342592592592593
+   },
+   {
+    "id": "upgrade_tech_defense_shredders",
+    "name": "Spirit Shredder",
+    "passPositions": [
+     14,
+     4,
+     18,
+     19,
+     5
+    ],
+    "borda": 0.4444444444444445,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "spirit resist shred bullets",
+    "popularity": 5.29,
+    "popularityObscurity": 0.7037037037037037,
+    "spellingCost": 14,
+    "spellingObscurity": 0.8703703703703703,
+    "key": 0.6472222222222223
+   },
+   {
+    "id": "upgrade_trophy_collector",
+    "name": "Trophy Collector",
+    "passPositions": [
+     24,
+     21,
+     16,
+     21,
+     22
+    ],
+    "borda": 0.7703703703703704,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "stacking sprint and souls",
+    "popularity": 19.16,
+    "popularityObscurity": 0.07407407407407407,
+    "spellingCost": 6,
+    "spellingObscurity": 0.09259259259259259,
+    "key": 0.24907407407407406
+   },
+   {
+    "id": "upgrade_veil_walker",
+    "name": "Veil Walker",
+    "passPositions": [
+     18,
+     22,
+     25,
+     22,
+     21
+    ],
+    "borda": 0.8,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "stealth through veils",
+    "popularity": 2.64,
+    "popularityObscurity": 0.9629629629629629,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5185185185185185,
+    "key": 0.9
+   },
+   {
+    "id": "upgrade_vex_barrier",
+    "name": "Reactive Barrier",
+    "passPositions": [
+     21,
+     23,
+     21,
+     23,
+     20
+    ],
+    "borda": 0.8,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "barrier when CC'd",
+    "popularity": 13.09,
+    "popularityObscurity": 0.25925925925925924,
+    "spellingCost": 15,
+    "spellingObscurity": 0.9444444444444444,
+    "key": 0.4287037037037037
+   },
+   {
+    "id": "upgrade_weapon_backstabber",
+    "name": "Stalker",
+    "passPositions": [
+     17,
+     6,
+     8,
+     6,
+     14
+    ],
+    "borda": 0.37777777777777777,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "close-range wound weapon item",
+    "popularity": 14.49,
+    "popularityObscurity": 0.18518518518518517,
+    "spellingCost": 7,
+    "spellingObscurity": 0.2037037037037037,
+    "key": 0.23425925925925925
+   }
+  ],
+  "passAgreement": 0.5957671957671957,
+  "orderBeforeRefinement": [
+   "upgrade_blitz_bullets",
+   "upgrade_magic_shock",
+   "upgrade_weapon_backstabber",
+   "upgrade_trophy_collector",
+   "upgrade_healing_booster",
+   "upgrade_arcane_extension",
+   "upgrade_debuff_reducer",
+   "upgrade_bullet_resist_shredder",
+   "upgrade_headshot_booster",
+   "upgrade_capacitor",
+   "upgrade_berserker",
+   "upgrade_sharpshooter",
+   "upgrade_vex_barrier",
+   "upgrade_headhunter",
+   "upgrade_proc_silence",
+   "upgrade_ability_refresher",
+   "upgrade_magic_storm",
+   "upgrade_spellbreaker",
+   "upgrade_deflecting_armor",
+   "upgrade_suppressor",
+   "upgrade_infuser",
+   "upgrade_tech_defense_shredders",
+   "upgrade_inhibitor",
+   "upgrade_enchanted_holsters",
+   "upgrade_divine_barrier",
+   "upgrade_aprounds",
+   "upgrade_diviners_kevlar",
+   "upgrade_veil_walker"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_divine_barrier",
+    "b": "upgrade_aprounds",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_divine_barrier",
+    "b": "upgrade_diviners_kevlar",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_diviners_kevlar"
+   },
+   {
+    "a": "upgrade_divine_barrier",
+    "b": "upgrade_veil_walker",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_veil_walker"
+   },
+   {
+    "a": "upgrade_aprounds",
+    "b": "upgrade_diviners_kevlar",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_diviners_kevlar"
+   },
+   {
+    "a": "upgrade_aprounds",
+    "b": "upgrade_veil_walker",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_veil_walker"
+   },
+   {
+    "a": "upgrade_diviners_kevlar",
+    "b": "upgrade_veil_walker",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_diviners_kevlar"
+   },
+   {
+    "a": "upgrade_magic_shock",
+    "b": "upgrade_weapon_backstabber",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_debuff_reducer",
+    "b": "upgrade_bullet_resist_shredder",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_bullet_resist_shredder"
+   },
+   {
+    "a": "upgrade_proc_silence",
+    "b": "upgrade_ability_refresher",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_proc_silence"
+   },
+   {
+    "a": "upgrade_blitz_bullets",
+    "b": "upgrade_ability_refresher",
+    "purpose": "review",
+    "rarer": "upgrade_blitz_bullets"
+   },
+   {
+    "a": "upgrade_ability_refresher",
+    "b": "upgrade_blitz_bullets",
+    "purpose": "review",
+    "rarer": "upgrade_blitz_bullets"
+   },
+   {
+    "a": "upgrade_magic_shock",
+    "b": "upgrade_proc_silence",
+    "purpose": "review",
+    "rarer": "upgrade_magic_shock"
+   },
+   {
+    "a": "upgrade_proc_silence",
+    "b": "upgrade_magic_shock",
+    "purpose": "review",
+    "rarer": "upgrade_magic_shock"
+   },
+   {
+    "a": "upgrade_diviners_kevlar",
+    "b": "upgrade_veil_walker",
+    "purpose": "review",
+    "rarer": "upgrade_diviners_kevlar"
+   }
+  ],
+  "review": [
+   {
+    "name": "Swift Striker",
+    "compareWith": "Refresher",
+    "claim": "should_be_more_obscure",
+    "reason": "Swift Striker is a mid-tier weapon item that is not an iconic ending-in-R item. Refresher is a famous, memorable Tier 4 item and one of the first names players think of for 'ends in R', so it should be the most obvious answer.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Refresher",
+    "compareWith": "Swift Striker",
+    "claim": "should_be_more_obvious",
+    "reason": "Refresher is a well-known, distinctive item with a simple, memorable name, yet it sits at 60 pts. It should be near the top for obviousness, alongside or above Swift Striker.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Tankbuster",
+    "compareWith": "Silencer",
+    "claim": "should_be_more_obscure",
+    "reason": "Tankbuster is a niche Tier 3 spirit item that does not end with an intuitive 'R' sound, so it is unlikely to come to mind first. Silencer is a more recognizable name ending in R, so it should be easier to recall than Tankbuster.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Silencer",
+    "compareWith": "Tankbuster",
+    "claim": "should_be_more_obvious",
+    "reason": "Silencer is a well-known Tier 4 item whose name clearly ends in -er, and players commonly buy and recognize it. 85 pts is too obscure; it should be cheaper than Tankbuster.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Diviner's Kevlar",
+    "compareWith": "Veil Walker",
+    "claim": "should_be_more_obvious",
+    "reason": "Diviner's Kevlar is a distinctive possessive name that ends in R and is memorable. It is not clearly rarer than Veil Walker or Spellslinger, so 100 pts is likely overstated and it should swap with a truly forgettable item.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}

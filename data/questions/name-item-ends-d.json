@@ -1,0 +1,298 @@
+{
+ "question": {
+  "signature": "name:item:ends:d",
+  "prompt": "Name an item whose name ends with the letter D.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_ability_power_shard",
+   "upgrade_active_reload",
+   "upgrade_cardio_calibrator",
+   "upgrade_guardian_ward",
+   "upgrade_quick_silver",
+   "upgrade_spellslinger_headshots"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:ends:d"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:22:27.881Z",
+ "answers": [
+  {
+   "entityId": "upgrade_active_reload",
+   "name": "Active Reload",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_guardian_ward",
+   "name": "Guardian Ward",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_cardio_calibrator",
+   "name": "Enduring Speed",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_quick_silver",
+   "name": "Quicksilver Reload",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_ability_power_shard",
+   "name": "Echo Shard",
+   "rank": 5,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_spellslinger_headshots",
+   "name": "Spirit Rend",
+   "rank": 6,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_ability_power_shard",
+    "name": "Echo Shard",
+    "passPositions": [
+     1,
+     4,
+     1,
+     4,
+     0
+    ],
+    "borda": 0.4,
+    "fit": {
+     "expected": 1,
+     "neutral": 3,
+     "surprising": 1
+    },
+    "perception": "Ability cooldown reset item",
+    "popularity": 2.62,
+    "popularityObscurity": 1,
+    "spellingCost": 9,
+    "spellingObscurity": 0.2,
+    "key": 0.8099999999999999
+   },
+   {
+    "id": "upgrade_active_reload",
+    "name": "Active Reload",
+    "passPositions": [
+     0,
+     0,
+     2,
+     0,
+     2
+    ],
+    "borda": 0.16,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Popular weapon item, reload timing minigame",
+    "popularity": 5.15,
+    "popularityObscurity": 0.4,
+    "spellingCost": 12,
+    "spellingObscurity": 0.7,
+    "key": 0.355
+   },
+   {
+    "id": "upgrade_cardio_calibrator",
+    "name": "Enduring Speed",
+    "passPositions": [
+     4,
+     5,
+     5,
+     2,
+     5
+    ],
+    "borda": 0.8399999999999999,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Vitality move speed boots-like item",
+    "popularity": 23.4,
+    "popularityObscurity": 0,
+    "spellingCost": 13,
+    "spellingObscurity": 1,
+    "key": 0.25999999999999995
+   },
+   {
+    "id": "upgrade_guardian_ward",
+    "name": "Guardian Ward",
+    "passPositions": [
+     2,
+     2,
+     4,
+     3,
+     1
+    ],
+    "borda": 0.4800000000000001,
+    "fit": {
+     "expected": 1,
+     "neutral": 3,
+     "surprising": 1
+    },
+    "perception": "Barrier cast on ally",
+    "popularity": 4.91,
+    "popularityObscurity": 0.6,
+    "spellingCost": 12,
+    "spellingObscurity": 0.7,
+    "key": 0.575
+   },
+   {
+    "id": "upgrade_quick_silver",
+    "name": "Quicksilver Reload",
+    "passPositions": [
+     5,
+     1,
+     3,
+     5,
+     4
+    ],
+    "borda": 0.72,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Spirit item reloading on ability use",
+    "popularity": 18.57,
+    "popularityObscurity": 0.2,
+    "spellingCost": 3,
+    "spellingObscurity": 0,
+    "key": 0.31999999999999995
+   },
+   {
+    "id": "upgrade_spellslinger_headshots",
+    "name": "Spirit Rend",
+    "passPositions": [
+     3,
+     3,
+     0,
+     1,
+     3
+    ],
+    "borda": 0.4,
+    "fit": {
+     "expected": 1,
+     "neutral": 3,
+     "surprising": 1
+    },
+    "perception": "T3 spirit resist shred debuff",
+    "popularity": 3.65,
+    "popularityObscurity": 0.8,
+    "spellingCost": 10,
+    "spellingObscurity": 0.4,
+    "key": 0.6799999999999999
+   }
+  ],
+  "passAgreement": 0.2,
+  "orderBeforeRefinement": [
+   "upgrade_cardio_calibrator",
+   "upgrade_quick_silver",
+   "upgrade_active_reload",
+   "upgrade_guardian_ward",
+   "upgrade_spellslinger_headshots",
+   "upgrade_ability_power_shard"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_active_reload",
+    "b": "upgrade_guardian_ward",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_guardian_ward"
+   },
+   {
+    "a": "upgrade_active_reload",
+    "b": "upgrade_spellslinger_headshots",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_spellslinger_headshots"
+   },
+   {
+    "a": "upgrade_active_reload",
+    "b": "upgrade_ability_power_shard",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_ability_power_shard"
+   },
+   {
+    "a": "upgrade_guardian_ward",
+    "b": "upgrade_spellslinger_headshots",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_spellslinger_headshots"
+   },
+   {
+    "a": "upgrade_guardian_ward",
+    "b": "upgrade_ability_power_shard",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_ability_power_shard"
+   },
+   {
+    "a": "upgrade_spellslinger_headshots",
+    "b": "upgrade_ability_power_shard",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_spellslinger_headshots"
+   },
+   {
+    "a": "upgrade_cardio_calibrator",
+    "b": "upgrade_quick_silver",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_cardio_calibrator",
+    "b": "upgrade_active_reload",
+    "purpose": "review",
+    "rarer": "upgrade_cardio_calibrator"
+   },
+   {
+    "a": "upgrade_quick_silver",
+    "b": "upgrade_guardian_ward",
+    "purpose": "review",
+    "rarer": "upgrade_quick_silver"
+   }
+  ],
+  "review": [
+   {
+    "name": "Enduring Speed",
+    "compareWith": "Active Reload",
+    "claim": "should_be_more_obscure",
+    "reason": "Enduring Speed is a minor Tier 2 vitality item that players rarely think of first. Active Reload is a staple weapon item, and its name ends in a clear D, so it should come to mind sooner and be the 10-point answer.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Quicksilver Reload",
+    "compareWith": "Guardian Ward",
+    "claim": "should_be_more_obscure",
+    "reason": "Quicksilver Reload is a niche spirit item, no more memorable than Guardian Ward. Both names end in a D that is easy to spot, and Quicksilver is not clearly more obvious, so it should be at least as obscure.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Echo Shard",
+    "compareWith": "Spirit Rend",
+    "claim": "should_be_more_obvious",
+    "reason": "Echo Shard is a well-known Tier 4 item with a distinct, memorable name. Players will think of it far more readily than Spirit Rend, so it belongs closer to the Active Reload and Guardian Ward tier than at 85 points.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}

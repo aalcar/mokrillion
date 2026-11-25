@@ -1,0 +1,540 @@
+{
+ "question": {
+  "signature": "name:item:ends:n",
+  "prompt": "Name an item whose name ends with the letter N.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_cooldown_reduction",
+   "upgrade_endurance",
+   "upgrade_glass_cannon",
+   "upgrade_imbued_duration_extender",
+   "upgrade_magic_reach",
+   "upgrade_magic_tempo",
+   "upgrade_metal_skin",
+   "upgrade_mystic_regeneration",
+   "upgrade_resonant_healing",
+   "upgrade_spirit_burn",
+   "upgrade_target_stun",
+   "upgrade_tech_range",
+   "upgrade_transcendent_cooldown"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:ends:n"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:26:44.288Z",
+ "answers": [
+  {
+   "entityId": "upgrade_magic_reach",
+   "name": "Mystic Expansion",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_cooldown_reduction",
+   "name": "Superior Cooldown",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_tech_range",
+   "name": "Greater Expansion",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_magic_tempo",
+   "name": "Compress Cooldown",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_endurance",
+   "name": "Extra Regen",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_spirit_burn",
+   "name": "Spirit Burn",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_mystic_regeneration",
+   "name": "Mystic Regeneration",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_imbued_duration_extender",
+   "name": "Superior Duration",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_target_stun",
+   "name": "Knockdown",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_glass_cannon",
+   "name": "Glass Cannon",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_metal_skin",
+   "name": "Metal Skin",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_transcendent_cooldown",
+   "name": "Transcendent Cooldown",
+   "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_resonant_healing",
+   "name": "Radiant Regeneration",
+   "rank": 13,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_cooldown_reduction",
+    "name": "Superior Cooldown",
+    "passPositions": [
+     9,
+     11,
+     4,
+     1,
+     5
+    ],
+    "borda": 0.4999999999999999,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Mid-tier cooldown reduction",
+    "popularity": 34.12,
+    "popularityObscurity": 0,
+    "spellingCost": 16,
+    "spellingObscurity": 0.8333333333333334,
+    "key": 0.16666666666666663
+   },
+   {
+    "id": "upgrade_endurance",
+    "name": "Extra Regen",
+    "passPositions": [
+     8,
+     8,
+     7,
+     9,
+     9
+    ],
+    "borda": 0.6833333333333333,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Cheap vitality regen item",
+    "popularity": 22.98,
+    "popularityObscurity": 0.3333333333333333,
+    "spellingCost": 10,
+    "spellingObscurity": 0.4583333333333333,
+    "key": 0.4270833333333333
+   },
+   {
+    "id": "upgrade_glass_cannon",
+    "name": "Glass Cannon",
+    "passPositions": [
+     2,
+     7,
+     1,
+     11,
+     1
+    ],
+    "borda": 0.36666666666666664,
+    "fit": {
+     "expected": 1,
+     "neutral": 3,
+     "surprising": 1
+    },
+    "perception": "High damage, low health weapon item",
+    "popularity": 2.22,
+    "popularityObscurity": 1,
+    "spellingCost": 5,
+    "spellingObscurity": 0,
+    "key": 0.7916666666666666
+   },
+   {
+    "id": "upgrade_imbued_duration_extender",
+    "name": "Superior Duration",
+    "passPositions": [
+     12,
+     9,
+     11,
+     8,
+     12
+    ],
+    "borda": 0.8666666666666666,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Ability duration upgrade",
+    "popularity": 21.4,
+    "popularityObscurity": 0.4166666666666667,
+    "spellingCost": 16,
+    "spellingObscurity": 0.8333333333333334,
+    "key": 0.55
+   },
+   {
+    "id": "upgrade_magic_reach",
+    "name": "Mystic Expansion",
+    "passPositions": [
+     3,
+     1,
+     9,
+     5,
+     3
+    ],
+    "borda": 0.35,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Cheap range and radius spirit item",
+    "popularity": 33.35,
+    "popularityObscurity": 0.08333333333333333,
+    "spellingCost": 9,
+    "spellingObscurity": 0.25,
+    "key": 0.15833333333333333
+   },
+   {
+    "id": "upgrade_magic_tempo",
+    "name": "Compress Cooldown",
+    "passPositions": [
+     10,
+     10,
+     8,
+     7,
+     11
+    ],
+    "borda": 0.7666666666666667,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Imbue cooldown reduction",
+    "popularity": 31.12,
+    "popularityObscurity": 0.16666666666666666,
+    "spellingCost": 16,
+    "spellingObscurity": 0.8333333333333334,
+    "key": 0.35
+   },
+   {
+    "id": "upgrade_metal_skin",
+    "name": "Metal Skin",
+    "passPositions": [
+     1,
+     6,
+     2,
+     12,
+     2
+    ],
+    "borda": 0.38333333333333336,
+    "fit": {
+     "expected": 1,
+     "neutral": 3,
+     "surprising": 1
+    },
+    "perception": "Bullet immunity active",
+    "popularity": 3.6,
+    "popularityObscurity": 0.9166666666666666,
+    "spellingCost": 9,
+    "spellingObscurity": 0.25,
+    "key": 0.75
+   },
+   {
+    "id": "upgrade_mystic_regeneration",
+    "name": "Mystic Regeneration",
+    "passPositions": [
+     5,
+     3,
+     5,
+     2,
+     4
+    ],
+    "borda": 0.3166666666666667,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Cheap spirit regen item",
+    "popularity": 8.86,
+    "popularityObscurity": 0.6666666666666666,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5833333333333334,
+    "key": 0.575
+   },
+   {
+    "id": "upgrade_resonant_healing",
+    "name": "Radiant Regeneration",
+    "passPositions": [
+     6,
+     4,
+     6,
+     3,
+     8
+    ],
+    "borda": 0.45,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Heal and speed on cast",
+    "popularity": 7.89,
+    "popularityObscurity": 0.75,
+    "spellingCost": 7,
+    "spellingObscurity": 0.08333333333333333,
+    "key": 0.6416666666666666
+   },
+   {
+    "id": "upgrade_spirit_burn",
+    "name": "Spirit Burn",
+    "passPositions": [
+     7,
+     5,
+     3,
+     10,
+     7
+    ],
+    "borda": 0.5333333333333334,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Tier 4 burn explosion",
+    "popularity": 19.01,
+    "popularityObscurity": 0.5,
+    "spellingCost": 10,
+    "spellingObscurity": 0.4583333333333333,
+    "key": 0.50625
+   },
+   {
+    "id": "upgrade_target_stun",
+    "name": "Knockdown",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Stun active that pulls airborne targets down",
+    "popularity": 5.26,
+    "popularityObscurity": 0.8333333333333334,
+    "spellingCost": 9,
+    "spellingObscurity": 0.25,
+    "key": 0.5958333333333333
+   },
+   {
+    "id": "upgrade_tech_range",
+    "name": "Greater Expansion",
+    "passPositions": [
+     4,
+     2,
+     10,
+     6,
+     10
+    ],
+    "borda": 0.5333333333333334,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Upgraded range and radius item",
+    "popularity": 26.6,
+    "popularityObscurity": 0.25,
+    "spellingCost": 13,
+    "spellingObscurity": 0.6666666666666666,
+    "key": 0.3416666666666667
+   },
+   {
+    "id": "upgrade_transcendent_cooldown",
+    "name": "Transcendent Cooldown",
+    "passPositions": [
+     11,
+     12,
+     12,
+     4,
+     6
+    ],
+    "borda": 0.75,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Top-tier cooldown reduction",
+    "popularity": 13.8,
+    "popularityObscurity": 0.5833333333333334,
+    "spellingCost": 20,
+    "spellingObscurity": 1,
+    "key": 0.6458333333333333
+   }
+  ],
+  "passAgreement": 0.29743589743589743,
+  "orderBeforeRefinement": [
+   "upgrade_magic_reach",
+   "upgrade_cooldown_reduction",
+   "upgrade_tech_range",
+   "upgrade_magic_tempo",
+   "upgrade_endurance",
+   "upgrade_spirit_burn",
+   "upgrade_imbued_duration_extender",
+   "upgrade_mystic_regeneration",
+   "upgrade_target_stun",
+   "upgrade_resonant_healing",
+   "upgrade_transcendent_cooldown",
+   "upgrade_metal_skin",
+   "upgrade_glass_cannon"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_resonant_healing",
+    "b": "upgrade_transcendent_cooldown",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_resonant_healing",
+    "b": "upgrade_metal_skin",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_resonant_healing"
+   },
+   {
+    "a": "upgrade_resonant_healing",
+    "b": "upgrade_glass_cannon",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_resonant_healing"
+   },
+   {
+    "a": "upgrade_transcendent_cooldown",
+    "b": "upgrade_metal_skin",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_transcendent_cooldown"
+   },
+   {
+    "a": "upgrade_transcendent_cooldown",
+    "b": "upgrade_glass_cannon",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_transcendent_cooldown"
+   },
+   {
+    "a": "upgrade_metal_skin",
+    "b": "upgrade_glass_cannon",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_metal_skin"
+   },
+   {
+    "a": "upgrade_magic_reach",
+    "b": "upgrade_cooldown_reduction",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_tech_range",
+    "b": "upgrade_magic_tempo",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_magic_tempo"
+   },
+   {
+    "a": "upgrade_imbued_duration_extender",
+    "b": "upgrade_mystic_regeneration",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_imbued_duration_extender"
+   },
+   {
+    "a": "upgrade_target_stun",
+    "b": "upgrade_mystic_regeneration",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_metal_skin",
+    "b": "upgrade_endurance",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_glass_cannon",
+    "b": "upgrade_spirit_burn",
+    "purpose": "review",
+    "rarer": "upgrade_glass_cannon"
+   }
+  ],
+  "review": [
+   {
+    "name": "Knockdown",
+    "compareWith": "Mystic Regeneration",
+    "claim": "should_be_more_obvious",
+    "reason": "Knockdown is a well-known active item and its name ends plainly in N. Players hunting for N-endings will recall it quickly, so it is not rarer than Mystic Regeneration.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Metal Skin",
+    "compareWith": "Extra Regen",
+    "claim": "should_be_more_obvious",
+    "reason": "Metal Skin is a popular, widely bought active that players know well. Its name ends in N, so it should be easier to recall than the forgettable Tier 1 Extra Regen.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Glass Cannon",
+    "compareWith": "Spirit Burn",
+    "claim": "should_be_more_obvious",
+    "reason": "Glass Cannon is a famous, memorable item, and 'Cannon' ending in N is easy to spot. It should be no rarer than Spirit Burn.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Transcendent Cooldown",
+    "compareWith": "Radiant Regeneration",
+    "claim": "should_be_more_obvious",
+    "reason": "Transcendent Cooldown is a Tier 4 item closely linked to the Cooldown family, which also holds Superior Cooldown. Players who think of Superior Cooldown will often name its upgrade, so it is not clearly rarer than Radiant Regeneration.",
+    "outcome": "applied-by-data"
+   }
+  ]
+ }
+}

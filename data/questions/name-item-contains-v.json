@@ -1,0 +1,745 @@
+{
+ "question": {
+  "signature": "name:item:contains:v",
+  "prompt": "Name an item whose name contains the letter V.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_active_reload",
+   "upgrade_aoe_root",
+   "upgrade_cloaking_device_active",
+   "upgrade_divine_barrier",
+   "upgrade_diviners_kevlar",
+   "upgrade_health_nova",
+   "upgrade_high_velocity_mag",
+   "upgrade_magic_vulnerability",
+   "upgrade_medic_bullets",
+   "upgrade_mystic_reverb",
+   "upgrade_quick_silver",
+   "upgrade_regenerating_bullet_shield",
+   "upgrade_restorative_locket",
+   "upgrade_soaring_spirit",
+   "upgrade_surging_power",
+   "upgrade_targeted_silence",
+   "upgrade_tech_overflow",
+   "upgrade_veil_walker",
+   "upgrade_vex_barrier"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:contains:v"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:29:07.442Z",
+ "answers": [
+  {
+   "entityId": "upgrade_high_velocity_mag",
+   "name": "High-Velocity Rounds",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_magic_vulnerability",
+   "name": "Mystic Vulnerability",
+   "rank": 2,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_divine_barrier",
+   "name": "Divine Barrier",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_quick_silver",
+   "name": "Quicksilver Reload",
+   "rank": 4,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_regenerating_bullet_shield",
+   "name": "Battle Vest",
+   "rank": 5,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_surging_power",
+   "name": "Vampiric Burst",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_medic_bullets",
+   "name": "Restorative Shot",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_vex_barrier",
+   "name": "Reactive Barrier",
+   "rank": 8,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_mystic_reverb",
+   "name": "Mystic Reverb",
+   "rank": 9,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_soaring_spirit",
+   "name": "Improved Spirit",
+   "rank": 10,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_active_reload",
+   "name": "Active Reload",
+   "rank": 11,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_tech_overflow",
+   "name": "Spiritual Overflow",
+   "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_veil_walker",
+   "name": "Veil Walker",
+   "rank": 13,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_aoe_root",
+   "name": "Vortex Web",
+   "rank": 14,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_diviners_kevlar",
+   "name": "Diviner's Kevlar",
+   "rank": 15,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_health_nova",
+   "name": "Healing Nova",
+   "rank": 16,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_targeted_silence",
+   "name": "Silence Wave",
+   "rank": 17,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_restorative_locket",
+   "name": "Restorative Locket",
+   "rank": 18,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_cloaking_device_active",
+   "name": "Shadow Weave",
+   "rank": 19,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_active_reload",
+    "name": "Active Reload",
+    "passPositions": [
+     13,
+     11,
+     5,
+     7,
+     8
+    ],
+    "borda": 0.48888888888888893,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Reload timing item",
+    "popularity": 5.15,
+    "popularityObscurity": 0.5555555555555556,
+    "spellingCost": 12,
+    "spellingObscurity": 0.75,
+    "key": 0.5486111111111112
+   },
+   {
+    "id": "upgrade_aoe_root",
+    "name": "Vortex Web",
+    "passPositions": [
+     0,
+     2,
+     2,
+     2,
+     1
+    ],
+    "borda": 0.07777777777777777,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Vacuum grenade pulling enemies",
+    "popularity": 2.38,
+    "popularityObscurity": 0.8333333333333334,
+    "spellingCost": 6,
+    "spellingObscurity": 0.2222222222222222,
+    "key": 0.6138888888888889
+   },
+   {
+    "id": "upgrade_cloaking_device_active",
+    "name": "Shadow Weave",
+    "passPositions": [
+     16,
+     16,
+     16,
+     10,
+     16
+    ],
+    "borda": 0.8222222222222222,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "Stealth active",
+    "popularity": 2.8,
+    "popularityObscurity": 0.6666666666666666,
+    "spellingCost": 11,
+    "spellingObscurity": 0.6388888888888888,
+    "key": 0.7041666666666666
+   },
+   {
+    "id": "upgrade_divine_barrier",
+    "name": "Divine Barrier",
+    "passPositions": [
+     4,
+     3,
+     4,
+     3,
+     4
+    ],
+    "borda": 0.19999999999999998,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "Cleanse and barrier ally active",
+    "popularity": 3.26,
+    "popularityObscurity": 0.6111111111111112,
+    "spellingCost": 6,
+    "spellingObscurity": 0.2222222222222222,
+    "key": 0.48888888888888893
+   },
+   {
+    "id": "upgrade_diviners_kevlar",
+    "name": "Diviner's Kevlar",
+    "passPositions": [
+     6,
+     6,
+     18,
+     6,
+     7
+    ],
+    "borda": 0.47777777777777775,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Ultimate barrier item",
+    "popularity": 2.67,
+    "popularityObscurity": 0.7222222222222222,
+    "spellingCost": 6,
+    "spellingObscurity": 0.2222222222222222,
+    "key": 0.6361111111111111
+   },
+   {
+    "id": "upgrade_health_nova",
+    "name": "Healing Nova",
+    "passPositions": [
+     17,
+     15,
+     9,
+     8,
+     15
+    ],
+    "borda": 0.7111111111111111,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "Heal burst active",
+    "popularity": 1.18,
+    "popularityObscurity": 0.9444444444444444,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5,
+    "key": 0.8638888888888889
+   },
+   {
+    "id": "upgrade_high_velocity_mag",
+    "name": "High-Velocity Rounds",
+    "passPositions": [
+     3,
+     5,
+     3,
+     4,
+     3
+    ],
+    "borda": 0.19999999999999998,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Cheap bullet velocity weapon item",
+    "popularity": 22.33,
+    "popularityObscurity": 0.1111111111111111,
+    "spellingCost": 3,
+    "spellingObscurity": 0.027777777777777776,
+    "key": 0.12916666666666665
+   },
+   {
+    "id": "upgrade_magic_vulnerability",
+    "name": "Mystic Vulnerability",
+    "passPositions": [
+     5,
+     4,
+     6,
+     5,
+     5
+    ],
+    "borda": 0.2777777777777778,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "Spirit resist shred item",
+    "popularity": 23.24,
+    "popularityObscurity": 0.05555555555555555,
+    "spellingCost": 19,
+    "spellingObscurity": 1,
+    "key": 0.15833333333333333
+   },
+   {
+    "id": "upgrade_medic_bullets",
+    "name": "Restorative Shot",
+    "passPositions": [
+     8,
+     12,
+     11,
+     12,
+     12
+    ],
+    "borda": 0.611111111111111,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Cheap heal-on-hit bullet",
+    "popularity": 18.31,
+    "popularityObscurity": 0.2222222222222222,
+    "spellingCost": 12,
+    "spellingObscurity": 0.75,
+    "key": 0.3458333333333333
+   },
+   {
+    "id": "upgrade_mystic_reverb",
+    "name": "Mystic Reverb",
+    "passPositions": [
+     10,
+     13,
+     15,
+     15,
+     17
+    ],
+    "borda": 0.7777777777777779,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Spirit lifesteal imbue",
+    "popularity": 10.09,
+    "popularityObscurity": 0.3888888888888889,
+    "spellingCost": 6,
+    "spellingObscurity": 0.2222222222222222,
+    "key": 0.47777777777777775
+   },
+   {
+    "id": "upgrade_quick_silver",
+    "name": "Quicksilver Reload",
+    "passPositions": [
+     11,
+     14,
+     12,
+     14,
+     18
+    ],
+    "borda": 0.7666666666666666,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Spirit imbue reload item",
+    "popularity": 18.57,
+    "popularityObscurity": 0.16666666666666666,
+    "spellingCost": 3,
+    "spellingObscurity": 0.027777777777777776,
+    "key": 0.3097222222222222
+   },
+   {
+    "id": "upgrade_regenerating_bullet_shield",
+    "name": "Battle Vest",
+    "passPositions": [
+     9,
+     7,
+     10,
+     13,
+     6
+    ],
+    "borda": 0.5,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Bullet resist cheap vitality",
+    "popularity": 16.97,
+    "popularityObscurity": 0.2777777777777778,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5,
+    "key": 0.34444444444444444
+   },
+   {
+    "id": "upgrade_restorative_locket",
+    "name": "Restorative Locket",
+    "passPositions": [
+     7,
+     9,
+     17,
+     17,
+     13
+    ],
+    "borda": 0.7,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Stamina and heal stacking active",
+    "popularity": 1.64,
+    "popularityObscurity": 0.8888888888888888,
+    "spellingCost": 6,
+    "spellingObscurity": 0.2222222222222222,
+    "key": 0.8083333333333332
+   },
+   {
+    "id": "upgrade_soaring_spirit",
+    "name": "Improved Spirit",
+    "passPositions": [
+     18,
+     18,
+     14,
+     18,
+     11
+    ],
+    "borda": 0.8777777777777779,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "Spirit power stat item",
+    "popularity": 44.97,
+    "popularityObscurity": 0,
+    "spellingCost": 14,
+    "spellingObscurity": 0.8888888888888888,
+    "key": 0.2638888888888889
+   },
+   {
+    "id": "upgrade_surging_power",
+    "name": "Vampiric Burst",
+    "passPositions": [
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0.01111111111111111,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Lifesteal burst active",
+    "popularity": 5.26,
+    "popularityObscurity": 0.5,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8333333333333334,
+    "key": 0.39444444444444443
+   },
+   {
+    "id": "upgrade_targeted_silence",
+    "name": "Silence Wave",
+    "passPositions": [
+     14,
+     10,
+     8,
+     9,
+     9
+    ],
+    "borda": 0.5555555555555556,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Spirit active silence projectile",
+    "popularity": 0.94,
+    "popularityObscurity": 1,
+    "spellingCost": 11,
+    "spellingObscurity": 0.6388888888888888,
+    "key": 0.8708333333333333
+   },
+   {
+    "id": "upgrade_tech_overflow",
+    "name": "Spiritual Overflow",
+    "passPositions": [
+     15,
+     17,
+     13,
+     16,
+     10
+    ],
+    "borda": 0.788888888888889,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "Spirit lifesteal weapon item",
+    "popularity": 8.69,
+    "popularityObscurity": 0.4444444444444444,
+    "spellingCost": 8,
+    "spellingObscurity": 0.3888888888888889,
+    "key": 0.5277777777777777
+   },
+   {
+    "id": "upgrade_veil_walker",
+    "name": "Veil Walker",
+    "passPositions": [
+     2,
+     1,
+     1,
+     1,
+     2
+    ],
+    "borda": 0.07777777777777778,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Stealth and speed walking through veil",
+    "popularity": 2.64,
+    "popularityObscurity": 0.7777777777777778,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5,
+    "key": 0.5888888888888888
+   },
+   {
+    "id": "upgrade_vex_barrier",
+    "name": "Reactive Barrier",
+    "passPositions": [
+     12,
+     8,
+     7,
+     11,
+     14
+    ],
+    "borda": 0.5777777777777777,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Barrier when CC'd",
+    "popularity": 13.09,
+    "popularityObscurity": 0.3333333333333333,
+    "spellingCost": 15,
+    "spellingObscurity": 0.9444444444444444,
+    "key": 0.42499999999999993
+   }
+  ],
+  "passAgreement": 0.6023391812865498,
+  "orderBeforeRefinement": [
+   "upgrade_high_velocity_mag",
+   "upgrade_magic_vulnerability",
+   "upgrade_soaring_spirit",
+   "upgrade_quick_silver",
+   "upgrade_regenerating_bullet_shield",
+   "upgrade_medic_bullets",
+   "upgrade_surging_power",
+   "upgrade_vex_barrier",
+   "upgrade_mystic_reverb",
+   "upgrade_divine_barrier",
+   "upgrade_tech_overflow",
+   "upgrade_active_reload",
+   "upgrade_veil_walker",
+   "upgrade_aoe_root",
+   "upgrade_diviners_kevlar",
+   "upgrade_cloaking_device_active",
+   "upgrade_restorative_locket",
+   "upgrade_health_nova",
+   "upgrade_targeted_silence"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_cloaking_device_active",
+    "b": "upgrade_restorative_locket",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_cloaking_device_active",
+    "b": "upgrade_health_nova",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_cloaking_device_active"
+   },
+   {
+    "a": "upgrade_cloaking_device_active",
+    "b": "upgrade_targeted_silence",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_cloaking_device_active"
+   },
+   {
+    "a": "upgrade_restorative_locket",
+    "b": "upgrade_health_nova",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_restorative_locket"
+   },
+   {
+    "a": "upgrade_restorative_locket",
+    "b": "upgrade_targeted_silence",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_restorative_locket"
+   },
+   {
+    "a": "upgrade_health_nova",
+    "b": "upgrade_targeted_silence",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_magic_vulnerability",
+    "b": "upgrade_soaring_spirit",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_soaring_spirit"
+   },
+   {
+    "a": "upgrade_regenerating_bullet_shield",
+    "b": "upgrade_medic_bullets",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_medic_bullets"
+   },
+   {
+    "a": "upgrade_tech_overflow",
+    "b": "upgrade_active_reload",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_tech_overflow"
+   },
+   {
+    "a": "upgrade_surging_power",
+    "b": "upgrade_medic_bullets",
+    "purpose": "review",
+    "rarer": "upgrade_medic_bullets"
+   },
+   {
+    "a": "upgrade_aoe_root",
+    "b": "upgrade_mystic_reverb",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_veil_walker",
+    "b": "upgrade_active_reload",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_divine_barrier",
+    "b": "upgrade_soaring_spirit",
+    "purpose": "review",
+    "rarer": "upgrade_soaring_spirit"
+   },
+   {
+    "a": "upgrade_restorative_locket",
+    "b": "upgrade_cloaking_device_active",
+    "purpose": "review",
+    "rarer": "upgrade_cloaking_device_active"
+   }
+  ],
+  "review": [
+   {
+    "name": "Vampiric Burst",
+    "compareWith": "Restorative Shot",
+    "claim": "should_be_more_obvious",
+    "reason": "The name has V in its first word and is a well-known, frequently bought Tier 4 item, so it is likely to come to mind quickly. Restorative Shot has no V in an obvious spot and is a less recalled Tier 1 item, so they should not share 60 points.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Vortex Web",
+    "compareWith": "Mystic Reverb",
+    "claim": "should_be_more_obvious",
+    "reason": "Vortex Web starts with V, so a player hunting for the letter V will think of it right away. Mystic Reverb's V is buried mid-word, so it is less likely to come up, and the 85 versus 60 gap is backwards.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Veil Walker",
+    "compareWith": "Active Reload",
+    "claim": "should_be_more_obvious",
+    "reason": "Veil Walker begins with V and is a distinctive, memorable name, so it should be recalled readily. Active Reload has a V buried in the middle of the name and is less obviously a V answer, so it should score higher.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Divine Barrier",
+    "compareWith": "Improved Spirit",
+    "claim": "should_be_more_obvious",
+    "reason": "Divine Barrier is a popular active item, and its V sits in the first word. Improved Spirit's V is less prominent, and the item is generally forgettable, so Improved Spirit should score higher.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Restorative Locket",
+    "compareWith": "Shadow Weave",
+    "claim": "should_be_more_obvious",
+    "reason": "Shadow Weave has no V in the name, so it should be more obscure. Restorative Locket's V is in the same position as in Restorative Shot, so it is easy to think of, and it should not be rarer than the item that is not even valid.",
+    "outcome": "applied"
+   }
+  ]
+ }
+}

@@ -1,0 +1,608 @@
+{
+ "question": {
+  "signature": "name:item:contains:x",
+  "prompt": "Name an item whose name contains the letter X.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_aoe_root",
+   "upgrade_arcane_extension",
+   "upgrade_clip_size",
+   "upgrade_containment",
+   "upgrade_endurance",
+   "upgrade_escalating_exposure",
+   "upgrade_express_shot",
+   "upgrade_extra_charge",
+   "upgrade_greater_withering_whip",
+   "upgrade_health",
+   "upgrade_improved_spirit",
+   "upgrade_improved_stamina",
+   "upgrade_magic_reach",
+   "upgrade_tech_range",
+   "upgrade_toxic_bullets"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:contains:x"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:30:04.752Z",
+ "answers": [
+  {
+   "entityId": "upgrade_improved_spirit",
+   "name": "Extra Spirit",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_magic_reach",
+   "name": "Mystic Expansion",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_extra_charge",
+   "name": "Extra Charge",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_improved_stamina",
+   "name": "Extra Stamina",
+   "rank": 4,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_health",
+   "name": "Extra Health",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_endurance",
+   "name": "Extra Regen",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_tech_range",
+   "name": "Greater Expansion",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_escalating_exposure",
+   "name": "Escalating Exposure",
+   "rank": 8,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_clip_size",
+   "name": "Extended Magazine",
+   "rank": 9,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_arcane_extension",
+   "name": "Duration Extender",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_toxic_bullets",
+   "name": "Toxic Bullets",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_express_shot",
+   "name": "Express Shot",
+   "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_containment",
+   "name": "Slowing Hex",
+   "rank": 13,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_greater_withering_whip",
+   "name": "Disarming Hex",
+   "rank": 14,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_aoe_root",
+   "name": "Vortex Web",
+   "rank": 15,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_aoe_root",
+    "name": "Vortex Web",
+    "passPositions": [
+     12,
+     10,
+     13,
+     14,
+     13
+    ],
+    "borda": 0.8857142857142858,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Vacuum grenade active",
+    "popularity": 2.38,
+    "popularityObscurity": 1,
+    "spellingCost": 6,
+    "spellingObscurity": 0.07142857142857142,
+    "key": 0.9249999999999999
+   },
+   {
+    "id": "upgrade_arcane_extension",
+    "name": "Duration Extender",
+    "passPositions": [
+     9,
+     13,
+     10,
+     10,
+     12
+    ],
+    "borda": 0.7714285714285716,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Duration imbue item",
+    "popularity": 17.97,
+    "popularityObscurity": 0.5714285714285714,
+    "spellingCost": 16,
+    "spellingObscurity": 1,
+    "key": 0.6428571428571428
+   },
+   {
+    "id": "upgrade_clip_size",
+    "name": "Extended Magazine",
+    "passPositions": [
+     6,
+     6,
+     7,
+     7,
+     6
+    ],
+    "borda": 0.45714285714285713,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "Ammo capacity weapon item",
+    "popularity": 15.22,
+    "popularityObscurity": 0.6428571428571429,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8928571428571429,
+    "key": 0.6089285714285715
+   },
+   {
+    "id": "upgrade_containment",
+    "name": "Slowing Hex",
+    "passPositions": [
+     11,
+     11,
+     12,
+     12,
+     8
+    ],
+    "borda": 0.7714285714285714,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Slow and silence active",
+    "popularity": 12.78,
+    "popularityObscurity": 0.7857142857142857,
+    "spellingCost": 10,
+    "spellingObscurity": 0.2857142857142857,
+    "key": 0.7571428571428571
+   },
+   {
+    "id": "upgrade_endurance",
+    "name": "Extra Regen",
+    "passPositions": [
+     2,
+     4,
+     4,
+     3,
+     3
+    ],
+    "borda": 0.22857142857142856,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Cheap early regen item",
+    "popularity": 22.98,
+    "popularityObscurity": 0.35714285714285715,
+    "spellingCost": 10,
+    "spellingObscurity": 0.2857142857142857,
+    "key": 0.3214285714285714
+   },
+   {
+    "id": "upgrade_escalating_exposure",
+    "name": "Escalating Exposure",
+    "passPositions": [
+     10,
+     9,
+     6,
+     11,
+     14
+    ],
+    "borda": 0.7142857142857143,
+    "fit": {
+     "expected": 1,
+     "neutral": 3,
+     "surprising": 1
+    },
+    "perception": "Stacking spirit amp item",
+    "popularity": 18.94,
+    "popularityObscurity": 0.5,
+    "spellingCost": 10,
+    "spellingObscurity": 0.2857142857142857,
+    "key": 0.5428571428571428
+   },
+   {
+    "id": "upgrade_express_shot",
+    "name": "Express Shot",
+    "passPositions": [
+     5,
+     5,
+     8,
+     6,
+     5
+    ],
+    "borda": 0.41428571428571426,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Double-shot weapon item",
+    "popularity": 6.28,
+    "popularityObscurity": 0.8571428571428571,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5357142857142857,
+    "key": 0.7303571428571428
+   },
+   {
+    "id": "upgrade_extra_charge",
+    "name": "Extra Charge",
+    "passPositions": [
+     4,
+     3,
+     3,
+     4,
+     4
+    ],
+    "borda": 0.2571428571428571,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Extra ability charge item",
+    "popularity": 31.98,
+    "popularityObscurity": 0.14285714285714285,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5357142857142857,
+    "key": 0.19107142857142856
+   },
+   {
+    "id": "upgrade_greater_withering_whip",
+    "name": "Disarming Hex",
+    "passPositions": [
+     13,
+     12,
+     14,
+     13,
+     11
+    ],
+    "borda": 0.9,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Disarm active",
+    "popularity": 2.59,
+    "popularityObscurity": 0.9285714285714286,
+    "spellingCost": 12,
+    "spellingObscurity": 0.75,
+    "key": 0.9125000000000001
+   },
+   {
+    "id": "upgrade_health",
+    "name": "Extra Health",
+    "passPositions": [
+     1,
+     2,
+     1,
+     0,
+     2
+    ],
+    "borda": 0.08571428571428572,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Cheap early health item",
+    "popularity": 19.53,
+    "popularityObscurity": 0.42857142857142855,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5357142857142857,
+    "key": 0.3482142857142857
+   },
+   {
+    "id": "upgrade_improved_spirit",
+    "name": "Extra Spirit",
+    "passPositions": [
+     0,
+     0,
+     0,
+     1,
+     0
+    ],
+    "borda": 0.014285714285714285,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Cheap spirit power item",
+    "popularity": 49.29,
+    "popularityObscurity": 0,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5357142857142857,
+    "key": 0.03035714285714286
+   },
+   {
+    "id": "upgrade_improved_stamina",
+    "name": "Extra Stamina",
+    "passPositions": [
+     3,
+     1,
+     2,
+     2,
+     1
+    ],
+    "borda": 0.12857142857142856,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Cheap early stamina item",
+    "popularity": 26.32,
+    "popularityObscurity": 0.2857142857142857,
+    "spellingCost": 12,
+    "spellingObscurity": 0.75,
+    "key": 0.26964285714285713
+   },
+   {
+    "id": "upgrade_magic_reach",
+    "name": "Mystic Expansion",
+    "passPositions": [
+     7,
+     7,
+     5,
+     5,
+     7
+    ],
+    "borda": 0.4428571428571429,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Cheap range/radius imbue",
+    "popularity": 33.35,
+    "popularityObscurity": 0.07142857142857142,
+    "spellingCost": 9,
+    "spellingObscurity": 0.14285714285714285,
+    "key": 0.16785714285714287
+   },
+   {
+    "id": "upgrade_tech_range",
+    "name": "Greater Expansion",
+    "passPositions": [
+     8,
+     8,
+     9,
+     9,
+     10
+    ],
+    "borda": 0.6285714285714286,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Range/radius spirit upgrade",
+    "popularity": 26.6,
+    "popularityObscurity": 0.21428571428571427,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8928571428571429,
+    "key": 0.35178571428571426
+   },
+   {
+    "id": "upgrade_toxic_bullets",
+    "name": "Toxic Bullets",
+    "passPositions": [
+     14,
+     14,
+     11,
+     8,
+     9
+    ],
+    "borda": 0.7999999999999999,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "Bleed weapon item",
+    "popularity": 12.9,
+    "popularityObscurity": 0.7142857142857143,
+    "spellingCost": 5,
+    "spellingObscurity": 0,
+    "key": 0.7
+   }
+  ],
+  "passAgreement": 0.7485714285714284,
+  "orderBeforeRefinement": [
+   "upgrade_improved_spirit",
+   "upgrade_magic_reach",
+   "upgrade_extra_charge",
+   "upgrade_improved_stamina",
+   "upgrade_endurance",
+   "upgrade_health",
+   "upgrade_tech_range",
+   "upgrade_escalating_exposure",
+   "upgrade_clip_size",
+   "upgrade_arcane_extension",
+   "upgrade_toxic_bullets",
+   "upgrade_express_shot",
+   "upgrade_containment",
+   "upgrade_greater_withering_whip",
+   "upgrade_aoe_root"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_express_shot",
+    "b": "upgrade_containment",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_express_shot",
+    "b": "upgrade_greater_withering_whip",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_greater_withering_whip"
+   },
+   {
+    "a": "upgrade_express_shot",
+    "b": "upgrade_aoe_root",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_aoe_root"
+   },
+   {
+    "a": "upgrade_containment",
+    "b": "upgrade_greater_withering_whip",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_greater_withering_whip"
+   },
+   {
+    "a": "upgrade_containment",
+    "b": "upgrade_aoe_root",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_aoe_root"
+   },
+   {
+    "a": "upgrade_greater_withering_whip",
+    "b": "upgrade_aoe_root",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_aoe_root"
+   },
+   {
+    "a": "upgrade_improved_spirit",
+    "b": "upgrade_magic_reach",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_magic_reach"
+   },
+   {
+    "a": "upgrade_improved_stamina",
+    "b": "upgrade_endurance",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_endurance"
+   },
+   {
+    "a": "upgrade_clip_size",
+    "b": "upgrade_arcane_extension",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_arcane_extension"
+   },
+   {
+    "a": "upgrade_health",
+    "b": "upgrade_endurance",
+    "purpose": "review",
+    "rarer": "upgrade_endurance"
+   },
+   {
+    "a": "upgrade_toxic_bullets",
+    "b": "upgrade_extra_charge",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_aoe_root",
+    "b": "upgrade_greater_withering_whip",
+    "purpose": "review",
+    "rarer": "upgrade_aoe_root"
+   },
+   {
+    "a": "upgrade_containment",
+    "b": "upgrade_arcane_extension",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Extra Health",
+    "compareWith": "Extra Regen",
+    "claim": "should_be_more_obvious",
+    "reason": "Extra Health is among the most commonly bought starter items and is a staple of early builds, so players name it far more readily than the niche Extra Regen. They should not share the same 60 points.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Toxic Bullets",
+    "compareWith": "Extra Charge",
+    "claim": "should_be_more_obvious",
+    "reason": "Toxic Bullets is a well-known, frequently built weapon item whose X is in the final letter of 'Toxic'. Experienced players often think of it quickly, so it should not sit at 85 above the lesser-known Extra Charge.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Vortex Web",
+    "compareWith": "Disarming Hex",
+    "claim": "should_be_more_obvious",
+    "reason": "Vortex Web has two X letters, 'Vortex' and 'Hex' is absent, but the name has a strong X in 'Vortex' and a memorable tier 4 active. The obscure Disarming Hex has no X in its name at all.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Slowing Hex",
+    "compareWith": "Duration Extender",
+    "claim": "should_be_more_obvious",
+    "reason": "Slowing Hex is a commonly bought active, and Hex is a very recognizable X word. It is likely named more readily than the forgettable Duration Extender.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}

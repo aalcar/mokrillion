@@ -1,0 +1,571 @@
+{
+ "question": {
+  "signature": "name:item:ends:s",
+  "prompt": "Name an item whose name ends with the letter S.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_chain_lightning",
+   "upgrade_close_range",
+   "upgrade_colossus",
+   "upgrade_crushing_fists",
+   "upgrade_focus_lens",
+   "upgrade_high_velocity_mag",
+   "upgrade_non_player_bonus",
+   "upgrade_pristine_emblem",
+   "upgrade_rapid_rounds",
+   "upgrade_siphon_bullets",
+   "upgrade_slowing_bullets",
+   "upgrade_sprint_booster",
+   "upgrade_toxic_bullets",
+   "upgrade_weighted_shots"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:ends:s"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:28:00.603Z",
+ "answers": [
+  {
+   "entityId": "upgrade_sprint_booster",
+   "name": "Sprint Boots",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_rapid_rounds",
+   "name": "Rapid Rounds",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_high_velocity_mag",
+   "name": "High-Velocity Rounds",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_non_player_bonus",
+   "name": "Monster Rounds",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_toxic_bullets",
+   "name": "Toxic Bullets",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_pristine_emblem",
+   "name": "Opening Rounds",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_chain_lightning",
+   "name": "Tesla Bullets",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_close_range",
+   "name": "Close Quarters",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_siphon_bullets",
+   "name": "Siphon Bullets",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_slowing_bullets",
+   "name": "Slowing Bullets",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_colossus",
+   "name": "Colossus",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_focus_lens",
+   "name": "Focus Lens",
+   "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_crushing_fists",
+   "name": "Crushing Fists",
+   "rank": 13,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_weighted_shots",
+   "name": "Weighted Shots",
+   "rank": 14,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_chain_lightning",
+    "name": "Tesla Bullets",
+    "passPositions": [
+     0,
+     4,
+     2,
+     2,
+     3
+    ],
+    "borda": 0.16923076923076924,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "chain shock bullets, popular weapon item",
+    "popularity": 11,
+    "popularityObscurity": 0.5384615384615384,
+    "spellingCost": 5,
+    "spellingObscurity": 0.11538461538461539,
+    "key": 0.42499999999999993
+   },
+   {
+    "id": "upgrade_close_range",
+    "name": "Close Quarters",
+    "passPositions": [
+     12,
+     10,
+     7,
+     10,
+     11
+    ],
+    "borda": 0.7692307692307693,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "close range damage item",
+    "popularity": 16.2,
+    "popularityObscurity": 0.38461538461538464,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8461538461538461,
+    "key": 0.5038461538461538
+   },
+   {
+    "id": "upgrade_colossus",
+    "name": "Colossus",
+    "passPositions": [
+     9,
+     12,
+     11,
+     13,
+     13
+    ],
+    "borda": 0.8923076923076924,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "big growth vitality active",
+    "popularity": 1.86,
+    "popularityObscurity": 0.9230769230769231,
+    "spellingCost": 8,
+    "spellingObscurity": 0.4230769230769231,
+    "key": 0.8903846153846154
+   },
+   {
+    "id": "upgrade_crushing_fists",
+    "name": "Crushing Fists",
+    "passPositions": [
+     7,
+     11,
+     10,
+     11,
+     10
+    ],
+    "borda": 0.7538461538461538,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "melee build stun item",
+    "popularity": 5.5,
+    "popularityObscurity": 0.6923076923076923,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8461538461538461,
+    "key": 0.7153846153846153
+   },
+   {
+    "id": "upgrade_focus_lens",
+    "name": "Focus Lens",
+    "passPositions": [
+     13,
+     13,
+     13,
+     12,
+     12
+    ],
+    "borda": 0.9692307692307693,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "spirit silence active item",
+    "popularity": 1.09,
+    "popularityObscurity": 1,
+    "spellingCost": 9,
+    "spellingObscurity": 0.5384615384615384,
+    "key": 0.9692307692307692
+   },
+   {
+    "id": "upgrade_high_velocity_mag",
+    "name": "High-Velocity Rounds",
+    "passPositions": [
+     10,
+     7,
+     6,
+     7,
+     6
+    ],
+    "borda": 0.5538461538461539,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "bullet velocity starter item",
+    "popularity": 22.33,
+    "popularityObscurity": 0.15384615384615385,
+    "spellingCost": 3,
+    "spellingObscurity": 0,
+    "key": 0.24615384615384617
+   },
+   {
+    "id": "upgrade_non_player_bonus",
+    "name": "Monster Rounds",
+    "passPositions": [
+     6,
+     2,
+     5,
+     4,
+     2
+    ],
+    "borda": 0.2923076923076923,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "cheap jungle camp damage item",
+    "popularity": 20.5,
+    "popularityObscurity": 0.23076923076923078,
+    "spellingCost": 7,
+    "spellingObscurity": 0.3076923076923077,
+    "key": 0.25
+   },
+   {
+    "id": "upgrade_pristine_emblem",
+    "name": "Opening Rounds",
+    "passPositions": [
+     8,
+     9,
+     8,
+     8,
+     8
+    ],
+    "borda": 0.6307692307692307,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "damage vs high health enemies",
+    "popularity": 16.64,
+    "popularityObscurity": 0.3076923076923077,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8461538461538461,
+    "key": 0.4153846153846154
+   },
+   {
+    "id": "upgrade_rapid_rounds",
+    "name": "Rapid Rounds",
+    "passPositions": [
+     5,
+     3,
+     4,
+     5,
+     1
+    ],
+    "borda": 0.27692307692307694,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "cheap fire rate weapon item",
+    "popularity": 23.53,
+    "popularityObscurity": 0.07692307692307693,
+    "spellingCost": 11,
+    "spellingObscurity": 0.6538461538461539,
+    "key": 0.15576923076923077
+   },
+   {
+    "id": "upgrade_siphon_bullets",
+    "name": "Siphon Bullets",
+    "passPositions": [
+     3,
+     5,
+     3,
+     3,
+     5
+    ],
+    "borda": 0.2923076923076923,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "max HP steal bullets",
+    "popularity": 6.2,
+    "popularityObscurity": 0.6153846153846154,
+    "spellingCost": 6,
+    "spellingObscurity": 0.23076923076923078,
+    "key": 0.5153846153846154
+   },
+   {
+    "id": "upgrade_slowing_bullets",
+    "name": "Slowing Bullets",
+    "passPositions": [
+     2,
+     1,
+     1,
+     1,
+     4
+    ],
+    "borda": 0.13846153846153847,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "movement slow bullets",
+    "popularity": 3.34,
+    "popularityObscurity": 0.8461538461538461,
+    "spellingCost": 14,
+    "spellingObscurity": 1,
+    "key": 0.676923076923077
+   },
+   {
+    "id": "upgrade_sprint_booster",
+    "name": "Sprint Boots",
+    "passPositions": [
+     4,
+     6,
+     12,
+     6,
+     7
+    ],
+    "borda": 0.5384615384615385,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "sprint speed starter item",
+    "popularity": 31.64,
+    "popularityObscurity": 0,
+    "spellingCost": 11,
+    "spellingObscurity": 0.6538461538461539,
+    "key": 0.16730769230769232
+   },
+   {
+    "id": "upgrade_toxic_bullets",
+    "name": "Toxic Bullets",
+    "passPositions": [
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0.015384615384615385,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "bleed and healing reduction",
+    "popularity": 12.9,
+    "popularityObscurity": 0.46153846153846156,
+    "spellingCost": 5,
+    "spellingObscurity": 0.11538461538461539,
+    "key": 0.33269230769230773
+   },
+   {
+    "id": "upgrade_weighted_shots",
+    "name": "Weighted Shots",
+    "passPositions": [
+     11,
+     8,
+     9,
+     9,
+     9
+    ],
+    "borda": 0.7076923076923078,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "slow upgrade, less common",
+    "popularity": 4.1,
+    "popularityObscurity": 0.7692307692307693,
+    "spellingCost": 8,
+    "spellingObscurity": 0.4230769230769231,
+    "key": 0.7365384615384616
+   }
+  ],
+  "passAgreement": 0.7054945054945054,
+  "orderBeforeRefinement": [
+   "upgrade_rapid_rounds",
+   "upgrade_sprint_booster",
+   "upgrade_high_velocity_mag",
+   "upgrade_non_player_bonus",
+   "upgrade_toxic_bullets",
+   "upgrade_pristine_emblem",
+   "upgrade_chain_lightning",
+   "upgrade_close_range",
+   "upgrade_siphon_bullets",
+   "upgrade_slowing_bullets",
+   "upgrade_crushing_fists",
+   "upgrade_weighted_shots",
+   "upgrade_colossus",
+   "upgrade_focus_lens"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_crushing_fists",
+    "b": "upgrade_weighted_shots",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_weighted_shots"
+   },
+   {
+    "a": "upgrade_crushing_fists",
+    "b": "upgrade_colossus",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_crushing_fists"
+   },
+   {
+    "a": "upgrade_crushing_fists",
+    "b": "upgrade_focus_lens",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_crushing_fists"
+   },
+   {
+    "a": "upgrade_weighted_shots",
+    "b": "upgrade_colossus",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_weighted_shots"
+   },
+   {
+    "a": "upgrade_weighted_shots",
+    "b": "upgrade_focus_lens",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_weighted_shots"
+   },
+   {
+    "a": "upgrade_colossus",
+    "b": "upgrade_focus_lens",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_focus_lens"
+   },
+   {
+    "a": "upgrade_rapid_rounds",
+    "b": "upgrade_sprint_booster",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_rapid_rounds"
+   },
+   {
+    "a": "upgrade_high_velocity_mag",
+    "b": "upgrade_non_player_bonus",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_chain_lightning",
+    "b": "upgrade_close_range",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_close_range"
+   },
+   {
+    "a": "upgrade_weighted_shots",
+    "b": "upgrade_crushing_fists",
+    "purpose": "review",
+    "rarer": "upgrade_weighted_shots"
+   },
+   {
+    "a": "upgrade_colossus",
+    "b": "upgrade_non_player_bonus",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_non_player_bonus",
+    "b": "upgrade_toxic_bullets",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Weighted Shots",
+    "compareWith": "Crushing Fists",
+    "claim": "should_be_more_obvious",
+    "reason": "Weighted Shots is a short, plain name ending in S, and a player scanning bullet-themed items would reach it. It is not clearly rarer than Crushing Fists, a Tier 4 item with a distinctive name. At 100 pts it is probably overpriced relative to the 85-pt group.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Colossus",
+    "compareWith": "Monster Rounds",
+    "claim": "should_be_more_obvious",
+    "reason": "Colossus is a well-known, memorable active item. Many players know it, so it should score closer to the 60-pt answers than to the 85-pt tier. It looks less obscure than Monster Rounds only if you assume players favor the Rounds family, and that assumption is weak.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Monster Rounds",
+    "compareWith": "Toxic Bullets",
+    "claim": "should_be_more_obscure",
+    "reason": "Monster Rounds is a Tier 1 jungle-oriented item that is rarely a priority buy. Toxic Bullets is a better-known and more commonly built item, so the former is less likely to come to mind and deserves a higher score.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Close Quarters",
+    "compareWith": "Slowing Bullets",
+    "claim": "should_be_more_obvious",
+    "reason": "Close Quarters is a Tier 1 item that players see in many early builds. It should be a little easier to recall than Tier 2 Slowing Bullets, so it need not share the same 85-pt score.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}

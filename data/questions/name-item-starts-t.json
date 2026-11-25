@@ -1,0 +1,354 @@
+{
+ "question": {
+  "signature": "name:item:starts:t",
+  "prompt": "Name an item whose name starts with the letter T.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_chain_lightning",
+   "upgrade_magic_shock",
+   "upgrade_tech_damage_pulse",
+   "upgrade_titan_round",
+   "upgrade_toxic_bullets",
+   "upgrade_transcendent_cooldown",
+   "upgrade_trophy_collector"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:starts:t"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:28:15.323Z",
+ "answers": [
+  {
+   "entityId": "upgrade_titan_round",
+   "name": "Titanic Magazine",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_magic_shock",
+   "name": "Tankbuster",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_trophy_collector",
+   "name": "Trophy Collector",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_toxic_bullets",
+   "name": "Toxic Bullets",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_tech_damage_pulse",
+   "name": "Torment Pulse",
+   "rank": 5,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_chain_lightning",
+   "name": "Tesla Bullets",
+   "rank": 6,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_transcendent_cooldown",
+   "name": "Transcendent Cooldown",
+   "rank": 7,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_chain_lightning",
+    "name": "Tesla Bullets",
+    "passPositions": [
+     2,
+     2,
+     2,
+     1,
+     1
+    ],
+    "borda": 0.2666666666666667,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Chain-shock weapon item, well known",
+    "popularity": 11,
+    "popularityObscurity": 1,
+    "spellingCost": 5,
+    "spellingObscurity": 0.08333333333333333,
+    "key": 0.7708333333333333
+   },
+   {
+    "id": "upgrade_magic_shock",
+    "name": "Tankbuster",
+    "passPositions": [
+     4,
+     4,
+     5,
+     5,
+     5
+    ],
+    "borda": 0.7666666666666667,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Spirit item for percent-style big damage vs tanky targets",
+    "popularity": 33.04,
+    "popularityObscurity": 0,
+    "spellingCost": 10,
+    "spellingObscurity": 0.6666666666666666,
+    "key": 0.225
+   },
+   {
+    "id": "upgrade_tech_damage_pulse",
+    "name": "Torment Pulse",
+    "passPositions": [
+     1,
+     1,
+     0,
+     4,
+     4
+    ],
+    "borda": 0.3333333333333333,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "Passive spirit damage aura item, popular pick",
+    "popularity": 12.88,
+    "popularityObscurity": 0.8333333333333334,
+    "spellingCost": 12,
+    "spellingObscurity": 0.8333333333333334,
+    "key": 0.7083333333333334
+   },
+   {
+    "id": "upgrade_titan_round",
+    "name": "Titanic Magazine",
+    "passPositions": [
+     3,
+     3,
+     3,
+     2,
+     3
+    ],
+    "borda": 0.4666666666666666,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Ammo upgrade from Extended Magazine",
+    "popularity": 15.59,
+    "popularityObscurity": 0.3333333333333333,
+    "spellingCost": 7,
+    "spellingObscurity": 0.5,
+    "key": 0.375
+   },
+   {
+    "id": "upgrade_toxic_bullets",
+    "name": "Toxic Bullets",
+    "passPositions": [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    "borda": 0.03333333333333333,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Bleed and anti-heal weapon item, commonly bought",
+    "popularity": 12.9,
+    "popularityObscurity": 0.6666666666666666,
+    "spellingCost": 5,
+    "spellingObscurity": 0.08333333333333333,
+    "key": 0.47916666666666663
+   },
+   {
+    "id": "upgrade_transcendent_cooldown",
+    "name": "Transcendent Cooldown",
+    "passPositions": [
+     5,
+     6,
+     4,
+     3,
+     2
+    ],
+    "borda": 0.6666666666666667,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Top-tier cooldown reduction item",
+    "popularity": 13.8,
+    "popularityObscurity": 0.5,
+    "spellingCost": 20,
+    "spellingObscurity": 1,
+    "key": 0.5666666666666667
+   },
+   {
+    "id": "upgrade_trophy_collector",
+    "name": "Trophy Collector",
+    "passPositions": [
+     6,
+     5,
+     6,
+     6,
+     6
+    ],
+    "borda": 0.9666666666666668,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "Niche sprint and soul stacking item",
+    "popularity": 19.16,
+    "popularityObscurity": 0.16666666666666666,
+    "spellingCost": 6,
+    "spellingObscurity": 0.3333333333333333,
+    "key": 0.375
+   }
+  ],
+  "passAgreement": 0.6571428571428573,
+  "orderBeforeRefinement": [
+   "upgrade_magic_shock",
+   "upgrade_titan_round",
+   "upgrade_trophy_collector",
+   "upgrade_toxic_bullets",
+   "upgrade_transcendent_cooldown",
+   "upgrade_tech_damage_pulse",
+   "upgrade_chain_lightning"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_toxic_bullets",
+    "b": "upgrade_transcendent_cooldown",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_transcendent_cooldown"
+   },
+   {
+    "a": "upgrade_toxic_bullets",
+    "b": "upgrade_tech_damage_pulse",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_tech_damage_pulse"
+   },
+   {
+    "a": "upgrade_toxic_bullets",
+    "b": "upgrade_chain_lightning",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_chain_lightning"
+   },
+   {
+    "a": "upgrade_transcendent_cooldown",
+    "b": "upgrade_tech_damage_pulse",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_transcendent_cooldown",
+    "b": "upgrade_chain_lightning",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_transcendent_cooldown"
+   },
+   {
+    "a": "upgrade_tech_damage_pulse",
+    "b": "upgrade_chain_lightning",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_magic_shock",
+    "b": "upgrade_titan_round",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_magic_shock"
+   },
+   {
+    "a": "upgrade_titan_round",
+    "b": "upgrade_trophy_collector",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_trophy_collector"
+   },
+   {
+    "a": "upgrade_toxic_bullets",
+    "b": "upgrade_titan_round",
+    "purpose": "review",
+    "rarer": "upgrade_titan_round"
+   },
+   {
+    "a": "upgrade_chain_lightning",
+    "b": "upgrade_tech_damage_pulse",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_titan_round",
+    "b": "upgrade_toxic_bullets",
+    "purpose": "review",
+    "rarer": "upgrade_titan_round"
+   },
+   {
+    "a": "upgrade_transcendent_cooldown",
+    "b": "upgrade_tech_damage_pulse",
+    "purpose": "review",
+    "rarer": "upgrade_transcendent_cooldown"
+   }
+  ],
+  "review": [
+   {
+    "name": "Toxic Bullets",
+    "compareWith": "Titanic Magazine",
+    "claim": "should_be_more_obvious",
+    "reason": "Toxic Bullets is a widely known, commonly bought Tier 3 weapon item with a distinctive bleed effect, so it likely comes to mind at least as readily as Titanic Magazine, which is a niche Tier 2 ammo item. It should score more cheaply than 60 and arguably rank near or above Titanic Magazine.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Tesla Bullets",
+    "compareWith": "Torment Pulse",
+    "claim": "should_be_more_obvious",
+    "reason": "Tesla Bullets is a memorable, recognizable name that is a common weapon pick, so it should be at least as easy to recall as Torment Pulse. Placing it at 85 alongside Torment Pulse underrates its recognition.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Titanic Magazine",
+    "compareWith": "Toxic Bullets",
+    "claim": "should_be_more_obscure",
+    "reason": "Titanic Magazine is a Tier 2 ammo item with a plain stat-stick profile, less iconic than Toxic Bullets. Giving it the single most obvious slot at 10 points overstates how often players will name it first.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Transcendent Cooldown",
+    "compareWith": "Torment Pulse",
+    "claim": "should_be_more_obvious",
+    "reason": "Transcendent Cooldown is a distinctively named top-tier cooldown item that experienced players know well, and 'Transcendent' is a very recognizable T-word. It is unlikely to be rarer than Torment Pulse, so 100 pts seems too extreme.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}

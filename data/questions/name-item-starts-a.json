@@ -1,0 +1,241 @@
+{
+ "question": {
+  "signature": "name:item:starts:a",
+  "prompt": "Name an item whose name starts with the letter A.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_active_reload",
+   "upgrade_aprounds",
+   "upgrade_arcane_surge",
+   "upgrade_arctic_blast",
+   "upgrade_thermal_detonator"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:starts:a"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:21:11.583Z",
+ "answers": [
+  {
+   "entityId": "upgrade_active_reload",
+   "name": "Active Reload",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_arcane_surge",
+   "name": "Arcane Surge",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_arctic_blast",
+   "name": "Arctic Blast",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_aprounds",
+   "name": "Armor Piercer",
+   "rank": 4,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_thermal_detonator",
+   "name": "Alchemical Fire",
+   "rank": 5,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_active_reload",
+    "name": "Active Reload",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Popular reload-timing weapon item for fire rate and lifesteal",
+    "popularity": 5.15,
+    "popularityObscurity": 0.25,
+    "spellingCost": 12,
+    "spellingObscurity": 0.625,
+    "key": 0.20625
+   },
+   {
+    "id": "upgrade_aprounds",
+    "name": "Armor Piercer",
+    "passPositions": [
+     3,
+     4,
+     4,
+     4,
+     3
+    ],
+    "borda": 0.9,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Late-game weapon item with unavoidable bullets",
+    "popularity": 1.55,
+    "popularityObscurity": 0.75,
+    "spellingCost": 12,
+    "spellingObscurity": 0.625,
+    "key": 0.7812499999999999
+   },
+   {
+    "id": "upgrade_arcane_surge",
+    "name": "Arcane Surge",
+    "passPositions": [
+     2,
+     1,
+     2,
+     3,
+     4
+    ],
+    "borda": 0.6,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Dash-jump spirit ability buff, niche tier 2",
+    "popularity": 9.25,
+    "popularityObscurity": 0,
+    "spellingCost": 11,
+    "spellingObscurity": 0.125,
+    "key": 0.15625
+   },
+   {
+    "id": "upgrade_arctic_blast",
+    "name": "Arctic Blast",
+    "passPositions": [
+     4,
+     3,
+     3,
+     1,
+     2
+    ],
+    "borda": 0.65,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Tier 4 spirit active freeze blast, rarely bought",
+    "popularity": 3.83,
+    "popularityObscurity": 0.5,
+    "spellingCost": 11,
+    "spellingObscurity": 0.125,
+    "key": 0.51875
+   },
+   {
+    "id": "upgrade_thermal_detonator",
+    "name": "Alchemical Fire",
+    "passPositions": [
+     1,
+     2,
+     1,
+     2,
+     1
+    ],
+    "borda": 0.35,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Thrown flask that shreds bullet resist",
+    "popularity": 1.5,
+    "popularityObscurity": 1,
+    "spellingCost": 14,
+    "spellingObscurity": 1,
+    "key": 0.8374999999999999
+   }
+  ],
+  "passAgreement": 0.5599999999999998,
+  "orderBeforeRefinement": [
+   "upgrade_arcane_surge",
+   "upgrade_active_reload",
+   "upgrade_arctic_blast",
+   "upgrade_aprounds",
+   "upgrade_thermal_detonator"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_active_reload",
+    "b": "upgrade_arctic_blast",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_arctic_blast"
+   },
+   {
+    "a": "upgrade_active_reload",
+    "b": "upgrade_aprounds",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_aprounds"
+   },
+   {
+    "a": "upgrade_active_reload",
+    "b": "upgrade_thermal_detonator",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_thermal_detonator"
+   },
+   {
+    "a": "upgrade_arctic_blast",
+    "b": "upgrade_aprounds",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_aprounds"
+   },
+   {
+    "a": "upgrade_arctic_blast",
+    "b": "upgrade_thermal_detonator",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_thermal_detonator"
+   },
+   {
+    "a": "upgrade_aprounds",
+    "b": "upgrade_thermal_detonator",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_thermal_detonator"
+   },
+   {
+    "a": "upgrade_arcane_surge",
+    "b": "upgrade_active_reload",
+    "purpose": "review",
+    "rarer": "upgrade_arcane_surge"
+   }
+  ],
+  "review": [
+   {
+    "name": "Arcane Surge",
+    "compareWith": "Active Reload",
+    "claim": "should_be_more_obscure",
+    "reason": "Active Reload is a widely recognized, frequently bought Weapon item with a distinctive mechanic. Arcane Surge is a Tier 2 Spirit item that is less iconic, so it should not be rated more obvious than Active Reload; the two should swap or at least Arcane Surge should score higher.",
+    "outcome": "applied"
+   }
+  ]
+ }
+}

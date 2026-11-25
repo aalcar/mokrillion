@@ -1,0 +1,581 @@
+{
+ "question": {
+  "signature": "semantic:hero:the-base-ability-description-not-upgrade-text-not-base-value-lists-alone-says-th",
+  "prompt": "Name a hero with an ability whose base description says it applies Stun to enemies.",
+  "category": "hero-ability-effect",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_artist",
+   "hero_astro",
+   "hero_atlas",
+   "hero_chessmaster",
+   "hero_dynamo",
+   "hero_frank",
+   "hero_gigawatt",
+   "hero_inferno",
+   "hero_krill",
+   "hero_lash",
+   "hero_orion",
+   "hero_priest",
+   "hero_tengu",
+   "hero_viscous"
+  ],
+  "validation": {
+   "method": "llm",
+   "criterion": "The base ability description (not upgrade text, not base value lists alone) says the ability applies Stun to enemies, or that enemies suffer from or are stunned. Self-stun does not count. Examples from the data: Violet, Holliday, Abrams, Dynamo, Seven, Solomon, Infernus, Victor, Ivy, Grey Talon.",
+   "notes": [
+    "Violet: \"If the sketch is completed they take additional Spirit Damage, suffer from Stun, and drop a sketch that can be picked up.\"",
+    "Holliday: \"Throw out your lasso, dealing Spirit Damage, Pulling, and applying Stun.\"",
+    "Abrams: \"Leap high into the air before crashing into the ground, dealing Spirit Damage and applying Stun.\"",
+    "Solomon: \"the queen releases squares in straight lines that deal Spirit Damage again and apply Stun.\"",
+    "Dynamo: \"Create a singularity in your hands, dealing Spirit DPS, applying Stun, and pulling in nearby enemies.\"",
+    "Victor: \"you reanimate, dealing Spirit Damage and applying Stun to nearby enemies.\"",
+    "Seven: \"After a short duration, the static charge stuns and damages enemies within the radius.\"",
+    "Infernus: \"Become a living bomb, dealing Spirit Damage and applying Stun to all nearby enemies after a delay.\"",
+    "Mo & Krill: \"Hold the target in place, stunning them and dealing damage during the channel.\"",
+    "Lash: \"connected enemies are lifted and stunned then slammed into the ground.\"",
+    "Grey Talon: \"which explodes on impact, damaging and stunning enemies.\"",
+    "Venator: \"Enemies near a wall receive Stun and take Bonus Weapon Damage.\"",
+    "Ivy: \"smash into the ground, stunning and damaging enemies nearby.\"",
+    "Viscous: \"deals damage and stuns enemies on impact.\""
+   ]
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:32:50.681Z",
+ "answers": [
+  {
+   "entityId": "hero_atlas",
+   "name": "Abrams",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_dynamo",
+   "name": "Dynamo",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_lash",
+   "name": "Lash",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "hero_astro",
+   "name": "Holliday",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_inferno",
+   "name": "Infernus",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "hero_gigawatt",
+   "name": "Seven",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "hero_orion",
+   "name": "Grey Talon",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "hero_krill",
+   "name": "Mo & Krill",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "hero_tengu",
+   "name": "Ivy",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "hero_viscous",
+   "name": "Viscous",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "hero_frank",
+   "name": "Victor",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "hero_priest",
+   "name": "Venator",
+   "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "hero_chessmaster",
+   "name": "Solomon",
+   "rank": 13,
+   "score": 85
+  },
+  {
+   "entityId": "hero_artist",
+   "name": "Violet",
+   "rank": 14,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "hero_artist",
+    "name": "Violet",
+    "passPositions": [
+     13,
+     11,
+     12,
+     13,
+     11
+    ],
+    "borda": 0.923076923076923,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "Newer artist mystic, sketches",
+    "popularity": 19.01,
+    "popularityObscurity": 0.8461538461538461,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5,
+    "key": 0.8903846153846154
+   },
+   {
+    "id": "hero_astro",
+    "name": "Holliday",
+    "passPositions": [
+     2,
+     3,
+     3,
+     4,
+     5
+    ],
+    "borda": 0.26153846153846155,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Spirit Lasso pulls and stuns target",
+    "popularity": 28.35,
+    "popularityObscurity": 0.46153846153846156,
+    "spellingCost": 8,
+    "spellingObscurity": 0.9615384615384616,
+    "key": 0.32653846153846156
+   },
+   {
+    "id": "hero_atlas",
+    "name": "Abrams",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "borda": 0.015384615384615385,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Shoulder Charge and Seismic Impact stun brawler",
+    "popularity": 39.95,
+    "popularityObscurity": 0.07692307692307693,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5,
+    "key": 0.04884615384615385
+   },
+   {
+    "id": "hero_chessmaster",
+    "name": "Solomon",
+    "passPositions": [
+     11,
+     12,
+     13,
+     11,
+     13
+    ],
+    "borda": 0.923076923076923,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Chess themed mystic, Develop Queen",
+    "popularity": 9.61,
+    "popularityObscurity": 1,
+    "spellingCost": 7,
+    "spellingObscurity": 0.7692307692307693,
+    "key": 0.926923076923077
+   },
+   {
+    "id": "hero_dynamo",
+    "name": "Dynamo",
+    "passPositions": [
+     1,
+     1,
+     1,
+     1,
+     0
+    ],
+    "borda": 0.06153846153846154,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Singularity stun and pull ultimate",
+    "popularity": 25.11,
+    "popularityObscurity": 0.5384615384615384,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5,
+    "key": 0.155
+   },
+   {
+    "id": "hero_frank",
+    "name": "Victor",
+    "passPositions": [
+     9,
+     10,
+     10,
+     10,
+     8
+    ],
+    "borda": 0.7230769230769231,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Reviving with Shocking Reanimation",
+    "popularity": 24.46,
+    "popularityObscurity": 0.6153846153846154,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5,
+    "key": 0.6957692307692308
+   },
+   {
+    "id": "hero_gigawatt",
+    "name": "Seven",
+    "passPositions": [
+     7,
+     5,
+     7,
+     5,
+     4
+    ],
+    "borda": 0.43076923076923085,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "Static Charge and lightning, Power Surge",
+    "popularity": 30.41,
+    "popularityObscurity": 0.3076923076923077,
+    "spellingCost": 5,
+    "spellingObscurity": 0.2692307692307692,
+    "key": 0.40423076923076934
+   },
+   {
+    "id": "hero_inferno",
+    "name": "Infernus",
+    "passPositions": [
+     4,
+     2,
+     2,
+     6,
+     2
+    ],
+    "borda": 0.24615384615384617,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Concussive Combustion stunning ultimate",
+    "popularity": 39.43,
+    "popularityObscurity": 0.15384615384615385,
+    "spellingCost": 8,
+    "spellingObscurity": 0.9615384615384616,
+    "key": 0.2680769230769231
+   },
+   {
+    "id": "hero_krill",
+    "name": "Mo & Krill",
+    "passPositions": [
+     5,
+     7,
+     9,
+     2,
+     6
+    ],
+    "borda": 0.4461538461538462,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Combo grabs and stuns, burrowing digger",
+    "popularity": 21.96,
+    "popularityObscurity": 0.7692307692307693,
+    "spellingCost": 2,
+    "spellingObscurity": 0,
+    "key": 0.4723076923076923
+   },
+   {
+    "id": "hero_lash",
+    "name": "Lash",
+    "passPositions": [
+     3,
+     4,
+     4,
+     3,
+     3
+    ],
+    "borda": 0.2615384615384616,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Death Slam grapple-stomp ultimate",
+    "popularity": 46.88,
+    "popularityObscurity": 0,
+    "spellingCost": 4,
+    "spellingObscurity": 0.15384615384615385,
+    "key": 0.216923076923077
+   },
+   {
+    "id": "hero_orion",
+    "name": "Grey Talon",
+    "passPositions": [
+     6,
+     8,
+     5,
+     7,
+     7
+    ],
+    "borda": 0.5076923076923077,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Charged Shot and Spirit Snare, bow skillshots",
+    "popularity": 22.07,
+    "popularityObscurity": 0.6923076923076923,
+    "spellingCost": 5,
+    "spellingObscurity": 0.2692307692307692,
+    "key": 0.5234615384615384
+   },
+   {
+    "id": "hero_priest",
+    "name": "Venator",
+    "passPositions": [
+     12,
+     13,
+     11,
+     12,
+     12
+    ],
+    "borda": 0.9230769230769231,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Newer marksman, trap and wall ultimate",
+    "popularity": 39.11,
+    "popularityObscurity": 0.23076923076923078,
+    "spellingCost": 7,
+    "spellingObscurity": 0.7692307692307693,
+    "key": 0.8115384615384615
+   },
+   {
+    "id": "hero_tengu",
+    "name": "Ivy",
+    "passPositions": [
+     8,
+     9,
+     8,
+     9,
+     9
+    ],
+    "borda": 0.6615384615384615,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Air Drop slam, tethers and healing",
+    "popularity": 30.19,
+    "popularityObscurity": 0.38461538461538464,
+    "spellingCost": 3,
+    "spellingObscurity": 0.07692307692307693,
+    "key": 0.5907692307692308
+   },
+   {
+    "id": "hero_viscous",
+    "name": "Viscous",
+    "passPositions": [
+     10,
+     6,
+     6,
+     8,
+     10
+    ],
+    "borda": 0.6153846153846154,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Goo Ball rolling and puddle",
+    "popularity": 14.57,
+    "popularityObscurity": 0.9230769230769231,
+    "spellingCost": 7,
+    "spellingObscurity": 0.7692307692307693,
+    "key": 0.6692307692307693
+   }
+  ],
+  "passAgreement": 0.7582417582417582,
+  "orderBeforeRefinement": [
+   "hero_atlas",
+   "hero_dynamo",
+   "hero_lash",
+   "hero_inferno",
+   "hero_astro",
+   "hero_gigawatt",
+   "hero_krill",
+   "hero_orion",
+   "hero_tengu",
+   "hero_viscous",
+   "hero_frank",
+   "hero_priest",
+   "hero_artist",
+   "hero_chessmaster"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_frank",
+    "b": "hero_priest",
+    "purpose": "rare-contenders",
+    "rarer": "hero_priest"
+   },
+   {
+    "a": "hero_frank",
+    "b": "hero_artist",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_frank",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_priest",
+    "b": "hero_artist",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_priest",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_artist",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_atlas",
+    "b": "hero_dynamo",
+    "purpose": "tier-boundary",
+    "rarer": "hero_atlas"
+   },
+   {
+    "a": "hero_lash",
+    "b": "hero_inferno",
+    "purpose": "tier-boundary",
+    "rarer": "hero_inferno"
+   },
+   {
+    "a": "hero_krill",
+    "b": "hero_orion",
+    "purpose": "tier-boundary",
+    "rarer": "hero_krill"
+   },
+   {
+    "a": "hero_viscous",
+    "b": "hero_gigawatt",
+    "purpose": "review",
+    "rarer": "hero_viscous"
+   },
+   {
+    "a": "hero_astro",
+    "b": "hero_inferno",
+    "purpose": "review",
+    "rarer": "hero_inferno"
+   }
+  ],
+  "review": [
+   {
+    "name": "Viscous",
+    "compareWith": "Seven",
+    "claim": "should_be_more_obvious",
+    "reason": "Viscous's Goo Ball and Puddle Punch are well known, and his Puddle Punch is widely remembered as a stun. Seven's Power Surge and Storm Cloud are known mostly for damage, so Viscous should not sit in the 85 tier below Seven.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Abrams",
+    "compareWith": "Dynamo",
+    "claim": "should_be_more_obvious",
+    "reason": "Abrams's Seismic Impact is a famous stun and Abrams is among the most commonly played heroes. Players would likely name him first, so he should be at least as obvious as Dynamo.",
+    "outcome": "applied-by-data"
+   },
+   {
+    "name": "Holliday",
+    "compareWith": "Infernus",
+    "claim": "should_be_more_obvious",
+    "reason": "Spirit Lasso is a well-known stun-like lockdown ability on a popular hero. It is more tied to the question than Infernus's Concussive Combustion, so Holliday should not rank below Infernus.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Venator",
+    "compareWith": "Violet",
+    "claim": "should_be_more_obvious",
+    "reason": "Venator is not rarer than Violet, Solomon, or Victor, since all are recent heroes with similar low recall. Venator's Hex-Lined Snap Trap is a trap, which links to crowd control and so is plausibly more associated with stun than Violet's abilities. Venator should not take 100 alone.",
+    "outcome": "applied-by-data"
+   }
+  ]
+ }
+}

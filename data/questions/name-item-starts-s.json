@@ -1,0 +1,1036 @@
+{
+ "question": {
+  "signature": "name:item:starts:s",
+  "prompt": "Name an item whose name starts with the letter S.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_acolytes_glove",
+   "upgrade_blitz_bullets",
+   "upgrade_cloaking_device_active",
+   "upgrade_containment",
+   "upgrade_cooldown_reduction",
+   "upgrade_discord",
+   "upgrade_enchanted_holsters",
+   "upgrade_health_stealing_magic",
+   "upgrade_imbued_duration_extender",
+   "upgrade_magic_storm",
+   "upgrade_proc_silence",
+   "upgrade_sharpshooter",
+   "upgrade_siphon_bullets",
+   "upgrade_slowing_bullets",
+   "upgrade_spellbreaker",
+   "upgrade_spellslinger_headshots",
+   "upgrade_spirit_bubble",
+   "upgrade_spirit_burn",
+   "upgrade_spirit_sap",
+   "upgrade_spirit_snatch",
+   "upgrade_split_shot",
+   "upgrade_sprint_booster",
+   "upgrade_superior_stamina",
+   "upgrade_suppressor",
+   "upgrade_targeted_silence",
+   "upgrade_tech_defense_shredders",
+   "upgrade_tech_overflow",
+   "upgrade_tech_purge",
+   "upgrade_weapon_backstabber"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:starts:s"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:27:43.808Z",
+ "answers": [
+  {
+   "entityId": "upgrade_sprint_booster",
+   "name": "Sprint Boots",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_health_stealing_magic",
+   "name": "Spirit Lifesteal",
+   "rank": 2,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_cooldown_reduction",
+   "name": "Superior Cooldown",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_tech_purge",
+   "name": "Spirit Resilience",
+   "rank": 4,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_blitz_bullets",
+   "name": "Swift Striker",
+   "rank": 5,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_spirit_burn",
+   "name": "Spirit Burn",
+   "rank": 6,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_containment",
+   "name": "Slowing Hex",
+   "rank": 7,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_imbued_duration_extender",
+   "name": "Superior Duration",
+   "rank": 8,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_weapon_backstabber",
+   "name": "Stalker",
+   "rank": 9,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_acolytes_glove",
+   "name": "Spirit Strike",
+   "rank": 10,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_superior_stamina",
+   "name": "Stamina Mastery",
+   "rank": 11,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_spirit_snatch",
+   "name": "Spirit Snatch",
+   "rank": 12,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_magic_storm",
+   "name": "Surge of Power",
+   "rank": 13,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_siphon_bullets",
+   "name": "Siphon Bullets",
+   "rank": 14,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_spirit_bubble",
+   "name": "Spirit Shielding",
+   "rank": 15,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_proc_silence",
+   "name": "Silencer",
+   "rank": 16,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_tech_overflow",
+   "name": "Spiritual Overflow",
+   "rank": 17,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_spellbreaker",
+   "name": "Spellbreaker",
+   "rank": 18,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_sharpshooter",
+   "name": "Sharpshooter",
+   "rank": 19,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_tech_defense_shredders",
+   "name": "Spirit Shredder",
+   "rank": 20,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_slowing_bullets",
+   "name": "Slowing Bullets",
+   "rank": 21,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_cloaking_device_active",
+   "name": "Shadow Weave",
+   "rank": 22,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_spellslinger_headshots",
+   "name": "Spirit Rend",
+   "rank": 23,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_suppressor",
+   "name": "Suppressor",
+   "rank": 24,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_enchanted_holsters",
+   "name": "Spellslinger",
+   "rank": 25,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_split_shot",
+   "name": "Split Shot",
+   "rank": 26,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_targeted_silence",
+   "name": "Silence Wave",
+   "rank": 27,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_discord",
+   "name": "Scourge",
+   "rank": 28,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_spirit_sap",
+   "name": "Spirit Sap",
+   "rank": 29,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_acolytes_glove",
+    "name": "Spirit Strike",
+    "passPositions": [
+     25,
+     12,
+     18,
+     13,
+     23
+    ],
+    "borda": 0.65,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "melee spirit item",
+    "popularity": 17.14,
+    "popularityObscurity": 0.30357142857142855,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6428571428571429,
+    "key": 0.40714285714285714
+   },
+   {
+    "id": "upgrade_blitz_bullets",
+    "name": "Swift Striker",
+    "passPositions": [
+     16,
+     18,
+     21,
+     9,
+     21
+    ],
+    "borda": 0.6071428571428572,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "fire rate weapon item",
+    "popularity": 25.07,
+    "popularityObscurity": 0.10714285714285714,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6428571428571429,
+    "key": 0.25892857142857145
+   },
+   {
+    "id": "upgrade_cloaking_device_active",
+    "name": "Shadow Weave",
+    "passPositions": [
+     7,
+     2,
+     13,
+     11,
+     12
+    ],
+    "borda": 0.32142857142857145,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "stealth active",
+    "popularity": 2.8,
+    "popularityObscurity": 0.8571428571428571,
+    "spellingCost": 11,
+    "spellingObscurity": 0.4642857142857143,
+    "key": 0.7035714285714285
+   },
+   {
+    "id": "upgrade_containment",
+    "name": "Slowing Hex",
+    "passPositions": [
+     12,
+     21,
+     1,
+     3,
+     10
+    ],
+    "borda": 0.33571428571428574,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "slow and movement silence active",
+    "popularity": 12.78,
+    "popularityObscurity": 0.39285714285714285,
+    "spellingCost": 10,
+    "spellingObscurity": 0.35714285714285715,
+    "key": 0.3767857142857143
+   },
+   {
+    "id": "upgrade_cooldown_reduction",
+    "name": "Superior Cooldown",
+    "passPositions": [
+     10,
+     1,
+     7,
+     6,
+     3
+    ],
+    "borda": 0.19285714285714284,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "late-game cooldown reduction",
+    "popularity": 34.12,
+    "popularityObscurity": 0,
+    "spellingCost": 16,
+    "spellingObscurity": 0.9642857142857143,
+    "key": 0.09642857142857142
+   },
+   {
+    "id": "upgrade_discord",
+    "name": "Scourge",
+    "passPositions": [
+     27,
+     19,
+     16,
+     16,
+     28
+    ],
+    "borda": 0.7571428571428571,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "percent health aura active",
+    "popularity": 2.57,
+    "popularityObscurity": 0.8928571428571429,
+    "spellingCost": 7,
+    "spellingObscurity": 0.125,
+    "key": 0.8205357142857143
+   },
+   {
+    "id": "upgrade_enchanted_holsters",
+    "name": "Spellslinger",
+    "passPositions": [
+     6,
+     27,
+     24,
+     7,
+     8
+    ],
+    "borda": 0.5142857142857142,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "fire rate from casting",
+    "popularity": 2.96,
+    "popularityObscurity": 0.8214285714285714,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6428571428571429,
+    "key": 0.7357142857142857
+   },
+   {
+    "id": "upgrade_health_stealing_magic",
+    "name": "Spirit Lifesteal",
+    "passPositions": [
+     2,
+     3,
+     3,
+     1,
+     0
+    ],
+    "borda": 0.06428571428571428,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "basic lifesteal item",
+    "popularity": 20.88,
+    "popularityObscurity": 0.17857142857142858,
+    "spellingCost": 15,
+    "spellingObscurity": 0.8928571428571429,
+    "key": 0.18571428571428572
+   },
+   {
+    "id": "upgrade_imbued_duration_extender",
+    "name": "Superior Duration",
+    "passPositions": [
+     24,
+     9,
+     20,
+     21,
+     6
+    ],
+    "borda": 0.5714285714285714,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "late-game ability duration",
+    "popularity": 21.4,
+    "popularityObscurity": 0.14285714285714285,
+    "spellingCost": 16,
+    "spellingObscurity": 0.9642857142857143,
+    "key": 0.29107142857142854
+   },
+   {
+    "id": "upgrade_magic_storm",
+    "name": "Surge of Power",
+    "passPositions": [
+     20,
+     8,
+     12,
+     14,
+     22
+    ],
+    "borda": 0.5428571428571429,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "spirit power and move speed",
+    "popularity": 10.45,
+    "popularityObscurity": 0.4642857142857143,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6428571428571429,
+    "key": 0.4928571428571429
+   },
+   {
+    "id": "upgrade_proc_silence",
+    "name": "Silencer",
+    "passPositions": [
+     4,
+     5,
+     15,
+     10,
+     7
+    ],
+    "borda": 0.2928571428571428,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "silence bullets",
+    "popularity": 6.81,
+    "popularityObscurity": 0.6071428571428571,
+    "spellingCost": 8,
+    "spellingObscurity": 0.21428571428571427,
+    "key": 0.5089285714285714
+   },
+   {
+    "id": "upgrade_sharpshooter",
+    "name": "Sharpshooter",
+    "passPositions": [
+     18,
+     20,
+     14,
+     22,
+     20
+    ],
+    "borda": 0.6714285714285715,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "long range damage",
+    "popularity": 8.21,
+    "popularityObscurity": 0.5357142857142857,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6428571428571429,
+    "key": 0.575
+   },
+   {
+    "id": "upgrade_siphon_bullets",
+    "name": "Siphon Bullets",
+    "passPositions": [
+     3,
+     7,
+     6,
+     5,
+     4
+    ],
+    "borda": 0.17857142857142855,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "max HP steal",
+    "popularity": 6.2,
+    "popularityObscurity": 0.6428571428571429,
+    "spellingCost": 6,
+    "spellingObscurity": 0.05357142857142857,
+    "key": 0.4973214285714286
+   },
+   {
+    "id": "upgrade_slowing_bullets",
+    "name": "Slowing Bullets",
+    "passPositions": [
+     1,
+     4,
+     4,
+     8,
+     2
+    ],
+    "borda": 0.1357142857142857,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "common weapon slow item",
+    "popularity": 3.34,
+    "popularityObscurity": 0.7857142857142857,
+    "spellingCost": 14,
+    "spellingObscurity": 0.8214285714285714,
+    "key": 0.6249999999999999
+   },
+   {
+    "id": "upgrade_spellbreaker",
+    "name": "Spellbreaker",
+    "passPositions": [
+     22,
+     11,
+     8,
+     15,
+     18
+    ],
+    "borda": 0.5285714285714286,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "anti-spirit burst defense",
+    "popularity": 6.87,
+    "popularityObscurity": 0.5714285714285714,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6428571428571429,
+    "key": 0.5642857142857143
+   },
+   {
+    "id": "upgrade_spellslinger_headshots",
+    "name": "Spirit Rend",
+    "passPositions": [
+     9,
+     10,
+     26,
+     23,
+     26
+    ],
+    "borda": 0.6714285714285715,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "upgrade of Shredder",
+    "popularity": 3.65,
+    "popularityObscurity": 0.75,
+    "spellingCost": 10,
+    "spellingObscurity": 0.35714285714285715,
+    "key": 0.7107142857142856
+   },
+   {
+    "id": "upgrade_spirit_bubble",
+    "name": "Spirit Shielding",
+    "passPositions": [
+     21,
+     26,
+     19,
+     18,
+     11
+    ],
+    "borda": 0.6785714285714286,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "spirit damage barrier",
+    "popularity": 10.92,
+    "popularityObscurity": 0.42857142857142855,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6428571428571429,
+    "key": 0.5017857142857143
+   },
+   {
+    "id": "upgrade_spirit_burn",
+    "name": "Spirit Burn",
+    "passPositions": [
+     5,
+     17,
+     17,
+     12,
+     17
+    ],
+    "borda": 0.48571428571428565,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "burn and healing reduction",
+    "popularity": 19.01,
+    "popularityObscurity": 0.21428571428571427,
+    "spellingCost": 10,
+    "spellingObscurity": 0.35714285714285715,
+    "key": 0.28928571428571426
+   },
+   {
+    "id": "upgrade_spirit_sap",
+    "name": "Spirit Sap",
+    "passPositions": [
+     19,
+     23,
+     22,
+     24,
+     24
+    ],
+    "borda": 0.8,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "cheap resist reduction active",
+    "popularity": 1.57,
+    "popularityObscurity": 0.9642857142857143,
+    "spellingCost": 9,
+    "spellingObscurity": 0.2857142857142857,
+    "key": 0.8892857142857142
+   },
+   {
+    "id": "upgrade_spirit_snatch",
+    "name": "Spirit Snatch",
+    "passPositions": [
+     26,
+     28,
+     28,
+     27,
+     27
+    ],
+    "borda": 0.9714285714285715,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "melee upgrade",
+    "popularity": 17.14,
+    "popularityObscurity": 0.30357142857142855,
+    "spellingCost": 6,
+    "spellingObscurity": 0.05357142857142857,
+    "key": 0.45803571428571427
+   },
+   {
+    "id": "upgrade_split_shot",
+    "name": "Split Shot",
+    "passPositions": [
+     17,
+     16,
+     10,
+     17,
+     9
+    ],
+    "borda": 0.4928571428571429,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "multishot active",
+    "popularity": 1.81,
+    "popularityObscurity": 0.9285714285714286,
+    "spellingCost": 5,
+    "spellingObscurity": 0,
+    "key": 0.7732142857142857
+   },
+   {
+    "id": "upgrade_sprint_booster",
+    "name": "Sprint Boots",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "borda": 0.007142857142857143,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "first speed item",
+    "popularity": 31.64,
+    "popularityObscurity": 0.03571428571428571,
+    "spellingCost": 11,
+    "spellingObscurity": 0.4642857142857143,
+    "key": 0.05
+   },
+   {
+    "id": "upgrade_superior_stamina",
+    "name": "Stamina Mastery",
+    "passPositions": [
+     28,
+     24,
+     25,
+     25,
+     15
+    ],
+    "borda": 0.8357142857142857,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "extra air dash",
+    "popularity": 17.67,
+    "popularityObscurity": 0.25,
+    "spellingCost": 14,
+    "spellingObscurity": 0.8214285714285714,
+    "key": 0.425
+   },
+   {
+    "id": "upgrade_suppressor",
+    "name": "Suppressor",
+    "passPositions": [
+     23,
+     25,
+     23,
+     28,
+     25
+    ],
+    "borda": 0.8857142857142858,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "fire rate reduction",
+    "popularity": 5.27,
+    "popularityObscurity": 0.7142857142857143,
+    "spellingCost": 8,
+    "spellingObscurity": 0.21428571428571427,
+    "key": 0.7321428571428572
+   },
+   {
+    "id": "upgrade_targeted_silence",
+    "name": "Silence Wave",
+    "passPositions": [
+     13,
+     13,
+     2,
+     2,
+     13
+    ],
+    "borda": 0.3071428571428571,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "silence projectile active",
+    "popularity": 0.94,
+    "popularityObscurity": 1,
+    "spellingCost": 11,
+    "spellingObscurity": 0.4642857142857143,
+    "key": 0.7999999999999999
+   },
+   {
+    "id": "upgrade_tech_defense_shredders",
+    "name": "Spirit Shredder",
+    "passPositions": [
+     8,
+     6,
+     5,
+     4,
+     14
+    ],
+    "borda": 0.2642857142857143,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "spirit resist shred bullets",
+    "popularity": 5.29,
+    "popularityObscurity": 0.6785714285714286,
+    "spellingCost": 14,
+    "spellingObscurity": 0.8214285714285714,
+    "key": 0.5821428571428571
+   },
+   {
+    "id": "upgrade_tech_overflow",
+    "name": "Spiritual Overflow",
+    "passPositions": [
+     14,
+     15,
+     27,
+     20,
+     16
+    ],
+    "borda": 0.6571428571428571,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "late-game lifesteal weapon item",
+    "popularity": 8.69,
+    "popularityObscurity": 0.5,
+    "spellingCost": 8,
+    "spellingObscurity": 0.21428571428571427,
+    "key": 0.5249999999999999
+   },
+   {
+    "id": "upgrade_tech_purge",
+    "name": "Spirit Resilience",
+    "passPositions": [
+     11,
+     22,
+     11,
+     26,
+     5
+    ],
+    "borda": 0.5357142857142857,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "spirit resist vitality item",
+    "popularity": 25.58,
+    "popularityObscurity": 0.07142857142857142,
+    "spellingCost": 16,
+    "spellingObscurity": 0.9642857142857143,
+    "key": 0.23214285714285712
+   },
+   {
+    "id": "upgrade_weapon_backstabber",
+    "name": "Stalker",
+    "passPositions": [
+     15,
+     14,
+     9,
+     19,
+     19
+    ],
+    "borda": 0.5428571428571429,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "close range wound item",
+    "popularity": 14.49,
+    "popularityObscurity": 0.35714285714285715,
+    "spellingCost": 7,
+    "spellingObscurity": 0.125,
+    "key": 0.39196428571428577
+   }
+  ],
+  "passAgreement": 0.4433497536945813,
+  "orderBeforeRefinement": [
+   "upgrade_sprint_booster",
+   "upgrade_cooldown_reduction",
+   "upgrade_health_stealing_magic",
+   "upgrade_tech_purge",
+   "upgrade_blitz_bullets",
+   "upgrade_spirit_burn",
+   "upgrade_imbued_duration_extender",
+   "upgrade_containment",
+   "upgrade_weapon_backstabber",
+   "upgrade_acolytes_glove",
+   "upgrade_superior_stamina",
+   "upgrade_spirit_snatch",
+   "upgrade_magic_storm",
+   "upgrade_siphon_bullets",
+   "upgrade_spirit_bubble",
+   "upgrade_proc_silence",
+   "upgrade_tech_overflow",
+   "upgrade_spellbreaker",
+   "upgrade_sharpshooter",
+   "upgrade_tech_defense_shredders",
+   "upgrade_slowing_bullets",
+   "upgrade_cloaking_device_active",
+   "upgrade_spellslinger_headshots",
+   "upgrade_suppressor",
+   "upgrade_enchanted_holsters",
+   "upgrade_split_shot",
+   "upgrade_targeted_silence",
+   "upgrade_discord",
+   "upgrade_spirit_sap"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_split_shot",
+    "b": "upgrade_targeted_silence",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_targeted_silence"
+   },
+   {
+    "a": "upgrade_split_shot",
+    "b": "upgrade_discord",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_discord"
+   },
+   {
+    "a": "upgrade_split_shot",
+    "b": "upgrade_spirit_sap",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_spirit_sap"
+   },
+   {
+    "a": "upgrade_targeted_silence",
+    "b": "upgrade_discord",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_targeted_silence",
+    "b": "upgrade_spirit_sap",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_spirit_sap"
+   },
+   {
+    "a": "upgrade_discord",
+    "b": "upgrade_spirit_sap",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_discord"
+   },
+   {
+    "a": "upgrade_cooldown_reduction",
+    "b": "upgrade_health_stealing_magic",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_cooldown_reduction"
+   },
+   {
+    "a": "upgrade_imbued_duration_extender",
+    "b": "upgrade_containment",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_imbued_duration_extender"
+   },
+   {
+    "a": "upgrade_proc_silence",
+    "b": "upgrade_tech_overflow",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_proc_silence",
+    "b": "upgrade_health_stealing_magic",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_spirit_sap",
+    "b": "upgrade_suppressor",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_spirit_burn",
+    "b": "upgrade_containment",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Silencer",
+    "compareWith": "Spirit Lifesteal",
+    "claim": "should_be_more_obvious",
+    "reason": "Silencer is a well-known item whose name strongly matches the question and is a common late-game weapon pick. At 60 pts it is placed on par with niche items like Siphon Bullets and Stamina Mastery, while Spirit Lifesteal is 10 pts.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Spirit Sap",
+    "compareWith": "Suppressor",
+    "claim": "should_be_more_obvious",
+    "reason": "Spirit Sap is an active that starts with 'Spirit', which many players type by default. It is not rarer than Suppressor or Spirit Rend, so the 100-point slot is not justified.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Slowing Bullets",
+    "compareWith": "Shadow Weave",
+    "claim": "should_be_more_obvious",
+    "reason": "Slowing Bullets is a very commonly built weapon item and sits right next to Slowing Hex in players' minds. Placing it at 85 pts alongside obscure items like Spellslinger and Spirit Rend underrates it.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Spirit Burn",
+    "compareWith": "Slowing Hex",
+    "claim": "should_be_more_obscure",
+    "reason": "Spirit Burn is a Tier 4 item and less commonly recalled than the Tier 2 Slowing Hex. It is not as obvious as Superior Cooldown, so a 30-pt placement looks too generous.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}

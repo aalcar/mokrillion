@@ -1,0 +1,801 @@
+{
+ "question": {
+  "signature": "name:item:contains:w",
+  "prompt": "Name an item whose name contains the letter W.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_absorbing_armor",
+   "upgrade_aoe_root",
+   "upgrade_blitz_bullets",
+   "upgrade_cloaking_device_active",
+   "upgrade_containment",
+   "upgrade_cooldown_reduction",
+   "upgrade_guardian_ward",
+   "upgrade_headshot_booster2",
+   "upgrade_hollow_point_rounds",
+   "upgrade_magic_slow",
+   "upgrade_magic_storm",
+   "upgrade_magic_tempo",
+   "upgrade_slowing_bullets",
+   "upgrade_target_stun",
+   "upgrade_targeted_silence",
+   "upgrade_tech_overflow",
+   "upgrade_transcendent_cooldown",
+   "upgrade_veil_walker",
+   "upgrade_warp_stone",
+   "upgrade_weapon_shielding",
+   "upgrade_weighted_shots"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:contains:w"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:29:45.467Z",
+ "answers": [
+  {
+   "entityId": "upgrade_warp_stone",
+   "name": "Warp Stone",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_containment",
+   "name": "Slowing Hex",
+   "rank": 2,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_blitz_bullets",
+   "name": "Swift Striker",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_cooldown_reduction",
+   "name": "Superior Cooldown",
+   "rank": 4,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_absorbing_armor",
+   "name": "Witchmail",
+   "rank": 5,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_transcendent_cooldown",
+   "name": "Transcendent Cooldown",
+   "rank": 6,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_magic_tempo",
+   "name": "Compress Cooldown",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_target_stun",
+   "name": "Knockdown",
+   "rank": 8,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_magic_storm",
+   "name": "Surge of Power",
+   "rank": 9,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_tech_overflow",
+   "name": "Spiritual Overflow",
+   "rank": 10,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_headshot_booster2",
+   "name": "Weakening Headshot",
+   "rank": 11,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_weighted_shots",
+   "name": "Weighted Shots",
+   "rank": 12,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_weapon_shielding",
+   "name": "Weapon Shielding",
+   "rank": 13,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_guardian_ward",
+   "name": "Guardian Ward",
+   "rank": 14,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_hollow_point_rounds",
+   "name": "Hollow Point",
+   "rank": 15,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_cloaking_device_active",
+   "name": "Shadow Weave",
+   "rank": 16,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_slowing_bullets",
+   "name": "Slowing Bullets",
+   "rank": 17,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_targeted_silence",
+   "name": "Silence Wave",
+   "rank": 18,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_veil_walker",
+   "name": "Veil Walker",
+   "rank": 19,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_magic_slow",
+   "name": "Mystic Slow",
+   "rank": 20,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_aoe_root",
+   "name": "Vortex Web",
+   "rank": 21,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_absorbing_armor",
+    "name": "Witchmail",
+    "passPositions": [
+     4,
+     1,
+     1,
+     1,
+     1
+    ],
+    "borda": 0.07999999999999999,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Spirit resist item",
+    "popularity": 5.69,
+    "popularityObscurity": 0.4,
+    "spellingCost": 9,
+    "spellingObscurity": 0.2,
+    "key": 0.30999999999999994
+   },
+   {
+    "id": "upgrade_aoe_root",
+    "name": "Vortex Web",
+    "passPositions": [
+     9,
+     5,
+     8,
+     7,
+     5
+    ],
+    "borda": 0.34,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Vacuum grenade ultimate item",
+    "popularity": 2.38,
+    "popularityObscurity": 0.95,
+    "spellingCost": 6,
+    "spellingObscurity": 0,
+    "key": 0.7499999999999999
+   },
+   {
+    "id": "upgrade_blitz_bullets",
+    "name": "Swift Striker",
+    "passPositions": [
+     14,
+     2,
+     13,
+     14,
+     13
+    ],
+    "borda": 0.5599999999999999,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Fire rate weapon item",
+    "popularity": 25.07,
+    "popularityObscurity": 0.1,
+    "spellingCost": 12,
+    "spellingObscurity": 0.65,
+    "key": 0.2425
+   },
+   {
+    "id": "upgrade_cloaking_device_active",
+    "name": "Shadow Weave",
+    "passPositions": [
+     3,
+     8,
+     12,
+     9,
+     6
+    ],
+    "borda": 0.38,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Stealth item",
+    "popularity": 2.8,
+    "popularityObscurity": 0.85,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5,
+    "key": 0.715
+   },
+   {
+    "id": "upgrade_containment",
+    "name": "Slowing Hex",
+    "passPositions": [
+     6,
+     11,
+     2,
+     8,
+     11
+    ],
+    "borda": 0.38,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Spirit slow/silence-movement active",
+    "popularity": 12.78,
+    "popularityObscurity": 0.2,
+    "spellingCost": 10,
+    "spellingObscurity": 0.35,
+    "key": 0.2525
+   },
+   {
+    "id": "upgrade_cooldown_reduction",
+    "name": "Superior Cooldown",
+    "passPositions": [
+     18,
+     18,
+     19,
+     18,
+     19
+    ],
+    "borda": 0.9199999999999999,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "Popular cooldown reduction item",
+    "popularity": 34.12,
+    "popularityObscurity": 0,
+    "spellingCost": 16,
+    "spellingObscurity": 0.875,
+    "key": 0.27375
+   },
+   {
+    "id": "upgrade_guardian_ward",
+    "name": "Guardian Ward",
+    "passPositions": [
+     11,
+     10,
+     11,
+     5,
+     9
+    ],
+    "borda": 0.4600000000000001,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Ally barrier active",
+    "popularity": 4.91,
+    "popularityObscurity": 0.55,
+    "spellingCost": 12,
+    "spellingObscurity": 0.65,
+    "key": 0.5325
+   },
+   {
+    "id": "upgrade_headshot_booster2",
+    "name": "Weakening Headshot",
+    "passPositions": [
+     13,
+     9,
+     5,
+     4,
+     4
+    ],
+    "borda": 0.35,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "Headshot bullet resist reduction",
+    "popularity": 5.24,
+    "popularityObscurity": 0.5,
+    "spellingCost": 17,
+    "spellingObscurity": 0.95,
+    "key": 0.485
+   },
+   {
+    "id": "upgrade_hollow_point_rounds",
+    "name": "Hollow Point",
+    "passPositions": [
+     12,
+     16,
+     16,
+     15,
+     15
+    ],
+    "borda": 0.74,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Weapon damage above high health",
+    "popularity": 4.51,
+    "popularityObscurity": 0.6,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5,
+    "key": 0.63
+   },
+   {
+    "id": "upgrade_magic_slow",
+    "name": "Mystic Slow",
+    "passPositions": [
+     15,
+     17,
+     14,
+     13,
+     16
+    ],
+    "borda": 0.75,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Minor slow-on-spirit-damage item",
+    "popularity": 3.47,
+    "popularityObscurity": 0.75,
+    "spellingCost": 10,
+    "spellingObscurity": 0.35,
+    "key": 0.7299999999999999
+   },
+   {
+    "id": "upgrade_magic_storm",
+    "name": "Surge of Power",
+    "passPositions": [
+     16,
+     14,
+     15,
+     16,
+     14
+    ],
+    "borda": 0.75,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Imbued spirit power and speed",
+    "popularity": 10.45,
+    "popularityObscurity": 0.3,
+    "spellingCost": 12,
+    "spellingObscurity": 0.65,
+    "key": 0.43
+   },
+   {
+    "id": "upgrade_magic_tempo",
+    "name": "Compress Cooldown",
+    "passPositions": [
+     19,
+     20,
+     18,
+     17,
+     20
+    ],
+    "borda": 0.9400000000000001,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "Cooldown imbue item",
+    "popularity": 31.12,
+    "popularityObscurity": 0.05,
+    "spellingCost": 16,
+    "spellingObscurity": 0.875,
+    "key": 0.31375
+   },
+   {
+    "id": "upgrade_slowing_bullets",
+    "name": "Slowing Bullets",
+    "passPositions": [
+     7,
+     12,
+     9,
+     11,
+     12
+    ],
+    "borda": 0.51,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Common weapon slow item",
+    "popularity": 3.34,
+    "popularityObscurity": 0.8,
+    "spellingCost": 14,
+    "spellingObscurity": 0.75,
+    "key": 0.725
+   },
+   {
+    "id": "upgrade_target_stun",
+    "name": "Knockdown",
+    "passPositions": [
+     1,
+     13,
+     6,
+     12,
+     2
+    ],
+    "borda": 0.34,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "Stun item with delay",
+    "popularity": 5.26,
+    "popularityObscurity": 0.45,
+    "spellingCost": 9,
+    "spellingObscurity": 0.2,
+    "key": 0.41000000000000003
+   },
+   {
+    "id": "upgrade_targeted_silence",
+    "name": "Silence Wave",
+    "passPositions": [
+     0,
+     3,
+     4,
+     6,
+     7
+    ],
+    "borda": 0.19999999999999998,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "Popular silence active",
+    "popularity": 0.94,
+    "popularityObscurity": 1,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5,
+    "key": 0.7749999999999999
+   },
+   {
+    "id": "upgrade_tech_overflow",
+    "name": "Spiritual Overflow",
+    "passPositions": [
+     17,
+     15,
+     17,
+     19,
+     17
+    ],
+    "borda": 0.85,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Tier 4 spirit lifesteal weapon item",
+    "popularity": 8.69,
+    "popularityObscurity": 0.35,
+    "spellingCost": 8,
+    "spellingObscurity": 0.075,
+    "key": 0.46124999999999994
+   },
+   {
+    "id": "upgrade_transcendent_cooldown",
+    "name": "Transcendent Cooldown",
+    "passPositions": [
+     20,
+     19,
+     20,
+     20,
+     18
+    ],
+    "borda": 0.9700000000000001,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "Late-game cooldown item",
+    "popularity": 13.8,
+    "popularityObscurity": 0.15,
+    "spellingCost": 20,
+    "spellingObscurity": 1,
+    "key": 0.3975
+   },
+   {
+    "id": "upgrade_veil_walker",
+    "name": "Veil Walker",
+    "passPositions": [
+     8,
+     7,
+     7,
+     10,
+     10
+    ],
+    "borda": 0.42000000000000004,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Stealth-and-heal escape item",
+    "popularity": 2.64,
+    "popularityObscurity": 0.9,
+    "spellingCost": 10,
+    "spellingObscurity": 0.35,
+    "key": 0.7525000000000001
+   },
+   {
+    "id": "upgrade_warp_stone",
+    "name": "Warp Stone",
+    "passPositions": [
+     2,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0.02,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Teleport dash escape item",
+    "popularity": 10.85,
+    "popularityObscurity": 0.25,
+    "spellingCost": 9,
+    "spellingObscurity": 0.2,
+    "key": 0.19
+   },
+   {
+    "id": "upgrade_weapon_shielding",
+    "name": "Weapon Shielding",
+    "passPositions": [
+     10,
+     4,
+     3,
+     2,
+     8
+    ],
+    "borda": 0.27,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Barrier vs weapon damage, rarely bought",
+    "popularity": 3.68,
+    "popularityObscurity": 0.7,
+    "spellingCost": 15,
+    "spellingObscurity": 0.8,
+    "key": 0.5974999999999999
+   },
+   {
+    "id": "upgrade_weighted_shots",
+    "name": "Weighted Shots",
+    "passPositions": [
+     5,
+     6,
+     10,
+     3,
+     3
+    ],
+    "borda": 0.26999999999999996,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Slowing bullets upgrade",
+    "popularity": 4.1,
+    "popularityObscurity": 0.65,
+    "spellingCost": 8,
+    "spellingObscurity": 0.075,
+    "key": 0.52625
+   }
+  ],
+  "passAgreement": 0.6323809523809524,
+  "orderBeforeRefinement": [
+   "upgrade_warp_stone",
+   "upgrade_blitz_bullets",
+   "upgrade_containment",
+   "upgrade_cooldown_reduction",
+   "upgrade_absorbing_armor",
+   "upgrade_magic_tempo",
+   "upgrade_transcendent_cooldown",
+   "upgrade_target_stun",
+   "upgrade_magic_storm",
+   "upgrade_tech_overflow",
+   "upgrade_headshot_booster2",
+   "upgrade_weighted_shots",
+   "upgrade_guardian_ward",
+   "upgrade_weapon_shielding",
+   "upgrade_hollow_point_rounds",
+   "upgrade_cloaking_device_active",
+   "upgrade_slowing_bullets",
+   "upgrade_magic_slow",
+   "upgrade_aoe_root",
+   "upgrade_veil_walker",
+   "upgrade_targeted_silence"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_magic_slow",
+    "b": "upgrade_aoe_root",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_magic_slow",
+    "b": "upgrade_veil_walker",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_magic_slow"
+   },
+   {
+    "a": "upgrade_magic_slow",
+    "b": "upgrade_targeted_silence",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_magic_slow"
+   },
+   {
+    "a": "upgrade_aoe_root",
+    "b": "upgrade_veil_walker",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_aoe_root"
+   },
+   {
+    "a": "upgrade_aoe_root",
+    "b": "upgrade_targeted_silence",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_aoe_root"
+   },
+   {
+    "a": "upgrade_veil_walker",
+    "b": "upgrade_targeted_silence",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_veil_walker"
+   },
+   {
+    "a": "upgrade_blitz_bullets",
+    "b": "upgrade_containment",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_blitz_bullets"
+   },
+   {
+    "a": "upgrade_magic_tempo",
+    "b": "upgrade_transcendent_cooldown",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_magic_tempo"
+   },
+   {
+    "a": "upgrade_weighted_shots",
+    "b": "upgrade_guardian_ward",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_weapon_shielding",
+    "b": "upgrade_guardian_ward",
+    "purpose": "review",
+    "rarer": "upgrade_guardian_ward"
+   },
+   {
+    "a": "upgrade_aoe_root",
+    "b": "upgrade_veil_walker",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_weighted_shots",
+    "b": "upgrade_magic_tempo",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_headshot_booster2",
+    "b": "upgrade_magic_storm",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Witchmail",
+    "compareWith": "Swift Striker",
+    "claim": "should_be_more_obscure",
+    "reason": "Witchmail is a Tier 4 item at 6400 souls that is seen far less often than a cheap Tier 2 item. Its W is the first letter, but few players buy it. Swift Striker is a common early Weapon purchase, so it should be rated easier.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Weapon Shielding",
+    "compareWith": "Guardian Ward",
+    "claim": "should_be_more_obvious",
+    "reason": "Weapon Shielding has W in both words and starts with W, so it fits the question directly. Guardian Ward only has its W in the second word. It should rank easier than Guardian Ward.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Vortex Web",
+    "compareWith": "Veil Walker",
+    "claim": "should_be_more_obvious",
+    "reason": "Vortex Web has W in its second word, and it is a notable T4 active that many players know. Veil Walker is a far more forgettable T3 item. Veil Walker should be the 100-point answer, not Vortex Web.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Weighted Shots",
+    "compareWith": "Compress Cooldown",
+    "claim": "should_be_more_obvious",
+    "reason": "Weighted Shots starts with W and is a well-known T3 weapon item. Compress Cooldown has no W at all, so it should rank as less obvious than Weighted Shots, not equal to it.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Weakening Headshot",
+    "compareWith": "Surge of Power",
+    "claim": "should_be_more_obvious",
+    "reason": "Weakening Headshot starts with W and is a commonly bought T2 item. Surge of Power has no W in the first word, so it should rank rarer than Weakening Headshot.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}

@@ -1,0 +1,546 @@
+{
+ "question": {
+  "signature": "name:item:starts:r",
+  "prompt": "Name an item whose name starts with the letter R.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_ability_refresher",
+   "upgrade_medic_bullets",
+   "upgrade_melee_rebuttal",
+   "upgrade_rapid_recharge",
+   "upgrade_rapid_rounds",
+   "upgrade_rechargingbullets",
+   "upgrade_rescue_beam",
+   "upgrade_resonant_healing",
+   "upgrade_restorative_locket",
+   "upgrade_return_fire",
+   "upgrade_ricochet",
+   "upgrade_vex_barrier",
+   "upgrade_withering_whip"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:starts:r"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:27:00.580Z",
+ "answers": [
+  {
+   "entityId": "upgrade_rapid_rounds",
+   "name": "Rapid Rounds",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_ability_refresher",
+   "name": "Refresher",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_ricochet",
+   "name": "Ricochet",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_rapid_recharge",
+   "name": "Rapid Recharge",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_vex_barrier",
+   "name": "Reactive Barrier",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_medic_bullets",
+   "name": "Restorative Shot",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_melee_rebuttal",
+   "name": "Rebuttal",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_rescue_beam",
+   "name": "Rescue Beam",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_rechargingbullets",
+   "name": "Recharging Rush",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_return_fire",
+   "name": "Return Fire",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_resonant_healing",
+   "name": "Radiant Regeneration",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_withering_whip",
+   "name": "Rusted Barrel",
+   "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_restorative_locket",
+   "name": "Restorative Locket",
+   "rank": 13,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_ability_refresher",
+    "name": "Refresher",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "iconic late-game cooldown reset item",
+    "popularity": 6.02,
+    "popularityObscurity": 0.5833333333333334,
+    "spellingCost": 9,
+    "spellingObscurity": 0.3333333333333333,
+    "key": 0.425
+   },
+   {
+    "id": "upgrade_medic_bullets",
+    "name": "Restorative Shot",
+    "passPositions": [
+     7,
+     3,
+     4,
+     4,
+     7
+    ],
+    "borda": 0.4166666666666667,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "early weapon item with healing bullet",
+    "popularity": 18.31,
+    "popularityObscurity": 0.16666666666666666,
+    "spellingCost": 12,
+    "spellingObscurity": 0.7083333333333334,
+    "key": 0.25625
+   },
+   {
+    "id": "upgrade_melee_rebuttal",
+    "name": "Rebuttal",
+    "passPositions": [
+     6,
+     5,
+     7,
+     5,
+     4
+    ],
+    "borda": 0.45,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "parry-based vitality item",
+    "popularity": 3.81,
+    "popularityObscurity": 0.6666666666666666,
+    "spellingCost": 8,
+    "spellingObscurity": 0.20833333333333334,
+    "key": 0.5895833333333333
+   },
+   {
+    "id": "upgrade_rapid_recharge",
+    "name": "Rapid Recharge",
+    "passPositions": [
+     8,
+     9,
+     10,
+     10,
+     6
+    ],
+    "borda": 0.7166666666666667,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "charge-based spirit upgrade",
+    "popularity": 24.59,
+    "popularityObscurity": 0,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8333333333333334,
+    "key": 0.22083333333333333
+   },
+   {
+    "id": "upgrade_rapid_rounds",
+    "name": "Rapid Rounds",
+    "passPositions": [
+     3,
+     2,
+     2,
+     3,
+     2
+    ],
+    "borda": 0.19999999999999998,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "cheap early fire rate weapon item",
+    "popularity": 23.53,
+    "popularityObscurity": 0.08333333333333333,
+    "spellingCost": 11,
+    "spellingObscurity": 0.5833333333333334,
+    "key": 0.13749999999999998
+   },
+   {
+    "id": "upgrade_rechargingbullets",
+    "name": "Recharging Rush",
+    "passPositions": [
+     10,
+     8,
+     12,
+     11,
+     11
+    ],
+    "borda": 0.8666666666666666,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "tier 2 weapon ability recharge item",
+    "popularity": 7.66,
+    "popularityObscurity": 0.5,
+    "spellingCost": 14,
+    "spellingObscurity": 0.9166666666666666,
+    "key": 0.6124999999999999
+   },
+   {
+    "id": "upgrade_rescue_beam",
+    "name": "Rescue Beam",
+    "passPositions": [
+     2,
+     1,
+     1,
+     1,
+     1
+    ],
+    "borda": 0.09999999999999999,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "ally heal and pull beam",
+    "popularity": 2.21,
+    "popularityObscurity": 0.8333333333333334,
+    "spellingCost": 10,
+    "spellingObscurity": 0.4583333333333333,
+    "key": 0.6312500000000001
+   },
+   {
+    "id": "upgrade_resonant_healing",
+    "name": "Radiant Regeneration",
+    "passPositions": [
+     9,
+     10,
+     9,
+     9,
+     9
+    ],
+    "borda": 0.7666666666666667,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "spirit regen upgrade with movement speed",
+    "popularity": 7.89,
+    "popularityObscurity": 0.4166666666666667,
+    "spellingCost": 7,
+    "spellingObscurity": 0.08333333333333333,
+    "key": 0.48750000000000004
+   },
+   {
+    "id": "upgrade_restorative_locket",
+    "name": "Restorative Locket",
+    "passPositions": [
+     12,
+     11,
+     11,
+     12,
+     12
+    ],
+    "borda": 0.9666666666666666,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "stack-based heal vitality item",
+    "popularity": 1.64,
+    "popularityObscurity": 0.9166666666666666,
+    "spellingCost": 6,
+    "spellingObscurity": 0,
+    "key": 0.8833333333333333
+   },
+   {
+    "id": "upgrade_return_fire",
+    "name": "Return Fire",
+    "passPositions": [
+     5,
+     4,
+     5,
+     6,
+     5
+    ],
+    "borda": 0.4166666666666667,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "vitality item that shoots back at attackers",
+    "popularity": 1.12,
+    "popularityObscurity": 1,
+    "spellingCost": 10,
+    "spellingObscurity": 0.4583333333333333,
+    "key": 0.8270833333333333
+   },
+   {
+    "id": "upgrade_ricochet",
+    "name": "Ricochet",
+    "passPositions": [
+     1,
+     6,
+     3,
+     2,
+     3
+    ],
+    "borda": 0.25,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "late-game bouncing bullets weapon item",
+    "popularity": 10.76,
+    "popularityObscurity": 0.3333333333333333,
+    "spellingCost": 8,
+    "spellingObscurity": 0.20833333333333334,
+    "key": 0.30624999999999997
+   },
+   {
+    "id": "upgrade_vex_barrier",
+    "name": "Reactive Barrier",
+    "passPositions": [
+     4,
+     7,
+     8,
+     7,
+     8
+    ],
+    "borda": 0.5666666666666667,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "anti-CC barrier vitality item",
+    "popularity": 13.09,
+    "popularityObscurity": 0.25,
+    "spellingCost": 15,
+    "spellingObscurity": 1,
+    "key": 0.36666666666666664
+   },
+   {
+    "id": "upgrade_withering_whip",
+    "name": "Rusted Barrel",
+    "passPositions": [
+     11,
+     12,
+     6,
+     8,
+     10
+    ],
+    "borda": 0.7833333333333333,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "cheap spirit debuff item",
+    "popularity": 2.71,
+    "popularityObscurity": 0.75,
+    "spellingCost": 12,
+    "spellingObscurity": 0.7083333333333334,
+    "key": 0.7562499999999999
+   }
+  ],
+  "passAgreement": 0.723076923076923,
+  "orderBeforeRefinement": [
+   "upgrade_rapid_rounds",
+   "upgrade_rapid_recharge",
+   "upgrade_medic_bullets",
+   "upgrade_ricochet",
+   "upgrade_vex_barrier",
+   "upgrade_ability_refresher",
+   "upgrade_resonant_healing",
+   "upgrade_melee_rebuttal",
+   "upgrade_rechargingbullets",
+   "upgrade_rescue_beam",
+   "upgrade_withering_whip",
+   "upgrade_return_fire",
+   "upgrade_restorative_locket"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_rescue_beam",
+    "b": "upgrade_withering_whip",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_withering_whip"
+   },
+   {
+    "a": "upgrade_rescue_beam",
+    "b": "upgrade_return_fire",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_rescue_beam"
+   },
+   {
+    "a": "upgrade_rescue_beam",
+    "b": "upgrade_restorative_locket",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_restorative_locket"
+   },
+   {
+    "a": "upgrade_withering_whip",
+    "b": "upgrade_return_fire",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_withering_whip"
+   },
+   {
+    "a": "upgrade_withering_whip",
+    "b": "upgrade_restorative_locket",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_return_fire",
+    "b": "upgrade_restorative_locket",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_restorative_locket"
+   },
+   {
+    "a": "upgrade_rapid_rounds",
+    "b": "upgrade_rapid_recharge",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_medic_bullets",
+    "b": "upgrade_ricochet",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_medic_bullets"
+   },
+   {
+    "a": "upgrade_resonant_healing",
+    "b": "upgrade_melee_rebuttal",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_resonant_healing"
+   },
+   {
+    "a": "upgrade_ability_refresher",
+    "b": "upgrade_medic_bullets",
+    "purpose": "review",
+    "rarer": "upgrade_medic_bullets"
+   },
+   {
+    "a": "upgrade_rapid_recharge",
+    "b": "upgrade_ability_refresher",
+    "purpose": "review",
+    "rarer": "upgrade_rapid_recharge"
+   },
+   {
+    "a": "upgrade_rescue_beam",
+    "b": "upgrade_resonant_healing",
+    "purpose": "review",
+    "rarer": "upgrade_resonant_healing"
+   },
+   {
+    "a": "upgrade_restorative_locket",
+    "b": "upgrade_withering_whip",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Refresher",
+    "compareWith": "Restorative Shot",
+    "claim": "should_be_more_obvious",
+    "reason": "Refresher is a famous, high-impact Tier 4 item that experienced players recognize and buy for big ultimate-cycling plays. It is also a very short, memorable name starting with R. It should score closer to Rapid Recharge/Ricochet than to Restorative Shot or Reactive Barrier.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Rapid Recharge",
+    "compareWith": "Refresher",
+    "claim": "should_be_more_obscure",
+    "reason": "Rapid Recharge is a niche Tier 3 spirit item built from Extra Charge, bought mainly on charge-based heroes. Refresher is much more widely known, so Rapid Recharge should not rank as more obvious than Refresher.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Rescue Beam",
+    "compareWith": "Radiant Regeneration",
+    "claim": "should_be_more_obvious",
+    "reason": "Rescue Beam is an active item with a distinctive, memorable pull-and-heal effect, and players often remember it from support play. It is likely to come to mind more readily than Radiant Regeneration, which is a Mystic Regeneration upgrade with a generic name. They should not share the same score.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Restorative Locket",
+    "compareWith": "Rusted Barrel",
+    "claim": "should_be_more_obvious",
+    "reason": "The 100-point rating for Restorative Locket is questionable. Rusted Barrel is a Tier 1 item that is frequently seen and bought early, and its name is quirky and memorable. Restorative Locket is a Tier 2 vitality active that is easily confused with Restorative Shot, so it is unlikely to be rarer than Rusted Barrel.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}

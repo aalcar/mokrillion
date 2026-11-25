@@ -1,0 +1,875 @@
+{
+ "question": {
+  "signature": "name:item:ends:t",
+  "prompt": "Name an item whose name ends with the letter T.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_arctic_blast",
+   "upgrade_banshee_slugs",
+   "upgrade_boundless_spirit",
+   "upgrade_bulletshredimbue",
+   "upgrade_cold_front",
+   "upgrade_crackshot",
+   "upgrade_critshot",
+   "upgrade_express_shot",
+   "upgrade_fleetfoot_boots",
+   "upgrade_grit",
+   "upgrade_headshot_booster2",
+   "upgrade_hollow_point_rounds",
+   "upgrade_improved_spirit",
+   "upgrade_juggernaut",
+   "upgrade_magic_burst",
+   "upgrade_magic_carpet",
+   "upgrade_medic_bullets",
+   "upgrade_regenerating_bullet_shield",
+   "upgrade_restorative_locket",
+   "upgrade_ricochet",
+   "upgrade_self_bubble",
+   "upgrade_soaring_spirit",
+   "upgrade_split_shot",
+   "upgrade_surging_power"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:ends:t"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:28:38.013Z",
+ "answers": [
+  {
+   "entityId": "upgrade_magic_burst",
+   "name": "Mystic Burst",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_improved_spirit",
+   "name": "Extra Spirit",
+   "rank": 2,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_grit",
+   "name": "Grit",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_soaring_spirit",
+   "name": "Improved Spirit",
+   "rank": 4,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_boundless_spirit",
+   "name": "Boundless Spirit",
+   "rank": 5,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_regenerating_bullet_shield",
+   "name": "Battle Vest",
+   "rank": 6,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_medic_bullets",
+   "name": "Restorative Shot",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_crackshot",
+   "name": "Mystic Shot",
+   "rank": 8,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_fleetfoot_boots",
+   "name": "Fleetfoot",
+   "rank": 9,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_ricochet",
+   "name": "Ricochet",
+   "rank": 10,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_cold_front",
+   "name": "Cold Front",
+   "rank": 11,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_express_shot",
+   "name": "Express Shot",
+   "rank": 12,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_juggernaut",
+   "name": "Juggernaut",
+   "rank": 13,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_surging_power",
+   "name": "Vampiric Burst",
+   "rank": 14,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_critshot",
+   "name": "Lucky Shot",
+   "rank": 15,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_hollow_point_rounds",
+   "name": "Hollow Point",
+   "rank": 16,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_headshot_booster2",
+   "name": "Weakening Headshot",
+   "rank": 17,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_banshee_slugs",
+   "name": "Crippling Headshot",
+   "rank": 18,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_arctic_blast",
+   "name": "Arctic Blast",
+   "rank": 19,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_split_shot",
+   "name": "Split Shot",
+   "rank": 20,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_self_bubble",
+   "name": "Ethereal Shift",
+   "rank": 21,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_magic_carpet",
+   "name": "Magic Carpet",
+   "rank": 22,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_restorative_locket",
+   "name": "Restorative Locket",
+   "rank": 23,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_bulletshredimbue",
+   "name": "Ballistic Enchantment",
+   "rank": 24,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_arctic_blast",
+    "name": "Arctic Blast",
+    "passPositions": [
+     16,
+     16,
+     5,
+     15,
+     15
+    ],
+    "borda": 0.582608695652174,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "freeze ice blast",
+    "popularity": 3.83,
+    "popularityObscurity": 0.782608695652174,
+    "spellingCost": 11,
+    "spellingObscurity": 0.6956521739130435,
+    "key": 0.7282608695652173
+   },
+   {
+    "id": "upgrade_banshee_slugs",
+    "name": "Crippling Headshot",
+    "passPositions": [
+     22,
+     13,
+     16,
+     13,
+     13
+    ],
+    "borda": 0.6695652173913043,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "headshot resist shred",
+    "popularity": 4.06,
+    "popularityObscurity": 0.7391304347826086,
+    "spellingCost": 9,
+    "spellingObscurity": 0.32608695652173914,
+    "key": 0.701086956521739
+   },
+   {
+    "id": "upgrade_boundless_spirit",
+    "name": "Boundless Spirit",
+    "passPositions": [
+     18,
+     5,
+     18,
+     18,
+     19
+    ],
+    "borda": 0.6782608695652174,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "big spirit item",
+    "popularity": 29.17,
+    "popularityObscurity": 0.13043478260869565,
+    "spellingCost": 9,
+    "spellingObscurity": 0.32608695652173914,
+    "key": 0.2771739130434782
+   },
+   {
+    "id": "upgrade_bulletshredimbue",
+    "name": "Ballistic Enchantment",
+    "passPositions": [
+     23,
+     22,
+     21,
+     23,
+     20
+    ],
+    "borda": 0.9478260869565217,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "weapon damage from ability",
+    "popularity": 3.18,
+    "popularityObscurity": 0.8260869565217391,
+    "spellingCost": 9,
+    "spellingObscurity": 0.32608695652173914,
+    "key": 0.8315217391304348
+   },
+   {
+    "id": "upgrade_cold_front",
+    "name": "Cold Front",
+    "passPositions": [
+     15,
+     15,
+     4,
+     16,
+     3
+    ],
+    "borda": 0.4608695652173913,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "ice slow active",
+    "popularity": 7.82,
+    "popularityObscurity": 0.43478260869565216,
+    "spellingCost": 9,
+    "spellingObscurity": 0.32608695652173914,
+    "key": 0.4358695652173913
+   },
+   {
+    "id": "upgrade_crackshot",
+    "name": "Mystic Shot",
+    "passPositions": [
+     9,
+     9,
+     14,
+     5,
+     8
+    ],
+    "borda": 0.391304347826087,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "spirit bonus next bullet",
+    "popularity": 9.79,
+    "popularityObscurity": 0.34782608695652173,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5217391304347826,
+    "key": 0.3673913043478261
+   },
+   {
+    "id": "upgrade_critshot",
+    "name": "Lucky Shot",
+    "passPositions": [
+     10,
+     2,
+     8,
+     7,
+     7
+    ],
+    "borda": 0.29565217391304344,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "random bonus damage",
+    "popularity": 4.12,
+    "popularityObscurity": 0.6956521739130435,
+    "spellingCost": 9,
+    "spellingObscurity": 0.32608695652173914,
+    "key": 0.5771739130434782
+   },
+   {
+    "id": "upgrade_express_shot",
+    "name": "Express Shot",
+    "passPositions": [
+     11,
+     7,
+     7,
+     11,
+     11
+    ],
+    "borda": 0.408695652173913,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "double shot",
+    "popularity": 6.28,
+    "popularityObscurity": 0.4782608695652174,
+    "spellingCost": 11,
+    "spellingObscurity": 0.6956521739130435,
+    "key": 0.4717391304347826
+   },
+   {
+    "id": "upgrade_fleetfoot_boots",
+    "name": "Fleetfoot",
+    "passPositions": [
+     0,
+     19,
+     0,
+     20,
+     0
+    ],
+    "borda": 0.3391304347826087,
+    "fit": {
+     "expected": 3,
+     "neutral": 1,
+     "surprising": 1
+    },
+    "perception": "move speed while shooting",
+    "popularity": 9.1,
+    "popularityObscurity": 0.391304347826087,
+    "spellingCost": 9,
+    "spellingObscurity": 0.32608695652173914,
+    "key": 0.375
+   },
+   {
+    "id": "upgrade_grit",
+    "name": "Grit",
+    "passPositions": [
+     3,
+     14,
+     22,
+     2,
+     2
+    ],
+    "borda": 0.3739130434782608,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "cheap barrier active",
+    "popularity": 21.04,
+    "popularityObscurity": 0.17391304347826086,
+    "spellingCost": 4,
+    "spellingObscurity": 0,
+    "key": 0.2152173913043478
+   },
+   {
+    "id": "upgrade_headshot_booster2",
+    "name": "Weakening Headshot",
+    "passPositions": [
+     21,
+     12,
+     15,
+     12,
+     14
+    ],
+    "borda": 0.6434782608695653,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "bullet resist shred",
+    "popularity": 5.24,
+    "popularityObscurity": 0.6086956521739131,
+    "spellingCost": 17,
+    "spellingObscurity": 1,
+    "key": 0.6369565217391304
+   },
+   {
+    "id": "upgrade_hollow_point_rounds",
+    "name": "Hollow Point",
+    "passPositions": [
+     14,
+     10,
+     10,
+     8,
+     4
+    ],
+    "borda": 0.4,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "high-health weapon damage item",
+    "popularity": 4.51,
+    "popularityObscurity": 0.6521739130434783,
+    "spellingCost": 11,
+    "spellingObscurity": 0.6956521739130435,
+    "key": 0.5913043478260869
+   },
+   {
+    "id": "upgrade_improved_spirit",
+    "name": "Extra Spirit",
+    "passPositions": [
+     2,
+     0,
+     19,
+     0,
+     23
+    ],
+    "borda": 0.3826086956521739,
+    "fit": {
+     "expected": 3,
+     "neutral": 1,
+     "surprising": 1
+    },
+    "perception": "basic spirit item",
+    "popularity": 49.29,
+    "popularityObscurity": 0,
+    "spellingCost": 11,
+    "spellingObscurity": 0.6956521739130435,
+    "key": 0.13043478260869565
+   },
+   {
+    "id": "upgrade_juggernaut",
+    "name": "Juggernaut",
+    "passPositions": [
+     6,
+     18,
+     2,
+     22,
+     1
+    ],
+    "borda": 0.42608695652173917,
+    "fit": {
+     "expected": 2,
+     "neutral": 2,
+     "surprising": 1
+    },
+    "perception": "tanky vitality item",
+    "popularity": 6.16,
+    "popularityObscurity": 0.5217391304347826,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5217391304347826,
+    "key": 0.4978260869565217
+   },
+   {
+    "id": "upgrade_magic_burst",
+    "name": "Mystic Burst",
+    "passPositions": [
+     7,
+     4,
+     3,
+     3,
+     9
+    ],
+    "borda": 0.22608695652173916,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "early spirit burst damage item",
+    "popularity": 35.72,
+    "popularityObscurity": 0.08695652173913043,
+    "spellingCost": 11,
+    "spellingObscurity": 0.6956521739130435,
+    "key": 0.15217391304347827
+   },
+   {
+    "id": "upgrade_magic_carpet",
+    "name": "Magic Carpet",
+    "passPositions": [
+     5,
+     20,
+     13,
+     19,
+     16
+    ],
+    "borda": 0.6347826086956522,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "flying escape active",
+    "popularity": 0.8,
+    "popularityObscurity": 1,
+    "spellingCost": 6,
+    "spellingObscurity": 0.10869565217391304,
+    "key": 0.8641304347826086
+   },
+   {
+    "id": "upgrade_medic_bullets",
+    "name": "Restorative Shot",
+    "passPositions": [
+     8,
+     8,
+     12,
+     4,
+     12
+    ],
+    "borda": 0.3826086956521739,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "heal bullet",
+    "popularity": 18.31,
+    "popularityObscurity": 0.21739130434782608,
+    "spellingCost": 12,
+    "spellingObscurity": 0.8260869565217391,
+    "key": 0.2891304347826087
+   },
+   {
+    "id": "upgrade_regenerating_bullet_shield",
+    "name": "Battle Vest",
+    "passPositions": [
+     1,
+     17,
+     1,
+     10,
+     5
+    ],
+    "borda": 0.29565217391304344,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "popular bullet resist item",
+    "popularity": 16.97,
+    "popularityObscurity": 0.2608695652173913,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5217391304347826,
+    "key": 0.2826086956521739
+   },
+   {
+    "id": "upgrade_restorative_locket",
+    "name": "Restorative Locket",
+    "passPositions": [
+     20,
+     23,
+     20,
+     21,
+     21
+    ],
+    "borda": 0.9130434782608695,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "stack-based heal",
+    "popularity": 1.64,
+    "popularityObscurity": 0.9565217391304348,
+    "spellingCost": 6,
+    "spellingObscurity": 0.10869565217391304,
+    "key": 0.9032608695652173
+   },
+   {
+    "id": "upgrade_ricochet",
+    "name": "Ricochet",
+    "passPositions": [
+     13,
+     21,
+     11,
+     17,
+     18
+    ],
+    "borda": 0.6956521739130433,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "bouncing bullets",
+    "popularity": 10.76,
+    "popularityObscurity": 0.30434782608695654,
+    "spellingCost": 8,
+    "spellingObscurity": 0.17391304347826086,
+    "key": 0.3956521739130434
+   },
+   {
+    "id": "upgrade_self_bubble",
+    "name": "Ethereal Shift",
+    "passPositions": [
+     4,
+     1,
+     23,
+     1,
+     6
+    ],
+    "borda": 0.30434782608695654,
+    "fit": {
+     "expected": 2,
+     "neutral": 2,
+     "surprising": 1
+    },
+    "perception": "invulnerable void escape",
+    "popularity": 3.08,
+    "popularityObscurity": 0.8695652173913043,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8913043478260869,
+    "key": 0.7293478260869565
+   },
+   {
+    "id": "upgrade_soaring_spirit",
+    "name": "Improved Spirit",
+    "passPositions": [
+     17,
+     11,
+     17,
+     9,
+     22
+    ],
+    "borda": 0.6608695652173914,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "spirit power upgrade",
+    "popularity": 44.97,
+    "popularityObscurity": 0.043478260869565216,
+    "spellingCost": 14,
+    "spellingObscurity": 0.9565217391304348,
+    "key": 0.24347826086956523
+   },
+   {
+    "id": "upgrade_split_shot",
+    "name": "Split Shot",
+    "passPositions": [
+     12,
+     3,
+     9,
+     6,
+     10
+    ],
+    "borda": 0.34782608695652173,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "multishot",
+    "popularity": 1.81,
+    "popularityObscurity": 0.9130434782608695,
+    "spellingCost": 5,
+    "spellingObscurity": 0.043478260869565216,
+    "key": 0.7282608695652174
+   },
+   {
+    "id": "upgrade_surging_power",
+    "name": "Vampiric Burst",
+    "passPositions": [
+     19,
+     6,
+     6,
+     14,
+     17
+    ],
+    "borda": 0.5391304347826087,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "lifesteal burst active",
+    "popularity": 5.26,
+    "popularityObscurity": 0.5652173913043478,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8913043478260869,
+    "key": 0.575
+   }
+  ],
+  "passAgreement": 0.20724637681159425,
+  "orderBeforeRefinement": [
+   "upgrade_improved_spirit",
+   "upgrade_magic_burst",
+   "upgrade_grit",
+   "upgrade_soaring_spirit",
+   "upgrade_boundless_spirit",
+   "upgrade_regenerating_bullet_shield",
+   "upgrade_medic_bullets",
+   "upgrade_crackshot",
+   "upgrade_fleetfoot_boots",
+   "upgrade_ricochet",
+   "upgrade_cold_front",
+   "upgrade_express_shot",
+   "upgrade_juggernaut",
+   "upgrade_surging_power",
+   "upgrade_critshot",
+   "upgrade_hollow_point_rounds",
+   "upgrade_headshot_booster2",
+   "upgrade_banshee_slugs",
+   "upgrade_arctic_blast",
+   "upgrade_split_shot",
+   "upgrade_self_bubble",
+   "upgrade_bulletshredimbue",
+   "upgrade_magic_carpet",
+   "upgrade_restorative_locket"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_self_bubble",
+    "b": "upgrade_bulletshredimbue",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_bulletshredimbue"
+   },
+   {
+    "a": "upgrade_self_bubble",
+    "b": "upgrade_magic_carpet",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_self_bubble",
+    "b": "upgrade_restorative_locket",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_bulletshredimbue",
+    "b": "upgrade_magic_carpet",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_bulletshredimbue",
+    "b": "upgrade_restorative_locket",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_bulletshredimbue"
+   },
+   {
+    "a": "upgrade_magic_carpet",
+    "b": "upgrade_restorative_locket",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_magic_burst",
+    "b": "upgrade_grit",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_grit"
+   },
+   {
+    "a": "upgrade_regenerating_bullet_shield",
+    "b": "upgrade_medic_bullets",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_medic_bullets"
+   },
+   {
+    "a": "upgrade_juggernaut",
+    "b": "upgrade_surging_power",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_surging_power"
+   },
+   {
+    "a": "upgrade_improved_spirit",
+    "b": "upgrade_magic_burst",
+    "purpose": "review",
+    "rarer": "upgrade_improved_spirit"
+   },
+   {
+    "a": "upgrade_juggernaut",
+    "b": "upgrade_fleetfoot_boots",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Extra Spirit",
+    "compareWith": "Mystic Burst",
+    "claim": "should_be_more_obscure",
+    "reason": "Extra Spirit is a basic Tier 1 item, but the ending in T takes some noticing. Players scanning for T endings will more readily think of Mystic Burst, a staple spirit item, and Extra Spirit's ending is less salient, so it should not tie for most obvious.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Juggernaut",
+    "compareWith": "Fleetfoot",
+    "claim": "should_be_more_obvious",
+    "reason": "Juggernaut is a well-known, iconic name and a common Tier 4 purchase; it should come to mind faster than the low-profile Fleetfoot.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Ethereal Shift",
+    "compareWith": "Restorative Locket",
+    "claim": "should_be_more_obvious",
+    "reason": "Ethereal Shift is a very famous, frequently bought defensive active that players know well. It is more readily recalled than Restorative Locket and should be scored lower.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Ballistic Enchantment",
+    "compareWith": "Restorative Locket",
+    "claim": "should_be_more_obscure",
+    "reason": "Ballistic Enchantment ends in T and is a rarely bought item, but the T-ending 'Enchantment' is not especially hard to recall; still, Restorative Locket is more forgettable and should arguably rank as the rarest answer.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}

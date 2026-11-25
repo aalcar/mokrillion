@@ -1,0 +1,1489 @@
+{
+ "question": {
+  "signature": "name:item:double-letter",
+  "prompt": "Name an item whose name has the same letter twice in a row within a word (like the \"ll\" in \"Billy\").",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_banshee_slugs",
+   "upgrade_blood_tribute",
+   "upgrade_boundless_spirit",
+   "upgrade_bullet_resist_shredder",
+   "upgrade_bulletshredimbue",
+   "upgrade_cardio_calibrator",
+   "upgrade_chain_lightning",
+   "upgrade_colossus",
+   "upgrade_cooldown_reduction",
+   "upgrade_counterspell",
+   "upgrade_damage_recycler",
+   "upgrade_debuff_reducer",
+   "upgrade_divine_barrier",
+   "upgrade_enchanted_holsters",
+   "upgrade_express_shot",
+   "upgrade_fleetfoot_boots",
+   "upgrade_glass_cannon",
+   "upgrade_goose_egg",
+   "upgrade_headshot_booster",
+   "upgrade_healing_booster",
+   "upgrade_hollow_point_rounds",
+   "upgrade_improved_bullet_armor",
+   "upgrade_juggernaut",
+   "upgrade_lifestrike_gauntlets",
+   "upgrade_magic_tempo",
+   "upgrade_melee_charge",
+   "upgrade_melee_rebuttal",
+   "upgrade_regenerating_bullet_shield",
+   "upgrade_sharpshooter",
+   "upgrade_siphon_bullets",
+   "upgrade_slowing_bullets",
+   "upgrade_spellbreaker",
+   "upgrade_sprint_booster",
+   "upgrade_suppressor",
+   "upgrade_tech_defense_shredders",
+   "upgrade_toxic_bullets",
+   "upgrade_transcendent_cooldown",
+   "upgrade_trophy_collector",
+   "upgrade_ultimate_burst",
+   "upgrade_unstoppable",
+   "upgrade_vampire",
+   "upgrade_vex_barrier",
+   "upgrade_withering_whip"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:double-letter"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:31:18.418Z",
+ "answers": [
+  {
+   "entityId": "upgrade_sprint_booster",
+   "name": "Sprint Boots",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_magic_tempo",
+   "name": "Compress Cooldown",
+   "rank": 2,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_lifestrike_gauntlets",
+   "name": "Melee Lifesteal",
+   "rank": 3,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_cooldown_reduction",
+   "name": "Superior Cooldown",
+   "rank": 4,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_trophy_collector",
+   "name": "Trophy Collector",
+   "rank": 5,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_bullet_resist_shredder",
+   "name": "Bullet Resist Shredder",
+   "rank": 6,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_regenerating_bullet_shield",
+   "name": "Battle Vest",
+   "rank": 7,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_boundless_spirit",
+   "name": "Boundless Spirit",
+   "rank": 8,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_chain_lightning",
+   "name": "Tesla Bullets",
+   "rank": 9,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_vampire",
+   "name": "Bullet Lifesteal",
+   "rank": 10,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_healing_booster",
+   "name": "Healing Booster",
+   "rank": 11,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_cardio_calibrator",
+   "name": "Enduring Speed",
+   "rank": 12,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_toxic_bullets",
+   "name": "Toxic Bullets",
+   "rank": 13,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_transcendent_cooldown",
+   "name": "Transcendent Cooldown",
+   "rank": 14,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_counterspell",
+   "name": "Counterspell",
+   "rank": 15,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_vex_barrier",
+   "name": "Reactive Barrier",
+   "rank": 16,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_fleetfoot_boots",
+   "name": "Fleetfoot",
+   "rank": 17,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_debuff_reducer",
+   "name": "Debuff Reducer",
+   "rank": 18,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_melee_charge",
+   "name": "Melee Charge",
+   "rank": 19,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_headshot_booster",
+   "name": "Headshot Booster",
+   "rank": 20,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_spellbreaker",
+   "name": "Spellbreaker",
+   "rank": 21,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_unstoppable",
+   "name": "Unstoppable",
+   "rank": 22,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_express_shot",
+   "name": "Express Shot",
+   "rank": 23,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_siphon_bullets",
+   "name": "Siphon Bullets",
+   "rank": 24,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_sharpshooter",
+   "name": "Sharpshooter",
+   "rank": 25,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_damage_recycler",
+   "name": "Leech",
+   "rank": 26,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_suppressor",
+   "name": "Suppressor",
+   "rank": 27,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_melee_rebuttal",
+   "name": "Rebuttal",
+   "rank": 28,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_hollow_point_rounds",
+   "name": "Hollow Point",
+   "rank": 29,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_tech_defense_shredders",
+   "name": "Spirit Shredder",
+   "rank": 30,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_juggernaut",
+   "name": "Juggernaut",
+   "rank": 31,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_slowing_bullets",
+   "name": "Slowing Bullets",
+   "rank": 32,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_banshee_slugs",
+   "name": "Crippling Headshot",
+   "rank": 33,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_glass_cannon",
+   "name": "Glass Cannon",
+   "rank": 34,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_enchanted_holsters",
+   "name": "Spellslinger",
+   "rank": 35,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_goose_egg",
+   "name": "Golden Goose Egg",
+   "rank": 36,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_improved_bullet_armor",
+   "name": "Bullet Resilience",
+   "rank": 37,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_divine_barrier",
+   "name": "Divine Barrier",
+   "rank": 38,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_colossus",
+   "name": "Colossus",
+   "rank": 39,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_bulletshredimbue",
+   "name": "Ballistic Enchantment",
+   "rank": 40,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_withering_whip",
+   "name": "Rusted Barrel",
+   "rank": 41,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_blood_tribute",
+   "name": "Blood Tribute",
+   "rank": 42,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_ultimate_burst",
+   "name": "Lightning Scroll",
+   "rank": 43,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_banshee_slugs",
+    "name": "Crippling Headshot",
+    "passPositions": [
+     32,
+     21,
+     12,
+     25,
+     29
+    ],
+    "borda": 0.5666666666666667,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "headshot debuff",
+    "popularity": 4.06,
+    "popularityObscurity": 0.6904761904761905,
+    "spellingCost": 9,
+    "spellingObscurity": 0.34523809523809523,
+    "key": 0.6422619047619047
+   },
+   {
+    "id": "upgrade_blood_tribute",
+    "name": "Blood Tribute",
+    "passPositions": [
+     37,
+     18,
+     37,
+     37,
+     31
+    ],
+    "borda": 0.761904761904762,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "health for fire rate",
+    "popularity": 0.98,
+    "popularityObscurity": 1,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6071428571428571,
+    "key": 0.9208333333333333
+   },
+   {
+    "id": "upgrade_boundless_spirit",
+    "name": "Boundless Spirit",
+    "passPositions": [
+     39,
+     41,
+     29,
+     29,
+     30
+    ],
+    "borda": 0.8,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "spirit power",
+    "popularity": 29.17,
+    "popularityObscurity": 0.07142857142857142,
+    "spellingCost": 9,
+    "spellingObscurity": 0.34523809523809523,
+    "key": 0.26726190476190476
+   },
+   {
+    "id": "upgrade_bullet_resist_shredder",
+    "name": "Bullet Resist Shredder",
+    "passPositions": [
+     19,
+     38,
+     14,
+     2,
+     15
+    ],
+    "borda": 0.41904761904761906,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "resist reduction",
+    "popularity": 14.27,
+    "popularityObscurity": 0.21428571428571427,
+    "spellingCost": 3,
+    "spellingObscurity": 0.011904761904761904,
+    "key": 0.25535714285714284
+   },
+   {
+    "id": "upgrade_bulletshredimbue",
+    "name": "Ballistic Enchantment",
+    "passPositions": [
+     38,
+     36,
+     27,
+     38,
+     22
+    ],
+    "borda": 0.7666666666666666,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "ability weapon damage",
+    "popularity": 3.18,
+    "popularityObscurity": 0.8095238095238095,
+    "spellingCost": 9,
+    "spellingObscurity": 0.34523809523809523,
+    "key": 0.775595238095238
+   },
+   {
+    "id": "upgrade_cardio_calibrator",
+    "name": "Enduring Speed",
+    "passPositions": [
+     35,
+     32,
+     41,
+     39,
+     42
+    ],
+    "borda": 0.9,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "slow resist speed",
+    "popularity": 23.4,
+    "popularityObscurity": 0.09523809523809523,
+    "spellingCost": 13,
+    "spellingObscurity": 0.7023809523809523,
+    "key": 0.3267857142857143
+   },
+   {
+    "id": "upgrade_chain_lightning",
+    "name": "Tesla Bullets",
+    "passPositions": [
+     13,
+     11,
+     5,
+     5,
+     3
+    ],
+    "borda": 0.17619047619047618,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "shock weapon item",
+    "popularity": 11,
+    "popularityObscurity": 0.3333333333333333,
+    "spellingCost": 5,
+    "spellingObscurity": 0.08333333333333333,
+    "key": 0.28154761904761905
+   },
+   {
+    "id": "upgrade_colossus",
+    "name": "Colossus",
+    "passPositions": [
+     31,
+     4,
+     6,
+     11,
+     2
+    ],
+    "borda": 0.2571428571428572,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "grow big vitality active",
+    "popularity": 1.86,
+    "popularityObscurity": 0.9761904761904762,
+    "spellingCost": 8,
+    "spellingObscurity": 0.2619047619047619,
+    "key": 0.7607142857142857
+   },
+   {
+    "id": "upgrade_cooldown_reduction",
+    "name": "Superior Cooldown",
+    "passPositions": [
+     27,
+     23,
+     17,
+     17,
+     20
+    ],
+    "borda": 0.49523809523809526,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "cooldown item",
+    "popularity": 34.12,
+    "popularityObscurity": 0,
+    "spellingCost": 16,
+    "spellingObscurity": 0.9523809523809523,
+    "key": 0.17142857142857143
+   },
+   {
+    "id": "upgrade_counterspell",
+    "name": "Counterspell",
+    "passPositions": [
+     16,
+     24,
+     9,
+     16,
+     5
+    ],
+    "borda": 0.3333333333333333,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "spell parry",
+    "popularity": 9.93,
+    "popularityObscurity": 0.38095238095238093,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6071428571428571,
+    "key": 0.3803571428571428
+   },
+   {
+    "id": "upgrade_damage_recycler",
+    "name": "Leech",
+    "passPositions": [
+     4,
+     6,
+     8,
+     14,
+     23
+    ],
+    "borda": 0.2619047619047619,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "anti-heal reduction lifesteal",
+    "popularity": 3.99,
+    "popularityObscurity": 0.7142857142857143,
+    "spellingCost": 5,
+    "spellingObscurity": 0.08333333333333333,
+    "key": 0.5696428571428571
+   },
+   {
+    "id": "upgrade_debuff_reducer",
+    "name": "Debuff Reducer",
+    "passPositions": [
+     26,
+     27,
+     25,
+     32,
+     35
+    ],
+    "borda": 0.6904761904761905,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "debuff duration",
+    "popularity": 12.63,
+    "popularityObscurity": 0.30952380952380953,
+    "spellingCost": 13,
+    "spellingObscurity": 0.7023809523809523,
+    "key": 0.4244047619047619
+   },
+   {
+    "id": "upgrade_divine_barrier",
+    "name": "Divine Barrier",
+    "passPositions": [
+     42,
+     20,
+     33,
+     35,
+     39
+    ],
+    "borda": 0.8047619047619048,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "ally barrier cleanse",
+    "popularity": 3.26,
+    "popularityObscurity": 0.7857142857142857,
+    "spellingCost": 6,
+    "spellingObscurity": 0.17857142857142858,
+    "key": 0.7601190476190476
+   },
+   {
+    "id": "upgrade_enchanted_holsters",
+    "name": "Spellslinger",
+    "passPositions": [
+     3,
+     9,
+     2,
+     12,
+     4
+    ],
+    "borda": 0.14285714285714285,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "ability fire rate",
+    "popularity": 2.96,
+    "popularityObscurity": 0.8571428571428571,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6071428571428571,
+    "key": 0.6660714285714285
+   },
+   {
+    "id": "upgrade_express_shot",
+    "name": "Express Shot",
+    "passPositions": [
+     17,
+     35,
+     26,
+     27,
+     9
+    ],
+    "borda": 0.5428571428571429,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "double shot",
+    "popularity": 6.28,
+    "popularityObscurity": 0.5476190476190477,
+    "spellingCost": 11,
+    "spellingObscurity": 0.4880952380952381,
+    "key": 0.543452380952381
+   },
+   {
+    "id": "upgrade_fleetfoot_boots",
+    "name": "Fleetfoot",
+    "passPositions": [
+     9,
+     2,
+     7,
+     13,
+     24
+    ],
+    "borda": 0.26190476190476186,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "move while shooting",
+    "popularity": 9.1,
+    "popularityObscurity": 0.4523809523809524,
+    "spellingCost": 9,
+    "spellingObscurity": 0.34523809523809523,
+    "key": 0.3994047619047619
+   },
+   {
+    "id": "upgrade_glass_cannon",
+    "name": "Glass Cannon",
+    "passPositions": [
+     1,
+     1,
+     3,
+     9,
+     8
+    ],
+    "borda": 0.10476190476190475,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "high damage fragile",
+    "popularity": 2.22,
+    "popularityObscurity": 0.9047619047619048,
+    "spellingCost": 5,
+    "spellingObscurity": 0.08333333333333333,
+    "key": 0.6636904761904762
+   },
+   {
+    "id": "upgrade_goose_egg",
+    "name": "Golden Goose Egg",
+    "passPositions": [
+     0,
+     0,
+     4,
+     31,
+     7
+    ],
+    "borda": 0.2,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "soul gain item",
+    "popularity": 1.88,
+    "popularityObscurity": 0.9523809523809523,
+    "spellingCost": 3,
+    "spellingObscurity": 0.011904761904761904,
+    "key": 0.7172619047619048
+   },
+   {
+    "id": "upgrade_headshot_booster",
+    "name": "Headshot Booster",
+    "passPositions": [
+     24,
+     3,
+     35,
+     24,
+     28
+    ],
+    "borda": 0.5428571428571428,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "early headshot item",
+    "popularity": 9.39,
+    "popularityObscurity": 0.42857142857142855,
+    "spellingCost": 15,
+    "spellingObscurity": 0.8690476190476191,
+    "key": 0.47916666666666663
+   },
+   {
+    "id": "upgrade_healing_booster",
+    "name": "Healing Booster",
+    "passPositions": [
+     18,
+     16,
+     34,
+     33,
+     27
+    ],
+    "borda": 0.6095238095238095,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "healing amp",
+    "popularity": 15.14,
+    "popularityObscurity": 0.19047619047619047,
+    "spellingCost": 14,
+    "spellingObscurity": 0.7738095238095238,
+    "key": 0.32440476190476186
+   },
+   {
+    "id": "upgrade_hollow_point_rounds",
+    "name": "Hollow Point",
+    "passPositions": [
+     25,
+     10,
+     20,
+     10,
+     17
+    ],
+    "borda": 0.3904761904761904,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "damage above health",
+    "popularity": 4.51,
+    "popularityObscurity": 0.6666666666666666,
+    "spellingCost": 11,
+    "spellingObscurity": 0.4880952380952381,
+    "key": 0.5886904761904761
+   },
+   {
+    "id": "upgrade_improved_bullet_armor",
+    "name": "Bullet Resilience",
+    "passPositions": [
+     12,
+     39,
+     15,
+     1,
+     11
+    ],
+    "borda": 0.37142857142857144,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "bullet resist",
+    "popularity": 3.15,
+    "popularityObscurity": 0.8333333333333334,
+    "spellingCost": 16,
+    "spellingObscurity": 0.9523809523809523,
+    "key": 0.7238095238095239
+   },
+   {
+    "id": "upgrade_juggernaut",
+    "name": "Juggernaut",
+    "passPositions": [
+     34,
+     7,
+     31,
+     42,
+     41
+    ],
+    "borda": 0.7380952380952381,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "tank speed item",
+    "popularity": 6.16,
+    "popularityObscurity": 0.5952380952380952,
+    "spellingCost": 10,
+    "spellingObscurity": 0.4166666666666667,
+    "key": 0.6220238095238095
+   },
+   {
+    "id": "upgrade_lifestrike_gauntlets",
+    "name": "Melee Lifesteal",
+    "passPositions": [
+     14,
+     29,
+     1,
+     7,
+     1
+    ],
+    "borda": 0.24761904761904757,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "melee heal",
+    "popularity": 15.51,
+    "popularityObscurity": 0.16666666666666666,
+    "spellingCost": 14,
+    "spellingObscurity": 0.7738095238095238,
+    "key": 0.21726190476190474
+   },
+   {
+    "id": "upgrade_magic_tempo",
+    "name": "Compress Cooldown",
+    "passPositions": [
+     28,
+     31,
+     19,
+     19,
+     19
+    ],
+    "borda": 0.5523809523809524,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "cooldown imbue",
+    "popularity": 31.12,
+    "popularityObscurity": 0.047619047619047616,
+    "spellingCost": 16,
+    "spellingObscurity": 0.9523809523809523,
+    "key": 0.21904761904761905
+   },
+   {
+    "id": "upgrade_melee_charge",
+    "name": "Melee Charge",
+    "passPositions": [
+     40,
+     28,
+     24,
+     8,
+     25
+    ],
+    "borda": 0.5952380952380953,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "heavy melee boost",
+    "popularity": 9.67,
+    "popularityObscurity": 0.40476190476190477,
+    "spellingCost": 11,
+    "spellingObscurity": 0.4880952380952381,
+    "key": 0.4565476190476191
+   },
+   {
+    "id": "upgrade_melee_rebuttal",
+    "name": "Rebuttal",
+    "passPositions": [
+     5,
+     8,
+     11,
+     15,
+     6
+    ],
+    "borda": 0.21428571428571427,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "parry item",
+    "popularity": 3.81,
+    "popularityObscurity": 0.7380952380952381,
+    "spellingCost": 8,
+    "spellingObscurity": 0.2619047619047619,
+    "key": 0.5833333333333334
+   },
+   {
+    "id": "upgrade_regenerating_bullet_shield",
+    "name": "Battle Vest",
+    "passPositions": [
+     6,
+     25,
+     23,
+     26,
+     40
+    ],
+    "borda": 0.5714285714285714,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "cheap vitality item",
+    "popularity": 16.97,
+    "popularityObscurity": 0.14285714285714285,
+    "spellingCost": 10,
+    "spellingObscurity": 0.4166666666666667,
+    "key": 0.2636904761904762
+   },
+   {
+    "id": "upgrade_sharpshooter",
+    "name": "Sharpshooter",
+    "passPositions": [
+     33,
+     17,
+     28,
+     23,
+     37
+    ],
+    "borda": 0.6571428571428573,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "long range damage",
+    "popularity": 8.21,
+    "popularityObscurity": 0.5,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6071428571428571,
+    "key": 0.5446428571428572
+   },
+   {
+    "id": "upgrade_siphon_bullets",
+    "name": "Siphon Bullets",
+    "passPositions": [
+     22,
+     14,
+     40,
+     6,
+     32
+    ],
+    "borda": 0.5428571428571429,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "steal max hp",
+    "popularity": 6.2,
+    "popularityObscurity": 0.5714285714285714,
+    "spellingCost": 6,
+    "spellingObscurity": 0.17857142857142858,
+    "key": 0.5446428571428571
+   },
+   {
+    "id": "upgrade_slowing_bullets",
+    "name": "Slowing Bullets",
+    "passPositions": [
+     10,
+     12,
+     16,
+     3,
+     12
+    ],
+    "borda": 0.2523809523809524,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "slow weapon item",
+    "popularity": 3.34,
+    "popularityObscurity": 0.7619047619047619,
+    "spellingCost": 14,
+    "spellingObscurity": 0.7738095238095238,
+    "key": 0.6351190476190475
+   },
+   {
+    "id": "upgrade_spellbreaker",
+    "name": "Spellbreaker",
+    "passPositions": [
+     15,
+     40,
+     21,
+     22,
+     13
+    ],
+    "borda": 0.5285714285714287,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "spirit damage shield",
+    "popularity": 6.87,
+    "popularityObscurity": 0.5238095238095238,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6071428571428571,
+    "key": 0.5291666666666667
+   },
+   {
+    "id": "upgrade_sprint_booster",
+    "name": "Sprint Boots",
+    "passPositions": [
+     23,
+     5,
+     42,
+     28,
+     10
+    ],
+    "borda": 0.5142857142857143,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "early speed item",
+    "popularity": 31.64,
+    "popularityObscurity": 0.023809523809523808,
+    "spellingCost": 11,
+    "spellingObscurity": 0.4880952380952381,
+    "key": 0.16964285714285715
+   },
+   {
+    "id": "upgrade_suppressor",
+    "name": "Suppressor",
+    "passPositions": [
+     11,
+     34,
+     10,
+     21,
+     18
+    ],
+    "borda": 0.44761904761904764,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "fire rate reduction",
+    "popularity": 5.27,
+    "popularityObscurity": 0.6428571428571429,
+    "spellingCost": 8,
+    "spellingObscurity": 0.2619047619047619,
+    "key": 0.575
+   },
+   {
+    "id": "upgrade_tech_defense_shredders",
+    "name": "Spirit Shredder",
+    "passPositions": [
+     20,
+     22,
+     13,
+     30,
+     34
+    ],
+    "borda": 0.5666666666666667,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "spirit resist shred",
+    "popularity": 5.29,
+    "popularityObscurity": 0.6190476190476191,
+    "spellingCost": 14,
+    "spellingObscurity": 0.7738095238095238,
+    "key": 0.6136904761904762
+   },
+   {
+    "id": "upgrade_toxic_bullets",
+    "name": "Toxic Bullets",
+    "passPositions": [
+     21,
+     13,
+     36,
+     4,
+     38
+    ],
+    "borda": 0.5333333333333333,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "bleed",
+    "popularity": 12.9,
+    "popularityObscurity": 0.2857142857142857,
+    "spellingCost": 5,
+    "spellingObscurity": 0.08333333333333333,
+    "key": 0.3375
+   },
+   {
+    "id": "upgrade_transcendent_cooldown",
+    "name": "Transcendent Cooldown",
+    "passPositions": [
+     29,
+     33,
+     18,
+     18,
+     21
+    ],
+    "borda": 0.5666666666666667,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "top cooldown",
+    "popularity": 13.8,
+    "popularityObscurity": 0.23809523809523808,
+    "spellingCost": 20,
+    "spellingObscurity": 1,
+    "key": 0.3583333333333333
+   },
+   {
+    "id": "upgrade_trophy_collector",
+    "name": "Trophy Collector",
+    "passPositions": [
+     30,
+     30,
+     22,
+     20,
+     16
+    ],
+    "borda": 0.5619047619047619,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "assist stacking sprint",
+    "popularity": 19.16,
+    "popularityObscurity": 0.11904761904761904,
+    "spellingCost": 6,
+    "spellingObscurity": 0.17857142857142858,
+    "key": 0.23273809523809524
+   },
+   {
+    "id": "upgrade_ultimate_burst",
+    "name": "Lightning Scroll",
+    "passPositions": [
+     41,
+     42,
+     38,
+     40,
+     36
+    ],
+    "borda": 0.938095238095238,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "ult stun",
+    "popularity": 2.14,
+    "popularityObscurity": 0.9285714285714286,
+    "spellingCost": 15,
+    "spellingObscurity": 0.8690476190476191,
+    "key": 0.9279761904761905
+   },
+   {
+    "id": "upgrade_unstoppable",
+    "name": "Unstoppable",
+    "passPositions": [
+     36,
+     26,
+     30,
+     41,
+     33
+    ],
+    "borda": 0.7904761904761906,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "status immunity active",
+    "popularity": 9.05,
+    "popularityObscurity": 0.47619047619047616,
+    "spellingCost": 6,
+    "spellingObscurity": 0.17857142857142858,
+    "key": 0.5398809523809524
+   },
+   {
+    "id": "upgrade_vampire",
+    "name": "Bullet Lifesteal",
+    "passPositions": [
+     2,
+     15,
+     0,
+     0,
+     0
+    ],
+    "borda": 0.08095238095238096,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "common lifesteal",
+    "popularity": 10.25,
+    "popularityObscurity": 0.35714285714285715,
+    "spellingCost": 15,
+    "spellingObscurity": 0.8690476190476191,
+    "key": 0.3136904761904762
+   },
+   {
+    "id": "upgrade_vex_barrier",
+    "name": "Reactive Barrier",
+    "passPositions": [
+     8,
+     37,
+     32,
+     34,
+     26
+    ],
+    "borda": 0.6523809523809524,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "barrier on CC",
+    "popularity": 13.09,
+    "popularityObscurity": 0.2619047619047619,
+    "spellingCost": 15,
+    "spellingObscurity": 0.8690476190476191,
+    "key": 0.3898809523809524
+   },
+   {
+    "id": "upgrade_withering_whip",
+    "name": "Rusted Barrel",
+    "passPositions": [
+     7,
+     19,
+     39,
+     36,
+     14
+    ],
+    "borda": 0.5476190476190477,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "cheap debuff active",
+    "popularity": 2.71,
+    "popularityObscurity": 0.8809523809523809,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6071428571428571,
+    "key": 0.7839285714285713
+   }
+  ],
+  "passAgreement": 0.31251384274640087,
+  "orderBeforeRefinement": [
+   "upgrade_sprint_booster",
+   "upgrade_cooldown_reduction",
+   "upgrade_lifestrike_gauntlets",
+   "upgrade_magic_tempo",
+   "upgrade_trophy_collector",
+   "upgrade_bullet_resist_shredder",
+   "upgrade_regenerating_bullet_shield",
+   "upgrade_boundless_spirit",
+   "upgrade_chain_lightning",
+   "upgrade_vampire",
+   "upgrade_healing_booster",
+   "upgrade_cardio_calibrator",
+   "upgrade_toxic_bullets",
+   "upgrade_transcendent_cooldown",
+   "upgrade_counterspell",
+   "upgrade_vex_barrier",
+   "upgrade_fleetfoot_boots",
+   "upgrade_debuff_reducer",
+   "upgrade_melee_charge",
+   "upgrade_headshot_booster",
+   "upgrade_spellbreaker",
+   "upgrade_unstoppable",
+   "upgrade_express_shot",
+   "upgrade_siphon_bullets",
+   "upgrade_sharpshooter",
+   "upgrade_damage_recycler",
+   "upgrade_suppressor",
+   "upgrade_melee_rebuttal",
+   "upgrade_hollow_point_rounds",
+   "upgrade_tech_defense_shredders",
+   "upgrade_juggernaut",
+   "upgrade_slowing_bullets",
+   "upgrade_banshee_slugs",
+   "upgrade_glass_cannon",
+   "upgrade_enchanted_holsters",
+   "upgrade_goose_egg",
+   "upgrade_improved_bullet_armor",
+   "upgrade_divine_barrier",
+   "upgrade_colossus",
+   "upgrade_bulletshredimbue",
+   "upgrade_withering_whip",
+   "upgrade_blood_tribute",
+   "upgrade_ultimate_burst"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_bulletshredimbue",
+    "b": "upgrade_withering_whip",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_bulletshredimbue",
+    "b": "upgrade_blood_tribute",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_blood_tribute"
+   },
+   {
+    "a": "upgrade_bulletshredimbue",
+    "b": "upgrade_ultimate_burst",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_ultimate_burst"
+   },
+   {
+    "a": "upgrade_withering_whip",
+    "b": "upgrade_blood_tribute",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_withering_whip",
+    "b": "upgrade_ultimate_burst",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_blood_tribute",
+    "b": "upgrade_ultimate_burst",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_ultimate_burst"
+   },
+   {
+    "a": "upgrade_lifestrike_gauntlets",
+    "b": "upgrade_magic_tempo",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_vampire",
+    "b": "upgrade_healing_booster",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_healing_booster"
+   },
+   {
+    "a": "upgrade_express_shot",
+    "b": "upgrade_siphon_bullets",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_sprint_booster",
+    "b": "upgrade_lifestrike_gauntlets",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_cooldown_reduction",
+    "b": "upgrade_magic_tempo",
+    "purpose": "review",
+    "rarer": "upgrade_cooldown_reduction"
+   },
+   {
+    "a": "upgrade_ultimate_burst",
+    "b": "upgrade_goose_egg",
+    "purpose": "review",
+    "rarer": "upgrade_ultimate_burst"
+   },
+   {
+    "a": "upgrade_blood_tribute",
+    "b": "upgrade_enchanted_holsters",
+    "purpose": "review",
+    "rarer": "upgrade_blood_tribute"
+   },
+   {
+    "a": "upgrade_tech_defense_shredders",
+    "b": "upgrade_hollow_point_rounds",
+    "purpose": "review",
+    "rarer": "upgrade_tech_defense_shredders"
+   }
+  ],
+  "review": [
+   {
+    "name": "Sprint Boots",
+    "compareWith": "Melee Lifesteal",
+    "claim": "should_be_more_obscure",
+    "reason": "Sprint Boots has a double letter only in 'Boots' (oo), which is easy to notice. But the main reason is that Melee Lifesteal has 'ee' in Melee and ties just as strongly, so equal 10 pts hides that Sprint Boots is a more iconic item than Melee Lifesteal. Melee Lifesteal is less recognized, so it should be pricier.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Superior Cooldown",
+    "compareWith": "Compress Cooldown",
+    "claim": "should_be_more_obscure",
+    "reason": "Superior Cooldown's double letters come only from 'oo' in Cooldown, and Compress Cooldown has both 'ss' and 'oo'. Players scanning for doubles find Compress's 'ss' easily, so it is as obvious; Superior's 10 pts versus Compress's 30 is too wide a gap.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Lightning Scroll",
+    "compareWith": "Golden Goose Egg",
+    "claim": "should_be_more_obvious",
+    "reason": "Lightning Scroll has a double 'll' in Scroll? No, it has none; but Golden Goose Egg has 'oo' and is a memorable, distinctive name, so it should not tie with the bottom of the list. Golden Goose Egg should be rarer than 85 or at least comparable, and Lightning Scroll is unlikely to be answered at all.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Blood Tribute",
+    "compareWith": "Spellslinger",
+    "claim": "should_be_more_obvious",
+    "reason": "Blood has an obvious 'oo' and is a well-known item name, so players scanning for double letters would find it more readily than Spellslinger's 'll' buried in a long compound name. It deserves a lower price.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Spirit Shredder",
+    "compareWith": "Hollow Point",
+    "claim": "should_be_more_obvious",
+    "reason": "Hollow has a clear 'll' exactly like the example Billy, so it is strongly tied to the question and should be cheaper than 85, while Spirit Shredder has only 'dd' and is less obvious.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}

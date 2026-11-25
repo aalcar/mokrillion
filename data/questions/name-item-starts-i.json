@@ -1,0 +1,267 @@
+{
+ "question": {
+  "signature": "name:item:starts:i",
+  "prompt": "Name an item whose name starts with the letter I.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_auto_cleanse",
+   "upgrade_infuser",
+   "upgrade_inhibitor",
+   "upgrade_intensifying_clip",
+   "upgrade_soaring_spirit"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:starts:i"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:25:06.220Z",
+ "answers": [
+  {
+   "entityId": "upgrade_auto_cleanse",
+   "name": "Indomitable",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_soaring_spirit",
+   "name": "Improved Spirit",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_infuser",
+   "name": "Infuser",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_inhibitor",
+   "name": "Inhibitor",
+   "rank": 4,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_intensifying_clip",
+   "name": "Intensifying Magazine",
+   "rank": 5,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_auto_cleanse",
+    "name": "Indomitable",
+    "passPositions": [
+     3,
+     4,
+     4,
+     4,
+     4
+    ],
+    "borda": 0.95,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Late-game debuff-cleansing vitality item",
+    "popularity": 8.14,
+    "popularityObscurity": 0.25,
+    "spellingCost": 5,
+    "spellingObscurity": 0,
+    "key": 0.4125
+   },
+   {
+    "id": "upgrade_infuser",
+    "name": "Infuser",
+    "passPositions": [
+     2,
+     0,
+     2,
+     2,
+     2
+    ],
+    "borda": 0.4,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Active spirit lifesteal and spirit power item",
+    "popularity": 3.91,
+    "popularityObscurity": 0.5,
+    "spellingCost": 7,
+    "spellingObscurity": 0.25,
+    "key": 0.46249999999999997
+   },
+   {
+    "id": "upgrade_inhibitor",
+    "name": "Inhibitor",
+    "passPositions": [
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    "borda": 0.15,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Healing reduction and damage reduction bullet item",
+    "popularity": 3.21,
+    "popularityObscurity": 0.75,
+    "spellingCost": 9,
+    "spellingObscurity": 0.5,
+    "key": 0.5874999999999999
+   },
+   {
+    "id": "upgrade_intensifying_clip",
+    "name": "Intensifying Magazine",
+    "passPositions": [
+     0,
+     2,
+     0,
+     3,
+     3
+    ],
+    "borda": 0.4,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Weapon damage ramp-up while firing",
+    "popularity": 2.24,
+    "popularityObscurity": 1,
+    "spellingCost": 20,
+    "spellingObscurity": 1,
+    "key": 0.85
+   },
+   {
+    "id": "upgrade_soaring_spirit",
+    "name": "Improved Spirit",
+    "passPositions": [
+     4,
+     3,
+     3,
+     1,
+     1
+    ],
+    "borda": 0.6,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Cheap tier 2 spirit power filler",
+    "popularity": 44.97,
+    "popularityObscurity": 0,
+    "spellingCost": 14,
+    "spellingObscurity": 0.75,
+    "key": 0.1875
+   }
+  ],
+  "passAgreement": 0.36,
+  "orderBeforeRefinement": [
+   "upgrade_soaring_spirit",
+   "upgrade_auto_cleanse",
+   "upgrade_infuser",
+   "upgrade_inhibitor",
+   "upgrade_intensifying_clip"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_auto_cleanse",
+    "b": "upgrade_infuser",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_auto_cleanse",
+    "b": "upgrade_inhibitor",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_auto_cleanse",
+    "b": "upgrade_intensifying_clip",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_infuser",
+    "b": "upgrade_inhibitor",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_infuser",
+    "b": "upgrade_intensifying_clip",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_inhibitor",
+    "b": "upgrade_intensifying_clip",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_intensifying_clip",
+    "b": "upgrade_inhibitor",
+    "purpose": "review",
+    "rarer": "upgrade_intensifying_clip"
+   },
+   {
+    "a": "upgrade_soaring_spirit",
+    "b": "upgrade_auto_cleanse",
+    "purpose": "review",
+    "rarer": "upgrade_soaring_spirit"
+   },
+   {
+    "a": "upgrade_infuser",
+    "b": "upgrade_auto_cleanse",
+    "purpose": "review",
+    "rarer": "upgrade_infuser"
+   }
+  ],
+  "review": [
+   {
+    "name": "Intensifying Magazine",
+    "compareWith": "Inhibitor",
+    "claim": "should_be_more_obvious",
+    "reason": "Intensifying Magazine is a commonly bought Tier 2 weapon item with a distinctive name. It is also the only weapon item here, so players brainstorming I-items will recall it readily. Inhibitor is a Tier 4 item bought far less often, so it should be rarer than Intensifying Magazine.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Improved Spirit",
+    "compareWith": "Indomitable",
+    "claim": "should_be_more_obscure",
+    "reason": "Improved Spirit is a plain stat-stick Tier 2 item whose name is easy to forget. Indomitable has a memorable name and a well-known cleanse mechanic, so it likely comes to mind first and should rank as more obvious than Improved Spirit.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Infuser",
+    "compareWith": "Indomitable",
+    "claim": "should_be_more_obvious",
+    "reason": "Infuser is a distinctive, well-known active vitality item with a simple name. It is probably about as readily recalled as Indomitable, so a 30-point gap to Infuser looks too wide.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}

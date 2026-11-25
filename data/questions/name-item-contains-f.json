@@ -1,0 +1,851 @@
+{
+ "question": {
+  "signature": "name:item:contains:f",
+  "prompt": "Name an item whose name contains the letter F.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_ability_refresher",
+   "upgrade_blitz_bullets",
+   "upgrade_boxing_glove",
+   "upgrade_burst_fire",
+   "upgrade_chonky",
+   "upgrade_cold_front",
+   "upgrade_crushing_fists",
+   "upgrade_debuff_reducer",
+   "upgrade_fervor",
+   "upgrade_fleetfoot_boots",
+   "upgrade_focus_lens",
+   "upgrade_fury_trance",
+   "upgrade_health_stealing_magic",
+   "upgrade_infuser",
+   "upgrade_intensifying_clip",
+   "upgrade_lifestrike_gauntlets",
+   "upgrade_magic_storm",
+   "upgrade_non_player_bonus_sacrifice",
+   "upgrade_return_fire",
+   "upgrade_self_bubble",
+   "upgrade_tech_overflow",
+   "upgrade_thermal_detonator",
+   "upgrade_vampire"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:contains:f"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:23:53.007Z",
+ "answers": [
+  {
+   "entityId": "upgrade_chonky",
+   "name": "Fortitude",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_blitz_bullets",
+   "name": "Swift Striker",
+   "rank": 2,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_health_stealing_magic",
+   "name": "Spirit Lifesteal",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_burst_fire",
+   "name": "Burst Fire",
+   "rank": 4,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_lifestrike_gauntlets",
+   "name": "Melee Lifesteal",
+   "rank": 5,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_fleetfoot_boots",
+   "name": "Fleetfoot",
+   "rank": 6,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_ability_refresher",
+   "name": "Refresher",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_debuff_reducer",
+   "name": "Debuff Reducer",
+   "rank": 8,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_boxing_glove",
+   "name": "Lifestrike",
+   "rank": 9,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_vampire",
+   "name": "Bullet Lifesteal",
+   "rank": 10,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_magic_storm",
+   "name": "Surge of Power",
+   "rank": 11,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_cold_front",
+   "name": "Cold Front",
+   "rank": 12,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_tech_overflow",
+   "name": "Spiritual Overflow",
+   "rank": 13,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_non_player_bonus_sacrifice",
+   "name": "Cultist Sacrifice",
+   "rank": 14,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_crushing_fists",
+   "name": "Crushing Fists",
+   "rank": 15,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_fervor",
+   "name": "Frenzy",
+   "rank": 16,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_infuser",
+   "name": "Infuser",
+   "rank": 17,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_self_bubble",
+   "name": "Ethereal Shift",
+   "rank": 18,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_thermal_detonator",
+   "name": "Alchemical Fire",
+   "rank": 19,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_focus_lens",
+   "name": "Focus Lens",
+   "rank": 20,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_return_fire",
+   "name": "Return Fire",
+   "rank": 21,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_intensifying_clip",
+   "name": "Intensifying Magazine",
+   "rank": 22,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_fury_trance",
+   "name": "Fury Trance",
+   "rank": 23,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_ability_refresher",
+    "name": "Refresher",
+    "passPositions": [
+     0,
+     0,
+     2,
+     1,
+     9
+    ],
+    "borda": 0.10909090909090909,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Resets all cooldowns",
+    "popularity": 6.02,
+    "popularityObscurity": 0.5909090909090909,
+    "spellingCost": 9,
+    "spellingObscurity": 0.3409090909090909,
+    "key": 0.45795454545454545
+   },
+   {
+    "id": "upgrade_blitz_bullets",
+    "name": "Swift Striker",
+    "passPositions": [
+     15,
+     20,
+     14,
+     13,
+     22
+    ],
+    "borda": 0.7636363636363636,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Fire rate item",
+    "popularity": 25.07,
+    "popularityObscurity": 0,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6136363636363636,
+    "key": 0.22159090909090906
+   },
+   {
+    "id": "upgrade_boxing_glove",
+    "name": "Lifestrike",
+    "passPositions": [
+     10,
+     13,
+     16,
+     12,
+     10
+    ],
+    "borda": 0.5545454545454546,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Melee slow and heal item",
+    "popularity": 9.99,
+    "popularityObscurity": 0.36363636363636365,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5227272727272727,
+    "key": 0.4193181818181818
+   },
+   {
+    "id": "upgrade_burst_fire",
+    "name": "Burst Fire",
+    "passPositions": [
+     2,
+     3,
+     1,
+     3,
+     4
+    ],
+    "borda": 0.11818181818181817,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Fire rate and speed on hit",
+    "popularity": 10.34,
+    "popularityObscurity": 0.2727272727272727,
+    "spellingCost": 9,
+    "spellingObscurity": 0.3409090909090909,
+    "key": 0.2375
+   },
+   {
+    "id": "upgrade_chonky",
+    "name": "Fortitude",
+    "passPositions": [
+     1,
+     1,
+     0,
+     5,
+     3
+    ],
+    "borda": 0.09090909090909091,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "Big health and regen",
+    "popularity": 16.58,
+    "popularityObscurity": 0.09090909090909091,
+    "spellingCost": 9,
+    "spellingObscurity": 0.3409090909090909,
+    "key": 0.1034090909090909
+   },
+   {
+    "id": "upgrade_cold_front",
+    "name": "Cold Front",
+    "passPositions": [
+     8,
+     6,
+     4,
+     8,
+     7
+    ],
+    "borda": 0.29999999999999993,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Ice blast slow active",
+    "popularity": 7.82,
+    "popularityObscurity": 0.5454545454545454,
+    "spellingCost": 9,
+    "spellingObscurity": 0.3409090909090909,
+    "key": 0.4738636363636363
+   },
+   {
+    "id": "upgrade_crushing_fists",
+    "name": "Crushing Fists",
+    "passPositions": [
+     18,
+     10,
+     15,
+     11,
+     11
+    ],
+    "borda": 0.5909090909090909,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Heavy melee stun item",
+    "popularity": 5.5,
+    "popularityObscurity": 0.6363636363636364,
+    "spellingCost": 13,
+    "spellingObscurity": 0.7272727272727273,
+    "key": 0.6295454545454545
+   },
+   {
+    "id": "upgrade_debuff_reducer",
+    "name": "Debuff Reducer",
+    "passPositions": [
+     22,
+     21,
+     17,
+     18,
+     19
+    ],
+    "borda": 0.8818181818181818,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Shorter debuff durations",
+    "popularity": 12.63,
+    "popularityObscurity": 0.18181818181818182,
+    "spellingCost": 13,
+    "spellingObscurity": 0.7272727272727273,
+    "key": 0.3840909090909091
+   },
+   {
+    "id": "upgrade_fervor",
+    "name": "Frenzy",
+    "passPositions": [
+     3,
+     2,
+     5,
+     4,
+     0
+    ],
+    "borda": 0.12727272727272726,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "Low health bonus weapon item",
+    "popularity": 1.32,
+    "popularityObscurity": 0.8636363636363636,
+    "spellingCost": 6,
+    "spellingObscurity": 0.045454545454545456,
+    "key": 0.6386363636363636
+   },
+   {
+    "id": "upgrade_fleetfoot_boots",
+    "name": "Fleetfoot",
+    "passPositions": [
+     4,
+     4,
+     3,
+     0,
+     1
+    ],
+    "borda": 0.10909090909090909,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Mobile shooting speed item",
+    "popularity": 9.1,
+    "popularityObscurity": 0.45454545454545453,
+    "spellingCost": 9,
+    "spellingObscurity": 0.3409090909090909,
+    "key": 0.3625
+   },
+   {
+    "id": "upgrade_focus_lens",
+    "name": "Focus Lens",
+    "passPositions": [
+     9,
+     7,
+     9,
+     9,
+     2
+    ],
+    "borda": 0.32727272727272727,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "Silence active with delayed damage",
+    "popularity": 1.09,
+    "popularityObscurity": 0.9545454545454546,
+    "spellingCost": 9,
+    "spellingObscurity": 0.3409090909090909,
+    "key": 0.7670454545454546
+   },
+   {
+    "id": "upgrade_fury_trance",
+    "name": "Fury Trance",
+    "passPositions": [
+     6,
+     8,
+     6,
+     10,
+     5
+    ],
+    "borda": 0.3181818181818182,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "Berserk lifesteal fire rate active",
+    "popularity": 0.59,
+    "popularityObscurity": 1,
+    "spellingCost": 4,
+    "spellingObscurity": 0,
+    "key": 0.7795454545454545
+   },
+   {
+    "id": "upgrade_health_stealing_magic",
+    "name": "Spirit Lifesteal",
+    "passPositions": [
+     13,
+     15,
+     12,
+     17,
+     12
+    ],
+    "borda": 0.6272727272727272,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Basic spirit sustain item",
+    "popularity": 20.88,
+    "popularityObscurity": 0.045454545454545456,
+    "spellingCost": 15,
+    "spellingObscurity": 0.9318181818181818,
+    "key": 0.23522727272727273
+   },
+   {
+    "id": "upgrade_infuser",
+    "name": "Infuser",
+    "passPositions": [
+     17,
+     11,
+     20,
+     20,
+     15
+    ],
+    "borda": 0.7545454545454545,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Spirit lifesteal upgrade with power",
+    "popularity": 3.91,
+    "popularityObscurity": 0.6818181818181818,
+    "spellingCost": 7,
+    "spellingObscurity": 0.11363636363636363,
+    "key": 0.671590909090909
+   },
+   {
+    "id": "upgrade_intensifying_clip",
+    "name": "Intensifying Magazine",
+    "passPositions": [
+     20,
+     22,
+     19,
+     22,
+     21
+    ],
+    "borda": 0.9454545454545455,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Ramping weapon damage item",
+    "popularity": 2.24,
+    "popularityObscurity": 0.7727272727272727,
+    "spellingCost": 20,
+    "spellingObscurity": 1,
+    "key": 0.8272727272727273
+   },
+   {
+    "id": "upgrade_lifestrike_gauntlets",
+    "name": "Melee Lifesteal",
+    "passPositions": [
+     11,
+     17,
+     21,
+     16,
+     14
+    ],
+    "borda": 0.7181818181818183,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Cheap melee heal item",
+    "popularity": 15.51,
+    "popularityObscurity": 0.13636363636363635,
+    "spellingCost": 14,
+    "spellingObscurity": 0.8409090909090909,
+    "key": 0.3170454545454546
+   },
+   {
+    "id": "upgrade_magic_storm",
+    "name": "Surge of Power",
+    "passPositions": [
+     16,
+     12,
+     11,
+     14,
+     18
+    ],
+    "borda": 0.6454545454545455,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Permanent ability imbue and speed",
+    "popularity": 10.45,
+    "popularityObscurity": 0.22727272727272727,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6136363636363636,
+    "key": 0.3511363636363637
+   },
+   {
+    "id": "upgrade_non_player_bonus_sacrifice",
+    "name": "Cultist Sacrifice",
+    "passPositions": [
+     21,
+     19,
+     18,
+     19,
+     16
+    ],
+    "borda": 0.8454545454545455,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "NPC-consuming souls and buff item",
+    "popularity": 9.92,
+    "popularityObscurity": 0.4090909090909091,
+    "spellingCost": 7,
+    "spellingObscurity": 0.11363636363636363,
+    "key": 0.5034090909090909
+   },
+   {
+    "id": "upgrade_return_fire",
+    "name": "Return Fire",
+    "passPositions": [
+     5,
+     5,
+     7,
+     2,
+     8
+    ],
+    "borda": 0.24545454545454545,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Auto retaliation bullet item",
+    "popularity": 1.12,
+    "popularityObscurity": 0.9090909090909091,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5227272727272727,
+    "key": 0.7238636363636364
+   },
+   {
+    "id": "upgrade_self_bubble",
+    "name": "Ethereal Shift",
+    "passPositions": [
+     19,
+     14,
+     10,
+     6,
+     17
+    ],
+    "borda": 0.6,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Invulnerable void escape",
+    "popularity": 3.08,
+    "popularityObscurity": 0.7272727272727273,
+    "spellingCost": 13,
+    "spellingObscurity": 0.7272727272727273,
+    "key": 0.6954545454545454
+   },
+   {
+    "id": "upgrade_tech_overflow",
+    "name": "Spiritual Overflow",
+    "passPositions": [
+     14,
+     18,
+     22,
+     21,
+     20
+    ],
+    "borda": 0.8636363636363636,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Spirit lifesteal fire rate stacking",
+    "popularity": 8.69,
+    "popularityObscurity": 0.5,
+    "spellingCost": 8,
+    "spellingObscurity": 0.18181818181818182,
+    "key": 0.575
+   },
+   {
+    "id": "upgrade_thermal_detonator",
+    "name": "Alchemical Fire",
+    "passPositions": [
+     7,
+     9,
+     8,
+     7,
+     6
+    ],
+    "borda": 0.3363636363636363,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Flask reducing bullet resist",
+    "popularity": 1.5,
+    "popularityObscurity": 0.8181818181818182,
+    "spellingCost": 14,
+    "spellingObscurity": 0.8409090909090909,
+    "key": 0.6988636363636364
+   },
+   {
+    "id": "upgrade_vampire",
+    "name": "Bullet Lifesteal",
+    "passPositions": [
+     12,
+     16,
+     13,
+     15,
+     13
+    ],
+    "borda": 0.6272727272727272,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Common lifesteal vitality item",
+    "popularity": 10.25,
+    "popularityObscurity": 0.3181818181818182,
+    "spellingCost": 15,
+    "spellingObscurity": 0.9318181818181818,
+    "key": 0.42613636363636365
+   }
+  ],
+  "passAgreement": 0.6395256916996047,
+  "orderBeforeRefinement": [
+   "upgrade_chonky",
+   "upgrade_blitz_bullets",
+   "upgrade_health_stealing_magic",
+   "upgrade_burst_fire",
+   "upgrade_lifestrike_gauntlets",
+   "upgrade_magic_storm",
+   "upgrade_fleetfoot_boots",
+   "upgrade_debuff_reducer",
+   "upgrade_boxing_glove",
+   "upgrade_vampire",
+   "upgrade_ability_refresher",
+   "upgrade_cold_front",
+   "upgrade_non_player_bonus_sacrifice",
+   "upgrade_tech_overflow",
+   "upgrade_crushing_fists",
+   "upgrade_fervor",
+   "upgrade_infuser",
+   "upgrade_self_bubble",
+   "upgrade_thermal_detonator",
+   "upgrade_return_fire",
+   "upgrade_focus_lens",
+   "upgrade_fury_trance",
+   "upgrade_intensifying_clip"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_return_fire",
+    "b": "upgrade_focus_lens",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_return_fire"
+   },
+   {
+    "a": "upgrade_return_fire",
+    "b": "upgrade_fury_trance",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_fury_trance"
+   },
+   {
+    "a": "upgrade_return_fire",
+    "b": "upgrade_intensifying_clip",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_intensifying_clip"
+   },
+   {
+    "a": "upgrade_focus_lens",
+    "b": "upgrade_fury_trance",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_fury_trance"
+   },
+   {
+    "a": "upgrade_focus_lens",
+    "b": "upgrade_intensifying_clip",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_intensifying_clip"
+   },
+   {
+    "a": "upgrade_fury_trance",
+    "b": "upgrade_intensifying_clip",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_intensifying_clip"
+   },
+   {
+    "a": "upgrade_blitz_bullets",
+    "b": "upgrade_health_stealing_magic",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_magic_storm",
+    "b": "upgrade_fleetfoot_boots",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_magic_storm"
+   },
+   {
+    "a": "upgrade_non_player_bonus_sacrifice",
+    "b": "upgrade_tech_overflow",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_non_player_bonus_sacrifice"
+   },
+   {
+    "a": "upgrade_ability_refresher",
+    "b": "upgrade_magic_storm",
+    "purpose": "review",
+    "rarer": "upgrade_magic_storm"
+   },
+   {
+    "a": "upgrade_chonky",
+    "b": "upgrade_ability_refresher",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Refresher",
+    "compareWith": "Surge of Power",
+    "claim": "should_be_more_obvious",
+    "reason": "Refresher is a famous, iconic Tier 4 item with a short, memorable name and a simple effect. Players think of it quickly, so it belongs near the 10-30 point answers rather than tied with Surge of Power at 60.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Fortitude",
+    "compareWith": "Refresher",
+    "claim": "should_be_more_obscure",
+    "reason": "Fortitude is a common vitality purchase, but it is less iconic than Refresher and has no standout F in its name. Rating it as the single most obvious answer rests on an implausible assumption.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Spiritual Overflow",
+    "compareWith": "Burst Fire",
+    "claim": "should_be_more_obscure",
+    "reason": "Spiritual Overflow is a Tier 4 upgrade with a long name. Players would think of it less readily than Burst Fire, and it should not be tied with Refresher at 60 or sit near Cold Front.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Frenzy",
+    "compareWith": "Return Fire",
+    "claim": "should_be_more_obvious",
+    "reason": "Frenzy has a short, punchy name that starts with F, so it springs to mind quickly when asked for an F item. It should score below Return Fire, not tie with it.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Intensifying Magazine",
+    "compareWith": "Fury Trance",
+    "claim": "should_be_more_obvious",
+    "reason": "Intensifying Magazine is a commonly bought Tier 2 weapon item, and its F is in an unremarkable position in the name. It is still plausibly less obvious than Fury Trance, which starts with F, so the 100-point tier is questionable; the gap from Fury Trance is overstated.",
+    "outcome": "applied-by-data"
+   }
+  ]
+ }
+}

@@ -1,0 +1,485 @@
+{
+ "question": {
+  "signature": "name:item:starts:c",
+  "prompt": "Name an item whose name starts with the letter C.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_banshee_slugs",
+   "upgrade_capacitor",
+   "upgrade_cheat_death",
+   "upgrade_close_range",
+   "upgrade_cold_front",
+   "upgrade_colossus",
+   "upgrade_counterspell",
+   "upgrade_crushing_fists",
+   "upgrade_glitch",
+   "upgrade_magic_tempo",
+   "upgrade_non_player_bonus_sacrifice"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:starts:c"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:21:46.127Z",
+ "answers": [
+  {
+   "entityId": "upgrade_close_range",
+   "name": "Close Quarters",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_magic_tempo",
+   "name": "Compress Cooldown",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_counterspell",
+   "name": "Counterspell",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_capacitor",
+   "name": "Capacitor",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_cold_front",
+   "name": "Cold Front",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_non_player_bonus_sacrifice",
+   "name": "Cultist Sacrifice",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_cheat_death",
+   "name": "Cheat Death",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_glitch",
+   "name": "Cursed Relic",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_colossus",
+   "name": "Colossus",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_banshee_slugs",
+   "name": "Crippling Headshot",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_crushing_fists",
+   "name": "Crushing Fists",
+   "rank": 11,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_banshee_slugs",
+    "name": "Crippling Headshot",
+    "passPositions": [
+     7,
+     7,
+     9,
+     4,
+     6
+    ],
+    "borda": 0.6599999999999999,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "headshot resist-shred upgrade",
+    "popularity": 4.06,
+    "popularityObscurity": 0.8,
+    "spellingCost": 9,
+    "spellingObscurity": 0.5,
+    "key": 0.7499999999999999
+   },
+   {
+    "id": "upgrade_capacitor",
+    "name": "Capacitor",
+    "passPositions": [
+     8,
+     4,
+     6,
+     7,
+     4
+    ],
+    "borda": 0.58,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "niche slow-and-silence active from Tesla Bullets",
+    "popularity": 8.07,
+    "popularityObscurity": 0.4,
+    "spellingCost": 9,
+    "spellingObscurity": 0.5,
+    "key": 0.44999999999999996
+   },
+   {
+    "id": "upgrade_cheat_death",
+    "name": "Cheat Death",
+    "passPositions": [
+     1,
+     1,
+     2,
+     1,
+     1
+    ],
+    "borda": 0.12,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "well-known death-immunity item",
+    "popularity": 3.32,
+    "popularityObscurity": 0.9,
+    "spellingCost": 5,
+    "spellingObscurity": 0.05,
+    "key": 0.6625
+   },
+   {
+    "id": "upgrade_close_range",
+    "name": "Close Quarters",
+    "passPositions": [
+     5,
+     5,
+     7,
+     6,
+     8
+    ],
+    "borda": 0.6199999999999999,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "cheap early close-range damage item",
+    "popularity": 16.2,
+    "popularityObscurity": 0.1,
+    "spellingCost": 13,
+    "spellingObscurity": 0.85,
+    "key": 0.26749999999999996
+   },
+   {
+    "id": "upgrade_cold_front",
+    "name": "Cold Front",
+    "passPositions": [
+     4,
+     6,
+     5,
+     5,
+     5
+    ],
+    "borda": 0.5,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "cheap icy slowing blast, common early spirit buy",
+    "popularity": 7.82,
+    "popularityObscurity": 0.5,
+    "spellingCost": 9,
+    "spellingObscurity": 0.5,
+    "key": 0.5
+   },
+   {
+    "id": "upgrade_colossus",
+    "name": "Colossus",
+    "passPositions": [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    "borda": 0.02,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "grow big tank item with slow",
+    "popularity": 1.86,
+    "popularityObscurity": 1,
+    "spellingCost": 8,
+    "spellingObscurity": 0.3,
+    "key": 0.72
+   },
+   {
+    "id": "upgrade_counterspell",
+    "name": "Counterspell",
+    "passPositions": [
+     3,
+     3,
+     3,
+     3,
+     3
+    ],
+    "borda": 0.3,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "spell parry shield against abilities",
+    "popularity": 9.93,
+    "popularityObscurity": 0.2,
+    "spellingCost": 12,
+    "spellingObscurity": 0.7,
+    "key": 0.24999999999999997
+   },
+   {
+    "id": "upgrade_crushing_fists",
+    "name": "Crushing Fists",
+    "passPositions": [
+     9,
+     9,
+     4,
+     8,
+     9
+    ],
+    "borda": 0.78,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "melee build item with stun stacks",
+    "popularity": 5.5,
+    "popularityObscurity": 0.6,
+    "spellingCost": 13,
+    "spellingObscurity": 0.85,
+    "key": 0.6575
+   },
+   {
+    "id": "upgrade_glitch",
+    "name": "Cursed Relic",
+    "passPositions": [
+     2,
+     2,
+     0,
+     2,
+     2
+    ],
+    "borda": 0.16,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "strong silence-and-disarm active",
+    "popularity": 4.8,
+    "popularityObscurity": 0.7,
+    "spellingCost": 5,
+    "spellingObscurity": 0.05,
+    "key": 0.5325
+   },
+   {
+    "id": "upgrade_magic_tempo",
+    "name": "Compress Cooldown",
+    "passPositions": [
+     6,
+     8,
+     10,
+     9,
+     7
+    ],
+    "borda": 0.8,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "cooldown imbue spirit item",
+    "popularity": 31.12,
+    "popularityObscurity": 0,
+    "spellingCost": 16,
+    "spellingObscurity": 1,
+    "key": 0.25
+   },
+   {
+    "id": "upgrade_non_player_bonus_sacrifice",
+    "name": "Cultist Sacrifice",
+    "passPositions": [
+     10,
+     10,
+     8,
+     10,
+     10
+    ],
+    "borda": 0.96,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "NPC-consuming item for jungle soul farming",
+    "popularity": 9.92,
+    "popularityObscurity": 0.3,
+    "spellingCost": 7,
+    "spellingObscurity": 0.2,
+    "key": 0.45999999999999996
+   }
+  ],
+  "passAgreement": 0.7018181818181819,
+  "orderBeforeRefinement": [
+   "upgrade_counterspell",
+   "upgrade_magic_tempo",
+   "upgrade_close_range",
+   "upgrade_capacitor",
+   "upgrade_non_player_bonus_sacrifice",
+   "upgrade_cold_front",
+   "upgrade_glitch",
+   "upgrade_crushing_fists",
+   "upgrade_cheat_death",
+   "upgrade_colossus",
+   "upgrade_banshee_slugs"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_crushing_fists",
+    "b": "upgrade_cheat_death",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_crushing_fists"
+   },
+   {
+    "a": "upgrade_crushing_fists",
+    "b": "upgrade_colossus",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_crushing_fists"
+   },
+   {
+    "a": "upgrade_crushing_fists",
+    "b": "upgrade_banshee_slugs",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_cheat_death",
+    "b": "upgrade_colossus",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_colossus"
+   },
+   {
+    "a": "upgrade_cheat_death",
+    "b": "upgrade_banshee_slugs",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_banshee_slugs"
+   },
+   {
+    "a": "upgrade_colossus",
+    "b": "upgrade_banshee_slugs",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_banshee_slugs"
+   },
+   {
+    "a": "upgrade_counterspell",
+    "b": "upgrade_magic_tempo",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_magic_tempo"
+   },
+   {
+    "a": "upgrade_close_range",
+    "b": "upgrade_capacitor",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_capacitor"
+   },
+   {
+    "a": "upgrade_cold_front",
+    "b": "upgrade_glitch",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_cheat_death",
+    "b": "upgrade_glitch",
+    "purpose": "review",
+    "rarer": "upgrade_glitch"
+   },
+   {
+    "a": "upgrade_cold_front",
+    "b": "upgrade_non_player_bonus_sacrifice",
+    "purpose": "review",
+    "rarer": "upgrade_non_player_bonus_sacrifice"
+   },
+   {
+    "a": "upgrade_banshee_slugs",
+    "b": "upgrade_crushing_fists",
+    "purpose": "review",
+    "rarer": "upgrade_crushing_fists"
+   }
+  ],
+  "review": [
+   {
+    "name": "Counterspell",
+    "compareWith": "Close Quarters",
+    "claim": "should_be_more_obscure",
+    "reason": "Counterspell is a good answer but is not the single most obvious C item. Close Quarters is a cheap, frequently bought Tier 1 item, so the two are close and Counterspell should not sit alone at 10 pts.",
+    "outcome": "applied-by-data"
+   },
+   {
+    "name": "Cheat Death",
+    "compareWith": "Cursed Relic",
+    "claim": "should_be_more_obvious",
+    "reason": "Cheat Death has a very recognizable name and a famous, memorable effect, and it is a common late-game defensive pick. Players should think of it sooner than Cursed Relic, so it belongs at a lower score.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Colossus",
+    "compareWith": "Crippling Headshot",
+    "claim": "should_be_more_obvious",
+    "reason": "Colossus is a well-known, widely bought Tier 4 vitality item with a distinctive effect. It should rank clearly more obvious than the 100-pt Crippling Headshot and the other niche T4 items.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Cold Front",
+    "compareWith": "Cultist Sacrifice",
+    "claim": "should_be_more_obvious",
+    "reason": "Cold Front is a common Tier 2 spirit active that players see often, and its name is easy to recall. Cultist Sacrifice is a niche jungle-oriented item and should be scored as rarer.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Crippling Headshot",
+    "compareWith": "Crushing Fists",
+    "claim": "should_be_more_obvious",
+    "reason": "Crippling Headshot has a clear name and a recognizable headshot-debuff role, so it is not clearly rarer than Crushing Fists. Crushing Fists is a melee-build niche item that fewer players would name, so it should score as the rarest instead.",
+    "outcome": "applied"
+   }
+  ]
+ }
+}

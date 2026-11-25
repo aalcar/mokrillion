@@ -264,7 +264,9 @@ async function comparePairs(ask: Ask, q: CandidateQuestion, kb: Knowledge, pairs
         if (seen.size !== pairs.length || o.judgments.length !== pairs.length) return `give exactly one judgment per pair (0-${pairs.length - 1})`;
         for (const j of o.judgments) {
           const p = pairs[j.pair];
-          if (!p || ![name(p.a), name(p.b)].includes(j.rarer)) return `pair ${j.pair}: "rarer" must be one of its two names`;
+          if (!p || ![name(p.a), name(p.b)].map(normalizeName).includes(normalizeName(j.rarer))) {
+            return `pair ${j.pair}: "rarer" must be one of its two names (${name(p.a)} or ${name(p.b)})`;
+          }
         }
         return null;
       },

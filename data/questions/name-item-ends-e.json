@@ -1,0 +1,1111 @@
+{
+ "question": {
+  "signature": "name:item:ends:e",
+  "prompt": "Name an item whose name ends with the letter E.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_acolytes_glove",
+   "upgrade_arcane_surge",
+   "upgrade_auto_cleanse",
+   "upgrade_blood_tribute",
+   "upgrade_boxing_glove",
+   "upgrade_burst_fire",
+   "upgrade_chonky",
+   "upgrade_clip_size",
+   "upgrade_cloaking_device_active",
+   "upgrade_discord",
+   "upgrade_escalating_exposure",
+   "upgrade_extra_charge",
+   "upgrade_fury_trance",
+   "upgrade_healbane",
+   "upgrade_health_stimpak",
+   "upgrade_improved_bullet_armor",
+   "upgrade_intensifying_clip",
+   "upgrade_long_range",
+   "upgrade_melee_charge",
+   "upgrade_non_player_bonus_sacrifice",
+   "upgrade_phantom_strike",
+   "upgrade_rapid_recharge",
+   "upgrade_reinforcing_casings",
+   "upgrade_return_fire",
+   "upgrade_targeted_silence",
+   "upgrade_tech_damage_pulse",
+   "upgrade_tech_purge",
+   "upgrade_thermal_detonator",
+   "upgrade_titan_round",
+   "upgrade_unstoppable",
+   "upgrade_warp_stone"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:ends:e"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:23:11.296Z",
+ "answers": [
+  {
+   "entityId": "upgrade_extra_charge",
+   "name": "Extra Charge",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_unstoppable",
+   "name": "Unstoppable",
+   "rank": 2,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_healbane",
+   "name": "Healbane",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_rapid_recharge",
+   "name": "Rapid Recharge",
+   "rank": 4,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_warp_stone",
+   "name": "Warp Stone",
+   "rank": 5,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_clip_size",
+   "name": "Extended Magazine",
+   "rank": 6,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_chonky",
+   "name": "Fortitude",
+   "rank": 7,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_titan_round",
+   "name": "Titanic Magazine",
+   "rank": 8,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_escalating_exposure",
+   "name": "Escalating Exposure",
+   "rank": 9,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_acolytes_glove",
+   "name": "Spirit Strike",
+   "rank": 10,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_phantom_strike",
+   "name": "Phantom Strike",
+   "rank": 11,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_tech_purge",
+   "name": "Spirit Resilience",
+   "rank": 12,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_tech_damage_pulse",
+   "name": "Torment Pulse",
+   "rank": 13,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_boxing_glove",
+   "name": "Lifestrike",
+   "rank": 14,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_auto_cleanse",
+   "name": "Indomitable",
+   "rank": 15,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_melee_charge",
+   "name": "Melee Charge",
+   "rank": 16,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_arcane_surge",
+   "name": "Arcane Surge",
+   "rank": 17,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_health_stimpak",
+   "name": "Healing Rite",
+   "rank": 18,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_non_player_bonus_sacrifice",
+   "name": "Cultist Sacrifice",
+   "rank": 19,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_burst_fire",
+   "name": "Burst Fire",
+   "rank": 20,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_long_range",
+   "name": "Long Range",
+   "rank": 21,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_discord",
+   "name": "Scourge",
+   "rank": 22,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_improved_bullet_armor",
+   "name": "Bullet Resilience",
+   "rank": 23,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_cloaking_device_active",
+   "name": "Shadow Weave",
+   "rank": 24,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_reinforcing_casings",
+   "name": "Escalating Resilience",
+   "rank": 25,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_return_fire",
+   "name": "Return Fire",
+   "rank": 26,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_intensifying_clip",
+   "name": "Intensifying Magazine",
+   "rank": 27,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_targeted_silence",
+   "name": "Silence Wave",
+   "rank": 28,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_thermal_detonator",
+   "name": "Alchemical Fire",
+   "rank": 29,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_blood_tribute",
+   "name": "Blood Tribute",
+   "rank": 30,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_fury_trance",
+   "name": "Fury Trance",
+   "rank": 31,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_acolytes_glove",
+    "name": "Spirit Strike",
+    "passPositions": [
+     29,
+     22,
+     17,
+     24,
+     14
+    ],
+    "borda": 0.7066666666666667,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "melee spirit damage",
+    "popularity": 17.14,
+    "popularityObscurity": 0.16666666666666666,
+    "spellingCost": 12,
+    "spellingObscurity": 0.7,
+    "key": 0.3283333333333333
+   },
+   {
+    "id": "upgrade_arcane_surge",
+    "name": "Arcane Surge",
+    "passPositions": [
+     22,
+     13,
+     20,
+     23,
+     13
+    ],
+    "borda": 0.6066666666666667,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "dash jump ability boost",
+    "popularity": 9.25,
+    "popularityObscurity": 0.5,
+    "spellingCost": 11,
+    "spellingObscurity": 0.55,
+    "key": 0.5291666666666667
+   },
+   {
+    "id": "upgrade_auto_cleanse",
+    "name": "Indomitable",
+    "passPositions": [
+     17,
+     7,
+     9,
+     20,
+     4
+    ],
+    "borda": 0.38,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "cleanse and barrier",
+    "popularity": 8.14,
+    "popularityObscurity": 0.5666666666666667,
+    "spellingCost": 5,
+    "spellingObscurity": 0.03333333333333333,
+    "key": 0.4933333333333333
+   },
+   {
+    "id": "upgrade_blood_tribute",
+    "name": "Blood Tribute",
+    "passPositions": [
+     25,
+     27,
+     26,
+     26,
+     24
+    ],
+    "borda": 0.8533333333333333,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "health sacrifice fire rate toggle",
+    "popularity": 0.98,
+    "popularityObscurity": 0.9333333333333333,
+    "spellingCost": 12,
+    "spellingObscurity": 0.7,
+    "key": 0.9016666666666666
+   },
+   {
+    "id": "upgrade_boxing_glove",
+    "name": "Lifestrike",
+    "passPositions": [
+     18,
+     19,
+     24,
+     25,
+     25
+    ],
+    "borda": 0.74,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "melee lifesteal upgrade",
+    "popularity": 9.99,
+    "popularityObscurity": 0.4,
+    "spellingCost": 10,
+    "spellingObscurity": 0.4,
+    "key": 0.485
+   },
+   {
+    "id": "upgrade_burst_fire",
+    "name": "Burst Fire",
+    "passPositions": [
+     16,
+     15,
+     23,
+     6,
+     7
+    ],
+    "borda": 0.4466666666666666,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "fire rate on hit",
+    "popularity": 10.34,
+    "popularityObscurity": 0.36666666666666664,
+    "spellingCost": 9,
+    "spellingObscurity": 0.2833333333333333,
+    "key": 0.38249999999999995
+   },
+   {
+    "id": "upgrade_chonky",
+    "name": "Fortitude",
+    "passPositions": [
+     3,
+     3,
+     27,
+     5,
+     1
+    ],
+    "borda": 0.26000000000000006,
+    "fit": {
+     "expected": 2,
+     "neutral": 2,
+     "surprising": 1
+    },
+    "perception": "health regen vitality",
+    "popularity": 16.58,
+    "popularityObscurity": 0.2,
+    "spellingCost": 9,
+    "spellingObscurity": 0.2833333333333333,
+    "key": 0.21916666666666668
+   },
+   {
+    "id": "upgrade_clip_size",
+    "name": "Extended Magazine",
+    "passPositions": [
+     0,
+     0,
+     5,
+     1,
+     27
+    ],
+    "borda": 0.22000000000000003,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "cheap ammo item",
+    "popularity": 15.22,
+    "popularityObscurity": 0.26666666666666666,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8,
+    "key": 0.2816666666666667
+   },
+   {
+    "id": "upgrade_cloaking_device_active",
+    "name": "Shadow Weave",
+    "passPositions": [
+     24,
+     24,
+     13,
+     15,
+     19
+    ],
+    "borda": 0.6333333333333333,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "stealth active item",
+    "popularity": 2.8,
+    "popularityObscurity": 0.7333333333333333,
+    "spellingCost": 11,
+    "spellingObscurity": 0.55,
+    "key": 0.6991666666666666
+   },
+   {
+    "id": "upgrade_discord",
+    "name": "Scourge",
+    "passPositions": [
+     4,
+     5,
+     18,
+     3,
+     2
+    ],
+    "borda": 0.21333333333333332,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "max health damage aura",
+    "popularity": 2.57,
+    "popularityObscurity": 0.7666666666666667,
+    "spellingCost": 7,
+    "spellingObscurity": 0.13333333333333333,
+    "key": 0.5966666666666667
+   },
+   {
+    "id": "upgrade_escalating_exposure",
+    "name": "Escalating Exposure",
+    "passPositions": [
+     30,
+     28,
+     25,
+     29,
+     15
+    ],
+    "borda": 0.8466666666666667,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "stacking spirit amp",
+    "popularity": 18.94,
+    "popularityObscurity": 0.13333333333333333,
+    "spellingCost": 10,
+    "spellingObscurity": 0.4,
+    "key": 0.325
+   },
+   {
+    "id": "upgrade_extra_charge",
+    "name": "Extra Charge",
+    "passPositions": [
+     5,
+     1,
+     1,
+     7,
+     8
+    ],
+    "borda": 0.14666666666666667,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "cheap extra ability charge",
+    "popularity": 31.98,
+    "popularityObscurity": 0,
+    "spellingCost": 11,
+    "spellingObscurity": 0.55,
+    "key": 0.06416666666666668
+   },
+   {
+    "id": "upgrade_fury_trance",
+    "name": "Fury Trance",
+    "passPositions": [
+     28,
+     26,
+     29,
+     27,
+     18
+    ],
+    "borda": 0.8533333333333333,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "silencing rage active",
+    "popularity": 0.59,
+    "popularityObscurity": 1,
+    "spellingCost": 4,
+    "spellingObscurity": 0,
+    "key": 0.9133333333333333
+   },
+   {
+    "id": "upgrade_healbane",
+    "name": "Healbane",
+    "passPositions": [
+     19,
+     4,
+     12,
+     22,
+     3
+    ],
+    "borda": 0.4,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "anti-heal item",
+    "popularity": 31,
+    "popularityObscurity": 0.03333333333333333,
+    "spellingCost": 8,
+    "spellingObscurity": 0.2,
+    "key": 0.13333333333333336
+   },
+   {
+    "id": "upgrade_health_stimpak",
+    "name": "Healing Rite",
+    "passPositions": [
+     14,
+     2,
+     3,
+     10,
+     10
+    ],
+    "borda": 0.25999999999999995,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "cheap healing active",
+    "popularity": 4.61,
+    "popularityObscurity": 0.6333333333333333,
+    "spellingCost": 11,
+    "spellingObscurity": 0.55,
+    "key": 0.5358333333333333
+   },
+   {
+    "id": "upgrade_improved_bullet_armor",
+    "name": "Bullet Resilience",
+    "passPositions": [
+     10,
+     9,
+     7,
+     12,
+     22
+    ],
+    "borda": 0.4,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "bullet resist vitality",
+    "popularity": 3.15,
+    "popularityObscurity": 0.7,
+    "spellingCost": 16,
+    "spellingObscurity": 0.9166666666666666,
+    "key": 0.6358333333333333
+   },
+   {
+    "id": "upgrade_intensifying_clip",
+    "name": "Intensifying Magazine",
+    "passPositions": [
+     12,
+     17,
+     22,
+     13,
+     28
+    ],
+    "borda": 0.6133333333333333,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "ramping damage ammo",
+    "popularity": 2.24,
+    "popularityObscurity": 0.8166666666666667,
+    "spellingCost": 20,
+    "spellingObscurity": 0.9833333333333333,
+    "key": 0.7741666666666667
+   },
+   {
+    "id": "upgrade_long_range",
+    "name": "Long Range",
+    "passPositions": [
+     21,
+     23,
+     15,
+     18,
+     16
+    ],
+    "borda": 0.62,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "distance damage item",
+    "popularity": 7.54,
+    "popularityObscurity": 0.6,
+    "spellingCost": 9,
+    "spellingObscurity": 0.2833333333333333,
+    "key": 0.5891666666666666
+   },
+   {
+    "id": "upgrade_melee_charge",
+    "name": "Melee Charge",
+    "passPositions": [
+     20,
+     25,
+     16,
+     19,
+     20
+    ],
+    "borda": 0.6666666666666666,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "melee damage item",
+    "popularity": 9.67,
+    "popularityObscurity": 0.4666666666666667,
+    "spellingCost": 11,
+    "spellingObscurity": 0.55,
+    "key": 0.5208333333333333
+   },
+   {
+    "id": "upgrade_non_player_bonus_sacrifice",
+    "name": "Cultist Sacrifice",
+    "passPositions": [
+     26,
+     30,
+     30,
+     30,
+     30
+    ],
+    "borda": 0.9733333333333334,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "NPC consume souls buff",
+    "popularity": 9.92,
+    "popularityObscurity": 0.43333333333333335,
+    "spellingCost": 7,
+    "spellingObscurity": 0.13333333333333333,
+    "key": 0.5533333333333333
+   },
+   {
+    "id": "upgrade_phantom_strike",
+    "name": "Phantom Strike",
+    "passPositions": [
+     7,
+     12,
+     11,
+     4,
+     12
+    ],
+    "borda": 0.30666666666666664,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "teleport onto enemy",
+    "popularity": 3.37,
+    "popularityObscurity": 0.6666666666666666,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8,
+    "key": 0.5833333333333333
+   },
+   {
+    "id": "upgrade_rapid_recharge",
+    "name": "Rapid Recharge",
+    "passPositions": [
+     13,
+     10,
+     10,
+     16,
+     9
+    ],
+    "borda": 0.38666666666666666,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "charge ability spirit item",
+    "popularity": 24.59,
+    "popularityObscurity": 0.1,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8,
+    "key": 0.20666666666666667
+   },
+   {
+    "id": "upgrade_reinforcing_casings",
+    "name": "Escalating Resilience",
+    "passPositions": [
+     11,
+     11,
+     8,
+     28,
+     29
+    ],
+    "borda": 0.58,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "bullet resist on hit",
+    "popularity": 2.24,
+    "popularityObscurity": 0.8166666666666667,
+    "spellingCost": 20,
+    "spellingObscurity": 0.9833333333333333,
+    "key": 0.7658333333333334
+   },
+   {
+    "id": "upgrade_return_fire",
+    "name": "Return Fire",
+    "passPositions": [
+     15,
+     14,
+     19,
+     17,
+     6
+    ],
+    "borda": 0.47333333333333344,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "auto retaliation active",
+    "popularity": 1.12,
+    "popularityObscurity": 0.9,
+    "spellingCost": 10,
+    "spellingObscurity": 0.4,
+    "key": 0.7683333333333333
+   },
+   {
+    "id": "upgrade_targeted_silence",
+    "name": "Silence Wave",
+    "passPositions": [
+     8,
+     21,
+     2,
+     9,
+     11
+    ],
+    "borda": 0.33999999999999997,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "silence projectile",
+    "popularity": 0.94,
+    "popularityObscurity": 0.9666666666666667,
+    "spellingCost": 11,
+    "spellingObscurity": 0.55,
+    "key": 0.7891666666666666
+   },
+   {
+    "id": "upgrade_tech_damage_pulse",
+    "name": "Torment Pulse",
+    "passPositions": [
+     27,
+     20,
+     28,
+     14,
+     17
+    ],
+    "borda": 0.7066666666666667,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "periodic aura damage",
+    "popularity": 12.88,
+    "popularityObscurity": 0.3,
+    "spellingCost": 12,
+    "spellingObscurity": 0.7,
+    "key": 0.42166666666666663
+   },
+   {
+    "id": "upgrade_tech_purge",
+    "name": "Spirit Resilience",
+    "passPositions": [
+     9,
+     8,
+     6,
+     11,
+     21
+    ],
+    "borda": 0.36666666666666664,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "spirit resist vitality",
+    "popularity": 25.58,
+    "popularityObscurity": 0.06666666666666667,
+    "spellingCost": 16,
+    "spellingObscurity": 0.9166666666666666,
+    "key": 0.18416666666666667
+   },
+   {
+    "id": "upgrade_thermal_detonator",
+    "name": "Alchemical Fire",
+    "passPositions": [
+     23,
+     29,
+     14,
+     21,
+     23
+    ],
+    "borda": 0.7333333333333334,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "flask area damage",
+    "popularity": 1.5,
+    "popularityObscurity": 0.8666666666666667,
+    "spellingCost": 14,
+    "spellingObscurity": 0.8666666666666667,
+    "key": 0.8333333333333334
+   },
+   {
+    "id": "upgrade_titan_round",
+    "name": "Titanic Magazine",
+    "passPositions": [
+     6,
+     16,
+     21,
+     2,
+     26
+    ],
+    "borda": 0.47333333333333333,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "big ammo and damage upgrade",
+    "popularity": 15.59,
+    "popularityObscurity": 0.23333333333333334,
+    "spellingCost": 7,
+    "spellingObscurity": 0.13333333333333333,
+    "key": 0.28833333333333333
+   },
+   {
+    "id": "upgrade_unstoppable",
+    "name": "Unstoppable",
+    "passPositions": [
+     1,
+     6,
+     0,
+     0,
+     0
+    ],
+    "borda": 0.04666666666666667,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "strong cc immunity active",
+    "popularity": 9.05,
+    "popularityObscurity": 0.5333333333333333,
+    "spellingCost": 6,
+    "spellingObscurity": 0.06666666666666667,
+    "key": 0.3883333333333333
+   },
+   {
+    "id": "upgrade_warp_stone",
+    "name": "Warp Stone",
+    "passPositions": [
+     2,
+     18,
+     4,
+     8,
+     5
+    ],
+    "borda": 0.24666666666666667,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "teleport dash escape",
+    "popularity": 10.85,
+    "popularityObscurity": 0.3333333333333333,
+    "spellingCost": 9,
+    "spellingObscurity": 0.2833333333333333,
+    "key": 0.30916666666666665
+   }
+  ],
+  "passAgreement": 0.3875268817204301,
+  "orderBeforeRefinement": [
+   "upgrade_extra_charge",
+   "upgrade_healbane",
+   "upgrade_tech_purge",
+   "upgrade_rapid_recharge",
+   "upgrade_chonky",
+   "upgrade_clip_size",
+   "upgrade_titan_round",
+   "upgrade_warp_stone",
+   "upgrade_escalating_exposure",
+   "upgrade_acolytes_glove",
+   "upgrade_burst_fire",
+   "upgrade_unstoppable",
+   "upgrade_tech_damage_pulse",
+   "upgrade_boxing_glove",
+   "upgrade_auto_cleanse",
+   "upgrade_melee_charge",
+   "upgrade_arcane_surge",
+   "upgrade_health_stimpak",
+   "upgrade_non_player_bonus_sacrifice",
+   "upgrade_phantom_strike",
+   "upgrade_long_range",
+   "upgrade_discord",
+   "upgrade_improved_bullet_armor",
+   "upgrade_cloaking_device_active",
+   "upgrade_reinforcing_casings",
+   "upgrade_return_fire",
+   "upgrade_intensifying_clip",
+   "upgrade_targeted_silence",
+   "upgrade_thermal_detonator",
+   "upgrade_blood_tribute",
+   "upgrade_fury_trance"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_targeted_silence",
+    "b": "upgrade_thermal_detonator",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_thermal_detonator"
+   },
+   {
+    "a": "upgrade_targeted_silence",
+    "b": "upgrade_blood_tribute",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_blood_tribute"
+   },
+   {
+    "a": "upgrade_targeted_silence",
+    "b": "upgrade_fury_trance",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_fury_trance"
+   },
+   {
+    "a": "upgrade_thermal_detonator",
+    "b": "upgrade_blood_tribute",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_blood_tribute"
+   },
+   {
+    "a": "upgrade_thermal_detonator",
+    "b": "upgrade_fury_trance",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_fury_trance"
+   },
+   {
+    "a": "upgrade_blood_tribute",
+    "b": "upgrade_fury_trance",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_healbane",
+    "b": "upgrade_tech_purge",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_healbane"
+   },
+   {
+    "a": "upgrade_titan_round",
+    "b": "upgrade_warp_stone",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_titan_round"
+   },
+   {
+    "a": "upgrade_melee_charge",
+    "b": "upgrade_arcane_surge",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_unstoppable",
+    "b": "upgrade_tech_purge",
+    "purpose": "review",
+    "rarer": "upgrade_tech_purge"
+   },
+   {
+    "a": "upgrade_warp_stone",
+    "b": "upgrade_chonky",
+    "purpose": "review",
+    "rarer": "upgrade_chonky"
+   },
+   {
+    "a": "upgrade_fury_trance",
+    "b": "upgrade_thermal_detonator",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_phantom_strike",
+    "b": "upgrade_burst_fire",
+    "purpose": "review",
+    "rarer": "upgrade_burst_fire"
+   }
+  ],
+  "review": [
+   {
+    "name": "Unstoppable",
+    "compareWith": "Spirit Resilience",
+    "claim": "should_be_more_obvious",
+    "reason": "Unstoppable is a very well-known, frequently bought item and its name ends in E, which is easy to notice. It should be much closer to the top than a 60-point answer, and arguably more obvious than Spirit Resilience.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Warp Stone",
+    "compareWith": "Fortitude",
+    "claim": "should_be_more_obvious",
+    "reason": "Warp Stone is a distinctive, popular active item that players readily recall. It is a short, memorable name ending in E, so it should be at least as obvious as Fortitude and Healbane.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Fury Trance",
+    "compareWith": "Alchemical Fire",
+    "claim": "should_be_more_obvious",
+    "reason": "Fury Trance is a distinctive item with a memorable name, and its ending in E is easy to spot. It is no more obscure than Alchemical Fire, Blood Tribute, or Intensifying Magazine, so a unique 100 is unjustified.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Spirit Resilience",
+    "compareWith": "Extra Charge",
+    "claim": "should_be_more_obscure",
+    "reason": "Spirit Resilience is a reasonable pick, but it is no more salient than other Resilience or Resist items, and the name has a similar competing sibling in Bullet Resilience. Tying it with Extra Charge at 10 seems too obvious.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Phantom Strike",
+    "compareWith": "Burst Fire",
+    "claim": "should_be_more_obvious",
+    "reason": "Phantom Strike is a well-known, popular teleport item that players often buy, so it should be nearer the 60-point group than the 85-point group.",
+    "outcome": "applied"
+   }
+  ]
+ }
+}

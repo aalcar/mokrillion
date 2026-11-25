@@ -1,0 +1,379 @@
+{
+ "question": {
+  "signature": "name:item:ends:l",
+  "prompt": "Name an item whose name ends with the letter L.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_absorbing_armor",
+   "upgrade_counterspell",
+   "upgrade_health_stealing_magic",
+   "upgrade_lifestrike_gauntlets",
+   "upgrade_melee_rebuttal",
+   "upgrade_ultimate_burst",
+   "upgrade_vampire",
+   "upgrade_withering_whip"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:ends:l"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:26:00.929Z",
+ "answers": [
+  {
+   "entityId": "upgrade_lifestrike_gauntlets",
+   "name": "Melee Lifesteal",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_vampire",
+   "name": "Bullet Lifesteal",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_health_stealing_magic",
+   "name": "Spirit Lifesteal",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_counterspell",
+   "name": "Counterspell",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_melee_rebuttal",
+   "name": "Rebuttal",
+   "rank": 5,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_absorbing_armor",
+   "name": "Witchmail",
+   "rank": 6,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_withering_whip",
+   "name": "Rusted Barrel",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_ultimate_burst",
+   "name": "Lightning Scroll",
+   "rank": 8,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_absorbing_armor",
+    "name": "Witchmail",
+    "passPositions": [
+     5,
+     5,
+     5,
+     5,
+     5
+    ],
+    "borda": 0.7142857142857143,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "spirit resist armor with cooldown reduction",
+    "popularity": 5.69,
+    "popularityObscurity": 0.5714285714285714,
+    "spellingCost": 9,
+    "spellingObscurity": 0.14285714285714285,
+    "key": 0.5857142857142856
+   },
+   {
+    "id": "upgrade_counterspell",
+    "name": "Counterspell",
+    "passPositions": [
+     4,
+     4,
+     2,
+     3,
+     4
+    ],
+    "borda": 0.48571428571428565,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "spirit parry that negates abilities",
+    "popularity": 9.93,
+    "popularityObscurity": 0.42857142857142855,
+    "spellingCost": 12,
+    "spellingObscurity": 0.35714285714285715,
+    "key": 0.4392857142857143
+   },
+   {
+    "id": "upgrade_health_stealing_magic",
+    "name": "Spirit Lifesteal",
+    "passPositions": [
+     0,
+     1,
+     1,
+     1,
+     0
+    ],
+    "borda": 0.08571428571428572,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "basic vitality spirit lifesteal for spirit builds",
+    "popularity": 20.88,
+    "popularityObscurity": 0,
+    "spellingCost": 15,
+    "spellingObscurity": 0.8571428571428571,
+    "key": 0.06428571428571428
+   },
+   {
+    "id": "upgrade_lifestrike_gauntlets",
+    "name": "Melee Lifesteal",
+    "passPositions": [
+     2,
+     2,
+     3,
+     2,
+     2
+    ],
+    "borda": 0.3142857142857142,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "cheap melee heal, upgrades to Lifestrike",
+    "popularity": 15.51,
+    "popularityObscurity": 0.14285714285714285,
+    "spellingCost": 14,
+    "spellingObscurity": 0.5714285714285714,
+    "key": 0.20714285714285713
+   },
+   {
+    "id": "upgrade_melee_rebuttal",
+    "name": "Rebuttal",
+    "passPositions": [
+     3,
+     3,
+     4,
+     4,
+     3
+    ],
+    "borda": 0.48571428571428565,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "parry-based heal and damage return",
+    "popularity": 3.81,
+    "popularityObscurity": 0.7142857142857143,
+    "spellingCost": 8,
+    "spellingObscurity": 0,
+    "key": 0.6214285714285714
+   },
+   {
+    "id": "upgrade_ultimate_burst",
+    "name": "Lightning Scroll",
+    "passPositions": [
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "borda": 1,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "ultimate-triggered stun item",
+    "popularity": 2.14,
+    "popularityObscurity": 1,
+    "spellingCost": 15,
+    "spellingObscurity": 0.8571428571428571,
+    "key": 0.9928571428571429
+   },
+   {
+    "id": "upgrade_vampire",
+    "name": "Bullet Lifesteal",
+    "passPositions": [
+     1,
+     0,
+     0,
+     0,
+     1
+    ],
+    "borda": 0.05714285714285714,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "basic vitality lifesteal for gun builds",
+    "popularity": 10.25,
+    "popularityObscurity": 0.2857142857142857,
+    "spellingCost": 15,
+    "spellingObscurity": 0.8571428571428571,
+    "key": 0.2571428571428571
+   },
+   {
+    "id": "upgrade_withering_whip",
+    "name": "Rusted Barrel",
+    "passPositions": [
+     6,
+     6,
+     6,
+     6,
+     6
+    ],
+    "borda": 0.8571428571428571,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "cheap active that reduces enemy fire rate",
+    "popularity": 2.71,
+    "popularityObscurity": 0.8571428571428571,
+    "spellingCost": 12,
+    "spellingObscurity": 0.35714285714285715,
+    "key": 0.8321428571428571
+   }
+  ],
+  "passAgreement": 0.8857142857142859,
+  "orderBeforeRefinement": [
+   "upgrade_health_stealing_magic",
+   "upgrade_lifestrike_gauntlets",
+   "upgrade_vampire",
+   "upgrade_counterspell",
+   "upgrade_absorbing_armor",
+   "upgrade_melee_rebuttal",
+   "upgrade_withering_whip",
+   "upgrade_ultimate_burst"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_absorbing_armor",
+    "b": "upgrade_melee_rebuttal",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_absorbing_armor"
+   },
+   {
+    "a": "upgrade_absorbing_armor",
+    "b": "upgrade_withering_whip",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_withering_whip"
+   },
+   {
+    "a": "upgrade_absorbing_armor",
+    "b": "upgrade_ultimate_burst",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_ultimate_burst"
+   },
+   {
+    "a": "upgrade_melee_rebuttal",
+    "b": "upgrade_withering_whip",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_withering_whip"
+   },
+   {
+    "a": "upgrade_melee_rebuttal",
+    "b": "upgrade_ultimate_burst",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_ultimate_burst"
+   },
+   {
+    "a": "upgrade_withering_whip",
+    "b": "upgrade_ultimate_burst",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_health_stealing_magic",
+    "b": "upgrade_lifestrike_gauntlets",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_health_stealing_magic"
+   },
+   {
+    "a": "upgrade_lifestrike_gauntlets",
+    "b": "upgrade_vampire",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_vampire"
+   },
+   {
+    "a": "upgrade_vampire",
+    "b": "upgrade_health_stealing_magic",
+    "purpose": "review",
+    "rarer": "upgrade_health_stealing_magic"
+   },
+   {
+    "a": "upgrade_counterspell",
+    "b": "upgrade_vampire",
+    "purpose": "review",
+    "rarer": "upgrade_counterspell"
+   },
+   {
+    "a": "upgrade_ultimate_burst",
+    "b": "upgrade_withering_whip",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Bullet Lifesteal",
+    "compareWith": "Spirit Lifesteal",
+    "claim": "should_be_more_obvious",
+    "reason": "Bullet Lifesteal is a Tier 2 Vitality item that is bought and seen about as often as Spirit Lifesteal. It follows the same naming pattern as Melee Lifesteal, so players who think of one Lifesteal will think of all three. The 30 vs 60 gap overstates how much more readily Spirit Lifesteal comes to mind. The two should be close in score.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Counterspell",
+    "compareWith": "Bullet Lifesteal",
+    "claim": "should_be_more_obvious",
+    "reason": "Counterspell is a well-known, distinctively named item, and its parry-versus-spells effect is memorable. Players scanning for items ending in L will recall it quickly, since it is a single word ending in L and not part of the Lifesteal family. It should score at or below Bullet Lifesteal.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Witchmail",
+    "compareWith": "Rusted Barrel",
+    "claim": "should_be_more_obvious",
+    "reason": "Witchmail is a Tier 4 item and a common defensive purchase against spirit damage, with a distinctive name that ends in L. Rusted Barrel is a Tier 1 item that is rarely thought of. Witchmail should score below Rusted Barrel, and the two should not share 85.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Lightning Scroll",
+    "compareWith": "Rusted Barrel",
+    "claim": "should_be_more_obvious",
+    "reason": "Lightning Scroll is a prominent Tier 4 ultimate-enhancing item whose name clearly ends in L. Rusted Barrel is a Tier 1 active that is more often forgotten and is the more obscure answer. They should swap, or at least Lightning Scroll should not be the top 100-point answer.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}

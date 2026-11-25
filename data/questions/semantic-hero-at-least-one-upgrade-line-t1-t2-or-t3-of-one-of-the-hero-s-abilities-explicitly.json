@@ -37,10 +37,10 @@
    ]
   }
  },
- "knowledgeVersion": "2026-11-24-793c0d03",
- "scoringVersion": "3",
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
  "model": "claude-sonnet-5-5",
- "generatedAt": "2026-11-25T02:38:26.023Z",
+ "generatedAt": "2026-11-25T04:33:07.325Z",
  "answers": [
   {
    "entityId": "hero_bookworm",
@@ -55,20 +55,20 @@
    "score": 30
   },
   {
-   "entityId": "hero_chrono",
-   "name": "Paradox",
+   "entityId": "hero_unicorn",
+   "name": "Celeste",
    "rank": 3,
    "score": 30
   },
   {
-   "entityId": "hero_warden",
-   "name": "Warden",
+   "entityId": "hero_chessmaster",
+   "name": "Solomon",
    "rank": 4,
    "score": 60
   },
   {
-   "entityId": "hero_unicorn",
-   "name": "Celeste",
+   "entityId": "hero_chrono",
+   "name": "Paradox",
    "rank": 5,
    "score": 60
   },
@@ -91,20 +91,20 @@
    "score": 85
   },
   {
-   "entityId": "hero_ratking",
-   "name": "Rat King",
+   "entityId": "hero_warden",
+   "name": "Warden",
    "rank": 9,
-   "score": 85
-  },
-  {
-   "entityId": "hero_chessmaster",
-   "name": "Solomon",
-   "rank": 10,
    "score": 85
   },
   {
    "entityId": "hero_doorman",
    "name": "The Doorman",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "hero_ratking",
+   "name": "Rat King",
    "rank": 11,
    "score": 85
   },
@@ -116,6 +116,12 @@
   }
  ],
  "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
   "signals": [
    {
     "id": "hero_bookworm",
@@ -134,11 +140,11 @@
      "surprising": 0
     },
     "perception": "Book-themed healer with Plot Armor, a barrier ability",
-    "popularity": 29.99,
-    "popularityObscurity": 0.2727272727272727,
+    "popularity": 32.79,
+    "popularityObscurity": 0.18181818181818182,
     "spellingCost": 5,
     "spellingObscurity": 0.22727272727272727,
-    "key": 0.15909090909090906
+    "key": 0.11136363636363637
    },
    {
     "id": "hero_chessmaster",
@@ -157,11 +163,11 @@
      "surprising": 0
     },
     "perception": "Chess-themed mystic with Rook Battery, Develop Queen; Setup Bishop barrier",
-    "popularity": 10.36,
+    "popularity": 9.61,
     "popularityObscurity": 0.9090909090909091,
     "spellingCost": 7,
     "spellingObscurity": 0.8181818181818182,
-    "key": 0.6927272727272726
+    "key": 0.6281818181818182
    },
    {
     "id": "hero_chrono",
@@ -180,11 +186,11 @@
      "surprising": 2
     },
     "perception": "Time-and-space marksman known for Swap and Time Wall, not a barrier",
-    "popularity": 41.74,
+    "popularity": 39.64,
     "popularityObscurity": 0.09090909090909091,
     "spellingCost": 7,
     "spellingObscurity": 0.8181818181818182,
-    "key": 0.3818181818181818
+    "key": 0.4181818181818181
    },
    {
     "id": "hero_doorman",
@@ -203,11 +209,11 @@
      "surprising": 5
     },
     "perception": "Door-based mystic whose doorway grants a barrier",
-    "popularity": 12.32,
-    "popularityObscurity": 0.8181818181818182,
+    "popularity": 13.82,
+    "popularityObscurity": 0.7272727272727273,
     "spellingCost": 7,
     "spellingObscurity": 0.8181818181818182,
-    "key": 0.8945454545454545
+    "key": 0.9063636363636365
    },
    {
     "id": "hero_familiar",
@@ -226,11 +232,11 @@
      "surprising": 1
     },
     "perception": "Sleepy healer with Naptime and a barrier effectiveness bonus",
-    "popularity": 15.91,
-    "popularityObscurity": 0.6363636363636364,
+    "popularity": 18.16,
+    "popularityObscurity": 0.5454545454545454,
     "spellingCost": 3,
     "spellingObscurity": 0.045454545454545456,
-    "key": 0.5336363636363636
+    "key": 0.535
    },
    {
     "id": "hero_mirage",
@@ -249,11 +255,11 @@
      "surprising": 5
     },
     "perception": "Assassin known for Traveler and scarabs, not barriers",
-    "popularity": 9.3,
+    "popularity": 9.38,
     "popularityObscurity": 1,
     "spellingCost": 6,
     "spellingObscurity": 0.45454545454545453,
-    "key": 0.8472727272727272
+    "key": 0.8418181818181818
    },
    {
     "id": "hero_ratking",
@@ -272,11 +278,11 @@
      "surprising": 3
     },
     "perception": "Brawler with Royal Pestments, which grants a barrier",
-    "popularity": 23.03,
+    "popularity": 24.46,
     "popularityObscurity": 0.36363636363636365,
     "spellingCost": 7,
     "spellingObscurity": 0.8181818181818182,
-    "key": 0.6163636363636364
+    "key": 0.6627272727272728
    },
    {
     "id": "hero_tengu",
@@ -295,11 +301,11 @@
      "surprising": 0
     },
     "perception": "Healer known for Kudzu Connection and Stone Form; Air Drop gives a barrier",
-    "popularity": 32.84,
-    "popularityObscurity": 0.18181818181818182,
+    "popularity": 30.19,
+    "popularityObscurity": 0.2727272727272727,
     "spellingCost": 3,
     "spellingObscurity": 0.045454545454545456,
-    "key": 0.13545454545454544
+    "key": 0.145
    },
    {
     "id": "hero_unicorn",
@@ -318,11 +324,11 @@
      "surprising": 0
     },
     "perception": "Mystic with Shining Wonder and a barrier on Radiant Daggers",
-    "popularity": 19.92,
+    "popularity": 18.71,
     "popularityObscurity": 0.45454545454545453,
     "spellingCost": 7,
     "spellingObscurity": 0.8181818181818182,
-    "key": 0.3927272727272727
+    "key": 0.3418181818181818
    },
    {
     "id": "hero_viper",
@@ -341,11 +347,11 @@
      "surprising": 1
     },
     "perception": "Slippery assassin; Slither slide barrier",
-    "popularity": 13.39,
-    "popularityObscurity": 0.7272727272727273,
+    "popularity": 11.96,
+    "popularityObscurity": 0.8181818181818182,
     "spellingCost": 5,
     "spellingObscurity": 0.22727272727272727,
-    "key": 0.5572727272727273
+    "key": 0.5559090909090909
    },
    {
     "id": "hero_warden",
@@ -364,11 +370,11 @@
      "surprising": 2
     },
     "perception": "Brawler with Last Stand and Willpower, which gives a barrier",
-    "popularity": 18.05,
-    "popularityObscurity": 0.5454545454545454,
+    "popularity": 17.25,
+    "popularityObscurity": 0.6363636363636364,
     "spellingCost": 6,
     "spellingObscurity": 0.45454545454545453,
-    "key": 0.6018181818181818
+    "key": 0.6418181818181818
    },
    {
     "id": "hero_wraith",
@@ -387,58 +393,58 @@
      "surprising": 1
     },
     "perception": "Marksman known for Card Trick and Telekinesis, with the Project Mind barrier",
-    "popularity": 46.55,
+    "popularity": 45.37,
     "popularityObscurity": 0,
     "spellingCost": 6,
     "spellingObscurity": 0.45454545454545453,
-    "key": 0.18727272727272726
+    "key": 0.21181818181818182
    }
   ],
   "passAgreement": 0.48484848484848486,
   "orderBeforeRefinement": [
-   "hero_tengu",
    "hero_bookworm",
+   "hero_tengu",
    "hero_wraith",
-   "hero_chrono",
    "hero_unicorn",
+   "hero_chrono",
    "hero_familiar",
    "hero_viper",
+   "hero_chessmaster",
    "hero_warden",
    "hero_ratking",
-   "hero_chessmaster",
    "hero_mirage",
    "hero_doorman"
   ],
   "pairwise": [
    {
-    "a": "hero_ratking",
-    "b": "hero_chessmaster",
+    "a": "hero_warden",
+    "b": "hero_ratking",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "hero_ratking"
    },
    {
-    "a": "hero_ratking",
-    "b": "hero_mirage",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_ratking",
-    "b": "hero_doorman",
-    "purpose": "rare-contenders",
-    "rarer": null
-   },
-   {
-    "a": "hero_chessmaster",
+    "a": "hero_warden",
     "b": "hero_mirage",
     "purpose": "rare-contenders",
     "rarer": "hero_mirage"
    },
    {
-    "a": "hero_chessmaster",
+    "a": "hero_warden",
     "b": "hero_doorman",
     "purpose": "rare-contenders",
-    "rarer": null
+    "rarer": "hero_doorman"
+   },
+   {
+    "a": "hero_ratking",
+    "b": "hero_mirage",
+    "purpose": "rare-contenders",
+    "rarer": "hero_mirage"
+   },
+   {
+    "a": "hero_ratking",
+    "b": "hero_doorman",
+    "purpose": "rare-contenders",
+    "rarer": "hero_ratking"
    },
    {
     "a": "hero_mirage",
@@ -447,56 +453,62 @@
     "rarer": "hero_mirage"
    },
    {
-    "a": "hero_tengu",
-    "b": "hero_bookworm",
+    "a": "hero_bookworm",
+    "b": "hero_tengu",
     "purpose": "tier-boundary",
     "rarer": "hero_tengu"
    },
    {
     "a": "hero_wraith",
-    "b": "hero_chrono",
+    "b": "hero_unicorn",
     "purpose": "tier-boundary",
     "rarer": "hero_wraith"
    },
    {
     "a": "hero_viper",
-    "b": "hero_warden",
+    "b": "hero_chessmaster",
     "purpose": "tier-boundary",
     "rarer": "hero_viper"
    },
    {
-    "a": "hero_mirage",
-    "b": "hero_doorman",
+    "a": "hero_warden",
+    "b": "hero_familiar",
     "purpose": "review",
-    "rarer": "hero_mirage"
+    "rarer": null
+   },
+   {
+    "a": "hero_familiar",
+    "b": "hero_warden",
+    "purpose": "review",
+    "rarer": null
    },
    {
     "a": "hero_wraith",
-    "b": "hero_warden",
+    "b": "hero_chessmaster",
     "purpose": "review",
     "rarer": "hero_wraith"
    }
   ],
   "review": [
    {
-    "name": "Mirage",
-    "compareWith": "The Doorman",
+    "name": "Warden",
+    "compareWith": "Rem",
     "claim": "should_be_more_obvious",
-    "reason": "Mirage is a widely played hero, so players who browse her ability upgrades will readily find a Barrier-related one. The Doorman is a less frequently picked hero, so his barrier upgrade is less likely to come to mind. Mirage should not be the single rarest answer, and the two should swap.",
+    "reason": "Warden's Last Stand and his Binding Word/Willpower kit are well known, and Warden is widely played. Warden is a common pick for barrier-related answers, so he should be at least as obvious as Rem, who is a low-association healer.",
     "outcome": "rejected-by-comparison"
    },
    {
-    "name": "Paradox",
-    "compareWith": "Ivy",
+    "name": "Rem",
+    "compareWith": "Warden",
     "claim": "should_be_more_obscure",
-    "reason": "Paradox is mostly known for time manipulation and Paradoxical Swap, not barriers. Ivy's Stone Form and Kudzu Bomb are better-known for defense and shielding, so Ivy deserves to be more obvious than Paradox.",
-    "outcome": "ignored-invalid"
+    "reason": "Rem is a niche healer whose kit (Pillow Toss, Tag Along, Lil Helpers, Naptime) does not strongly evoke barriers. He should be rarer than Warden, so 60 is too low.",
+    "outcome": "rejected-by-comparison"
    },
    {
     "name": "Wraith",
-    "compareWith": "Warden",
+    "compareWith": "Solomon",
     "claim": "should_be_more_obscure",
-    "reason": "Wraith is a very popular hero but is known for Card Trick, Telekinesis, and Project Mind, not barriers. Players rarely connect her with barrier upgrades, so she is not meaningfully more obvious than Warden, whose Binding Word and Last Stand are more tied to defensive effects.",
+    "reason": "Wraith is known for Full Auto and isolated-target damage, not barriers. Solomon is more strongly tied to protective effects, so Wraith should score as rarer.",
     "outcome": "applied"
    }
   ]

@@ -1,0 +1,572 @@
+{
+ "question": {
+  "signature": "name:item:starts:m",
+  "prompt": "Name an item whose name starts with the letter M.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_crackshot",
+   "upgrade_ethereal_bullets",
+   "upgrade_lifestrike_gauntlets",
+   "upgrade_magic_burst",
+   "upgrade_magic_carpet",
+   "upgrade_magic_reach",
+   "upgrade_magic_slow",
+   "upgrade_magic_vulnerability",
+   "upgrade_melee_charge",
+   "upgrade_metal_skin",
+   "upgrade_mystic_regeneration",
+   "upgrade_mystic_reverb",
+   "upgrade_non_player_bonus",
+   "upgrade_rocket_booster"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:starts:m"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:26:23.192Z",
+ "answers": [
+  {
+   "entityId": "upgrade_magic_vulnerability",
+   "name": "Mystic Vulnerability",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_magic_reach",
+   "name": "Mystic Expansion",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_non_player_bonus",
+   "name": "Monster Rounds",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_metal_skin",
+   "name": "Metal Skin",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_lifestrike_gauntlets",
+   "name": "Melee Lifesteal",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_mystic_reverb",
+   "name": "Mystic Reverb",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_magic_burst",
+   "name": "Mystic Burst",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_crackshot",
+   "name": "Mystic Shot",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_melee_charge",
+   "name": "Melee Charge",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_mystic_regeneration",
+   "name": "Mystic Regeneration",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_magic_carpet",
+   "name": "Magic Carpet",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_rocket_booster",
+   "name": "Majestic Leap",
+   "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_ethereal_bullets",
+   "name": "Mercurial Magnum",
+   "rank": 13,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_magic_slow",
+   "name": "Mystic Slow",
+   "rank": 14,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_crackshot",
+    "name": "Mystic Shot",
+    "passPositions": [
+     8,
+     11,
+     13,
+     8,
+     10
+    ],
+    "borda": 0.7692307692307693,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Spirit bonus bullet weapon item",
+    "popularity": 9.79,
+    "popularityObscurity": 0.46153846153846156,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5,
+    "key": 0.5403846153846155
+   },
+   {
+    "id": "upgrade_ethereal_bullets",
+    "name": "Mercurial Magnum",
+    "passPositions": [
+     13,
+     12,
+     12,
+     12,
+     13
+    ],
+    "borda": 0.9538461538461538,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Rarely bought T4 spirit gun item",
+    "popularity": 7.24,
+    "popularityObscurity": 0.6923076923076923,
+    "spellingCost": 6,
+    "spellingObscurity": 0.07692307692307693,
+    "key": 0.7269230769230768
+   },
+   {
+    "id": "upgrade_lifestrike_gauntlets",
+    "name": "Melee Lifesteal",
+    "passPositions": [
+     6,
+     9,
+     10,
+     10,
+     7
+    ],
+    "borda": 0.6461538461538461,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Early melee healing item",
+    "popularity": 15.51,
+    "popularityObscurity": 0.3076923076923077,
+    "spellingCost": 14,
+    "spellingObscurity": 0.9230769230769231,
+    "key": 0.4230769230769231
+   },
+   {
+    "id": "upgrade_magic_burst",
+    "name": "Mystic Burst",
+    "passPositions": [
+     5,
+     2,
+     8,
+     6,
+     5
+    ],
+    "borda": 0.4,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Cheap early spirit damage item",
+    "popularity": 35.72,
+    "popularityObscurity": 0,
+    "spellingCost": 11,
+    "spellingObscurity": 0.6923076923076923,
+    "key": 0.13461538461538464
+   },
+   {
+    "id": "upgrade_magic_carpet",
+    "name": "Magic Carpet",
+    "passPositions": [
+     1,
+     1,
+     2,
+     2,
+     3
+    ],
+    "borda": 0.13846153846153847,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Memorable flying carpet active",
+    "popularity": 0.8,
+    "popularityObscurity": 1,
+    "spellingCost": 6,
+    "spellingObscurity": 0.07692307692307693,
+    "key": 0.7384615384615384
+   },
+   {
+    "id": "upgrade_magic_reach",
+    "name": "Mystic Expansion",
+    "passPositions": [
+     11,
+     5,
+     4,
+     5,
+     6
+    ],
+    "borda": 0.4769230769230769,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "Spirit range/radius imbue item",
+    "popularity": 33.35,
+    "popularityObscurity": 0.07692307692307693,
+    "spellingCost": 9,
+    "spellingObscurity": 0.34615384615384615,
+    "key": 0.19038461538461537
+   },
+   {
+    "id": "upgrade_magic_slow",
+    "name": "Mystic Slow",
+    "passPositions": [
+     9,
+     7,
+     9,
+     9,
+     11
+    ],
+    "borda": 0.6923076923076923,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Spirit slow item",
+    "popularity": 3.47,
+    "popularityObscurity": 0.8461538461538461,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5,
+    "key": 0.7903846153846154
+   },
+   {
+    "id": "upgrade_magic_vulnerability",
+    "name": "Mystic Vulnerability",
+    "passPositions": [
+     4,
+     8,
+     3,
+     4,
+     2
+    ],
+    "borda": 0.3230769230769231,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "Spirit resist shred item, commonly bought",
+    "popularity": 23.24,
+    "popularityObscurity": 0.15384615384615385,
+    "spellingCost": 19,
+    "spellingObscurity": 1,
+    "key": 0.23846153846153847
+   },
+   {
+    "id": "upgrade_melee_charge",
+    "name": "Melee Charge",
+    "passPositions": [
+     12,
+     13,
+     6,
+     13,
+     12
+    ],
+    "borda": 0.8615384615384615,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Niche heavy melee weapon item",
+    "popularity": 9.67,
+    "popularityObscurity": 0.5384615384615384,
+    "spellingCost": 11,
+    "spellingObscurity": 0.6923076923076923,
+    "key": 0.6269230769230769
+   },
+   {
+    "id": "upgrade_metal_skin",
+    "name": "Metal Skin",
+    "passPositions": [
+     0,
+     0,
+     1,
+     0,
+     1
+    ],
+    "borda": 0.03076923076923077,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Bullet immunity active, well known",
+    "popularity": 3.6,
+    "popularityObscurity": 0.7692307692307693,
+    "spellingCost": 9,
+    "spellingObscurity": 0.34615384615384615,
+    "key": 0.5634615384615385
+   },
+   {
+    "id": "upgrade_mystic_regeneration",
+    "name": "Mystic Regeneration",
+    "passPositions": [
+     10,
+     10,
+     5,
+     11,
+     9
+    ],
+    "borda": 0.6923076923076923,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Early spirit regen item",
+    "popularity": 8.86,
+    "popularityObscurity": 0.6153846153846154,
+    "spellingCost": 11,
+    "spellingObscurity": 0.6923076923076923,
+    "key": 0.6384615384615384
+   },
+   {
+    "id": "upgrade_mystic_reverb",
+    "name": "Mystic Reverb",
+    "passPositions": [
+     7,
+     6,
+     11,
+     7,
+     8
+    ],
+    "borda": 0.6,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Expensive T4 spirit lifesteal imbue",
+    "popularity": 10.09,
+    "popularityObscurity": 0.38461538461538464,
+    "spellingCost": 6,
+    "spellingObscurity": 0.07692307692307693,
+    "key": 0.4230769230769231
+   },
+   {
+    "id": "upgrade_non_player_bonus",
+    "name": "Monster Rounds",
+    "passPositions": [
+     3,
+     3,
+     7,
+     3,
+     4
+    ],
+    "borda": 0.3076923076923077,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Jungle damage early item",
+    "popularity": 20.5,
+    "popularityObscurity": 0.23076923076923078,
+    "spellingCost": 7,
+    "spellingObscurity": 0.23076923076923078,
+    "key": 0.25
+   },
+   {
+    "id": "upgrade_rocket_booster",
+    "name": "Majestic Leap",
+    "passPositions": [
+     2,
+     4,
+     0,
+     1,
+     0
+    ],
+    "borda": 0.10769230769230771,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Popular vitality leap active for mobility",
+    "popularity": 2.71,
+    "popularityObscurity": 0.9230769230769231,
+    "spellingCost": 12,
+    "spellingObscurity": 0.8461538461538461,
+    "key": 0.7153846153846154
+   }
+  ],
+  "passAgreement": 0.6307692307692307,
+  "orderBeforeRefinement": [
+   "upgrade_magic_burst",
+   "upgrade_magic_reach",
+   "upgrade_magic_vulnerability",
+   "upgrade_non_player_bonus",
+   "upgrade_lifestrike_gauntlets",
+   "upgrade_mystic_reverb",
+   "upgrade_crackshot",
+   "upgrade_metal_skin",
+   "upgrade_melee_charge",
+   "upgrade_mystic_regeneration",
+   "upgrade_rocket_booster",
+   "upgrade_ethereal_bullets",
+   "upgrade_magic_carpet",
+   "upgrade_magic_slow"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_rocket_booster",
+    "b": "upgrade_ethereal_bullets",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_ethereal_bullets"
+   },
+   {
+    "a": "upgrade_rocket_booster",
+    "b": "upgrade_magic_carpet",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_rocket_booster"
+   },
+   {
+    "a": "upgrade_rocket_booster",
+    "b": "upgrade_magic_slow",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_magic_slow"
+   },
+   {
+    "a": "upgrade_ethereal_bullets",
+    "b": "upgrade_magic_carpet",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_ethereal_bullets"
+   },
+   {
+    "a": "upgrade_ethereal_bullets",
+    "b": "upgrade_magic_slow",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_ethereal_bullets"
+   },
+   {
+    "a": "upgrade_magic_carpet",
+    "b": "upgrade_magic_slow",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_magic_slow"
+   },
+   {
+    "a": "upgrade_magic_burst",
+    "b": "upgrade_magic_reach",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_magic_vulnerability",
+    "b": "upgrade_non_player_bonus",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_magic_vulnerability"
+   },
+   {
+    "a": "upgrade_crackshot",
+    "b": "upgrade_metal_skin",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_crackshot"
+   },
+   {
+    "a": "upgrade_magic_burst",
+    "b": "upgrade_metal_skin",
+    "purpose": "review",
+    "rarer": "upgrade_magic_burst"
+   },
+   {
+    "a": "upgrade_metal_skin",
+    "b": "upgrade_magic_vulnerability",
+    "purpose": "review",
+    "rarer": "upgrade_magic_vulnerability"
+   }
+  ],
+  "review": [
+   {
+    "name": "Mystic Burst",
+    "compareWith": "Metal Skin",
+    "claim": "should_be_more_obscure",
+    "reason": "Mystic Burst is a Tier 1 item but not especially iconic. Metal Skin is a famous, memorable defensive active that experienced players think of immediately for M. Metal Skin should be at least as obvious as Mystic Burst.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Metal Skin",
+    "compareWith": "Mystic Vulnerability",
+    "claim": "should_be_more_obvious",
+    "reason": "Metal Skin is a distinctive, widely bought, strongly recognized active with a vivid name. Mystic Vulnerability is a more forgettable stat-stick utility item, so they should not share the same 60 points.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Magic Carpet",
+    "compareWith": "Mystic Slow",
+    "claim": "should_be_more_obvious",
+    "reason": "Magic Carpet has a unique, memorable name and mechanic and is a recognizable item. It should be clearly more obvious than the generic Mystic Slow, rather than tied at 85.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Mercurial Magnum",
+    "compareWith": "Mystic Slow",
+    "claim": "should_be_more_obvious",
+    "reason": "Mercurial Magnum is rare, but its name is distinctive and fairly memorable. Mystic Slow is a generic, forgettable 'Mystic X' item that is likely harder to recall, so Slow should be the 100-pointer.",
+    "outcome": "applied-by-data"
+   },
+   {
+    "name": "Mystic Expansion",
+    "compareWith": "Monster Rounds",
+    "claim": "should_be_more_obvious",
+    "reason": "Mystic Expansion is a staple Tier 1 spirit item that nearly every player buys. It should be as obvious as or more obvious than Monster Rounds, a niche jungle-focused item.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}

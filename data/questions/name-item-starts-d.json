@@ -1,0 +1,322 @@
+{
+ "question": {
+  "signature": "name:item:starts:d",
+  "prompt": "Name an item whose name starts with the letter D.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_arcane_extension",
+   "upgrade_debuff_reducer",
+   "upgrade_divine_barrier",
+   "upgrade_diviners_kevlar",
+   "upgrade_greater_withering_whip",
+   "upgrade_reduce_debuff_duration",
+   "upgrade_rupture"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:starts:d"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:22:06.883Z",
+ "answers": [
+  {
+   "entityId": "upgrade_reduce_debuff_duration",
+   "name": "Dispel Magic",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_arcane_extension",
+   "name": "Duration Extender",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_rupture",
+   "name": "Decay",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_divine_barrier",
+   "name": "Divine Barrier",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_debuff_reducer",
+   "name": "Debuff Reducer",
+   "rank": 5,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_greater_withering_whip",
+   "name": "Disarming Hex",
+   "rank": 6,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_diviners_kevlar",
+   "name": "Diviner's Kevlar",
+   "rank": 7,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_arcane_extension",
+    "name": "Duration Extender",
+    "passPositions": [
+     4,
+     4,
+     5,
+     1,
+     5
+    ],
+    "borda": 0.6333333333333333,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Ability duration imbue item",
+    "popularity": 17.97,
+    "popularityObscurity": 0.16666666666666666,
+    "spellingCost": 16,
+    "spellingObscurity": 1,
+    "key": 0.32499999999999996
+   },
+   {
+    "id": "upgrade_debuff_reducer",
+    "name": "Debuff Reducer",
+    "passPositions": [
+     3,
+     5,
+     2,
+     2,
+     4
+    ],
+    "borda": 0.5333333333333333,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Cheap-ish anti-CC vitality item",
+    "popularity": 12.63,
+    "popularityObscurity": 0.3333333333333333,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8333333333333334,
+    "key": 0.4083333333333333
+   },
+   {
+    "id": "upgrade_divine_barrier",
+    "name": "Divine Barrier",
+    "passPositions": [
+     2,
+     2,
+     3,
+     5,
+     1
+    ],
+    "borda": 0.4333333333333333,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Team-save barrier and cleanse active",
+    "popularity": 3.26,
+    "popularityObscurity": 0.5,
+    "spellingCost": 6,
+    "spellingObscurity": 0.3333333333333333,
+    "key": 0.475
+   },
+   {
+    "id": "upgrade_diviners_kevlar",
+    "name": "Diviner's Kevlar",
+    "passPositions": [
+     6,
+     6,
+     6,
+     6,
+     6
+    ],
+    "borda": 1,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Ultimate-focused vitality item with barrier",
+    "popularity": 2.67,
+    "popularityObscurity": 0.6666666666666666,
+    "spellingCost": 6,
+    "spellingObscurity": 0.3333333333333333,
+    "key": 0.7333333333333333
+   },
+   {
+    "id": "upgrade_greater_withering_whip",
+    "name": "Disarming Hex",
+    "passPositions": [
+     5,
+     3,
+     4,
+     4,
+     3
+    ],
+    "borda": 0.6333333333333333,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Disarm active that stops weapon use",
+    "popularity": 2.59,
+    "popularityObscurity": 0.8333333333333334,
+    "spellingCost": 12,
+    "spellingObscurity": 0.6666666666666666,
+    "key": 0.775
+   },
+   {
+    "id": "upgrade_reduce_debuff_duration",
+    "name": "Dispel Magic",
+    "passPositions": [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    "borda": 0.03333333333333333,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Debuff purge active, anti-CC staple",
+    "popularity": 21.73,
+    "popularityObscurity": 0,
+    "spellingCost": 6,
+    "spellingObscurity": 0.3333333333333333,
+    "key": 0.025
+   },
+   {
+    "id": "upgrade_rupture",
+    "name": "Decay",
+    "passPositions": [
+     1,
+     1,
+     0,
+     3,
+     2
+    ],
+    "borda": 0.2333333333333333,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Spirit active with percent health DoT",
+    "popularity": 2.25,
+    "popularityObscurity": 1,
+    "spellingCost": 5,
+    "spellingObscurity": 0,
+    "key": 0.7583333333333333
+   }
+  ],
+  "passAgreement": 0.5428571428571429,
+  "orderBeforeRefinement": [
+   "upgrade_reduce_debuff_duration",
+   "upgrade_arcane_extension",
+   "upgrade_debuff_reducer",
+   "upgrade_divine_barrier",
+   "upgrade_diviners_kevlar",
+   "upgrade_rupture",
+   "upgrade_greater_withering_whip"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_divine_barrier",
+    "b": "upgrade_diviners_kevlar",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_diviners_kevlar"
+   },
+   {
+    "a": "upgrade_divine_barrier",
+    "b": "upgrade_rupture",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_rupture"
+   },
+   {
+    "a": "upgrade_divine_barrier",
+    "b": "upgrade_greater_withering_whip",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_greater_withering_whip"
+   },
+   {
+    "a": "upgrade_diviners_kevlar",
+    "b": "upgrade_rupture",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_diviners_kevlar"
+   },
+   {
+    "a": "upgrade_diviners_kevlar",
+    "b": "upgrade_greater_withering_whip",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_diviners_kevlar"
+   },
+   {
+    "a": "upgrade_rupture",
+    "b": "upgrade_greater_withering_whip",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_greater_withering_whip"
+   },
+   {
+    "a": "upgrade_reduce_debuff_duration",
+    "b": "upgrade_arcane_extension",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_arcane_extension"
+   },
+   {
+    "a": "upgrade_arcane_extension",
+    "b": "upgrade_debuff_reducer",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_rupture",
+    "b": "upgrade_debuff_reducer",
+    "purpose": "review",
+    "rarer": "upgrade_debuff_reducer"
+   }
+  ],
+  "review": [
+   {
+    "name": "Decay",
+    "compareWith": "Debuff Reducer",
+    "claim": "should_be_more_obvious",
+    "reason": "Decay is a distinctive active item with a short, memorable name that players associate with its health-based damage over time. It is more likely to come to mind than a generic stat item like Debuff Reducer, so it should not sit 25 points more obscure.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Duration Extender",
+    "compareWith": "Dispel Magic",
+    "claim": "should_be_more_obscure",
+    "reason": "Duration Extender is a Tier 2 imbue that players rarely think of as an item. It is a plausible second answer, but 30 points puts it too close to the top answer for how often it comes to mind.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}

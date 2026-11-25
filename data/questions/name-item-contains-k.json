@@ -1,0 +1,708 @@
+{
+ "question": {
+  "signature": "name:item:contains:k",
+  "prompt": "Name an item whose name contains the letter K.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_acolytes_glove",
+   "upgrade_berserker",
+   "upgrade_blitz_bullets",
+   "upgrade_boxing_glove",
+   "upgrade_close_quarter_combat",
+   "upgrade_critshot",
+   "upgrade_diviners_kevlar",
+   "upgrade_headshot_booster2",
+   "upgrade_kinetic_sash",
+   "upgrade_magic_shock",
+   "upgrade_metal_skin",
+   "upgrade_phantom_strike",
+   "upgrade_quick_silver",
+   "upgrade_restorative_locket",
+   "upgrade_spellbreaker",
+   "upgrade_target_stun",
+   "upgrade_veil_walker",
+   "upgrade_weapon_backstabber"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:contains:k"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:25:29.134Z",
+ "answers": [
+  {
+   "entityId": "upgrade_target_stun",
+   "name": "Knockdown",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_blitz_bullets",
+   "name": "Swift Striker",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_weapon_backstabber",
+   "name": "Stalker",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_quick_silver",
+   "name": "Quicksilver Reload",
+   "rank": 4,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_berserker",
+   "name": "Berserker",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_acolytes_glove",
+   "name": "Spirit Strike",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_magic_shock",
+   "name": "Tankbuster",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_boxing_glove",
+   "name": "Lifestrike",
+   "rank": 8,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_close_quarter_combat",
+   "name": "Point Blank",
+   "rank": 9,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_kinetic_sash",
+   "name": "Kinetic Dash",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_spellbreaker",
+   "name": "Spellbreaker",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_critshot",
+   "name": "Lucky Shot",
+   "rank": 12,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_metal_skin",
+   "name": "Metal Skin",
+   "rank": 13,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_headshot_booster2",
+   "name": "Weakening Headshot",
+   "rank": 14,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_diviners_kevlar",
+   "name": "Diviner's Kevlar",
+   "rank": 15,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_phantom_strike",
+   "name": "Phantom Strike",
+   "rank": 16,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_veil_walker",
+   "name": "Veil Walker",
+   "rank": 17,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_restorative_locket",
+   "name": "Restorative Locket",
+   "rank": 18,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_acolytes_glove",
+    "name": "Spirit Strike",
+    "passPositions": [
+     17,
+     14,
+     12,
+     13,
+     9
+    ],
+    "borda": 0.7647058823529411,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "melee spirit shred",
+    "popularity": 17.14,
+    "popularityObscurity": 0.17647058823529413,
+    "spellingCost": 12,
+    "spellingObscurity": 0.8235294117647058,
+    "key": 0.3558823529411764
+   },
+   {
+    "id": "upgrade_berserker",
+    "name": "Berserker",
+    "passPositions": [
+     13,
+     1,
+     4,
+     9,
+     0
+    ],
+    "borda": 0.31764705882352945,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "damage scaling from damage taken",
+    "popularity": 7.63,
+    "popularityObscurity": 0.35294117647058826,
+    "spellingCost": 9,
+    "spellingObscurity": 0.3235294117647059,
+    "key": 0.3426470588235294
+   },
+   {
+    "id": "upgrade_blitz_bullets",
+    "name": "Swift Striker",
+    "passPositions": [
+     7,
+     9,
+     10,
+     6,
+     7
+    ],
+    "borda": 0.4588235294117647,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "fire rate item",
+    "popularity": 25.07,
+    "popularityObscurity": 0.058823529411764705,
+    "spellingCost": 12,
+    "spellingObscurity": 0.8235294117647058,
+    "key": 0.19705882352941176
+   },
+   {
+    "id": "upgrade_boxing_glove",
+    "name": "Lifestrike",
+    "passPositions": [
+     11,
+     16,
+     13,
+     12,
+     13
+    ],
+    "borda": 0.7647058823529412,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "melee lifesteal",
+    "popularity": 9.99,
+    "popularityObscurity": 0.29411764705882354,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5588235294117647,
+    "key": 0.42500000000000004
+   },
+   {
+    "id": "upgrade_close_quarter_combat",
+    "name": "Point Blank",
+    "passPositions": [
+     16,
+     11,
+     11,
+     7,
+     10
+    ],
+    "borda": 0.6470588235294118,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "close range damage and slow",
+    "popularity": 7.55,
+    "popularityObscurity": 0.4117647058823529,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5588235294117647,
+    "key": 0.4779411764705882
+   },
+   {
+    "id": "upgrade_critshot",
+    "name": "Lucky Shot",
+    "passPositions": [
+     5,
+     6,
+     6,
+     4,
+     5
+    ],
+    "borda": 0.3058823529411765,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "proc bonus damage bullets",
+    "popularity": 4.12,
+    "popularityObscurity": 0.7058823529411765,
+    "spellingCost": 9,
+    "spellingObscurity": 0.3235294117647059,
+    "key": 0.586764705882353
+   },
+   {
+    "id": "upgrade_diviners_kevlar",
+    "name": "Diviner's Kevlar",
+    "passPositions": [
+     1,
+     5,
+     9,
+     11,
+     11
+    ],
+    "borda": 0.4352941176470588,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "ultimate barrier vitality item",
+    "popularity": 2.67,
+    "popularityObscurity": 0.8823529411764706,
+    "spellingCost": 6,
+    "spellingObscurity": 0.08823529411764706,
+    "key": 0.7308823529411763
+   },
+   {
+    "id": "upgrade_headshot_booster2",
+    "name": "Weakening Headshot",
+    "passPositions": [
+     12,
+     13,
+     14,
+     14,
+     12
+    ],
+    "borda": 0.7647058823529411,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "headshot bullet resist reduction",
+    "popularity": 5.24,
+    "popularityObscurity": 0.5882352941176471,
+    "spellingCost": 17,
+    "spellingObscurity": 1,
+    "key": 0.6529411764705881
+   },
+   {
+    "id": "upgrade_kinetic_sash",
+    "name": "Kinetic Dash",
+    "passPositions": [
+     0,
+     2,
+     2,
+     3,
+     4
+    ],
+    "borda": 0.12941176470588234,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "dash-jump fire rate",
+    "popularity": 4.55,
+    "popularityObscurity": 0.6470588235294118,
+    "spellingCost": 11,
+    "spellingObscurity": 0.7058823529411765,
+    "key": 0.5205882352941177
+   },
+   {
+    "id": "upgrade_magic_shock",
+    "name": "Tankbuster",
+    "passPositions": [
+     3,
+     8,
+     5,
+     10,
+     2
+    ],
+    "borda": 0.32941176470588235,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "anti-tank spirit damage",
+    "popularity": 33.04,
+    "popularityObscurity": 0,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5588235294117647,
+    "key": 0.11029411764705882
+   },
+   {
+    "id": "upgrade_metal_skin",
+    "name": "Metal Skin",
+    "passPositions": [
+     10,
+     4,
+     1,
+     1,
+     6
+    ],
+    "borda": 0.25882352941176473,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "bullet immunity active",
+    "popularity": 3.6,
+    "popularityObscurity": 0.7647058823529411,
+    "spellingCost": 9,
+    "spellingObscurity": 0.3235294117647059,
+    "key": 0.6161764705882352
+   },
+   {
+    "id": "upgrade_phantom_strike",
+    "name": "Phantom Strike",
+    "passPositions": [
+     9,
+     7,
+     8,
+     8,
+     8
+    ],
+    "borda": 0.47058823529411764,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "teleport pull to enemy",
+    "popularity": 3.37,
+    "popularityObscurity": 0.8235294117647058,
+    "spellingCost": 13,
+    "spellingObscurity": 0.9411764705882353,
+    "key": 0.7411764705882352
+   },
+   {
+    "id": "upgrade_quick_silver",
+    "name": "Quicksilver Reload",
+    "passPositions": [
+     6,
+     12,
+     15,
+     15,
+     14
+    ],
+    "borda": 0.7294117647058822,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "imbue charge and reload",
+    "popularity": 18.57,
+    "popularityObscurity": 0.11764705882352941,
+    "spellingCost": 3,
+    "spellingObscurity": 0,
+    "key": 0.2647058823529411
+   },
+   {
+    "id": "upgrade_restorative_locket",
+    "name": "Restorative Locket",
+    "passPositions": [
+     15,
+     17,
+     17,
+     17,
+     17
+    ],
+    "borda": 0.9764705882352942,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "stacking heal from enemy abilities",
+    "popularity": 1.64,
+    "popularityObscurity": 1,
+    "spellingCost": 6,
+    "spellingObscurity": 0.08823529411764706,
+    "key": 0.9485294117647058
+   },
+   {
+    "id": "upgrade_spellbreaker",
+    "name": "Spellbreaker",
+    "passPositions": [
+     8,
+     10,
+     7,
+     5,
+     16
+    ],
+    "borda": 0.5411764705882354,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "spirit damage shield",
+    "popularity": 6.87,
+    "popularityObscurity": 0.47058823529411764,
+    "spellingCost": 12,
+    "spellingObscurity": 0.8235294117647058,
+    "key": 0.5058823529411764
+   },
+   {
+    "id": "upgrade_target_stun",
+    "name": "Knockdown",
+    "passPositions": [
+     2,
+     0,
+     0,
+     0,
+     1
+    ],
+    "borda": 0.03529411764705882,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "airborne stun spirit item",
+    "popularity": 5.26,
+    "popularityObscurity": 0.5294117647058824,
+    "spellingCost": 9,
+    "spellingObscurity": 0.3235294117647059,
+    "key": 0.39558823529411763
+   },
+   {
+    "id": "upgrade_veil_walker",
+    "name": "Veil Walker",
+    "passPositions": [
+     14,
+     15,
+     16,
+     16,
+     15
+    ],
+    "borda": 0.8941176470588236,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "stealth and heal through veils",
+    "popularity": 2.64,
+    "popularityObscurity": 0.9411764705882353,
+    "spellingCost": 10,
+    "spellingObscurity": 0.5588235294117647,
+    "key": 0.9102941176470588
+   },
+   {
+    "id": "upgrade_weapon_backstabber",
+    "name": "Stalker",
+    "passPositions": [
+     4,
+     3,
+     3,
+     2,
+     3
+    ],
+    "borda": 0.17647058823529413,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "close range wound and move speed",
+    "popularity": 14.49,
+    "popularityObscurity": 0.23529411764705882,
+    "spellingCost": 7,
+    "spellingObscurity": 0.17647058823529413,
+    "key": 0.21764705882352942
+   }
+  ],
+  "passAgreement": 0.5633986928104575,
+  "orderBeforeRefinement": [
+   "upgrade_magic_shock",
+   "upgrade_blitz_bullets",
+   "upgrade_weapon_backstabber",
+   "upgrade_quick_silver",
+   "upgrade_berserker",
+   "upgrade_acolytes_glove",
+   "upgrade_target_stun",
+   "upgrade_boxing_glove",
+   "upgrade_close_quarter_combat",
+   "upgrade_spellbreaker",
+   "upgrade_kinetic_sash",
+   "upgrade_critshot",
+   "upgrade_metal_skin",
+   "upgrade_headshot_booster2",
+   "upgrade_diviners_kevlar",
+   "upgrade_phantom_strike",
+   "upgrade_veil_walker",
+   "upgrade_restorative_locket"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_diviners_kevlar",
+    "b": "upgrade_phantom_strike",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_phantom_strike"
+   },
+   {
+    "a": "upgrade_diviners_kevlar",
+    "b": "upgrade_veil_walker",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_veil_walker"
+   },
+   {
+    "a": "upgrade_diviners_kevlar",
+    "b": "upgrade_restorative_locket",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_restorative_locket"
+   },
+   {
+    "a": "upgrade_phantom_strike",
+    "b": "upgrade_veil_walker",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_veil_walker"
+   },
+   {
+    "a": "upgrade_phantom_strike",
+    "b": "upgrade_restorative_locket",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_restorative_locket"
+   },
+   {
+    "a": "upgrade_veil_walker",
+    "b": "upgrade_restorative_locket",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_magic_shock",
+    "b": "upgrade_blitz_bullets",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_blitz_bullets"
+   },
+   {
+    "a": "upgrade_quick_silver",
+    "b": "upgrade_berserker",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_close_quarter_combat",
+    "b": "upgrade_spellbreaker",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_target_stun",
+    "b": "upgrade_berserker",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_magic_shock",
+    "b": "upgrade_target_stun",
+    "purpose": "review",
+    "rarer": "upgrade_magic_shock"
+   },
+   {
+    "a": "upgrade_kinetic_sash",
+    "b": "upgrade_spellbreaker",
+    "purpose": "review",
+    "rarer": "upgrade_spellbreaker"
+   },
+   {
+    "a": "upgrade_restorative_locket",
+    "b": "upgrade_veil_walker",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Knockdown",
+    "compareWith": "Berserker",
+    "claim": "should_be_more_obvious",
+    "reason": "Knockdown has the letter K as its very first letter, so it is one of the first items players think of for this question. Berserker has its K buried in the middle of the name, so Knockdown should score lower than Berserker.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Tankbuster",
+    "compareWith": "Knockdown",
+    "claim": "should_be_more_obscure",
+    "reason": "Tankbuster is a Tier 3 spirit item that is rarely bought and is not tied to the letter K more than other answers are. Placing it as the single most obvious answer at 10 pts is implausible next to Knockdown, which starts with K.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Kinetic Dash",
+    "compareWith": "Spellbreaker",
+    "claim": "should_be_more_obvious",
+    "reason": "Kinetic Dash starts with K and is a commonly bought Tier 2 weapon item. It should be easier to think of than Spellbreaker, which hides its K in the middle.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Diviner's Kevlar",
+    "compareWith": "Phantom Strike",
+    "claim": "should_be_more_obvious",
+    "reason": "Kevlar begins with K and is a distinctive item name, so it comes to mind more readily for a K question than Phantom Strike, where the K is easy to overlook.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Restorative Locket",
+    "compareWith": "Veil Walker",
+    "claim": "should_be_more_obvious",
+    "reason": "Locket has an obvious K and the item is a commonly bought Tier 2 vitality item, so it is hardly rarer than Veil Walker, whose name has no K at all and is not a valid answer.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}

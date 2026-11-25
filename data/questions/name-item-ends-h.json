@@ -1,0 +1,292 @@
+{
+ "question": {
+  "signature": "name:item:ends:h",
+  "prompt": "Name an item whose name ends with the letter H.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_cheat_death",
+   "upgrade_damage_recycler",
+   "upgrade_health",
+   "upgrade_kinetic_sash",
+   "upgrade_rechargingbullets",
+   "upgrade_spirit_snatch"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:ends:h"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:24:48.571Z",
+ "answers": [
+  {
+   "entityId": "upgrade_health",
+   "name": "Extra Health",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_spirit_snatch",
+   "name": "Spirit Snatch",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_cheat_death",
+   "name": "Cheat Death",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_kinetic_sash",
+   "name": "Kinetic Dash",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_damage_recycler",
+   "name": "Leech",
+   "rank": 5,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_rechargingbullets",
+   "name": "Recharging Rush",
+   "rank": 6,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_cheat_death",
+    "name": "Cheat Death",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Famous death-immunity survival item",
+    "popularity": 3.32,
+    "popularityObscurity": 1,
+    "spellingCost": 5,
+    "spellingObscurity": 0.1,
+    "key": 0.705
+   },
+   {
+    "id": "upgrade_damage_recycler",
+    "name": "Leech",
+    "passPositions": [
+     3,
+     3,
+     2,
+     2,
+     2
+    ],
+    "borda": 0.48,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Expensive lifesteal and anti-healing-reduction item",
+    "popularity": 3.99,
+    "popularityObscurity": 0.8,
+    "spellingCost": 5,
+    "spellingObscurity": 0.1,
+    "key": 0.6849999999999999
+   },
+   {
+    "id": "upgrade_health",
+    "name": "Extra Health",
+    "passPositions": [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "borda": 0.2,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Cheap early health item",
+    "popularity": 19.53,
+    "popularityObscurity": 0,
+    "spellingCost": 11,
+    "spellingObscurity": 0.7,
+    "key": 0.08499999999999999
+   },
+   {
+    "id": "upgrade_kinetic_sash",
+    "name": "Kinetic Dash",
+    "passPositions": [
+     2,
+     2,
+     3,
+     3,
+     4
+    ],
+    "borda": 0.5599999999999999,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Dash-jump fire rate weapon item",
+    "popularity": 4.55,
+    "popularityObscurity": 0.6,
+    "spellingCost": 11,
+    "spellingObscurity": 0.7,
+    "key": 0.595
+   },
+   {
+    "id": "upgrade_rechargingbullets",
+    "name": "Recharging Rush",
+    "passPositions": [
+     5,
+     5,
+     5,
+     4,
+     5
+    ],
+    "borda": 0.96,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Weapon item refreshing ability charges",
+    "popularity": 7.66,
+    "popularityObscurity": 0.4,
+    "spellingCost": 14,
+    "spellingObscurity": 1,
+    "key": 0.57
+   },
+   {
+    "id": "upgrade_spirit_snatch",
+    "name": "Spirit Snatch",
+    "passPositions": [
+     4,
+     4,
+     4,
+     5,
+     3
+    ],
+    "borda": 0.8,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Melee spirit item stealing resist and power",
+    "popularity": 17.14,
+    "popularityObscurity": 0.2,
+    "spellingCost": 6,
+    "spellingObscurity": 0.4,
+    "key": 0.36
+   }
+  ],
+  "passAgreement": 0.8133333333333332,
+  "orderBeforeRefinement": [
+   "upgrade_health",
+   "upgrade_spirit_snatch",
+   "upgrade_rechargingbullets",
+   "upgrade_kinetic_sash",
+   "upgrade_damage_recycler",
+   "upgrade_cheat_death"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_rechargingbullets",
+    "b": "upgrade_kinetic_sash",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_rechargingbullets"
+   },
+   {
+    "a": "upgrade_rechargingbullets",
+    "b": "upgrade_damage_recycler",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_rechargingbullets"
+   },
+   {
+    "a": "upgrade_rechargingbullets",
+    "b": "upgrade_cheat_death",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_rechargingbullets"
+   },
+   {
+    "a": "upgrade_kinetic_sash",
+    "b": "upgrade_damage_recycler",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_kinetic_sash"
+   },
+   {
+    "a": "upgrade_kinetic_sash",
+    "b": "upgrade_cheat_death",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_kinetic_sash"
+   },
+   {
+    "a": "upgrade_damage_recycler",
+    "b": "upgrade_cheat_death",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_damage_recycler"
+   },
+   {
+    "a": "upgrade_health",
+    "b": "upgrade_spirit_snatch",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_spirit_snatch"
+   },
+   {
+    "a": "upgrade_kinetic_sash",
+    "b": "upgrade_damage_recycler",
+    "purpose": "review",
+    "rarer": "upgrade_damage_recycler"
+   }
+  ],
+  "review": [
+   {
+    "name": "Spirit Snatch",
+    "compareWith": "Extra Health",
+    "claim": "should_be_more_obscure",
+    "reason": "Extra Health is a very common first purchase and its name ends in H, so it is the clear top answer. Spirit Snatch is a Tier 3 item that players rarely buy. Players scanning for H endings would think of Health, Death, Dash and Rush before it. 30 points is too low, and it should sit well above Cheat Death.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Cheat Death",
+    "compareWith": "Leech",
+    "claim": "should_be_more_obvious",
+    "reason": "Cheat Death is a well-known, memorable item, and its name ends in H, so it comes to mind quickly. Leech is a Tier 4 item with a short name that ends in H too, but players recall it less readily. Cheat Death should be slightly more obvious than Leech.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Kinetic Dash",
+    "compareWith": "Leech",
+    "claim": "should_be_more_obvious",
+    "reason": "Kinetic Dash is a mid-tier item whose name ends in a very visible 'sh' ending, and 'Dash' is a common word. Players thinking of H endings would reach it about as readily as Leech. Leech ends in 'ch', which players are likely to miss, and it deserves to be rarer than Kinetic Dash.",
+    "outcome": "applied"
+   }
+  ]
+ }
+}

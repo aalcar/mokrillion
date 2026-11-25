@@ -1,0 +1,403 @@
+{
+ "question": {
+  "signature": "name:item:starts:b",
+  "prompt": "Name an item whose name starts with the letter B.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_berserker",
+   "upgrade_blood_tribute",
+   "upgrade_boundless_spirit",
+   "upgrade_bullet_resist_shredder",
+   "upgrade_bulletshredimbue",
+   "upgrade_burst_fire",
+   "upgrade_improved_bullet_armor",
+   "upgrade_regenerating_bullet_shield",
+   "upgrade_vampire"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:starts:b"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:21:28.713Z",
+ "answers": [
+  {
+   "entityId": "upgrade_vampire",
+   "name": "Bullet Lifesteal",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_boundless_spirit",
+   "name": "Boundless Spirit",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_burst_fire",
+   "name": "Burst Fire",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_berserker",
+   "name": "Berserker",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_regenerating_bullet_shield",
+   "name": "Battle Vest",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_bullet_resist_shredder",
+   "name": "Bullet Resist Shredder",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_improved_bullet_armor",
+   "name": "Bullet Resilience",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_blood_tribute",
+   "name": "Blood Tribute",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_bulletshredimbue",
+   "name": "Ballistic Enchantment",
+   "rank": 9,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_berserker",
+    "name": "Berserker",
+    "passPositions": [
+     1,
+     3,
+     2,
+     0,
+     1
+    ],
+    "borda": 0.175,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Damage scaling as you take damage, well-known weapon item",
+    "popularity": 7.63,
+    "popularityObscurity": 0.625,
+    "spellingCost": 9,
+    "spellingObscurity": 0.3125,
+    "key": 0.496875
+   },
+   {
+    "id": "upgrade_blood_tribute",
+    "name": "Blood Tribute",
+    "passPositions": [
+     6,
+     5,
+     6,
+     5,
+     7
+    ],
+    "borda": 0.725,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Health-sacrifice toggle for fire rate, uncommon",
+    "popularity": 0.98,
+    "popularityObscurity": 1,
+    "spellingCost": 12,
+    "spellingObscurity": 0.75,
+    "key": 0.91875
+   },
+   {
+    "id": "upgrade_boundless_spirit",
+    "name": "Boundless Spirit",
+    "passPositions": [
+     5,
+     6,
+     5,
+     4,
+     3
+    ],
+    "borda": 0.575,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Expensive late-game spirit power item",
+    "popularity": 29.17,
+    "popularityObscurity": 0,
+    "spellingCost": 9,
+    "spellingObscurity": 0.3125,
+    "key": 0.159375
+   },
+   {
+    "id": "upgrade_bullet_resist_shredder",
+    "name": "Bullet Resist Shredder",
+    "passPositions": [
+     7,
+     7,
+     7,
+     8,
+     6
+    ],
+    "borda": 0.875,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Spirit item that shreds bullet resist, mid-popularity",
+    "popularity": 14.27,
+    "popularityObscurity": 0.25,
+    "spellingCost": 3,
+    "spellingObscurity": 0,
+    "key": 0.39375
+   },
+   {
+    "id": "upgrade_bulletshredimbue",
+    "name": "Ballistic Enchantment",
+    "passPositions": [
+     8,
+     8,
+     8,
+     7,
+     8
+    ],
+    "borda": 0.975,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Niche weapon-imbue item, rarely bought",
+    "popularity": 3.18,
+    "popularityObscurity": 0.75,
+    "spellingCost": 9,
+    "spellingObscurity": 0.3125,
+    "key": 0.7843749999999999
+   },
+   {
+    "id": "upgrade_burst_fire",
+    "name": "Burst Fire",
+    "passPositions": [
+     2,
+     4,
+     3,
+     3,
+     4
+    ],
+    "borda": 0.4,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "Fire rate and speed on hero hit, common weapon item",
+    "popularity": 10.34,
+    "popularityObscurity": 0.375,
+    "spellingCost": 9,
+    "spellingObscurity": 0.3125,
+    "key": 0.37812499999999993
+   },
+   {
+    "id": "upgrade_improved_bullet_armor",
+    "name": "Bullet Resilience",
+    "passPositions": [
+     4,
+     2,
+     4,
+     6,
+     5
+    ],
+    "borda": 0.525,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Standard bullet resist tank item",
+    "popularity": 3.15,
+    "popularityObscurity": 0.875,
+    "spellingCost": 16,
+    "spellingObscurity": 1,
+    "key": 0.79375
+   },
+   {
+    "id": "upgrade_regenerating_bullet_shield",
+    "name": "Battle Vest",
+    "passPositions": [
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    "borda": 0.05,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Cheap early bullet resist item, very common",
+    "popularity": 16.97,
+    "popularityObscurity": 0.125,
+    "spellingCost": 10,
+    "spellingObscurity": 0.625,
+    "key": 0.13124999999999998
+   },
+   {
+    "id": "upgrade_vampire",
+    "name": "Bullet Lifesteal",
+    "passPositions": [
+     3,
+     0,
+     1,
+     2,
+     2
+    ],
+    "borda": 0.2,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Common early lifesteal item, basic vitality buy",
+    "popularity": 10.25,
+    "popularityObscurity": 0.5,
+    "spellingCost": 15,
+    "spellingObscurity": 0.875,
+    "key": 0.44375
+   }
+  ],
+  "passAgreement": 0.711111111111111,
+  "orderBeforeRefinement": [
+   "upgrade_regenerating_bullet_shield",
+   "upgrade_boundless_spirit",
+   "upgrade_burst_fire",
+   "upgrade_bullet_resist_shredder",
+   "upgrade_vampire",
+   "upgrade_berserker",
+   "upgrade_bulletshredimbue",
+   "upgrade_improved_bullet_armor",
+   "upgrade_blood_tribute"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_berserker",
+    "b": "upgrade_bulletshredimbue",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_bulletshredimbue"
+   },
+   {
+    "a": "upgrade_berserker",
+    "b": "upgrade_improved_bullet_armor",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_berserker",
+    "b": "upgrade_blood_tribute",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_blood_tribute"
+   },
+   {
+    "a": "upgrade_bulletshredimbue",
+    "b": "upgrade_improved_bullet_armor",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_bulletshredimbue"
+   },
+   {
+    "a": "upgrade_bulletshredimbue",
+    "b": "upgrade_blood_tribute",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_bulletshredimbue"
+   },
+   {
+    "a": "upgrade_improved_bullet_armor",
+    "b": "upgrade_blood_tribute",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_blood_tribute"
+   },
+   {
+    "a": "upgrade_regenerating_bullet_shield",
+    "b": "upgrade_boundless_spirit",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_boundless_spirit"
+   },
+   {
+    "a": "upgrade_burst_fire",
+    "b": "upgrade_bullet_resist_shredder",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_bullet_resist_shredder"
+   },
+   {
+    "a": "upgrade_berserker",
+    "b": "upgrade_bullet_resist_shredder",
+    "purpose": "review",
+    "rarer": "upgrade_bullet_resist_shredder"
+   },
+   {
+    "a": "upgrade_vampire",
+    "b": "upgrade_regenerating_bullet_shield",
+    "purpose": "review",
+    "rarer": "upgrade_regenerating_bullet_shield"
+   },
+   {
+    "a": "upgrade_blood_tribute",
+    "b": "upgrade_improved_bullet_armor",
+    "purpose": "review",
+    "rarer": "upgrade_blood_tribute"
+   }
+  ],
+  "review": [
+   {
+    "name": "Berserker",
+    "compareWith": "Bullet Resist Shredder",
+    "claim": "should_be_more_obvious",
+    "reason": "Berserker is a short, distinctive name with a clear damage-scaling mechanic, so players recall it readily. Bullet Resist Shredder is a long, clunky name that is easy to forget, so it should score as rarer than Berserker.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Bullet Lifesteal",
+    "compareWith": "Battle Vest",
+    "claim": "should_be_more_obvious",
+    "reason": "Bullet Lifesteal is a core, commonly bought Tier 2 Vitality item that leads into several upgrades, and its name is the plain stat. Players are about as likely to think of it as Battle Vest, so 60 pts looks too obscure.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Blood Tribute",
+    "compareWith": "Bullet Resilience",
+    "claim": "should_be_more_obvious",
+    "reason": "Blood Tribute has a memorable name and a distinctive toggle that costs health. Bullet Resilience is a generic-sounding defensive item, so it should be the rarer of the two and the 85 pt scores should be swapped.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}

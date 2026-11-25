@@ -1,0 +1,261 @@
+{
+ "question": {
+  "signature": "name:item:starts:g",
+  "prompt": "Name an item whose name starts with the letter G.",
+  "category": "name-trivia",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_glass_cannon",
+   "upgrade_goose_egg",
+   "upgrade_grit",
+   "upgrade_guardian_ward",
+   "upgrade_tech_range"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "name spelling rule: name:item:starts:g"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T04:24:13.713Z",
+ "answers": [
+  {
+   "entityId": "upgrade_glass_cannon",
+   "name": "Glass Cannon",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_tech_range",
+   "name": "Greater Expansion",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_guardian_ward",
+   "name": "Guardian Ward",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_grit",
+   "name": "Grit",
+   "rank": 4,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_goose_egg",
+   "name": "Golden Goose Egg",
+   "rank": 5,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "membership",
+   "llm": 0.25,
+   "popularity": 0.7,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "upgrade_glass_cannon",
+    "name": "Glass Cannon",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "High-risk late-game weapon damage item",
+    "popularity": 2.22,
+    "popularityObscurity": 0.75,
+    "spellingCost": 5,
+    "spellingObscurity": 0.5,
+    "key": 0.5499999999999999
+   },
+   {
+    "id": "upgrade_goose_egg",
+    "name": "Golden Goose Egg",
+    "passPositions": [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "borda": 0.25,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Cheap souls-generating item with a funny name",
+    "popularity": 1.88,
+    "popularityObscurity": 1,
+    "spellingCost": 3,
+    "spellingObscurity": 0,
+    "key": 0.7625
+   },
+   {
+    "id": "upgrade_grit",
+    "name": "Grit",
+    "passPositions": [
+     4,
+     3,
+     3,
+     4,
+     3
+    ],
+    "borda": 0.85,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Basic early barrier item for vitality builds",
+    "popularity": 21.04,
+    "popularityObscurity": 0.25,
+    "spellingCost": 4,
+    "spellingObscurity": 0.25,
+    "key": 0.4
+   },
+   {
+    "id": "upgrade_guardian_ward",
+    "name": "Guardian Ward",
+    "passPositions": [
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "borda": 0.5,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Ally-targeted barrier and speed active",
+    "popularity": 4.91,
+    "popularityObscurity": 0.5,
+    "spellingCost": 12,
+    "spellingObscurity": 0.75,
+    "key": 0.5125
+   },
+   {
+    "id": "upgrade_tech_range",
+    "name": "Greater Expansion",
+    "passPositions": [
+     3,
+     4,
+     4,
+     3,
+     4
+    ],
+    "borda": 0.9,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Late-game spirit range upgrade",
+    "popularity": 26.6,
+    "popularityObscurity": 0,
+    "spellingCost": 13,
+    "spellingObscurity": 1,
+    "key": 0.275
+   }
+  ],
+  "passAgreement": 0.8800000000000001,
+  "orderBeforeRefinement": [
+   "upgrade_tech_range",
+   "upgrade_grit",
+   "upgrade_guardian_ward",
+   "upgrade_glass_cannon",
+   "upgrade_goose_egg"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_grit",
+    "b": "upgrade_guardian_ward",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_grit"
+   },
+   {
+    "a": "upgrade_grit",
+    "b": "upgrade_glass_cannon",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_grit"
+   },
+   {
+    "a": "upgrade_grit",
+    "b": "upgrade_goose_egg",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_grit"
+   },
+   {
+    "a": "upgrade_guardian_ward",
+    "b": "upgrade_glass_cannon",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_guardian_ward"
+   },
+   {
+    "a": "upgrade_guardian_ward",
+    "b": "upgrade_goose_egg",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_glass_cannon",
+    "b": "upgrade_goose_egg",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_goose_egg"
+   },
+   {
+    "a": "upgrade_glass_cannon",
+    "b": "upgrade_tech_range",
+    "purpose": "review",
+    "rarer": "upgrade_tech_range"
+   },
+   {
+    "a": "upgrade_goose_egg",
+    "b": "upgrade_guardian_ward",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Glass Cannon",
+    "compareWith": "Greater Expansion",
+    "claim": "should_be_more_obvious",
+    "reason": "Glass Cannon is a very famous, iconic weapon item with a memorable name and a distinctive high-risk mechanic, so it is probably the first G item many experienced players recall. Greater Expansion is a tier 3 upgrade that players recognize less immediately, so it should not be the most obvious answer.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Golden Goose Egg",
+    "compareWith": "Guardian Ward",
+    "claim": "should_be_more_obvious",
+    "reason": "Golden Goose Egg has a distinctive, memorable name and a quirky mechanic that stands out in the item list. Players are likely to recall it for a G prompt at least as often as Guardian Ward, which is a mid-tier utility item that sees less attention.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Grit",
+    "compareWith": "Golden Goose Egg",
+    "claim": "should_be_more_obvious",
+    "reason": "Grit is a common tier 1 vitality item that players buy often and see in many build paths. Its short, simple name starts with G, so it is not rarer than Golden Goose Egg and probably is not the most obscure answer.",
+    "outcome": "applied-by-data"
+   }
+  ]
+ }
+}
