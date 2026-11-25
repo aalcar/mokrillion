@@ -1,0 +1,845 @@
+{
+ "question": {
+  "signature": "item-cost:800",
+  "prompt": "Name an item that costs 800 souls.",
+  "category": "item-cost",
+  "entityType": "item",
+  "answerIds": [
+   "upgrade_acolytes_glove",
+   "upgrade_clip_size",
+   "upgrade_close_range",
+   "upgrade_endurance",
+   "upgrade_extra_charge",
+   "upgrade_goose_egg",
+   "upgrade_grit",
+   "upgrade_headshot_booster",
+   "upgrade_health",
+   "upgrade_health_stimpak",
+   "upgrade_high_velocity_mag",
+   "upgrade_improved_spirit",
+   "upgrade_improved_stamina",
+   "upgrade_lifestrike_gauntlets",
+   "upgrade_magic_burst",
+   "upgrade_magic_reach",
+   "upgrade_medic_bullets",
+   "upgrade_melee_rebuttal",
+   "upgrade_mystic_regeneration",
+   "upgrade_non_player_bonus",
+   "upgrade_rapid_rounds",
+   "upgrade_sprint_booster",
+   "upgrade_withering_whip"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "cost == 800"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "5",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-25T03:33:39.577Z",
+ "answers": [
+  {
+   "entityId": "upgrade_improved_spirit",
+   "name": "Extra Spirit",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_health",
+   "name": "Extra Health",
+   "rank": 2,
+   "score": 10
+  },
+  {
+   "entityId": "upgrade_sprint_booster",
+   "name": "Sprint Boots",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_magic_burst",
+   "name": "Mystic Burst",
+   "rank": 4,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_rapid_rounds",
+   "name": "Rapid Rounds",
+   "rank": 5,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_non_player_bonus",
+   "name": "Monster Rounds",
+   "rank": 6,
+   "score": 30
+  },
+  {
+   "entityId": "upgrade_extra_charge",
+   "name": "Extra Charge",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_endurance",
+   "name": "Extra Regen",
+   "rank": 8,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_clip_size",
+   "name": "Extended Magazine",
+   "rank": 9,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_high_velocity_mag",
+   "name": "High-Velocity Rounds",
+   "rank": 10,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_headshot_booster",
+   "name": "Headshot Booster",
+   "rank": 11,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_magic_reach",
+   "name": "Mystic Expansion",
+   "rank": 12,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_close_range",
+   "name": "Close Quarters",
+   "rank": 13,
+   "score": 60
+  },
+  {
+   "entityId": "upgrade_improved_stamina",
+   "name": "Extra Stamina",
+   "rank": 14,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_medic_bullets",
+   "name": "Restorative Shot",
+   "rank": 15,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_grit",
+   "name": "Grit",
+   "rank": 16,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_lifestrike_gauntlets",
+   "name": "Melee Lifesteal",
+   "rank": 17,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_health_stimpak",
+   "name": "Healing Rite",
+   "rank": 18,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_goose_egg",
+   "name": "Golden Goose Egg",
+   "rank": 19,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_mystic_regeneration",
+   "name": "Mystic Regeneration",
+   "rank": 20,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_acolytes_glove",
+   "name": "Spirit Strike",
+   "rank": 21,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_melee_rebuttal",
+   "name": "Rebuttal",
+   "rank": 22,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_withering_whip",
+   "name": "Rusted Barrel",
+   "rank": 23,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "signals": [
+   {
+    "id": "upgrade_acolytes_glove",
+    "name": "Spirit Strike",
+    "passPositions": [
+     22,
+     22,
+     21,
+     21,
+     18
+    ],
+    "borda": 0.9454545454545455,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "melee spirit item",
+    "popularity": 17.14,
+    "popularityObscurity": 0.5909090909090909,
+    "spellingCost": 12,
+    "spellingObscurity": 0.75,
+    "key": 0.7938636363636364
+   },
+   {
+    "id": "upgrade_clip_size",
+    "name": "Extended Magazine",
+    "passPositions": [
+     5,
+     1,
+     4,
+     2,
+     4
+    ],
+    "borda": 0.14545454545454545,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "basic ammo and damage weapon item",
+    "popularity": 15.22,
+    "popularityObscurity": 0.7272727272727273,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8863636363636364,
+    "key": 0.4152272727272728
+   },
+   {
+    "id": "upgrade_close_range",
+    "name": "Close Quarters",
+    "passPositions": [
+     9,
+     10,
+     18,
+     8,
+     9
+    ],
+    "borda": 0.4909090909090909,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "close-range damage item",
+    "popularity": 16.2,
+    "popularityObscurity": 0.6363636363636364,
+    "spellingCost": 13,
+    "spellingObscurity": 0.8863636363636364,
+    "key": 0.5688636363636363
+   },
+   {
+    "id": "upgrade_endurance",
+    "name": "Extra Regen",
+    "passPositions": [
+     7,
+     7,
+     8,
+     4,
+     12
+    ],
+    "borda": 0.34545454545454546,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "basic regen item",
+    "popularity": 22.98,
+    "popularityObscurity": 0.3181818181818182,
+    "spellingCost": 10,
+    "spellingObscurity": 0.2727272727272727,
+    "key": 0.33090909090909093
+   },
+   {
+    "id": "upgrade_extra_charge",
+    "name": "Extra Charge",
+    "passPositions": [
+     11,
+     14,
+     7,
+     10,
+     7
+    ],
+    "borda": 0.44545454545454544,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "extra ability charge item",
+    "popularity": 31.98,
+    "popularityObscurity": 0.13636363636363635,
+    "spellingCost": 11,
+    "spellingObscurity": 0.4772727272727273,
+    "key": 0.323409090909091
+   },
+   {
+    "id": "upgrade_goose_egg",
+    "name": "Golden Goose Egg",
+    "passPositions": [
+     14,
+     13,
+     20,
+     18,
+     8
+    ],
+    "borda": 0.6636363636363637,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "souls-over-time economy item",
+    "popularity": 1.88,
+    "popularityObscurity": 1,
+    "spellingCost": 3,
+    "spellingObscurity": 0.022727272727272728,
+    "key": 0.7661363636363637
+   },
+   {
+    "id": "upgrade_grit",
+    "name": "Grit",
+    "passPositions": [
+     19,
+     17,
+     15,
+     16,
+     20
+    ],
+    "borda": 0.7909090909090908,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "barrier active item",
+    "popularity": 21.04,
+    "popularityObscurity": 0.4090909090909091,
+    "spellingCost": 4,
+    "spellingObscurity": 0.09090909090909091,
+    "key": 0.6031818181818182
+   },
+   {
+    "id": "upgrade_headshot_booster",
+    "name": "Headshot Booster",
+    "passPositions": [
+     6,
+     4,
+     3,
+     7,
+     3
+    ],
+    "borda": 0.20909090909090908,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "early headshot burst item",
+    "popularity": 9.39,
+    "popularityObscurity": 0.7727272727272727,
+    "spellingCost": 15,
+    "spellingObscurity": 1,
+    "key": 0.4740909090909091
+   },
+   {
+    "id": "upgrade_health",
+    "name": "Extra Health",
+    "passPositions": [
+     0,
+     0,
+     1,
+     1,
+     0
+    ],
+    "borda": 0.01818181818181818,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "basic health item",
+    "popularity": 19.53,
+    "popularityObscurity": 0.5,
+    "spellingCost": 11,
+    "spellingObscurity": 0.4772727272727273,
+    "key": 0.23386363636363638
+   },
+   {
+    "id": "upgrade_health_stimpak",
+    "name": "Healing Rite",
+    "passPositions": [
+     10,
+     11,
+     14,
+     14,
+     19
+    ],
+    "borda": 0.6181818181818182,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "early team heal active",
+    "popularity": 4.61,
+    "popularityObscurity": 0.8636363636363636,
+    "spellingCost": 11,
+    "spellingObscurity": 0.4772727272727273,
+    "key": 0.7093181818181818
+   },
+   {
+    "id": "upgrade_high_velocity_mag",
+    "name": "High-Velocity Rounds",
+    "passPositions": [
+     16,
+     15,
+     11,
+     6,
+     13
+    ],
+    "borda": 0.5545454545454545,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "bullet velocity item",
+    "popularity": 22.33,
+    "popularityObscurity": 0.36363636363636365,
+    "spellingCost": 3,
+    "spellingObscurity": 0.022727272727272728,
+    "key": 0.45159090909090915
+   },
+   {
+    "id": "upgrade_improved_spirit",
+    "name": "Extra Spirit",
+    "passPositions": [
+     2,
+     2,
+     0,
+     0,
+     1
+    ],
+    "borda": 0.045454545454545456,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "basic spirit power item",
+    "popularity": 49.29,
+    "popularityObscurity": 0,
+    "spellingCost": 11,
+    "spellingObscurity": 0.4772727272727273,
+    "key": 0.048863636363636366
+   },
+   {
+    "id": "upgrade_improved_stamina",
+    "name": "Extra Stamina",
+    "passPositions": [
+     18,
+     18,
+     19,
+     9,
+     16
+    ],
+    "borda": 0.7272727272727273,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "stamina item",
+    "popularity": 26.32,
+    "popularityObscurity": 0.22727272727272727,
+    "spellingCost": 12,
+    "spellingObscurity": 0.75,
+    "key": 0.5284090909090909
+   },
+   {
+    "id": "upgrade_lifestrike_gauntlets",
+    "name": "Melee Lifesteal",
+    "passPositions": [
+     13,
+     8,
+     9,
+     17,
+     11
+    ],
+    "borda": 0.5272727272727273,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "melee sustain item",
+    "popularity": 15.51,
+    "popularityObscurity": 0.6818181818181818,
+    "spellingCost": 14,
+    "spellingObscurity": 0.9545454545454546,
+    "key": 0.6104545454545455
+   },
+   {
+    "id": "upgrade_magic_burst",
+    "name": "Mystic Burst",
+    "passPositions": [
+     8,
+     9,
+     6,
+     11,
+     10
+    ],
+    "borda": 0.4,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "early spirit damage item",
+    "popularity": 35.72,
+    "popularityObscurity": 0.045454545454545456,
+    "spellingCost": 11,
+    "spellingObscurity": 0.4772727272727273,
+    "key": 0.2620454545454546
+   },
+   {
+    "id": "upgrade_magic_reach",
+    "name": "Mystic Expansion",
+    "passPositions": [
+     17,
+     19,
+     12,
+     20,
+     21
+    ],
+    "borda": 0.809090909090909,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "ability range item",
+    "popularity": 33.35,
+    "popularityObscurity": 0.09090909090909091,
+    "spellingCost": 9,
+    "spellingObscurity": 0.22727272727272727,
+    "key": 0.4927272727272727
+   },
+   {
+    "id": "upgrade_medic_bullets",
+    "name": "Restorative Shot",
+    "passPositions": [
+     12,
+     16,
+     13,
+     12,
+     15
+    ],
+    "borda": 0.6181818181818182,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "weapon heal on bullet",
+    "popularity": 18.31,
+    "popularityObscurity": 0.5454545454545454,
+    "spellingCost": 12,
+    "spellingObscurity": 0.75,
+    "key": 0.5956818181818182
+   },
+   {
+    "id": "upgrade_melee_rebuttal",
+    "name": "Rebuttal",
+    "passPositions": [
+     20,
+     12,
+     22,
+     22,
+     14
+    ],
+    "borda": 0.8181818181818181,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "parry counter item",
+    "popularity": 3.81,
+    "popularityObscurity": 0.9090909090909091,
+    "spellingCost": 8,
+    "spellingObscurity": 0.18181818181818182,
+    "key": 0.8227272727272728
+   },
+   {
+    "id": "upgrade_mystic_regeneration",
+    "name": "Mystic Regeneration",
+    "passPositions": [
+     15,
+     21,
+     17,
+     15,
+     17
+    ],
+    "borda": 0.7727272727272727,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "spirit sustain item",
+    "popularity": 8.86,
+    "popularityObscurity": 0.8181818181818182,
+    "spellingCost": 11,
+    "spellingObscurity": 0.4772727272727273,
+    "key": 0.7761363636363637
+   },
+   {
+    "id": "upgrade_non_player_bonus",
+    "name": "Monster Rounds",
+    "passPositions": [
+     1,
+     3,
+     10,
+     5,
+     2
+    ],
+    "borda": 0.19090909090909092,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "jungle camp farming item",
+    "popularity": 20.5,
+    "popularityObscurity": 0.45454545454545453,
+    "spellingCost": 7,
+    "spellingObscurity": 0.13636363636363635,
+    "key": 0.29363636363636364
+   },
+   {
+    "id": "upgrade_rapid_rounds",
+    "name": "Rapid Rounds",
+    "passPositions": [
+     4,
+     5,
+     5,
+     13,
+     5
+    ],
+    "borda": 0.2909090909090909,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "cheap fire rate item",
+    "popularity": 23.53,
+    "popularityObscurity": 0.2727272727272727,
+    "spellingCost": 11,
+    "spellingObscurity": 0.4772727272727273,
+    "key": 0.29295454545454547
+   },
+   {
+    "id": "upgrade_sprint_booster",
+    "name": "Sprint Boots",
+    "passPositions": [
+     3,
+     6,
+     2,
+     3,
+     6
+    ],
+    "borda": 0.18181818181818182,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "basic mobility item",
+    "popularity": 31.64,
+    "popularityObscurity": 0.18181818181818182,
+    "spellingCost": 11,
+    "spellingObscurity": 0.4772727272727273,
+    "key": 0.1965909090909091
+   },
+   {
+    "id": "upgrade_withering_whip",
+    "name": "Rusted Barrel",
+    "passPositions": [
+     21,
+     20,
+     16,
+     19,
+     22
+    ],
+    "borda": 0.890909090909091,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "niche slowing debuff active",
+    "popularity": 2.71,
+    "popularityObscurity": 0.9545454545454546,
+    "spellingCost": 12,
+    "spellingObscurity": 0.75,
+    "key": 0.9093181818181819
+   }
+  ],
+  "passAgreement": 0.6205533596837945,
+  "orderBeforeRefinement": [
+   "upgrade_improved_spirit",
+   "upgrade_sprint_booster",
+   "upgrade_health",
+   "upgrade_magic_burst",
+   "upgrade_rapid_rounds",
+   "upgrade_non_player_bonus",
+   "upgrade_extra_charge",
+   "upgrade_endurance",
+   "upgrade_clip_size",
+   "upgrade_high_velocity_mag",
+   "upgrade_headshot_booster",
+   "upgrade_magic_reach",
+   "upgrade_improved_stamina",
+   "upgrade_close_range",
+   "upgrade_medic_bullets",
+   "upgrade_grit",
+   "upgrade_lifestrike_gauntlets",
+   "upgrade_health_stimpak",
+   "upgrade_goose_egg",
+   "upgrade_mystic_regeneration",
+   "upgrade_acolytes_glove",
+   "upgrade_melee_rebuttal",
+   "upgrade_withering_whip"
+  ],
+  "pairwise": [
+   {
+    "a": "upgrade_mystic_regeneration",
+    "b": "upgrade_acolytes_glove",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_acolytes_glove"
+   },
+   {
+    "a": "upgrade_mystic_regeneration",
+    "b": "upgrade_melee_rebuttal",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_melee_rebuttal"
+   },
+   {
+    "a": "upgrade_mystic_regeneration",
+    "b": "upgrade_withering_whip",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_withering_whip"
+   },
+   {
+    "a": "upgrade_acolytes_glove",
+    "b": "upgrade_melee_rebuttal",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_melee_rebuttal"
+   },
+   {
+    "a": "upgrade_acolytes_glove",
+    "b": "upgrade_withering_whip",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_withering_whip"
+   },
+   {
+    "a": "upgrade_melee_rebuttal",
+    "b": "upgrade_withering_whip",
+    "purpose": "rare-contenders",
+    "rarer": "upgrade_withering_whip"
+   },
+   {
+    "a": "upgrade_sprint_booster",
+    "b": "upgrade_health",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_sprint_booster"
+   },
+   {
+    "a": "upgrade_non_player_bonus",
+    "b": "upgrade_extra_charge",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_improved_stamina",
+    "b": "upgrade_close_range",
+    "purpose": "tier-boundary",
+    "rarer": "upgrade_improved_stamina"
+   },
+   {
+    "a": "upgrade_improved_spirit",
+    "b": "upgrade_health",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "upgrade_withering_whip",
+    "b": "upgrade_melee_rebuttal",
+    "purpose": "review",
+    "rarer": "upgrade_withering_whip"
+   }
+  ],
+  "review": [
+   {
+    "name": "Extra Spirit",
+    "compareWith": "Extra Health",
+    "claim": "should_be_more_obscure",
+    "reason": "Both are tied at 10 pts, but 800-soul Extra Health is the more iconic early-game purchase, so Extra Spirit should score somewhat higher rather than sharing the lowest tier.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Sprint Boots",
+    "compareWith": "Mystic Burst",
+    "claim": "should_be_more_obvious",
+    "reason": "Sprint Boots is a staple movement item that nearly every player buys, and it is widely known as a 800-soul item, so it should rank among the top few answers, not behind the 10-pt picks at 30.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Rapid Rounds",
+    "compareWith": "Monster Rounds",
+    "claim": "should_be_more_obvious",
+    "reason": "Rapid Rounds is a very commonly bought weapon item, so it is likely more recalled than Monster Rounds.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Golden Goose Egg",
+    "compareWith": "Extra Stamina",
+    "claim": "should_be_more_obscure",
+    "reason": "Golden Goose Egg is an unusual, rarely bought item that players seldom link with a price, so it is rarer than Extra Stamina, which sits in a cheaper-looking and more recognized tier.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Rusted Barrel",
+    "compareWith": "Rebuttal",
+    "claim": "should_be_more_obvious",
+    "reason": "Rusted Barrel is a memorable named item, and its place at the top of obscurity at 100 pts is not clearly justified over Rebuttal or Golden Goose Egg, which are even less commonly recalled.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}

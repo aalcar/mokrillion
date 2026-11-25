@@ -54,6 +54,18 @@
       "rarer": "upgrade_phantom_strike",
       "commoner": "upgrade_crushing_fists",
       "note": "Crushing Fists should be lower; Vortex Web, Lightning Scroll and Phantom Strike are closer to the 100-point answer than another melee item."
+    },
+    {
+      "signature": "item-slot-tier:Weapon:2",
+      "rarer": "upgrade_split_shot",
+      "commoner": "upgrade_kinetic_sash",
+      "note": "Kinetic Dash should be more obvious than Split Shot and Recharging Rush."
+    },
+    {
+      "signature": "item-slot-tier:Weapon:2",
+      "rarer": "upgrade_rechargingbullets",
+      "commoner": "upgrade_kinetic_sash",
+      "note": "Kinetic Dash should be more obvious than Split Shot and Recharging Rush."
     }
   ]
 }
