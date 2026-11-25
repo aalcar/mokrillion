@@ -83,20 +83,20 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_fervor",
-   "name": "Frenzy",
-   "rank": 10,
-   "score": 85
-  },
-  {
    "entityId": "upgrade_melee_rebuttal",
    "name": "Rebuttal",
-   "rank": 11,
+   "rank": 10,
    "score": 85
   },
   {
    "entityId": "upgrade_discord",
    "name": "Scourge",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_fervor",
+   "name": "Frenzy",
    "rank": 12,
    "score": 100
   }
@@ -491,6 +491,9 @@
     "reason": "Silencer is a well-known item with a very clear name, and is a common answer when listing items. It likely comes to mind about as readily as Stalker, so 60 points is too high relative to Stalker at 30.",
     "outcome": "applied"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "upgrade_fervor"
+  }
  }
 }

@@ -131,14 +131,14 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_veil_walker",
-   "name": "Veil Walker",
+   "entityId": "upgrade_restorative_locket",
+   "name": "Restorative Locket",
    "rank": 17,
    "score": 85
   },
   {
-   "entityId": "upgrade_restorative_locket",
-   "name": "Restorative Locket",
+   "entityId": "upgrade_veil_walker",
+   "name": "Veil Walker",
    "rank": 18,
    "score": 100
   }
@@ -703,6 +703,9 @@
     "reason": "Locket has an obvious K and the item is a commonly bought Tier 2 vitality item, so it is hardly rarer than Veil Walker, whose name has no K at all and is not a valid answer.",
     "outcome": "rejected-by-comparison"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "upgrade_veil_walker"
+  }
  }
 }

@@ -34,20 +34,20 @@
    "score": 30
   },
   {
-   "entityId": "upgrade_guardian_ward",
-   "name": "Guardian Ward",
+   "entityId": "upgrade_grit",
+   "name": "Grit",
    "rank": 3,
    "score": 60
   },
   {
-   "entityId": "upgrade_grit",
-   "name": "Grit",
+   "entityId": "upgrade_goose_egg",
+   "name": "Golden Goose Egg",
    "rank": 4,
    "score": 85
   },
   {
-   "entityId": "upgrade_goose_egg",
-   "name": "Golden Goose Egg",
+   "entityId": "upgrade_guardian_ward",
+   "name": "Guardian Ward",
    "rank": 5,
    "score": 100
   }
@@ -256,6 +256,9 @@
     "reason": "Grit is a common tier 1 vitality item that players buy often and see in many build paths. Its short, simple name starts with G, so it is not rarer than Golden Goose Egg and probably is not the most obscure answer.",
     "outcome": "applied-by-data"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "upgrade_guardian_ward"
+  }
  }
 }

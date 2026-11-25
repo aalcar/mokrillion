@@ -96,14 +96,14 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_withering_whip",
-   "name": "Rusted Barrel",
+   "entityId": "upgrade_restorative_locket",
+   "name": "Restorative Locket",
    "rank": 12,
    "score": 85
   },
   {
-   "entityId": "upgrade_restorative_locket",
-   "name": "Restorative Locket",
+   "entityId": "upgrade_withering_whip",
+   "name": "Rusted Barrel",
    "rank": 13,
    "score": 100
   }
@@ -541,6 +541,9 @@
     "reason": "The 100-point rating for Restorative Locket is questionable. Rusted Barrel is a Tier 1 item that is frequently seen and bought early, and its name is quirky and memorable. Restorative Locket is a Tier 2 vitality active that is easily confused with Restorative Shot, so it is unlikely to be rarer than Rusted Barrel.",
     "outcome": "rejected-by-comparison"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "upgrade_withering_whip"
+  }
  }
 }

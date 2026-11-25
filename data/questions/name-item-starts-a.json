@@ -40,14 +40,14 @@
    "score": 60
   },
   {
-   "entityId": "upgrade_aprounds",
-   "name": "Armor Piercer",
+   "entityId": "upgrade_thermal_detonator",
+   "name": "Alchemical Fire",
    "rank": 4,
    "score": 85
   },
   {
-   "entityId": "upgrade_thermal_detonator",
-   "name": "Alchemical Fire",
+   "entityId": "upgrade_aprounds",
+   "name": "Armor Piercer",
    "rank": 5,
    "score": 100
   }
@@ -236,6 +236,9 @@
     "reason": "Active Reload is a widely recognized, frequently bought Weapon item with a distinctive mechanic. Arcane Surge is a Tier 2 Spirit item that is less iconic, so it should not be rated more obvious than Active Reload; the two should swap or at least Arcane Surge should score higher.",
     "outcome": "applied"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "upgrade_aprounds"
+  }
  }
 }

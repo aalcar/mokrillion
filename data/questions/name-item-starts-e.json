@@ -96,14 +96,14 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_express_shot",
-   "name": "Express Shot",
+   "entityId": "upgrade_reinforcing_casings",
+   "name": "Escalating Resilience",
    "rank": 12,
    "score": 85
   },
   {
-   "entityId": "upgrade_reinforcing_casings",
-   "name": "Escalating Resilience",
+   "entityId": "upgrade_express_shot",
+   "name": "Express Shot",
    "rank": 13,
    "score": 100
   }
@@ -541,6 +541,9 @@
     "reason": "Escalating Resilience is a commonly built weapon item upgraded from Extended Magazine, and it shares the very common 'Es' start with Escalating Exposure. It is not clearly rarer than Express Shot, so 100 pts looks too extreme and it should be closer to 85.",
     "outcome": "rejected-by-comparison"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "upgrade_express_shot"
+  }
  }
 }

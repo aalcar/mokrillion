@@ -1,0 +1,32 @@
+{
+  "name:hero:short:5": {
+    "rarest": "hero_viper"
+  },
+  "name:item:contains:k": {
+    "rarest": "upgrade_veil_walker"
+  },
+  "name:item:contains:w": {
+    "rarest": "upgrade_magic_slow"
+  },
+  "name:item:ends:h": {
+    "rarest": "upgrade_kinetic_sash"
+  },
+  "name:item:one-word": {
+    "rarest": "upgrade_fervor"
+  },
+  "name:item:short:8": {
+    "rarest": "upgrade_fervor"
+  },
+  "name:item:starts:a": {
+    "rarest": "upgrade_aprounds"
+  },
+  "name:item:starts:e": {
+    "rarest": "upgrade_express_shot"
+  },
+  "name:item:starts:g": {
+    "rarest": "upgrade_guardian_ward"
+  },
+  "name:item:starts:r": {
+    "rarest": "upgrade_withering_whip"
+  }
+}

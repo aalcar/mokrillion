@@ -41,20 +41,20 @@
    "score": 60
   },
   {
-   "entityId": "upgrade_kinetic_sash",
-   "name": "Kinetic Dash",
+   "entityId": "upgrade_damage_recycler",
+   "name": "Leech",
    "rank": 4,
    "score": 60
   },
   {
-   "entityId": "upgrade_damage_recycler",
-   "name": "Leech",
+   "entityId": "upgrade_rechargingbullets",
+   "name": "Recharging Rush",
    "rank": 5,
    "score": 85
   },
   {
-   "entityId": "upgrade_rechargingbullets",
-   "name": "Recharging Rush",
+   "entityId": "upgrade_kinetic_sash",
+   "name": "Kinetic Dash",
    "rank": 6,
    "score": 100
   }
@@ -287,6 +287,9 @@
     "reason": "Kinetic Dash is a mid-tier item whose name ends in a very visible 'sh' ending, and 'Dash' is a common word. Players thinking of H endings would reach it about as readily as Leech. Leech ends in 'ch', which players are likely to miss, and it deserves to be rarer than Kinetic Dash.",
     "outcome": "applied"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "upgrade_kinetic_sash"
+  }
  }
 }

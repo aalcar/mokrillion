@@ -152,14 +152,14 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_magic_slow",
-   "name": "Mystic Slow",
+   "entityId": "upgrade_aoe_root",
+   "name": "Vortex Web",
    "rank": 20,
    "score": 85
   },
   {
-   "entityId": "upgrade_aoe_root",
-   "name": "Vortex Web",
+   "entityId": "upgrade_magic_slow",
+   "name": "Mystic Slow",
    "rank": 21,
    "score": 100
   }
@@ -796,6 +796,9 @@
     "reason": "Weakening Headshot starts with W and is a commonly bought T2 item. Surge of Power has no W in the first word, so it should rank rarer than Weakening Headshot.",
     "outcome": "rejected-by-comparison"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "upgrade_magic_slow"
+  }
  }
 }

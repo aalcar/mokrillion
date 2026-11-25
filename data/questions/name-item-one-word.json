@@ -216,20 +216,20 @@
    "score": 85
   },
   {
-   "entityId": "upgrade_fervor",
-   "name": "Frenzy",
-   "rank": 29,
-   "score": 85
-  },
-  {
    "entityId": "upgrade_enchanted_holsters",
    "name": "Spellslinger",
-   "rank": 30,
+   "rank": 29,
    "score": 85
   },
   {
    "entityId": "upgrade_discord",
    "name": "Scourge",
+   "rank": 30,
+   "score": 85
+  },
+  {
+   "entityId": "upgrade_fervor",
+   "name": "Frenzy",
    "rank": 31,
    "score": 100
   }
@@ -1112,6 +1112,9 @@
     "reason": "Scourge is not clearly rarer than Spellslinger, Inhibitor, or Rebuttal; Spellslinger is a Tier 4 item with a distinctive name, and Scourge's short one-word name is easy to recall, so 100 isn't justified as the sole top-obscurity answer.",
     "outcome": "rejected-by-comparison"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "upgrade_fervor"
+  }
  }
 }

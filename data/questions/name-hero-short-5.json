@@ -83,20 +83,20 @@
    "score": 85
   },
   {
-   "entityId": "hero_viper",
-   "name": "Vyper",
-   "rank": 10,
-   "score": 85
-  },
-  {
    "entityId": "hero_familiar",
    "name": "Rem",
-   "rank": 11,
+   "rank": 10,
    "score": 85
   },
   {
    "entityId": "hero_baba",
    "name": "Baba",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "hero_viper",
+   "name": "Vyper",
    "rank": 12,
    "score": 100
   }
@@ -485,6 +485,9 @@
     "reason": "Rem is a healer with a short, memorable name, but Baba is probably the least familiar short-name hero. If either answer takes the 100 points, it should be Baba, not Rem, though the current ordering is only marginally off.",
     "outcome": "ignored-invalid"
    }
-  ]
+  ],
+  "override": {
+   "rarest": "hero_viper"
+  }
  }
 }
