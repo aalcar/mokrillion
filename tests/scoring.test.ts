@@ -4,7 +4,7 @@ import { deterministicCandidates } from "../src/generation/templates.ts";
 import { validateSemantic } from "../src/generation/semantic.ts";
 import type { Ask, AskOptions } from "../src/llm.ts";
 import { loadKnowledge } from "../src/knowledge/queries.ts";
-import { aggregate, kendallTau, percentiles, refineOrder, scoreQuestion, seededRandom, shuffled, spellingCost } from "../src/scoring/rank.ts";
+import { aggregate, kendallTau, summary, percentiles, refineOrder, scoreQuestion, seededRandom, shuffled, spellingCost } from "../src/scoring/rank.ts";
 import { assignTiers } from "../src/scoring/tiers.ts";
 
 const kb = loadKnowledge();
@@ -128,4 +128,10 @@ test("semantic validation needs evidence that appears in the wiki text", async (
   assert.equal(r.candidate!.answerIds.length, 6);
   const few = await validateSemantic(kb, fakeAsk((n) => n === kb.heroes[0].name), proposal);
   assert.equal(few.candidate, null);
+});
+
+test("item summaries include built-in stats even when the description is a side effect", () => {
+  const leech = summary(kb.findByName("Leech")!);
+  assert.match(leech, /Stats: .*Spirit Lifesteal 30.*Bullet Lifesteal 30/);
+  assert.ok(leech.startsWith("Leech - Tier 4"));
 });
