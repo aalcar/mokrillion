@@ -89,12 +89,15 @@ export interface ItemSection {
 export interface ItemAttributes {
   internalKey: string;
   cost: number;
-  tier: 1 | 2 | 3 | 4;
+  /** 1-4 in the main mode; 5 = Street Brawl exclusive. */
+  tier: 1 | 2 | 3 | 4 | 5;
   slot: ItemSlot;
   /** "Passive", "InstantCast", "Press", ... */
   activation: string;
   isActive: boolean;
   isImbue: boolean;
+  /** Street Brawl mode-exclusive item; excluded from main-mode questions. */
+  streetBrawl: boolean;
   /** Entity ids this item upgrades from. */
   components: string[];
   /** Entity ids that use this item as a component. */

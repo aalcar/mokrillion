@@ -3,6 +3,7 @@
 import { config } from "../config.ts";
 import type { Knowledge } from "../knowledge/queries.ts";
 import type { DailyGame } from "./daily.ts";
+import { normalizeName } from "../knowledge/normalize.ts";
 import { matchAnswer } from "./matching.ts";
 
 export type SubmitResult =
@@ -69,8 +70,12 @@ export function submit(s: Session, kb: Knowledge, text: string, now: number): Su
     if (m.kind === "suggest") return { kind: "suggest", names: m.suggestions.map((e) => e.name) };
     const hit = question.answers.find((a) => a.entityId === m.entity.id);
     if (hit) {
-      state.answer = { entityId: hit.entityId, name: hit.name, score: hit.score };
-      return { kind: "correct", name: hit.name, score: hit.score, corrected: m.corrected };
+      // Answered with a weapon name: show both, e.g. "Holliday (Doc's Orders)".
+      const weapon = m.entity.type === "hero" ? m.entity.attributes.weapon.name : null;
+      const viaWeapon = !!weapon && normalizeName(text) === normalizeName(weapon);
+      const name = viaWeapon ? `${hit.name} (${weapon})` : hit.name;
+      state.answer = { entityId: hit.entityId, name, score: hit.score };
+      return { kind: "correct", name, score: hit.score, corrected: m.corrected || viaWeapon };
     }
     return { kind: "wrong", name: m.entity.name, reason: m.entity.type === question.entityType ? "not-valid" : "wrong-type" };
   }

@@ -87,7 +87,8 @@ export function selectQuestions(date: string, pool: ScoredQuestion[], previous: 
   const age = (q: ScoredQuestion) => lastUsed.get(q.question.signature) ?? "";
   for (const candidates of [pool.filter((q) => !recent.has(q.question.signature)), pool]) {
     for (let attempt = 0; attempt < 50; attempt++) {
-      const order = shuffled(candidates, seededRandom(`${date}#${attempt}`)).sort((a, b) => age(a).localeCompare(age(b)));
+      // Secret salt on the host keeps future games unguessable from the public repo; empty in tests.
+      const order = shuffled(candidates, seededRandom(`${date}#${process.env.MOKRILLION_GAME_SALT ?? ""}#${attempt}`)).sort((a, b) => age(a).localeCompare(age(b)));
       const picked: ScoredQuestion[] = [];
       for (const q of order) {
         if (picked.length === g.questionsPerDay) break;

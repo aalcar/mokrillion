@@ -21,6 +21,15 @@ const HERO_CATEGORIES: Record<string, string> = {
     "Name a hero whose Spirit Resist differs from a standard hero's, either at base or in how it grows as they level up.",
 };
 
+/**
+ * Heroes whose whole name is a dictionary word, hand-picked. Generous on purpose (units like Kelvin and Rem,
+ * "billy" as in billy club): a player who names one should not be told it doesn't fit.
+ */
+const REAL_WORD_HEROES = new Set([
+  "Bebop", "Billy", "Calico", "Drifter", "Dynamo", "Graves", "Haze", "Ivy", "Kelvin", "Lash", "Mirage",
+  "Paradox", "Pocket", "Rem", "Seven", "Shiv", "Silver", "Victor", "Violet", "Viscous", "Warden", "Wraith",
+]);
+
 /** Numeric value of a card prop such as 12, "0.75m" or "20%"; null if not numeric. */
 export function numericValue(v: number | string): number | null {
   const n = typeof v === "number" ? v : parseFloat(v);
@@ -60,8 +69,9 @@ function nameQuestions(kb: Knowledge): Omit<CandidateQuestion, "validation">[] {
     const pool = type === "hero" ? kb.heroes : kb.items;
     const noun = type === "hero" ? "a hero" : "an item";
     const maxContains = type === "hero" ? 15 : 25;
-    const q = (sig: string, prompt: string, match: (letters: string, name: string) => boolean) =>
-      out.push({ signature: `name:${type}:${sig}`, prompt, category: "name-trivia", entityType: type,
+    // Word questions get their own category so they are not capped with the letter-spelling ones.
+    const q = (sig: string, prompt: string, match: (letters: string, name: string) => boolean, category = "name-trivia") =>
+      out.push({ signature: `name:${type}:${sig}`, prompt, category, entityType: type,
         answerIds: pool.filter((e) => match(nameLetters(e.name), e.name)).map((e) => e.id) });
     for (const c of "abcdefghijklmnopqrstuvwxyz") {
       const C = c.toUpperCase();
@@ -75,8 +85,24 @@ function nameQuestions(kb: Knowledge): Omit<CandidateQuestion, "validation">[] {
     const lengths = pool.map((e) => nameLetters(e.name).length).sort((a, b) => a - b);
     const short = lengths[Math.min(9, lengths.length - 1)];
     q(`short:${short}`, `Name ${noun} whose name has ${short} letters or fewer (letters only, not spaces or symbols).${type === "hero" ? ' Ignore a leading "The".' : ""}`, (l) => l.length <= short);
-    if (type === "hero") q("multi-word", "Name a hero whose name is more than one word.", (_, name) => name.trim().split(/\s+/).length > 1);
-    else q("one-word", "Name an item whose name is a single word.", (_, name) => !/\s/.test(name.trim()));
+    if (type === "hero") {
+      q("multi-word", "Name a hero whose name is more than one word.", (_, name) => name.trim().split(/\s+/).length > 1);
+      q("real-word", "Name a hero whose name is also an ordinary English word (a noun or adjective you'd find in a dictionary).",
+        (_, name) => REAL_WORD_HEROES.has(name), "name-word");
+    } else {
+      q("one-word", "Name an item whose name is a single word.", (_, name) => !/\s/.test(name.trim()));
+      // A word shared by several item names, singular and plural together ("Bullet" covers Toxic Bullets).
+      const stem = (w: string) => w.replace(/s$/, "");
+      const words = (name: string) => new Set(name.toLowerCase().split(/[^a-z]+/).filter((w) => w.length > 2).map(stem));
+      const counts = new Map<string, number>();
+      for (const e of pool) for (const w of words(e.name)) counts.set(w, (counts.get(w) ?? 0) + 1);
+      for (const [w, n] of counts) {
+        if (n < config.minPool) continue;
+        const W = w[0].toUpperCase() + w.slice(1);
+        const plural = pool.some((e) => new RegExp(`\\b${w}s\\b`, "i").test(e.name)) ? ` or "${W}s"` : "";
+        q(`word:${w}`, `Name an item with the word "${W}"${plural} in its name.`, (_, name) => words(name).has(w), "name-word");
+      }
+    }
   }
   return out;
 }
@@ -118,10 +144,15 @@ export function deterministicCandidates(kb: Knowledge): CandidateQuestion[] {
     add({ signature: `hero-category:${cat}`, prompt, category: "hero-weapon", entityType: "hero",
       answerIds: ids(heroes.filter((h) => h.attributes.categories.includes(cat))) }, `in wiki category "${cat}"`);
   }
-  const heroThreshold = (key: string, get: (h: Hero) => number, dir: "high" | "low", text: (x: number) => string) => {
-    const x = threshold(heroes.map(get), 10, dir);
+  const heroThreshold = (key: string, get: (h: Hero) => number, dir: "high" | "low", text: (x: number) => string,
+    category = "hero-base-stat", target = 10) => {
+    // Round the cut-off the way the prompt shows it, so the prompt and the answer pool always agree.
+    const raw = threshold(heroes.map(get), target, dir);
+    const step = Math.abs(raw) >= 100 ? 1 : 10; // whole numbers for big values (bullet speed), one decimal otherwise
+    const x = (dir === "high" ? Math.floor : Math.ceil)(raw * step) / step;
     const pool = heroes.filter((h) => (dir === "high" ? get(h) >= x : get(h) <= x));
-    add({ signature: `hero-stat:${key}:${dir}:${x}`, prompt: text(x), category: "hero-base-stat", entityType: "hero",
+    if (pool.length > 2 * target) return; // a big tie at the cut-off makes the question meaningless
+    add({ signature: `hero-stat:${key}:${dir}:${x}`, prompt: text(x), category, entityType: "hero",
       answerIds: ids(pool) }, `${key} ${dir === "high" ? ">=" : "<="} ${x}`);
   };
   heroThreshold("maxHealth", (h) => h.attributes.maxHealth, "high",
@@ -130,6 +161,40 @@ export function deterministicCandidates(kb: Knowledge): CandidateQuestion[] {
     (x) => `Name a hero whose base clip size is at least ${x} (no items or boons).`);
   heroThreshold("clipSize", (h) => h.attributes.weapon.clipSize, "low",
     (x) => `Name a hero whose base clip size is ${x} or fewer (no items or boons).`);
+
+  heroThreshold("sprintSpeed", (h) => h.attributes.sprintSpeed, "high",
+    (x) => `Name a hero with a base sprint speed of at least ${x} m/s.`);
+
+  // Weapon stats ("hero-weapon"): answers are heroes, weapon names also accepted.
+  const w = (h: Hero) => h.attributes.weapon;
+  heroThreshold("roundsPerSecond", (h) => w(h).roundsPerSecond, "high",
+    (x) => `Name a hero whose weapon fires at least ${x} rounds per second.`, "hero-weapon");
+  heroThreshold("roundsPerSecond", (h) => w(h).roundsPerSecond, "low",
+    (x) => `Name a hero whose weapon fires ${x} rounds per second or fewer.`, "hero-weapon");
+  heroThreshold("bulletSpeed", (h) => w(h).bulletSpeed, "high",
+    (x) => `Name a hero whose bullets travel at least ${x} m/s.`, "hero-weapon");
+  heroThreshold("bulletSpeed", (h) => w(h).bulletSpeed, "low",
+    (x) => `Name a hero whose bullets travel ${x} m/s or slower.`, "hero-weapon");
+  heroThreshold("bulletDamage", (h) => w(h).bulletDamagePerPellet, "high",
+    (x) => `Name a hero whose base damage per bullet (or pellet) is at least ${x}.`, "hero-weapon");
+
+  add({ signature: "item-imbue", prompt: "Name an item that imbues (permanently upgrades) one of your abilities.", category: "item-effect",
+    entityType: "item", answerIds: ids(items.filter((i) => i.attributes.isImbue)) }, "isImbue");
+  // Stat bonus within one slot, e.g. "a Vitality item with Spirit Power", when it narrows the stat question.
+  for (const [label, list] of byLabel) for (const slot of ["Weapon", "Vitality", "Spirit"] as const) {
+    const inSlot = list.filter((i) => i.attributes.slot === slot);
+    if (inSlot.length === list.length || inSlot.length > 15) continue;
+    add({ signature: `item-stat-slot:${label}:${slot}`, category: "item-stat-bonus", entityType: "item", answerIds: ids(inSlot),
+      prompt: `Name a ${slot} item that gives a built-in ${label.replace(/^Bonus /, "")} bonus (not counting conditional, stacking or active effects).` },
+      `slot == ${slot} && innate unconditional prop labelled "${label}" with value > 0`);
+  }
+
+  // Street Brawl mode-exclusive items.
+  const sb = kb.streetBrawlItems;
+  const sbQ = (sig: string, prompt: string, list: Item[], criterion: string) =>
+    add({ signature: `street-brawl:${sig}`, prompt, category: "street-brawl", entityType: "item", answerIds: ids(list) }, criterion);
+  sbQ("all", "Name an item that is only sold in Street Brawl.", sb, "streetBrawl");
+  sbQ("active", "Name an item with an active ability that is only sold in Street Brawl.", sb.filter((i) => i.attributes.isActive), "streetBrawl && isActive");
 
   for (const q of nameQuestions(kb)) add(q, `name spelling rule: ${q.signature}`);
 

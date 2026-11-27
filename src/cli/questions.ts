@@ -1,8 +1,9 @@
 // Question pipeline CLI. Every step writes inspectable JSON under data/.
 //   npm run questions -- list
-//   npm run questions -- propose item 8        (LLM: propose + validate semantic questions)
+//   npm run questions -- propose item 8 [--theme "movement items"]   (LLM: propose + validate semantic questions)
 //   npm run questions -- score item-cost:3200  (LLM: rank + score; or "score 12" by list index)
-//   npm run questions -- show item-cost:3200
+//   npm run questions -- score-new [N]         (LLM: score every question not saved yet, or the first N)
+//   npm run questions -- show item-cost:3200   (or "show 12" by list index)
 // Add --no-cache to force fresh LLM calls (e.g. to measure ranking stability).
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
@@ -22,7 +23,10 @@ interface SemanticFile {
   rejected: { proposal: Proposal; reason: string; notes: string[] }[];
 }
 
-const args = process.argv.slice(2).filter((a) => a !== "--no-cache");
+const argv = process.argv.slice(2);
+const themeAt = argv.indexOf("--theme");
+const theme = themeAt >= 0 ? argv.splice(themeAt, 2)[1] : undefined;
+const args = argv.filter((a) => a !== "--no-cache");
 const ask = createAsk({ useCache: !process.argv.includes("--no-cache") });
 const kb = loadKnowledge();
 const slug = (sig: string) => sig.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -34,6 +38,14 @@ function readSemantic(): SemanticFile {
 
 function allCandidates(): CandidateQuestion[] {
   return [...deterministicCandidates(kb), ...readSemantic().accepted];
+}
+
+/** A candidate by its `list` index or its signature. */
+function findCandidate(arg: string): CandidateQuestion {
+  const all = allCandidates();
+  const q = /^\d+$/.test(arg) ? all[Number(arg)] : all.find((x) => x.signature === arg);
+  if (!q) throw new Error(`no candidate question "${arg}" (see: list)`);
+  return q;
 }
 
 function printScored(s: ScoredQuestion) {
@@ -71,7 +83,7 @@ try {
     if (type !== "hero" && type !== "item") throw new Error("usage: propose <hero|item> [count]");
     const file = readSemantic();
     const avoid = [...allCandidates().filter((q) => q.entityType === type).map((q) => q.prompt), ...file.rejected.map((r) => r.proposal.prompt)];
-    const proposals = await proposeSemantic(kb, ask, type, Number(rest[1] ?? 8), avoid);
+    const proposals = await proposeSemantic(kb, ask, type, Number(rest[1] ?? 8), avoid, theme);
     for (const p of proposals) {
       const r = await validateSemantic(kb, ask, p);
       if (r.candidate && !file.accepted.some((q) => q.signature === r.candidate!.signature)) {
@@ -86,13 +98,27 @@ try {
     mkdirSync(join(DATA, "candidates"), { recursive: true });
     writeFileSync(SEMANTIC_FILE, JSON.stringify(file, null, 1));
   } else if (cmd === "score") {
-    const all = allCandidates();
-    const q = /^\d+$/.test(rest[0] ?? "") ? all[Number(rest[0])] : all.find((x) => x.signature === rest.join(" "));
-    if (!q) throw new Error(`no candidate question "${rest.join(" ")}" (see: list)`);
+    const q = findCandidate(rest.join(" "));
     const scored = await scoreQuestion(kb, ask, q);
     mkdirSync(QUESTIONS_DIR, { recursive: true });
     writeFileSync(questionFile(q.signature), JSON.stringify(scored, null, 1));
     printScored(scored);
+  } else if (cmd === "score-new") {
+    // Score every candidate without a saved file (optionally the first N); stops cleanly at the budget.
+    const todo = allCandidates().filter((q) => !existsSync(questionFile(q.signature))).slice(0, rest[0] ? Number(rest[0]) : undefined);
+    console.log(`${todo.length} unscored questions`);
+    mkdirSync(QUESTIONS_DIR, { recursive: true });
+    for (const [i, q] of todo.entries()) {
+      try {
+        const scored = await scoreQuestion(kb, ask, q);
+        writeFileSync(questionFile(q.signature), JSON.stringify(scored, null, 1));
+        const top = scored.answers.find((a) => a.score === 100)!;
+        console.log(`[${i + 1}/${todo.length}] ${q.signature}: Mo-Krillion ${kb.get(top.entityId)!.name}`);
+      } catch (e) {
+        console.error(`[${i + 1}/${todo.length}] ${q.signature}: ${(e as Error).message}`);
+        if (/budget/.test((e as Error).message)) break;
+      }
+    }
   } else if (cmd === "eval") {
     // Compare stored scores with human judgments (data/eval/judgments.json).
     type J = { signature: string; note: string };
@@ -126,10 +152,16 @@ try {
     }
     console.log(`\n${tally.hit}/${tally.total} human judgments matched`);
   } else if (cmd === "set-rarest") {
-    // questions set-rarest <signature> <answer name>   (picks the 100-point answer; no LLM calls)
-    const [sig, ...nameParts] = rest;
-    const entity = kb.findByName(nameParts.join(" "));
-    if (!sig || !entity) throw new Error("usage: set-rarest <signature> <answer name>");
+    // questions set-rarest <signature|index> <answer name>   (picks the 100-point answer; no LLM calls)
+    // Signatures and names can both contain spaces, so take the longest leading words that name a candidate.
+    const all = allCandidates();
+    const split = [...rest.keys()].slice(1).reverse().map((i) => {
+      const arg = rest.slice(0, i).join(" ");
+      return { q: /^\d+$/.test(arg) ? all[Number(arg)] : all.find((x) => x.signature === arg), name: rest.slice(i).join(" ") };
+    }).find((x) => x.q);
+    const entity = split && kb.findByName(split.name);
+    if (!split || !entity) throw new Error("usage: set-rarest <signature|index> <answer name>");
+    const sig = split.q!.signature;
     const overrides = loadOverrides();
     overrides[sig] = { rarest: entity.id };
     writeFileSync(OVERRIDES_FILE, JSON.stringify(overrides, null, 2) + "\n");
@@ -139,12 +171,12 @@ try {
     }
     console.log(`${sig}: 100 points -> ${entity.name}`);
   } else if (cmd === "show") {
-    const file = questionFile(rest.join(" "));
+    const file = questionFile(findCandidate(rest.join(" ")).signature);
     if (!existsSync(file)) throw new Error(`not scored yet: ${rest.join(" ")}`);
     printScored(JSON.parse(readFileSync(file, "utf8")));
   } else {
-    console.log("usage: questions list | propose <hero|item> [count] | score <signature|index> | show <signature> | eval | set-rarest <signature> <answer>  [--no-cache]");
+    console.log("usage: questions list | propose <hero|item> [count] [--theme <text>] | score <signature|index> | score-new [N] | show <signature|index> | eval | set-rarest <signature|index> <answer>  [--no-cache]");
   }
 } finally {
-  if (cmd === "propose" || cmd === "score") console.log(`\n${usageSummary()}`);
+  if (cmd === "propose" || cmd === "score" || cmd === "score-new") console.log(`\n${usageSummary()}`);
 }

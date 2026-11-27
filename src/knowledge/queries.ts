@@ -7,7 +7,9 @@ export interface Knowledge {
   version: string;
   entities: Entity[];
   heroes: Hero[];
+  /** Main-mode items only. */
   items: Item[];
+  streetBrawlItems: Item[];
   get(id: string): Entity | undefined;
   /** Exact lookup by normalized canonical name or alias. Fuzzy matching lives in the game layer. */
   findByName(text: string): Entity | undefined;
@@ -27,7 +29,8 @@ export function buildKnowledge(file: KnowledgeFile): Knowledge {
     version: file.knowledgeVersion,
     entities: file.entities,
     heroes: file.entities.filter((e): e is Hero => e.type === "hero"),
-    items: file.entities.filter((e): e is Item => e.type === "item"),
+    items: file.entities.filter((e): e is Item => e.type === "item" && !e.attributes.streetBrawl),
+    streetBrawlItems: file.entities.filter((e): e is Item => e.type === "item" && e.attributes.streetBrawl),
     get: (id) => byId.get(id),
     findByName: (text) => byName.get(normalizeName(text)),
   };

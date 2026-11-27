@@ -1,0 +1,434 @@
+{
+ "question": {
+  "signature": "hero-stat:bulletSpeed:high:650",
+  "prompt": "Name a hero whose bullets travel at least 650 m/s.",
+  "category": "hero-weapon",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_astro",
+   "hero_forge",
+   "hero_ghost",
+   "hero_haze",
+   "hero_hornet",
+   "hero_inferno",
+   "hero_mirage",
+   "hero_priest",
+   "hero_vampirebat",
+   "hero_werewolf"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "bulletSpeed >= 650"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-27T00:42:28.862Z",
+ "answers": [
+  {
+   "entityId": "hero_hornet",
+   "name": "Vindicta",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_priest",
+   "name": "Venator",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_astro",
+   "name": "Holliday",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "hero_haze",
+   "name": "Haze",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_mirage",
+   "name": "Mirage",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "hero_ghost",
+   "name": "Lady Geist",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "hero_inferno",
+   "name": "Infernus",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "hero_vampirebat",
+   "name": "Mina",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "hero_forge",
+   "name": "McGinnis",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "hero_werewolf",
+   "name": "Silver",
+   "rank": 10,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "hero_astro",
+    "name": "Holliday",
+    "passPositions": [
+     1,
+     1,
+     2,
+     1,
+     1
+    ],
+    "borda": 0.13333333333333336,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "cowboy trick-shot marksman with a rifle",
+    "popularity": 28.35,
+    "popularityObscurity": 0.6666666666666666,
+    "spellingCost": 8,
+    "spellingObscurity": 0.8888888888888888,
+    "key": 0.2511111111111111
+   },
+   {
+    "id": "hero_forge",
+    "name": "McGinnis",
+    "passPositions": [
+     8,
+     9,
+     7,
+     8,
+     9
+    ],
+    "borda": 0.9111111111111111,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "turret-controlling mystic with a spin-up gun",
+    "popularity": 12.06,
+    "popularityObscurity": 0.8888888888888888,
+    "spellingCost": 3,
+    "spellingObscurity": 0,
+    "key": 0.8622222222222222
+   },
+   {
+    "id": "hero_ghost",
+    "name": "Lady Geist",
+    "passPositions": [
+     5,
+     5,
+     6,
+     5,
+     5
+    ],
+    "borda": 0.5777777777777777,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "health-sacrificing mystic with life drain",
+    "popularity": 37.57,
+    "popularityObscurity": 0.3333333333333333,
+    "spellingCost": 4,
+    "spellingObscurity": 0.2222222222222222,
+    "key": 0.5233333333333333
+   },
+   {
+    "id": "hero_haze",
+    "name": "Haze",
+    "passPositions": [
+     3,
+     3,
+     4,
+     3,
+     4
+    ],
+    "borda": 0.37777777777777777,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "sleep dagger assassin with fast sustained spray",
+    "popularity": 57.37,
+    "popularityObscurity": 0,
+    "spellingCost": 4,
+    "spellingObscurity": 0.2222222222222222,
+    "key": 0.31333333333333335
+   },
+   {
+    "id": "hero_hornet",
+    "name": "Vindicta",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "sniper with long-range rifle shots",
+    "popularity": 30.86,
+    "popularityObscurity": 0.5555555555555556,
+    "spellingCost": 8,
+    "spellingObscurity": 0.8888888888888888,
+    "key": 0.12777777777777777
+   },
+   {
+    "id": "hero_inferno",
+    "name": "Infernus",
+    "passPositions": [
+     6,
+     6,
+     5,
+     6,
+     6
+    ],
+    "borda": 0.6444444444444444,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "fire-based mystic with burn damage",
+    "popularity": 39.43,
+    "popularityObscurity": 0.1111111111111111,
+    "spellingCost": 8,
+    "spellingObscurity": 0.8888888888888888,
+    "key": 0.5766666666666667
+   },
+   {
+    "id": "hero_mirage",
+    "name": "Mirage",
+    "passPositions": [
+     4,
+     4,
+     3,
+     4,
+     3
+    ],
+    "borda": 0.39999999999999997,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "mobile assassin with tornado and scarabs",
+    "popularity": 9.38,
+    "popularityObscurity": 1,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5,
+    "key": 0.495
+   },
+   {
+    "id": "hero_priest",
+    "name": "Venator",
+    "passPositions": [
+     2,
+     2,
+     1,
+     2,
+     2
+    ],
+    "borda": 0.2,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "long-range marksman with a precise rifle",
+    "popularity": 39.11,
+    "popularityObscurity": 0.2222222222222222,
+    "spellingCost": 7,
+    "spellingObscurity": 0.6666666666666666,
+    "key": 0.22666666666666668
+   },
+   {
+    "id": "hero_vampirebat",
+    "name": "Mina",
+    "passPositions": [
+     7,
+     7,
+     8,
+     7,
+     7
+    ],
+    "borda": 0.8,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "vampire mystic with a slashing and ranged hybrid kit",
+    "popularity": 34.02,
+    "popularityObscurity": 0.4444444444444444,
+    "spellingCost": 4,
+    "spellingObscurity": 0.2222222222222222,
+    "key": 0.7177777777777778
+   },
+   {
+    "id": "hero_werewolf",
+    "name": "Silver",
+    "passPositions": [
+     9,
+     8,
+     9,
+     9,
+     8
+    ],
+    "borda": 0.9555555555555555,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "werewolf brawler with shotgun and melee",
+    "popularity": 19.71,
+    "popularityObscurity": 0.7777777777777778,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5,
+    "key": 0.9061111111111112
+   }
+  ],
+  "passAgreement": 0.8933333333333333,
+  "orderBeforeRefinement": [
+   "hero_hornet",
+   "hero_priest",
+   "hero_astro",
+   "hero_haze",
+   "hero_mirage",
+   "hero_ghost",
+   "hero_inferno",
+   "hero_vampirebat",
+   "hero_forge",
+   "hero_werewolf"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_inferno",
+    "b": "hero_vampirebat",
+    "purpose": "rare-contenders",
+    "rarer": "hero_vampirebat"
+   },
+   {
+    "a": "hero_inferno",
+    "b": "hero_forge",
+    "purpose": "rare-contenders",
+    "rarer": "hero_forge"
+   },
+   {
+    "a": "hero_inferno",
+    "b": "hero_werewolf",
+    "purpose": "rare-contenders",
+    "rarer": "hero_werewolf"
+   },
+   {
+    "a": "hero_vampirebat",
+    "b": "hero_forge",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_vampirebat",
+    "b": "hero_werewolf",
+    "purpose": "rare-contenders",
+    "rarer": "hero_werewolf"
+   },
+   {
+    "a": "hero_forge",
+    "b": "hero_werewolf",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_hornet",
+    "b": "hero_priest",
+    "purpose": "tier-boundary",
+    "rarer": "hero_priest"
+   },
+   {
+    "a": "hero_astro",
+    "b": "hero_haze",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "hero_haze",
+    "b": "hero_priest",
+    "purpose": "review",
+    "rarer": "hero_haze"
+   },
+   {
+    "a": "hero_inferno",
+    "b": "hero_ghost",
+    "purpose": "review",
+    "rarer": null
+   },
+   {
+    "a": "hero_forge",
+    "b": "hero_vampirebat",
+    "purpose": "review",
+    "rarer": null
+   }
+  ],
+  "review": [
+   {
+    "name": "Haze",
+    "compareWith": "Venator",
+    "claim": "should_be_more_obvious",
+    "reason": "Haze is a very popular, well-known gun-focused assassin whose role is spraying bullets, so she should come to mind about as readily as Venator, who is a less-played marksman. Placing her at 60 versus Venator at 30 overstates how obscure she is.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Infernus",
+    "compareWith": "Lady Geist",
+    "claim": "should_be_more_obvious",
+    "reason": "Infernus is one of the most recognized and heavily played gun-using heroes, so he is likely thought of more readily than Lady Geist. Putting him at 85 while Geist is at 60 rests on an implausible assumption about player familiarity.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "McGinnis",
+    "compareWith": "Mina",
+    "claim": "should_be_more_obvious",
+    "reason": "McGinnis is a long-established, widely played hero with a heavy-gun identity, so players recall his weapon readily. Mina is newer and less associated with bullet speed, so McGinnis should score lower than or equal to her.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}
