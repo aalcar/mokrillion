@@ -4,7 +4,7 @@
 //   npm run game -- play [YYYY-MM-DD]                  play in the terminal (default: today)
 import { createInterface } from "node:readline/promises";
 import { addDays, buildGame, gameDate, loadGame, loadGames, loadScoredQuestions, saveGame } from "../game/daily.ts";
-import { createSession, nextQuestion, results, startQuestion, submit, timeLeftMs } from "../game/session.ts";
+import { createSession, nextQuestion, results, shareText, startQuestion, submit, timeLeftMs } from "../game/session.ts";
 import { loadKnowledge } from "../knowledge/queries.ts";
 
 const [cmd, ...args] = process.argv.slice(2);
@@ -41,7 +41,7 @@ async function play(date: string) {
   const kb = loadKnowledge();
   const session = createSession(game);
   const rl = createInterface({ input: process.stdin, output: process.stdout });
-  console.log(`\nMokrillion ${date}: ${game.questions.length} questions, 30 seconds each. Rarer correct answers score more.\n`);
+  console.log(`\nMokrillion ${date}: ${game.questions.length} questions, 30 seconds each. Rarer correct answers score more; the rarest is the Mo-Krillion (100).\n`);
 
   do {
     const q = game.questions[session.current];
@@ -63,7 +63,7 @@ async function play(date: string) {
       if (!text.trim()) continue;
       const r = submit(session, kb, text, Date.now());
       if (r.kind === "correct") {
-        console.log(`Correct${r.corrected ? ` (${r.name})` : ""}! +${r.score} points`);
+        console.log(r.score === 100 ? `${r.name}: Mo-Krillion! +100 points` : `Correct${r.corrected ? ` (${r.name})` : ""}! +${r.score} points`);
         break;
       }
       if (r.kind === "timeout" || r.kind === "closed") {
@@ -81,6 +81,7 @@ async function play(date: string) {
   console.log(`\nResults for ${date}: ${r.total} / ${r.max}\n`);
   r.questions.forEach((q, i) => {
     console.log(`Q${i + 1}. ${q.prompt}`);
-    console.log(`    you: ${q.answer ?? "-"} (${q.score} pts)   100-pt answer: ${q.topAnswer}   (${q.answerCount} valid answers)`);
+    console.log(`    you: ${q.answer ?? "-"} (${q.score} pts)   Mo-Krillion: ${q.topAnswer}   (${q.answerCount} valid answers)`);
   });
+  console.log(`\n${shareText(session, "You")}`);
 }
