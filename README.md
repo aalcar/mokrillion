@@ -72,7 +72,7 @@ out of credit, it switches to Gemini.
 npm run questions -- list                         # all questions
 npm run questions -- score <number|signature>     # rank answers and save (~$0.06 on Sonnet)
 npm run questions -- score-new [N]                # score every question not saved yet (stops at the budget)
-npm run questions -- show <signature>             # see a saved table
+npm run questions -- show <number|signature>      # see a saved table
 npm run questions -- set-rarest <signature> <answer>   # pick the Mo-Krillion (100-point answer) yourself
 npm run questions -- propose hero 8               # have the LLM write new questions
 ```

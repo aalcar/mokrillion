@@ -3,7 +3,7 @@
 //   npm run questions -- propose item 8        (LLM: propose + validate semantic questions)
 //   npm run questions -- score item-cost:3200  (LLM: rank + score; or "score 12" by list index)
 //   npm run questions -- score-new [N]         (LLM: score every question not saved yet, or the first N)
-//   npm run questions -- show item-cost:3200
+//   npm run questions -- show item-cost:3200   (or "show 12" by list index)
 // Add --no-cache to force fresh LLM calls (e.g. to measure ranking stability).
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
@@ -35,6 +35,14 @@ function readSemantic(): SemanticFile {
 
 function allCandidates(): CandidateQuestion[] {
   return [...deterministicCandidates(kb), ...readSemantic().accepted];
+}
+
+/** A candidate by its `list` index or its signature. */
+function findCandidate(arg: string): CandidateQuestion {
+  const all = allCandidates();
+  const q = /^\d+$/.test(arg) ? all[Number(arg)] : all.find((x) => x.signature === arg);
+  if (!q) throw new Error(`no candidate question "${arg}" (see: list)`);
+  return q;
 }
 
 function printScored(s: ScoredQuestion) {
@@ -87,9 +95,7 @@ try {
     mkdirSync(join(DATA, "candidates"), { recursive: true });
     writeFileSync(SEMANTIC_FILE, JSON.stringify(file, null, 1));
   } else if (cmd === "score") {
-    const all = allCandidates();
-    const q = /^\d+$/.test(rest[0] ?? "") ? all[Number(rest[0])] : all.find((x) => x.signature === rest.join(" "));
-    if (!q) throw new Error(`no candidate question "${rest.join(" ")}" (see: list)`);
+    const q = findCandidate(rest.join(" "));
     const scored = await scoreQuestion(kb, ask, q);
     mkdirSync(QUESTIONS_DIR, { recursive: true });
     writeFileSync(questionFile(q.signature), JSON.stringify(scored, null, 1));
@@ -156,11 +162,11 @@ try {
     }
     console.log(`${sig}: 100 points -> ${entity.name}`);
   } else if (cmd === "show") {
-    const file = questionFile(rest.join(" "));
+    const file = questionFile(findCandidate(rest.join(" ")).signature);
     if (!existsSync(file)) throw new Error(`not scored yet: ${rest.join(" ")}`);
     printScored(JSON.parse(readFileSync(file, "utf8")));
   } else {
-    console.log("usage: questions list | propose <hero|item> [count] | score <signature|index> | score-new [N] | show <signature> | eval | set-rarest <signature> <answer>  [--no-cache]");
+    console.log("usage: questions list | propose <hero|item> [count] | score <signature|index> | score-new [N] | show <signature|index> | eval | set-rarest <signature> <answer>  [--no-cache]");
   }
 } finally {
   if (cmd === "propose" || cmd === "score" || cmd === "score-new") console.log(`\n${usageSummary()}`);
