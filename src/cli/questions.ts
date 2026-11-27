@@ -149,10 +149,16 @@ try {
     }
     console.log(`\n${tally.hit}/${tally.total} human judgments matched`);
   } else if (cmd === "set-rarest") {
-    // questions set-rarest <signature> <answer name>   (picks the 100-point answer; no LLM calls)
-    const [sig, ...nameParts] = rest;
-    const entity = kb.findByName(nameParts.join(" "));
-    if (!sig || !entity) throw new Error("usage: set-rarest <signature> <answer name>");
+    // questions set-rarest <signature|index> <answer name>   (picks the 100-point answer; no LLM calls)
+    // Signatures and names can both contain spaces, so take the longest leading words that name a candidate.
+    const all = allCandidates();
+    const split = [...rest.keys()].slice(1).reverse().map((i) => {
+      const arg = rest.slice(0, i).join(" ");
+      return { q: /^\d+$/.test(arg) ? all[Number(arg)] : all.find((x) => x.signature === arg), name: rest.slice(i).join(" ") };
+    }).find((x) => x.q);
+    const entity = split && kb.findByName(split.name);
+    if (!split || !entity) throw new Error("usage: set-rarest <signature|index> <answer name>");
+    const sig = split.q!.signature;
     const overrides = loadOverrides();
     overrides[sig] = { rarest: entity.id };
     writeFileSync(OVERRIDES_FILE, JSON.stringify(overrides, null, 2) + "\n");
@@ -166,7 +172,7 @@ try {
     if (!existsSync(file)) throw new Error(`not scored yet: ${rest.join(" ")}`);
     printScored(JSON.parse(readFileSync(file, "utf8")));
   } else {
-    console.log("usage: questions list | propose <hero|item> [count] | score <signature|index> | score-new [N] | show <signature|index> | eval | set-rarest <signature> <answer>  [--no-cache]");
+    console.log("usage: questions list | propose <hero|item> [count] | score <signature|index> | score-new [N] | show <signature|index> | eval | set-rarest <signature|index> <answer>  [--no-cache]");
   }
 } finally {
   if (cmd === "propose" || cmd === "score" || cmd === "score-new") console.log(`\n${usageSummary()}`);
