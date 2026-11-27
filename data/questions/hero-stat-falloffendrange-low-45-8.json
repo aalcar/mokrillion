@@ -1,0 +1,497 @@
+{
+ "question": {
+  "signature": "hero-stat:falloffEndRange:low:45.8",
+  "prompt": "Name a hero whose weapon damage fully falls off by 45.8m or less.",
+  "category": "hero-weapon",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_atlas",
+   "hero_baba",
+   "hero_chessmaster",
+   "hero_drifter",
+   "hero_fencer",
+   "hero_necro",
+   "hero_punkgoat",
+   "hero_shiv",
+   "hero_synth",
+   "hero_viper",
+   "hero_werewolf",
+   "hero_yamato"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "falloffEndRange <= 45.8"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "cache only",
+ "generatedAt": "2026-11-27T00:56:09.385Z",
+ "answers": [
+  {
+   "entityId": "hero_atlas",
+   "name": "Abrams",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_shiv",
+   "name": "Shiv",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_punkgoat",
+   "name": "Billy",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "hero_yamato",
+   "name": "Yamato",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_werewolf",
+   "name": "Silver",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "hero_synth",
+   "name": "Pocket",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "hero_drifter",
+   "name": "Drifter",
+   "rank": 7,
+   "score": 60
+  },
+  {
+   "entityId": "hero_viper",
+   "name": "Vyper",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "hero_necro",
+   "name": "Graves",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "hero_baba",
+   "name": "Baba",
+   "rank": 10,
+   "score": 85
+  },
+  {
+   "entityId": "hero_fencer",
+   "name": "Apollo",
+   "rank": 11,
+   "score": 85
+  },
+  {
+   "entityId": "hero_chessmaster",
+   "name": "Solomon",
+   "rank": 12,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "hero_atlas",
+    "name": "Abrams",
+    "passPositions": [
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0.01818181818181818,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "shotgun tank who fights up close",
+    "popularity": 39.95,
+    "popularityObscurity": 0.09090909090909091,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5909090909090909,
+    "key": 0.05772727272727273
+   },
+   {
+    "id": "hero_baba",
+    "name": "Baba",
+    "passPositions": [
+     10,
+     10,
+     10,
+     7,
+     10
+    ],
+    "borda": 0.8545454545454545,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "support mystic with short-range gun",
+    "popularity": 10.87,
+    "popularityObscurity": 0.9090909090909091,
+    "spellingCost": 4,
+    "spellingObscurity": 0.045454545454545456,
+    "key": 0.8222727272727273
+   },
+   {
+    "id": "hero_chessmaster",
+    "name": "Solomon",
+    "passPositions": [
+     11,
+     11,
+     11,
+     9,
+     11
+    ],
+    "borda": 0.9636363636363636,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "chess-themed mystic with a pistol",
+    "popularity": 9.61,
+    "popularityObscurity": 1,
+    "spellingCost": 7,
+    "spellingObscurity": 0.9545454545454546,
+    "key": 0.9686363636363637
+   },
+   {
+    "id": "hero_drifter",
+    "name": "Drifter",
+    "passPositions": [
+     8,
+     7,
+     6,
+     8,
+     6
+    ],
+    "borda": 0.6363636363636365,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "melee-heavy assassin with short-range gun",
+    "popularity": 45.26,
+    "popularityObscurity": 0,
+    "spellingCost": 7,
+    "spellingObscurity": 0.9545454545454546,
+    "key": 0.5568181818181819
+   },
+   {
+    "id": "hero_fencer",
+    "name": "Apollo",
+    "passPositions": [
+     9,
+     9,
+     8,
+     11,
+     8
+    ],
+    "borda": 0.8181818181818181,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "sword and spear duelist assassin",
+    "popularity": 21.79,
+    "popularityObscurity": 0.6363636363636364,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5909090909090909,
+    "key": 0.7795454545454545
+   },
+   {
+    "id": "hero_necro",
+    "name": "Graves",
+    "passPositions": [
+     7,
+     8,
+     9,
+     6,
+     9
+    ],
+    "borda": 0.7090909090909092,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "skeleton summoner with shotgun-like gun",
+    "popularity": 32.51,
+    "popularityObscurity": 0.2727272727272727,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5909090909090909,
+    "key": 0.6377272727272728
+   },
+   {
+    "id": "hero_punkgoat",
+    "name": "Billy",
+    "passPositions": [
+     5,
+     4,
+     2,
+     3,
+     2
+    ],
+    "borda": 0.2909090909090909,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "melee punching brawler, close range",
+    "popularity": 30.96,
+    "popularityObscurity": 0.36363636363636365,
+    "spellingCost": 5,
+    "spellingObscurity": 0.22727272727272727,
+    "key": 0.29863636363636364
+   },
+   {
+    "id": "hero_shiv",
+    "name": "Shiv",
+    "passPositions": [
+     0,
+     1,
+     1,
+     1,
+     1
+    ],
+    "borda": 0.07272727272727272,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "close-range bleed brawler with shotgun-like gun",
+    "popularity": 38.71,
+    "popularityObscurity": 0.18181818181818182,
+    "spellingCost": 4,
+    "spellingObscurity": 0.045454545454545456,
+    "key": 0.08772727272727272
+   },
+   {
+    "id": "hero_synth",
+    "name": "Pocket",
+    "passPositions": [
+     2,
+     5,
+     4,
+     5,
+     4
+    ],
+    "borda": 0.36363636363636365,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "short-range shotgun-style assassin with Barrage",
+    "popularity": 24.78,
+    "popularityObscurity": 0.45454545454545453,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5909090909090909,
+    "key": 0.38863636363636367
+   },
+   {
+    "id": "hero_viper",
+    "name": "Vyper",
+    "passPositions": [
+     3,
+     2,
+     5,
+     4,
+     3
+    ],
+    "borda": 0.3090909090909091,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "short-range assassin with fast-firing weapon",
+    "popularity": 11.96,
+    "popularityObscurity": 0.8181818181818182,
+    "spellingCost": 5,
+    "spellingObscurity": 0.22727272727272727,
+    "key": 0.3813636363636364
+   },
+   {
+    "id": "hero_werewolf",
+    "name": "Silver",
+    "passPositions": [
+     4,
+     3,
+     3,
+     2,
+     5
+    ],
+    "borda": 0.3090909090909091,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "werewolf shotgun brawler, melee focus",
+    "popularity": 19.71,
+    "popularityObscurity": 0.7272727272727273,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5909090909090909,
+    "key": 0.3859090909090909
+   },
+   {
+    "id": "hero_yamato",
+    "name": "Yamato",
+    "passPositions": [
+     6,
+     6,
+     7,
+     10,
+     7
+    ],
+    "borda": 0.6545454545454545,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "charged slashing assassin, short-range shots",
+    "popularity": 24.73,
+    "popularityObscurity": 0.5454545454545454,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5909090909090909,
+    "key": 0.635
+   }
+  ],
+  "passAgreement": 0.7575757575757577,
+  "orderBeforeRefinement": [
+   "hero_atlas",
+   "hero_shiv",
+   "hero_punkgoat",
+   "hero_viper",
+   "hero_werewolf",
+   "hero_synth",
+   "hero_drifter",
+   "hero_yamato",
+   "hero_necro",
+   "hero_fencer",
+   "hero_baba",
+   "hero_chessmaster"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_necro",
+    "b": "hero_fencer",
+    "purpose": "rare-contenders",
+    "rarer": "hero_fencer"
+   },
+   {
+    "a": "hero_necro",
+    "b": "hero_baba",
+    "purpose": "rare-contenders",
+    "rarer": "hero_baba"
+   },
+   {
+    "a": "hero_necro",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_fencer",
+    "b": "hero_baba",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_fencer",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_baba",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": "hero_baba"
+   },
+   {
+    "a": "hero_atlas",
+    "b": "hero_shiv",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "hero_punkgoat",
+    "b": "hero_viper",
+    "purpose": "tier-boundary",
+    "rarer": "hero_viper"
+   },
+   {
+    "a": "hero_drifter",
+    "b": "hero_yamato",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "hero_baba",
+    "b": "hero_chessmaster",
+    "purpose": "review",
+    "rarer": "hero_chessmaster"
+   }
+  ],
+  "review": [
+   {
+    "name": "Abrams",
+    "compareWith": "Shiv",
+    "claim": "should_be_more_obvious",
+    "reason": "Abrams is the shotgun-style brawler, and his wiki role is explicitly close combat. A short-range weapon is what players link to a close falloff question, so he deserves the top spot. The 10-point placement is fine, but Shiv at 30 should sit no more obvious than Abrams, and nothing suggests Abrams should be rarer.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Baba",
+    "compareWith": "Solomon",
+    "claim": "should_be_more_obvious",
+    "reason": "Baba at 100 pts is placed rarer than Solomon, Graves, Apollo and Yamato. All are mystics or assassins with no strong association to short-range weapons, so none is tied to this question. Baba is a recent hero but not meaningfully more forgettable than Apollo or Solomon, so the 100-pt tier should be shared rather than Baba alone.",
+    "outcome": "applied"
+   },
+   {
+    "name": "Yamato",
+    "compareWith": "Vyper",
+    "claim": "should_be_more_obvious",
+    "reason": "Yamato is a well-known melee-flavored assassin who plays close range, and the wiki describes her as using charged attacks. Players thinking of short-range heroes would plausibly name her, as they would Vyper, so 85 pts looks too obscure relative to Vyper at 60.",
+    "outcome": "applied-by-data"
+   },
+   {
+    "name": "Graves",
+    "compareWith": "Drifter",
+    "claim": "should_be_more_obscure",
+    "reason": "Graves is a ranged mystic with no short-range association, so he is a surprising answer for a close-falloff question. Drifter is an assassin with a melee-like weapon (Crimson Grasp) and is more closely tied to the question, so Drifter should be more obvious than Graves, who belongs in the obscure tier.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}

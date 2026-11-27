@@ -1,0 +1,422 @@
+{
+ "question": {
+  "signature": "hero-stat:dps:low:42.1",
+  "prompt": "Name a hero whose base weapon DPS is 42.1 or lower (no items or boons).",
+  "category": "hero-weapon",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_astro",
+   "hero_baba",
+   "hero_doorman",
+   "hero_mirage",
+   "hero_necro",
+   "hero_nurse",
+   "hero_orion",
+   "hero_unicorn",
+   "hero_vampirebat",
+   "hero_werewolf"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "dps <= 42.1"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-27T00:44:04.157Z",
+ "answers": [
+  {
+   "entityId": "hero_orion",
+   "name": "Grey Talon",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_necro",
+   "name": "Graves",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_vampirebat",
+   "name": "Mina",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "hero_unicorn",
+   "name": "Celeste",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_nurse",
+   "name": "Nurse Harrow",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "hero_astro",
+   "name": "Holliday",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "hero_mirage",
+   "name": "Mirage",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "hero_doorman",
+   "name": "The Doorman",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "hero_werewolf",
+   "name": "Silver",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "hero_baba",
+   "name": "Baba",
+   "rank": 10,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "hero_astro",
+    "name": "Holliday",
+    "passPositions": [
+     8,
+     1,
+     7,
+     4,
+     9
+    ],
+    "borda": 0.6444444444444445,
+    "fit": {
+     "expected": 1,
+     "neutral": 1,
+     "surprising": 3
+    },
+    "perception": "Marksman with trick shots and a lasso",
+    "popularity": 28.35,
+    "popularityObscurity": 0.2222222222222222,
+    "spellingCost": 8,
+    "spellingObscurity": 1,
+    "key": 0.598888888888889
+   },
+   {
+    "id": "hero_baba",
+    "name": "Baba",
+    "passPositions": [
+     6,
+     9,
+     6,
+     8,
+     7
+    ],
+    "borda": 0.7999999999999999,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Mystic support hero with debuffs and brew",
+    "popularity": 10.87,
+    "popularityObscurity": 0.8888888888888888,
+    "spellingCost": 4,
+    "spellingObscurity": 0.05555555555555555,
+    "key": 0.7761111111111111
+   },
+   {
+    "id": "hero_doorman",
+    "name": "The Doorman",
+    "passPositions": [
+     7,
+     8,
+     4,
+     2,
+     8
+    ],
+    "borda": 0.6444444444444444,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Newer utility hero with portals and bell",
+    "popularity": 13.82,
+    "popularityObscurity": 0.7777777777777778,
+    "spellingCost": 7,
+    "spellingObscurity": 0.8333333333333334,
+    "key": 0.6738888888888889
+   },
+   {
+    "id": "hero_mirage",
+    "name": "Mirage",
+    "passPositions": [
+     4,
+     2,
+     8,
+     5,
+     2
+    ],
+    "borda": 0.4666666666666666,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Mobile assassin with scarabs and tornado",
+    "popularity": 9.38,
+    "popularityObscurity": 1,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5555555555555556,
+    "key": 0.5511111111111111
+   },
+   {
+    "id": "hero_necro",
+    "name": "Graves",
+    "passPositions": [
+     1,
+     5,
+     3,
+     1,
+     3
+    ],
+    "borda": 0.28888888888888886,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Skeleton necromancer with jar and hands",
+    "popularity": 32.51,
+    "popularityObscurity": 0.1111111111111111,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5555555555555556,
+    "key": 0.27555555555555555
+   },
+   {
+    "id": "hero_nurse",
+    "name": "Nurse Harrow",
+    "passPositions": [
+     3,
+     6,
+     5,
+     9,
+     1
+    ],
+    "borda": 0.5333333333333333,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Healer-focused support with leech and vapors",
+    "popularity": 25.78,
+    "popularityObscurity": 0.3333333333333333,
+    "spellingCost": 5,
+    "spellingObscurity": 0.2777777777777778,
+    "key": 0.4905555555555556
+   },
+   {
+    "id": "hero_orion",
+    "name": "Grey Talon",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Long range sniper-archer with charged shots",
+    "popularity": 22.07,
+    "popularityObscurity": 0.4444444444444444,
+    "spellingCost": 5,
+    "spellingObscurity": 0.2777777777777778,
+    "key": 0.08055555555555556
+   },
+   {
+    "id": "hero_unicorn",
+    "name": "Celeste",
+    "passPositions": [
+     2,
+     7,
+     2,
+     3,
+     5
+    ],
+    "borda": 0.4222222222222222,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Mystic caster hero with light abilities",
+    "popularity": 18.71,
+    "popularityObscurity": 0.6666666666666666,
+    "spellingCost": 7,
+    "spellingObscurity": 0.8333333333333334,
+    "key": 0.47944444444444445
+   },
+   {
+    "id": "hero_vampirebat",
+    "name": "Mina",
+    "passPositions": [
+     5,
+     4,
+     1,
+     6,
+     4
+    ],
+    "borda": 0.4444444444444445,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Vampire caster with rake and bats",
+    "popularity": 34.02,
+    "popularityObscurity": 0,
+    "spellingCost": 4,
+    "spellingObscurity": 0.05555555555555555,
+    "key": 0.3583333333333334
+   },
+   {
+    "id": "hero_werewolf",
+    "name": "Silver",
+    "passPositions": [
+     9,
+     3,
+     9,
+     7,
+     6
+    ],
+    "borda": 0.7555555555555554,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Werewolf brawler with shotgun and bola",
+    "popularity": 19.71,
+    "popularityObscurity": 0.5555555555555556,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5555555555555556,
+    "key": 0.7155555555555555
+   }
+  ],
+  "passAgreement": 0.29777777777777775,
+  "orderBeforeRefinement": [
+   "hero_orion",
+   "hero_necro",
+   "hero_vampirebat",
+   "hero_unicorn",
+   "hero_nurse",
+   "hero_mirage",
+   "hero_astro",
+   "hero_doorman",
+   "hero_werewolf",
+   "hero_baba"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_astro",
+    "b": "hero_doorman",
+    "purpose": "rare-contenders",
+    "rarer": "hero_doorman"
+   },
+   {
+    "a": "hero_astro",
+    "b": "hero_werewolf",
+    "purpose": "rare-contenders",
+    "rarer": "hero_werewolf"
+   },
+   {
+    "a": "hero_astro",
+    "b": "hero_baba",
+    "purpose": "rare-contenders",
+    "rarer": "hero_baba"
+   },
+   {
+    "a": "hero_doorman",
+    "b": "hero_werewolf",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_doorman",
+    "b": "hero_baba",
+    "purpose": "rare-contenders",
+    "rarer": "hero_baba"
+   },
+   {
+    "a": "hero_werewolf",
+    "b": "hero_baba",
+    "purpose": "rare-contenders",
+    "rarer": "hero_baba"
+   },
+   {
+    "a": "hero_orion",
+    "b": "hero_necro",
+    "purpose": "tier-boundary",
+    "rarer": "hero_necro"
+   },
+   {
+    "a": "hero_vampirebat",
+    "b": "hero_unicorn",
+    "purpose": "tier-boundary",
+    "rarer": "hero_unicorn"
+   },
+   {
+    "a": "hero_baba",
+    "b": "hero_doorman",
+    "purpose": "review",
+    "rarer": "hero_baba"
+   }
+  ],
+  "review": [
+   {
+    "name": "Holliday",
+    "compareWith": "Mirage",
+    "claim": "should_be_more_obvious",
+    "reason": "Holliday is a popular marksman with a slow, heavy-hitting revolver, so players who think about low-DPS weapons will readily associate her with this question. Placing her at 85 points, above Mirage at 60, looks too obscure, so she should sit at or below Mirage.",
+    "outcome": "applied-by-data"
+   },
+   {
+    "name": "Nurse Harrow",
+    "compareWith": "Celeste",
+    "claim": "should_be_more_obscure",
+    "reason": "Nurse Harrow is a newer, less familiar hero, and her weapon stats are rarely discussed. Celeste has a more established presence, so Harrow should score as rarer than Celeste rather than tied with her at 60.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Baba",
+    "compareWith": "The Doorman",
+    "claim": "should_be_more_obvious",
+    "reason": "Baba is not clearly the rarest answer. The Doorman and Silver are also low-profile weapon users, and the 100-point slot for Baba rests on an assumption that she is forgotten, which is not supported. The Doorman should be at least as obscure as Baba.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}

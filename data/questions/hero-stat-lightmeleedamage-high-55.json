@@ -1,0 +1,335 @@
+{
+ "question": {
+  "signature": "hero-stat:lightMeleeDamage:high:55",
+  "prompt": "Name a hero whose base light melee deals at least 55 damage.",
+  "category": "hero-base-stat",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_bebop",
+   "hero_familiar",
+   "hero_fencer",
+   "hero_nano",
+   "hero_synth",
+   "hero_viscous",
+   "hero_yamato"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "lightMeleeDamage >= 55"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-27T00:41:23.928Z",
+ "answers": [
+  {
+   "entityId": "hero_yamato",
+   "name": "Yamato",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_nano",
+   "name": "Calico",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_fencer",
+   "name": "Apollo",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "hero_bebop",
+   "name": "Bebop",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_viscous",
+   "name": "Viscous",
+   "rank": 5,
+   "score": 85
+  },
+  {
+   "entityId": "hero_synth",
+   "name": "Pocket",
+   "rank": 6,
+   "score": 85
+  },
+  {
+   "entityId": "hero_familiar",
+   "name": "Rem",
+   "rank": 7,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "hero_bebop",
+    "name": "Bebop",
+    "passPositions": [
+     4,
+     4,
+     4,
+     4,
+     4
+    ],
+    "borda": 0.6666666666666666,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Hook and uppercut brawler, beam weapon, punchy",
+    "popularity": 50.94,
+    "popularityObscurity": 0,
+    "spellingCost": 5,
+    "spellingObscurity": 0.16666666666666666,
+    "key": 0.5416666666666666
+   },
+   {
+    "id": "hero_familiar",
+    "name": "Rem",
+    "passPositions": [
+     6,
+     6,
+     6,
+     6,
+     6
+    ],
+    "borda": 1,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Cute plush healer, support not melee",
+    "popularity": 18.16,
+    "popularityObscurity": 0.8333333333333334,
+    "spellingCost": 3,
+    "spellingObscurity": 0,
+    "key": 0.925
+   },
+   {
+    "id": "hero_fencer",
+    "name": "Apollo",
+    "passPositions": [
+     3,
+     1,
+     1,
+     2,
+     2
+    ],
+    "borda": 0.29999999999999993,
+    "fit": {
+     "expected": 3,
+     "neutral": 2,
+     "surprising": 0
+    },
+    "perception": "Fencer-style duelist with sword melee and Riposte",
+    "popularity": 21.79,
+    "popularityObscurity": 0.5,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5833333333333334,
+    "key": 0.3441666666666666
+   },
+   {
+    "id": "hero_nano",
+    "name": "Calico",
+    "passPositions": [
+     2,
+     2,
+     2,
+     1,
+     1
+    ],
+    "borda": 0.2666666666666667,
+    "fit": {
+     "expected": 2,
+     "neutral": 3,
+     "surprising": 0
+    },
+    "perception": "Cat assassin with slashing leaps and claw-like attacks",
+    "popularity": 21.39,
+    "popularityObscurity": 0.6666666666666666,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5833333333333334,
+    "key": 0.3425
+   },
+   {
+    "id": "hero_synth",
+    "name": "Pocket",
+    "passPositions": [
+     5,
+     5,
+     5,
+     5,
+     5
+    ],
+    "borda": 0.8333333333333334,
+    "fit": {
+     "expected": 0,
+     "neutral": 0,
+     "surprising": 5
+    },
+    "perception": "Portal-hopping assassin with suitcase and gadgets, not known for melee",
+    "popularity": 24.78,
+    "popularityObscurity": 0.16666666666666666,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5833333333333334,
+    "key": 0.7208333333333334
+   },
+   {
+    "id": "hero_viscous",
+    "name": "Viscous",
+    "passPositions": [
+     1,
+     3,
+     3,
+     3,
+     3
+    ],
+    "borda": 0.4333333333333333,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Goo brawler with Puddle Punch and cube, melee-centric kit",
+    "popularity": 14.57,
+    "popularityObscurity": 1,
+    "spellingCost": 7,
+    "spellingObscurity": 1,
+    "key": 0.5466666666666666
+   },
+   {
+    "id": "hero_yamato",
+    "name": "Yamato",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 5,
+     "neutral": 0,
+     "surprising": 0
+    },
+    "perception": "Samurai swordswoman famous for slashes and melee-heavy gameplay",
+    "popularity": 24.73,
+    "popularityObscurity": 0.3333333333333333,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5833333333333334,
+    "key": 0.07916666666666666
+   }
+  ],
+  "passAgreement": 0.8666666666666668,
+  "orderBeforeRefinement": [
+   "hero_yamato",
+   "hero_nano",
+   "hero_fencer",
+   "hero_bebop",
+   "hero_viscous",
+   "hero_synth",
+   "hero_familiar"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_bebop",
+    "b": "hero_viscous",
+    "purpose": "rare-contenders",
+    "rarer": "hero_viscous"
+   },
+   {
+    "a": "hero_bebop",
+    "b": "hero_synth",
+    "purpose": "rare-contenders",
+    "rarer": "hero_synth"
+   },
+   {
+    "a": "hero_bebop",
+    "b": "hero_familiar",
+    "purpose": "rare-contenders",
+    "rarer": null
+   },
+   {
+    "a": "hero_viscous",
+    "b": "hero_synth",
+    "purpose": "rare-contenders",
+    "rarer": "hero_synth"
+   },
+   {
+    "a": "hero_viscous",
+    "b": "hero_familiar",
+    "purpose": "rare-contenders",
+    "rarer": "hero_familiar"
+   },
+   {
+    "a": "hero_synth",
+    "b": "hero_familiar",
+    "purpose": "rare-contenders",
+    "rarer": "hero_familiar"
+   },
+   {
+    "a": "hero_yamato",
+    "b": "hero_nano",
+    "purpose": "tier-boundary",
+    "rarer": "hero_nano"
+   },
+   {
+    "a": "hero_nano",
+    "b": "hero_fencer",
+    "purpose": "tier-boundary",
+    "rarer": null
+   },
+   {
+    "a": "hero_viscous",
+    "b": "hero_bebop",
+    "purpose": "review",
+    "rarer": "hero_viscous"
+   },
+   {
+    "a": "hero_synth",
+    "b": "hero_familiar",
+    "purpose": "review",
+    "rarer": "hero_familiar"
+   }
+  ],
+  "review": [
+   {
+    "name": "Viscous",
+    "compareWith": "Bebop",
+    "claim": "should_be_more_obvious",
+    "reason": "Viscous is a brawler whose melee is tied to his kit (Puddle Punch, fist-based identity), so players thinking about melee damage will readily recall him. Bebop's wiki weapon is a beam, which makes him weakly tied to light melee. Bebop at 60 and Viscous at 85 is likely backwards.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Bebop",
+    "compareWith": "Apollo",
+    "claim": "should_be_more_obscure",
+    "reason": "Bebop is known for his hook and beam weapon, not melee. Apollo is a sword-style assassin with a melee-flavored kit (Riposte), so he comes to mind more readily for a melee question. Bebop should be rarer than Apollo.",
+    "outcome": "ignored-invalid"
+   },
+   {
+    "name": "Pocket",
+    "compareWith": "Rem",
+    "claim": "should_be_more_obscure",
+    "reason": "Pocket and Rem are both unlikely, but Pocket is an assassin and a more commonly played hero that players may mention for melee-ish dashing, while Rem is a rarely considered healer. It is plausible, but Pocket at 85 versus Rem at 100 is fine; a bigger gap is not necessary.",
+    "outcome": "rejected-by-comparison"
+   }
+  ]
+ }
+}

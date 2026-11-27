@@ -1,0 +1,316 @@
+{
+ "question": {
+  "signature": "weapon-name:starts-the",
+  "prompt": "Name a hero whose weapon's name starts with \"The\" (the hero or the weapon name both count)",
+  "category": "weapon-name",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_dynamo",
+   "hero_magician",
+   "hero_necro",
+   "hero_orion",
+   "hero_synth",
+   "hero_viper",
+   "hero_wraith"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "weapon name rule: weapon-name:starts-the"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-27T00:45:05.205Z",
+ "answers": [
+  {
+   "entityId": "hero_wraith",
+   "name": "Wraith",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_viper",
+   "name": "Vyper",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_orion",
+   "name": "Grey Talon",
+   "rank": 3,
+   "score": 60
+  },
+  {
+   "entityId": "hero_dynamo",
+   "name": "Dynamo",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_synth",
+   "name": "Pocket",
+   "rank": 5,
+   "score": 85
+  },
+  {
+   "entityId": "hero_necro",
+   "name": "Graves",
+   "rank": 6,
+   "score": 85
+  },
+  {
+   "entityId": "hero_magician",
+   "name": "Sinclair",
+   "rank": 7,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "hero_dynamo",
+    "name": "Dynamo",
+    "passPositions": [
+     3,
+     1,
+     0,
+     5,
+     5
+    ],
+    "borda": 0.4666666666666667,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Healer known for Singularity and Quantum Entanglement",
+    "popularity": 25.11,
+    "popularityObscurity": 0.3333333333333333,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5833333333333334,
+    "key": 0.4525
+   },
+   {
+    "id": "hero_magician",
+    "name": "Sinclair",
+    "passPositions": [
+     5,
+     4,
+     5,
+     4,
+     2
+    ],
+    "borda": 0.6666666666666667,
+    "fit": {
+     "expected": 1,
+     "neutral": 3,
+     "surprising": 1
+    },
+    "perception": "Magician mystic with Rabbit Hex and Vexing Bolt",
+    "popularity": 9.63,
+    "popularityObscurity": 1,
+    "spellingCost": 8,
+    "spellingObscurity": 1,
+    "key": 0.7333333333333335
+   },
+   {
+    "id": "hero_necro",
+    "name": "Graves",
+    "passPositions": [
+     4,
+     6,
+     6,
+     6,
+     6
+    ],
+    "borda": 0.9333333333333332,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "Undead mystic with Jar of Dead and ghostly hands",
+    "popularity": 32.51,
+    "popularityObscurity": 0.16666666666666666,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5833333333333334,
+    "key": 0.8008333333333333
+   },
+   {
+    "id": "hero_orion",
+    "name": "Grey Talon",
+    "passPositions": [
+     1,
+     5,
+     2,
+     2,
+     3
+    ],
+    "borda": 0.4333333333333333,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Archer with long range charged shots and Guided Owl",
+    "popularity": 22.07,
+    "popularityObscurity": 0.6666666666666666,
+    "spellingCost": 5,
+    "spellingObscurity": 0.08333333333333333,
+    "key": 0.4508333333333333
+   },
+   {
+    "id": "hero_synth",
+    "name": "Pocket",
+    "passPositions": [
+     6,
+     3,
+     3,
+     3,
+     4
+    ],
+    "borda": 0.6333333333333333,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Teleporting assassin with Barrage and Flying Cloak",
+    "popularity": 24.78,
+    "popularityObscurity": 0.5,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5833333333333334,
+    "key": 0.6108333333333333
+   },
+   {
+    "id": "hero_viper",
+    "name": "Vyper",
+    "passPositions": [
+     2,
+     2,
+     4,
+     1,
+     1
+    ],
+    "borda": 0.33333333333333337,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Fast snake-like assassin with Slither and Petrifying Bola",
+    "popularity": 11.96,
+    "popularityObscurity": 0.8333333333333334,
+    "spellingCost": 5,
+    "spellingObscurity": 0.08333333333333333,
+    "key": 0.39583333333333337
+   },
+   {
+    "id": "hero_wraith",
+    "name": "Wraith",
+    "passPositions": [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    "borda": 0.03333333333333333,
+    "fit": {
+     "expected": 1,
+     "neutral": 4,
+     "surprising": 0
+    },
+    "perception": "Popular marksman with Card Trick and Telekinesis",
+    "popularity": 45.37,
+    "popularityObscurity": 0,
+    "spellingCost": 6,
+    "spellingObscurity": 0.5833333333333334,
+    "key": 0.05583333333333334
+   }
+  ],
+  "passAgreement": 0.4095238095238095,
+  "orderBeforeRefinement": [
+   "hero_wraith",
+   "hero_viper",
+   "hero_orion",
+   "hero_dynamo",
+   "hero_synth",
+   "hero_magician",
+   "hero_necro"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_dynamo",
+    "b": "hero_synth",
+    "purpose": "rare-contenders",
+    "rarer": "hero_synth"
+   },
+   {
+    "a": "hero_dynamo",
+    "b": "hero_magician",
+    "purpose": "rare-contenders",
+    "rarer": "hero_magician"
+   },
+   {
+    "a": "hero_dynamo",
+    "b": "hero_necro",
+    "purpose": "rare-contenders",
+    "rarer": "hero_necro"
+   },
+   {
+    "a": "hero_synth",
+    "b": "hero_magician",
+    "purpose": "rare-contenders",
+    "rarer": "hero_magician"
+   },
+   {
+    "a": "hero_synth",
+    "b": "hero_necro",
+    "purpose": "rare-contenders",
+    "rarer": "hero_necro"
+   },
+   {
+    "a": "hero_magician",
+    "b": "hero_necro",
+    "purpose": "rare-contenders",
+    "rarer": "hero_necro"
+   },
+   {
+    "a": "hero_wraith",
+    "b": "hero_viper",
+    "purpose": "tier-boundary",
+    "rarer": "hero_viper"
+   },
+   {
+    "a": "hero_viper",
+    "b": "hero_orion",
+    "purpose": "tier-boundary",
+    "rarer": "hero_orion"
+   }
+  ],
+  "review": [
+   {
+    "name": "Graves",
+    "compareWith": "Sinclair",
+    "claim": "should_be_more_obvious",
+    "reason": "Graves' weapon The Teacher is a short, memorable name, and Graves is a long-standing hero. Sinclair's The Prestige is also known, but Sinclair is a newer, less-played hero, so Graves at the 100-point extreme looks too harsh relative to Sinclair at 85.",
+    "outcome": "applied-by-data"
+   },
+   {
+    "name": "Dynamo",
+    "compareWith": "Grey Talon",
+    "claim": "should_be_more_obscure",
+    "reason": "The Vonnegun is a quirky name that few players recall as a weapon name, whereas Grey Talon's The Mourning Comes is more distinctive and Grey Talon is a very popular hero. Dynamo should not tie with Grey Talon and should be rarer.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}
