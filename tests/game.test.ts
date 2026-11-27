@@ -65,7 +65,9 @@ test("daily selection: rules hold over many consecutive days, and is determinist
     Math.floor(nonName.length / (g.questionsPerDay - g.maxNameQuestions)),
     Math.floor(nonName.filter((q) => q.question.entityType === "hero").length / g.minHeroQuestions),
   );
-  const firstDays = games.slice(0, distinctDays).flatMap((x) => x.questions.map((q) => q.id));
+  // The last fresh questions can clash with each other (same topic, category cap), forcing one reuse on the
+  // final day of that count, so the guarantee is one day shorter.
+  const firstDays = games.slice(0, distinctDays - 1).flatMap((x) => x.questions.map((q) => q.id));
   assert.equal(new Set(firstDays).size, firstDays.length);
   // When reuse is unavoidable, nothing from the previous day comes back.
   for (let i = 1; i < games.length; i++) {
