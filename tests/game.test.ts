@@ -139,7 +139,7 @@ test("share text: name, total and one square per question", () => {
 test("a weapon name counts as its hero and is shown with it", () => {
   const holliday = kb.findByName("holliday")!;
   const game: DailyGame = { date: "2027-05-01", knowledgeVersion: "", scoringVersion: "", generatedAt: "", questions: [{
-    id: "t", prompt: "t", category: "weapon-name", entityType: "hero",
+    id: "t", prompt: "t", category: "hero-weapon", entityType: "hero",
     answers: [{ entityId: holliday.id, name: holliday.name, rank: 1, score: 100 }] }] };
   const s = createSession(game);
   startQuestion(s, 0);
