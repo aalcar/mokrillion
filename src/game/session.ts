@@ -107,3 +107,14 @@ export function results(s: Session): { questions: QuestionResult[]; total: numbe
   });
   return { questions, total: questions.reduce((t, q) => t + q.score, 0), max: 100 * questions.length };
 }
+
+const SQUARES: Record<number, string> = { 0: "⬛", 10: "🟥", 30: "🟧", 60: "🟨", 85: "🟩", 100: "🟪" };
+
+/** Wordle-style square for one question's score. */
+export const scoreSquare = (score: number) => SQUARES[score] ?? "⬛";
+
+/** Spoiler-free share text: name, date, total, then one square per question. */
+export function shareText(s: Session, name: string): string {
+  const r = results(s);
+  return `${name} · Mokrillion ${s.game.date} · ${r.total}/${r.max}\n${r.questions.map((q) => scoreSquare(q.score)).join("")}`;
+}

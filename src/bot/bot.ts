@@ -5,7 +5,7 @@ import { Client, Events, GatewayIntentBits, MessageFlags, Partials, type DMChann
 import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { buildGame, gameDate, loadGame, loadGames, loadScoredQuestions, saveGame, type DailyGame } from "../game/daily.ts";
-import { createSession, nextQuestion, results, startQuestion, submit, timeLeftMs, type Session } from "../game/session.ts";
+import { createSession, nextQuestion, results, shareText, startQuestion, submit, timeLeftMs, type Session } from "../game/session.ts";
 import { loadKnowledge } from "../knowledge/queries.ts";
 
 const PLAYS_DIR = join(import.meta.dirname, "../../data/plays");
@@ -53,14 +53,9 @@ function saveSession(s: Session, userId: string, finished: boolean) {
 function resultsText(s: Session): string {
   const r = results(s);
   const lines = r.questions.map(
-    (q, i) => `**Q${i + 1}.** ${q.prompt}\n> you: **${q.answer ?? "-"}** (${q.score} pts) · 100-pt answer: **${q.topAnswer}** · ${q.answerCount} valid answers`,
+    (q, i) => `**Q${i + 1}.** ${q.prompt}\n> you: **${q.answer ?? "-"}** (${q.score} pts) · Mo-Krillion: **${q.topAnswer}** · ${q.answerCount} valid answers`,
   );
   return `**Mokrillion ${s.game.date}: ${r.total} / ${r.max}**\n\n${lines.join("\n")}`;
-}
-
-export function shareLine(s: Session): string {
-  const r = results(s);
-  return `Mokrillion ${s.game.date}: **${r.total} / ${r.max}**  ${r.questions.map((q) => (q.score ? String(q.score) : "✗")).join(" · ")}`;
 }
 
 // ---------- game loop ----------
@@ -102,7 +97,7 @@ async function onAnswer(a: Active, text: string): Promise<void> {
   switch (r.kind) {
     case "correct":
       clearTimeout(timers.get(a.user.id));
-      await a.dm.send(`✅ ${r.corrected ? `${r.name}! ` : ""}**+${r.score}**`);
+      await a.dm.send(r.score === 100 ? `🟪 ${r.name}: Mo-Krillion! **+100**` : `✅ ${r.corrected ? `${r.name}! ` : ""}**+${r.score}**`);
       nextQuestion(a.session);
       return askCurrent(a);
     case "timeout":
@@ -141,7 +136,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
         await interaction.reply({ content: "Finish today's game first (/play).", flags: MessageFlags.Ephemeral });
         return;
       }
-      await interaction.reply(`${user.displayName}: ${shareLine(saved)}`);
+      await interaction.reply(shareText(saved, user.displayName));
       return;
     }
 
@@ -158,7 +153,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
       const a: Active = { session: saved ?? { ...createSession(game), finished: false }, user, dm };
       try {
         // Send the intro before starting any timer, so a blocked DM fails before the game starts.
-        await dm.send(saved ? "Resuming your game." : "**Mokrillion**: name a valid answer for each question. Rarer correct answers score more (10-100). Wrong answers are free, keep typing until time runs out.");
+        await dm.send(saved ? "Resuming your game." : "**Mokrillion**: name a valid answer for each question. Rarer correct answers score more (10-85); hit the Mo-Krillion for 100. Wrong answers are free, keep typing until time runs out.");
       } catch {
         await interaction.reply({ content: "I can't DM you. Allow direct messages from server members (Privacy Settings) and try /play again.", flags: MessageFlags.Ephemeral });
         return;

@@ -24,7 +24,7 @@ npm run game -- play      # play today's game in the terminal
    ```
 4. `npm run bot:register` (once), then `npm run bot` (keep it running).
 
-Players type `/play` in the server and answer in DMs. `/share` posts their score without spoilers.
+Players type `/play` in the server and answer in DMs. `/share` posts their score as colored squares (⬛ 0 · 🟥 10 · 🟧 30 · 🟨 60 · 🟩 85 · 🟪 100, the Mo-Krillion), no spoilers.
 One game per player per day; the day resets at midnight Pacific.
 
 ## Make more questions
@@ -36,7 +36,7 @@ out of credit, it switches to Gemini.
 npm run questions -- list                         # all questions
 npm run questions -- score <number|signature>     # rank answers and save (~$0.06 on Sonnet)
 npm run questions -- show <signature>             # see a saved table
-npm run questions -- set-rarest <signature> <answer>   # pick the 100-point answer yourself
+npm run questions -- set-rarest <signature> <answer>   # pick the Mo-Krillion (100-point answer) yourself
 npm run questions -- propose hero 8               # have the LLM write new questions
 npm run game -- generate --days 7                 # publish the next week of games
 ```
@@ -57,7 +57,7 @@ Then re-score questions.
    - "Name a 3,200 item" style questions lean on play stats.
    - "Name an item with Melee Resist" style questions lean on the LLM.
 4. Close calls near the top get extra head-to-head checks and a review pass.
-5. Points: about 8% of answers get 10, 17% get 30, 30% get 60, the rest 85, and exactly one gets 100.
+5. Points: about 8% of answers get 10, 17% get 30, 30% get 60, the rest 85, and exactly one, the Mo-Krillion, gets 100.
    Your `set-rarest` picks always win.
 
 Scores are estimates, not real answer counts. Every saved question keeps its full breakdown.

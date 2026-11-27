@@ -6,7 +6,7 @@ import { test } from "node:test";
 import { config } from "../src/config.ts";
 import { addDays, answerOverlap, buildGame, gameDate, loadScoredQuestions, saveGame, type DailyGame } from "../src/game/daily.ts";
 import { editDistance, matchAnswer } from "../src/game/matching.ts";
-import { createSession, nextQuestion, results, startQuestion, submit, timeLeftMs } from "../src/game/session.ts";
+import { createSession, nextQuestion, results, scoreSquare, shareText, startQuestion, submit, timeLeftMs } from "../src/game/session.ts";
 import { loadKnowledge } from "../src/knowledge/queries.ts";
 
 const kb = loadKnowledge();
@@ -119,4 +119,17 @@ test("session: retries, lock on first correct answer, timeout, results", () => {
   assert.equal(r.questions[1].answer, null);
   assert.equal(r.questions[1].score, 0);
   assert.equal(r.questions[0].attempts, 4);
+});
+
+test("share text: name, total and one square per question", () => {
+  assert.deepEqual([0, 10, 30, 60, 85, 100].map(scoreSquare), ["⬛", "🟥", "🟧", "🟨", "🟩", "🟪"]);
+  const game = buildGame("2027-03-01", pool, []);
+  const s = createSession(game);
+  const q0 = game.questions[0], top = q0.answers.find((a) => a.score === 100)!;
+  startQuestion(s, 0);
+  assert.equal(submit(s, kb, top.name, 1).kind, "correct");
+  while (nextQuestion(s));
+  const [head, squares] = shareText(s, "Alex").split("\n");
+  assert.equal(head, "Alex · Mokrillion 2027-03-01 · 100/700");
+  assert.equal(squares, "🟪" + "⬛".repeat(game.questions.length - 1));
 });
