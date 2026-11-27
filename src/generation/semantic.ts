@@ -56,14 +56,15 @@ export const ProposalSchema = z.object({
 export type Proposal = z.infer<typeof ProposalSchema>["questions"][number];
 
 /** Ask the model for semantic question ideas, avoiding signatures already used. */
-export async function proposeSemantic(kb: Knowledge, ask: Ask, entityType: EntityType, count: number, avoid: string[]): Promise<Proposal[]> {
+export async function proposeSemantic(kb: Knowledge, ask: Ask, entityType: EntityType, count: number, avoid: string[], theme?: string): Promise<Proposal[]> {
   const out = await ask({
-    label: `propose:${entityType}`,
+    label: `propose:${entityType}${theme ? `:${theme}` : ""}`,
     system: SYSTEM,
     context: universeContext(universe(kb, entityType)),
     schema: ProposalSchema,
     prompt:
       `Propose ${count} trivia questions about ${entityType}s, each answerable by naming one ${entityType}. Rules:\n` +
+      (theme ? `- Stick to this theme: ${theme}\n` : "") +
       `- Objective and checkable from the data above: effects, status effects, ability or item mechanics, upgrades.\n` +
       `- Each should have roughly 8-25 valid answers (never fewer than 5).\n` +
       `- No lore, appearance, playstyle, opinions, or numeric thresholds (those are generated elsewhere).\n` +

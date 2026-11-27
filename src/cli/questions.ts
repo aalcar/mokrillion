@@ -1,6 +1,6 @@
 // Question pipeline CLI. Every step writes inspectable JSON under data/.
 //   npm run questions -- list
-//   npm run questions -- propose item 8        (LLM: propose + validate semantic questions)
+//   npm run questions -- propose item 8 [--theme "movement items"]   (LLM: propose + validate semantic questions)
 //   npm run questions -- score item-cost:3200  (LLM: rank + score; or "score 12" by list index)
 //   npm run questions -- score-new [N]         (LLM: score every question not saved yet, or the first N)
 //   npm run questions -- show item-cost:3200   (or "show 12" by list index)
@@ -23,7 +23,10 @@ interface SemanticFile {
   rejected: { proposal: Proposal; reason: string; notes: string[] }[];
 }
 
-const args = process.argv.slice(2).filter((a) => a !== "--no-cache");
+const argv = process.argv.slice(2);
+const themeAt = argv.indexOf("--theme");
+const theme = themeAt >= 0 ? argv.splice(themeAt, 2)[1] : undefined;
+const args = argv.filter((a) => a !== "--no-cache");
 const ask = createAsk({ useCache: !process.argv.includes("--no-cache") });
 const kb = loadKnowledge();
 const slug = (sig: string) => sig.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -80,7 +83,7 @@ try {
     if (type !== "hero" && type !== "item") throw new Error("usage: propose <hero|item> [count]");
     const file = readSemantic();
     const avoid = [...allCandidates().filter((q) => q.entityType === type).map((q) => q.prompt), ...file.rejected.map((r) => r.proposal.prompt)];
-    const proposals = await proposeSemantic(kb, ask, type, Number(rest[1] ?? 8), avoid);
+    const proposals = await proposeSemantic(kb, ask, type, Number(rest[1] ?? 8), avoid, theme);
     for (const p of proposals) {
       const r = await validateSemantic(kb, ask, p);
       if (r.candidate && !file.accepted.some((q) => q.signature === r.candidate!.signature)) {
@@ -172,7 +175,7 @@ try {
     if (!existsSync(file)) throw new Error(`not scored yet: ${rest.join(" ")}`);
     printScored(JSON.parse(readFileSync(file, "utf8")));
   } else {
-    console.log("usage: questions list | propose <hero|item> [count] | score <signature|index> | score-new [N] | show <signature|index> | eval | set-rarest <signature|index> <answer>  [--no-cache]");
+    console.log("usage: questions list | propose <hero|item> [count] [--theme <text>] | score <signature|index> | score-new [N] | show <signature|index> | eval | set-rarest <signature|index> <answer>  [--no-cache]");
   }
 } finally {
   if (cmd === "propose" || cmd === "score" || cmd === "score-new") console.log(`\n${usageSummary()}`);
