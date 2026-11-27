@@ -30,11 +30,16 @@ One game per player per day; the day resets at midnight Pacific.
 ## Hosting
 
 The bot needs an always-on machine with a disk (it saves games in progress under `data/plays/`), so serverless
-hosts and Heroku (wipes disk on restart) won't work. Cheapest good option: a DigitalOcean droplet paid by the
-GitHub Student Pack's $200 credit (the $6/mo Ubuntu droplet runs free for a year). After that, an Oracle Cloud
-Always Free VM works with the same steps.
+hosts and Heroku (wipes disk on restart) won't work. The bot uses about 150 MB of RAM, so a free-tier VM is
+plenty:
 
-On a fresh Ubuntu box (as root):
+- **Google Cloud e2-micro (recommended):** free with no end date. Create it in `us-west1`, `us-central1` or
+  `us-east1` with a **Standard** persistent disk of 30 GB or less; other regions and disk types are billed.
+  Signup needs a card.
+- **Oracle Cloud Always Free:** also free with no end date, and bigger, but signup and capacity are flaky.
+- **Azure for Students:** $100 for 12 months, no card. Good if you have no card; it ends after a year.
+
+Pick Ubuntu 24.04 LTS. On the fresh VM (run `sudo -i` first):
 
 ```
 curl -fsSL https://deb.nodesource.com/setup_22.x | bash - && apt-get install -y nodejs git
@@ -57,7 +62,7 @@ Nightly backup of player games (`crontab -e` as bot):
 Deploy an update from your laptop: push to GitHub, then
 
 ```
-ssh root@<droplet-ip> 'su bot -c "cd ~/mokrillion && git pull && npm ci" && systemctl restart mokrillion'
+ssh <you>@<vm-ip> 'sudo su bot -c "cd ~/mokrillion && git pull && npm ci" && sudo systemctl restart mokrillion'
 ```
 
 Daily games are built on the server the first time someone plays that day. They are not committed to git, and
