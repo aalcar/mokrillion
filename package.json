@@ -15,7 +15,8 @@
     "ingest:stats": "node --experimental-strip-types --no-warnings src/knowledge/ingest-stats.ts",
     "game": "node --experimental-strip-types --no-warnings src/cli/game.ts",
     "bot": "node --experimental-strip-types --no-warnings --env-file-if-exists=.env src/bot/bot.ts",
-    "bot:register": "node --experimental-strip-types --no-warnings --env-file-if-exists=.env src/bot/register.ts"
+    "bot:register": "node --experimental-strip-types --no-warnings --env-file-if-exists=.env src/bot/register.ts",
+    "deploy": "bash deploy/deploy.sh"
   },
   "devDependencies": {
     "@types/node": "^26.6.7",
