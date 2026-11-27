@@ -59,11 +59,16 @@ Nightly backup of player games (`crontab -e` as bot):
 0 4 * * * tar czf /home/bot/plays-$(date +\%a).tgz -C /home/bot/mokrillion/data plays
 ```
 
-Deploy an update from your laptop: push to GitHub, then
+Deploy an update from your laptop: push to `main`, then
 
 ```
-ssh <you>@<vm-ip> 'sudo su bot -c "cd ~/mokrillion && git pull && npm ci" && sudo systemctl restart mokrillion'
+npm run deploy
 ```
+
+It pulls `main` on the VM, reinstalls, restarts, and prints the bot's last log lines (or the error if it failed
+to start). It needs the `gcloud` CLI logged in. The VM name and zone default to `mo-krillion` / `us-west1-a`; set
+`MOKRILLION_VM` / `MOKRILLION_ZONE` to change them. After changing slash commands, also run `npm run bot:register`
+on the VM.
 
 Daily games are built on the server the first time someone plays that day. They are not committed to git, and
 the salt keeps future picks unguessable from this public repo.
