@@ -65,7 +65,9 @@ test("daily selection: rules hold over many consecutive days, and is determinist
     Math.floor(nonName.length / (g.questionsPerDay - g.maxNameQuestions)),
     Math.floor(nonName.filter((q) => q.question.entityType === "hero").length / g.minHeroQuestions),
   );
-  const firstDays = games.slice(0, distinctDays).flatMap((x) => x.questions.map((q) => q.id));
+  // The last fresh questions can clash with each other (same topic, category cap), forcing one reuse on the
+  // final day of that count, so the guarantee is one day shorter.
+  const firstDays = games.slice(0, distinctDays - 1).flatMap((x) => x.questions.map((q) => q.id));
   assert.equal(new Set(firstDays).size, firstDays.length);
   // When reuse is unavoidable, nothing from the previous day comes back.
   for (let i = 1; i < games.length; i++) {
@@ -132,4 +134,15 @@ test("share text: name, total and one square per question", () => {
   const [head, squares] = shareText(s, "Alex").split("\n");
   assert.equal(head, "Alex · Mokrillion 2027-03-01 · 100/700");
   assert.equal(squares, "🟪" + "⬛".repeat(game.questions.length - 1));
+});
+
+test("a weapon name counts as its hero and is shown with it", () => {
+  const holliday = kb.findByName("holliday")!;
+  const game: DailyGame = { date: "2027-05-01", knowledgeVersion: "", scoringVersion: "", generatedAt: "", questions: [{
+    id: "t", prompt: "t", category: "hero-weapon", entityType: "hero",
+    answers: [{ entityId: holliday.id, name: holliday.name, rank: 1, score: 100 }] }] };
+  const s = createSession(game);
+  startQuestion(s, 0);
+  const r = submit(s, kb, "docs orders", 1);
+  assert.ok(r.kind === "correct" && r.name === "Holliday (Doc's Orders)", JSON.stringify(r));
 });

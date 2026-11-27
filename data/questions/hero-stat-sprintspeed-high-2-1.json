@@ -1,0 +1,428 @@
+{
+ "question": {
+  "signature": "hero-stat:sprintSpeed:high:2.1",
+  "prompt": "Name a hero with a base sprint speed of at least 2.1 m/s.",
+  "category": "hero-base-stat",
+  "entityType": "hero",
+  "answerIds": [
+   "hero_artist",
+   "hero_bebop",
+   "hero_bookworm",
+   "hero_chessmaster",
+   "hero_familiar",
+   "hero_ghost",
+   "hero_lash",
+   "hero_necro",
+   "hero_nurse",
+   "hero_werewolf"
+  ],
+  "validation": {
+   "method": "deterministic",
+   "criterion": "sprintSpeed >= 2.1"
+  }
+ },
+ "knowledgeVersion": "2026-11-24-ba1caa19",
+ "scoringVersion": "8",
+ "model": "claude-sonnet-5-5",
+ "generatedAt": "2026-11-27T00:40:47.363Z",
+ "answers": [
+  {
+   "entityId": "hero_lash",
+   "name": "Lash",
+   "rank": 1,
+   "score": 10
+  },
+  {
+   "entityId": "hero_ghost",
+   "name": "Lady Geist",
+   "rank": 2,
+   "score": 30
+  },
+  {
+   "entityId": "hero_bebop",
+   "name": "Bebop",
+   "rank": 3,
+   "score": 30
+  },
+  {
+   "entityId": "hero_werewolf",
+   "name": "Silver",
+   "rank": 4,
+   "score": 60
+  },
+  {
+   "entityId": "hero_bookworm",
+   "name": "Paige",
+   "rank": 5,
+   "score": 60
+  },
+  {
+   "entityId": "hero_necro",
+   "name": "Graves",
+   "rank": 6,
+   "score": 60
+  },
+  {
+   "entityId": "hero_artist",
+   "name": "Violet",
+   "rank": 7,
+   "score": 85
+  },
+  {
+   "entityId": "hero_chessmaster",
+   "name": "Solomon",
+   "rank": 8,
+   "score": 85
+  },
+  {
+   "entityId": "hero_familiar",
+   "name": "Rem",
+   "rank": 9,
+   "score": 85
+  },
+  {
+   "entityId": "hero_nurse",
+   "name": "Nurse Harrow",
+   "rank": 10,
+   "score": 100
+  }
+ ],
+ "diagnostics": {
+  "weights": {
+   "type": "association",
+   "llm": 0.8,
+   "popularity": 0.15,
+   "spelling": 0.05
+  },
+  "signals": [
+   {
+    "id": "hero_artist",
+    "name": "Violet",
+    "passPositions": [
+     8,
+     4,
+     5,
+     5,
+     4
+    ],
+    "borda": 0.5777777777777778,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Painter mystic, newer hero",
+    "popularity": 19.01,
+    "popularityObscurity": 0.7777777777777778,
+    "spellingCost": 6,
+    "spellingObscurity": 0.7777777777777778,
+    "key": 0.6177777777777779
+   },
+   {
+    "id": "hero_bebop",
+    "name": "Bebop",
+    "passPositions": [
+     1,
+     2,
+     1,
+     1,
+     9
+    ],
+    "borda": 0.3111111111111111,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Hook and beam brawler, known for hook combos",
+    "popularity": 50.94,
+    "popularityObscurity": 0,
+    "spellingCost": 5,
+    "spellingObscurity": 0.4444444444444444,
+    "key": 0.27111111111111114
+   },
+   {
+    "id": "hero_bookworm",
+    "name": "Paige",
+    "passPositions": [
+     4,
+     7,
+     4,
+     6,
+     5
+    ],
+    "borda": 0.5777777777777778,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Bookwyrm healer with shield and charge",
+    "popularity": 32.79,
+    "popularityObscurity": 0.3333333333333333,
+    "spellingCost": 5,
+    "spellingObscurity": 0.4444444444444444,
+    "key": 0.5344444444444445
+   },
+   {
+    "id": "hero_chessmaster",
+    "name": "Solomon",
+    "passPositions": [
+     7,
+     6,
+     7,
+     4,
+     7
+    ],
+    "borda": 0.6888888888888889,
+    "fit": {
+     "expected": 0,
+     "neutral": 4,
+     "surprising": 1
+    },
+    "perception": "Chess-themed mystic, new hero, mobile",
+    "popularity": 9.61,
+    "popularityObscurity": 1,
+    "spellingCost": 7,
+    "spellingObscurity": 1,
+    "key": 0.7511111111111112
+   },
+   {
+    "id": "hero_familiar",
+    "name": "Rem",
+    "passPositions": [
+     6,
+     8,
+     8,
+     8,
+     6
+    ],
+    "borda": 0.7999999999999999,
+    "fit": {
+     "expected": 0,
+     "neutral": 2,
+     "surprising": 3
+    },
+    "perception": "Cute support healer with helpers, mobile",
+    "popularity": 18.16,
+    "popularityObscurity": 0.8888888888888888,
+    "spellingCost": 3,
+    "spellingObscurity": 0,
+    "key": 0.7733333333333333
+   },
+   {
+    "id": "hero_ghost",
+    "name": "Lady Geist",
+    "passPositions": [
+     2,
+     1,
+     2,
+     2,
+     2
+    ],
+    "borda": 0.2,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Self-damaging life drain mystic, fast-feeling",
+    "popularity": 37.57,
+    "popularityObscurity": 0.2222222222222222,
+    "spellingCost": 4,
+    "spellingObscurity": 0.16666666666666666,
+    "key": 0.2016666666666667
+   },
+   {
+    "id": "hero_lash",
+    "name": "Lash",
+    "passPositions": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "borda": 0,
+    "fit": {
+     "expected": 4,
+     "neutral": 1,
+     "surprising": 0
+    },
+    "perception": "Mobile dive assassin with grapple and slam",
+    "popularity": 46.88,
+    "popularityObscurity": 0.1111111111111111,
+    "spellingCost": 4,
+    "spellingObscurity": 0.16666666666666666,
+    "key": 0.025
+   },
+   {
+    "id": "hero_necro",
+    "name": "Graves",
+    "passPositions": [
+     5,
+     5,
+     6,
+     7,
+     3
+    ],
+    "borda": 0.5777777777777777,
+    "fit": {
+     "expected": 0,
+     "neutral": 3,
+     "surprising": 2
+    },
+    "perception": "Skeleton mystic with Jar and wall, tanky caster",
+    "popularity": 32.51,
+    "popularityObscurity": 0.4444444444444444,
+    "spellingCost": 6,
+    "spellingObscurity": 0.7777777777777778,
+    "key": 0.5677777777777777
+   },
+   {
+    "id": "hero_nurse",
+    "name": "Nurse Harrow",
+    "passPositions": [
+     9,
+     9,
+     9,
+     9,
+     8
+    ],
+    "borda": 0.9777777777777779,
+    "fit": {
+     "expected": 0,
+     "neutral": 1,
+     "surprising": 4
+    },
+    "perception": "New healer, leech and needles",
+    "popularity": 25.78,
+    "popularityObscurity": 0.5555555555555556,
+    "spellingCost": 5,
+    "spellingObscurity": 0.4444444444444444,
+    "key": 0.887777777777778
+   },
+   {
+    "id": "hero_werewolf",
+    "name": "Silver",
+    "passPositions": [
+     3,
+     3,
+     3,
+     3,
+     1
+    ],
+    "borda": 0.28888888888888886,
+    "fit": {
+     "expected": 0,
+     "neutral": 5,
+     "surprising": 0
+    },
+    "perception": "Werewolf brawler, aggressive melee-ish mobility",
+    "popularity": 19.71,
+    "popularityObscurity": 0.6666666666666666,
+    "spellingCost": 6,
+    "spellingObscurity": 0.7777777777777778,
+    "key": 0.37
+   }
+  ],
+  "passAgreement": 0.6355555555555555,
+  "orderBeforeRefinement": [
+   "hero_lash",
+   "hero_ghost",
+   "hero_bebop",
+   "hero_werewolf",
+   "hero_bookworm",
+   "hero_necro",
+   "hero_artist",
+   "hero_chessmaster",
+   "hero_familiar",
+   "hero_nurse"
+  ],
+  "pairwise": [
+   {
+    "a": "hero_artist",
+    "b": "hero_chessmaster",
+    "purpose": "rare-contenders",
+    "rarer": "hero_chessmaster"
+   },
+   {
+    "a": "hero_artist",
+    "b": "hero_familiar",
+    "purpose": "rare-contenders",
+    "rarer": "hero_familiar"
+   },
+   {
+    "a": "hero_artist",
+    "b": "hero_nurse",
+    "purpose": "rare-contenders",
+    "rarer": "hero_nurse"
+   },
+   {
+    "a": "hero_chessmaster",
+    "b": "hero_familiar",
+    "purpose": "rare-contenders",
+    "rarer": "hero_familiar"
+   },
+   {
+    "a": "hero_chessmaster",
+    "b": "hero_nurse",
+    "purpose": "rare-contenders",
+    "rarer": "hero_nurse"
+   },
+   {
+    "a": "hero_familiar",
+    "b": "hero_nurse",
+    "purpose": "rare-contenders",
+    "rarer": "hero_nurse"
+   },
+   {
+    "a": "hero_lash",
+    "b": "hero_ghost",
+    "purpose": "tier-boundary",
+    "rarer": "hero_ghost"
+   },
+   {
+    "a": "hero_bebop",
+    "b": "hero_werewolf",
+    "purpose": "tier-boundary",
+    "rarer": "hero_werewolf"
+   },
+   {
+    "a": "hero_lash",
+    "b": "hero_bebop",
+    "purpose": "review",
+    "rarer": "hero_bebop"
+   },
+   {
+    "a": "hero_nurse",
+    "b": "hero_artist",
+    "purpose": "review",
+    "rarer": "hero_nurse"
+   }
+  ],
+  "review": [
+   {
+    "name": "Lash",
+    "compareWith": "Bebop",
+    "claim": "should_be_more_obscure",
+    "reason": "Lash is only a plausible first answer if players associate him with mobility. The question is about base sprint speed, which is a stat players rarely memorize, so Lash is probably not nearly as dominant as 10 points implies. His Grapple makes him a mobility hero, but that is not the same as high base sprint. He should score closer to Bebop and Lady Geist.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Nurse Harrow",
+    "compareWith": "Violet",
+    "claim": "should_be_more_obvious",
+    "reason": "Nurse Harrow is a recent, distinctive hero, so she is no more forgettable than Violet, Solomon or Rem. The 100 point slot is probably too extreme for her, and she should sit at or just below Violet's tier, not above it.",
+    "outcome": "rejected-by-comparison"
+   },
+   {
+    "name": "Silver",
+    "compareWith": "Paige",
+    "claim": "should_be_more_obvious",
+    "reason": "Silver is a popular brawler with a strong, recognizable identity and a mobile feel, with Boot Kick and Slam Fire. He is likely to come to mind more readily than Paige, a healer with a more niche presence. He should score lower than Paige.",
+    "outcome": "ignored-invalid"
+   }
+  ]
+ }
+}
