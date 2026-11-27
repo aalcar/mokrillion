@@ -14,7 +14,9 @@
    "id": "hero_artist",
    "name": "Violet",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Creative Solutions"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Violet",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -539,7 +541,9 @@
    "id": "hero_astro",
    "name": "Holliday",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Doc's Orders"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Holliday",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -1001,7 +1005,9 @@
    "id": "hero_atlas",
    "name": "Abrams",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Case Closed"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Abrams",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -1371,7 +1377,9 @@
    "id": "hero_baba",
    "name": "Baba",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Bunko-Night Special"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Baba",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -1959,7 +1967,9 @@
    "id": "hero_bebop",
    "name": "Bebop",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Humble Pie"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Bebop",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -2380,7 +2390,9 @@
    "id": "hero_bookworm",
    "name": "Paige",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Chapter's End"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Paige",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -2906,7 +2918,9 @@
    "id": "hero_chessmaster",
    "name": "Solomon",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Alekhine's Gun"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Solomon",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -3404,7 +3418,9 @@
    "id": "hero_chrono",
    "name": "Paradox",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Trade Secret"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Paradox",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -3904,6 +3920,7 @@
    "name": "Deadman Danny",
    "type": "hero",
    "aliases": [
+    "Chimera Peace Bringer",
     "Danny",
     "Deadman"
    ],
@@ -4398,7 +4415,8 @@
    "name": "The Doorman",
    "type": "hero",
    "aliases": [
-    "Doorman"
+    "Doorman",
+    "Service With A Smile"
    ],
    "sourceUrls": [
     "https://deadlock.wiki/The_Doorman",
@@ -4873,7 +4891,9 @@
    "id": "hero_drifter",
    "name": "Drifter",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Crimson Grasp"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Drifter",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -5256,7 +5276,9 @@
    "id": "hero_dynamo",
    "name": "Dynamo",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "The Vonnegun"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Dynamo",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -5651,7 +5673,9 @@
    "id": "hero_familiar",
    "name": "Rem",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Long Night"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Rem",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -6191,7 +6215,9 @@
    "id": "hero_fencer",
    "name": "Apollo",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Pride of Ixia"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Apollo",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -6668,7 +6694,8 @@
    "name": "McGinnis",
    "type": "hero",
    "aliases": [
-    "McG"
+    "McG",
+    "Services Rendered"
    ],
    "sourceUrls": [
     "https://deadlock.wiki/McGinnis",
@@ -7158,7 +7185,9 @@
    "id": "hero_frank",
    "name": "Victor",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Memento Mori"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Victor",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -7616,6 +7645,7 @@
    "type": "hero",
    "aliases": [
     "Geist",
+    "Johann's Gift",
     "LG",
     "Lady"
    ],
@@ -8052,7 +8082,9 @@
    "id": "hero_gigawatt",
    "name": "Seven",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Cold Calculus"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Seven",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -8520,7 +8552,9 @@
    "id": "hero_haze",
    "name": "Haze",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Censure & Penance"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Haze",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -8904,7 +8938,9 @@
    "id": "hero_hornet",
    "name": "Vindicta",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Wallflower's Revenge"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Vindicta",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -9325,7 +9361,9 @@
    "id": "hero_inferno",
    "name": "Infernus",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Incendiary Remarks"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Infernus",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -9786,7 +9824,9 @@
    "id": "hero_kelvin",
    "name": "Kelvin",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Expedition's End"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Kelvin",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -10285,7 +10325,8 @@
     "Krill",
     "MnK",
     "Mo",
-    "Mo krill"
+    "Mo krill",
+    "Yellow Canary"
    ],
    "sourceUrls": [
     "https://deadlock.wiki/Mo_%26_Krill",
@@ -10721,7 +10762,9 @@
    "id": "hero_lash",
    "name": "Lash",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Tale of The Tape"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Lash",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -11161,7 +11204,9 @@
    "id": "hero_magician",
    "name": "Sinclair",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "The Prestige"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Sinclair",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -11594,7 +11639,9 @@
    "id": "hero_mirage",
    "name": "Mirage",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Promises Kept"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Mirage",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -12071,7 +12118,9 @@
    "id": "hero_nano",
    "name": "Calico",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Sweetest Lie"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Calico",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -12457,7 +12506,9 @@
    "id": "hero_necro",
    "name": "Graves",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "The Teacher"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Graves",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -12945,6 +12996,7 @@
    "name": "Nurse Harrow",
    "type": "hero",
    "aliases": [
+    "Code Blue",
     "Harrow",
     "Nurse"
    ],
@@ -13437,7 +13489,8 @@
    "type": "hero",
    "aliases": [
     "GT",
-    "Talon"
+    "Talon",
+    "The Mourning Comes"
    ],
    "sourceUrls": [
     "https://deadlock.wiki/Grey_Talon",
@@ -13856,7 +13909,9 @@
    "id": "hero_priest",
    "name": "Venator",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "51:20"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Venator",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -14330,7 +14385,9 @@
    "id": "hero_punkgoat",
    "name": "Billy",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Biquette"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Billy",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -14756,7 +14813,9 @@
    "id": "hero_ratking",
    "name": "Rat King",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Sovereign's Decree"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Rat_King",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -15271,7 +15330,9 @@
    "id": "hero_shiv",
    "name": "Shiv",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Busted Flush"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Shiv",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -15696,7 +15757,9 @@
    "id": "hero_synth",
    "name": "Pocket",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "The Black Sheep"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Pocket",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -16117,7 +16180,9 @@
    "id": "hero_tengu",
    "name": "Ivy",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Protector's Hand"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Ivy",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -16623,7 +16688,9 @@
    "id": "hero_unicorn",
    "name": "Celeste",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Carny Life"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Celeste",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -17135,7 +17202,9 @@
    "id": "hero_vampirebat",
    "name": "Mina",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "New Money"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Mina",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -17521,7 +17590,9 @@
    "id": "hero_viper",
    "name": "Vyper",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "The Rattler"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Vyper",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -17937,7 +18008,9 @@
    "id": "hero_viscous",
    "name": "Viscous",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Deep Sea Interpreter"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Viscous",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -18432,7 +18505,9 @@
    "id": "hero_warden",
    "name": "Warden",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Freedom's Cost"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Warden",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -18887,7 +18962,9 @@
    "id": "hero_werewolf",
    "name": "Silver",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Hair of the Dog"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Silver",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -19324,7 +19401,9 @@
    "id": "hero_wraith",
    "name": "Wraith",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "The Rake"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Wraith",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -19762,7 +19841,9 @@
    "id": "hero_yamato",
    "name": "Yamato",
    "type": "hero",
-   "aliases": [],
+   "aliases": [
+    "Sister's Lament"
+   ],
    "sourceUrls": [
     "https://deadlock.wiki/Yamato",
     "https://deadlock.wiki/Data:HeroData.json",
@@ -20200,6 +20281,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": true,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Reset the cooldown of the imbued non-ultimate ability. This item's cooldown is increased by the cooldown of the imbued ability.",
@@ -20259,6 +20341,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Reset the cooldown of all your abilities and restore all your charges.",
@@ -20294,6 +20377,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Taking heavy hits of Spirit Damage from an enemy reduces a random ability cooldown.",
@@ -20359,6 +20443,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_spirit_snatch"
@@ -20420,6 +20505,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "While reloading, pressing Reload during the highlighted portion will instantly finish your reload and grant you Fire Rate, Bullet Lifesteal and Move Speed.",
@@ -20495,6 +20581,7 @@
     "activation": "Press",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_containment"
     ],
@@ -20595,6 +20682,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_high_velocity_mag"
     ],
@@ -20659,6 +20747,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": true,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_imbued_duration_extender"
@@ -20703,6 +20792,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_improved_stamina"
     ],
@@ -20787,6 +20877,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_cold_front"
     ],
@@ -20861,6 +20952,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_vex_barrier"
     ],
@@ -20942,6 +21034,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_headshot_booster2"
     ],
@@ -21018,6 +21111,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Your Weapon Damage increases as you take sustained damage.",
@@ -21089,6 +21183,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_rapid_rounds"
     ],
@@ -21139,6 +21234,7 @@
     "activation": "InstantCastToggle",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Toggle: Continually sacrifice Health to improve Fire Rate, Debuff Resistance and Move Speed.",
@@ -21226,6 +21322,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_soaring_spirit"
     ],
@@ -21286,6 +21383,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_lifestrike_gauntlets"
     ],
@@ -21374,6 +21472,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Reduces nearby enemies' Bullet Resist and Fire Rate. If there is only one enemy hero nearby, this effect is doubled.",
@@ -21449,6 +21548,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Reduces Bullet Resist on enemies when you deal Spirit Damage.",
@@ -21518,6 +21618,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": true,
+    "streetBrawl": false,
     "components": [
      "upgrade_magic_reach"
     ],
@@ -21587,6 +21688,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_rapid_rounds"
     ],
@@ -21662,6 +21764,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_chain_lightning"
     ],
@@ -21764,6 +21867,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_sprint_booster"
     ],
@@ -21810,6 +21914,73 @@
    }
   },
   {
+   "id": "upgrade_celestial_guidance",
+   "name": "Celestial Blessing",
+   "type": "item",
+   "aliases": [],
+   "sourceUrls": [
+    "https://deadlock.wiki/Celestial_Blessing",
+    "https://deadlock.wiki/Data:ItemData.json",
+    "https://deadlock.wiki/Data:ItemCards.json"
+   ],
+   "attributes": {
+    "internalKey": "upgrade_celestial_guidance",
+    "cost": 9999,
+    "tier": 5,
+    "slot": "Vitality",
+    "activation": "InstantCast",
+    "isActive": true,
+    "isImbue": false,
+    "streetBrawl": true,
+    "components": [],
+    "upgradesInto": [],
+    "description": "Applies an extremely powerful cleanse that replenishes your allies globally.",
+    "sections": [
+     {
+      "kind": "Active",
+      "description": "Applies an extremely powerful cleanse that replenishes your allies globally.",
+      "cooldown": 30,
+      "props": [
+       {
+        "key": "HealPercentAmount",
+        "label": "Heal Amount",
+        "value": 60,
+        "type": "healing"
+       },
+       {
+        "key": "StaminaCooldownReduction",
+        "label": "Stamina Recovery",
+        "value": 100,
+        "type": null,
+        "conditional": true
+       },
+       {
+        "key": "BuffMoveSpeedBonus",
+        "label": "Move Speed",
+        "value": "5m",
+        "type": "move_speed",
+        "conditional": true
+       },
+       {
+        "key": "MinHeal",
+        "label": "Min. Heal",
+        "value": 400,
+        "type": "healing"
+       },
+       {
+        "key": "BuffDuration",
+        "label": "Buff Duration",
+        "value": 6,
+        "type": "duration"
+       }
+      ]
+     }
+    ],
+    "statusEffects": [],
+    "popularity": null
+   }
+  },
+  {
    "id": "upgrade_chain_lightning",
    "name": "Tesla Bullets",
    "type": "item",
@@ -21829,6 +22000,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_capacitor"
@@ -21896,6 +22068,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "When you would take lethal damage, instead become temporarily death immune and remove all non-stun debuffs. While death immune, you deal reduced damage and have reduced healing.",
@@ -21969,6 +22142,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_health"
     ],
@@ -22048,6 +22222,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_reinforcing_casings",
@@ -22080,6 +22255,67 @@
    }
   },
   {
+   "id": "upgrade_cloak_of_opportunity",
+   "name": "Cloak of Opportunity",
+   "type": "item",
+   "aliases": [],
+   "sourceUrls": [
+    "https://deadlock.wiki/Cloak_of_Opportunity",
+    "https://deadlock.wiki/Data:ItemData.json",
+    "https://deadlock.wiki/Data:ItemCards.json"
+   ],
+   "attributes": {
+    "internalKey": "upgrade_cloak_of_opportunity",
+    "cost": 9999,
+    "tier": 5,
+    "slot": "Vitality",
+    "activation": "Passive",
+    "isActive": false,
+    "isImbue": false,
+    "streetBrawl": true,
+    "components": [],
+    "upgradesInto": [],
+    "description": "Block the next debuff that would apply movement lock, Stun, Chained, Immobilize, or Sleep and become Unstoppable. Also gain a Barrier and bonus Move Speed",
+    "sections": [
+     {
+      "kind": "Passive",
+      "description": "Block the next debuff that would apply movement lock, Stun, Chained, Immobilize, or Sleep and become Unstoppable. Also gain a Barrier and bonus Move Speed",
+      "cooldown": 12,
+      "props": [
+       {
+        "key": "CombatBarrier",
+        "label": "Barrier",
+        "value": 500,
+        "type": "combat_barrier",
+        "conditional": true
+       },
+       {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "3m",
+        "type": "move_speed",
+        "conditional": true
+       },
+       {
+        "key": "StatusImmuneDuration",
+        "label": "Unstoppable Duration",
+        "value": 4,
+        "type": "duration"
+       },
+       {
+        "key": "BuffDuration",
+        "label": "Buff Duration",
+        "value": 6,
+        "type": "duration"
+       }
+      ]
+     }
+    ],
+    "statusEffects": [],
+    "popularity": null
+   }
+  },
+  {
    "id": "upgrade_cloaking_device_active",
    "name": "Shadow Weave",
    "type": "item",
@@ -22097,6 +22333,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_sprint_booster"
     ],
@@ -22211,6 +22448,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_close_range"
     ],
@@ -22293,6 +22531,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_close_quarter_combat"
@@ -22354,6 +22593,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_arctic_blast"
@@ -22434,6 +22674,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_health"
     ],
@@ -22536,6 +22777,7 @@
     "activation": "Press",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_aoe_root"
@@ -22613,6 +22855,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_magic_tempo"
     ],
@@ -22672,6 +22915,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Your next parry protects you from the damage and effects of enemy abilities and items. On a successful spell parry Heal and gain Move Speed and Spirit.",
@@ -22758,6 +23002,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Your next bullet deals bonus Spirit Damage.",
@@ -22815,6 +23060,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Your bullets have a chance to be empowered, causing them to deal bonus weapon damage on hit. Bonus damage cannot Crit.",
@@ -22874,6 +23120,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_melee_charge"
     ],
@@ -22981,6 +23228,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_vampire",
      "upgrade_health_stealing_magic"
@@ -23050,6 +23298,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_spellbreaker",
@@ -23110,6 +23359,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Gain a chance to either deflect incoming bullets, preventing all Weapon Damage or prevent all on-hit effects from bullets.",
@@ -23169,6 +23419,7 @@
     "activation": "Press",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Apply Spirit Resist, Debuff Resist and an aura on a friendly target that deals Spirit Icondamage to enemies proportional to their max health. Existing debuffs on the target are reduced. Can be self cast.",
@@ -23262,6 +23513,7 @@
     "activation": "Press",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_guardian_ward"
     ],
@@ -23349,6 +23601,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Upon casting an ultimate ability gain a Barrier and temporary Spirit Power.",
@@ -23424,6 +23677,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Provides Bullet Resist to nearby friendly units.",
@@ -23499,6 +23753,167 @@
    }
   },
   {
+   "id": "upgrade_eldritch_shot",
+   "name": "Haunting Shot",
+   "type": "item",
+   "aliases": [],
+   "sourceUrls": [
+    "https://deadlock.wiki/Haunting_Shot",
+    "https://deadlock.wiki/Data:ItemData.json",
+    "https://deadlock.wiki/Data:ItemCards.json"
+   ],
+   "attributes": {
+    "internalKey": "upgrade_eldritch_shot",
+    "cost": 9999,
+    "tier": 5,
+    "slot": "Weapon",
+    "activation": "Passive",
+    "isActive": false,
+    "isImbue": false,
+    "streetBrawl": true,
+    "components": [],
+    "upgradesInto": [],
+    "description": "Your next bullet applies a powerful debuff reducing the enemy's damage output, healing and movement speed. It also deals Bonus Spirit Damage based on the target's current Health. The bullet is larger and penetrates through targets.",
+    "sections": [
+     {
+      "kind": "Passive",
+      "description": "Your next bullet applies a powerful debuff reducing the enemy's damage output, healing and movement speed. It also deals Bonus Spirit Damage based on the target's current Health. The bullet is larger and penetrates through targets.",
+      "cooldown": 2.5,
+      "props": [
+       {
+        "key": "HealthPctDamage",
+        "label": "Current Health Damage",
+        "value": 10,
+        "type": "tech_damage"
+       },
+       {
+        "key": "OutgoingDamagePenaltyPercent",
+        "label": "Damage Penalty",
+        "value": -40,
+        "type": "damage",
+        "conditional": true
+       },
+       {
+        "key": "HealAmpReceivePenaltyPercent",
+        "label": "Incoming Healing",
+        "value": -40,
+        "type": "damage",
+        "conditional": true
+       },
+       {
+        "key": "BulletRadius",
+        "label": "Bullet Radius",
+        "value": "1.5m",
+        "type": null
+       },
+       {
+        "key": "DebuffDuration",
+        "label": "Debuff Duration",
+        "value": 4,
+        "type": "duration"
+       },
+       {
+        "key": "MovementSpeedSlow",
+        "label": "Move Speed",
+        "value": 32,
+        "type": "slow",
+        "conditional": true
+       },
+       {
+        "key": "GroundDashReductionPercent",
+        "label": "Dash Distance",
+        "value": -36,
+        "type": "slow",
+        "conditional": true
+       }
+      ]
+     }
+    ],
+    "statusEffects": [],
+    "popularity": null
+   }
+  },
+  {
+   "id": "upgrade_electric_slippers",
+   "name": "Electric Slippers",
+   "type": "item",
+   "aliases": [],
+   "sourceUrls": [
+    "https://deadlock.wiki/Electric_Slippers",
+    "https://deadlock.wiki/Data:ItemData.json",
+    "https://deadlock.wiki/Data:ItemCards.json"
+   ],
+   "attributes": {
+    "internalKey": "upgrade_electric_slippers",
+    "cost": 9999,
+    "tier": 5,
+    "slot": "Vitality",
+    "activation": "Passive",
+    "isActive": false,
+    "isImbue": false,
+    "streetBrawl": true,
+    "components": [],
+    "upgradesInto": [],
+    "description": "When sliding, evade bullets, gain fire rate and deal damage to enemies around you. Cooldown is per target.",
+    "sections": [
+     {
+      "kind": "Innate",
+      "description": null,
+      "cooldown": null,
+      "props": [
+       {
+        "key": "Stamina",
+        "label": "Stamina",
+        "value": 2,
+        "type": null
+       },
+       {
+        "key": "SlideScale",
+        "label": "Slide Distance",
+        "value": 80,
+        "type": "movement_speed"
+       }
+      ]
+     },
+     {
+      "kind": "Passive",
+      "description": "When sliding, evade bullets, gain fire rate and deal damage to enemies around you. Cooldown is per target.",
+      "cooldown": 0.3,
+      "props": [
+       {
+        "key": "Damage",
+        "label": "Damage",
+        "value": 100,
+        "type": "tech_damage"
+       },
+       {
+        "key": "EvasionWhileSliding",
+        "label": "Evasion While Sliding",
+        "value": 60,
+        "type": null,
+        "conditional": true
+       },
+       {
+        "key": "FireRateWhileSliding",
+        "label": "Fire Rate While Sliding",
+        "value": 60,
+        "type": "fire_rate",
+        "conditional": true
+       },
+       {
+        "key": "Radius",
+        "label": "Radius",
+        "value": "12m",
+        "type": "distance"
+       }
+      ]
+     }
+    ],
+    "statusEffects": [],
+    "popularity": null
+   }
+  },
+  {
    "id": "upgrade_enchanted_holsters",
    "name": "Spellslinger",
    "type": "item",
@@ -23518,6 +23933,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "While in-combat whenever you cast an ability or item, gain a stacking buff that improves fire rate and reload speed. Each stack refreshes the duration.",
@@ -23591,6 +24007,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "",
@@ -23640,6 +24057,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_magic_vulnerability"
     ],
@@ -23697,6 +24115,61 @@
    }
   },
   {
+   "id": "upgrade_eternal_gift",
+   "name": "Eternal Gift",
+   "type": "item",
+   "aliases": [],
+   "sourceUrls": [
+    "https://deadlock.wiki/Eternal_Gift",
+    "https://deadlock.wiki/Data:ItemData.json",
+    "https://deadlock.wiki/Data:ItemCards.json"
+   ],
+   "attributes": {
+    "internalKey": "upgrade_eternal_gift",
+    "cost": 9999,
+    "tier": 5,
+    "slot": "Vitality",
+    "activation": "Passive",
+    "isActive": false,
+    "isImbue": false,
+    "streetBrawl": true,
+    "components": [],
+    "upgradesInto": [],
+    "description": "Periodically gain a random permanent stat buff.",
+    "sections": [
+     {
+      "kind": "Passive",
+      "description": "Periodically gain a random permanent stat buff.",
+      "cooldown": null,
+      "props": [
+       {
+        "key": "BuffFrequency",
+        "label": "Buff Frequency",
+        "value": 2,
+        "type": "duration"
+       }
+      ]
+     },
+     {
+      "kind": "Passive",
+      "description": "Reduces your next death's respawn timer.",
+      "cooldown": 165,
+      "props": [
+       {
+        "key": "RespawnTime",
+        "label": "Respawn Time",
+        "value": -70,
+        "type": null,
+        "conditional": true
+       }
+      ]
+     }
+    ],
+    "statusEffects": [],
+    "popularity": null
+   }
+  },
+  {
    "id": "upgrade_ethereal_bullets",
    "name": "Mercurial Magnum",
    "type": "item",
@@ -23718,6 +24191,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": true,
+    "streetBrawl": false,
     "components": [
      "upgrade_quick_silver"
     ],
@@ -23805,6 +24279,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_high_velocity_mag"
     ],
@@ -23897,6 +24372,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_rapid_recharge"
@@ -23945,6 +24421,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "While you are below Low Health Threshold% health, you gain stat bonuses for a duration and existing debuffs on you are reduced.",
@@ -24034,6 +24511,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Removes the Move Speed penalty while shooting. Gain bonus Move Speed and Slow Resistance.",
@@ -24120,6 +24598,7 @@
     "activation": "Press",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_spirit_sap"
     ],
@@ -24211,6 +24690,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_vampire"
     ],
@@ -24301,6 +24781,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Each hero kill grants permanent Fire Rate (up to a max of 8 times). Death results in the loss of 1 stack.",
@@ -24364,6 +24845,7 @@
     "activation": "Press",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Curses an enemy - interrupting, Silencing, Disarming, and preventing item usage. Removes all non-ultimate buffs. Your own Damage Output is reduced for the duration.",
@@ -24434,6 +24916,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Gain souls over time, as long as you are alive.",
@@ -24501,6 +24984,7 @@
     "activation": "Press",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_withering_whip"
     ],
@@ -24584,6 +25068,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_guardian_ward",
@@ -24651,6 +25136,7 @@
     "activation": "Press",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_grit"
     ],
@@ -24736,6 +25222,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_headshot_booster"
     ],
@@ -24826,6 +25313,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_headhunter"
@@ -24883,6 +25371,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_banshee_slugs"
@@ -24945,6 +25434,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Your Spirit Damage reduces the enemy's Incoming Healing. If an enemy hero dies under this effect, you receive a large heal.",
@@ -25018,6 +25508,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_healing_booster"
     ],
@@ -25103,6 +25594,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_healbuff"
@@ -25161,6 +25653,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_chonky",
@@ -25207,6 +25700,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_health_stimpak"
     ],
@@ -25286,6 +25780,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_damage_recycler",
@@ -25344,6 +25839,7 @@
     "activation": "Press",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_health_nova",
@@ -25414,6 +25910,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_aprounds",
@@ -25468,6 +25965,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "When you are above 65% health, deal additional Weapon Damage and your bullets reduce enemy Bullet Resist.",
@@ -25524,6 +26022,86 @@
    }
   },
   {
+   "id": "upgrade_icarus_wings",
+   "name": "Seraphim Wings",
+   "type": "item",
+   "aliases": [
+    "Wings"
+   ],
+   "sourceUrls": [
+    "https://deadlock.wiki/Seraphim_Wings",
+    "https://deadlock.wiki/Data:ItemData.json",
+    "https://deadlock.wiki/Data:ItemCards.json"
+   ],
+   "attributes": {
+    "internalKey": "upgrade_icarus_wings",
+    "cost": 9999,
+    "tier": 5,
+    "slot": "Vitality",
+    "activation": "Passive",
+    "isActive": false,
+    "isImbue": false,
+    "streetBrawl": true,
+    "components": [],
+    "upgradesInto": [],
+    "description": "When Airborne, You deal more damage and take reduced damage. Allows unlimited Air Dash and Jumping.",
+    "sections": [
+     {
+      "kind": "Innate",
+      "description": null,
+      "cooldown": null,
+      "props": [
+       {
+        "key": "StaminaCooldownReduction",
+        "label": "Stamina Recovery",
+        "value": 120,
+        "type": null
+       },
+       {
+        "key": "GravityScale",
+        "label": "Gravity Scale",
+        "value": -70,
+        "type": null
+       },
+       {
+        "key": "AirControlPercent",
+        "label": "Air Control",
+        "value": 100,
+        "type": "move_speed"
+       },
+       {
+        "key": "AirControlAccelPercent",
+        "label": "Air Acceleration",
+        "value": 50,
+        "type": "move_speed"
+       }
+      ]
+     },
+     {
+      "kind": "Passive",
+      "description": "When Airborne, You deal more damage and take reduced damage. Allows unlimited Air Dash and Jumping.",
+      "cooldown": null,
+      "props": [
+       {
+        "key": "AirBonusDamageGiven",
+        "label": "In Air Damage",
+        "value": 40,
+        "type": null
+       },
+       {
+        "key": "AirBonusDamageTaken",
+        "label": "In Air Damage Received",
+        "value": -40,
+        "type": null
+       }
+      ]
+     }
+    ],
+    "statusEffects": [],
+    "popularity": null
+   }
+  },
+  {
    "id": "upgrade_imbued_duration_extender",
    "name": "Superior Duration",
    "type": "item",
@@ -25543,6 +26121,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_arcane_extension"
     ],
@@ -25601,6 +26180,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "When below 50% health, gain additional Bullet Resist.",
@@ -25667,6 +26247,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_magic_storm",
@@ -25710,6 +26291,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_arcane_surge",
@@ -25743,6 +26325,74 @@
    }
   },
   {
+   "id": "upgrade_infinite_rounds",
+   "name": "Infinite Rounds",
+   "type": "item",
+   "aliases": [
+    "Infinite"
+   ],
+   "sourceUrls": [
+    "https://deadlock.wiki/Infinite_Rounds",
+    "https://deadlock.wiki/Data:ItemData.json",
+    "https://deadlock.wiki/Data:ItemCards.json"
+   ],
+   "attributes": {
+    "internalKey": "upgrade_infinite_rounds",
+    "cost": 9999,
+    "tier": 5,
+    "slot": "Weapon",
+    "activation": "Passive",
+    "isActive": false,
+    "isImbue": false,
+    "streetBrawl": true,
+    "components": [],
+    "upgradesInto": [],
+    "description": "You have infinite ammo.",
+    "sections": [
+     {
+      "kind": "Innate",
+      "description": null,
+      "cooldown": null,
+      "props": [
+       {
+        "key": "BonusBulletSpeedPercent",
+        "label": "Bullet Velocity",
+        "value": 200,
+        "type": null
+       },
+       {
+        "key": "BonusFireRate",
+        "label": "Fire Rate",
+        "value": 35,
+        "type": null
+       }
+      ]
+     },
+     {
+      "kind": "Passive",
+      "description": "Your Bullets have a chance to become unavoidable, piercing through enemies and ignoring their Bullet Resistance.",
+      "cooldown": null,
+      "props": [
+       {
+        "key": "ProcChance",
+        "label": "Proc Chance",
+        "value": 65,
+        "type": null
+       }
+      ]
+     },
+     {
+      "kind": "Passive",
+      "description": "You have infinite ammo.",
+      "cooldown": null,
+      "props": []
+     }
+    ],
+    "statusEffects": [],
+    "popularity": null
+   }
+  },
+  {
    "id": "upgrade_infuser",
    "name": "Infuser",
    "type": "item",
@@ -25762,6 +26412,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_health_stealing_magic"
     ],
@@ -25851,6 +26502,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Your bullets build up to reduce the target's outgoing damage and apply healing reduction.",
@@ -25932,6 +26584,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Increases Weapon Damage as you continuously fire your weapon.",
@@ -26000,6 +26653,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_cardio_calibrator"
     ],
@@ -26080,6 +26734,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_improved_stamina"
     ],
@@ -26155,6 +26810,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_boxing_glove"
@@ -26212,6 +26868,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_sharpshooter"
@@ -26281,6 +26938,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_magic_shock"
@@ -26325,6 +26983,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Summon a Magic Carpet that will fly you away. While flying you are immune to slows and doing any action will dismiss the carpet. Cannot use abilities while the carpet is being summoned.",
@@ -26420,6 +27079,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": true,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_bulletshredimbue",
@@ -26466,6 +27126,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "While you are above 65% health, gain bonus Spirit and Cooldown Reduction.",
@@ -26534,6 +27195,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_magic_burst"
     ],
@@ -26595,6 +27257,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_ultimate_burst"
@@ -26672,6 +27335,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": true,
+    "streetBrawl": false,
     "components": [
      "upgrade_improved_spirit"
     ],
@@ -26737,6 +27401,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": true,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_cooldown_reduction"
@@ -26781,6 +27446,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_escalating_exposure"
@@ -26846,6 +27512,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Your next bullet will heal you based on what target you hit.",
@@ -26905,6 +27572,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_crushing_fists"
@@ -26972,6 +27640,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "On a successful Parry against an enemy Hero, Heal yourself for the damage parried and returns that damage to the target, and temporarily gain increased damage.",
@@ -27050,6 +27719,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Become immune to bullets.",
@@ -27126,6 +27796,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_resonant_healing"
@@ -27189,6 +27860,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": true,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Imbue an ability with Lifesteal and to apply slow on a hit target and deal an additional percentage of the damage dealt to enemies around the target after a short delay.",
@@ -27251,6 +27923,70 @@
    }
   },
   {
+   "id": "upgrade_mystical_piano",
+   "name": "Mystical Piano",
+   "type": "item",
+   "aliases": [
+    "Piano"
+   ],
+   "sourceUrls": [
+    "https://deadlock.wiki/Mystical_Piano",
+    "https://deadlock.wiki/Data:ItemData.json",
+    "https://deadlock.wiki/Data:ItemCards.json"
+   ],
+   "attributes": {
+    "internalKey": "upgrade_mystical_piano",
+    "cost": 9999,
+    "tier": 5,
+    "slot": "Spirit",
+    "activation": "Press",
+    "isActive": true,
+    "isImbue": false,
+    "streetBrawl": true,
+    "components": [],
+    "upgradesInto": [],
+    "description": "After a short delay, enemies in the target area will be stunned and have their stamina depleted. After the stun they will be temporarily dazed.",
+    "sections": [
+     {
+      "kind": "Active",
+      "description": "After a short delay, enemies in the target area will be stunned and have their stamina depleted. After the stun they will be temporarily dazed.",
+      "cooldown": 23,
+      "props": [
+       {
+        "key": "StunDuration",
+        "label": "Stun Duration",
+        "value": 2,
+        "type": "duration",
+        "statusEffect": "Stun"
+       },
+       {
+        "key": "DazeDuration",
+        "label": "Daze Duration",
+        "value": 2,
+        "type": "duration"
+       },
+       {
+        "key": "StunDelay",
+        "label": "Stun Delay",
+        "value": 1.7,
+        "type": null
+       },
+       {
+        "key": "Radius",
+        "label": "Radius",
+        "value": "12m",
+        "type": "distance"
+       }
+      ]
+     }
+    ],
+    "statusEffects": [
+     "Stun"
+    ],
+    "popularity": null
+   }
+  },
+  {
    "id": "upgrade_non_player_bonus",
    "name": "Monster Rounds",
    "type": "item",
@@ -27270,6 +28006,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_non_player_bonus_sacrifice"
@@ -27327,6 +28064,7 @@
     "activation": "Press",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_non_player_bonus"
     ],
@@ -27406,6 +28144,246 @@
    }
   },
   {
+   "id": "upgrade_nullification_aura",
+   "name": "Nullification Burst",
+   "type": "item",
+   "aliases": [],
+   "sourceUrls": [
+    "https://deadlock.wiki/Nullification_Burst",
+    "https://deadlock.wiki/Data:ItemData.json",
+    "https://deadlock.wiki/Data:ItemCards.json"
+   ],
+   "attributes": {
+    "internalKey": "upgrade_nullification_aura",
+    "cost": 9999,
+    "tier": 5,
+    "slot": "Vitality",
+    "activation": "InstantCast",
+    "isActive": true,
+    "isImbue": false,
+    "streetBrawl": true,
+    "components": [],
+    "upgradesInto": [],
+    "description": "Removes any positive buffs and prevents stamina usage and healing effects on enemies.",
+    "sections": [
+     {
+      "kind": "Innate",
+      "description": null,
+      "cooldown": null,
+      "props": [
+       {
+        "key": "StatusResistancePercent",
+        "label": "Debuff Resist",
+        "value": 40,
+        "type": "duration"
+       },
+       {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": 300,
+        "type": "health"
+       }
+      ]
+     },
+     {
+      "kind": "Active",
+      "description": "Removes any positive buffs and prevents stamina usage and healing effects on enemies.",
+      "cooldown": 18,
+      "props": [
+       {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": 7,
+        "type": "duration"
+       },
+       {
+        "key": "Damage",
+        "label": "Damage",
+        "value": 250,
+        "type": "tech_damage",
+        "scale": {
+         "value": 0.465,
+         "type": "spirit"
+        }
+       },
+       {
+        "key": "EndRadius",
+        "label": "End Radius",
+        "value": "20m",
+        "type": "distance"
+       }
+      ]
+     }
+    ],
+    "statusEffects": [],
+    "popularity": null
+   }
+  },
+  {
+   "id": "upgrade_omnicharge_pendant",
+   "name": "Omnicharge Signet",
+   "type": "item",
+   "aliases": [
+    "Omnicharge"
+   ],
+   "sourceUrls": [
+    "https://deadlock.wiki/Omnicharge_Signet",
+    "https://deadlock.wiki/Data:ItemData.json",
+    "https://deadlock.wiki/Data:ItemCards.json"
+   ],
+   "attributes": {
+    "internalKey": "upgrade_omnicharge_pendant",
+    "cost": 9999,
+    "tier": 5,
+    "slot": "Spirit",
+    "activation": "Passive",
+    "isActive": false,
+    "isImbue": true,
+    "streetBrawl": true,
+    "components": [],
+    "upgradesInto": [],
+    "description": "Imbue any active non-ultimate ability with Bonus Ability Charges. Already charged abilities receive more bonus charges.",
+    "sections": [
+     {
+      "kind": "Innate",
+      "description": null,
+      "cooldown": null,
+      "props": [
+       {
+        "key": "CooldownBetweenChargeReduction",
+        "label": "Faster Time Between Charges",
+        "value": 70,
+        "type": "cooldown"
+       },
+       {
+        "key": "CooldownReductionOnChargedAbilities",
+        "label": "Cooldown Reduction For Charged Abilities",
+        "value": 30,
+        "type": null
+       },
+       {
+        "key": "BonusSpiritForChargedAbilities",
+        "label": "Bonus Spirit Power for Charged Abilities",
+        "value": 50,
+        "type": null
+       }
+      ]
+     },
+     {
+      "kind": "Passive",
+      "description": "Imbue any active non-ultimate ability with Bonus Ability Charges. Already charged abilities receive more bonus charges.",
+      "cooldown": null,
+      "props": [
+       {
+        "key": "BonusAbilityCharges",
+        "label": "Bonus Ability Charges",
+        "value": 4,
+        "type": "cast"
+       },
+       {
+        "key": "BonusAbilityChargesNonCharge",
+        "label": "Non Charged Ability",
+        "value": 2,
+        "type": "cast"
+       }
+      ]
+     }
+    ],
+    "statusEffects": [],
+    "popularity": null
+   }
+  },
+  {
+   "id": "upgrade_patrons_blessing",
+   "name": "Mystic Conduit",
+   "type": "item",
+   "aliases": [],
+   "sourceUrls": [
+    "https://deadlock.wiki/Mystic_Conduit",
+    "https://deadlock.wiki/Data:ItemData.json",
+    "https://deadlock.wiki/Data:ItemCards.json"
+   ],
+   "attributes": {
+    "internalKey": "upgrade_patrons_blessing",
+    "cost": 9999,
+    "tier": 5,
+    "slot": "Spirit",
+    "activation": "Passive",
+    "isActive": false,
+    "isImbue": false,
+    "streetBrawl": true,
+    "components": [],
+    "upgradesInto": [],
+    "description": "Provides yourself and allies with a powerful spirit focused aura. Has reduced values on allies.",
+    "sections": [
+     {
+      "kind": "Passive",
+      "description": "Provides yourself and allies with a powerful spirit focused aura. Has reduced values on allies.",
+      "cooldown": null,
+      "props": [
+       {
+        "key": "TechRangeMultiplier",
+        "label": "Ability Range",
+        "value": 40,
+        "type": "distance"
+       },
+       {
+        "key": "CooldownReduction",
+        "label": "Ability Cooldown Reduction",
+        "value": 40,
+        "type": "cooldown"
+       },
+       {
+        "key": "AllyPercentage",
+        "label": "Ally Percentage",
+        "value": 50,
+        "type": null
+       },
+       {
+        "key": "Radius",
+        "label": "Radius",
+        "value": "25m",
+        "type": "distance"
+       }
+      ]
+     },
+     {
+      "kind": "Passive",
+      "description": "Dealing significant Damage to an enemy Hero within Damage Threshold Durations causes you to heal yourself and nearby allies.",
+      "cooldown": 25,
+      "props": [
+       {
+        "key": "HealAmount",
+        "label": "Heal Amount",
+        "value": 700,
+        "type": "healing"
+       },
+       {
+        "key": "HealRadius",
+        "label": "Heal Radius",
+        "value": "35m",
+        "type": "distance"
+       },
+       {
+        "key": "DamageThreshold",
+        "label": "Damage Threshold",
+        "value": 300,
+        "type": "tech_armor_up"
+       },
+       {
+        "key": "DamageThresholdDuration",
+        "label": null,
+        "value": 5,
+        "type": null
+       }
+      ]
+     }
+    ],
+    "statusEffects": [],
+    "popularity": null
+   }
+  },
+  {
    "id": "upgrade_phantom_strike",
    "name": "Phantom Strike",
    "type": "item",
@@ -27425,6 +28403,7 @@
     "activation": "Press",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Teleport to an enemy target and pull them to the ground. Dealing damage, Move speed reduction and Disarm.",
@@ -27496,6 +28475,57 @@
    }
   },
   {
+   "id": "upgrade_prism_blast",
+   "name": "Prism Blast",
+   "type": "item",
+   "aliases": [],
+   "sourceUrls": [
+    "https://deadlock.wiki/Prism_Blast",
+    "https://deadlock.wiki/Data:ItemData.json",
+    "https://deadlock.wiki/Data:ItemCards.json"
+   ],
+   "attributes": {
+    "internalKey": "upgrade_prism_blast",
+    "cost": 9999,
+    "tier": 5,
+    "slot": "Spirit",
+    "activation": "InstantCast",
+    "isActive": true,
+    "isImbue": false,
+    "streetBrawl": true,
+    "components": [],
+    "upgradesInto": [],
+    "description": "You enter a void state and become untargetable and invincible for a short duration, during which lasers blast out and rotate around you.",
+    "sections": [
+     {
+      "kind": "Active",
+      "description": "You enter a void state and become untargetable and invincible for a short duration, during which lasers blast out and rotate around you.",
+      "cooldown": 40,
+      "props": [
+       {
+        "key": "DPS",
+        "label": "Damage Per Second",
+        "value": 270,
+        "type": "tech_damage",
+        "scale": {
+         "value": 1.75,
+         "type": "spirit"
+        }
+       },
+       {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": 6,
+        "type": "duration"
+       }
+      ]
+     }
+    ],
+    "statusEffects": [],
+    "popularity": null
+   }
+  },
+  {
    "id": "upgrade_pristine_emblem",
    "name": "Opening Rounds",
    "type": "item",
@@ -27516,6 +28546,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_high_velocity_mag"
     ],
@@ -27584,6 +28615,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Your bullets build up to a Silence. Victims are immune to the build up for 10s after silence expires.",
@@ -27676,6 +28708,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": true,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_ethereal_bullets"
@@ -27734,6 +28767,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_extra_charge"
     ],
@@ -27794,6 +28828,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_blitz_bullets",
@@ -27837,6 +28872,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Dealing significant Weapon Damage replenishes a charge for each of your charged abilities.",
@@ -27908,6 +28944,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Purge all non-ultimate negative effects currently applied to you. If any effects were removed, heal yourself and gain a move speed bonus. Cannot be used while Stunned or Slept.",
@@ -27977,6 +29014,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "While you are above 65% health, gain Weapon Damage and Bonus Fire Rate.",
@@ -28044,6 +29082,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_clip_size"
     ],
@@ -28124,6 +29163,7 @@
     "activation": "Press",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_health_stimpak"
     ],
@@ -28206,6 +29246,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_mystic_regeneration"
     ],
@@ -28303,6 +29344,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "When an enemy uses an ability within Radiusm range from you, store one Restoration Stack. Consume all stacks to heal yourself and replenish up to Max Stamina Restore stamina based on how many stacks you have.",
@@ -28372,6 +29414,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Automatically fire a bullet towards any attacker who damages you with their abilities or weapon.",
@@ -28437,6 +29480,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Your bullets will ricochet on enemies near your target, applying any bullet procs and dealing a percentage of the original damage.",
@@ -28502,6 +29546,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Launch yourself high into the air and grant yourself a Barrier. While in the air, you can use the active again to drop down faster. Cannot be used for 5s if attacked by enemy Hero.",
@@ -28549,6 +29594,84 @@
    }
   },
   {
+   "id": "upgrade_runed_gauntlets",
+   "name": "Runed Gauntlets",
+   "type": "item",
+   "aliases": [],
+   "sourceUrls": [
+    "https://deadlock.wiki/Runed_Gauntlets",
+    "https://deadlock.wiki/Data:ItemData.json",
+    "https://deadlock.wiki/Data:ItemCards.json"
+   ],
+   "attributes": {
+    "internalKey": "upgrade_runed_gauntlets",
+    "cost": 9999,
+    "tier": 5,
+    "slot": "Weapon",
+    "activation": "Passive",
+    "isActive": false,
+    "isImbue": false,
+    "streetBrawl": true,
+    "components": [],
+    "upgradesInto": [],
+    "description": "Every time you land a heavy melee, your existing cooldowns get reduced.",
+    "sections": [
+     {
+      "kind": "Innate",
+      "description": null,
+      "cooldown": null,
+      "props": [
+       {
+        "key": "MeleeDistanceScale",
+        "label": "Heavy Melee Distance",
+        "value": 150,
+        "type": null
+       },
+       {
+        "key": "MeleeResistPercent",
+        "label": "Melee Resist",
+        "value": 50,
+        "type": null
+       },
+       {
+        "key": "BonusMeleeDamagePercent",
+        "label": "Melee Damage",
+        "value": 30,
+        "type": "melee_damage"
+       }
+      ]
+     },
+     {
+      "kind": "Passive",
+      "description": "Pierces through parry.",
+      "cooldown": 10,
+      "props": []
+     },
+     {
+      "kind": "Passive",
+      "description": "Every time you land a heavy melee, your existing cooldowns get reduced.",
+      "cooldown": null,
+      "props": [
+       {
+        "key": "CooldownReductionOnHitPct",
+        "label": "Cooldown Reduction on Hit",
+        "value": 16,
+        "type": "cooldown"
+       },
+       {
+        "key": "CooldownReductionOnHitMin",
+        "label": "Min Reduction",
+        "value": 4,
+        "type": "cooldown"
+       }
+      ]
+     }
+    ],
+    "statusEffects": [],
+    "popularity": null
+   }
+  },
+  {
    "id": "upgrade_rupture",
    "name": "Decay",
    "type": "item",
@@ -28566,6 +29689,7 @@
     "activation": "Press",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Inflict damage over time to a target, dealing damage based on their current health. Decay's damage is non-lethal and does not apply item procs.",
@@ -28664,6 +29788,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Instantly enter a void state and become Invulnerable for a short duration.",
@@ -28721,6 +29846,94 @@
    }
   },
   {
+   "id": "upgrade_shadow_strike",
+   "name": "Shadow Strike",
+   "type": "item",
+   "aliases": [],
+   "sourceUrls": [
+    "https://deadlock.wiki/Shadow_Strike",
+    "https://deadlock.wiki/Data:ItemData.json",
+    "https://deadlock.wiki/Data:ItemCards.json"
+   ],
+   "attributes": {
+    "internalKey": "upgrade_shadow_strike",
+    "cost": 9999,
+    "tier": 5,
+    "slot": "Vitality",
+    "activation": "Passive",
+    "isActive": false,
+    "isImbue": false,
+    "streetBrawl": true,
+    "components": [],
+    "upgradesInto": [],
+    "description": "Go Invisible on Stamina use with no detection range. Doing a melee attack while invisible will cause you to steal bullet and spirit resistance from them and deal damage over time.",
+    "sections": [
+     {
+      "kind": "Innate",
+      "description": null,
+      "cooldown": null,
+      "props": [
+       {
+        "key": "Stamina",
+        "label": "Stamina",
+        "value": 3,
+        "type": null
+       },
+       {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": 350,
+        "type": "health"
+       }
+      ]
+     },
+     {
+      "kind": "Active",
+      "description": "Go Invisible on Stamina use with no detection range. Doing a melee attack while invisible will cause you to steal bullet and spirit resistance from them and deal damage over time.",
+      "cooldown": null,
+      "props": [
+       {
+        "key": "DPS",
+        "label": "Damage Per Second",
+        "value": 125,
+        "type": "tech_damage",
+        "scale": {
+         "value": 0.4,
+         "type": "spirit"
+        }
+       },
+       {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": 3,
+        "type": "duration"
+       },
+       {
+        "key": "StealDuration",
+        "label": "Steal Duration",
+        "value": 6,
+        "type": "duration"
+       },
+       {
+        "key": "ResistStealAmount",
+        "label": "Resist Stolen",
+        "value": 40,
+        "type": "tech_armor_up"
+       },
+       {
+        "key": "InvisFadeToDuration",
+        "label": "Fade Time",
+        "value": 0.2,
+        "type": "duration"
+       }
+      ]
+     }
+    ],
+    "statusEffects": [],
+    "popularity": null
+   }
+  },
+  {
    "id": "upgrade_sharpshooter",
    "name": "Sharpshooter",
    "type": "item",
@@ -28738,6 +29951,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_long_range",
      "upgrade_high_velocity_mag"
@@ -28813,6 +30027,130 @@
    }
   },
   {
+   "id": "upgrade_shivas_bracelet",
+   "name": "Frostbite Charm",
+   "type": "item",
+   "aliases": [],
+   "sourceUrls": [
+    "https://deadlock.wiki/Frostbite_Charm",
+    "https://deadlock.wiki/Data:ItemData.json",
+    "https://deadlock.wiki/Data:ItemCards.json"
+   ],
+   "attributes": {
+    "internalKey": "upgrade_shivas_bracelet",
+    "cost": 9999,
+    "tier": 5,
+    "slot": "Spirit",
+    "activation": "Passive",
+    "isActive": false,
+    "isImbue": true,
+    "streetBrawl": true,
+    "components": [],
+    "upgradesInto": [],
+    "description": "Imbued ability has its Cooldown reduced and gains Spirit Power. When the ability deals damage, freeze the target and apply bonus damage. Cooldown is per target.",
+    "sections": [
+     {
+      "kind": "Active",
+      "description": "Imbued ability has its Cooldown reduced and gains Spirit Power. When the ability deals damage, freeze the target and apply bonus damage. Cooldown is per target.",
+      "cooldown": 10,
+      "props": [
+       {
+        "key": "ImbuedCooldownReduction",
+        "label": "Imbued Ability Cooldown Reduction",
+        "value": 50,
+        "type": "cooldown"
+       },
+       {
+        "key": "ImbuedTechPower",
+        "label": "Imbued Ability Spirit Power",
+        "value": 70,
+        "type": "tech_damage"
+       },
+       {
+        "key": "Damage",
+        "label": "Damage",
+        "value": 200,
+        "type": "tech_damage"
+       },
+       {
+        "key": "FreezeDuration",
+        "label": "Freeze Duration",
+        "value": 1,
+        "type": null
+       }
+      ]
+     }
+    ],
+    "statusEffects": [],
+    "popularity": null
+   }
+  },
+  {
+   "id": "upgrade_shrink_ray",
+   "name": "Shrink Ray",
+   "type": "item",
+   "aliases": [],
+   "sourceUrls": [
+    "https://deadlock.wiki/Shrink_Ray",
+    "https://deadlock.wiki/Data:ItemData.json",
+    "https://deadlock.wiki/Data:ItemCards.json"
+   ],
+   "attributes": {
+    "internalKey": "upgrade_shrink_ray",
+    "cost": 9999,
+    "tier": 5,
+    "slot": "Spirit",
+    "activation": "Press",
+    "isActive": true,
+    "isImbue": false,
+    "streetBrawl": true,
+    "components": [],
+    "upgradesInto": [],
+    "description": "Reduces Model Size and grants Move Speed to the target. Allows usage of tunnels in this mode. Can be self-cast.",
+    "sections": [
+     {
+      "kind": "Active",
+      "description": "Reduces Model Size and grants Move Speed to the target. Allows usage of tunnels in this mode. Can be self-cast.",
+      "cooldown": 30,
+      "props": [
+       {
+        "key": "ModelScaleGrowthTooltip",
+        "label": "Model Scale",
+        "value": -50,
+        "type": null
+       },
+       {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "5.0m",
+        "type": "move_speed"
+       },
+       {
+        "key": "BonusFireRate",
+        "label": "Fire Rate",
+        "value": 20,
+        "type": null
+       },
+       {
+        "key": "ShrinkDuration",
+        "label": "Shrink Duration",
+        "value": 60,
+        "type": "duration"
+       },
+       {
+        "key": "AbilityCastRange",
+        "label": "Cast Range",
+        "value": "40m",
+        "type": "range"
+       }
+      ]
+     }
+    ],
+    "statusEffects": [],
+    "popularity": null
+   }
+  },
+  {
    "id": "upgrade_siphon_bullets",
    "name": "Siphon Bullets",
    "type": "item",
@@ -28832,6 +30170,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Your bullets temporarily steal Max HP from enemies. Enemies regain their stolen health when the debuff expires.",
@@ -28897,6 +30236,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_weighted_shots"
@@ -28961,6 +30301,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_improved_spirit"
     ],
@@ -29013,6 +30354,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_debuff_reducer"
     ],
@@ -29088,6 +30430,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_tech_defense_shredders"
     ],
@@ -29179,6 +30522,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_grit"
     ],
@@ -29264,6 +30608,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Dealing significant Spirit Damage to an enemy within 5s causes an explosion dealing damage and a burn to that enemy. While burning, enemies take damage over time and receive reduced healing. The cooldown is per enemy, so each target can only be burned once per cooldown. Deals half-damage on non-heroes.",
@@ -29352,6 +30697,7 @@
     "activation": "Press",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_focus_lens"
@@ -29428,6 +30774,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_acolytes_glove"
     ],
@@ -29517,6 +30864,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Make your weapon fire multishot. Hitting more than one Hero per attack will grant a stacking weapon damage bonus. Targets can only be hit once per multishot.",
@@ -29582,6 +30930,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_cardio_calibrator",
@@ -29635,6 +30984,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_improved_stamina"
     ],
@@ -29698,6 +31048,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "When you deal Spirit Damage to enemies, you also reduce their Fire Rate.",
@@ -29766,6 +31117,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_vampire"
     ],
@@ -29857,6 +31209,7 @@
     "activation": "Press",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Apply a Stun after 2s. Stun duration is increased against airborne targets. Increases the target's gravity for the duration of the stun.",
@@ -29927,6 +31280,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Launch an expanding projectile which Silences enemies for a short duration and deals impact damage. Silence does not interrupt channeling abilities.",
@@ -30001,6 +31355,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Periodically deals Spirit Damage to the closest two enemies nearby.",
@@ -30074,6 +31429,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_spellslinger_headshots"
@@ -30135,6 +31491,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_health_stealing_magic"
     ],
@@ -30234,6 +31591,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "When below 50% health, gain additional Spirit Resist.",
@@ -30304,6 +31662,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_magic_reach"
     ],
@@ -30361,6 +31720,7 @@
     "activation": "Press",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Throw a flask that explodes on contact, creating an area that does increasing Spirit Damage per second and reduces enemy Bullet Resist. 50% less effective vs non-heroes.",
@@ -30454,6 +31814,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_clip_size"
     ],
@@ -30504,6 +31865,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Your bullets build up a Bleed on enemies, causing them to lose a percentage of their Max Health over time. Also reduces Incoming Healing on the bleeding target.",
@@ -30569,6 +31931,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_cooldown_reduction"
     ],
@@ -30634,6 +31997,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_sprint_booster"
     ],
@@ -30719,6 +32083,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_magic_slow"
     ],
@@ -30801,6 +32166,93 @@
    }
   },
   {
+   "id": "upgrade_unstable_concoction",
+   "name": "Unstable Concoction",
+   "type": "item",
+   "aliases": [],
+   "sourceUrls": [
+    "https://deadlock.wiki/Unstable_Concoction",
+    "https://deadlock.wiki/Data:ItemData.json",
+    "https://deadlock.wiki/Data:ItemCards.json"
+   ],
+   "attributes": {
+    "internalKey": "upgrade_unstable_concoction",
+    "cost": 9999,
+    "tier": 5,
+    "slot": "Spirit",
+    "activation": "InstantCast",
+    "isActive": true,
+    "isImbue": false,
+    "streetBrawl": true,
+    "components": [],
+    "upgradesInto": [],
+    "description": "Consume a concoction that grants you Unstoppable and increased speed, health, spirit and weapon damage. After a short duration you die and explode, stunning nearby enemies and dealing damage based on your maximum health. Dying this way reduces your respawn time by 50%.",
+    "sections": [
+     {
+      "kind": "Active",
+      "description": "Consume a concoction that grants you Unstoppable and increased speed, health, spirit and weapon damage. After a short duration you die and explode, stunning nearby enemies and dealing damage based on your maximum health. Dying this way reduces your respawn time by Respawn Time Mod%.",
+      "cooldown": 25,
+      "props": [
+       {
+        "key": "MaxHPDamage",
+        "label": "Max Health Damage",
+        "value": 30,
+        "type": "tech_damage"
+       },
+       {
+        "key": "StunDuration",
+        "label": "Stun Duration",
+        "value": 3,
+        "type": "duration"
+       },
+       {
+        "key": "BonusMoveSpeed",
+        "label": "Move Speed",
+        "value": "10m",
+        "type": "move_speed",
+        "conditional": true
+       },
+       {
+        "key": "BonusHealth",
+        "label": "Bonus Health",
+        "value": 3000,
+        "type": "health",
+        "conditional": true
+       },
+       {
+        "key": "AbilityDuration",
+        "label": "Duration",
+        "value": 4,
+        "type": "duration"
+       },
+       {
+        "key": "BaseAttackDamagePercent",
+        "label": "Weapon Damage",
+        "value": 150,
+        "type": "bullet_damage",
+        "conditional": true
+       },
+       {
+        "key": "Radius",
+        "label": "Radius",
+        "value": "22m",
+        "type": null
+       },
+       {
+        "key": "TechPower",
+        "label": "Spirit Power",
+        "value": 150,
+        "type": "tech_damage",
+        "conditional": true
+       }
+      ]
+     }
+    ],
+    "statusEffects": [],
+    "popularity": null
+   }
+  },
+  {
    "id": "upgrade_unstoppable",
    "name": "Unstoppable",
    "type": "item",
@@ -30821,6 +32273,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_debuff_reducer"
     ],
@@ -30884,6 +32337,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_damage_recycler",
@@ -30942,6 +32396,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Walking through a cosmic veil grants you Stealth, Heal and increased Move Speed.",
@@ -31024,6 +32479,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_grit"
     ],
@@ -31094,6 +32550,7 @@
     "activation": "InstantCast",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Teleport straight ahead, gaining Bullet Resist.",
@@ -31149,6 +32606,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [],
     "description": "Dealing Weapon Damage at close range opens a wound and grants you Bonus Move Speed. Wounded enemies take Spirit DPS, have reduced Bullet Resist, and are revealed through walls.",
@@ -31236,6 +32694,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_grit"
     ],
@@ -31323,6 +32782,7 @@
     "activation": "Passive",
     "isActive": false,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [
      "upgrade_slowing_bullets"
     ],
@@ -31418,6 +32878,7 @@
     "activation": "Press",
     "isActive": true,
     "isImbue": false,
+    "streetBrawl": false,
     "components": [],
     "upgradesInto": [
      "upgrade_greater_withering_whip"

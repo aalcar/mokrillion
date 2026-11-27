@@ -2,6 +2,7 @@
 //   npm run questions -- list
 //   npm run questions -- propose item 8        (LLM: propose + validate semantic questions)
 //   npm run questions -- score item-cost:3200  (LLM: rank + score; or "score 12" by list index)
+//   npm run questions -- score-new [N]         (LLM: score every question not saved yet, or the first N)
 //   npm run questions -- show item-cost:3200
 // Add --no-cache to force fresh LLM calls (e.g. to measure ranking stability).
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -93,6 +94,22 @@ try {
     mkdirSync(QUESTIONS_DIR, { recursive: true });
     writeFileSync(questionFile(q.signature), JSON.stringify(scored, null, 1));
     printScored(scored);
+  } else if (cmd === "score-new") {
+    // Score every candidate without a saved file (optionally the first N); stops cleanly at the budget.
+    const todo = allCandidates().filter((q) => !existsSync(questionFile(q.signature))).slice(0, rest[0] ? Number(rest[0]) : undefined);
+    console.log(`${todo.length} unscored questions`);
+    mkdirSync(QUESTIONS_DIR, { recursive: true });
+    for (const [i, q] of todo.entries()) {
+      try {
+        const scored = await scoreQuestion(kb, ask, q);
+        writeFileSync(questionFile(q.signature), JSON.stringify(scored, null, 1));
+        const top = scored.answers.find((a) => a.score === 100)!;
+        console.log(`[${i + 1}/${todo.length}] ${q.signature}: Mo-Krillion ${kb.get(top.entityId)!.name}`);
+      } catch (e) {
+        console.error(`[${i + 1}/${todo.length}] ${q.signature}: ${(e as Error).message}`);
+        if (/budget/.test((e as Error).message)) break;
+      }
+    }
   } else if (cmd === "eval") {
     // Compare stored scores with human judgments (data/eval/judgments.json).
     type J = { signature: string; note: string };
@@ -143,8 +160,8 @@ try {
     if (!existsSync(file)) throw new Error(`not scored yet: ${rest.join(" ")}`);
     printScored(JSON.parse(readFileSync(file, "utf8")));
   } else {
-    console.log("usage: questions list | propose <hero|item> [count] | score <signature|index> | show <signature> | eval | set-rarest <signature> <answer>  [--no-cache]");
+    console.log("usage: questions list | propose <hero|item> [count] | score <signature|index> | score-new [N] | show <signature> | eval | set-rarest <signature> <answer>  [--no-cache]");
   }
 } finally {
-  if (cmd === "propose" || cmd === "score") console.log(`\n${usageSummary()}`);
+  if (cmd === "propose" || cmd === "score" || cmd === "score-new") console.log(`\n${usageSummary()}`);
 }

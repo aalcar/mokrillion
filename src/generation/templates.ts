@@ -17,6 +17,13 @@ const HERO_CATEGORIES: Record<string, string> = {
   "Heroes with weapon scaling abilities": "Name a hero with an ability that scales with weapon damage.",
   // The wiki category mixes heroes with non-default base Spirit Resist (Lash, Baba, Pocket) and heroes who start
   // at the default but gain extra Spirit Resist as they level (McGinnis, Kelvin, Venator), so the wording covers both.
+  "Heroes that don't deal critical damage": "Name a hero whose bullets can't deal critical (headshot) damage.",
+  "Heroes with burst weapons": "Name a hero whose weapon fires in bursts.",
+  "Heroes with alternate fire weapons": "Name a hero whose weapon has an alternate fire mode.",
+  "Heroes with spin up weapons": "Name a hero whose weapon spins up (fires faster the longer you shoot).",
+  "Heroes with single reload weapons": "Name a hero whose weapon reloads one shell at a time.",
+  "Heroes with 4 stamina": "Name a hero who has 4 base stamina.",
+  "Heroes with modified crit scale": "Name a hero whose headshots deal a non-standard crit bonus (higher or lower than normal).",
   "Heroes with modified spirit resist":
     "Name a hero whose Spirit Resist differs from a standard hero's, either at base or in how it grows as they level up.",
 };
@@ -81,6 +88,23 @@ function nameQuestions(kb: Knowledge): Omit<CandidateQuestion, "validation">[] {
   return out;
 }
 
+/** Spelling questions about hero weapon names; the hero name or the weapon name both count as an answer. */
+function weaponNameQuestions(heroes: Hero[]): Omit<CandidateQuestion, "validation">[] {
+  const out: Omit<CandidateQuestion, "validation">[] = [];
+  const either = " (the hero or the weapon name both count)";
+  const q = (sig: string, prompt: string, match: (weapon: string) => boolean) =>
+    out.push({ signature: `weapon-name:${sig}`, prompt: prompt + either, category: "weapon-name", entityType: "hero",
+      answerIds: heroes.filter((h) => h.attributes.weapon.name && match(h.attributes.weapon.name)).map((h) => h.id) });
+  q("possessive", "Name a hero whose weapon's name has an 's (like Somebody's Something)", (n) => /'s\b/i.test(n));
+  q("starts-the", 'Name a hero whose weapon\'s name starts with "The"', (n) => /^the /i.test(n));
+  for (const c of "abcdefghijklmnopqrstuvwxyz") {
+    // Weapon names are long, so only rare letters make a fair "contains" question.
+    if (heroes.filter((h) => nameLetters(h.attributes.weapon.name ?? "").includes(c)).length > 10) continue;
+    q(`contains:${c}`, `Name a hero whose weapon's name contains the letter ${c.toUpperCase()}`, (n) => nameLetters(n).includes(c));
+  }
+  return out;
+}
+
 export function deterministicCandidates(kb: Knowledge): CandidateQuestion[] {
   const out: CandidateQuestion[] = [];
   const add = (q: Omit<CandidateQuestion, "validation">, criterion: string) =>
@@ -118,10 +142,15 @@ export function deterministicCandidates(kb: Knowledge): CandidateQuestion[] {
     add({ signature: `hero-category:${cat}`, prompt, category: "hero-weapon", entityType: "hero",
       answerIds: ids(heroes.filter((h) => h.attributes.categories.includes(cat))) }, `in wiki category "${cat}"`);
   }
-  const heroThreshold = (key: string, get: (h: Hero) => number, dir: "high" | "low", text: (x: number) => string) => {
-    const x = threshold(heroes.map(get), 10, dir);
+  const heroThreshold = (key: string, get: (h: Hero) => number, dir: "high" | "low", text: (x: number) => string,
+    category = "hero-base-stat", target = 10) => {
+    // Round the cut-off the way the prompt shows it, so the prompt and the answer pool always agree.
+    const raw = threshold(heroes.map(get), target, dir);
+    const step = Math.abs(raw) >= 100 ? 1 : 10; // whole numbers for big values (bullet speed), one decimal otherwise
+    const x = (dir === "high" ? Math.floor : Math.ceil)(raw * step) / step;
     const pool = heroes.filter((h) => (dir === "high" ? get(h) >= x : get(h) <= x));
-    add({ signature: `hero-stat:${key}:${dir}:${x}`, prompt: text(x), category: "hero-base-stat", entityType: "hero",
+    if (pool.length > 2 * target) return; // a big tie at the cut-off makes the question meaningless
+    add({ signature: `hero-stat:${key}:${dir}:${x}`, prompt: text(x), category, entityType: "hero",
       answerIds: ids(pool) }, `${key} ${dir === "high" ? ">=" : "<="} ${x}`);
   };
   heroThreshold("maxHealth", (h) => h.attributes.maxHealth, "high",
@@ -130,6 +159,55 @@ export function deterministicCandidates(kb: Knowledge): CandidateQuestion[] {
     (x) => `Name a hero whose base clip size is at least ${x} (no items or boons).`);
   heroThreshold("clipSize", (h) => h.attributes.weapon.clipSize, "low",
     (x) => `Name a hero whose base clip size is ${x} or fewer (no items or boons).`);
+
+  heroThreshold("sprintSpeed", (h) => h.attributes.sprintSpeed, "high",
+    (x) => `Name a hero with a base sprint speed of at least ${x} m/s.`);
+  heroThreshold("maxMoveSpeed", (h) => h.attributes.maxMoveSpeed, "high",
+    (x) => `Name a hero with a base move speed of at least ${x} m/s.`, "hero-base-stat", 8);
+  heroThreshold("lightMeleeDamage", (h) => h.attributes.lightMeleeDamage, "high",
+    (x) => `Name a hero whose base light melee deals at least ${x} damage.`, "hero-base-stat", 7);
+
+  // Weapon stats ("hero-weapon"): answers are heroes, weapon names also accepted.
+  const w = (h: Hero) => h.attributes.weapon;
+  heroThreshold("roundsPerSecond", (h) => w(h).roundsPerSecond, "high",
+    (x) => `Name a hero whose weapon fires at least ${x} rounds per second.`, "hero-weapon");
+  heroThreshold("roundsPerSecond", (h) => w(h).roundsPerSecond, "low",
+    (x) => `Name a hero whose weapon fires ${x} rounds per second or fewer.`, "hero-weapon");
+  heroThreshold("bulletSpeed", (h) => w(h).bulletSpeed, "high",
+    (x) => `Name a hero whose bullets travel at least ${x} m/s.`, "hero-weapon");
+  heroThreshold("bulletSpeed", (h) => w(h).bulletSpeed, "low",
+    (x) => `Name a hero whose bullets travel ${x} m/s or slower.`, "hero-weapon");
+  heroThreshold("dps", (h) => w(h).dps, "high",
+    (x) => `Name a hero whose base weapon DPS is at least ${x} (no items or boons).`, "hero-weapon");
+  heroThreshold("dps", (h) => w(h).dps, "low",
+    (x) => `Name a hero whose base weapon DPS is ${x} or lower (no items or boons).`, "hero-weapon");
+  heroThreshold("bulletDamage", (h) => w(h).bulletDamagePerPellet, "high",
+    (x) => `Name a hero whose base damage per bullet (or pellet) is at least ${x}.`, "hero-weapon");
+  heroThreshold("falloffEndRange", (h) => w(h).falloffEndRange, "low",
+    (x) => `Name a hero whose weapon damage fully falls off by ${x}m or less.`, "hero-weapon");
+
+  for (const q of weaponNameQuestions(heroes)) add(q, `weapon name rule: ${q.signature}`);
+
+  add({ signature: "item-imbue", prompt: "Name an item that imbues (permanently upgrades) one of your abilities.", category: "item-effect",
+    entityType: "item", answerIds: ids(items.filter((i) => i.attributes.isImbue)) }, "isImbue");
+  // Stat bonus within one slot, e.g. "a Vitality item with Spirit Power", when it narrows the stat question.
+  for (const [label, list] of byLabel) for (const slot of ["Weapon", "Vitality", "Spirit"] as const) {
+    const inSlot = list.filter((i) => i.attributes.slot === slot);
+    if (inSlot.length === list.length || inSlot.length > 15) continue;
+    add({ signature: `item-stat-slot:${label}:${slot}`, category: "item-stat-bonus", entityType: "item", answerIds: ids(inSlot),
+      prompt: `Name a ${slot} item that gives a built-in ${label.replace(/^Bonus /, "")} bonus (not counting conditional, stacking or active effects).` },
+      `slot == ${slot} && innate unconditional prop labelled "${label}" with value > 0`);
+  }
+
+  // Street Brawl mode-exclusive items.
+  const sb = kb.streetBrawlItems;
+  const sbQ = (sig: string, prompt: string, list: Item[], criterion: string) =>
+    add({ signature: `street-brawl:${sig}`, prompt, category: "street-brawl", entityType: "item", answerIds: ids(list) }, criterion);
+  sbQ("all", "Name an item that is only sold in Street Brawl.", sb, "streetBrawl");
+  for (const slot of ["Weapon", "Vitality", "Spirit"] as const) {
+    sbQ(`slot:${slot}`, `Name a ${slot} item that is only sold in Street Brawl.`, sb.filter((i) => i.attributes.slot === slot), `streetBrawl && slot == ${slot}`);
+  }
+  sbQ("active", "Name an item with an active ability that is only sold in Street Brawl.", sb.filter((i) => i.attributes.isActive), "streetBrawl && isActive");
 
   for (const q of nameQuestions(kb)) add(q, `name spelling rule: ${q.signature}`);
 

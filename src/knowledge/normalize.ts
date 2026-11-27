@@ -196,7 +196,9 @@ export function normalize(raw: Raw): KnowledgeFile {
 
   const items: Item[] = [];
   for (const [key, it] of Object.entries<any>(raw.itemData)) {
-    if (it.IsDisabled || it.StreetBrawl || !it.Name || !it.Cost || ![1, 2, 3, 4].includes(it.Tier)) continue;
+    // Street Brawl items are the mode-exclusive tier-5 items; they are kept but flagged so main-mode questions skip them.
+    const streetBrawl = !!it.StreetBrawl;
+    if (it.IsDisabled || !it.Name || !it.Cost || !(streetBrawl ? [5] : [1, 2, 3, 4]).includes(it.Tier)) continue;
     const title = [it.Name, `${it.Name} (item)`].find((t) => itemPages.has(t));
     if (!title || !SLOT[it.Slot]) continue;
     const card = raw.itemCards[key] ?? {};
@@ -226,6 +228,7 @@ export function normalize(raw: Raw): KnowledgeFile {
         activation: it.Activation,
         isActive: it.Activation !== "Passive",
         isImbue: !!it.IsImbue,
+        streetBrawl,
         components: it.Components ?? [],
         upgradesInto: [],
         description,
@@ -276,7 +279,9 @@ function assignAliases(entities: Entity[], raw: Raw, titleOf: Map<string, string
     const redirects = (raw.redirects[titleOf.get(e.id)!] ?? []).filter(
       (a) => e.type === "item" || isAbbreviation(a) || normalizeName(a).split(" ").every((w) => nameWords.has(w)),
     );
-    const list = [...redirects, ...searchAliases(raw.lang, e.id)];
+    // Weapon names count as the hero ("Doc's Orders" -> Holliday).
+    const weapon = e.type === "hero" && e.attributes.weapon.name ? [e.attributes.weapon.name] : [];
+    const list = [...redirects, ...searchAliases(raw.lang, e.id), ...weapon];
     candidates.set(e.id, list);
   }
   const claims = new Map<string, Set<string>>();

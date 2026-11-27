@@ -133,3 +133,14 @@ test("share text: name, total and one square per question", () => {
   assert.equal(head, "Alex · Mokrillion 2027-03-01 · 100/700");
   assert.equal(squares, "🟪" + "⬛".repeat(game.questions.length - 1));
 });
+
+test("a weapon name counts as its hero and is shown with it", () => {
+  const holliday = kb.findByName("holliday")!;
+  const game: DailyGame = { date: "2027-05-01", knowledgeVersion: "", scoringVersion: "", generatedAt: "", questions: [{
+    id: "t", prompt: "t", category: "weapon-name", entityType: "hero",
+    answers: [{ entityId: holliday.id, name: holliday.name, rank: 1, score: 100 }] }] };
+  const s = createSession(game);
+  startQuestion(s, 0);
+  const r = submit(s, kb, "docs orders", 1);
+  assert.ok(r.kind === "correct" && r.name === "Holliday (Doc's Orders)", JSON.stringify(r));
+});

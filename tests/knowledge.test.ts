@@ -18,7 +18,7 @@ test("every hero has 4 described abilities", () => {
 });
 
 test("item links resolve and costs match tiers", () => {
-  const cost = { 1: 800, 2: 1600, 3: 3200, 4: 6400 };
+  const cost: Record<number, number> = { 1: 800, 2: 1600, 3: 3200, 4: 6400 };
   for (const i of kb.items) {
     for (const c of [...i.attributes.components, ...i.attributes.upgradesInto]) assert.ok(kb.get(c), `${i.name} -> ${c}`);
     assert.equal(i.attributes.cost, cost[i.attributes.tier], i.name);
@@ -31,4 +31,13 @@ test("known facts and aliases", () => {
   assert.equal(kb.findByName("Geist")?.name, "Lady Geist");
   assert.equal(kb.findByName("apr")?.name, "Armor Piercer");
   assert.equal(kb.findByName("mo and krill")?.name, "Mo & Krill");
+});
+
+test("weapon names resolve to their hero; Street Brawl items are kept apart", () => {
+  assert.equal(kb.findByName("doc's orders")?.name, "Holliday");
+  assert.equal(kb.findByName("the vonnegun")?.name, "Dynamo");
+  assert.ok(kb.streetBrawlItems.length >= 10, `street brawl: ${kb.streetBrawlItems.length}`);
+  assert.ok(kb.streetBrawlItems.every((i) => i.attributes.tier === 5));
+  assert.ok(kb.items.every((i) => !i.attributes.streetBrawl && i.attributes.tier <= 4));
+  assert.equal(kb.findByName("shrink ray")?.type, "item");
 });
