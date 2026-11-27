@@ -27,6 +27,42 @@ npm run game -- play      # play today's game in the terminal
 Players type `/play` in the server and answer in DMs. `/share` posts their score as colored squares (⬛ 0 · 🟥 10 · 🟧 30 · 🟨 60 · 🟩 85 · 🟪 100, the Mo-Krillion), no spoilers.
 One game per player per day; the day resets at midnight Pacific.
 
+## Hosting
+
+The bot needs an always-on machine with a disk (it saves games in progress under `data/plays/`), so serverless
+hosts and Heroku (wipes disk on restart) won't work. Cheapest good option: a DigitalOcean droplet paid by the
+GitHub Student Pack's $200 credit (the $6/mo Ubuntu droplet runs free for a year). After that, an Oracle Cloud
+Always Free VM works with the same steps.
+
+On a fresh Ubuntu box (as root):
+
+```
+curl -fsSL https://deb.nodesource.com/setup_22.x | bash - && apt-get install -y nodejs git
+useradd -m bot && su - bot -c "git clone https://github.com/aalcar/mokrillion.git"
+cd /home/bot/mokrillion && su bot -c "npm ci"
+nano .env          # DISCORD_TOKEN, DISCORD_CLIENT_ID, DISCORD_GUILD_ID, plus:
+                   # MOKRILLION_GAME_SALT=<any long random string, e.g. from `openssl rand -hex 16`>
+chown bot .env && chmod 600 .env
+su bot -c "npm run bot:register"
+cp deploy/mokrillion.service /etc/systemd/system/ && systemctl enable --now mokrillion
+journalctl -u mokrillion -f    # logs
+```
+
+Nightly backup of player games (`crontab -e` as bot):
+
+```
+0 4 * * * tar czf /home/bot/plays-$(date +\%a).tgz -C /home/bot/mokrillion/data plays
+```
+
+Deploy an update from your laptop: push to GitHub, then
+
+```
+ssh root@<droplet-ip> 'su bot -c "cd ~/mokrillion && git pull && npm ci" && systemctl restart mokrillion'
+```
+
+Daily games are built on the server the first time someone plays that day. They are not committed to git, and
+the salt keeps future picks unguessable from this public repo.
+
 ## Make more questions
 
 LLM steps need a key in `.env`: `ANTHROPIC_API_KEY` and/or `GEMINI_API_KEY` (free). If Anthropic fails or runs
@@ -38,7 +74,6 @@ npm run questions -- score <number|signature>     # rank answers and save (~$0.0
 npm run questions -- show <signature>             # see a saved table
 npm run questions -- set-rarest <signature> <answer>   # pick the Mo-Krillion (100-point answer) yourself
 npm run questions -- propose hero 8               # have the LLM write new questions
-npm run game -- generate --days 7                 # publish the next week of games
 ```
 
 ## Refresh game data (after a patch)
